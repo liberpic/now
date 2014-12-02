@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NOW - The Berkeley Network of Workstations Project</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">NOW</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="news.html">News</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li calss="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="case.html">Case</a></li>
+                <li><a href="recent.html">Recent NOW Papers</a></li>
+                <li><a href="paper.html">NOW Papers</a></li>
+                <li><a href="phd.html">NOW PhD's</a></li>
+                <li><a href="slides.html">NOW Slides</a></li>
+                <li><a href="data.html">Data</a></li>
+              </ul>
+            </li>
+            <li><a href="software.html">Software</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="people.html">People</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="retreats.html">Retreats</a></li>
+              </ul>
+            </li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.berkeley.edu/index.html/">UC Berkeley</a></li>
+                <li><a href="http://www.cs.berkeley.edu/">Berkeley CS</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="search.html">Search</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div style="background-color:#B1E5FF;">
+      <div class="container" style="padding-top:5em;">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="files/title.gif" width="800" height="159.2"/>
+            <p style="color:#5448C8; font-size:15px; margin-left:3.2em"><q>What can anyone give you greater than now" - William Stafford</q></p> 
+          </div>
+          <div class="col-lg-6">
+            <img src="files/logo.gif" width="376.875" height="200.625" style="margin-left:15em;" />
+
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+    <div style="background-color:#D0EFFF;">
+      <div class="container" style="padding-top:2em;">
+        <div class="row">
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-10" style="font-size:18px">
+            <h1 align="center">Smart Clients: A Framework For Building Scalable Services</h1><hr>
+            <p>Slow response times, network congestion, and ``hot sites of the day'' being overrun by thousands to millions of requests per day are fairly commonplace on the Web today. These problems will only worsen as the Web continues to experience rapid growth. As a result, it has become increasingly important to design and implement network services, such as http, ftp, and web indexing services, to scale gracefully with offered load. Such scalable services must, at minimum, address the following problems: </p>
+            <ul>
+              <li>Incremental Scalability: If the offered load begins to exceed a service's hardware capacity, it should be a simple operation to add hardware to increase system capacity. This operation should be transparent to users (i.e., no service interruption).</li>
+              <li>Load Balancing: Load should be spread dynamically among server resources so that clients receive the best available quality of service.</li>
+              <li>Dynamic Resource Recruitment: Related to the issue of scalability, a service should be able to transparently recruit resources to handle peaks in the load. For example, while the <a href="http://earthquake.usgs.gov">US Geological Survey Web site</a> is normally quite responsive, it was left completely inaccessible immediately after a recent Bay Area earthquake in May, 1996.</li>
+              <li>Fault Tolerance: When possible, the service should remain available in the face of host, software, or network upgrades or failures.</li>
+            </ul>
+            <p>Unfortunately, providing these properties for network services while remaining compatible with the de facto URL naming standard has proven difficult. URLs implicitly associate a single hostname, and hence a single point of failure and congestion, with each service. A number of efforts address this limitation by hiding the physical location of a particular service behind a logical hostname. Examples of such systems include HTTP redirect, DNS Aliasing, Failsafe TCP, Active Networks, and Magic Routers. We refer to these systems as ``server-side'' because the transparency mechanism is logically co-located with the servers.<br><br>
+            Our work is motivated by the observation that in many cases the client, rather than the server, is the right place to implement transparent access to network services. Client-side solutions offer the main advantage of increased flexibility. For example, clients aware of the relative load on a number of ftp mirror sites can connect to the least loaded mirror to deliver the highest throughput to the end user. Ideally, the selection and connection process takes place without any intervention from the end user. Note that in this example, clients must take into account available network bandwidth to each mirror site as well as the relative load of the sites. Such flexibility would be much more difficult to implement if a server attempted to implement such load balancing for geographically distributed clients.
+            </p>
+          </div>
+        </div>
+        <br><br><br><br><br><br><br>
+      </div>      
+    </div>
+    <!-- End of Centent Section -->
+
+    <div style="background-color:#2E8AE6;">
+      <div class="container" style="padding-top:0.6em;">
+        <p style="color:#ffffff">Note: The project was terminated on June 15, 1998</p>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/vendor/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

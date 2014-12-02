@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NOW - The Berkeley Network of Workstations Project</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">NOW</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="news.html">News</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li calss="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="case.html">Case</a></li>
+                <li><a href="recent.html">Recent NOW Papers</a></li>
+                <li><a href="paper.html">NOW Papers</a></li>
+                <li><a href="phd.html">NOW PhD's</a></li>
+                <li><a href="slides.html">NOW Slides</a></li>
+                <li><a href="data.html">Data</a></li>
+              </ul>
+            </li>
+            <li><a href="software.html">Software</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="people.html">People</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="retreats.html">Retreats</a></li>
+              </ul>
+            </li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.berkeley.edu/index.html/">UC Berkeley</a></li>
+                <li><a href="http://www.cs.berkeley.edu/">Berkeley CS</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="search.html">Search</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div style="background-color:#B1E5FF;">
+      <div class="container" style="padding-top:5em;">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="files/title.gif" width="800" height="159.2"/>
+            <p style="color:#5448C8; font-size:15px; margin-left:3.2em"><q>What can anyone give you greater than now" - William Stafford</q></p> 
+          </div>
+          <div class="col-lg-6">
+            <img src="files/logo.gif" width="376.875" height="200.625" style="margin-left:15em;" />
+
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+    <div style="background-color:#D0EFFF;">
+      <div class="container" style="padding-top:2em;">
+        <div class="row">
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-10" style="font-size:18px">
+            <h1 align="center">River</h1><hr>
+            <p><b>River</b> is a data-flow programming environment and I/O substrate for clusters of computers. River is designed to provide maximum performance in the common case, even in the face of non-uniformities in hardware, software, and workload. River is based on two simple design features: a high-performance <b>distributed queue</b>, and a storage redundancy mechanism called <b>graduated declustering</b>. We have implemented a number of data-intensive applications on River, including database primitives such as sort, select, and hash-join, and are able to achieve near-ideal performance in a variety of non-uniform performance scenarios. </p> <hr>
+            <h2>Publications</h2><br>
+            <ul>
+              <li><b>Run-time Adapation in River</b> <br>
+              <i>TOCS '03</i> <br>
+              <a href="https://www.cs.wisc.edu/people/remzi">Remzi H. Arpaci-Dusseau</a>, Available as: <a href="files/project/river-tocs.pdf">PDF</a></li><br>
+              <li><b>Cluster I/O with River: Making the Fast Case Common</b> <br>
+              <i>IOPADS '99</i> <br>
+              <a href="https://www.cs.wisc.edu/people/remzi">Remzi H. Arpaci-Dusseau</a>, Eric Anderson, Noah Treuhaft, <br> <a href="http://www.cs.berkeley.edu/~culler/">David E. Culler</a>, <a href="http://db.cs.berkeley.edu/jmh/">Joseph M. Hellerstein</a>, <a href="http://www.cs.berkeley.edu/~pattrsn/">David A. Patterson</a>, <a href="http://www.cs.berkeley.edu/~yelick/">Katherine Yelick</a>. <br>
+              Available as: <a href="files/project/river.ps">PostScript</a>                
+              </li><br>
+              <li>
+                <b>Performance Availability for Networks of Workstations</b> <br>
+                <i>Doctoral Dissertation, 1999</i> <br>
+                <a href="https://www.cs.wisc.edu/people/remzi">Remzi H. Arpaci-Dusseau</a>, <br>
+                Available as: <a href="files/project/phd.ps">Compressed Postscript</a>, and <a href="files/project/phd-talk.ps">Talk Slides</a>
+              </li><br>
+              <li>
+                <b>Eddies: Continuously Adaptive Query Processing</b> <br>
+                <i>SIGMOD 2K</i> <br>
+                Ron Avnur and <a href="http://db.cs.berkeley.edu/jmh/">Joseph M. Hellerstein</a> <br>
+                Available as: <a href="files/project/sigmod00-eddy.pdf">PDF</a>
+              </li><br>
+              <li>
+                <b>Tsunami: Dynamic Load Balancing in River</b> <br>
+                <i>CS 262 Class Project</i> <br>
+                <a href="http://www.cs.umd.edu/~amol/">Amol Deshpande</a>, Mohan Lakhamraju, and Ron Avnur <br>
+                Available as: 
+              </li>
+            </ul> <hr>
+            <p>Contact: <a href="mailto:remzi@cs.berkeley.edu">remzi@cs.berkeley.edu</a></p>
+          </div>
+        </div>
+        <br><br><br><br><br><br><br>
+      </div>      
+    </div>
+    <!-- End of Centent Section -->
+
+    <div style="background-color:#2E8AE6;">
+      <div class="container" style="padding-top:0.6em;">
+        <p style="color:#ffffff">Note: The project was terminated on June 15, 1998</p>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/vendor/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

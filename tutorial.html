@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutorial | NOW</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">NOW</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="news.html">News</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li calss="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="case.html">Case</a></li>
+                <li><a href="recent.html">Recent NOW Papers</a></li>
+                <li><a href="paper.html">NOW Papers</a></li>
+                <li><a href="phd.html">NOW PhD's</a></li>
+                <li><a href="slides.html">NOW Slides</a></li>
+                <li><a href="data.html">Data</a></li>
+              </ul>
+            </li>
+            <li><a href="software.html">Software</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="people.html">People</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="retreats.html">Retreats</a></li>
+              </ul>
+            </li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.berkeley.edu/index.html/">UC Berkeley</a></li>
+                <li><a href="http://www.cs.berkeley.edu/">Berkeley CS</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="search.html">Search</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    
+
+    <!-- Content Section -->
+    <div style="background-color:#D0EFFF;">
+      <div class="container" style="padding-top:7em;">
+        <div class="row">
+          <div class="col-lg-2" id="myScrollspy" >
+            <br><br><br>
+            <ul class="nav nav-pills nav-stacked" data-spy="affix" style="max-width:180px;" >
+              <li class="active"><a href="#using_the_now">Using the NOW</a></li>
+              <li><a href="#split-c">Running Split-C Programs</a></li>
+              <li><a href="#hpf">Running HPF Programs</a></li>
+              <li><a href="#mpi">Running MPI Programs</a></li>
+              <li><a href="#utility">Utility Programs</a></li>
+              <li><a href="#glunix">Sample GLUnix Program</a></li>
+              <li><a href="#status">Implementation Status</a></li>
+              <li><a href="#nameserver">Nameserver Documentation</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-10" style="font-size:20px">
+            <h1 align="center">Welcome to the NOW Tutorial</h1><hr>
+            <p style="font-size:20px">This document provides an overview of the use of the NOW-2 production system as UC Berkeley. NOW-2 currently consists of a cluster of 110 Ultra-1 SPARCStations. The production now runs the <a href="#glunix">GLUnix Operating System</a>, and supports <a href="split-c">Split-C</a> parallel programs running on <a href="activemessage.html">Active Messages</a>. </p><hr>
+            <div id="using_the_now">
+              <h1 >Using GLUnix</h1>
+              <p style="font-size:20px">Taking advantage of NOW functionality is straightforward. Simply ensure that <b>/usr/now/bin</b> is in your shell's PATH, and <b>/usr/now/man</b> in the MANPATH. To start taking advantage of GLUnix functionality, log into <i>now.cs.berkeley.edu</i> and start a <i>glush</i> shell. While the composition of the GLUnix parition may change over time, we make every effort to guarantee that <i>now.cs</i> is always running GLUnix. The <i>glush</i> shell runs most commands remotely on the lightly loaded nodes in the cluster.  <br><br> To summarize: </p>
+              <ul style="font-size:20px">
+                <li> Add /usr/now/bin to your path.</li>
+                <li>Add /usr/now/man to your man path.</li>
+                <li>Log into now.cs.berkeley.edu.</li>
+                <li>Run glush.</li>
+              </ul>
+              <p style="font-size:20px">Load balancing GLUnix shell scripts are available. Syntax is identical to the csh command language. Simply begin your shell shell scripts with <i>#!/usr/now/bin/glush</i>. Note that you do <b>not</b> have to be running <i>glush</i> as your interactive shell in order to run load-balanced shell scripts. </p>
+            </div><hr>
+
+            <br><br>
+            
+            <div id="split-c">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h1>The Split-C on NOW HOWTO</h1>
+                </div>
+                <div class="col-lg-1">
+                  <img src="files/tutorial/split-c.gif">
+                </div>
+              </div>
+              <h3>NEW! Split-C now runs exclusively on AM2, the new version of Active Messages!!</h3>
+              <p>What you must do now to run Split-C programs: </p>
+              <ul>
+                <li>The environment has changed. Re-source the cs267.cshrc file</li>
+                <li>Older programs must be recompiled after you set up your environment</li>
+                <li>Don't use the -reserve option.</li>
+                <li><i>ONLY use the -reserve option for running production versions of your code.</i> In other words, don't use the -reserve option until you have fully debugged your program.</li>
+              </ul>
+              <p >How this affects you</p>
+              <ul >
+                <li>You now have more nodes (~100) to run on</li>
+                <li>Fewer reservations (since they aren't needed) to contend with. Thus you should always have ~100 nodes to run on since AM2 programs don't require exclusive access to the node</li>
+                <li>No more 'xxx holding lock for lanai card' error messages</li>
+                <li>No more 'cannot open lanai copy block' error messages</li>
+                <li>Slightly slower communication performance</li>
+              </ul> <hr>
+              <p >This document provides an overview on how to compile and run Split-C programs on the various NOW clusters. This HOWTO assumes you are familiar with Unix commands and changing your shell environment. <br><br>
+              This document is *not* a tutorial on the language. For a good tutorial on the language itself, see Jim Demmel's <a href="http://www.eecs.berkeley.edu/~demmel/cs267/lecture07/lecture07.html">Lecture on Split-C</a> </p> <hr>
+              <h3>Setting Your Environment</h3>
+              <p>Type: <br> source /usr/castle/proj/cs267/cs267.cshrc</p><hr>
+              <h3>Compiling a Program</h3>
+              <p>Now that you have set-up your Split-C environment you are ready to compile a program. The first thing to do is create a sub-directory where you want to compile the program. Then, copy a simple <a href="http://now.cs.berkeley.edu/Split-C/Makefile">Makefile</a> into the directory and let the system makefile take care of the rest. When using the system makefile, you must use the gmake program instead of the standard make. This link shows a sample Split-C <a href="http://now.cs.berkeley.edu/Split-C/pi.sc">program</a>. <br><br>
+              Here is an example session which should get you started. Make sure you're logged into a NOW machine first!</p>
+              <pre><p>now:>cd
+now:>mkdir sc_example
+now:>cd sc_example 
+now:>cp /usr/castle/share/proj/split-c/develop/examples/pi/Makefile . 
+now:>cp /usr/castle/share/proj/split-c/develop/examples/pi/pi.sc . 
+now:>gmake 
+/usr/castle/share/proj/split-c/install/LAM/bin/split-cc -g -O2 -o bin-LAM/pi.o -c pi.sc
+Compiling for 2^N processors
+/usr/castle/share/proj/split-c/install/LAM/bin/split-cc -o pi bin-LAM/pi.o -L/usr/sww/X11/lib -lX11 -lm</p></pre><hr>
+              <h3>Running a Program</h3>
+              <p>Assuming you have your environment variables correctly set-up, running a Split-C program is very easy. Parallel programs are invoked with the glurun program (see the <a href="#glunix">NOW Tutorial</a> for a description of glunix commands). The format for glurun is: glurun -[#of nodes] [program to run] [arguements to the program]. To see all the options for glurun, do a glurun -help. <br><br> 
+              <b>NOTE: For most Split-C programs, you'll have to run on a power of 2 number of processors (e.g. 1,2,4,8,16)</b> <br><br> Below is an example session of running a Split-C program. </p>
+              <pre><p>now:>glurun -4 pi
+PI estimated at 3.139500 from 1000000 trials on 4 processors. </p></pre>
+              <p>If you have problems with Split-C, send email to <a href="mailto:split-c@boing.cs.berkeley.edu">split-c@boing.cs.berkeley.edu</a>. <hr>
+            </div>
+            
+            <br><br>
+            <div id="hpf">
+              <h1>Running HPF Programs on the NOW</h1>
+              <p>The following is a description of how to run HPF programs on the Berkeley NOW. </p>
+              <h3>Setting up your environment</h3>
+              <p>Type: <br>
+              source /usr/castle/proj/cs267/cs267.cshrc</p><hr>
+              <h3>Log into the NOW</h3>
+              <ul> <li> Log into the NOW as described in <a href="http://now.cs.berkeley.edu/cs267/assignment2/">assignment2</a></li></ul><hr>
+              <h3>Compiling a program</h3>
+              <p>You'll now be able to compile a sample program.  Copy the following file to a directory: <a href="files/tutorial/karp.hpf.txt">karp.hpf</a> <br> This is a hpf file that computes PI through integration. <br><br> Now, execute the following command to compile the program.  By default, the compiler will add the libraries necessary to communicate via sockets.  <br><br> pghpf -Mstats karp.hpf -o karp <br><br> This will compile the karp program, and insert profiling code that will assist in reporting the memory used/messages sent by the program.  The compiler will produce a file called 'karp' <br><br> If you experienced problems trying to compile, make sure that your path was set up correctly as noted in the first section above.</p><hr>
+              <h3>Running a program</h3><h4>Setting things up</h4>
+              <ul>
+                <li>There are two ways to execute programs - securely and unsecurely. We strongly recommend that you use the secure method.</li>
+                <li><b>Securely</b>
+                  <ul>
+                    <li><a href="http://now.cs.berkeley.edu/cs267/assignment2/kerberos.html">Set up kerberos</a></li>
+                    <li>rkinit to the remote machine that you are running on: (You don't have to rkinit to all remote machines, since the rsh command will transfer the ticket to the other remote machines.) <br><br>
+                    This will set up a ticket on the current machine you are running on.  You should only run 'kinit' to create tickets on the machine that you are typing at, otherwise your kerberos password will be transfered over the network in the clear.  At the machine you are typing at, you should run 'rkinit' to install tickets on machines remotely - rkinit will not issue your password in cleartext. <br><br>
+
+                    For example, if you are typing at the machine whenever.cs.berkeley.edu and you wanted to run programs from the machine u0.cs.berkeley.edu, you would type:<br><br>
+
+                    rkinit u0.cs.berkeley.edu </li>
+                  </ul>
+                </li>
+                <li><b>Unsecurely (not recommended)</b>
+                  <ul> <li> Add the current hostname to your .rhosts file <br><br>
+                            For example, if you are logged into u0.cs.berkeley.edu, then add <br><br>
+
+                            u0.cs.berkeley.edu <br><br>
+
+                            to the end of your ~/.rhosts file. </li></ul>
+                </li>
+              </ul><hr>
+              <h4>Running the program</h4>
+              <p>On one processor: </p>
+              <ul><li>Type ./karp </li></ul>
+              <p>Run it on 4 processors</p>
+              <ul>
+                <li> SECURELY: ./karp -pghpf -np 4 -host remote_host1,remote_host2,remote_host3 -stat alls</li>
+                <li>UNSECURELY: ./karp -pghpf -np 4 -host remote_host1,remote_host2,remote_host3 -stat alls -rsh /bin/rsh <br><br>
+                where remote_host1,remote_host2,remote_host3 are the names of 3 machines that you are going to run on, e.g. u1,u2,u3 <br><br>
+
+                <b>Note that HPF will automatically run a copy on the current host, so you specify only the N-1 remote hosts on the command line. </b>
+
+                <b><i>**TODO:  create a 'rsh'-like shell to spawn jobs using GLUnix. HPF expects a rsh tool to spawn off jobs. </i></b>
+                </li>
+              </ul>
+              <p>Runtime options <br><br> Consult the <a href="http://now.cs.berkeley.edu/cs267/hpf/pghpf_docs/pghpf.index.html">HPF</a> documentation for the entire list of options, but here are some common ones:</p>
+              <ul>
+                <li>-v for verbose runtime</li>
+                <li>-dyn for dynmically pick nodes based on load average</li>
+              </ul><hr>
+              <h3>Advanced</h3>
+              <p>The HPF compiler also supports some of CM FORTRAN.  By default, CM FORTRAN is accepted in some cases.  See the  <a href="http://now.cs.berkeley.edu/cs267/hpf/pghpf_docs/pghpf.index.html">HPF</a> for more details.</p><hr>
+              <h3>HPF on MPI</h3>
+              <h4>Compiling a HPF program with MPI</h4>
+              <ul>
+                <li>First, setup your environment as to compile a socket version of HPF program.</li>
+                <li>To compile with MPI option, you have to setup two environment variables before compiling: <br>
+                <b>setenv HPF_MPI "/disks/barad-dur/now/MPI/mpich/lib/solaris/hpf/"</b><br>
+                <b>setenv HPF_SOCKET "-lglunix -lLAM -lsocket -lnsl -lposix4 -lLanaiDevice -lbfd -liberity -lthread -lm"</b></li>
+                <li>Then, compile your program with the -Mmpi option: <br> <b>pghpf -Dmpi your_program.hpf -o your_executable</b></li>
+              </ul>
+              <h4>Running the executable</h4>
+              <ul>
+                <li>Setup the environment for the MPI. For more information consult the <a href="#mpi">MPI on NOW HowTo</a></li>
+                <li>Then, run your executable as follows: <br>
+                <b>your_executable -pghpf -np #_of_nodes</b></li>
+              </ul>
+              <p>Note: MPI command line arguments that defined in <a href="#mpi">MPI on NOW HowTo</a> can still be used. <br> If you have problems, send email to <a href="mailto:chad@cs.berkeley.edu">chad@berkeley.edu</a></p><hr>
+
+            </div>
+
+            <br><br>
+            
+
+            <div id="mpi">
+              <h1>Message Passing Interface Implementation On Active Messages</h1>
+              <p>Our implementation of MPI is based on the MPICH reference implementation, but realized the abstract device interface (ADI) through Active Messages operations. This approach achieves good performance and yet is portable across Active Messages platorms.<br><br> We have implemented MPICH-v1.0.12 on top of Generic Active Messages (GAM) and Active Messages 2.0. Our implementations are also avaiable for general use on the NOW cluster. </p>
+              <ul>
+                <li><a href="mpihow.html"> Information on how to compile and run MPI programs on the NOW cluster</a></li>
+                <li><a href="mpiper.html">Performance of our MPI implementation on the NOW cluster</a></li>
+              </ul> <hr>
+              <h3>People</h3>
+              <h4>Advisors</h4>
+              <ul>
+                <li><a href="http://www.eecs.berkeley.edu/~culler/">David Culler</a></li>
+                <li>Bill Saphir</li>
+              </ul>
+              <h4>Student</h4>
+              <ul><li>Frederick Wong</li></ul> <hr>
+            </div>
+
+
+            <br><br>
+
+
+            <div id="utility">
+              <h1>Utility Programs</h1>
+              <p>We have built a number of utility programs for GLUnix. All of these programs located in <b>/usr/now/bin</b>. Man pages are available for all of these programs, either by running <i>man</i> from a shell, or by clicking <a href="http://now.cs.berkeley.edu/man/html1/glunix.html">here</a>. A brief description of each utility program follows: </p>
+              <ul>
+                <li><b>glush:</b> <br>
+                The GLUnix shell is a modified version of tcsh. Most jobs submitted to the shell are load balanced among GLUnix machines. However, some jobs must be run locally since GLUnix does not provide completely transparent TTY support and since IO bandwidth to stdin, stdout, and stderr are limited by TCP bandwidth. The shell automatically runs a number of these jobs locally, however users may customize this list by adding programs to the <b>glunix_runlocal</b> shell variable. The variable indicates to glush those programs which should be run locally.</li>
+                <li><b>glumake:</b><br>
+                A modified version of GNU's make program. A <i>-j</i> argument specifies the degree of parallelism for the make. The degree of parallelism defaults to the number of nodes available in the cluster.</li>
+                <li><b>glurun:</b><br>
+                This program runs the specified program on the GLUnix cluster. For example glurun <b>bigsim</b> will run bigsim on the least loaded machine in the GLUnix cluster. You can run parallel program on the NOW by specifying the parameter <b>-N</b> where N is a number representing the degree of parallelism you wish. Thus glurun -5 <b>bigsim</b> will run bigsim on 5, least-loaded nodes.</li>
+                <li><b>glustat</b><br>Prints the status of all machines in the GLUnix cluster.</li>
+                <li><b>glups</b><br>Similar to Unix ps but only prints information about GLUnix processes.</li>
+                <li><b>glukill</b><br>Sends an arbitrary signal (defaults to SIGTERM) to a specified GLUnix process.</li>
+                <li><b>gluptime</b><br>Similar to Unix uptime, reporting on how long the system has been up and the current system load.</li>
+                <li><b>glubatch</b><br>A batch job submission system for submitting and querying non-interactive, low-priority jobs.</li>
+              </ul><hr>
+            </div>
+
+
+            <br><br>
+            
+            <div id="glunix">
+              <h1>A Sample GLUnix Program</h1>
+              <p>Each program running under GLUnix has a <i>startup</i> process which runs in your shell and a number of <i>child</i> processes which run on remote nodes. There must be at least one child process, and may be up to one for each node currently running GLUnix. The <i>startup</i> process is responsible for routing signal information (for example, if you type ^Z or ^C) and input/output to the child processes. The <i>child</i> processes then make up the program itself. If there is more than one child, this is a <i>parallel</i> program, else it is a <i>sequential</i> program.<br><br>
+              Here is the code and Makefile for a sample program which runs under GLUnix (use <i>gmake</i> with this Makefile). This routine provides the code for <i>both</i> the startup and child processes. The distinction between the two kinds of processes is made using the <i>Glib_AmIStartup()</i> library call.</p>
+              <code><pre><p>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;unistd.h&gt;
+
+#include "glib/types.h"
+#include "glib.h"
+
+int
+main(int argc, char **argv)
+{
+    int   numNodes;
+    VNN   vnn;
+
+    if(!Glib_Initialize()) {
+        fprintf(stderr,"Glib_Initialize failed\n");
+        exit(-1);
+    }
+
+    if (argc > 1) {
+  numNodes = atoi(argv[1]);
+    }
+    else {
+  numNodes = 2;
+    }
+
+    if (Glib_AmIStartup()) {
+
+  /* Startup process runs here */
+  printf("Startup is spawning %d children\n", numNodes);
+  Glib_Spawnef(numNodes, GLIB_SPAWN_OUTPUT_VNN,
+               argv[0], argv, environ);
+    }
+    else {
+
+  /* Child process(es) run here */
+  vnn = Glib_GetMyVnn();
+
+  printf("***** I am a child process\n");
+  printf("***** VNN: %d\n", (int)vnn);
+  printf("***** Degree of program parallelism: %d\n",
+         Glib_GetParallelDegree());
+  printf("***** Total Nodes in system: %d\n",
+         Glib_GetTotalNodes());
+
+  /* Make one of the children delay to prove that nobody
+     exits the barrier before everybody has entered it */
+  if (vnn == 0) {
+      printf("***** Child %d is sleeping\n", vnn);
+      fflush(stdout);
+      sleep(5);
+  }
+
+  printf("***** Doing Barrier\n");
+  fflush(stdout);
+
+  Glib_Barrier();
+  printf("***** Done with Barrier\n");
+    }
+    return 0;
+}</p></pre></code> 
+            <p>The Makefile for this program (if you call it <i>test.c</i>) is:</p>
+            <code><pre><p>CC      = gcc
+CFLAGS  = -Wall -g 
+
+TARGET  = test
+SRCS    = test.c
+LIBS    = -lglunix -lam2 -lsocket -lnsl
+MANS    = test.1
+
+MANHOME = ../../man/man1
+BINHOME = ../../bin/sun4-solaris2.4-gamtcp
+
+LIBPATH = /usr/now/lib
+INCLUDEPATH = /usr/now/include/
+
+###############################################################
+
+LLIBPATH = $(addprefix -L,$(LIBPATH))
+RLIBPATH = $(addprefix -R,$(LIBPATH))
+INCPATH  = $(addprefix -I,$(INCLUDEPATH))
+
+all: $(TARGET)
+
+$(TARGET): $(SRCS)
+  gcc $(CFLAGS) -o $(TARGET) $(SRCS) $(RLIBPATH) \
+            $(LLIBPATH) $(INCPATH) $(LIBS)
+
+clean: 
+  rm -f $(TARGET) core *~ *.o
+
+install: $(TARGET) installman
+  cp $(TARGET) $(BINHOME)
+
+installman: 
+  cp $(MANS) $(MANHOME)</p></pre></code>
+            <p>Output from this program should look something like this (though the order of the output lines may vary):</p>
+            <code><pre><p>% ./test
+Startup is spawning 2 children
+1:***** I am a child process
+1:***** VNN: 1
+1:***** Degree of program parallelism: 2
+1:***** Total Nodes in system: 14
+1:***** Doing Barrier
+0:***** I am a child process
+0:***** VNN: 0
+0:***** Degree of program parallelism: 2
+0:***** Total Nodes in system: 14
+0:***** Child 0 is sleeping
+0:***** Doing Barrier
+1:***** Done with Barrier
+0:***** Done with Barrier
+% </p></pre></code> <hr>         
+            </div>
+
+
+            <br><br>
+
+            <div id="status">
+             <h1>GLUnix Implementation Stauts</h1>
+             <p>The following functionality is implemented in NOW-1:</p>
+             <ul>
+              <li><b>Remote Execution:</b> <br> Jobs can be started on any node in the GLUnix cluster. A single job may spawn multiple worker processes on different nodes in the system.</li>
+              <li><b>Load Balancing:</b><br>GLUnix maintains imprecise information on the load of each machine in the cluster. The system farms out jobs to the node which it considers least loaded at request time.</li>
+              <li><b>Signal Propagation:</b><br>A signal sent to a process is multiplexed to all worker processes comprising the GLUnix process.</li>
+              <li><b>Coscheduling:</b><br>Jobs spawned to multiple nodes can be gang scheduled to achieve better performance. The current coscheduling time quantum is 1 second.</li>
+              <li><b>IO Redirection:</b><br>Output to <i>stdout</i> or <i>stderr</i> are piped back to the startup node. Characters sent to stdin are multiplexed to all worker processes. Output redirection is limited by network bandwidth.</li>
+            </ul><hr>
+            </div>
+
+            <br><br>
+
+
+
+            <div id="nameserver">
+              <h1>Nameserver Documentation</h1>
+              <p>Click the <a href="nameserver.html">Link</a></p>
+            </div> 
+          
+          </div>
+        </div>
+        <br><br><br><br><br><br><br>
+      </div>      
+    </div>
+    <!-- End of Centent Section -->
+
+    <div style="background-color:#2E8AE6;">
+      <div class="container" style="padding-top:0.6em;">
+        <p style="color:#ffffff">Note: The project was terminated on June 15, 1998</p>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/vendor/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

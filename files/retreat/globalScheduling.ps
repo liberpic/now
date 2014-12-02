@@ -1,0 +1,11846 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 612 792 0 1 7 FMDOCUMENT
+0 0 /Helvetica FMFONTDEFINE
+1 0 /Courier-Bold FMFONTDEFINE
+2 0 /Helvetica-Oblique FMFONTDEFINE
+3 0 /Times-Bold FMFONTDEFINE
+4 0 /Times-Roman FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+155 436 641 534 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 24 Q
+0 X
+(Remzi H. Arpaci) 311.32 518 T
+(Andrea C. Dusseau) 293.29 486 T
+(Amin M. V) 313.52 454 T
+(ahdat) 422.43 454 T
+128 598 668 688 R
+7 X
+V
+1 1 0 0 0 0 1 K
+0 36 Q
+0 X
+1 1 0 0 0 0 1 K
+(T) 203.94 664 T
+(owards Global Process) 221.94 664 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Management in NOW) 224.95 624 T
+0 0 0 1 0 0 0 K
+111 291 687 360 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 1 1 0 1 0 0 K
+0 24 Q
+0 X
+0 1 1 0 1 0 0 K
+(Goal:) 111 344 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+(Determine issues when scheduling sequential) 183 344 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+(jobs in a pool of workstations) 183 320 T
+0 0 0 1 0 0 0 K
+63 234 729 738 18 RR
+2 H
+2 Z
+0 0 0 1 0 0 0 K
+N
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63 693 729 693 2 L
+2 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+63 234 729 738 18 RR
+N
+1 0 1 0 0 1 0 K
+0 24 Q
+1 0 1 0 0 1 0 K
+(\245) 72 659 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+(Desktop or Basement: Manage workstations globally) 99 659 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+(\245) 72 623 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+(Assume complete control of placement of every job) 99 623 T
+0 0 0 1 0 0 0 K
+1 16 Q
+0 0 0 1 0 0 0 K
+(\245) 99 591 T
+0 24 Q
+(Jobs are never migrated) 126 591 T
+1 0 1 0 0 1 0 K
+1 0 1 0 0 1 0 K
+(\245) 72 555 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+(Known: Placement depends upon state of system) 99 555 T
+0 0 0 1 0 0 0 K
+1 16 Q
+0 0 0 1 0 0 0 K
+(\245) 99 523 T
+0 24 Q
+(Load and memory usage of workstation) 126 523 T
+1 0 1 0 0 1 0 K
+1 0 1 0 0 1 0 K
+(\245) 72 487 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+(Show: Scheduling also depends on job characteristics) 99 487 T
+0 0 0 1 0 0 0 K
+1 16 Q
+0 0 0 1 0 0 0 K
+(\245) 99 455 T
+0 24 Q
+(Some jobs run noticeably faster on some models) 126 455 T
+1 16 Q
+(\245) 99 423 T
+0 24 Q
+(Jobs with locality should be run on same workstation) 126 423 T
+1 16 Q
+(\245) 99 391 T
+0 24 Q
+(Multiple I/O-bound jobs should not be scheduled) 126 391 T
+1 1 0 0 0 0 1 K
+0 36 Q
+1 1 0 0 0 0 1 K
+(Motivation) 313.97 705 T
+0 0 0 1 0 0 0 K
+72 248 720 376 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 248 720 376 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+476.17 306.89 467.54 302.24 527.81 300.06 540.94 312.12 488.48 312.99 5 Y
+1 1 0 0 0 0 1 K
+V
+0.25 H
+0 Z
+0 X
+N
+467.54 302.24 467.54 286.97 468.81 285.96 526.55 283.92 527.81 285.67 527.81 300.06 6 Y
+7 X
+V
+0 X
+N
+526.55 283.92 540.94 300.78 540.94 312.12 527.81 300.06 527.81 285.41 5 Y
+7 X
+V
+0 X
+N
+468.81 285.96 468.81 284.07 526.43 282.32 527.81 282.9 540.47 298.89 540.94 300.78 529.08 286.89
+ 526.55 283.92 8 Y
+7 X
+V
+0 X
+N
+469.61 303.35 529.08 301.22 529.08 286.89 3 L
+2 Z
+N
+525.4 301.35 524.13 300.19 524.13 284.01 3 L
+N
+504.58 302.1 503.08 300.95 503.08 284.75 3 L
+N
+467.54 298.46 527.81 296.13 2 L
+N
+467.54 290.32 527.81 287.99 2 L
+N
+467.54 289.15 527.81 286.83 2 L
+N
+467.54 287.85 527.81 285.52 529.08 286.97 3 L
+N
+469.61 301.07 474.5 300.93 474.5 298.97 469.61 299.15 4 Y
+7 X
+V
+0 Z
+0 X
+N
+529.71 300.17 529.71 294.82 2 L
+7 X
+V
+2 Z
+0 X
+N
+530.37 300.82 530.37 295.55 2 L
+7 X
+V
+0 X
+N
+531.03 301.48 531.03 296.27 2 L
+7 X
+V
+0 X
+N
+531.62 302.06 531.62 296.91 2 L
+7 X
+V
+0 X
+N
+532.14 302.57 532.14 297.47 2 L
+7 X
+V
+0 X
+N
+532.72 303.16 532.72 298.15 2 L
+7 X
+V
+0 X
+N
+533.26 303.65 533.26 298.69 2 L
+7 X
+V
+0 X
+N
+533.8 304.23 533.8 299.32 2 L
+7 X
+V
+0 X
+N
+534.41 304.77 534.41 299.91 2 L
+7 X
+V
+0 X
+N
+534.92 305.29 534.92 300.48 2 L
+7 X
+V
+0 X
+N
+535.44 305.84 535.44 301.07 2 L
+7 X
+V
+0 X
+N
+535.98 306.37 535.98 301.66 2 L
+7 X
+V
+0 X
+N
+536.57 306.95 536.57 302.29 2 L
+7 X
+V
+0 X
+N
+537.1 307.51 537.1 302.89 2 L
+7 X
+V
+0 X
+N
+537.64 308.01 537.64 303.43 2 L
+7 X
+V
+0 X
+N
+538.11 308.48 538.11 303.98 2 L
+7 X
+V
+0 X
+N
+538.57 308.94 538.57 304.49 2 L
+7 X
+V
+0 X
+N
+539.04 309.39 539.04 305.01 2 L
+7 X
+V
+0 X
+N
+539.45 309.78 539.45 305.43 2 L
+7 X
+V
+0 X
+N
+539.94 310.29 539.94 305.98 2 L
+7 X
+V
+0 X
+N
+540.41 310.73 540.41 306.5 2 L
+7 X
+V
+0 X
+N
+529.71 294.36 529.71 289.01 2 L
+7 X
+V
+0 X
+N
+530.37 295.01 530.37 289.73 2 L
+7 X
+V
+0 X
+N
+531.03 295.67 531.03 290.45 2 L
+7 X
+V
+0 X
+N
+531.62 296.25 531.62 291.09 2 L
+7 X
+V
+0 X
+N
+532.14 296.76 532.14 291.65 2 L
+7 X
+V
+0 X
+N
+532.72 297.35 532.72 292.33 2 L
+7 X
+V
+0 X
+N
+533.26 297.85 533.26 292.88 2 L
+7 X
+V
+0 X
+N
+533.8 298.42 533.8 293.51 2 L
+7 X
+V
+0 X
+N
+534.41 298.96 534.41 294.1 2 L
+7 X
+V
+0 X
+N
+534.92 299.49 534.92 294.67 2 L
+7 X
+V
+0 X
+N
+535.44 300.04 535.44 295.26 2 L
+7 X
+V
+0 X
+N
+535.98 300.57 535.98 295.85 2 L
+7 X
+V
+0 X
+N
+536.57 301.15 536.57 296.48 2 L
+7 X
+V
+0 X
+N
+537.1 301.71 537.1 297.08 2 L
+7 X
+V
+0 X
+N
+537.64 302.21 537.64 297.63 2 L
+7 X
+V
+0 X
+N
+538.11 302.68 538.11 298.17 2 L
+7 X
+V
+0 X
+N
+538.57 303.14 538.57 298.68 2 L
+7 X
+V
+0 X
+N
+539.04 303.59 539.04 299.2 2 L
+7 X
+V
+0 X
+N
+539.45 303.97 539.45 299.63 2 L
+7 X
+V
+0 X
+N
+539.94 304.48 539.94 300.17 2 L
+7 X
+V
+0 X
+N
+540.41 304.93 540.41 300.69 2 L
+7 X
+V
+0 X
+N
+470.53 298.1 472.49 298.1 2 L
+7 X
+V
+0.5 H
+0 X
+N
+478.95 307.71 490.66 313.51 526.25 312.54 516.39 305.5 4 Y
+6 X
+V
+0.01 H
+0 Z
+0 X
+N
+478.95 307.71 516.39 305.5 516.39 301.64 478.95 303.85 4 Y
+7 X
+V
+0 X
+N
+516.39 305.5 526.25 312.54 526.25 309.23 516.39 301.64 4 Y
+7 X
+V
+0 X
+N
+7 X
+90 450 14.24 3.06 502.38 310.04 G
+0 X
+90 450 14.24 3.06 502.38 310.04 A
+491.06 311.66 491.67 310.67 493.1 310.02 509.98 309.13 509.05 311.03 5 Y
+7 X
+V
+0 X
+N
+484.28 313.54 484.28 309.92 488.25 309.53 488.25 313.27 4 Y
+7 X
+V
+0.25 H
+0 X
+N
+488.25 309.53 493.69 312.92 488.25 313.27 3 Y
+3 X
+V
+0 X
+N
+509.05 312.2 509.05 308.58 513.03 308.2 513.03 311.94 4 Y
+7 X
+V
+0 X
+N
+513.03 308.2 518.46 311.58 513.03 311.94 3 Y
+3 X
+V
+0 X
+N
+517.37 361.64 516.03 362 477.93 359.95 476.6 359.95 474.97 358.25 474.46 356.92 474.46 316.22
+ 475.31 314.12 476.31 313.91 515.72 312.07 517.37 312.19 517.68 313.65 517.57 311.48 516.85 310.51 517.43 310.67
+ 517.91 311.04 518.35 311.72 518.69 312.7 518.76 314.15 518.76 357.89 518.45 360.32 21 Y
+7 X
+V
+0 X
+N
+475.07 358.01 514.58 359.83 515.32 359.3 515.63 358.41 515.7 356.79 515.7 314.88 514.88 313.79
+ 475.38 315.98 474.46 316.22 474.46 356.92 10 Y
+0.01 H
+N
+478.54 354.73 512.12 355.82 513.04 354.36 513.04 319.13 512.43 317.92 477.62 319.5 477.11 320.71
+ 477.11 353.88 8 Y
+5 X
+V
+0 X
+N
+477.83 352.42 477.83 320.35 512.23 319.01 512.23 353.27 4 Y
+3 X
+V
+0 X
+N
+509.47 351.81 481.4 350.96 480.48 350.11 479.66 348.29 479.66 325.09 479.97 323.51 480.99 322.54
+ 509.37 321.08 510.8 322.66 510.8 350.48 10 Y
+7 X
+V
+0 X
+N
+516.85 310.51 517.57 311.48 517.68 313.65 517.37 312.19 478.27 313.82 478.74 312.45 479.9 311.8 7 Y
+7 X
+V
+0 X
+N
+515.19 360.08 516.51 361.29 2 L
+7 X
+V
+0 X
+N
+518.45 360.32 517.37 361.64 525.19 357.58 525.19 316.83 517.91 311.04 518.35 311.72 518.69 312.7
+ 518.76 314.15 518.76 357.89 9 Y
+7 X
+V
+0 X
+N
+525.19 347.08 531.12 343.73 531.12 322.41 525.19 317.61 4 Y
+7 X
+V
+0 X
+N
+518.76 316.91 525.19 320.79 2 L
+7 X
+V
+0 X
+N
+525.19 321.77 531.12 325.17 2 L
+7 X
+V
+0 X
+N
+525.19 343.15 531.12 341.29 2 L
+7 X
+V
+0 X
+N
+525.19 341.93 531.12 340.31 2 L
+7 X
+V
+0 X
+N
+525.19 340.64 531.12 339.26 2 L
+7 X
+V
+0 X
+N
+525.19 339.34 531.12 338.21 2 L
+7 X
+V
+0 X
+N
+525.19 338.05 531.12 337.23 2 L
+7 X
+V
+0 X
+N
+525.19 336.59 531.12 336.26 2 L
+7 X
+V
+0 X
+N
+525.19 335.29 531.12 335.29 2 L
+7 X
+V
+0 X
+N
+525.19 333.91 531.12 334.24 2 L
+7 X
+V
+0 X
+N
+525.19 332.54 531.12 333.19 2 L
+7 X
+V
+0 X
+N
+525.19 331 531.12 332.13 2 L
+7 X
+V
+0 X
+N
+525.19 329.46 531.12 331.24 2 L
+7 X
+V
+0 X
+N
+524.07 329.1 524.07 322.17 521.31 320.59 521.31 328.24 4 Y
+N
+521.31 320.59 524.07 322.17 524.07 329.1 523.15 328.81 523.15 322.82 521.31 321.73 6 Y
+5 X
+V
+0 X
+N
+3 X
+90 450 0.43 0.83 522.18 326.77 G
+0 X
+90 450 0.43 0.83 522.18 326.77 A
+522.18 327.6 523.27 327.6 523.27 325.94 522.18 325.94 4 L
+3 X
+V
+0 X
+N
+7 X
+90 450 0.43 0.83 523.27 326.77 G
+0 X
+90 450 0.43 0.83 523.27 326.77 A
+3 X
+90 450 0.43 0.83 522.18 323.97 G
+0 X
+90 450 0.43 0.83 522.18 323.97 A
+522.18 324.8 523.27 324.8 523.27 323.14 522.18 323.14 4 L
+3 X
+V
+0 X
+N
+7 X
+90 450 0.43 0.83 523.27 323.97 G
+0 X
+90 450 0.43 0.83 523.27 323.97 A
+510.59 355.26 511.38 355.24 511.38 353.88 510.59 353.91 4 Y
+3 X
+V
+0 X
+N
+510.83 355.08 511.13 355.07 511.13 354.08 510.83 354.1 4 Y
+V
+N
+481.4 350.96 477.83 352.42 477.83 320.35 480.99 322.54 479.97 323.51 479.66 325.09 479.66 348.29
+ 480.48 350.11 8 Y
+4 X
+V
+0 X
+N
+463.08 271.1 462.36 271.66 462.36 270.04 462.8 269.16 511.17 264.45 512.11 264.74 513.38 267.1
+ 517.28 272.98 519.02 275.12 519.02 277.09 517.01 274.75 512.59 268.24 511.83 266.6 13 Y
+7 X
+V
+0.2 H
+0 X
+N
+475.79 279.54 519.02 277.09 517.01 274.75 512.59 268.24 511.83 266.6 463.08 271.1 462.36 271.66
+ 462.93 272.38 472.1 278.06 9 Y
+7 X
+V
+0 X
+N
+504.57 274.24 506.25 274.05 507.14 274.77 505.67 274.85 4 Y
+7 X
+V
+0.25 H
+0 X
+N
+504.57 274.24 504.57 272.86 506.42 272.59 507.17 273.37 507.14 274.77 5 L
+7 X
+V
+2 Z
+0 X
+N
+506.72 274.15 508.39 273.95 509.26 274.66 507.79 274.76 4 Y
+7 X
+V
+0 Z
+0 X
+N
+506.77 274.15 506.77 272.77 508.61 272.5 509.36 273.27 509.33 274.66 5 L
+7 X
+V
+2 Z
+0 X
+N
+508.74 273.99 510.4 273.77 511.29 274.52 509.82 274.6 4 Y
+7 X
+V
+0 Z
+0 X
+N
+508.74 273.99 508.74 272.61 510.57 272.35 511.32 273.11 511.29 274.52 5 L
+7 X
+V
+2 Z
+0 X
+N
+510.73 273.87 512.41 273.66 513.29 274.4 511.81 274.49 4 Y
+7 X
+V
+0 Z
+0 X
+N
+510.73 273.87 510.73 272.5 512.58 272.23 513.33 272.99 513.29 274.4 5 L
+7 X
+V
+2 Z
+0 X
+N
+503.05 272.78 504.71 272.56 505.6 273.28 504.13 273.41 4 Y
+7 X
+V
+0 Z
+0 X
+N
+503.05 272.78 503.05 271.39 504.88 271.14 505.63 271.9 505.6 273.28 5 L
+7 X
+V
+2 Z
+0 X
+N
+505.19 272.7 506.86 272.48 507.75 273.19 506.27 273.31 4 Y
+7 X
+V
+0 Z
+0 X
+N
+505.19 272.7 505.19 271.29 507.03 271.02 507.79 271.82 507.75 273.19 5 L
+7 X
+V
+2 Z
+0 X
+N
+507.39 272.56 509.07 272.38 509.95 273.09 508.49 273.19 4 Y
+7 X
+V
+0 Z
+0 X
+N
+507.39 272.56 507.39 271.19 509.24 270.94 509.99 271.72 509.96 273.09 5 L
+7 X
+V
+2 Z
+0 X
+N
+509.53 272.48 511.2 272.28 512.09 272.99 510.62 273.09 4 Y
+7 X
+V
+0 Z
+0 X
+N
+509.53 272.48 509.53 271.1 511.37 270.84 512.12 271.62 512.09 272.99 5 L
+7 X
+V
+2 Z
+0 X
+N
+501.77 271.03 503.44 270.81 504.31 271.52 502.84 271.64 4 Y
+7 X
+V
+0 Z
+0 X
+N
+501.77 271.03 501.77 269.63 503.59 269.38 504.36 270.15 504.3 271.52 5 L
+7 X
+V
+2 Z
+0 X
+N
+504.03 270.97 505.71 270.77 506.58 271.48 505.11 271.6 4 Y
+7 X
+V
+0 Z
+0 X
+N
+503.98 270.91 503.98 269.52 505.8 269.25 506.55 270.03 506.52 271.43 5 L
+7 X
+V
+2 Z
+0 X
+N
+506.42 270.8 508.09 270.61 508.96 271.33 507.49 271.41 4 Y
+7 X
+V
+0 Z
+0 X
+N
+506.54 270.8 506.54 269.42 508.36 269.15 509.12 269.95 509.08 271.33 5 L
+7 X
+V
+2 Z
+0 X
+N
+508.66 270.7 510.34 270.51 511.21 271.23 509.74 271.33 4 Y
+7 X
+V
+0 Z
+0 X
+N
+508.66 270.7 508.66 269.32 510.49 269.07 511.24 269.85 511.21 271.23 5 L
+7 X
+V
+2 Z
+0 X
+N
+506.58 276.84 508.26 276.66 509.15 277.37 507.68 277.45 4 Y
+3 X
+V
+0 Z
+0 X
+N
+506.58 276.84 506.58 275.46 508.43 275.2 509.18 275.98 509.15 277.37 5 L
+3 X
+V
+2 Z
+0 X
+N
+508.73 276.75 510.4 276.55 511.27 277.26 509.8 277.36 4 Y
+3 X
+V
+0 Z
+0 X
+N
+508.78 276.75 508.78 275.37 510.62 275.11 511.38 275.87 511.34 277.26 5 L
+3 X
+V
+2 Z
+0 X
+N
+510.75 276.59 512.41 276.38 513.3 277.12 511.83 277.21 4 Y
+3 X
+V
+0 Z
+0 X
+N
+510.75 276.59 510.75 275.21 512.58 274.95 513.33 275.71 513.3 277.12 5 L
+3 X
+V
+2 Z
+0 X
+N
+512.74 276.47 514.42 276.26 515.3 277.01 513.82 277.09 4 Y
+3 X
+V
+0 Z
+0 X
+N
+512.74 276.47 512.74 275.1 514.59 274.83 515.34 275.6 515.3 277.01 5 L
+3 X
+V
+2 Z
+0 X
+N
+488.39 277.86 490.06 277.68 490.95 278.39 489.48 278.47 4 Y
+3 X
+V
+0 Z
+0 X
+N
+488.39 277.86 488.39 276.48 490.23 276.22 490.98 277 490.95 278.39 5 L
+3 X
+V
+2 Z
+0 X
+N
+490.53 277.77 492.2 277.57 493.08 278.28 491.61 278.38 4 Y
+3 X
+V
+0 Z
+0 X
+N
+490.58 277.77 490.58 276.39 492.43 276.13 493.18 276.89 493.14 278.28 5 L
+3 X
+V
+2 Z
+0 X
+N
+492.55 277.61 494.21 277.4 495.1 278.14 493.63 278.22 4 Y
+3 X
+V
+0 Z
+0 X
+N
+492.55 277.61 492.55 276.23 494.38 275.97 495.13 276.73 495.1 278.14 5 L
+3 X
+V
+2 Z
+0 X
+N
+494.55 277.49 496.22 277.28 497.11 278.03 495.62 278.11 4 Y
+3 X
+V
+0 Z
+0 X
+N
+494.55 277.49 494.55 276.12 496.39 275.85 497.14 276.61 497.11 278.03 5 L
+3 X
+V
+2 Z
+0 X
+N
+469.68 276.56 471.36 276.38 472.24 277.09 470.77 277.18 4 Y
+7 X
+V
+0 Z
+0 X
+N
+469.68 276.56 469.68 275.18 471.53 274.92 472.28 275.7 472.24 277.09 5 L
+7 X
+V
+2 Z
+0 X
+N
+471.83 276.47 473.5 276.27 474.37 276.99 472.9 277.09 4 Y
+7 X
+V
+0 Z
+0 X
+N
+471.88 276.47 471.88 275.09 473.72 274.83 474.47 275.59 474.44 276.99 5 L
+7 X
+V
+2 Z
+0 X
+N
+473.85 276.32 475.51 276.1 476.39 276.85 474.93 276.93 4 Y
+7 X
+V
+0 Z
+0 X
+N
+473.85 276.32 473.85 274.94 475.68 274.67 476.43 275.43 476.39 276.85 5 L
+7 X
+V
+2 Z
+0 X
+N
+475.84 276.2 477.52 275.98 478.4 276.73 476.92 276.81 4 Y
+7 X
+V
+0 Z
+0 X
+N
+475.84 276.2 475.84 274.82 477.69 274.56 478.44 275.32 478.4 276.73 5 L
+7 X
+V
+2 Z
+0 X
+N
+467.28 275.18 468.94 274.96 469.83 275.68 468.36 275.81 4 Y
+7 X
+V
+0 Z
+0 X
+N
+467.28 275.18 467.28 273.78 469.11 273.54 469.86 274.3 469.83 275.68 5 L
+7 X
+V
+2 Z
+0 X
+N
+469.42 275.1 471.09 274.88 471.98 275.59 470.49 275.71 4 Y
+7 X
+V
+0 Z
+0 X
+N
+469.42 275.1 469.42 273.68 471.26 273.42 472.01 274.22 471.98 275.59 5 L
+7 X
+V
+2 Z
+0 X
+N
+471.62 274.96 473.3 274.78 474.18 275.49 472.71 275.59 4 Y
+7 X
+V
+0 Z
+0 X
+N
+471.62 274.96 471.62 273.59 473.47 273.34 474.22 274.12 474.18 275.49 5 L
+7 X
+V
+2 Z
+0 X
+N
+473.76 274.88 475.43 274.68 476.32 275.39 474.85 275.49 4 Y
+7 X
+V
+0 Z
+0 X
+N
+473.76 274.88 473.76 273.5 475.6 273.24 476.35 274.02 476.32 275.39 5 L
+7 X
+V
+2 Z
+0 X
+N
+465.17 273.94 466.84 273.72 467.71 274.44 466.24 274.55 4 Y
+7 X
+V
+0 Z
+0 X
+N
+465.18 273.94 465.18 272.54 466.99 272.3 467.76 273.06 467.71 274.44 5 L
+7 X
+V
+2 Z
+0 X
+N
+467.44 273.89 469.11 273.69 469.98 274.4 468.51 274.52 4 Y
+7 X
+V
+0 Z
+0 X
+N
+467.38 273.83 467.38 272.43 469.21 272.17 469.96 272.95 469.92 274.34 5 L
+7 X
+V
+2 Z
+0 X
+N
+469.82 273.71 471.49 273.53 472.36 274.24 470.9 274.32 4 Y
+7 X
+V
+0 Z
+0 X
+N
+469.94 273.71 469.94 272.33 471.77 272.07 472.52 272.86 472.48 274.24 5 L
+7 X
+V
+2 Z
+0 X
+N
+472.06 273.61 473.74 273.43 474.61 274.14 473.14 274.24 4 Y
+7 X
+V
+0 Z
+0 X
+N
+472.06 273.61 472.06 272.23 473.89 271.98 474.64 272.77 474.61 274.14 5 L
+7 X
+V
+2 Z
+0 X
+N
+496.75 277.34 498.42 277.16 499.31 277.88 497.84 277.96 4 Y
+3 X
+V
+0 Z
+0 X
+N
+496.75 277.34 496.75 275.97 498.6 275.7 499.35 276.48 499.31 277.88 5 L
+3 X
+V
+2 Z
+0 X
+N
+498.89 277.25 500.57 277.05 501.44 277.77 499.97 277.87 4 Y
+3 X
+V
+0 Z
+0 X
+N
+498.95 277.25 498.95 275.88 500.79 275.61 501.54 276.37 501.51 277.77 5 L
+3 X
+V
+2 Z
+0 X
+N
+500.92 277.1 502.58 276.88 503.46 277.63 501.99 277.71 4 Y
+3 X
+V
+0 Z
+0 X
+N
+500.92 277.1 500.92 275.72 502.75 275.45 503.5 276.22 503.46 277.63 5 L
+3 X
+V
+2 Z
+0 X
+N
+502.91 276.98 504.58 276.76 505.47 277.51 503.99 277.59 4 Y
+3 X
+V
+0 Z
+0 X
+N
+502.91 276.98 502.91 275.6 504.76 275.34 505.51 276.1 505.47 277.51 5 L
+3 X
+V
+2 Z
+0 X
+N
+481.61 276.61 483.41 276.4 484.36 277.14 482.77 277.24 4 Y
+7 X
+V
+0 Z
+0 X
+N
+481.61 276.61 481.61 275.25 483.59 274.99 484.4 275.74 484.36 277.14 5 L
+7 X
+V
+2 Z
+0 X
+N
+483.96 276.5 485.76 276.29 486.68 277.03 485.1 277.11 4 Y
+7 X
+V
+0 Z
+0 X
+N
+483.96 276.5 483.96 275.14 485.92 274.87 486.73 275.63 486.68 277.03 5 L
+7 X
+V
+2 Z
+0 X
+N
+486 276.35 487.8 276.14 488.73 276.84 487.16 276.96 4 Y
+7 X
+V
+0 Z
+0 X
+N
+486 276.35 486 274.96 487.96 274.73 488.77 275.48 488.73 276.84 5 L
+7 X
+V
+2 Z
+0 X
+N
+488.13 276.25 489.93 276.04 490.87 276.75 489.27 276.86 4 Y
+7 X
+V
+0 Z
+0 X
+N
+488.13 276.25 488.13 274.87 490.1 274.61 490.9 275.38 490.87 276.75 5 L
+7 X
+V
+2 Z
+0 X
+N
+490.35 276.14 492.12 275.96 493.07 276.66 491.49 276.75 4 Y
+7 X
+V
+0 Z
+0 X
+N
+490.35 276.14 490.35 274.78 492.3 274.51 493.11 275.28 493.07 276.66 5 L
+7 X
+V
+2 Z
+0 X
+N
+492.7 275.99 494.5 275.79 495.44 276.5 493.86 276.6 4 Y
+7 X
+V
+0 Z
+0 X
+N
+492.7 275.99 492.7 274.63 494.67 274.36 495.5 275.14 495.44 276.5 5 L
+7 X
+V
+2 Z
+0 X
+N
+495 275.83 496.8 275.65 497.74 276.35 496.16 276.45 4 Y
+7 X
+V
+0 Z
+0 X
+N
+495 275.83 495 274.46 496.96 274.22 497.79 274.96 497.74 276.35 5 L
+7 X
+V
+2 Z
+0 X
+N
+497.06 275.74 498.84 275.53 499.78 276.25 498.2 276.35 4 Y
+7 X
+V
+0 Z
+0 X
+N
+497.06 275.74 497.06 274.38 499.01 274.12 499.83 274.87 499.78 276.25 5 L
+7 X
+V
+2 Z
+0 X
+N
+499.24 275.63 501.04 275.42 502 276.14 500.42 276.24 4 Y
+7 X
+V
+0 Z
+0 X
+N
+499.24 275.63 499.24 274.25 501.23 274 502.04 274.76 502 276.14 5 L
+7 X
+V
+2 Z
+0 X
+N
+501.47 275.45 503.27 275.23 504.2 275.96 502.61 276.06 4 Y
+7 X
+V
+0 Z
+0 X
+N
+501.47 275.38 501.47 274.02 503.43 273.76 504.24 274.51 504.2 275.91 5 L
+7 X
+V
+2 Z
+0 X
+N
+479.2 275.48 480.98 275.28 481.92 275.99 480.34 276.09 4 Y
+7 X
+V
+0 Z
+0 X
+N
+479.2 275.48 479.2 274.12 481.15 273.86 481.98 274.63 481.92 275.99 5 L
+7 X
+V
+2 Z
+0 X
+N
+481.83 275.27 483.61 275.07 484.57 275.78 482.98 275.88 4 Y
+7 X
+V
+0 Z
+0 X
+N
+481.83 275.27 481.83 273.91 483.79 273.64 484.6 274.41 484.57 275.78 5 L
+7 X
+V
+2 Z
+0 X
+N
+484.2 275.17 486 274.96 486.93 275.7 485.36 275.78 4 Y
+7 X
+V
+0 Z
+0 X
+N
+484.2 275.17 484.2 273.81 486.16 273.54 486.97 274.3 486.93 275.7 5 L
+7 X
+V
+2 Z
+0 X
+N
+486.4 275.07 488.2 274.87 489.14 275.6 487.56 275.7 4 Y
+7 X
+V
+0 Z
+0 X
+N
+486.4 275.07 486.4 273.71 488.39 273.46 489.2 274.2 489.14 275.6 5 L
+7 X
+V
+2 Z
+0 X
+N
+488.77 274.99 490.57 274.78 491.51 275.5 489.93 275.6 4 Y
+7 X
+V
+0 Z
+0 X
+N
+488.77 274.99 488.77 273.59 490.74 273.36 491.57 274.12 491.51 275.5 5 L
+7 X
+V
+2 Z
+0 X
+N
+490.99 274.89 492.78 274.68 493.73 275.38 492.15 275.5 4 Y
+7 X
+V
+0 Z
+0 X
+N
+490.99 274.89 490.99 273.49 492.96 273.27 493.77 274.02 493.73 275.38 5 L
+7 X
+V
+2 Z
+0 X
+N
+493.35 274.79 495.15 274.58 496.1 275.28 494.52 275.42 4 Y
+7 X
+V
+0 Z
+0 X
+N
+493.35 274.79 493.35 273.41 495.33 273.15 496.14 273.92 496.1 275.28 5 L
+7 X
+V
+2 Z
+0 X
+N
+495.73 274.68 497.54 274.5 498.47 275.2 496.89 275.28 4 Y
+7 X
+V
+0 Z
+0 X
+N
+495.73 274.68 495.73 273.31 497.7 273.05 498.51 273.84 498.47 275.2 5 L
+7 X
+V
+2 Z
+0 X
+N
+498.01 274.58 499.83 274.4 500.77 275.1 499.19 275.2 4 Y
+7 X
+V
+0 Z
+0 X
+N
+498.01 274.58 498.01 273.22 500 272.95 500.8 273.74 500.77 275.1 5 L
+7 X
+V
+2 Z
+0 X
+N
+500.09 274.28 501.85 274.07 502.81 274.79 501.23 274.89 4 Y
+7 X
+V
+0 Z
+0 X
+N
+500.09 274.28 500.09 272.92 502.04 272.66 502.84 273.41 502.81 274.79 5 L
+7 X
+V
+2 Z
+0 X
+N
+476.96 274.38 478.76 274.17 479.7 274.87 478.12 274.99 4 Y
+7 X
+V
+0 Z
+0 X
+N
+476.96 274.38 476.96 273 478.93 272.76 479.73 273.51 479.7 274.87 5 L
+7 X
+V
+2 Z
+0 X
+N
+479.53 274.12 481.33 273.91 482.27 274.61 480.69 274.73 4 Y
+7 X
+V
+0 Z
+0 X
+N
+479.53 274.12 479.53 272.72 481.5 272.46 482.31 273.25 482.27 274.61 5 L
+7 X
+V
+2 Z
+0 X
+N
+481.99 273.91 483.79 273.71 484.73 274.41 483.13 274.51 4 Y
+7 X
+V
+0 Z
+0 X
+N
+481.99 273.91 481.99 272.54 483.96 272.28 484.77 273.05 484.73 274.41 5 L
+7 X
+V
+2 Z
+0 X
+N
+484.03 273.81 485.83 273.63 486.79 274.33 485.19 274.41 4 Y
+7 X
+V
+0 Z
+0 X
+N
+484.03 273.81 484.03 272.44 486.02 272.18 486.83 272.95 486.79 274.33 5 L
+7 X
+V
+2 Z
+0 X
+N
+486.26 273.71 488.06 273.49 488.97 274.23 487.39 274.33 4 Y
+7 X
+V
+0 Z
+0 X
+N
+486.26 273.71 486.26 272.34 488.2 272.08 489.01 272.84 488.97 274.23 5 L
+7 X
+V
+2 Z
+0 X
+N
+488.28 273.63 490.1 273.41 491.03 274.14 489.45 274.23 4 Y
+7 X
+V
+0 Z
+0 X
+N
+488.28 273.63 488.28 272.25 490.26 272 491.07 272.76 491.03 274.14 5 L
+7 X
+V
+2 Z
+0 X
+N
+490.57 273.43 492.37 273.22 493.31 273.92 491.73 274.04 4 Y
+7 X
+V
+0 Z
+0 X
+N
+490.57 273.43 490.57 272.05 492.54 271.8 493.35 272.56 493.31 273.92 5 L
+7 X
+V
+2 Z
+0 X
+N
+492.87 273.33 494.67 273.13 495.61 273.84 494.03 273.95 4 Y
+7 X
+V
+0 Z
+0 X
+N
+492.87 273.33 492.87 271.95 494.83 271.69 495.64 272.46 495.61 273.84 5 L
+7 X
+V
+2 Z
+0 X
+N
+495.4 273.22 497.2 273.03 498.14 273.74 496.56 273.84 4 Y
+7 X
+V
+0 Z
+0 X
+N
+495.4 273.22 495.4 271.85 497.37 271.59 498.18 272.38 498.14 273.74 5 L
+7 X
+V
+2 Z
+0 X
+N
+498.01 273 499.83 272.82 500.77 273.53 499.19 273.63 4 Y
+7 X
+V
+0 Z
+0 X
+N
+498.01 273 498.01 271.64 500 271.38 500.8 272.16 500.77 273.53 5 L
+7 X
+V
+2 Z
+0 X
+N
+474.83 273.22 476.63 273.03 477.58 273.74 476.01 273.84 4 Y
+7 X
+V
+0 Z
+0 X
+N
+474.83 273.22 474.83 271.85 476.81 271.59 477.62 272.38 477.58 273.74 5 L
+7 X
+V
+2 Z
+0 X
+N
+477.05 272.97 478.83 272.79 479.79 273.49 478.21 273.58 4 Y
+7 X
+V
+0 Z
+0 X
+N
+477.05 272.97 477.05 271.61 479.02 271.34 479.83 272.1 479.79 273.49 5 L
+7 X
+V
+2 Z
+0 X
+N
+480.62 272.95 495.64 271.8 494.34 271.21 478.82 272.49 4 Y
+7 X
+V
+0 Z
+0 X
+N
+494.03 271.8 495.81 271.6 496.76 272.31 495.17 272.41 4 Y
+7 X
+V
+0 X
+N
+494.03 271.68 494.03 270.3 495.99 270.06 496.8 270.83 496.76 272.19 5 L
+7 X
+V
+2 Z
+0 X
+N
+496.3 271.59 498.1 271.39 499.04 272.09 497.46 272.19 4 Y
+7 X
+V
+0 Z
+0 X
+N
+496.3 271.52 496.3 270.16 498.27 269.89 499.1 270.65 499.04 272.04 5 L
+7 X
+V
+2 Z
+0 X
+N
+478.82 272.49 478.82 271.51 494.1 270.13 494.03 271.21 4 Y
+7 X
+V
+0 Z
+0 X
+N
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+245.17 304.88 236.54 300.23 296.81 298.05 309.94 310.11 257.48 310.98 5 Y
+7 X
+V
+0 X
+N
+236.54 300.23 236.54 284.97 237.81 283.95 295.55 281.91 296.81 283.66 296.81 298.05 6 Y
+7 X
+V
+0 X
+N
+295.55 281.91 309.94 298.77 309.94 310.11 296.81 298.05 296.81 283.4 5 Y
+7 X
+V
+0 X
+N
+237.81 283.95 237.81 282.06 295.43 280.31 296.81 280.9 309.47 296.88 309.94 298.77 298.08 284.88
+ 295.55 281.91 8 Y
+7 X
+V
+0 X
+N
+238.61 301.34 298.08 299.21 298.08 284.88 3 L
+2 Z
+N
+294.4 299.34 293.13 298.18 293.13 282 3 L
+N
+273.58 300.09 272.08 298.94 272.08 282.74 3 L
+N
+236.54 296.45 296.81 294.12 2 L
+N
+236.54 288.31 296.81 285.98 2 L
+N
+236.54 287.15 296.81 284.82 2 L
+N
+236.54 285.84 296.81 283.51 298.08 284.97 3 L
+N
+238.61 299.06 243.5 298.92 243.5 296.96 238.61 297.14 4 Y
+7 X
+V
+0 Z
+0 X
+N
+298.71 298.16 298.71 292.81 2 L
+7 X
+V
+2 Z
+0 X
+N
+299.37 298.82 299.37 293.54 2 L
+7 X
+V
+0 X
+N
+300.03 299.47 300.03 294.26 2 L
+7 X
+V
+0 X
+N
+300.62 300.05 300.62 294.9 2 L
+7 X
+V
+0 X
+N
+301.14 300.56 301.14 295.46 2 L
+7 X
+V
+0 X
+N
+301.72 301.15 301.72 296.14 2 L
+7 X
+V
+0 X
+N
+302.26 301.64 302.26 296.68 2 L
+7 X
+V
+0 X
+N
+302.8 302.22 302.8 297.31 2 L
+7 X
+V
+0 X
+N
+303.41 302.76 303.41 297.9 2 L
+7 X
+V
+0 X
+N
+303.92 303.28 303.92 298.47 2 L
+7 X
+V
+0 X
+N
+304.44 303.83 304.44 299.06 2 L
+7 X
+V
+0 X
+N
+304.98 304.37 304.98 299.65 2 L
+7 X
+V
+0 X
+N
+305.57 304.95 305.57 300.28 2 L
+7 X
+V
+0 X
+N
+306.1 305.5 306.1 300.88 2 L
+7 X
+V
+0 X
+N
+306.64 306 306.64 301.42 2 L
+7 X
+V
+0 X
+N
+307.11 306.47 307.11 301.97 2 L
+7 X
+V
+0 X
+N
+307.57 306.93 307.57 302.48 2 L
+7 X
+V
+0 X
+N
+308.04 307.38 308.04 303 2 L
+7 X
+V
+0 X
+N
+308.45 307.77 308.45 303.42 2 L
+7 X
+V
+0 X
+N
+308.94 308.28 308.94 303.97 2 L
+7 X
+V
+0 X
+N
+309.41 308.72 309.41 304.49 2 L
+7 X
+V
+0 X
+N
+298.71 292.35 298.71 287 2 L
+7 X
+V
+0 X
+N
+299.37 293.01 299.37 287.72 2 L
+7 X
+V
+0 X
+N
+300.03 293.66 300.03 288.44 2 L
+7 X
+V
+0 X
+N
+300.62 294.24 300.62 289.08 2 L
+7 X
+V
+0 X
+N
+301.14 294.75 301.14 289.65 2 L
+7 X
+V
+0 X
+N
+301.72 295.34 301.72 290.33 2 L
+7 X
+V
+0 X
+N
+302.26 295.84 302.26 290.87 2 L
+7 X
+V
+0 X
+N
+302.8 296.41 302.8 291.5 2 L
+7 X
+V
+0 X
+N
+303.41 296.95 303.41 292.09 2 L
+7 X
+V
+0 X
+N
+303.92 297.48 303.92 292.66 2 L
+7 X
+V
+0 X
+N
+304.44 298.03 304.44 293.25 2 L
+7 X
+V
+0 X
+N
+304.98 298.56 304.98 293.84 2 L
+7 X
+V
+0 X
+N
+305.57 299.14 305.57 294.47 2 L
+7 X
+V
+0 X
+N
+306.1 299.7 306.1 295.07 2 L
+7 X
+V
+0 X
+N
+306.64 300.2 306.64 295.62 2 L
+7 X
+V
+0 X
+N
+307.11 300.67 307.11 296.16 2 L
+7 X
+V
+0 X
+N
+307.57 301.13 307.57 296.67 2 L
+7 X
+V
+0 X
+N
+308.04 301.58 308.04 297.19 2 L
+7 X
+V
+0 X
+N
+308.45 301.96 308.45 297.62 2 L
+7 X
+V
+0 X
+N
+308.94 302.47 308.94 298.17 2 L
+7 X
+V
+0 X
+N
+309.41 302.92 309.41 298.68 2 L
+7 X
+V
+0 X
+N
+239.53 296.09 241.49 296.09 2 L
+7 X
+V
+0.5 H
+0 X
+N
+247.95 305.7 259.66 311.5 295.25 310.53 285.39 303.49 4 Y
+6 X
+V
+0.01 H
+0 Z
+0 X
+N
+247.95 305.7 285.39 303.49 285.39 299.63 247.95 301.84 4 Y
+7 X
+V
+0 X
+N
+285.39 303.49 295.25 310.53 295.25 307.22 285.39 299.63 4 Y
+7 X
+V
+0 X
+N
+7 X
+90 450 14.24 3.06 271.38 308.03 G
+0 X
+90 450 14.24 3.06 271.38 308.03 A
+260.06 309.65 260.67 308.66 262.1 308.01 278.98 307.12 278.05 309.02 5 Y
+7 X
+V
+0 X
+N
+253.28 311.53 253.28 307.91 257.25 307.52 257.25 311.27 4 Y
+7 X
+V
+0.25 H
+0 X
+N
+257.25 307.52 262.69 310.91 257.25 311.27 3 Y
+3 X
+V
+0 X
+N
+278.05 310.19 278.05 306.58 282.03 306.19 282.03 309.93 4 Y
+7 X
+V
+0 X
+N
+282.03 306.19 287.46 309.57 282.03 309.93 3 Y
+3 X
+V
+0 X
+N
+286.37 359.63 285.02 359.99 246.93 357.94 245.6 357.94 243.97 356.24 243.46 354.91 243.46 314.21
+ 244.31 312.11 245.31 311.9 284.71 310.06 286.37 310.18 286.68 311.64 286.57 309.47 285.85 308.5 286.43 308.66
+ 286.91 309.03 287.35 309.71 287.69 310.69 287.76 312.14 287.76 355.88 287.45 358.31 21 Y
+7 X
+V
+0 X
+N
+244.07 356 283.58 357.82 284.32 357.3 284.63 356.4 284.7 354.79 284.7 312.87 283.88 311.78
+ 244.38 313.97 243.46 314.21 243.46 354.91 10 Y
+0.01 H
+N
+247.54 352.72 281.12 353.81 282.04 352.36 282.04 317.12 281.43 315.91 246.62 317.49 246.11 318.7
+ 246.11 351.87 8 Y
+5 X
+V
+0 X
+N
+246.82 350.41 246.82 318.34 281.23 317 281.23 351.26 4 Y
+3 X
+V
+0 X
+N
+278.47 349.8 250.4 348.95 249.48 348.1 248.66 346.28 248.66 323.08 248.97 321.5 249.99 320.53
+ 278.37 319.07 279.8 320.65 279.8 348.47 10 Y
+7 X
+V
+0 X
+N
+285.85 308.5 286.57 309.47 286.68 311.64 286.37 310.18 247.27 311.81 247.74 310.44 248.9 309.8 7 Y
+7 X
+V
+0 X
+N
+284.19 358.07 285.51 359.28 2 L
+7 X
+V
+0 X
+N
+287.45 358.31 286.37 359.63 294.19 355.58 294.19 314.82 286.91 309.03 287.35 309.71 287.69 310.69
+ 287.76 312.14 287.76 355.88 9 Y
+7 X
+V
+0 X
+N
+294.19 345.07 300.12 341.73 300.12 320.4 294.19 315.61 4 Y
+7 X
+V
+0 X
+N
+287.76 314.9 294.19 318.79 2 L
+7 X
+V
+0 X
+N
+294.19 319.76 300.12 323.16 2 L
+7 X
+V
+0 X
+N
+294.19 341.14 300.12 339.28 2 L
+7 X
+V
+0 X
+N
+294.19 339.92 300.12 338.3 2 L
+7 X
+V
+0 X
+N
+294.19 338.63 300.12 337.25 2 L
+7 X
+V
+0 X
+N
+294.19 337.33 300.12 336.2 2 L
+7 X
+V
+0 X
+N
+294.19 336.04 300.12 335.23 2 L
+7 X
+V
+0 X
+N
+294.19 334.58 300.12 334.26 2 L
+7 X
+V
+0 X
+N
+294.19 333.28 300.12 333.28 2 L
+7 X
+V
+0 X
+N
+294.19 331.91 300.12 332.23 2 L
+7 X
+V
+0 X
+N
+294.19 330.53 300.12 331.18 2 L
+7 X
+V
+0 X
+N
+294.19 328.99 300.12 330.12 2 L
+7 X
+V
+0 X
+N
+294.19 327.45 300.12 329.23 2 L
+7 X
+V
+0 X
+N
+293.07 327.09 293.07 320.16 290.31 318.58 290.31 326.24 4 Y
+N
+290.31 318.58 293.07 320.16 293.07 327.09 292.15 326.8 292.15 320.81 290.31 319.72 6 Y
+5 X
+V
+0 X
+N
+3 X
+90 450 0.43 0.83 291.18 324.76 G
+0 X
+90 450 0.43 0.83 291.18 324.76 A
+291.18 325.59 292.27 325.59 292.27 323.93 291.18 323.93 4 L
+3 X
+V
+0 X
+N
+7 X
+90 450 0.43 0.83 292.27 324.76 G
+0 X
+90 450 0.43 0.83 292.27 324.76 A
+3 X
+90 450 0.43 0.83 291.18 321.96 G
+0 X
+90 450 0.43 0.83 291.18 321.96 A
+291.18 322.79 292.27 322.79 292.27 321.13 291.18 321.13 4 L
+3 X
+V
+0 X
+N
+7 X
+90 450 0.43 0.83 292.27 321.96 G
+0 X
+90 450 0.43 0.83 292.27 321.96 A
+279.59 353.25 280.38 353.24 280.38 351.87 279.59 351.9 4 Y
+3 X
+V
+0 X
+N
+279.83 353.07 280.13 353.06 280.13 352.07 279.83 352.09 4 Y
+V
+N
+250.4 348.95 246.82 350.41 246.82 318.34 249.99 320.53 248.97 321.5 248.66 323.08 248.66 346.28
+ 249.48 348.1 8 Y
+4 X
+V
+0 X
+N
+232.08 269.09 231.36 269.65 231.36 268.03 231.8 267.15 280.17 262.44 281.11 262.73 282.38 265.09
+ 286.28 270.97 288.02 273.11 288.02 275.09 286.01 272.74 281.58 266.23 280.83 264.59 13 Y
+7 X
+V
+0.2 H
+0 X
+N
+244.79 277.53 288.02 275.09 286.01 272.74 281.58 266.23 280.83 264.59 232.08 269.09 231.36 269.65
+ 231.93 270.37 241.1 276.05 9 Y
+7 X
+V
+0 X
+N
+273.57 272.23 275.25 272.05 276.14 272.76 274.67 272.84 4 Y
+7 X
+V
+0.25 H
+0 X
+N
+273.57 272.23 273.57 270.85 275.42 270.59 276.17 271.36 276.14 272.76 5 L
+7 X
+V
+2 Z
+0 X
+N
+275.72 272.14 277.39 271.94 278.26 272.65 276.79 272.75 4 Y
+7 X
+V
+0 Z
+0 X
+N
+275.77 272.14 275.77 270.76 277.61 270.49 278.36 271.26 278.33 272.65 5 L
+7 X
+V
+2 Z
+0 X
+N
+277.74 271.98 279.4 271.76 280.29 272.51 278.82 272.59 4 Y
+7 X
+V
+0 Z
+0 X
+N
+277.74 271.98 277.74 270.6 279.57 270.34 280.32 271.1 280.29 272.51 5 L
+7 X
+V
+2 Z
+0 X
+N
+279.73 271.86 281.41 271.65 282.3 272.4 280.81 272.48 4 Y
+7 X
+V
+0 Z
+0 X
+N
+279.73 271.86 279.73 270.49 281.58 270.22 282.33 270.98 282.3 272.4 5 L
+7 X
+V
+2 Z
+0 X
+N
+272.05 270.77 273.71 270.55 274.6 271.27 273.13 271.4 4 Y
+7 X
+V
+0 Z
+0 X
+N
+272.05 270.77 272.05 269.38 273.88 269.13 274.63 269.89 274.6 271.27 5 L
+7 X
+V
+2 Z
+0 X
+N
+274.19 270.69 275.86 270.47 276.75 271.19 275.27 271.3 4 Y
+7 X
+V
+0 Z
+0 X
+N
+274.19 270.69 274.19 269.28 276.03 269.01 276.79 269.81 276.75 271.19 5 L
+7 X
+V
+2 Z
+0 X
+N
+276.39 270.55 278.07 270.37 278.95 271.09 277.49 271.19 4 Y
+7 X
+V
+0 Z
+0 X
+N
+276.39 270.55 276.39 269.18 278.24 268.93 278.99 269.71 278.96 271.09 5 L
+7 X
+V
+2 Z
+0 X
+N
+278.53 270.47 280.2 270.27 281.09 270.99 279.62 271.09 4 Y
+7 X
+V
+0 Z
+0 X
+N
+278.53 270.47 278.53 269.09 280.37 268.83 281.12 269.61 281.09 270.99 5 L
+7 X
+V
+2 Z
+0 X
+N
+270.77 269.02 272.44 268.8 273.31 269.51 271.84 269.63 4 Y
+7 X
+V
+0 Z
+0 X
+N
+270.77 269.02 270.77 267.62 272.59 267.37 273.36 268.14 273.3 269.51 5 L
+7 X
+V
+2 Z
+0 X
+N
+273.03 268.96 274.71 268.76 275.58 269.48 274.11 269.59 4 Y
+7 X
+V
+0 Z
+0 X
+N
+272.98 268.91 272.98 267.51 274.8 267.24 275.55 268.03 275.52 269.42 5 L
+7 X
+V
+2 Z
+0 X
+N
+275.42 268.79 277.09 268.6 277.96 269.32 276.49 269.4 4 Y
+7 X
+V
+0 Z
+0 X
+N
+275.54 268.79 275.54 267.41 277.36 267.15 278.12 267.94 278.08 269.32 5 L
+7 X
+V
+2 Z
+0 X
+N
+277.66 268.69 279.34 268.51 280.21 269.22 278.74 269.32 4 Y
+7 X
+V
+0 Z
+0 X
+N
+277.66 268.69 277.66 267.31 279.49 267.06 280.24 267.84 280.21 269.22 5 L
+7 X
+V
+2 Z
+0 X
+N
+275.58 274.83 277.26 274.65 278.15 275.36 276.68 275.45 4 Y
+3 X
+V
+0 Z
+0 X
+N
+275.58 274.83 275.58 273.45 277.43 273.19 278.18 273.97 278.15 275.36 5 L
+3 X
+V
+2 Z
+0 X
+N
+277.73 274.74 279.4 274.54 280.27 275.25 278.8 275.35 4 Y
+3 X
+V
+0 Z
+0 X
+N
+277.78 274.74 277.78 273.36 279.62 273.1 280.38 273.86 280.34 275.25 5 L
+3 X
+V
+2 Z
+0 X
+N
+279.75 274.58 281.41 274.37 282.3 275.11 280.83 275.2 4 Y
+3 X
+V
+0 Z
+0 X
+N
+279.75 274.58 279.75 273.21 281.58 272.94 282.33 273.7 282.3 275.11 5 L
+3 X
+V
+2 Z
+0 X
+N
+281.74 274.47 283.42 274.25 284.3 275 282.82 275.08 4 Y
+3 X
+V
+0 Z
+0 X
+N
+281.74 274.47 281.74 273.09 283.59 272.82 284.34 273.59 284.3 275 5 L
+3 X
+V
+2 Z
+0 X
+N
+257.39 275.85 259.06 275.67 259.95 276.38 258.48 276.46 4 Y
+3 X
+V
+0 Z
+0 X
+N
+257.39 275.85 257.39 274.47 259.23 274.21 259.98 274.99 259.95 276.38 5 L
+3 X
+V
+2 Z
+0 X
+N
+259.53 275.76 261.2 275.56 262.08 276.27 260.61 276.37 4 Y
+3 X
+V
+0 Z
+0 X
+N
+259.58 275.76 259.58 274.38 261.43 274.12 262.18 274.88 262.14 276.27 5 L
+3 X
+V
+2 Z
+0 X
+N
+261.55 275.6 263.21 275.39 264.1 276.13 262.63 276.22 4 Y
+3 X
+V
+0 Z
+0 X
+N
+261.55 275.6 261.55 274.22 263.38 273.96 264.13 274.72 264.1 276.13 5 L
+3 X
+V
+2 Z
+0 X
+N
+263.55 275.49 265.22 275.27 266.11 276.02 264.62 276.1 4 Y
+3 X
+V
+0 Z
+0 X
+N
+263.55 275.49 263.55 274.11 265.39 273.84 266.14 274.61 266.11 276.02 5 L
+3 X
+V
+2 Z
+0 X
+N
+238.68 274.55 240.36 274.37 241.24 275.09 239.77 275.17 4 Y
+7 X
+V
+0 Z
+0 X
+N
+238.68 274.55 238.68 273.18 240.53 272.91 241.28 273.69 241.24 275.09 5 L
+7 X
+V
+2 Z
+0 X
+N
+240.82 274.46 242.5 274.26 243.37 274.98 241.9 275.08 4 Y
+7 X
+V
+0 Z
+0 X
+N
+240.88 274.46 240.88 273.09 242.72 272.82 243.47 273.58 243.44 274.98 5 L
+7 X
+V
+2 Z
+0 X
+N
+242.85 274.31 244.51 274.09 245.4 274.84 243.93 274.92 4 Y
+7 X
+V
+0 Z
+0 X
+N
+242.85 274.31 242.85 272.93 244.68 272.66 245.43 273.43 245.4 274.84 5 L
+7 X
+V
+2 Z
+0 X
+N
+244.84 274.19 246.51 273.97 247.4 274.72 245.92 274.8 4 Y
+7 X
+V
+0 Z
+0 X
+N
+244.84 274.19 244.84 272.81 246.69 272.55 247.44 273.31 247.4 274.72 5 L
+7 X
+V
+2 Z
+0 X
+N
+236.28 273.17 237.94 272.95 238.83 273.67 237.36 273.8 4 Y
+7 X
+V
+0 Z
+0 X
+N
+236.28 273.17 236.28 271.78 238.11 271.53 238.86 272.29 238.83 273.67 5 L
+7 X
+V
+2 Z
+0 X
+N
+238.42 273.09 240.09 272.87 240.98 273.59 239.49 273.7 4 Y
+7 X
+V
+0 Z
+0 X
+N
+238.42 273.09 238.42 271.68 240.26 271.41 241.01 272.21 240.98 273.59 5 L
+7 X
+V
+2 Z
+0 X
+N
+240.62 272.95 242.29 272.77 243.18 273.48 241.71 273.59 4 Y
+7 X
+V
+0 Z
+0 X
+N
+240.62 272.95 240.62 271.58 242.47 271.33 243.22 272.11 243.18 273.48 5 L
+7 X
+V
+2 Z
+0 X
+N
+242.76 272.87 244.43 272.67 245.32 273.39 243.85 273.48 4 Y
+7 X
+V
+0 Z
+0 X
+N
+242.76 272.87 242.76 271.49 244.6 271.23 245.35 272.01 245.32 273.39 5 L
+7 X
+V
+2 Z
+0 X
+N
+234.17 271.93 235.84 271.71 236.71 272.43 235.24 272.54 4 Y
+7 X
+V
+0 Z
+0 X
+N
+234.18 271.93 234.18 270.54 235.99 270.29 236.76 271.05 236.71 272.43 5 L
+7 X
+V
+2 Z
+0 X
+N
+236.44 271.88 238.11 271.68 238.98 272.39 237.51 272.51 4 Y
+7 X
+V
+0 Z
+0 X
+N
+236.38 271.82 236.38 270.42 238.21 270.16 238.96 270.94 238.92 272.33 5 L
+7 X
+V
+2 Z
+0 X
+N
+238.82 271.7 240.49 271.52 241.37 272.23 239.9 272.32 4 Y
+7 X
+V
+0 Z
+0 X
+N
+238.94 271.7 238.94 270.32 240.77 270.06 241.52 270.85 241.49 272.23 5 L
+7 X
+V
+2 Z
+0 X
+N
+241.06 271.6 242.74 271.42 243.61 272.13 242.14 272.23 4 Y
+7 X
+V
+0 Z
+0 X
+N
+241.06 271.6 241.06 270.22 242.89 269.98 243.64 270.76 243.61 272.13 5 L
+7 X
+V
+2 Z
+0 X
+N
+265.75 275.34 267.42 275.15 268.31 275.87 266.84 275.95 4 Y
+3 X
+V
+0 Z
+0 X
+N
+265.75 275.34 265.75 273.96 267.6 273.69 268.35 274.47 268.31 275.87 5 L
+3 X
+V
+2 Z
+0 X
+N
+267.89 275.24 269.57 275.04 270.44 275.76 268.97 275.86 4 Y
+3 X
+V
+0 Z
+0 X
+N
+267.95 275.24 267.95 273.87 269.79 273.6 270.54 274.36 270.51 275.76 5 L
+3 X
+V
+2 Z
+0 X
+N
+269.92 275.09 271.58 274.87 272.46 275.62 270.99 275.7 4 Y
+3 X
+V
+0 Z
+0 X
+N
+269.92 275.09 269.92 273.71 271.75 273.45 272.5 274.21 272.46 275.62 5 L
+3 X
+V
+2 Z
+0 X
+N
+271.91 274.97 273.58 274.76 274.47 275.5 272.99 275.59 4 Y
+3 X
+V
+0 Z
+0 X
+N
+271.91 274.97 271.91 273.59 273.76 273.33 274.51 274.09 274.47 275.5 5 L
+3 X
+V
+2 Z
+0 X
+N
+250.61 274.6 252.41 274.39 253.36 275.13 251.76 275.23 4 Y
+7 X
+V
+0 Z
+0 X
+N
+250.61 274.6 250.61 273.24 252.59 272.98 253.4 273.73 253.36 275.13 5 L
+7 X
+V
+2 Z
+0 X
+N
+252.96 274.49 254.76 274.28 255.68 275.02 254.1 275.1 4 Y
+7 X
+V
+0 Z
+0 X
+N
+252.96 274.49 252.96 273.13 254.93 272.86 255.73 273.62 255.68 275.02 5 L
+7 X
+V
+2 Z
+0 X
+N
+255 274.34 256.8 274.13 257.73 274.84 256.16 274.95 4 Y
+7 X
+V
+0 Z
+0 X
+N
+255 274.34 255 272.95 256.96 272.72 257.77 273.47 257.73 274.84 5 L
+7 X
+V
+2 Z
+0 X
+N
+257.13 274.24 258.93 274.03 259.87 274.74 258.27 274.85 4 Y
+7 X
+V
+0 Z
+0 X
+N
+257.13 274.24 257.13 272.86 259.1 272.6 259.9 273.37 259.87 274.74 5 L
+7 X
+V
+2 Z
+0 X
+N
+259.35 274.13 261.12 273.95 262.07 274.66 260.49 274.74 4 Y
+7 X
+V
+0 Z
+0 X
+N
+259.35 274.13 259.35 272.77 261.3 272.5 262.11 273.28 262.07 274.66 5 L
+7 X
+V
+2 Z
+0 X
+N
+261.7 273.98 263.5 273.78 264.44 274.49 262.86 274.59 4 Y
+7 X
+V
+0 Z
+0 X
+N
+261.7 273.98 261.7 272.62 263.67 272.36 264.5 273.13 264.44 274.49 5 L
+7 X
+V
+2 Z
+0 X
+N
+264 273.82 265.8 273.64 266.74 274.34 265.16 274.44 4 Y
+7 X
+V
+0 Z
+0 X
+N
+264 273.82 264 272.45 265.96 272.21 266.79 272.95 266.74 274.34 5 L
+7 X
+V
+2 Z
+0 X
+N
+266.06 273.73 267.84 273.52 268.78 274.24 267.2 274.34 4 Y
+7 X
+V
+0 Z
+0 X
+N
+266.06 273.73 266.06 272.37 268.01 272.11 268.83 272.86 268.78 274.24 5 L
+7 X
+V
+2 Z
+0 X
+N
+268.24 273.62 270.04 273.41 271 274.13 269.42 274.23 4 Y
+7 X
+V
+0 Z
+0 X
+N
+268.24 273.62 268.24 272.24 270.23 271.99 271.04 272.75 271 274.13 5 L
+7 X
+V
+2 Z
+0 X
+N
+270.47 273.44 272.27 273.23 273.2 273.95 271.61 274.05 4 Y
+7 X
+V
+0 Z
+0 X
+N
+270.47 273.37 270.47 272.01 272.43 271.75 273.24 272.5 273.2 273.9 5 L
+7 X
+V
+2 Z
+0 X
+N
+248.2 273.47 249.98 273.28 250.92 273.98 249.34 274.08 4 Y
+7 X
+V
+0 Z
+0 X
+N
+248.2 273.47 248.2 272.11 250.15 271.85 250.98 272.62 250.92 273.98 5 L
+7 X
+V
+2 Z
+0 X
+N
+250.83 273.26 252.61 273.06 253.57 273.77 251.99 273.87 4 Y
+7 X
+V
+0 Z
+0 X
+N
+250.83 273.26 250.83 271.9 252.79 271.63 253.6 272.41 253.57 273.77 5 L
+7 X
+V
+2 Z
+0 X
+N
+253.2 273.16 255 272.95 255.93 273.69 254.35 273.77 4 Y
+7 X
+V
+0 Z
+0 X
+N
+253.2 273.16 253.2 271.8 255.16 271.53 255.97 272.29 255.93 273.69 5 L
+7 X
+V
+2 Z
+0 X
+N
+255.4 273.06 257.2 272.86 258.14 273.59 256.56 273.69 4 Y
+7 X
+V
+0 Z
+0 X
+N
+255.4 273.06 255.4 271.7 257.39 271.45 258.2 272.19 258.14 273.59 5 L
+7 X
+V
+2 Z
+0 X
+N
+257.77 272.98 259.57 272.77 260.51 273.49 258.93 273.59 4 Y
+7 X
+V
+0 Z
+0 X
+N
+257.77 272.98 257.77 271.58 259.74 271.35 260.57 272.11 260.51 273.49 5 L
+7 X
+V
+2 Z
+0 X
+N
+259.99 272.88 261.78 272.67 262.73 273.37 261.15 273.49 4 Y
+7 X
+V
+0 Z
+0 X
+N
+259.99 272.88 259.99 271.49 261.96 271.26 262.77 272.01 262.73 273.37 5 L
+7 X
+V
+2 Z
+0 X
+N
+262.35 272.78 264.15 272.57 265.1 273.28 263.52 273.41 4 Y
+7 X
+V
+0 Z
+0 X
+N
+262.35 272.78 262.35 271.4 264.33 271.14 265.14 271.91 265.1 273.28 5 L
+7 X
+V
+2 Z
+0 X
+N
+264.73 272.67 266.54 272.49 267.47 273.19 265.89 273.28 4 Y
+7 X
+V
+0 Z
+0 X
+N
+264.73 272.67 264.73 271.3 266.7 271.04 267.51 271.83 267.47 273.19 5 L
+7 X
+V
+2 Z
+0 X
+N
+267.01 272.57 268.83 272.39 269.77 273.09 268.19 273.19 4 Y
+7 X
+V
+0 Z
+0 X
+N
+267.01 272.57 267.01 271.21 269 270.94 269.8 271.73 269.77 273.09 5 L
+7 X
+V
+2 Z
+0 X
+N
+269.09 272.27 270.85 272.06 271.81 272.78 270.23 272.88 4 Y
+7 X
+V
+0 Z
+0 X
+N
+269.09 272.27 269.09 270.91 271.04 270.65 271.84 271.4 271.81 272.78 5 L
+7 X
+V
+2 Z
+0 X
+N
+245.96 272.37 247.76 272.16 248.7 272.86 247.12 272.98 4 Y
+7 X
+V
+0 Z
+0 X
+N
+245.96 272.37 245.96 270.99 247.93 270.75 248.73 271.5 248.7 272.86 5 L
+7 X
+V
+2 Z
+0 X
+N
+248.53 272.11 250.33 271.9 251.27 272.6 249.69 272.72 4 Y
+7 X
+V
+0 Z
+0 X
+N
+248.53 272.11 248.53 270.71 250.5 270.45 251.31 271.24 251.27 272.6 5 L
+7 X
+V
+2 Z
+0 X
+N
+250.99 271.9 252.79 271.7 253.73 272.41 252.13 272.5 4 Y
+7 X
+V
+0 Z
+0 X
+N
+250.99 271.9 250.99 270.53 252.96 270.27 253.77 271.04 253.73 272.41 5 L
+7 X
+V
+2 Z
+0 X
+N
+253.03 271.8 254.83 271.62 255.79 272.32 254.19 272.41 4 Y
+7 X
+V
+0 Z
+0 X
+N
+253.03 271.8 253.03 270.43 255.02 270.17 255.82 270.94 255.79 272.32 5 L
+7 X
+V
+2 Z
+0 X
+N
+255.26 271.7 257.06 271.49 257.97 272.22 256.39 272.32 4 Y
+7 X
+V
+0 Z
+0 X
+N
+255.26 271.7 255.26 270.34 257.2 270.07 258.01 270.83 257.97 272.22 5 L
+7 X
+V
+2 Z
+0 X
+N
+257.28 271.62 259.1 271.4 260.03 272.13 258.45 272.22 4 Y
+7 X
+V
+0 Z
+0 X
+N
+257.28 271.62 257.28 270.24 259.26 269.99 260.07 270.75 260.03 272.13 5 L
+7 X
+V
+2 Z
+0 X
+N
+259.57 271.42 261.37 271.21 262.31 271.91 260.73 272.03 4 Y
+7 X
+V
+0 Z
+0 X
+N
+259.57 271.42 259.57 270.04 261.54 269.79 262.35 270.55 262.31 271.91 5 L
+7 X
+V
+2 Z
+0 X
+N
+261.87 271.32 263.67 271.12 264.61 271.83 263.03 271.95 4 Y
+7 X
+V
+0 Z
+0 X
+N
+261.87 271.32 261.87 269.94 263.83 269.68 264.64 270.45 264.61 271.83 5 L
+7 X
+V
+2 Z
+0 X
+N
+264.4 271.21 266.2 271.03 267.14 271.73 265.56 271.83 4 Y
+7 X
+V
+0 Z
+0 X
+N
+264.4 271.21 264.4 269.84 266.37 269.58 267.18 270.37 267.14 271.73 5 L
+7 X
+V
+2 Z
+0 X
+N
+267.01 270.99 268.83 270.81 269.77 271.52 268.19 271.62 4 Y
+7 X
+V
+0 Z
+0 X
+N
+267.01 270.99 267.01 269.63 269 269.37 269.8 270.16 269.77 271.52 5 L
+7 X
+V
+2 Z
+0 X
+N
+243.83 271.21 245.63 271.03 246.59 271.73 245.01 271.83 4 Y
+7 X
+V
+0 Z
+0 X
+N
+243.83 271.21 243.83 269.84 245.81 269.58 246.62 270.37 246.59 271.73 5 L
+7 X
+V
+2 Z
+0 X
+N
+246.05 270.96 247.83 270.78 248.79 271.49 247.21 271.57 4 Y
+7 X
+V
+0 Z
+0 X
+N
+246.05 270.96 246.05 269.6 248.02 269.34 248.83 270.09 248.79 271.49 5 L
+7 X
+V
+2 Z
+0 X
+N
+249.62 270.94 264.64 269.79 263.34 269.2 247.82 270.48 4 Y
+7 X
+V
+0 Z
+0 X
+N
+263.03 269.79 264.81 269.59 265.76 270.3 264.17 270.4 4 Y
+7 X
+V
+0 X
+N
+263.03 269.67 263.03 268.29 264.99 268.05 265.8 268.82 265.76 270.18 5 L
+7 X
+V
+2 Z
+0 X
+N
+265.3 269.58 267.1 269.38 268.04 270.09 266.46 270.18 4 Y
+7 X
+V
+0 Z
+0 X
+N
+265.3 269.51 265.3 268.15 267.27 267.88 268.1 268.64 268.04 270.04 5 L
+7 X
+V
+2 Z
+0 X
+N
+247.82 270.48 247.82 269.5 263.1 268.12 263.03 269.2 4 Y
+7 X
+V
+0 Z
+0 X
+N
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+155.17 305.88 146.54 301.23 206.81 299.05 219.94 311.11 167.48 311.99 5 Y
+7 X
+V
+0 X
+N
+146.54 301.23 146.54 285.97 147.81 284.95 205.55 282.92 206.81 284.66 206.81 299.05 6 Y
+7 X
+V
+0 X
+N
+205.55 282.92 219.94 299.78 219.94 311.11 206.81 299.05 206.81 284.4 5 Y
+7 X
+V
+0 X
+N
+147.81 284.95 147.81 283.06 205.43 281.32 206.81 281.9 219.47 297.89 219.94 299.78 208.08 285.89
+ 205.55 282.92 8 Y
+7 X
+V
+0 X
+N
+148.61 302.35 208.08 300.21 208.08 285.89 3 L
+2 Z
+N
+204.4 300.35 203.13 299.18 203.13 283 3 L
+N
+183.58 301.09 182.08 299.95 182.08 283.74 3 L
+N
+146.54 297.45 206.81 295.13 2 L
+N
+146.54 289.31 206.81 286.99 2 L
+N
+146.54 288.15 206.81 285.83 2 L
+N
+146.54 286.84 206.81 284.52 208.08 285.97 3 L
+N
+148.61 300.07 153.5 299.92 153.5 297.96 148.61 298.14 4 Y
+7 X
+V
+0 Z
+0 X
+N
+208.71 299.17 208.71 293.82 2 L
+7 X
+V
+2 Z
+0 X
+N
+209.37 299.82 209.37 294.54 2 L
+7 X
+V
+0 X
+N
+210.03 300.47 210.03 295.26 2 L
+7 X
+V
+0 X
+N
+210.62 301.06 210.62 295.9 2 L
+7 X
+V
+0 X
+N
+211.13 301.57 211.13 296.46 2 L
+7 X
+V
+0 X
+N
+211.72 302.16 211.72 297.14 2 L
+7 X
+V
+0 X
+N
+212.26 302.65 212.26 297.69 2 L
+7 X
+V
+0 X
+N
+212.8 303.22 212.8 298.32 2 L
+7 X
+V
+0 X
+N
+213.41 303.76 213.41 298.9 2 L
+7 X
+V
+0 X
+N
+213.93 304.29 213.93 299.48 2 L
+7 X
+V
+0 X
+N
+214.44 304.84 214.44 300.07 2 L
+7 X
+V
+0 X
+N
+214.98 305.37 214.98 300.65 2 L
+7 X
+V
+0 X
+N
+215.57 305.95 215.57 301.28 2 L
+7 X
+V
+0 X
+N
+216.1 306.51 216.1 301.88 2 L
+7 X
+V
+0 X
+N
+216.64 307.01 216.64 302.43 2 L
+7 X
+V
+0 X
+N
+217.11 307.48 217.11 302.98 2 L
+7 X
+V
+0 X
+N
+217.57 307.94 217.57 303.48 2 L
+7 X
+V
+0 X
+N
+218.04 308.39 218.04 304 2 L
+7 X
+V
+0 X
+N
+218.45 308.77 218.45 304.43 2 L
+7 X
+V
+0 X
+N
+218.94 309.28 218.94 304.98 2 L
+7 X
+V
+0 X
+N
+219.41 309.73 219.41 305.49 2 L
+7 X
+V
+0 X
+N
+208.71 293.36 208.71 288.01 2 L
+7 X
+V
+0 X
+N
+209.37 294.01 209.37 288.73 2 L
+7 X
+V
+0 X
+N
+210.03 294.67 210.03 289.45 2 L
+7 X
+V
+0 X
+N
+210.62 295.25 210.62 290.09 2 L
+7 X
+V
+0 X
+N
+211.13 295.76 211.13 290.65 2 L
+7 X
+V
+0 X
+N
+211.72 296.35 211.72 291.33 2 L
+7 X
+V
+0 X
+N
+212.26 296.84 212.26 291.88 2 L
+7 X
+V
+0 X
+N
+212.8 297.42 212.8 292.51 2 L
+7 X
+V
+0 X
+N
+213.41 297.96 213.41 293.09 2 L
+7 X
+V
+0 X
+N
+213.93 298.48 213.93 293.67 2 L
+7 X
+V
+0 X
+N
+214.44 299.03 214.44 294.26 2 L
+7 X
+V
+0 X
+N
+214.98 299.56 214.98 294.84 2 L
+7 X
+V
+0 X
+N
+215.57 300.15 215.57 295.47 2 L
+7 X
+V
+0 X
+N
+216.1 300.7 216.1 296.07 2 L
+7 X
+V
+0 X
+N
+216.64 301.2 216.64 296.62 2 L
+7 X
+V
+0 X
+N
+217.11 301.67 217.11 297.17 2 L
+7 X
+V
+0 X
+N
+217.57 302.14 217.57 297.68 2 L
+7 X
+V
+0 X
+N
+218.04 302.58 218.04 298.2 2 L
+7 X
+V
+0 X
+N
+218.45 302.97 218.45 298.62 2 L
+7 X
+V
+0 X
+N
+218.94 303.48 218.94 299.17 2 L
+7 X
+V
+0 X
+N
+219.41 303.92 219.41 299.69 2 L
+7 X
+V
+0 X
+N
+149.53 297.09 151.49 297.09 2 L
+7 X
+V
+0.5 H
+0 X
+N
+157.95 306.71 169.66 312.5 205.25 311.54 195.39 304.5 4 Y
+6 X
+V
+0.01 H
+0 Z
+0 X
+N
+157.95 306.71 195.39 304.5 195.39 300.63 157.95 302.84 4 Y
+7 X
+V
+0 X
+N
+195.39 304.5 205.25 311.54 205.25 308.22 195.39 300.63 4 Y
+7 X
+V
+0 X
+N
+7 X
+90 450 14.24 3.06 181.38 309.04 G
+0 X
+90 450 14.24 3.06 181.38 309.04 A
+170.06 310.65 170.67 309.67 172.1 309.02 188.98 308.13 188.05 310.02 5 Y
+7 X
+V
+0 X
+N
+163.28 312.53 163.28 308.92 167.25 308.53 167.25 312.27 4 Y
+7 X
+V
+0.25 H
+0 X
+N
+167.25 308.53 172.69 311.91 167.25 312.27 3 Y
+3 X
+V
+0 X
+N
+188.05 311.2 188.05 307.58 192.03 307.19 192.03 310.93 4 Y
+7 X
+V
+0 X
+N
+192.03 307.19 197.46 310.58 192.03 310.93 3 Y
+3 X
+V
+0 X
+N
+196.37 360.63 195.02 361 156.93 358.95 155.6 358.95 153.97 357.25 153.46 355.91 153.46 315.21
+ 154.31 313.12 155.31 312.9 194.71 311.07 196.37 311.19 196.68 312.64 196.57 310.48 195.85 309.5 196.43 309.67
+ 196.91 310.03 197.35 310.72 197.69 311.69 197.76 313.15 197.76 356.88 197.45 359.31 21 Y
+7 X
+V
+0 X
+N
+154.07 357.01 193.57 358.83 194.32 358.3 194.63 357.41 194.7 355.79 194.7 313.88 193.88 312.78
+ 154.38 314.97 153.46 315.21 153.46 355.91 10 Y
+0.01 H
+N
+157.54 353.73 191.12 354.82 192.04 353.36 192.04 318.13 191.43 316.91 156.62 318.49 156.11 319.71
+ 156.11 352.87 8 Y
+5 X
+V
+0 X
+N
+156.82 351.42 156.82 319.34 191.23 318.01 191.23 352.27 4 Y
+3 X
+V
+0 X
+N
+188.47 350.81 160.4 349.96 159.48 349.11 158.66 347.29 158.66 324.08 158.97 322.5 159.99 321.53
+ 188.37 320.07 189.8 321.65 189.8 349.47 10 Y
+7 X
+V
+0 X
+N
+195.85 309.5 196.57 310.48 196.68 312.64 196.37 311.19 157.27 312.81 157.74 311.45 158.9 310.8 7 Y
+7 X
+V
+0 X
+N
+194.19 359.07 195.51 360.29 2 L
+7 X
+V
+0 X
+N
+197.45 359.31 196.37 360.63 204.19 356.58 204.19 315.82 196.91 310.03 197.35 310.72 197.69 311.69
+ 197.76 313.15 197.76 356.88 9 Y
+7 X
+V
+0 X
+N
+204.19 346.07 210.12 342.73 210.12 321.41 204.19 316.61 4 Y
+7 X
+V
+0 X
+N
+197.76 315.9 204.19 319.79 2 L
+7 X
+V
+0 X
+N
+204.19 320.76 210.12 324.16 2 L
+7 X
+V
+0 X
+N
+204.19 342.14 210.12 340.28 2 L
+7 X
+V
+0 X
+N
+204.19 340.93 210.12 339.31 2 L
+7 X
+V
+0 X
+N
+204.19 339.63 210.12 338.26 2 L
+7 X
+V
+0 X
+N
+204.19 338.34 210.12 337.2 2 L
+7 X
+V
+0 X
+N
+204.19 337.04 210.12 336.23 2 L
+7 X
+V
+0 X
+N
+204.19 335.58 210.12 335.26 2 L
+7 X
+V
+0 X
+N
+204.19 334.29 210.12 334.29 2 L
+7 X
+V
+0 X
+N
+204.19 332.91 210.12 333.23 2 L
+7 X
+V
+0 X
+N
+204.19 331.53 210.12 332.18 2 L
+7 X
+V
+0 X
+N
+204.19 329.99 210.12 331.13 2 L
+7 X
+V
+0 X
+N
+204.19 328.46 210.12 330.24 2 L
+7 X
+V
+0 X
+N
+203.07 328.09 203.07 321.17 200.31 319.59 200.31 327.24 4 Y
+N
+200.31 319.59 203.07 321.17 203.07 328.09 202.15 327.81 202.15 321.81 200.31 320.72 6 Y
+5 X
+V
+0 X
+N
+3 X
+90 450 0.43 0.83 201.18 325.76 G
+0 X
+90 450 0.43 0.83 201.18 325.76 A
+201.18 326.59 202.27 326.59 202.27 324.93 201.18 324.93 4 L
+3 X
+V
+0 X
+N
+7 X
+90 450 0.43 0.83 202.27 325.76 G
+0 X
+90 450 0.43 0.83 202.27 325.76 A
+3 X
+90 450 0.43 0.83 201.18 322.97 G
+0 X
+90 450 0.43 0.83 201.18 322.97 A
+201.18 323.8 202.27 323.8 202.27 322.14 201.18 322.14 4 L
+3 X
+V
+0 X
+N
+7 X
+90 450 0.43 0.83 202.27 322.97 G
+0 X
+90 450 0.43 0.83 202.27 322.97 A
+189.59 354.25 190.38 354.24 190.38 352.88 189.59 352.91 4 Y
+3 X
+V
+0 X
+N
+189.83 354.07 190.13 354.06 190.13 353.08 189.83 353.1 4 Y
+V
+N
+160.4 349.96 156.82 351.42 156.82 319.34 159.99 321.53 158.97 322.5 158.66 324.08 158.66 347.29
+ 159.48 349.11 8 Y
+4 X
+V
+0 X
+N
+142.08 270.1 141.36 270.66 141.36 269.04 141.8 268.15 190.18 263.44 191.11 263.74 192.38 266.09
+ 196.28 271.98 198.02 274.11 198.02 276.09 196.01 273.74 191.59 267.24 190.83 265.59 13 Y
+7 X
+V
+0.2 H
+0 X
+N
+154.79 278.53 198.02 276.09 196.01 273.74 191.59 267.24 190.83 265.59 142.08 270.1 141.36 270.66
+ 141.93 271.38 151.1 277.05 9 Y
+7 X
+V
+0 X
+N
+183.57 273.23 185.25 273.05 186.14 273.76 184.67 273.85 4 Y
+7 X
+V
+0.25 H
+0 X
+N
+183.57 273.23 183.57 271.85 185.42 271.59 186.17 272.37 186.14 273.76 5 L
+7 X
+V
+2 Z
+0 X
+N
+185.72 273.14 187.39 272.94 188.26 273.66 186.79 273.76 4 Y
+7 X
+V
+0 Z
+0 X
+N
+185.77 273.14 185.77 271.77 187.61 271.5 188.37 272.26 188.33 273.66 5 L
+7 X
+V
+2 Z
+0 X
+N
+187.74 272.98 189.4 272.77 190.29 273.52 188.82 273.6 4 Y
+7 X
+V
+0 Z
+0 X
+N
+187.74 272.98 187.74 271.61 189.57 271.34 190.32 272.1 190.29 273.52 5 L
+7 X
+V
+2 Z
+0 X
+N
+189.73 272.87 191.41 272.65 192.29 273.4 190.81 273.48 4 Y
+7 X
+V
+0 Z
+0 X
+N
+189.73 272.87 189.73 271.49 191.58 271.23 192.33 271.99 192.29 273.4 5 L
+7 X
+V
+2 Z
+0 X
+N
+182.05 271.78 183.71 271.56 184.6 272.27 183.13 272.41 4 Y
+7 X
+V
+0 Z
+0 X
+N
+182.05 271.78 182.05 270.38 183.88 270.13 184.63 270.9 184.6 272.27 5 L
+7 X
+V
+2 Z
+0 X
+N
+184.19 271.69 185.86 271.48 186.75 272.19 185.26 272.31 4 Y
+7 X
+V
+0 Z
+0 X
+N
+184.19 271.69 184.19 270.28 186.03 270.02 186.79 270.81 186.75 272.19 5 L
+7 X
+V
+2 Z
+0 X
+N
+186.39 271.56 188.07 271.38 188.96 272.09 187.49 272.19 4 Y
+7 X
+V
+0 Z
+0 X
+N
+186.39 271.56 186.39 270.18 188.24 269.93 188.99 270.71 188.96 272.09 5 L
+7 X
+V
+2 Z
+0 X
+N
+188.53 271.48 190.2 271.28 191.09 271.99 189.62 272.09 4 Y
+7 X
+V
+0 Z
+0 X
+N
+188.53 271.48 188.53 270.1 190.37 269.83 191.12 270.61 191.09 271.99 5 L
+7 X
+V
+2 Z
+0 X
+N
+180.77 270.02 182.44 269.8 183.31 270.52 181.84 270.63 4 Y
+7 X
+V
+0 Z
+0 X
+N
+180.77 270.02 180.77 268.63 182.59 268.38 183.35 269.14 183.3 270.52 5 L
+7 X
+V
+2 Z
+0 X
+N
+183.03 269.97 184.71 269.77 185.58 270.48 184.11 270.6 4 Y
+7 X
+V
+0 Z
+0 X
+N
+182.98 269.91 182.98 268.52 184.8 268.25 185.55 269.03 185.52 270.42 5 L
+7 X
+V
+2 Z
+0 X
+N
+185.42 269.79 187.09 269.61 187.96 270.32 186.49 270.41 4 Y
+7 X
+V
+0 Z
+0 X
+N
+185.54 269.79 185.54 268.41 187.37 268.15 188.12 268.95 188.08 270.32 5 L
+7 X
+V
+2 Z
+0 X
+N
+187.66 269.69 189.34 269.51 190.21 270.22 188.74 270.32 4 Y
+7 X
+V
+0 Z
+0 X
+N
+187.66 269.69 187.66 268.32 189.49 268.07 190.24 268.85 190.21 270.22 5 L
+7 X
+V
+2 Z
+0 X
+N
+185.58 275.84 187.26 275.65 188.15 276.37 186.68 276.45 4 Y
+3 X
+V
+0 Z
+0 X
+N
+185.58 275.84 185.58 274.46 187.43 274.19 188.18 274.97 188.15 276.37 5 L
+3 X
+V
+2 Z
+0 X
+N
+187.73 275.74 189.4 275.54 190.27 276.26 188.8 276.36 4 Y
+3 X
+V
+0 Z
+0 X
+N
+187.78 275.74 187.78 274.37 189.62 274.1 190.38 274.86 190.34 276.26 5 L
+3 X
+V
+2 Z
+0 X
+N
+189.75 275.59 191.41 275.37 192.3 276.12 190.83 276.2 4 Y
+3 X
+V
+0 Z
+0 X
+N
+189.75 275.59 189.75 274.21 191.58 273.94 192.33 274.71 192.3 276.12 5 L
+3 X
+V
+2 Z
+0 X
+N
+191.74 275.47 193.42 275.26 194.3 276 192.82 276.09 4 Y
+3 X
+V
+0 Z
+0 X
+N
+191.74 275.47 191.74 274.09 193.59 273.83 194.34 274.59 194.3 276 5 L
+3 X
+V
+2 Z
+0 X
+N
+167.39 276.85 169.06 276.67 169.95 277.39 168.48 277.47 4 Y
+3 X
+V
+0 Z
+0 X
+N
+167.39 276.85 167.39 275.48 169.23 275.21 169.98 275.99 169.95 277.39 5 L
+3 X
+V
+2 Z
+0 X
+N
+169.53 276.76 171.2 276.57 172.07 277.28 170.61 277.38 4 Y
+3 X
+V
+0 Z
+0 X
+N
+169.58 276.76 169.58 275.39 171.43 275.12 172.18 275.88 172.14 277.28 5 L
+3 X
+V
+2 Z
+0 X
+N
+171.55 276.61 173.21 276.39 174.1 277.14 172.63 277.22 4 Y
+3 X
+V
+0 Z
+0 X
+N
+171.55 276.61 171.55 275.23 173.38 274.96 174.13 275.73 174.1 277.14 5 L
+3 X
+V
+2 Z
+0 X
+N
+173.54 276.49 175.22 276.28 176.11 277.02 174.62 277.1 4 Y
+3 X
+V
+0 Z
+0 X
+N
+173.54 276.49 173.54 275.11 175.39 274.85 176.14 275.61 176.11 277.02 5 L
+3 X
+V
+2 Z
+0 X
+N
+148.68 275.56 150.36 275.38 151.24 276.09 149.77 276.17 4 Y
+7 X
+V
+0 Z
+0 X
+N
+148.68 275.56 148.68 274.18 150.53 273.91 151.28 274.7 151.24 276.09 5 L
+7 X
+V
+2 Z
+0 X
+N
+150.82 275.47 152.5 275.27 153.37 275.98 151.9 276.08 4 Y
+7 X
+V
+0 Z
+0 X
+N
+150.88 275.47 150.88 274.09 152.72 273.83 153.47 274.59 153.44 275.98 5 L
+7 X
+V
+2 Z
+0 X
+N
+152.85 275.31 154.51 275.09 155.4 275.84 153.93 275.92 4 Y
+7 X
+V
+0 Z
+0 X
+N
+152.85 275.31 152.85 273.93 154.68 273.67 155.43 274.43 155.4 275.84 5 L
+7 X
+V
+2 Z
+0 X
+N
+154.84 275.19 156.51 274.98 157.4 275.72 155.92 275.81 4 Y
+7 X
+V
+0 Z
+0 X
+N
+154.84 275.19 154.84 273.82 156.69 273.55 157.44 274.31 157.4 275.72 5 L
+7 X
+V
+2 Z
+0 X
+N
+146.28 274.17 147.94 273.96 148.83 274.67 147.36 274.8 4 Y
+7 X
+V
+0 Z
+0 X
+N
+146.28 274.17 146.28 272.78 148.11 272.53 148.86 273.29 148.83 274.67 5 L
+7 X
+V
+2 Z
+0 X
+N
+148.42 274.09 150.09 273.88 150.98 274.59 149.49 274.71 4 Y
+7 X
+V
+0 Z
+0 X
+N
+148.42 274.09 148.42 272.68 150.26 272.42 151.01 273.21 150.98 274.59 5 L
+7 X
+V
+2 Z
+0 X
+N
+150.62 273.96 152.29 273.78 153.18 274.49 151.71 274.59 4 Y
+7 X
+V
+0 Z
+0 X
+N
+150.62 273.96 150.62 272.58 152.47 272.33 153.22 273.11 153.18 274.49 5 L
+7 X
+V
+2 Z
+0 X
+N
+152.76 273.88 154.43 273.68 155.32 274.39 153.85 274.49 4 Y
+7 X
+V
+0 Z
+0 X
+N
+152.76 273.88 152.76 272.5 154.6 272.23 155.35 273.01 155.32 274.39 5 L
+7 X
+V
+2 Z
+0 X
+N
+144.17 272.93 145.84 272.72 146.71 273.43 145.24 273.55 4 Y
+7 X
+V
+0 Z
+0 X
+N
+144.18 272.93 144.18 271.54 145.99 271.29 146.76 272.05 146.71 273.43 5 L
+7 X
+V
+2 Z
+0 X
+N
+146.44 272.88 148.11 272.68 148.98 273.4 147.51 273.51 4 Y
+7 X
+V
+0 Z
+0 X
+N
+146.38 272.82 146.38 271.43 148.21 271.16 148.96 271.94 148.92 273.34 5 L
+7 X
+V
+2 Z
+0 X
+N
+148.82 272.71 150.49 272.52 151.37 273.24 149.9 273.32 4 Y
+7 X
+V
+0 Z
+0 X
+N
+148.94 272.71 148.94 271.33 150.77 271.06 151.52 271.86 151.49 273.24 5 L
+7 X
+V
+2 Z
+0 X
+N
+151.06 272.61 152.74 272.42 153.61 273.14 152.14 273.24 4 Y
+7 X
+V
+0 Z
+0 X
+N
+151.06 272.61 151.06 271.23 152.89 270.98 153.64 271.76 153.61 273.14 5 L
+7 X
+V
+2 Z
+0 X
+N
+175.75 276.34 177.43 276.16 178.31 276.87 176.84 276.95 4 Y
+3 X
+V
+0 Z
+0 X
+N
+175.75 276.34 175.75 274.96 177.6 274.7 178.35 275.48 178.31 276.87 5 L
+3 X
+V
+2 Z
+0 X
+N
+177.9 276.25 179.57 276.05 180.44 276.76 178.97 276.86 4 Y
+3 X
+V
+0 Z
+0 X
+N
+177.95 276.25 177.95 274.87 179.79 274.61 180.54 275.37 180.51 276.76 5 L
+3 X
+V
+2 Z
+0 X
+N
+179.92 276.09 181.58 275.88 182.46 276.62 180.99 276.71 4 Y
+3 X
+V
+0 Z
+0 X
+N
+179.92 276.09 179.92 274.72 181.75 274.45 182.5 275.21 182.46 276.62 5 L
+3 X
+V
+2 Z
+0 X
+N
+181.91 275.98 183.58 275.76 184.47 276.51 182.99 276.59 4 Y
+3 X
+V
+0 Z
+0 X
+N
+181.91 275.98 181.91 274.6 183.76 274.33 184.51 275.1 184.47 276.51 5 L
+3 X
+V
+2 Z
+0 X
+N
+160.61 275.61 162.41 275.4 163.36 276.14 161.76 276.23 4 Y
+7 X
+V
+0 Z
+0 X
+N
+160.61 275.61 160.61 274.25 162.59 273.98 163.4 274.74 163.36 276.14 5 L
+7 X
+V
+2 Z
+0 X
+N
+162.96 275.49 164.76 275.28 165.68 276.02 164.1 276.1 4 Y
+7 X
+V
+0 Z
+0 X
+N
+162.96 275.49 162.96 274.13 164.93 273.87 165.73 274.62 165.68 276.02 5 L
+7 X
+V
+2 Z
+0 X
+N
+165 275.35 166.8 275.13 167.74 275.84 166.16 275.96 4 Y
+7 X
+V
+0 Z
+0 X
+N
+165 275.35 165 273.95 166.96 273.72 167.77 274.48 167.74 275.84 5 L
+7 X
+V
+2 Z
+0 X
+N
+167.13 275.25 168.93 275.03 169.87 275.74 168.27 275.86 4 Y
+7 X
+V
+0 Z
+0 X
+N
+167.13 275.25 167.13 273.87 169.1 273.61 169.9 274.38 169.87 275.74 5 L
+7 X
+V
+2 Z
+0 X
+N
+169.35 275.13 171.12 274.95 172.07 275.66 170.49 275.74 4 Y
+7 X
+V
+0 Z
+0 X
+N
+169.35 275.13 169.35 273.77 171.3 273.51 172.11 274.28 172.07 275.66 5 L
+7 X
+V
+2 Z
+0 X
+N
+171.7 274.99 173.5 274.79 174.44 275.49 172.86 275.59 4 Y
+7 X
+V
+0 Z
+0 X
+N
+171.7 274.99 171.7 273.62 173.67 273.36 174.5 274.13 174.44 275.49 5 L
+7 X
+V
+2 Z
+0 X
+N
+174 274.82 175.8 274.64 176.74 275.35 175.16 275.45 4 Y
+7 X
+V
+0 Z
+0 X
+N
+174 274.82 174 273.46 175.96 273.21 176.79 273.95 176.74 275.35 5 L
+7 X
+V
+2 Z
+0 X
+N
+176.06 274.74 177.84 274.53 178.78 275.25 177.2 275.35 4 Y
+7 X
+V
+0 Z
+0 X
+N
+176.06 274.74 176.06 273.38 178.01 273.11 178.83 273.87 178.78 275.25 5 L
+7 X
+V
+2 Z
+0 X
+N
+178.24 274.62 180.04 274.41 181 275.13 179.42 275.23 4 Y
+7 X
+V
+0 Z
+0 X
+N
+178.24 274.62 178.24 273.24 180.23 273 181.04 273.76 181 275.13 5 L
+7 X
+V
+2 Z
+0 X
+N
+180.47 274.44 182.27 274.23 183.2 274.95 181.6 275.05 4 Y
+7 X
+V
+0 Z
+0 X
+N
+180.47 274.38 180.47 273.02 182.43 272.75 183.24 273.51 183.2 274.9 5 L
+7 X
+V
+2 Z
+0 X
+N
+158.2 274.48 159.98 274.28 160.92 274.99 159.34 275.08 4 Y
+7 X
+V
+0 Z
+0 X
+N
+158.2 274.48 158.2 273.11 160.15 272.85 160.98 273.62 160.92 274.99 5 L
+7 X
+V
+2 Z
+0 X
+N
+160.83 274.26 162.61 274.07 163.57 274.77 161.99 274.87 4 Y
+7 X
+V
+0 Z
+0 X
+N
+160.83 274.26 160.83 272.9 162.79 272.64 163.6 273.41 163.57 274.77 5 L
+7 X
+V
+2 Z
+0 X
+N
+163.2 274.16 165 273.95 165.93 274.69 164.35 274.77 4 Y
+7 X
+V
+0 Z
+0 X
+N
+163.2 274.16 163.2 272.8 165.16 272.54 165.97 273.29 165.93 274.69 5 L
+7 X
+V
+2 Z
+0 X
+N
+165.4 274.07 167.2 273.87 168.14 274.59 166.56 274.69 4 Y
+7 X
+V
+0 Z
+0 X
+N
+165.4 274.07 165.4 272.7 167.39 272.46 168.2 273.2 168.14 274.59 5 L
+7 X
+V
+2 Z
+0 X
+N
+167.77 273.98 169.57 273.77 170.51 274.49 168.93 274.59 4 Y
+7 X
+V
+0 Z
+0 X
+N
+167.77 273.98 167.77 272.59 169.74 272.36 170.57 273.11 170.51 274.49 5 L
+7 X
+V
+2 Z
+0 X
+N
+169.99 273.89 171.78 273.67 172.73 274.38 171.15 274.49 4 Y
+7 X
+V
+0 Z
+0 X
+N
+169.99 273.89 169.99 272.49 171.96 272.26 172.77 273.02 172.73 274.38 5 L
+7 X
+V
+2 Z
+0 X
+N
+172.35 273.79 174.15 273.57 175.1 274.28 173.52 274.41 4 Y
+7 X
+V
+0 Z
+0 X
+N
+172.35 273.79 172.35 272.41 174.33 272.15 175.14 272.92 175.1 274.28 5 L
+7 X
+V
+2 Z
+0 X
+N
+174.74 273.67 176.54 273.49 177.47 274.2 175.89 274.28 4 Y
+7 X
+V
+0 Z
+0 X
+N
+174.74 273.67 174.74 272.31 176.7 272.05 177.51 272.84 177.47 274.2 5 L
+7 X
+V
+2 Z
+0 X
+N
+177.01 273.57 178.83 273.39 179.77 274.1 178.19 274.2 4 Y
+7 X
+V
+0 Z
+0 X
+N
+177.01 273.57 177.01 272.21 179 271.95 179.8 272.74 179.77 274.1 5 L
+7 X
+V
+2 Z
+0 X
+N
+179.09 273.28 180.85 273.07 181.81 273.79 180.23 273.89 4 Y
+7 X
+V
+0 Z
+0 X
+N
+179.09 273.28 179.09 271.91 181.04 271.65 181.84 272.41 181.81 273.79 5 L
+7 X
+V
+2 Z
+0 X
+N
+155.96 273.38 157.76 273.16 158.7 273.87 157.12 273.98 4 Y
+7 X
+V
+0 Z
+0 X
+N
+155.96 273.38 155.96 272 157.93 271.75 158.73 272.51 158.7 273.87 5 L
+7 X
+V
+2 Z
+0 X
+N
+158.53 273.11 160.33 272.9 161.27 273.61 159.69 273.72 4 Y
+7 X
+V
+0 Z
+0 X
+N
+158.53 273.11 158.53 271.72 160.5 271.46 161.31 272.24 161.27 273.61 5 L
+7 X
+V
+2 Z
+0 X
+N
+160.99 272.9 162.79 272.7 163.73 273.41 162.13 273.51 4 Y
+7 X
+V
+0 Z
+0 X
+N
+160.99 272.9 160.99 271.54 162.96 271.28 163.77 272.05 163.73 273.41 5 L
+7 X
+V
+2 Z
+0 X
+N
+163.03 272.8 164.83 272.62 165.79 273.33 164.19 273.41 4 Y
+7 X
+V
+0 Z
+0 X
+N
+163.03 272.8 163.03 271.44 165.02 271.18 165.82 271.95 165.79 273.33 5 L
+7 X
+V
+2 Z
+0 X
+N
+165.26 272.7 167.06 272.49 167.97 273.23 166.39 273.33 4 Y
+7 X
+V
+0 Z
+0 X
+N
+165.26 272.7 165.26 271.34 167.2 271.08 168.01 271.83 167.97 273.23 5 L
+7 X
+V
+2 Z
+0 X
+N
+167.28 272.62 169.1 272.41 170.03 273.13 168.45 273.23 4 Y
+7 X
+V
+0 Z
+0 X
+N
+167.28 272.62 167.28 271.24 169.26 271 170.07 271.75 170.03 273.13 5 L
+7 X
+V
+2 Z
+0 X
+N
+169.57 272.42 171.37 272.21 172.31 272.92 170.73 273.03 4 Y
+7 X
+V
+0 Z
+0 X
+N
+169.57 272.42 169.57 271.04 171.54 270.8 172.35 271.55 172.31 272.92 5 L
+7 X
+V
+2 Z
+0 X
+N
+171.87 272.33 173.67 272.13 174.61 272.84 173.03 272.95 4 Y
+7 X
+V
+0 Z
+0 X
+N
+171.87 272.33 171.87 270.95 173.83 270.68 174.64 271.46 174.61 272.84 5 L
+7 X
+V
+2 Z
+0 X
+N
+174.4 272.21 176.2 272.03 177.14 272.74 175.56 272.84 4 Y
+7 X
+V
+0 Z
+0 X
+N
+174.4 272.21 174.4 270.85 176.37 270.59 177.18 271.37 177.14 272.74 5 L
+7 X
+V
+2 Z
+0 X
+N
+177.01 272 178.83 271.82 179.77 272.52 178.19 272.62 4 Y
+7 X
+V
+0 Z
+0 X
+N
+177.01 272 177.01 270.63 179 270.37 179.8 271.16 179.77 272.52 5 L
+7 X
+V
+2 Z
+0 X
+N
+153.83 272.21 155.63 272.03 156.59 272.74 155.01 272.84 4 Y
+7 X
+V
+0 Z
+0 X
+N
+153.83 272.21 153.83 270.85 155.81 270.59 156.62 271.37 156.59 272.74 5 L
+7 X
+V
+2 Z
+0 X
+N
+156.05 271.97 157.83 271.78 158.79 272.49 157.21 272.57 4 Y
+7 X
+V
+0 Z
+0 X
+N
+156.05 271.97 156.05 270.6 158.02 270.34 158.83 271.09 158.79 272.49 5 L
+7 X
+V
+2 Z
+0 X
+N
+159.62 271.95 174.64 270.8 173.34 270.21 157.82 271.49 4 Y
+7 X
+V
+0 Z
+0 X
+N
+173.03 270.79 174.81 270.6 175.76 271.3 174.16 271.4 4 Y
+7 X
+V
+0 X
+N
+173.03 270.68 173.03 269.3 174.99 269.05 175.8 269.83 175.76 271.19 5 L
+7 X
+V
+2 Z
+0 X
+N
+175.3 270.58 177.1 270.38 178.04 271.09 176.46 271.19 4 Y
+7 X
+V
+0 Z
+0 X
+N
+175.3 270.52 175.3 269.15 177.27 268.89 178.1 269.64 178.04 271.04 5 L
+7 X
+V
+2 Z
+0 X
+N
+157.82 271.49 157.82 270.5 173.1 269.12 173.03 270.21 4 Y
+7 X
+V
+0 Z
+0 X
+N
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+350.17 304.88 341.54 300.23 401.81 298.05 414.94 310.11 362.48 310.98 5 Y
+7 X
+V
+0 X
+N
+341.54 300.23 341.54 284.97 342.81 283.95 400.55 281.91 401.81 283.66 401.81 298.05 6 Y
+7 X
+V
+0 X
+N
+400.55 281.91 414.94 298.77 414.94 310.11 401.81 298.05 401.81 283.4 5 Y
+7 X
+V
+0 X
+N
+342.81 283.95 342.81 282.06 400.43 280.31 401.81 280.9 414.47 296.88 414.94 298.77 403.08 284.88
+ 400.55 281.91 8 Y
+7 X
+V
+0 X
+N
+343.61 301.34 403.08 299.21 403.08 284.88 3 L
+2 Z
+N
+399.4 299.34 398.13 298.18 398.13 282 3 L
+N
+378.58 300.09 377.08 298.94 377.08 282.74 3 L
+N
+341.54 296.45 401.81 294.12 2 L
+N
+341.54 288.31 401.81 285.98 2 L
+N
+341.54 287.15 401.81 284.82 2 L
+N
+341.54 285.84 401.81 283.51 403.08 284.97 3 L
+N
+343.61 299.06 348.5 298.92 348.5 296.96 343.61 297.14 4 Y
+7 X
+V
+0 Z
+0 X
+N
+403.71 298.16 403.71 292.81 2 L
+7 X
+V
+2 Z
+0 X
+N
+404.37 298.82 404.37 293.54 2 L
+7 X
+V
+0 X
+N
+405.03 299.47 405.03 294.26 2 L
+7 X
+V
+0 X
+N
+405.62 300.05 405.62 294.9 2 L
+7 X
+V
+0 X
+N
+406.14 300.56 406.14 295.46 2 L
+7 X
+V
+0 X
+N
+406.72 301.15 406.72 296.14 2 L
+7 X
+V
+0 X
+N
+407.26 301.64 407.26 296.68 2 L
+7 X
+V
+0 X
+N
+407.8 302.22 407.8 297.31 2 L
+7 X
+V
+0 X
+N
+408.41 302.76 408.41 297.9 2 L
+7 X
+V
+0 X
+N
+408.92 303.28 408.92 298.47 2 L
+7 X
+V
+0 X
+N
+409.44 303.83 409.44 299.06 2 L
+7 X
+V
+0 X
+N
+409.98 304.37 409.98 299.65 2 L
+7 X
+V
+0 X
+N
+410.57 304.95 410.57 300.28 2 L
+7 X
+V
+0 X
+N
+411.1 305.5 411.1 300.88 2 L
+7 X
+V
+0 X
+N
+411.64 306 411.64 301.42 2 L
+7 X
+V
+0 X
+N
+412.11 306.47 412.11 301.97 2 L
+7 X
+V
+0 X
+N
+412.57 306.93 412.57 302.48 2 L
+7 X
+V
+0 X
+N
+413.04 307.38 413.04 303 2 L
+7 X
+V
+0 X
+N
+413.45 307.77 413.45 303.42 2 L
+7 X
+V
+0 X
+N
+413.94 308.28 413.94 303.97 2 L
+7 X
+V
+0 X
+N
+414.41 308.72 414.41 304.49 2 L
+7 X
+V
+0 X
+N
+403.71 292.35 403.71 287 2 L
+7 X
+V
+0 X
+N
+404.37 293.01 404.37 287.72 2 L
+7 X
+V
+0 X
+N
+405.03 293.66 405.03 288.44 2 L
+7 X
+V
+0 X
+N
+405.62 294.24 405.62 289.08 2 L
+7 X
+V
+0 X
+N
+406.14 294.75 406.14 289.65 2 L
+7 X
+V
+0 X
+N
+406.72 295.34 406.72 290.33 2 L
+7 X
+V
+0 X
+N
+407.26 295.84 407.26 290.87 2 L
+7 X
+V
+0 X
+N
+407.8 296.41 407.8 291.5 2 L
+7 X
+V
+0 X
+N
+408.41 296.95 408.41 292.09 2 L
+7 X
+V
+0 X
+N
+408.92 297.48 408.92 292.66 2 L
+7 X
+V
+0 X
+N
+409.44 298.03 409.44 293.25 2 L
+7 X
+V
+0 X
+N
+409.98 298.56 409.98 293.84 2 L
+7 X
+V
+0 X
+N
+410.57 299.14 410.57 294.47 2 L
+7 X
+V
+0 X
+N
+411.1 299.7 411.1 295.07 2 L
+7 X
+V
+0 X
+N
+411.64 300.2 411.64 295.62 2 L
+7 X
+V
+0 X
+N
+412.11 300.67 412.11 296.16 2 L
+7 X
+V
+0 X
+N
+412.57 301.13 412.57 296.67 2 L
+7 X
+V
+0 X
+N
+413.04 301.58 413.04 297.19 2 L
+7 X
+V
+0 X
+N
+413.45 301.96 413.45 297.62 2 L
+7 X
+V
+0 X
+N
+413.94 302.47 413.94 298.17 2 L
+7 X
+V
+0 X
+N
+414.41 302.92 414.41 298.68 2 L
+7 X
+V
+0 X
+N
+344.53 296.09 346.49 296.09 2 L
+7 X
+V
+0.5 H
+0 X
+N
+352.95 305.7 364.66 311.5 400.25 310.53 390.39 303.49 4 Y
+6 X
+V
+0.01 H
+0 Z
+0 X
+N
+352.95 305.7 390.39 303.49 390.39 299.63 352.95 301.84 4 Y
+7 X
+V
+0 X
+N
+390.39 303.49 400.25 310.53 400.25 307.22 390.39 299.63 4 Y
+7 X
+V
+0 X
+N
+7 X
+90 450 14.24 3.06 376.38 308.03 G
+0 X
+90 450 14.24 3.06 376.38 308.03 A
+365.06 309.65 365.67 308.66 367.1 308.01 383.98 307.12 383.05 309.02 5 Y
+7 X
+V
+0 X
+N
+358.28 311.53 358.28 307.91 362.25 307.52 362.25 311.27 4 Y
+7 X
+V
+0.25 H
+0 X
+N
+362.25 307.52 367.69 310.91 362.25 311.27 3 Y
+3 X
+V
+0 X
+N
+383.05 310.19 383.05 306.58 387.03 306.19 387.03 309.93 4 Y
+7 X
+V
+0 X
+N
+387.03 306.19 392.46 309.57 387.03 309.93 3 Y
+3 X
+V
+0 X
+N
+391.37 359.63 390.02 359.99 351.93 357.94 350.6 357.94 348.97 356.24 348.46 354.91 348.46 314.21
+ 349.31 312.11 350.31 311.9 389.71 310.06 391.37 310.18 391.68 311.64 391.57 309.47 390.85 308.5 391.43 308.66
+ 391.91 309.03 392.35 309.71 392.69 310.69 392.76 312.14 392.76 355.88 392.45 358.31 21 Y
+7 X
+V
+0 X
+N
+349.07 356 388.58 357.82 389.32 357.3 389.63 356.4 389.7 354.79 389.7 312.87 388.88 311.78
+ 349.38 313.97 348.46 314.21 348.46 354.91 10 Y
+0.01 H
+N
+352.54 352.72 386.12 353.81 387.04 352.36 387.04 317.12 386.43 315.91 351.62 317.49 351.11 318.7
+ 351.11 351.87 8 Y
+5 X
+V
+0 X
+N
+351.83 350.41 351.83 318.34 386.23 317 386.23 351.26 4 Y
+3 X
+V
+0 X
+N
+383.47 349.8 355.4 348.95 354.48 348.1 353.66 346.28 353.66 323.08 353.97 321.5 354.99 320.53
+ 383.37 319.07 384.8 320.65 384.8 348.47 10 Y
+7 X
+V
+0 X
+N
+390.85 308.5 391.57 309.47 391.68 311.64 391.37 310.18 352.27 311.81 352.74 310.44 353.9 309.8 7 Y
+7 X
+V
+0 X
+N
+389.19 358.07 390.51 359.28 2 L
+7 X
+V
+0 X
+N
+392.45 358.31 391.37 359.63 399.19 355.58 399.19 314.82 391.91 309.03 392.35 309.71 392.69 310.69
+ 392.76 312.14 392.76 355.88 9 Y
+7 X
+V
+0 X
+N
+399.19 345.07 405.12 341.73 405.12 320.4 399.19 315.61 4 Y
+7 X
+V
+0 X
+N
+392.76 314.9 399.19 318.79 2 L
+7 X
+V
+0 X
+N
+399.19 319.76 405.12 323.16 2 L
+7 X
+V
+0 X
+N
+399.19 341.14 405.12 339.28 2 L
+7 X
+V
+0 X
+N
+399.19 339.92 405.12 338.3 2 L
+7 X
+V
+0 X
+N
+399.19 338.63 405.12 337.25 2 L
+7 X
+V
+0 X
+N
+399.19 337.33 405.12 336.2 2 L
+7 X
+V
+0 X
+N
+399.19 336.04 405.12 335.23 2 L
+7 X
+V
+0 X
+N
+399.19 334.58 405.12 334.26 2 L
+7 X
+V
+0 X
+N
+399.19 333.28 405.12 333.28 2 L
+7 X
+V
+0 X
+N
+399.19 331.91 405.12 332.23 2 L
+7 X
+V
+0 X
+N
+399.19 330.53 405.12 331.18 2 L
+7 X
+V
+0 X
+N
+399.19 328.99 405.12 330.12 2 L
+7 X
+V
+0 X
+N
+399.19 327.45 405.12 329.23 2 L
+7 X
+V
+0 X
+N
+398.07 327.09 398.07 320.16 395.31 318.58 395.31 326.24 4 Y
+N
+395.31 318.58 398.07 320.16 398.07 327.09 397.15 326.8 397.15 320.81 395.31 319.72 6 Y
+5 X
+V
+0 X
+N
+3 X
+90 450 0.43 0.83 396.18 324.76 G
+0 X
+90 450 0.43 0.83 396.18 324.76 A
+396.18 325.59 397.27 325.59 397.27 323.93 396.18 323.93 4 L
+3 X
+V
+0 X
+N
+7 X
+90 450 0.43 0.83 397.27 324.76 G
+0 X
+90 450 0.43 0.83 397.27 324.76 A
+3 X
+90 450 0.43 0.83 396.18 321.96 G
+0 X
+90 450 0.43 0.83 396.18 321.96 A
+396.18 322.79 397.27 322.79 397.27 321.13 396.18 321.13 4 L
+3 X
+V
+0 X
+N
+7 X
+90 450 0.43 0.83 397.27 321.96 G
+0 X
+90 450 0.43 0.83 397.27 321.96 A
+384.59 353.25 385.38 353.24 385.38 351.87 384.59 351.9 4 Y
+3 X
+V
+0 X
+N
+384.83 353.07 385.13 353.06 385.13 352.07 384.83 352.09 4 Y
+V
+N
+355.4 348.95 351.83 350.41 351.83 318.34 354.99 320.53 353.97 321.5 353.66 323.08 353.66 346.28
+ 354.48 348.1 8 Y
+4 X
+V
+0 X
+N
+337.08 269.09 336.36 269.65 336.36 268.03 336.8 267.15 385.17 262.44 386.11 262.73 387.38 265.09
+ 391.28 270.97 393.02 273.11 393.02 275.09 391.01 272.74 386.58 266.23 385.83 264.59 13 Y
+7 X
+V
+0.2 H
+0 X
+N
+349.79 277.53 393.02 275.09 391.01 272.74 386.58 266.23 385.83 264.59 337.08 269.09 336.36 269.65
+ 336.93 270.37 346.1 276.05 9 Y
+7 X
+V
+0 X
+N
+378.57 272.23 380.25 272.05 381.14 272.76 379.67 272.84 4 Y
+7 X
+V
+0.25 H
+0 X
+N
+378.57 272.23 378.57 270.85 380.42 270.59 381.17 271.36 381.14 272.76 5 L
+7 X
+V
+2 Z
+0 X
+N
+380.72 272.14 382.39 271.94 383.26 272.65 381.79 272.75 4 Y
+7 X
+V
+0 Z
+0 X
+N
+380.77 272.14 380.77 270.76 382.61 270.49 383.36 271.26 383.33 272.65 5 L
+7 X
+V
+2 Z
+0 X
+N
+382.74 271.98 384.4 271.76 385.29 272.51 383.82 272.59 4 Y
+7 X
+V
+0 Z
+0 X
+N
+382.74 271.98 382.74 270.6 384.57 270.34 385.32 271.1 385.29 272.51 5 L
+7 X
+V
+2 Z
+0 X
+N
+384.73 271.86 386.41 271.65 387.3 272.4 385.81 272.48 4 Y
+7 X
+V
+0 Z
+0 X
+N
+384.73 271.86 384.73 270.49 386.58 270.22 387.33 270.98 387.3 272.4 5 L
+7 X
+V
+2 Z
+0 X
+N
+377.05 270.77 378.71 270.55 379.6 271.27 378.13 271.4 4 Y
+7 X
+V
+0 Z
+0 X
+N
+377.05 270.77 377.05 269.38 378.88 269.13 379.63 269.89 379.6 271.27 5 L
+7 X
+V
+2 Z
+0 X
+N
+379.19 270.69 380.86 270.47 381.75 271.19 380.27 271.3 4 Y
+7 X
+V
+0 Z
+0 X
+N
+379.19 270.69 379.19 269.28 381.03 269.01 381.79 269.81 381.75 271.19 5 L
+7 X
+V
+2 Z
+0 X
+N
+381.39 270.55 383.07 270.37 383.95 271.09 382.49 271.19 4 Y
+7 X
+V
+0 Z
+0 X
+N
+381.39 270.55 381.39 269.18 383.24 268.93 383.99 269.71 383.96 271.09 5 L
+7 X
+V
+2 Z
+0 X
+N
+383.53 270.47 385.2 270.27 386.09 270.99 384.62 271.09 4 Y
+7 X
+V
+0 Z
+0 X
+N
+383.53 270.47 383.53 269.09 385.37 268.83 386.12 269.61 386.09 270.99 5 L
+7 X
+V
+2 Z
+0 X
+N
+375.77 269.02 377.44 268.8 378.31 269.51 376.84 269.63 4 Y
+7 X
+V
+0 Z
+0 X
+N
+375.77 269.02 375.77 267.62 377.59 267.37 378.36 268.14 378.3 269.51 5 L
+7 X
+V
+2 Z
+0 X
+N
+378.03 268.96 379.71 268.76 380.58 269.48 379.11 269.59 4 Y
+7 X
+V
+0 Z
+0 X
+N
+377.98 268.91 377.98 267.51 379.8 267.24 380.55 268.03 380.52 269.42 5 L
+7 X
+V
+2 Z
+0 X
+N
+380.42 268.79 382.09 268.6 382.96 269.32 381.49 269.4 4 Y
+7 X
+V
+0 Z
+0 X
+N
+380.54 268.79 380.54 267.41 382.36 267.15 383.12 267.94 383.08 269.32 5 L
+7 X
+V
+2 Z
+0 X
+N
+382.66 268.69 384.34 268.51 385.21 269.22 383.74 269.32 4 Y
+7 X
+V
+0 Z
+0 X
+N
+382.66 268.69 382.66 267.31 384.49 267.06 385.24 267.84 385.21 269.22 5 L
+7 X
+V
+2 Z
+0 X
+N
+380.58 274.83 382.26 274.65 383.15 275.36 381.68 275.45 4 Y
+3 X
+V
+0 Z
+0 X
+N
+380.58 274.83 380.58 273.45 382.43 273.19 383.18 273.97 383.15 275.36 5 L
+3 X
+V
+2 Z
+0 X
+N
+382.73 274.74 384.4 274.54 385.27 275.25 383.8 275.35 4 Y
+3 X
+V
+0 Z
+0 X
+N
+382.78 274.74 382.78 273.36 384.62 273.1 385.38 273.86 385.34 275.25 5 L
+3 X
+V
+2 Z
+0 X
+N
+384.75 274.58 386.41 274.37 387.3 275.11 385.83 275.2 4 Y
+3 X
+V
+0 Z
+0 X
+N
+384.75 274.58 384.75 273.21 386.58 272.94 387.33 273.7 387.3 275.11 5 L
+3 X
+V
+2 Z
+0 X
+N
+386.74 274.47 388.42 274.25 389.3 275 387.82 275.08 4 Y
+3 X
+V
+0 Z
+0 X
+N
+386.74 274.47 386.74 273.09 388.59 272.82 389.34 273.59 389.3 275 5 L
+3 X
+V
+2 Z
+0 X
+N
+362.39 275.85 364.06 275.67 364.95 276.38 363.48 276.46 4 Y
+3 X
+V
+0 Z
+0 X
+N
+362.39 275.85 362.39 274.47 364.23 274.21 364.98 274.99 364.95 276.38 5 L
+3 X
+V
+2 Z
+0 X
+N
+364.53 275.76 366.2 275.56 367.08 276.27 365.61 276.37 4 Y
+3 X
+V
+0 Z
+0 X
+N
+364.58 275.76 364.58 274.38 366.43 274.12 367.18 274.88 367.14 276.27 5 L
+3 X
+V
+2 Z
+0 X
+N
+366.55 275.6 368.21 275.39 369.1 276.13 367.63 276.22 4 Y
+3 X
+V
+0 Z
+0 X
+N
+366.55 275.6 366.55 274.22 368.38 273.96 369.13 274.72 369.1 276.13 5 L
+3 X
+V
+2 Z
+0 X
+N
+368.55 275.49 370.22 275.27 371.11 276.02 369.62 276.1 4 Y
+3 X
+V
+0 Z
+0 X
+N
+368.55 275.49 368.55 274.11 370.39 273.84 371.14 274.61 371.11 276.02 5 L
+3 X
+V
+2 Z
+0 X
+N
+343.68 274.55 345.36 274.37 346.24 275.09 344.77 275.17 4 Y
+7 X
+V
+0 Z
+0 X
+N
+343.68 274.55 343.68 273.18 345.53 272.91 346.28 273.69 346.24 275.09 5 L
+7 X
+V
+2 Z
+0 X
+N
+345.83 274.46 347.5 274.26 348.37 274.98 346.9 275.08 4 Y
+7 X
+V
+0 Z
+0 X
+N
+345.88 274.46 345.88 273.09 347.72 272.82 348.47 273.58 348.44 274.98 5 L
+7 X
+V
+2 Z
+0 X
+N
+347.85 274.31 349.51 274.09 350.39 274.84 348.93 274.92 4 Y
+7 X
+V
+0 Z
+0 X
+N
+347.85 274.31 347.85 272.93 349.68 272.66 350.43 273.43 350.39 274.84 5 L
+7 X
+V
+2 Z
+0 X
+N
+349.84 274.19 351.52 273.97 352.4 274.72 350.92 274.8 4 Y
+7 X
+V
+0 Z
+0 X
+N
+349.84 274.19 349.84 272.81 351.69 272.55 352.44 273.31 352.4 274.72 5 L
+7 X
+V
+2 Z
+0 X
+N
+341.28 273.17 342.94 272.95 343.83 273.67 342.36 273.8 4 Y
+7 X
+V
+0 Z
+0 X
+N
+341.28 273.17 341.28 271.78 343.11 271.53 343.86 272.29 343.83 273.67 5 L
+7 X
+V
+2 Z
+0 X
+N
+343.42 273.09 345.09 272.87 345.98 273.59 344.49 273.7 4 Y
+7 X
+V
+0 Z
+0 X
+N
+343.42 273.09 343.42 271.68 345.26 271.41 346.01 272.21 345.98 273.59 5 L
+7 X
+V
+2 Z
+0 X
+N
+345.62 272.95 347.3 272.77 348.18 273.48 346.71 273.59 4 Y
+7 X
+V
+0 Z
+0 X
+N
+345.62 272.95 345.62 271.58 347.47 271.33 348.22 272.11 348.18 273.48 5 L
+7 X
+V
+2 Z
+0 X
+N
+347.76 272.87 349.43 272.67 350.32 273.39 348.85 273.48 4 Y
+7 X
+V
+0 Z
+0 X
+N
+347.76 272.87 347.76 271.49 349.6 271.23 350.35 272.01 350.32 273.39 5 L
+7 X
+V
+2 Z
+0 X
+N
+339.17 271.93 340.84 271.71 341.71 272.43 340.24 272.54 4 Y
+7 X
+V
+0 Z
+0 X
+N
+339.18 271.93 339.18 270.54 340.99 270.29 341.76 271.05 341.71 272.43 5 L
+7 X
+V
+2 Z
+0 X
+N
+341.44 271.88 343.11 271.68 343.98 272.39 342.51 272.51 4 Y
+7 X
+V
+0 Z
+0 X
+N
+341.38 271.82 341.38 270.42 343.21 270.16 343.96 270.94 343.92 272.33 5 L
+7 X
+V
+2 Z
+0 X
+N
+343.82 271.7 345.49 271.52 346.36 272.23 344.9 272.32 4 Y
+7 X
+V
+0 Z
+0 X
+N
+343.94 271.7 343.94 270.32 345.77 270.06 346.52 270.85 346.48 272.23 5 L
+7 X
+V
+2 Z
+0 X
+N
+346.06 271.6 347.74 271.42 348.61 272.13 347.14 272.23 4 Y
+7 X
+V
+0 Z
+0 X
+N
+346.06 271.6 346.06 270.22 347.89 269.98 348.64 270.76 348.61 272.13 5 L
+7 X
+V
+2 Z
+0 X
+N
+370.75 275.34 372.42 275.15 373.31 275.87 371.84 275.95 4 Y
+3 X
+V
+0 Z
+0 X
+N
+370.75 275.34 370.75 273.96 372.6 273.69 373.35 274.47 373.31 275.87 5 L
+3 X
+V
+2 Z
+0 X
+N
+372.89 275.24 374.57 275.04 375.44 275.76 373.97 275.86 4 Y
+3 X
+V
+0 Z
+0 X
+N
+372.95 275.24 372.95 273.87 374.79 273.6 375.54 274.36 375.51 275.76 5 L
+3 X
+V
+2 Z
+0 X
+N
+374.92 275.09 376.58 274.87 377.46 275.62 375.99 275.7 4 Y
+3 X
+V
+0 Z
+0 X
+N
+374.92 275.09 374.92 273.71 376.75 273.45 377.5 274.21 377.46 275.62 5 L
+3 X
+V
+2 Z
+0 X
+N
+376.91 274.97 378.58 274.76 379.47 275.5 377.99 275.59 4 Y
+3 X
+V
+0 Z
+0 X
+N
+376.91 274.97 376.91 273.59 378.76 273.33 379.51 274.09 379.47 275.5 5 L
+3 X
+V
+2 Z
+0 X
+N
+355.61 274.6 357.41 274.39 358.36 275.13 356.77 275.23 4 Y
+7 X
+V
+0 Z
+0 X
+N
+355.61 274.6 355.61 273.24 357.59 272.98 358.4 273.73 358.36 275.13 5 L
+7 X
+V
+2 Z
+0 X
+N
+357.96 274.49 359.76 274.28 360.68 275.02 359.1 275.1 4 Y
+7 X
+V
+0 Z
+0 X
+N
+357.96 274.49 357.96 273.13 359.92 272.86 360.73 273.62 360.68 275.02 5 L
+7 X
+V
+2 Z
+0 X
+N
+360 274.34 361.8 274.13 362.73 274.84 361.16 274.95 4 Y
+7 X
+V
+0 Z
+0 X
+N
+360 274.34 360 272.95 361.96 272.72 362.77 273.47 362.73 274.84 5 L
+7 X
+V
+2 Z
+0 X
+N
+362.13 274.24 363.93 274.03 364.87 274.74 363.27 274.85 4 Y
+7 X
+V
+0 Z
+0 X
+N
+362.13 274.24 362.13 272.86 364.1 272.6 364.9 273.37 364.87 274.74 5 L
+7 X
+V
+2 Z
+0 X
+N
+364.35 274.13 366.12 273.95 367.07 274.66 365.49 274.74 4 Y
+7 X
+V
+0 Z
+0 X
+N
+364.35 274.13 364.35 272.77 366.3 272.5 367.11 273.28 367.07 274.66 5 L
+7 X
+V
+2 Z
+0 X
+N
+366.7 273.98 368.5 273.78 369.44 274.49 367.86 274.59 4 Y
+7 X
+V
+0 Z
+0 X
+N
+366.7 273.98 366.7 272.62 368.67 272.36 369.5 273.13 369.44 274.49 5 L
+7 X
+V
+2 Z
+0 X
+N
+369 273.82 370.8 273.64 371.74 274.34 370.16 274.44 4 Y
+7 X
+V
+0 Z
+0 X
+N
+369 273.82 369 272.45 370.96 272.21 371.79 272.95 371.74 274.34 5 L
+7 X
+V
+2 Z
+0 X
+N
+371.06 273.73 372.84 273.52 373.78 274.24 372.2 274.34 4 Y
+7 X
+V
+0 Z
+0 X
+N
+371.06 273.73 371.06 272.37 373.01 272.11 373.83 272.86 373.78 274.24 5 L
+7 X
+V
+2 Z
+0 X
+N
+373.24 273.62 375.04 273.41 376 274.13 374.42 274.23 4 Y
+7 X
+V
+0 Z
+0 X
+N
+373.24 273.62 373.24 272.24 375.23 271.99 376.04 272.75 376 274.13 5 L
+7 X
+V
+2 Z
+0 X
+N
+375.47 273.44 377.27 273.23 378.2 273.95 376.61 274.05 4 Y
+7 X
+V
+0 Z
+0 X
+N
+375.47 273.37 375.47 272.01 377.43 271.75 378.24 272.5 378.2 273.9 5 L
+7 X
+V
+2 Z
+0 X
+N
+353.2 273.47 354.98 273.28 355.92 273.98 354.34 274.08 4 Y
+7 X
+V
+0 Z
+0 X
+N
+353.2 273.47 353.2 272.11 355.15 271.85 355.98 272.62 355.92 273.98 5 L
+7 X
+V
+2 Z
+0 X
+N
+355.83 273.26 357.61 273.06 358.57 273.77 356.98 273.87 4 Y
+7 X
+V
+0 Z
+0 X
+N
+355.83 273.26 355.83 271.9 357.79 271.63 358.6 272.41 358.57 273.77 5 L
+7 X
+V
+2 Z
+0 X
+N
+358.2 273.16 360 272.95 360.93 273.69 359.36 273.77 4 Y
+7 X
+V
+0 Z
+0 X
+N
+358.2 273.16 358.2 271.8 360.16 271.53 360.97 272.29 360.93 273.69 5 L
+7 X
+V
+2 Z
+0 X
+N
+360.4 273.06 362.2 272.86 363.14 273.59 361.56 273.69 4 Y
+7 X
+V
+0 Z
+0 X
+N
+360.4 273.06 360.4 271.7 362.39 271.45 363.2 272.19 363.14 273.59 5 L
+7 X
+V
+2 Z
+0 X
+N
+362.77 272.98 364.57 272.77 365.51 273.49 363.93 273.59 4 Y
+7 X
+V
+0 Z
+0 X
+N
+362.77 272.98 362.77 271.58 364.74 271.35 365.57 272.11 365.51 273.49 5 L
+7 X
+V
+2 Z
+0 X
+N
+364.99 272.88 366.78 272.67 367.73 273.37 366.15 273.49 4 Y
+7 X
+V
+0 Z
+0 X
+N
+364.99 272.88 364.99 271.49 366.96 271.26 367.77 272.01 367.73 273.37 5 L
+7 X
+V
+2 Z
+0 X
+N
+367.35 272.78 369.15 272.57 370.1 273.28 368.52 273.41 4 Y
+7 X
+V
+0 Z
+0 X
+N
+367.35 272.78 367.35 271.4 369.33 271.14 370.14 271.91 370.1 273.28 5 L
+7 X
+V
+2 Z
+0 X
+N
+369.73 272.67 371.54 272.49 372.47 273.19 370.89 273.28 4 Y
+7 X
+V
+0 Z
+0 X
+N
+369.73 272.67 369.73 271.3 371.7 271.04 372.51 271.83 372.47 273.19 5 L
+7 X
+V
+2 Z
+0 X
+N
+372.01 272.57 373.83 272.39 374.77 273.09 373.19 273.19 4 Y
+7 X
+V
+0 Z
+0 X
+N
+372.01 272.57 372.01 271.21 374 270.94 374.8 271.73 374.77 273.09 5 L
+7 X
+V
+2 Z
+0 X
+N
+374.09 272.27 375.85 272.06 376.81 272.78 375.23 272.88 4 Y
+7 X
+V
+0 Z
+0 X
+N
+374.09 272.27 374.09 270.91 376.04 270.65 376.84 271.4 376.81 272.78 5 L
+7 X
+V
+2 Z
+0 X
+N
+350.96 272.37 352.76 272.16 353.7 272.86 352.12 272.98 4 Y
+7 X
+V
+0 Z
+0 X
+N
+350.96 272.37 350.96 270.99 352.93 270.75 353.73 271.5 353.7 272.86 5 L
+7 X
+V
+2 Z
+0 X
+N
+353.53 272.11 355.33 271.9 356.27 272.6 354.69 272.72 4 Y
+7 X
+V
+0 Z
+0 X
+N
+353.53 272.11 353.53 270.71 355.5 270.45 356.31 271.24 356.27 272.6 5 L
+7 X
+V
+2 Z
+0 X
+N
+355.99 271.9 357.79 271.7 358.73 272.41 357.13 272.5 4 Y
+7 X
+V
+0 Z
+0 X
+N
+355.99 271.9 355.99 270.53 357.96 270.27 358.77 271.04 358.73 272.41 5 L
+7 X
+V
+2 Z
+0 X
+N
+358.03 271.8 359.83 271.62 360.79 272.32 359.19 272.41 4 Y
+7 X
+V
+0 Z
+0 X
+N
+358.03 271.8 358.03 270.43 360.02 270.17 360.83 270.94 360.79 272.32 5 L
+7 X
+V
+2 Z
+0 X
+N
+360.26 271.7 362.06 271.49 362.97 272.22 361.39 272.32 4 Y
+7 X
+V
+0 Z
+0 X
+N
+360.26 271.7 360.26 270.34 362.2 270.07 363.01 270.83 362.97 272.22 5 L
+7 X
+V
+2 Z
+0 X
+N
+362.28 271.62 364.1 271.4 365.03 272.13 363.45 272.22 4 Y
+7 X
+V
+0 Z
+0 X
+N
+362.28 271.62 362.28 270.24 364.26 269.99 365.07 270.75 365.03 272.13 5 L
+7 X
+V
+2 Z
+0 X
+N
+364.57 271.42 366.37 271.21 367.31 271.91 365.73 272.03 4 Y
+7 X
+V
+0 Z
+0 X
+N
+364.57 271.42 364.57 270.04 366.54 269.79 367.35 270.55 367.31 271.91 5 L
+7 X
+V
+2 Z
+0 X
+N
+366.87 271.32 368.67 271.12 369.61 271.83 368.03 271.95 4 Y
+7 X
+V
+0 Z
+0 X
+N
+366.87 271.32 366.87 269.94 368.83 269.68 369.64 270.45 369.61 271.83 5 L
+7 X
+V
+2 Z
+0 X
+N
+369.4 271.21 371.2 271.03 372.14 271.73 370.56 271.83 4 Y
+7 X
+V
+0 Z
+0 X
+N
+369.4 271.21 369.4 269.84 371.37 269.58 372.18 270.37 372.14 271.73 5 L
+7 X
+V
+2 Z
+0 X
+N
+372.01 270.99 373.83 270.81 374.77 271.52 373.19 271.62 4 Y
+7 X
+V
+0 Z
+0 X
+N
+372.01 270.99 372.01 269.63 374 269.37 374.8 270.16 374.77 271.52 5 L
+7 X
+V
+2 Z
+0 X
+N
+348.83 271.21 350.63 271.03 351.58 271.73 350.01 271.83 4 Y
+7 X
+V
+0 Z
+0 X
+N
+348.83 271.21 348.83 269.84 350.81 269.58 351.62 270.37 351.58 271.73 5 L
+7 X
+V
+2 Z
+0 X
+N
+351.05 270.96 352.83 270.78 353.79 271.49 352.21 271.57 4 Y
+7 X
+V
+0 Z
+0 X
+N
+351.05 270.96 351.05 269.6 353.02 269.34 353.83 270.09 353.79 271.49 5 L
+7 X
+V
+2 Z
+0 X
+N
+354.62 270.94 369.64 269.79 368.34 269.2 352.82 270.48 4 Y
+7 X
+V
+0 Z
+0 X
+N
+368.03 269.79 369.81 269.59 370.76 270.3 369.17 270.4 4 Y
+7 X
+V
+0 X
+N
+368.03 269.67 368.03 268.29 369.99 268.05 370.8 268.82 370.76 270.18 5 L
+7 X
+V
+2 Z
+0 X
+N
+370.3 269.58 372.1 269.38 373.04 270.09 371.46 270.18 4 Y
+7 X
+V
+0 Z
+0 X
+N
+370.3 269.51 370.3 268.15 372.27 267.88 373.1 268.64 373.04 270.04 5 L
+7 X
+V
+2 Z
+0 X
+N
+352.82 270.48 352.82 269.5 368.1 268.12 368.03 269.2 4 Y
+7 X
+V
+0 Z
+0 X
+N
+0 0 0 1 0 0 0 K
+0 0 1 0 1 1 0 K
+7 X
+0 0 1 0 1 1 0 K
+90 450 12.14 15.09 133.43 336.98 G
+2 H
+2 Z
+0 X
+90 450 12.14 15.09 133.43 336.98 A
+139.07 323.74 M
+ 153.66 309.84 111.99 306.8 127.04 322.9 D
+N
+0 1 1 0 1 0 0 K
+125.35 353.75 M
+ 110.32 353.59 106.06 327.19 115.45 323.77 D
+ 123.56 320.81 144.43 308.24 138.36 325.12 D
+ 135.19 333.94 147.91 347.54 138.84 353.75 D
+10 X
+0 1 1 0 1 0 0 K
+V
+0 X
+N
+1 0 1 0 0 1 0 K
+120.63 314.34 M
+ 94.91 315.3 82.07 283.67 95.16 265.98 D
+ 96.98 263.53 103.66 269.01 104.01 277.21 D
+ 104.61 291.45 109.15 272.23 108.59 269.43 D
+ 105.22 252.61 151.4 255.21 149.98 263.39 D
+ 149.39 266.77 149.3 291.53 155 273.75 D
+ 155.9 270.95 150.68 254.76 159.08 265.98 D
+ 166.56 275.97 189.41 280.28 183.94 294.48 D
+ 180.47 303.49 174.59 292.41 171.97 291.35 D
+ 168.41 289.92 157.06 282.68 156.68 292.75 D
+ 155.84 314.52 134.76 307.88 121.55 310.89 D
+6 X
+1 0 1 0 0 1 0 K
+V
+0 X
+N
+0 0 1 0 1 1 0 K
+7 X
+0 0 1 0 1 1 0 K
+90 450 12.14 15.09 447.63 337.4 G
+0 X
+90 450 12.14 15.09 447.63 337.4 A
+453.27 324.16 M
+ 467.87 310.26 426.19 307.21 441.24 323.32 D
+N
+0 0 0 1 0 0 0 K
+441.25 355.33 M
+ 426.22 355.18 421.96 328.78 431.35 325.36 D
+ 439.45 322.4 460.32 309.83 454.26 326.71 D
+ 451.09 335.53 463.81 349.13 454.74 355.33 D
+0 0 0 1 0 0 0 K
+V
+N
+0 1 0 0 1 0 1 K
+436.63 314.76 M
+ 410.91 315.72 398.07 284.09 411.16 266.4 D
+ 412.98 263.95 419.66 269.42 420.01 277.62 D
+ 420.61 291.86 425.15 272.65 424.59 269.85 D
+ 421.22 253.03 467.4 255.63 465.98 263.81 D
+ 465.39 267.19 465.3 291.95 471 274.17 D
+ 471.9 271.37 466.68 255.18 475.08 266.4 D
+ 482.56 276.39 505.41 280.7 499.94 294.9 D
+ 496.47 303.9 490.59 292.83 487.97 291.77 D
+ 484.41 290.34 473.06 283.1 472.68 293.17 D
+ 471.84 314.93 450.76 308.3 437.55 311.31 D
+12 X
+0 1 0 0 1 0 1 K
+V
+0 X
+N
+1 1 0 0 0 0 1 K
+566.17 282.78 557.54 278.13 617.81 275.95 630.94 288.01 578.48 288.89 5 Y
+7 X
+1 1 0 0 0 0 1 K
+V
+0.25 H
+0 Z
+0 X
+N
+557.54 278.13 557.54 262.87 558.81 261.85 616.55 259.82 617.81 261.56 617.81 275.95 6 Y
+7 X
+V
+0 X
+N
+616.55 259.82 630.94 276.68 630.94 288.01 617.81 275.95 617.81 261.3 5 Y
+7 X
+V
+0 X
+N
+558.81 261.85 558.81 259.96 616.43 258.22 617.81 258.8 630.47 274.79 630.94 276.68 619.08 262.78
+ 616.55 259.82 8 Y
+7 X
+V
+0 X
+N
+559.61 279.25 619.08 277.11 619.08 262.78 3 L
+2 Z
+N
+615.4 277.25 614.13 276.08 614.13 259.9 3 L
+N
+594.58 277.99 593.08 276.84 593.08 260.64 3 L
+N
+557.54 274.35 617.81 272.03 2 L
+N
+557.54 266.21 617.81 263.89 2 L
+N
+557.54 265.05 617.81 262.72 2 L
+N
+557.54 263.74 617.81 261.41 619.08 262.87 3 L
+N
+559.61 276.97 564.5 276.82 564.5 274.86 559.61 275.04 4 Y
+7 X
+V
+0 Z
+0 X
+N
+619.71 276.06 619.71 270.72 2 L
+7 X
+V
+2 Z
+0 X
+N
+620.37 276.72 620.37 271.44 2 L
+7 X
+V
+0 X
+N
+621.03 277.37 621.03 272.16 2 L
+7 X
+V
+0 X
+N
+621.62 277.95 621.62 272.8 2 L
+7 X
+V
+0 X
+N
+622.14 278.46 622.14 273.36 2 L
+7 X
+V
+0 X
+N
+622.72 279.05 622.72 274.04 2 L
+7 X
+V
+0 X
+N
+623.26 279.55 623.26 274.59 2 L
+7 X
+V
+0 X
+N
+623.8 280.12 623.8 275.22 2 L
+7 X
+V
+0 X
+N
+624.41 280.66 624.41 275.8 2 L
+7 X
+V
+0 X
+N
+624.92 281.19 624.92 276.38 2 L
+7 X
+V
+0 X
+N
+625.44 281.74 625.44 276.97 2 L
+7 X
+V
+0 X
+N
+625.98 282.27 625.98 277.55 2 L
+7 X
+V
+0 X
+N
+626.57 282.85 626.57 278.18 2 L
+7 X
+V
+0 X
+N
+627.1 283.41 627.1 278.78 2 L
+7 X
+V
+0 X
+N
+627.64 283.91 627.64 279.33 2 L
+7 X
+V
+0 X
+N
+628.11 284.38 628.11 279.87 2 L
+7 X
+V
+0 X
+N
+628.57 284.84 628.57 280.38 2 L
+7 X
+V
+0 X
+N
+629.04 285.28 629.04 280.9 2 L
+7 X
+V
+0 X
+N
+629.45 285.67 629.45 281.33 2 L
+7 X
+V
+0 X
+N
+629.94 286.18 629.94 281.88 2 L
+7 X
+V
+0 X
+N
+630.41 286.62 630.41 282.39 2 L
+7 X
+V
+0 X
+N
+619.71 270.25 619.71 264.9 2 L
+7 X
+V
+0 X
+N
+620.37 270.91 620.37 265.63 2 L
+7 X
+V
+0 X
+N
+621.03 271.56 621.03 266.35 2 L
+7 X
+V
+0 X
+N
+621.62 272.15 621.62 266.99 2 L
+7 X
+V
+0 X
+N
+622.14 272.66 622.14 267.55 2 L
+7 X
+V
+0 X
+N
+622.72 273.25 622.72 268.23 2 L
+7 X
+V
+0 X
+N
+623.26 273.74 623.26 268.78 2 L
+7 X
+V
+0 X
+N
+623.8 274.31 623.8 269.41 2 L
+7 X
+V
+0 X
+N
+624.41 274.85 624.41 269.99 2 L
+7 X
+V
+0 X
+N
+624.92 275.38 624.92 270.57 2 L
+7 X
+V
+0 X
+N
+625.44 275.93 625.44 271.16 2 L
+7 X
+V
+0 X
+N
+625.98 276.46 625.98 271.74 2 L
+7 X
+V
+0 X
+N
+626.57 277.04 626.57 272.37 2 L
+7 X
+V
+0 X
+N
+627.1 277.6 627.1 272.97 2 L
+7 X
+V
+0 X
+N
+627.64 278.1 627.64 273.52 2 L
+7 X
+V
+0 X
+N
+628.11 278.57 628.11 274.07 2 L
+7 X
+V
+0 X
+N
+628.57 279.03 628.57 274.57 2 L
+7 X
+V
+0 X
+N
+629.04 279.48 629.04 275.09 2 L
+7 X
+V
+0 X
+N
+629.45 279.87 629.45 275.52 2 L
+7 X
+V
+0 X
+N
+629.94 280.38 629.94 276.07 2 L
+7 X
+V
+0 X
+N
+630.41 280.82 630.41 276.59 2 L
+7 X
+V
+0 X
+N
+560.53 273.99 562.49 273.99 2 L
+7 X
+V
+0.5 H
+0 X
+N
+567.17 305.88 558.54 301.23 618.81 299.05 631.94 311.11 579.48 311.99 5 Y
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+558.54 301.23 558.54 285.97 559.81 284.95 617.55 282.92 618.81 284.66 618.81 299.05 6 Y
+7 X
+V
+0 X
+N
+617.55 282.92 631.94 299.78 631.94 311.11 618.81 299.05 618.81 284.4 5 Y
+7 X
+V
+0 X
+N
+559.81 284.95 559.81 283.06 617.43 281.32 618.81 281.9 631.47 297.89 631.94 299.78 620.08 285.89
+ 617.55 282.92 8 Y
+7 X
+V
+0 X
+N
+560.61 302.35 620.08 300.21 620.08 285.89 3 L
+2 Z
+N
+616.4 300.35 615.13 299.18 615.13 283 3 L
+N
+595.58 301.09 594.08 299.95 594.08 283.74 3 L
+N
+558.54 297.45 618.81 295.13 2 L
+N
+558.54 289.31 618.81 286.99 2 L
+N
+558.54 288.15 618.81 285.83 2 L
+N
+558.54 286.84 618.81 284.52 620.08 285.97 3 L
+N
+560.61 300.07 565.5 299.92 565.5 297.96 560.61 298.14 4 Y
+7 X
+V
+0 Z
+0 X
+N
+620.71 299.17 620.71 293.82 2 L
+7 X
+V
+2 Z
+0 X
+N
+621.37 299.82 621.37 294.54 2 L
+7 X
+V
+0 X
+N
+622.03 300.47 622.03 295.26 2 L
+7 X
+V
+0 X
+N
+622.62 301.06 622.62 295.9 2 L
+7 X
+V
+0 X
+N
+623.14 301.57 623.14 296.46 2 L
+7 X
+V
+0 X
+N
+623.72 302.16 623.72 297.14 2 L
+7 X
+V
+0 X
+N
+624.26 302.65 624.26 297.69 2 L
+7 X
+V
+0 X
+N
+624.8 303.22 624.8 298.32 2 L
+7 X
+V
+0 X
+N
+625.41 303.76 625.41 298.9 2 L
+7 X
+V
+0 X
+N
+625.92 304.29 625.92 299.48 2 L
+7 X
+V
+0 X
+N
+626.44 304.84 626.44 300.07 2 L
+7 X
+V
+0 X
+N
+626.98 305.37 626.98 300.65 2 L
+7 X
+V
+0 X
+N
+627.57 305.95 627.57 301.28 2 L
+7 X
+V
+0 X
+N
+628.1 306.51 628.1 301.88 2 L
+7 X
+V
+0 X
+N
+628.64 307.01 628.64 302.43 2 L
+7 X
+V
+0 X
+N
+629.11 307.48 629.11 302.98 2 L
+7 X
+V
+0 X
+N
+629.57 307.94 629.57 303.48 2 L
+7 X
+V
+0 X
+N
+630.04 308.39 630.04 304 2 L
+7 X
+V
+0 X
+N
+630.45 308.77 630.45 304.43 2 L
+7 X
+V
+0 X
+N
+630.94 309.28 630.94 304.98 2 L
+7 X
+V
+0 X
+N
+631.41 309.73 631.41 305.49 2 L
+7 X
+V
+0 X
+N
+620.71 293.36 620.71 288.01 2 L
+7 X
+V
+0 X
+N
+621.37 294.01 621.37 288.73 2 L
+7 X
+V
+0 X
+N
+622.03 294.67 622.03 289.45 2 L
+7 X
+V
+0 X
+N
+622.62 295.25 622.62 290.09 2 L
+7 X
+V
+0 X
+N
+623.14 295.76 623.14 290.65 2 L
+7 X
+V
+0 X
+N
+623.72 296.35 623.72 291.33 2 L
+7 X
+V
+0 X
+N
+624.26 296.84 624.26 291.88 2 L
+7 X
+V
+0 X
+N
+624.8 297.42 624.8 292.51 2 L
+7 X
+V
+0 X
+N
+625.41 297.96 625.41 293.09 2 L
+7 X
+V
+0 X
+N
+625.92 298.48 625.92 293.67 2 L
+7 X
+V
+0 X
+N
+626.44 299.03 626.44 294.26 2 L
+7 X
+V
+0 X
+N
+626.98 299.56 626.98 294.84 2 L
+7 X
+V
+0 X
+N
+627.57 300.15 627.57 295.47 2 L
+7 X
+V
+0 X
+N
+628.1 300.7 628.1 296.07 2 L
+7 X
+V
+0 X
+N
+628.64 301.2 628.64 296.62 2 L
+7 X
+V
+0 X
+N
+629.11 301.67 629.11 297.17 2 L
+7 X
+V
+0 X
+N
+629.57 302.14 629.57 297.68 2 L
+7 X
+V
+0 X
+N
+630.04 302.58 630.04 298.2 2 L
+7 X
+V
+0 X
+N
+630.45 302.97 630.45 298.62 2 L
+7 X
+V
+0 X
+N
+630.94 303.48 630.94 299.17 2 L
+7 X
+V
+0 X
+N
+631.41 303.92 631.41 299.69 2 L
+7 X
+V
+0 X
+N
+561.53 297.09 563.49 297.09 2 L
+7 X
+V
+0.5 H
+0 X
+N
+566.17 327.98 557.54 323.33 617.81 321.15 630.94 333.21 578.48 334.08 5 Y
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+557.54 323.33 557.54 308.07 558.81 307.05 616.55 305.01 617.81 306.76 617.81 321.15 6 Y
+7 X
+V
+0 X
+N
+616.55 305.01 630.94 321.88 630.94 333.21 617.81 321.15 617.81 306.5 5 Y
+7 X
+V
+0 X
+N
+558.81 307.05 558.81 305.16 616.43 303.41 617.81 304 630.47 319.98 630.94 321.88 619.08 307.98
+ 616.55 305.01 8 Y
+7 X
+V
+0 X
+N
+559.61 324.45 619.08 322.31 619.08 307.98 3 L
+2 Z
+N
+615.4 322.44 614.13 321.28 614.13 305.1 3 L
+N
+594.58 323.19 593.08 322.04 593.08 305.84 3 L
+N
+557.54 319.55 617.81 317.22 2 L
+N
+557.54 311.41 617.81 309.08 2 L
+N
+557.54 310.25 617.81 307.92 2 L
+N
+557.54 308.94 617.81 306.61 619.08 308.07 3 L
+N
+559.61 322.17 564.5 322.02 564.5 320.06 559.61 320.24 4 Y
+7 X
+V
+0 Z
+0 X
+N
+619.71 321.26 619.71 315.92 2 L
+7 X
+V
+2 Z
+0 X
+N
+620.37 321.92 620.37 316.64 2 L
+7 X
+V
+0 X
+N
+621.03 322.57 621.03 317.36 2 L
+7 X
+V
+0 X
+N
+621.62 323.15 621.62 318 2 L
+7 X
+V
+0 X
+N
+622.14 323.66 622.14 318.56 2 L
+7 X
+V
+0 X
+N
+622.72 324.25 622.72 319.24 2 L
+7 X
+V
+0 X
+N
+623.26 324.75 623.26 319.79 2 L
+7 X
+V
+0 X
+N
+623.8 325.32 623.8 320.41 2 L
+7 X
+V
+0 X
+N
+624.41 325.86 624.41 321 2 L
+7 X
+V
+0 X
+N
+624.92 326.39 624.92 321.58 2 L
+7 X
+V
+0 X
+N
+625.44 326.93 625.44 322.16 2 L
+7 X
+V
+0 X
+N
+625.98 327.47 625.98 322.75 2 L
+7 X
+V
+0 X
+N
+626.57 328.05 626.57 323.38 2 L
+7 X
+V
+0 X
+N
+627.1 328.61 627.1 323.98 2 L
+7 X
+V
+0 X
+N
+627.64 329.11 627.64 324.53 2 L
+7 X
+V
+0 X
+N
+628.11 329.58 628.11 325.07 2 L
+7 X
+V
+0 X
+N
+628.57 330.04 628.57 325.58 2 L
+7 X
+V
+0 X
+N
+629.04 330.48 629.04 326.1 2 L
+7 X
+V
+0 X
+N
+629.45 330.87 629.45 326.53 2 L
+7 X
+V
+0 X
+N
+629.94 331.38 629.94 327.07 2 L
+7 X
+V
+0 X
+N
+630.41 331.82 630.41 327.59 2 L
+7 X
+V
+0 X
+N
+619.71 315.45 619.71 310.1 2 L
+7 X
+V
+0 X
+N
+620.37 316.11 620.37 310.82 2 L
+7 X
+V
+0 X
+N
+621.03 316.76 621.03 311.55 2 L
+7 X
+V
+0 X
+N
+621.62 317.34 621.62 312.19 2 L
+7 X
+V
+0 X
+N
+622.14 317.85 622.14 312.75 2 L
+7 X
+V
+0 X
+N
+622.72 318.45 622.72 313.43 2 L
+7 X
+V
+0 X
+N
+623.26 318.94 623.26 313.98 2 L
+7 X
+V
+0 X
+N
+623.8 319.51 623.8 314.6 2 L
+7 X
+V
+0 X
+N
+624.41 320.05 624.41 315.19 2 L
+7 X
+V
+0 X
+N
+624.92 320.58 624.92 315.77 2 L
+7 X
+V
+0 X
+N
+625.44 321.13 625.44 316.35 2 L
+7 X
+V
+0 X
+N
+625.98 321.66 625.98 316.94 2 L
+7 X
+V
+0 X
+N
+626.57 322.24 626.57 317.57 2 L
+7 X
+V
+0 X
+N
+627.1 322.8 627.1 318.17 2 L
+7 X
+V
+0 X
+N
+627.64 323.3 627.64 318.72 2 L
+7 X
+V
+0 X
+N
+628.11 323.77 628.11 319.27 2 L
+7 X
+V
+0 X
+N
+628.57 324.23 628.57 319.77 2 L
+7 X
+V
+0 X
+N
+629.04 324.68 629.04 320.29 2 L
+7 X
+V
+0 X
+N
+629.45 325.07 629.45 320.72 2 L
+7 X
+V
+0 X
+N
+629.94 325.58 629.94 321.27 2 L
+7 X
+V
+0 X
+N
+630.41 326.02 630.41 321.79 2 L
+7 X
+V
+0 X
+N
+560.53 319.19 562.49 319.19 2 L
+7 X
+V
+0.5 H
+0 X
+N
+567.17 352.08 558.54 347.43 618.81 345.25 631.94 357.32 579.48 358.19 5 Y
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+558.54 347.43 558.54 332.17 559.81 331.15 617.55 329.12 618.81 330.86 618.81 345.25 6 Y
+7 X
+V
+0 X
+N
+617.55 329.12 631.94 345.98 631.94 357.32 618.81 345.25 618.81 330.6 5 Y
+7 X
+V
+0 X
+N
+559.81 331.15 559.81 329.27 617.43 327.52 618.81 328.1 631.47 344.09 631.94 345.98 620.08 332.09
+ 617.55 329.12 8 Y
+7 X
+V
+0 X
+N
+560.61 348.55 620.08 346.42 620.08 332.09 3 L
+2 Z
+N
+616.4 346.55 615.13 345.39 615.13 329.21 3 L
+N
+595.58 347.3 594.08 346.15 594.08 329.95 3 L
+N
+558.54 343.65 618.81 341.33 2 L
+N
+558.54 335.52 618.81 333.19 2 L
+N
+558.54 334.35 618.81 332.03 2 L
+N
+558.54 333.04 618.81 330.72 620.08 332.17 3 L
+N
+560.61 346.27 565.5 346.13 565.5 344.16 560.61 344.35 4 Y
+7 X
+V
+0 Z
+0 X
+N
+620.71 345.37 620.71 340.02 2 L
+7 X
+V
+2 Z
+0 X
+N
+621.37 346.02 621.37 340.74 2 L
+7 X
+V
+0 X
+N
+622.03 346.68 622.03 341.46 2 L
+7 X
+V
+0 X
+N
+622.62 347.26 622.62 342.1 2 L
+7 X
+V
+0 X
+N
+623.14 347.77 623.14 342.67 2 L
+7 X
+V
+0 X
+N
+623.72 348.36 623.72 343.35 2 L
+7 X
+V
+0 X
+N
+624.26 348.85 624.26 343.89 2 L
+7 X
+V
+0 X
+N
+624.8 349.42 624.8 344.52 2 L
+7 X
+V
+0 X
+N
+625.41 349.97 625.41 345.11 2 L
+7 X
+V
+0 X
+N
+625.92 350.49 625.92 345.68 2 L
+7 X
+V
+0 X
+N
+626.44 351.04 626.44 346.27 2 L
+7 X
+V
+0 X
+N
+626.98 351.57 626.98 346.86 2 L
+7 X
+V
+0 X
+N
+627.57 352.15 627.57 347.48 2 L
+7 X
+V
+0 X
+N
+628.1 352.71 628.1 348.08 2 L
+7 X
+V
+0 X
+N
+628.64 353.21 628.64 348.63 2 L
+7 X
+V
+0 X
+N
+629.11 353.68 629.11 349.18 2 L
+7 X
+V
+0 X
+N
+629.57 354.14 629.57 349.68 2 L
+7 X
+V
+0 X
+N
+630.04 354.59 630.04 350.2 2 L
+7 X
+V
+0 X
+N
+630.45 354.98 630.45 350.63 2 L
+7 X
+V
+0 X
+N
+630.94 355.48 630.94 351.18 2 L
+7 X
+V
+0 X
+N
+631.41 355.93 631.41 351.7 2 L
+7 X
+V
+0 X
+N
+620.71 339.56 620.71 334.21 2 L
+7 X
+V
+0 X
+N
+621.37 340.21 621.37 334.93 2 L
+7 X
+V
+0 X
+N
+622.03 340.87 622.03 335.65 2 L
+7 X
+V
+0 X
+N
+622.62 341.45 622.62 336.29 2 L
+7 X
+V
+0 X
+N
+623.14 341.96 623.14 336.85 2 L
+7 X
+V
+0 X
+N
+623.72 342.55 623.72 337.53 2 L
+7 X
+V
+0 X
+N
+624.26 343.04 624.26 338.08 2 L
+7 X
+V
+0 X
+N
+624.8 343.62 624.8 338.71 2 L
+7 X
+V
+0 X
+N
+625.41 344.16 625.41 339.3 2 L
+7 X
+V
+0 X
+N
+625.92 344.68 625.92 339.87 2 L
+7 X
+V
+0 X
+N
+626.44 345.23 626.44 340.46 2 L
+7 X
+V
+0 X
+N
+626.98 345.77 626.98 341.05 2 L
+7 X
+V
+0 X
+N
+627.57 346.35 627.57 341.67 2 L
+7 X
+V
+0 X
+N
+628.1 346.9 628.1 342.28 2 L
+7 X
+V
+0 X
+N
+628.64 347.41 628.64 342.82 2 L
+7 X
+V
+0 X
+N
+629.11 347.88 629.11 343.37 2 L
+7 X
+V
+0 X
+N
+629.57 348.34 629.57 343.88 2 L
+7 X
+V
+0 X
+N
+630.04 348.78 630.04 344.4 2 L
+7 X
+V
+0 X
+N
+630.45 349.17 630.45 344.83 2 L
+7 X
+V
+0 X
+N
+630.94 349.68 630.94 345.37 2 L
+7 X
+V
+0 X
+N
+631.41 350.12 631.41 345.89 2 L
+7 X
+V
+0 X
+N
+561.53 343.3 563.49 343.3 2 L
+7 X
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+646.17 283.79 637.54 279.14 697.81 276.96 710.94 289.02 658.48 289.89 5 Y
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+637.54 279.14 637.54 263.87 638.81 262.86 696.55 260.82 697.81 262.57 697.81 276.96 6 Y
+7 X
+V
+0 X
+N
+696.55 260.82 710.94 277.68 710.94 289.02 697.81 276.96 697.81 262.3 5 Y
+7 X
+V
+0 X
+N
+638.81 262.86 638.81 260.97 696.43 259.22 697.81 259.8 710.47 275.79 710.94 277.68 699.08 263.79
+ 696.55 260.82 8 Y
+7 X
+V
+0 X
+N
+639.61 280.25 699.08 278.12 699.08 263.79 3 L
+2 Z
+N
+695.4 278.25 694.13 277.09 694.13 260.91 3 L
+N
+674.58 279 673.08 277.85 673.08 261.65 3 L
+N
+637.54 275.36 697.81 273.03 2 L
+N
+637.54 267.22 697.81 264.89 2 L
+N
+637.54 266.05 697.81 263.73 2 L
+N
+637.54 264.74 697.81 262.42 699.08 263.87 3 L
+N
+639.61 277.97 644.5 277.83 644.5 275.86 639.61 276.05 4 Y
+7 X
+V
+0 Z
+0 X
+N
+699.71 277.07 699.71 271.72 2 L
+7 X
+V
+2 Z
+0 X
+N
+700.37 277.72 700.37 272.44 2 L
+7 X
+V
+0 X
+N
+701.03 278.38 701.03 273.16 2 L
+7 X
+V
+0 X
+N
+701.62 278.96 701.62 273.8 2 L
+7 X
+V
+0 X
+N
+702.14 279.47 702.14 274.37 2 L
+7 X
+V
+0 X
+N
+702.72 280.06 702.72 275.05 2 L
+7 X
+V
+0 X
+N
+703.26 280.55 703.26 275.59 2 L
+7 X
+V
+0 X
+N
+703.8 281.12 703.8 276.22 2 L
+7 X
+V
+0 X
+N
+704.41 281.67 704.41 276.81 2 L
+7 X
+V
+0 X
+N
+704.92 282.19 704.92 277.38 2 L
+7 X
+V
+0 X
+N
+705.44 282.74 705.44 277.97 2 L
+7 X
+V
+0 X
+N
+705.98 283.27 705.98 278.56 2 L
+7 X
+V
+0 X
+N
+706.57 283.85 706.57 279.18 2 L
+7 X
+V
+0 X
+N
+707.1 284.41 707.1 279.78 2 L
+7 X
+V
+0 X
+N
+707.64 284.91 707.64 280.33 2 L
+7 X
+V
+0 X
+N
+708.11 285.38 708.11 280.88 2 L
+7 X
+V
+0 X
+N
+708.57 285.84 708.57 281.39 2 L
+7 X
+V
+0 X
+N
+709.04 286.29 709.04 281.9 2 L
+7 X
+V
+0 X
+N
+709.45 286.68 709.45 282.33 2 L
+7 X
+V
+0 X
+N
+709.94 287.18 709.94 282.88 2 L
+7 X
+V
+0 X
+N
+710.41 287.63 710.41 283.4 2 L
+7 X
+V
+0 X
+N
+699.71 271.26 699.71 265.91 2 L
+7 X
+V
+0 X
+N
+700.37 271.91 700.37 266.63 2 L
+7 X
+V
+0 X
+N
+701.03 272.57 701.03 267.35 2 L
+7 X
+V
+0 X
+N
+701.62 273.15 701.62 267.99 2 L
+7 X
+V
+0 X
+N
+702.14 273.66 702.14 268.55 2 L
+7 X
+V
+0 X
+N
+702.72 274.25 702.72 269.23 2 L
+7 X
+V
+0 X
+N
+703.26 274.74 703.26 269.78 2 L
+7 X
+V
+0 X
+N
+703.8 275.32 703.8 270.41 2 L
+7 X
+V
+0 X
+N
+704.41 275.86 704.41 271 2 L
+7 X
+V
+0 X
+N
+704.92 276.39 704.92 271.57 2 L
+7 X
+V
+0 X
+N
+705.44 276.93 705.44 272.16 2 L
+7 X
+V
+0 X
+N
+705.98 277.47 705.98 272.75 2 L
+7 X
+V
+0 X
+N
+706.57 278.05 706.57 273.38 2 L
+7 X
+V
+0 X
+N
+707.1 278.61 707.1 273.98 2 L
+7 X
+V
+0 X
+N
+707.64 279.11 707.64 274.53 2 L
+7 X
+V
+0 X
+N
+708.11 279.58 708.11 275.07 2 L
+7 X
+V
+0 X
+N
+708.57 280.04 708.57 275.58 2 L
+7 X
+V
+0 X
+N
+709.04 280.48 709.04 276.1 2 L
+7 X
+V
+0 X
+N
+709.45 280.87 709.45 276.53 2 L
+7 X
+V
+0 X
+N
+709.94 281.38 709.94 277.07 2 L
+7 X
+V
+0 X
+N
+710.41 281.83 710.41 277.59 2 L
+7 X
+V
+0 X
+N
+640.53 275 642.49 275 2 L
+7 X
+V
+0.5 H
+0 X
+N
+647.17 306.89 638.54 302.24 698.81 300.06 711.94 312.12 659.48 312.99 5 Y
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+638.54 302.24 638.54 286.97 639.81 285.96 697.55 283.92 698.81 285.67 698.81 300.06 6 Y
+7 X
+V
+0 X
+N
+697.55 283.92 711.94 300.78 711.94 312.12 698.81 300.06 698.81 285.41 5 Y
+7 X
+V
+0 X
+N
+639.81 285.96 639.81 284.07 697.43 282.32 698.81 282.9 711.47 298.89 711.94 300.78 700.08 286.89
+ 697.55 283.92 8 Y
+7 X
+V
+0 X
+N
+640.61 303.35 700.08 301.22 700.08 286.89 3 L
+2 Z
+N
+696.4 301.35 695.13 300.19 695.13 284.01 3 L
+N
+675.58 302.1 674.08 300.95 674.08 284.75 3 L
+N
+638.54 298.46 698.81 296.13 2 L
+N
+638.54 290.32 698.81 287.99 2 L
+N
+638.54 289.15 698.81 286.83 2 L
+N
+638.54 287.85 698.81 285.52 700.08 286.97 3 L
+N
+640.61 301.07 645.5 300.93 645.5 298.97 640.61 299.15 4 Y
+7 X
+V
+0 Z
+0 X
+N
+700.71 300.17 700.71 294.82 2 L
+7 X
+V
+2 Z
+0 X
+N
+701.37 300.82 701.37 295.55 2 L
+7 X
+V
+0 X
+N
+702.03 301.48 702.03 296.27 2 L
+7 X
+V
+0 X
+N
+702.62 302.06 702.62 296.91 2 L
+7 X
+V
+0 X
+N
+703.14 302.57 703.14 297.47 2 L
+7 X
+V
+0 X
+N
+703.72 303.16 703.72 298.15 2 L
+7 X
+V
+0 X
+N
+704.26 303.65 704.26 298.69 2 L
+7 X
+V
+0 X
+N
+704.8 304.23 704.8 299.32 2 L
+7 X
+V
+0 X
+N
+705.41 304.77 705.41 299.91 2 L
+7 X
+V
+0 X
+N
+705.92 305.29 705.92 300.48 2 L
+7 X
+V
+0 X
+N
+706.44 305.84 706.44 301.07 2 L
+7 X
+V
+0 X
+N
+706.98 306.37 706.98 301.66 2 L
+7 X
+V
+0 X
+N
+707.57 306.95 707.57 302.29 2 L
+7 X
+V
+0 X
+N
+708.1 307.51 708.1 302.89 2 L
+7 X
+V
+0 X
+N
+708.64 308.01 708.64 303.43 2 L
+7 X
+V
+0 X
+N
+709.11 308.48 709.11 303.98 2 L
+7 X
+V
+0 X
+N
+709.57 308.94 709.57 304.49 2 L
+7 X
+V
+0 X
+N
+710.04 309.39 710.04 305.01 2 L
+7 X
+V
+0 X
+N
+710.45 309.78 710.45 305.43 2 L
+7 X
+V
+0 X
+N
+710.94 310.29 710.94 305.98 2 L
+7 X
+V
+0 X
+N
+711.41 310.73 711.41 306.5 2 L
+7 X
+V
+0 X
+N
+700.71 294.36 700.71 289.01 2 L
+7 X
+V
+0 X
+N
+701.37 295.01 701.37 289.73 2 L
+7 X
+V
+0 X
+N
+702.03 295.67 702.03 290.45 2 L
+7 X
+V
+0 X
+N
+702.62 296.25 702.62 291.09 2 L
+7 X
+V
+0 X
+N
+703.14 296.76 703.14 291.65 2 L
+7 X
+V
+0 X
+N
+703.72 297.35 703.72 292.33 2 L
+7 X
+V
+0 X
+N
+704.26 297.85 704.26 292.88 2 L
+7 X
+V
+0 X
+N
+704.8 298.42 704.8 293.51 2 L
+7 X
+V
+0 X
+N
+705.41 298.96 705.41 294.1 2 L
+7 X
+V
+0 X
+N
+705.92 299.49 705.92 294.67 2 L
+7 X
+V
+0 X
+N
+706.44 300.04 706.44 295.26 2 L
+7 X
+V
+0 X
+N
+706.98 300.57 706.98 295.85 2 L
+7 X
+V
+0 X
+N
+707.57 301.15 707.57 296.48 2 L
+7 X
+V
+0 X
+N
+708.1 301.71 708.1 297.08 2 L
+7 X
+V
+0 X
+N
+708.64 302.21 708.64 297.63 2 L
+7 X
+V
+0 X
+N
+709.11 302.68 709.11 298.17 2 L
+7 X
+V
+0 X
+N
+709.57 303.14 709.57 298.68 2 L
+7 X
+V
+0 X
+N
+710.04 303.59 710.04 299.2 2 L
+7 X
+V
+0 X
+N
+710.45 303.97 710.45 299.63 2 L
+7 X
+V
+0 X
+N
+710.94 304.48 710.94 300.17 2 L
+7 X
+V
+0 X
+N
+711.41 304.93 711.41 300.69 2 L
+7 X
+V
+0 X
+N
+641.53 298.1 643.49 298.1 2 L
+7 X
+V
+0.5 H
+0 X
+N
+646.17 328.98 637.54 324.33 697.81 322.15 710.94 334.22 658.48 335.09 5 Y
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+637.54 324.33 637.54 309.07 638.81 308.05 696.55 306.02 697.81 307.76 697.81 322.15 6 Y
+7 X
+V
+0 X
+N
+696.55 306.02 710.94 322.88 710.94 334.22 697.81 322.15 697.81 307.5 5 Y
+7 X
+V
+0 X
+N
+638.81 308.05 638.81 306.16 696.43 304.42 697.81 305 710.47 320.99 710.94 322.88 699.08 308.99
+ 696.55 306.02 8 Y
+7 X
+V
+0 X
+N
+639.61 325.45 699.08 323.32 699.08 308.99 3 L
+2 Z
+N
+695.4 323.45 694.13 322.29 694.13 306.11 3 L
+N
+674.58 324.2 673.08 323.05 673.08 306.85 3 L
+N
+637.54 320.55 697.81 318.23 2 L
+N
+637.54 312.41 697.81 310.09 2 L
+N
+637.54 311.25 697.81 308.93 2 L
+N
+637.54 309.94 697.81 307.62 699.08 309.07 3 L
+N
+639.61 323.17 644.5 323.02 644.5 321.06 639.61 321.24 4 Y
+7 X
+V
+0 Z
+0 X
+N
+699.71 322.27 699.71 316.92 2 L
+7 X
+V
+2 Z
+0 X
+N
+700.37 322.92 700.37 317.64 2 L
+7 X
+V
+0 X
+N
+701.03 323.58 701.03 318.36 2 L
+7 X
+V
+0 X
+N
+701.62 324.16 701.62 319 2 L
+7 X
+V
+0 X
+N
+702.14 324.67 702.14 319.56 2 L
+7 X
+V
+0 X
+N
+702.72 325.26 702.72 320.24 2 L
+7 X
+V
+0 X
+N
+703.26 325.75 703.26 320.79 2 L
+7 X
+V
+0 X
+N
+703.8 326.32 703.8 321.42 2 L
+7 X
+V
+0 X
+N
+704.41 326.86 704.41 322.01 2 L
+7 X
+V
+0 X
+N
+704.92 327.39 704.92 322.58 2 L
+7 X
+V
+0 X
+N
+705.44 327.94 705.44 323.17 2 L
+7 X
+V
+0 X
+N
+705.98 328.47 705.98 323.76 2 L
+7 X
+V
+0 X
+N
+706.57 329.05 706.57 324.38 2 L
+7 X
+V
+0 X
+N
+707.1 329.61 707.1 324.98 2 L
+7 X
+V
+0 X
+N
+707.64 330.11 707.64 325.53 2 L
+7 X
+V
+0 X
+N
+708.11 330.58 708.11 326.08 2 L
+7 X
+V
+0 X
+N
+708.57 331.04 708.57 326.58 2 L
+7 X
+V
+0 X
+N
+709.04 331.49 709.04 327.1 2 L
+7 X
+V
+0 X
+N
+709.45 331.87 709.45 327.53 2 L
+7 X
+V
+0 X
+N
+709.94 332.38 709.94 328.08 2 L
+7 X
+V
+0 X
+N
+710.41 332.83 710.41 328.6 2 L
+7 X
+V
+0 X
+N
+699.71 316.46 699.71 311.11 2 L
+7 X
+V
+0 X
+N
+700.37 317.11 700.37 311.83 2 L
+7 X
+V
+0 X
+N
+701.03 317.77 701.03 312.55 2 L
+7 X
+V
+0 X
+N
+701.62 318.35 701.62 313.19 2 L
+7 X
+V
+0 X
+N
+702.14 318.86 702.14 313.75 2 L
+7 X
+V
+0 X
+N
+702.72 319.45 702.72 314.43 2 L
+7 X
+V
+0 X
+N
+703.26 319.94 703.26 314.98 2 L
+7 X
+V
+0 X
+N
+703.8 320.52 703.8 315.61 2 L
+7 X
+V
+0 X
+N
+704.41 321.06 704.41 316.2 2 L
+7 X
+V
+0 X
+N
+704.92 321.58 704.92 316.77 2 L
+7 X
+V
+0 X
+N
+705.44 322.13 705.44 317.36 2 L
+7 X
+V
+0 X
+N
+705.98 322.67 705.98 317.95 2 L
+7 X
+V
+0 X
+N
+706.57 323.25 706.57 318.57 2 L
+7 X
+V
+0 X
+N
+707.1 323.8 707.1 319.17 2 L
+7 X
+V
+0 X
+N
+707.64 324.3 707.64 319.72 2 L
+7 X
+V
+0 X
+N
+708.11 324.78 708.11 320.27 2 L
+7 X
+V
+0 X
+N
+708.57 325.24 708.57 320.78 2 L
+7 X
+V
+0 X
+N
+709.04 325.68 709.04 321.3 2 L
+7 X
+V
+0 X
+N
+709.45 326.07 709.45 321.72 2 L
+7 X
+V
+0 X
+N
+709.94 326.58 709.94 322.27 2 L
+7 X
+V
+0 X
+N
+710.41 327.02 710.41 322.79 2 L
+7 X
+V
+0 X
+N
+640.53 320.19 642.49 320.19 2 L
+7 X
+V
+0.5 H
+0 X
+N
+647.17 353.09 638.54 348.44 698.81 346.26 711.94 358.32 659.48 359.19 5 Y
+7 X
+V
+0.25 H
+0 Z
+0 X
+N
+638.54 348.44 638.54 333.18 639.81 332.16 697.55 330.12 698.81 331.87 698.81 346.26 6 Y
+7 X
+V
+0 X
+N
+697.55 330.12 711.94 346.98 711.94 358.32 698.81 346.26 698.81 331.61 5 Y
+7 X
+V
+0 X
+N
+639.81 332.16 639.81 330.27 697.43 328.52 698.81 329.11 711.47 345.1 711.94 346.98 700.08 333.09
+ 697.55 330.12 8 Y
+7 X
+V
+0 X
+N
+640.61 349.55 700.08 347.42 700.08 333.09 3 L
+2 Z
+N
+696.4 347.55 695.13 346.39 695.13 330.21 3 L
+N
+675.58 348.3 674.08 347.15 674.08 330.95 3 L
+N
+638.54 344.66 698.81 342.33 2 L
+N
+638.54 336.52 698.81 334.19 2 L
+N
+638.54 335.36 698.81 333.03 2 L
+N
+638.54 334.05 698.81 331.72 700.08 333.18 3 L
+N
+640.61 347.28 645.5 347.13 645.5 345.17 640.61 345.35 4 Y
+7 X
+V
+0 Z
+0 X
+N
+700.71 346.37 700.71 341.03 2 L
+7 X
+V
+2 Z
+0 X
+N
+701.37 347.03 701.37 341.75 2 L
+7 X
+V
+0 X
+N
+702.03 347.68 702.03 342.47 2 L
+7 X
+V
+0 X
+N
+702.62 348.26 702.62 343.11 2 L
+7 X
+V
+0 X
+N
+703.14 348.77 703.14 343.67 2 L
+7 X
+V
+0 X
+N
+703.72 349.36 703.72 344.35 2 L
+7 X
+V
+0 X
+N
+704.26 349.86 704.26 344.9 2 L
+7 X
+V
+0 X
+N
+704.8 350.43 704.8 345.52 2 L
+7 X
+V
+0 X
+N
+705.41 350.97 705.41 346.11 2 L
+7 X
+V
+0 X
+N
+705.92 351.49 705.92 346.68 2 L
+7 X
+V
+0 X
+N
+706.44 352.04 706.44 347.27 2 L
+7 X
+V
+0 X
+N
+706.98 352.58 706.98 347.86 2 L
+7 X
+V
+0 X
+N
+707.57 353.16 707.57 348.49 2 L
+7 X
+V
+0 X
+N
+708.1 353.71 708.1 349.09 2 L
+7 X
+V
+0 X
+N
+708.64 354.21 708.64 349.64 2 L
+7 X
+V
+0 X
+N
+709.11 354.68 709.11 350.18 2 L
+7 X
+V
+0 X
+N
+709.57 355.15 709.57 350.69 2 L
+7 X
+V
+0 X
+N
+710.04 355.59 710.04 351.21 2 L
+7 X
+V
+0 X
+N
+710.45 355.98 710.45 351.64 2 L
+7 X
+V
+0 X
+N
+710.94 356.49 710.94 352.18 2 L
+7 X
+V
+0 X
+N
+711.41 356.93 711.41 352.7 2 L
+7 X
+V
+0 X
+N
+700.71 340.56 700.71 335.21 2 L
+7 X
+V
+0 X
+N
+701.37 341.22 701.37 335.93 2 L
+7 X
+V
+0 X
+N
+702.03 341.87 702.03 336.65 2 L
+7 X
+V
+0 X
+N
+702.62 342.45 702.62 337.3 2 L
+7 X
+V
+0 X
+N
+703.14 342.96 703.14 337.86 2 L
+7 X
+V
+0 X
+N
+703.72 343.55 703.72 338.54 2 L
+7 X
+V
+0 X
+N
+704.26 344.05 704.26 339.08 2 L
+7 X
+V
+0 X
+N
+704.8 344.62 704.8 339.71 2 L
+7 X
+V
+0 X
+N
+705.41 345.16 705.41 340.3 2 L
+7 X
+V
+0 X
+N
+705.92 345.69 705.92 340.88 2 L
+7 X
+V
+0 X
+N
+706.44 346.24 706.44 341.46 2 L
+7 X
+V
+0 X
+N
+706.98 346.77 706.98 342.05 2 L
+7 X
+V
+0 X
+N
+707.57 347.35 707.57 342.68 2 L
+7 X
+V
+0 X
+N
+708.1 347.91 708.1 343.28 2 L
+7 X
+V
+0 X
+N
+708.64 348.41 708.64 343.83 2 L
+7 X
+V
+0 X
+N
+709.11 348.88 709.11 344.38 2 L
+7 X
+V
+0 X
+N
+709.57 349.34 709.57 344.88 2 L
+7 X
+V
+0 X
+N
+710.04 349.79 710.04 345.4 2 L
+7 X
+V
+0 X
+N
+710.45 350.18 710.45 345.83 2 L
+7 X
+V
+0 X
+N
+710.94 350.68 710.94 346.38 2 L
+7 X
+V
+0 X
+N
+711.41 351.13 711.41 346.89 2 L
+7 X
+V
+0 X
+N
+641.53 344.3 643.49 344.3 2 L
+7 X
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+0 0 1 0 1 1 0 K
+7 X
+0 0 1 0 1 1 0 K
+90 450 12.14 15.09 337.36 333.97 G
+2 H
+0 X
+90 450 12.14 15.09 337.36 333.97 A
+343.01 320.73 M
+ 357.6 306.83 315.92 303.78 330.98 319.89 D
+N
+330.28 350.73 M
+ 315.25 350.58 310.99 324.18 320.39 320.75 D
+ 328.49 317.8 349.36 305.23 343.29 322.1 D
+ 340.12 330.93 352.84 344.53 343.77 350.73 D
+V
+N
+1 0 0 0 0 1 1 K
+324.56 311.33 M
+ 298.84 312.29 286 280.66 299.09 262.97 D
+ 300.91 260.51 307.59 265.99 307.94 274.19 D
+ 308.55 288.43 313.08 269.21 312.52 266.42 D
+ 309.16 249.6 355.33 252.19 353.91 260.37 D
+ 353.33 263.76 353.23 288.52 358.94 270.74 D
+ 359.83 267.94 354.62 251.75 363.01 262.97 D
+ 370.49 272.96 393.34 277.26 387.88 291.46 D
+ 384.41 300.47 378.53 289.39 375.9 288.34 D
+ 372.34 286.91 360.99 279.67 360.61 289.74 D
+ 359.77 311.5 338.7 304.86 325.48 307.87 D
+9 X
+1 0 0 0 0 1 1 K
+V
+0 X
+N
+0 0 0 1 0 0 0 K
+0 180 792 792 C
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63 693 729 693 2 L
+2 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+63 234 729 738 18 RR
+N
+0 1 1 0 1 0 0 K
+0 24 Q
+0 1 1 0 1 0 0 K
+(Construct 4 sets of 10 min. workloads with real applications) 72 659 T
+0 0 0 1 0 0 0 K
+1 16 Q
+0 0 0 1 0 0 0 K
+(\245) 99 627 T
+1 0 1 0 0 1 0 K
+0 24 Q
+1 0 1 0 0 1 0 K
+(Production:) 126 627 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Independent runs from SPEC-fp) 288 627 T
+1 16 Q
+(\245) 99 595 T
+1 0 1 0 0 1 0 K
+0 24 Q
+1 0 1 0 0 1 0 K
+(Development:) 126 595 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Compile-edit-debug cycle) 288 595 T
+1 16 Q
+(\245) 99 563 T
+1 0 1 0 0 1 0 K
+0 24 Q
+1 0 1 0 0 1 0 K
+(I/O:) 126 563 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Jobs with I/O dependencies) 288 563 T
+1 16 Q
+(\245) 99 531 T
+1 0 1 0 0 1 0 K
+0 24 Q
+1 0 1 0 0 1 0 K
+(Interactive:) 126 531 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Simulated typing and shell commands) 288 531 T
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+(Run jobs and measure sensitivity of workload to:) 72 497 T
+0 0 0 1 0 0 0 K
+1 16 Q
+0 0 0 1 0 0 0 K
+(\245) 99 465 T
+0 24 Q
+(W) 126 465 T
+(orkstation model) 148.22 465 T
+1 16 Q
+(\245) 99 433 T
+0 24 Q
+(File cache locality) 126 433 T
+1 16 Q
+(\245) 99 401 T
+0 24 Q
+(Network sharing) 126 401 T
+1 16 Q
+(\245) 99 369 T
+2 24 Q
+(\050Sharing workstations\051) 126 369 T
+1 16 Q
+(\245) 99 337 T
+2 24 Q
+(\050Additional workstations\051) 126 337 T
+0 1 1 0 1 0 0 K
+0 F
+0 1 1 0 1 0 0 K
+(Future W) 72 303 T
+(ork: Run workloads with scheduling policies) 170.26 303 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+(Instead: Enumerate issues learned from measurements) 72 269 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+0 36 Q
+1 1 0 0 0 0 1 K
+(Methodology) 292.95 705 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63 693 729 693 2 L
+2 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+63 234 729 738 18 RR
+N
+0 1 1 0 1 0 0 K
+0 24 Q
+0 1 1 0 1 0 0 K
+(Scenario:) 72 659 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(W) 180.05 659 T
+(orkstation cluster consists of dif) 202.27 659 T
+(ferent models) 535.3 659 T
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+(Which workstation is the fastest for each job?) 72 623 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+(Experiment:) 72 350 T
+0 0 0 1 0 0 0 K
+1 16 Q
+0 0 0 1 0 0 0 K
+(\245) 99 318 T
+0 24 Q
+(Run each user workload on three SS-10 and SS-20) 126 318 T
+(models) 126 294 T
+0 1 0 0 1 0 1 K
+77.19 550 218.91 586 R
+5 X
+0 1 0 0 1 0 1 K
+V
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+220.91 550 392.79 586 R
+V
+0 0 0 1 0 0 0 K
+3 20 Q
+0 X
+0 0 0 1 0 0 0 K
+(SS-10 \050Model 51\051) 233.14 562.67 T
+0 1 0 0 1 0 1 K
+393.29 550 567.27 586 R
+5 X
+0 1 0 0 1 0 1 K
+V
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+(SS-10 \050Model 41\051) 406.95 562.67 T
+0 1 0 0 1 0 1 K
+567.78 550 714.81 586 R
+5 X
+0 1 0 0 1 0 1 K
+V
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+(SS-20) 617.22 562.67 T
+0 1 0 0 1 0 1 K
+77.19 515.25 218.91 548 R
+5 X
+0 1 0 0 1 0 1 K
+V
+0 0 0 1 0 0 0 K
+4 18 Q
+0 X
+0 0 0 1 0 0 0 K
+(Clock Speed) 116.41 528 T
+0 1 0 0 1 0 1 K
+1 0 0 0 0 1 1 K
+220.91 515.25 392.79 548 R
+5 X
+1 0 0 0 0 1 1 K
+V
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+(50 MHz) 321.55 528 T
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+(40 MHz) 496.04 528 T
+1 0 0 0 0 1 1 K
+567.78 515.25 714.81 548 R
+5 X
+1 0 0 0 0 1 1 K
+V
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+(50 MHz) 644.32 528 T
+1 0 0 0 0 1 1 K
+0 1 0 0 1 0 1 K
+77.19 481.25 218.91 514.75 R
+5 X
+0 1 0 0 1 0 1 K
+V
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+(L1 Cache) 138.43 494 T
+0 1 0 0 1 0 1 K
+0 0 0 1 0 0 0 K
+(4 KB \0501-way\051) 281.07 494 T
+1 0 0 0 0 1 1 K
+393.29 481.25 567.27 514.75 R
+5 X
+1 0 0 0 0 1 1 K
+V
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+(16 KB \0504-way\051) 446.55 494 T
+1 0 0 0 0 1 1 K
+567.78 481.25 714.81 514.75 R
+5 X
+1 0 0 0 0 1 1 K
+V
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+(16 KB \0504-way\051) 594.84 494 T
+1 0 0 0 0 1 1 K
+0 1 0 0 1 0 1 K
+77.19 447.25 218.91 480.75 R
+5 X
+0 1 0 0 1 0 1 K
+V
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+(L2 Cache) 138.43 460 T
+0 1 0 0 1 0 1 K
+1 0 0 0 0 1 1 K
+220.91 447.25 392.79 480.75 R
+5 X
+1 0 0 0 0 1 1 K
+V
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+(1 MB) 339.53 460 T
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+(1 MB) 514.02 460 T
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+(None) 664.82 460 T
+1 0 0 0 0 1 1 K
+0 1 0 0 1 0 1 K
+77.19 395 218.91 446.75 R
+5 X
+0 1 0 0 1 0 1 K
+V
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+(Main Memory) 103.42 426 T
+0 1 0 0 1 0 1 K
+0 0 0 1 0 0 0 K
+(Access T) 115.06 407 T
+(ime) 180.91 407 T
+0 1 0 0 1 0 1 K
+0 0 0 1 0 0 0 K
+(1.0 -1.4 us) 305.04 426 T
+(1.1 - 1.8 us) 475.03 426 T
+1 0 0 0 0 1 1 K
+567.78 395 714.81 446.75 R
+5 X
+1 0 0 0 0 1 1 K
+V
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+(0.4 - 1.0 us) 623.32 426 T
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+76.19 586 76.19 395 2 L
+V
+0 Z
+N
+219.91 588 219.91 393 2 L
+V
+N
+393.04 588 393.04 393 2 L
+V
+0.5 H
+N
+567.53 588 567.53 393 2 L
+V
+N
+715.81 586 715.81 395 2 L
+V
+2 H
+N
+75.19 587 716.81 587 2 L
+V
+N
+75.19 549 716.81 549 2 L
+V
+N
+75.19 515 716.81 515 2 L
+V
+0.5 H
+N
+75.19 481 716.81 481 2 L
+V
+N
+75.19 447 716.81 447 2 L
+V
+N
+75.19 394 716.81 394 2 L
+V
+2 H
+N
+1 1 0 0 0 0 1 K
+0 36 Q
+1 1 0 0 0 0 1 K
+(Heterogeneous Cluster) 210.92 705 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "4" 4
+%%Page: "5" 5
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63 693 729 693 2 L
+2 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+63 234 729 738 18 RR
+N
+0 1 1 0 1 0 0 K
+0 24 Q
+0 1 1 0 1 0 0 K
+(Measurement Results:) 72 659 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+1 0 1 0 0 1 0 K
+(\245) 72 623 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+(Production W) 99 623 T
+(orkload:) 242.62 623 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(No ordering of performance) 334.66 623 T
+1 0 1 0 0 1 0 K
+1 0 1 0 0 1 0 K
+(\245) 72 346 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+(Interactive W) 99 346 T
+(orkloads:) 238.61 346 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Almost no sensitivity) 342.65 346 T
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+(Scheduling Implications:) 72 312 T
+0 0 0 1 0 0 0 K
+1 16 Q
+0 0 0 1 0 0 0 K
+(\245) 99 280 T
+0 24 Q
+(Run light CPU jobs on \322slower\323 machines) 126 280 T
+1 16 Q
+(\245) 99 248 T
+0 24 Q
+(Prediction \050or user speci\336cation\051 for CPU-intensive jobs) 126 248 T
+72 234 720 675 C
+72 374 720 615 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 56 53 394 297 305.5 226 81 380 FMBEGINEPSF
+%%BeginDocument: /disks/barad-dur/now/research/Slides/local.production.a.epsi
+%!PS-Adobe-2.0 EPSF-1.2
+%%BoundingBox: 56 53 394 297
+save
+countdictstack
+mark
+newpath
+/showpage {} def
+%!PS-Adobe-2.0 EPSF-2.0
+%%Creator: gnuplot
+%%DocumentFonts: Helvetica
+%%BoundingBox: 50 50 410 302
+%%EndComments
+/gnudict 40 dict def
+gnudict begin
+/Color true def
+/Solid true def
+/gnu2 100 def
+/gnu2 150 def
+/gnulinewidth 5.000 def
+/vshift -66 def
+/dl {10 mul} def
+/hpt 31.5 def
+/vpt 31.5 def
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow { currentpoint stroke M
+  0 vshift R show } def
+/Rshow { currentpoint stroke M
+  dup stringwidth pop neg vshift R show } def
+/Cshow { currentpoint stroke M
+  dup stringwidth pop -2 div vshift R show } def
+/DL { Color {setrgbcolor Solid {pop []} if 0 setdash }
+ {pop pop pop Solid {pop []} if 0 setdash} ifelse } def
+/BL { stroke gnulinewidth 2 mul setlinewidth } def
+/AL { stroke gnulinewidth 2 div setlinewidth } def
+/PL { stroke gnu2 setlinewidth } def
+/LTb { BL [] 0 0 0 DL } def
+/LTa { AL [1 dl 2 dl] 0 setdash 0 0 0 setrgbcolor } def
+/LT0 { PL [] 0 1 0 DL } def
+/LT1 { PL [4 dl 2 dl] 0 0 1 DL } def
+/LT2 { PL [2 dl 3 dl] 1 0 0 DL } def
+/LT3 { PL [1 dl 1.5 dl] 1 0 1 DL } def
+/LT4 { PL [5 dl 2 dl 1 dl 2 dl] 0 1 1 DL } def
+/LT5 { PL [4 dl 3 dl 1 dl 3 dl] 1 1 0 DL } def
+/LT6 { PL [2 dl 2 dl 2 dl 4 dl] 0 0 0 DL } def
+/LT7 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 1 0.3 0 DL } def
+/LT8 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 0.5 0.5 0.5 DL } def
+/P { stroke [] 0 setdash
+  currentlinewidth 2 div sub M
+  0 currentlinewidth V stroke } def
+/D { stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  P } def
+/A { stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+  } def
+/B { stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  P } def
+/C { stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke } def
+/T { stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  P  } def
+/S { 2 copy A C} def
+end
+%%EndProlog
+gnudict begin
+gsave
+50 50 translate
+0.050 0.050 scale
+0 setgray
+/Helvetica findfont 200 scalefont setfont
+newpath
+LTa
+LTb
+1200 501 M
+-63 0 V
+-57 0 R
+(0) Rshow
+1200 1093 M
+-63 0 V
+-57 0 R
+(0.2) Rshow
+1200 1684 M
+-63 0 V
+-57 0 R
+(0.4) Rshow
+1200 2276 M
+-63 0 V
+-57 0 R
+(0.6) Rshow
+1200 2868 M
+-63 0 V
+-57 0 R
+(0.8) Rshow
+1200 3460 M
+-63 0 V
+-57 0 R
+(1) Rshow
+1200 4051 M
+-63 0 V
+-57 0 R
+(1.2) Rshow
+1200 4643 M
+-63 0 V
+-57 0 R
+(1.4) Rshow
+1556 501 M
+0 -63 V
+0 -137 R
+(polmp) Cshow
+2268 501 M
+0 -63 V
+0 -137 R
+(mdljsp2) Cshow
+2980 501 M
+0 -63 V
+0 -137 R
+(doduc) Cshow
+3692 501 M
+0 -63 V
+0 -137 R
+(arps) Cshow
+4405 501 M
+0 -63 V
+0 -137 R
+(mdljdp2) Cshow
+5117 501 M
+0 -63 V
+0 -137 R
+(ear) Cshow
+5829 501 M
+0 -63 V
+0 -137 R
+(alvinn) Cshow
+6541 501 M
+0 -63 V
+0 -137 R
+(ora) Cshow
+1200 501 M
+5697 0 V
+0 4438 V
+-5697 0 V
+0 -4438 V
+200 2720 M
+currentpoint gsave translate 90 rotate 0 0 M
+(Slowdown relative to Single SS-51) Cshow
+grestore
+4048 101 M
+(Production Workload) Cshow
+LT0
+6234 4676 M
+( SS-10 \(51\)) Rshow
+6354 4676 M
+360 0 V
+1378 501 M
+0 2959 V
+2090 501 M
+0 2959 V
+2802 501 M
+0 2959 V
+3514 501 M
+0 2959 V
+4227 501 M
+0 2959 V
+4939 501 M
+0 2959 V
+5651 501 M
+0 2959 V
+6363 501 M
+0 2959 V
+LT1
+6234 4476 M
+(SS-10 \(41\)) Rshow
+6354 4476 M
+360 0 V
+1556 501 M
+0 3369 V
+2268 501 M
+0 3213 V
+2980 501 M
+0 3176 V
+3692 501 M
+0 3475 V
+4405 501 M
+0 3350 V
+5117 501 M
+0 3434 V
+5829 501 M
+0 3432 V
+6541 501 M
+0 3601 V
+LT2
+6234 4276 M
+(SS-20) Rshow
+6354 4276 M
+360 0 V
+1734 501 M
+0 2581 V
+2446 501 M
+0 2611 V
+3158 501 M
+0 2622 V
+3870 501 M
+0 2685 V
+4583 501 M
+0 2728 V
+5295 501 M
+0 2746 V
+6007 501 M
+0 2795 V
+6719 501 M
+0 2889 V
+stroke
+grestore
+end
+showpage
+%%Trailer
+cleartomark
+countdictstack exch sub { end } repeat
+restore
+
+%%EndDocument
+FMENDEPSF
+0 56 53 394 297 315 226 395.5 380 FMBEGINEPSF
+%%BeginDocument: /disks/barad-dur/now/research/Slides/local.production.b.epsi
+%!PS-Adobe-2.0 EPSF-1.2
+%%BoundingBox: 56 53 394 297
+save
+countdictstack
+mark
+newpath
+/showpage {} def
+%!PS-Adobe-2.0 EPSF-2.0
+%%Creator: gnuplot
+%%DocumentFonts: Helvetica
+%%BoundingBox: 50 50 410 302
+%%EndComments
+/gnudict 40 dict def
+gnudict begin
+/Color true def
+/Solid true def
+/gnu2 150 def
+/gnulinewidth 5.000 def
+/vshift -66 def
+/dl {10 mul} def
+/hpt 31.5 def
+/vpt 31.5 def
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow { currentpoint stroke M
+  0 vshift R show } def
+/Rshow { currentpoint stroke M
+  dup stringwidth pop neg vshift R show } def
+/Cshow { currentpoint stroke M
+  dup stringwidth pop -2 div vshift R show } def
+/DL { Color {setrgbcolor Solid {pop []} if 0 setdash }
+ {pop pop pop Solid {pop []} if 0 setdash} ifelse } def
+/BL { stroke gnulinewidth 2 mul setlinewidth } def
+/AL { stroke gnulinewidth 2 div setlinewidth } def
+/PL { stroke gnu2 setlinewidth } def
+/LTb { BL [] 0 0 0 DL } def
+/LTa { AL [1 dl 2 dl] 0 setdash 0 0 0 setrgbcolor } def
+/LT0 { PL [] 0 1 0 DL } def
+/LT1 { PL [4 dl 2 dl] 0 0 1 DL } def
+/LT2 { PL [2 dl 3 dl] 1 0 0 DL } def
+/LT3 { PL [1 dl 1.5 dl] 1 0 1 DL } def
+/LT4 { PL [5 dl 2 dl 1 dl 2 dl] 0 1 1 DL } def
+/LT5 { PL [4 dl 3 dl 1 dl 3 dl] 1 1 0 DL } def
+/LT6 { PL [2 dl 2 dl 2 dl 4 dl] 0 0 0 DL } def
+/LT7 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 1 0.3 0 DL } def
+/LT8 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 0.5 0.5 0.5 DL } def
+/P { stroke [] 0 setdash
+  currentlinewidth 2 div sub M
+  0 currentlinewidth V stroke } def
+/D { stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  P } def
+/A { stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+  } def
+/B { stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  P } def
+/C { stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke } def
+/T { stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  P  } def
+/S { 2 copy A C} def
+end
+%%EndProlog
+gnudict begin
+gsave
+50 50 translate
+0.050 0.050 scale
+0 setgray
+/Helvetica findfont 200 scalefont setfont
+newpath
+LTa
+LTb
+1200 501 M
+-63 0 V
+-57 0 R
+(0) Rshow
+1200 1093 M
+-63 0 V
+-57 0 R
+(0.2) Rshow
+1200 1684 M
+-63 0 V
+-57 0 R
+(0.4) Rshow
+1200 2276 M
+-63 0 V
+-57 0 R
+(0.6) Rshow
+1200 2868 M
+-63 0 V
+-57 0 R
+(0.8) Rshow
+1200 3460 M
+-63 0 V
+-57 0 R
+(1) Rshow
+1200 4051 M
+-63 0 V
+-57 0 R
+(1.2) Rshow
+1200 4643 M
+-63 0 V
+-57 0 R
+(1.4) Rshow
+1556 501 M
+0 -63 V
+0 -137 R
+(swm256) Cshow
+2268 501 M
+0 -63 V
+0 -137 R
+(tomcatv) Cshow
+2980 501 M
+0 -63 V
+0 -137 R
+(spice) Cshow
+3692 501 M
+0 -63 V
+0 -137 R
+(wave5) Cshow
+4405 501 M
+0 -63 V
+0 -137 R
+(fppp) Cshow
+5117 501 M
+0 -63 V
+0 -137 R
+(su2cor) Cshow
+5829 501 M
+0 -63 V
+0 -137 R
+(nasa7) Cshow
+6541 501 M
+0 -63 V
+0 -137 R
+(hydro2) Cshow
+1200 501 M
+5697 0 V
+0 4438 V
+-5697 0 V
+0 -4438 V
+200 2720 M
+currentpoint gsave translate 90 rotate 0 0 M
+(Slowdown relative to Single SS-51) Cshow
+grestore
+4048 101 M
+(Production Workload) Cshow
+LT0
+3514 4643 M
+( SS-10 \(51\)) Rshow
+3634 4643 M
+360 0 V
+1378 501 M
+0 2959 V
+2090 501 M
+0 2959 V
+2802 501 M
+0 2959 V
+3514 501 M
+0 2959 V
+4227 501 M
+0 2959 V
+4939 501 M
+0 2959 V
+5651 501 M
+0 2959 V
+6363 501 M
+0 2959 V
+LT1
+3514 4443 M
+(SS-10 \(41\)) Rshow
+3634 4443 M
+360 0 V
+1556 501 M
+0 1878 V
+2268 501 M
+0 2482 V
+2980 501 M
+0 2720 V
+3692 501 M
+0 2676 V
+4405 501 M
+0 2837 V
+5117 501 M
+0 2897 V
+5829 501 M
+0 2803 V
+6541 501 M
+0 3463 V
+LT2
+3514 4243 M
+(SS-20) Rshow
+3634 4243 M
+360 0 V
+1734 501 M
+0 1171 V
+2446 501 M
+0 2336 V
+3158 501 M
+0 2420 V
+3870 501 M
+0 2394 V
+4583 501 M
+0 2535 V
+5295 501 M
+0 4297 V
+6007 501 M
+0 3060 V
+6719 501 M
+0 3530 V
+stroke
+grestore
+end
+showpage
+%%Trailer
+cleartomark
+countdictstack exch sub { end } repeat
+restore
+
+%%EndDocument
+FMENDEPSF
+72 234 720 675 C
+0 180 792 792 C
+1 1 0 0 0 0 1 K
+0 36 Q
+0 X
+1 1 0 0 0 0 1 K
+(Heterogeneous Cluster) 210.92 705 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "5" 5
+%%Page: "6" 6
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63 693 729 693 2 L
+2 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+63 234 729 738 18 RR
+N
+0 1 1 0 1 0 0 K
+0 24 Q
+0 1 1 0 1 0 0 K
+(Scenario:) 72 659 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Job is executed on least-loaded/fastest machine) 180.05 659 T
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+(Should jobs from same user have af) 72 623 T
+(\336nity for workstations?) 455.74 623 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+(Experiment:) 72 348 T
+0 0 0 1 0 0 0 K
+1 16 Q
+0 0 0 1 0 0 0 K
+(\245) 99 316 T
+0 24 Q
+(Simulate execution on new workstation by \337ushing \336le) 126 316 T
+(cache between each job in workload) 126 292 T
+72 234 720 675 C
+99 374 693 615 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+290 470.15 344 524.15 R
+0 X
+1 0 1 0 0 1 0 K
+V
+2 H
+2 Z
+N
+380 470.15 434 524.15 R
+V
+N
+1 0 0 0 0 1 1 K
+470 470.15 524 524.15 R
+1 0 0 0 0 1 1 K
+V
+N
+1 0 1 0 0 1 0 K
+560 470.15 614 524.15 R
+1 0 1 0 0 1 0 K
+V
+N
+1 0 0 0 0 1 1 K
+162 489 207 516 13.5 RR
+1 0 0 0 0 1 1 K
+V
+N
+0 0 0 1 0 0 0 K
+0 24 Q
+0 0 0 1 0 0 0 K
+(?) 526.66 444.5 T
+0 1 0 0 1 0 1 K
+290 533.15 335 560.15 13.5 RR
+0 1 0 0 1 0 1 K
+V
+N
+387 534 432 561 13.5 RR
+9 X
+V
+0 X
+N
+(Idle) 569 538.4 T
+0 0 0 1 0 0 0 K
+492.6 458.55 503.99 472.48 501.71 454.63 497.15 456.59 4 Y
+0 0 0 1 0 0 0 K
+V
+184.5 489 M
+ 241.4 430.4 367.03 419.9 470.85 439.24 D
+ 484.84 441.85 492.44 448.79 497.19 456.58 D
+N
+573.05 463.51 586.99 474.9 581.2 457.85 577.12 460.68 4 Y
+V
+184.5 489 M
+ 191.6 403.94 389.56 413.08 494.98 423.68 D
+ 530.52 427.26 560.58 442.45 577.15 460.66 D
+N
+0 18 Q
+(WS 1) 295.99 494.09 T
+(WS 2) 383.99 494.09 T
+(WS 3) 474 494.15 T
+(WS 4) 563 493.15 T
+1 0 0 0 0 1 1 K
+1 0 0 0 0 1 1 K
+(User A last ran) 450 402.94 T
+(on WS 3) 468 385.88 T
+(Job from User A) 121.97 528.94 T
+0 1 0 0 1 0 1 K
+0 24 Q
+0 1 0 0 1 0 1 K
+(Idle) 477 534.5 T
+387 570 432 597 13.5 RR
+9 X
+V
+0 X
+N
+0 0 0 1 0 0 0 K
+72 234 720 675 C
+0 180 792 792 C
+1 1 0 0 0 0 1 K
+0 36 Q
+0 X
+1 1 0 0 0 0 1 K
+(W) 242.6 705 T
+(orkstation Af) 275.94 705 T
+(\336nity) 475.38 705 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "6" 6
+%%Page: "7" 7
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63 693 729 693 2 L
+2 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+63 234 729 738 18 RR
+N
+0 1 1 0 1 0 0 K
+0 24 Q
+0 1 1 0 1 0 0 K
+(Measurement Results:) 72 659 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+1 0 1 0 0 1 0 K
+(\245) 72 623 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+(Development and I/O:) 99 623 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Slowdown related to utilization) 339.12 623 T
+1 0 1 0 0 1 0 K
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+1 0 1 0 0 1 0 K
+(\245) 72 365 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+(Production and Interactive:) 99 365 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Negligible slowdown) 391.15 365 T
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+(Scheduling Implications:) 72 331 T
+0 0 0 1 0 0 0 K
+1 16 Q
+0 0 0 1 0 0 0 K
+(\245) 99 299 T
+0 24 Q
+(Use processor af) 126 299 T
+(\336nity when scheduling jobs with large) 306.96 299 T
+(input sets) 126 275 T
+72 234 720 675 C
+74 393 718 615 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 56 50 394 301 306 216 83 399 FMBEGINEPSF
+%%BeginDocument: /disks/barad-dur/now/research/Slides/FlushDevelRank.epsi
+%!PS-Adobe-2.0 EPSF-1.2
+%%BoundingBox: 56 50 394 301
+save
+countdictstack
+mark
+newpath
+/showpage {} def
+%!PS-Adobe-2.0 EPSF-2.0
+%%Creator: gnuplot
+%%DocumentFonts: Helvetica
+%%BoundingBox: 50 50 410 302
+%%EndComments
+/gnudict 40 dict def
+gnudict begin
+/Color true def
+/Solid true def
+/gnu2 200 def
+/gnu2 250 def
+/gnulinewidth 5.000 def
+/vshift -66 def
+/dl {10 mul} def
+/hpt 31.5 def
+/vpt 31.5 def
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow { currentpoint stroke M
+  0 vshift R show } def
+/Rshow { currentpoint stroke M
+  dup stringwidth pop neg vshift R show } def
+/Cshow { currentpoint stroke M
+  dup stringwidth pop -2 div vshift R show } def
+/DL { Color {setrgbcolor Solid {pop []} if 0 setdash }
+ {pop pop pop Solid {pop []} if 0 setdash} ifelse } def
+/BL { stroke gnulinewidth 2 mul setlinewidth } def
+/AL { stroke gnulinewidth 2 div setlinewidth } def
+/PL { stroke gnu2 setlinewidth } def
+/LTb { BL [] 0 0 0 DL } def
+/LTa { AL [1 dl 2 dl] 0 setdash 0 0 0 setrgbcolor } def
+/LT0 { PL [] 0 1 0 DL } def
+/LT1 { PL [4 dl 2 dl] 0 0 1 DL } def
+/LT2 { PL [2 dl 3 dl] 1 0 0 DL } def
+/LT3 { PL [1 dl 1.5 dl] 1 0 1 DL } def
+/LT4 { PL [5 dl 2 dl 1 dl 2 dl] 0 1 1 DL } def
+/LT5 { PL [4 dl 3 dl 1 dl 3 dl] 1 1 0 DL } def
+/LT6 { PL [2 dl 2 dl 2 dl 4 dl] 0 0 0 DL } def
+/LT7 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 1 0.3 0 DL } def
+/LT8 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 0.5 0.5 0.5 DL } def
+/P { stroke [] 0 setdash
+  currentlinewidth 2 div sub M
+  0 currentlinewidth V stroke } def
+/D { stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  P } def
+/A { stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+  } def
+/B { stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  P } def
+/C { stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke } def
+/T { stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  P  } def
+/S { 2 copy A C} def
+end
+%%EndProlog
+gnudict begin
+gsave
+50 50 translate
+0.050 0.050 scale
+0 setgray
+/Helvetica findfont 200 scalefont setfont
+newpath
+LTa
+LTb
+1200 501 M
+-63 0 V
+-57 0 R
+(1) Rshow
+1200 1389 M
+-63 0 V
+-57 0 R
+(1.2) Rshow
+1200 2276 M
+-63 0 V
+-57 0 R
+(1.4) Rshow
+1200 3164 M
+-63 0 V
+-57 0 R
+(1.6) Rshow
+1200 4051 M
+-63 0 V
+-57 0 R
+(1.8) Rshow
+1200 4939 M
+-63 0 V
+-57 0 R
+(2) Rshow
+1833 501 M
+0 -63 V
+0 -137 R
+(spice) Cshow
+2466 501 M
+0 -63 V
+0 -137 R
+(sim) Cshow
+3099 501 M
+0 -63 V
+0 -137 R
+(zip) Cshow
+3732 501 M
+0 -63 V
+0 -137 R
+(nasa7) Cshow
+4365 501 M
+0 -63 V
+0 -137 R
+(grep) Cshow
+4998 501 M
+0 -63 V
+0 -137 R
+(unzip) Cshow
+5631 501 M
+0 -63 V
+0 -137 R
+(xeyes) Cshow
+1200 501 M
+5697 0 V
+0 4438 V
+-5697 0 V
+0 -4438 V
+200 2720 M
+currentpoint gsave translate 90 rotate 0 0 M
+(Slowdown) Cshow
+grestore
+4048 101 M
+(Development Workload) Cshow
+LT0
+1833 501 M
+0 119 V
+2466 501 M
+0 183 V
+3099 501 M
+0 388 V
+3732 501 M
+0 689 V
+4365 501 M
+0 606 V
+4998 501 M
+0 736 V
+5631 501 M
+0 3215 V
+stroke
+grestore
+end
+showpage
+%%Trailer
+cleartomark
+countdictstack exch sub { end } repeat
+restore
+
+%%EndDocument
+FMENDEPSF
+0 56 53 394 301 307 214 398 399 FMBEGINEPSF
+%%BeginDocument: /disks/barad-dur/now/research/Slides/FlushIORank.epsi
+%!PS-Adobe-2.0 EPSF-1.2
+%%BoundingBox: 56 53 394 301
+save
+countdictstack
+mark
+newpath
+/showpage {} def
+%!PS-Adobe-2.0 EPSF-2.0
+%%Creator: gnuplot
+%%DocumentFonts: Helvetica
+%%BoundingBox: 50 50 410 302
+%%EndComments
+/gnudict 40 dict def
+gnudict begin
+/Color true def
+/Solid true def
+/gnu2 250 def
+/gnulinewidth 5.000 def
+/vshift -66 def
+/dl {10 mul} def
+/hpt 31.5 def
+/vpt 31.5 def
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow { currentpoint stroke M
+  0 vshift R show } def
+/Rshow { currentpoint stroke M
+  dup stringwidth pop neg vshift R show } def
+/Cshow { currentpoint stroke M
+  dup stringwidth pop -2 div vshift R show } def
+/DL { Color {setrgbcolor Solid {pop []} if 0 setdash }
+ {pop pop pop Solid {pop []} if 0 setdash} ifelse } def
+/BL { stroke gnulinewidth 2 mul setlinewidth } def
+/AL { stroke gnulinewidth 2 div setlinewidth } def
+/PL { stroke gnu2 setlinewidth } def
+/LTb { BL [] 0 0 0 DL } def
+/LTa { AL [1 dl 2 dl] 0 setdash 0 0 0 setrgbcolor } def
+/LT0 { PL [] 0 1 0 DL } def
+/LT1 { PL [4 dl 2 dl] 0 0 1 DL } def
+/LT2 { PL [2 dl 3 dl] 1 0 0 DL } def
+/LT3 { PL [1 dl 1.5 dl] 1 0 1 DL } def
+/LT4 { PL [5 dl 2 dl 1 dl 2 dl] 0 1 1 DL } def
+/LT5 { PL [4 dl 3 dl 1 dl 3 dl] 1 1 0 DL } def
+/LT6 { PL [2 dl 2 dl 2 dl 4 dl] 0 0 0 DL } def
+/LT7 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 1 0.3 0 DL } def
+/LT8 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 0.5 0.5 0.5 DL } def
+/P { stroke [] 0 setdash
+  currentlinewidth 2 div sub M
+  0 currentlinewidth V stroke } def
+/D { stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  P } def
+/A { stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+  } def
+/B { stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  P } def
+/C { stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke } def
+/T { stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  P  } def
+/S { 2 copy A C} def
+end
+%%EndProlog
+gnudict begin
+gsave
+50 50 translate
+0.050 0.050 scale
+0 setgray
+/Helvetica findfont 200 scalefont setfont
+newpath
+LTa
+LTb
+1200 501 M
+-63 0 V
+-57 0 R
+(1) Rshow
+1200 1389 M
+-63 0 V
+-57 0 R
+(1.2) Rshow
+1200 2276 M
+-63 0 V
+-57 0 R
+(1.4) Rshow
+1200 3164 M
+-63 0 V
+-57 0 R
+(1.6) Rshow
+1200 4051 M
+-63 0 V
+-57 0 R
+(1.8) Rshow
+1200 4939 M
+-63 0 V
+-57 0 R
+(2) Rshow
+1833 501 M
+0 -63 V
+0 -137 R
+(sim1) Cshow
+2466 501 M
+0 -63 V
+0 -137 R
+(seis) Cshow
+3099 501 M
+0 -63 V
+0 -137 R
+(arps) Cshow
+3732 501 M
+0 -63 V
+0 -137 R
+(sched2) Cshow
+4365 501 M
+0 -63 V
+0 -137 R
+(sim2) Cshow
+4998 501 M
+0 -63 V
+0 -137 R
+(sort) Cshow
+5631 501 M
+0 -63 V
+0 -137 R
+(sched1) Cshow
+6264 501 M
+0 -63 V
+0 -137 R
+(mpeg) Cshow
+1200 501 M
+5697 0 V
+0 4438 V
+-5697 0 V
+0 -4438 V
+200 2720 M
+currentpoint gsave translate 90 rotate 0 0 M
+(Slowdown) Cshow
+grestore
+4048 101 M
+(I/O Workload) Cshow
+LT0
+1833 501 M
+0 483 V
+2466 501 M
+0 551 V
+3099 501 M
+633 0 R
+0 74 V
+633 -74 R
+633 0 R
+0 1085 V
+5631 501 M
+0 397 V
+6264 501 M
+0 87 V
+stroke
+grestore
+end
+showpage
+%%Trailer
+cleartomark
+countdictstack exch sub { end } repeat
+restore
+
+%%EndDocument
+FMENDEPSF
+0 18 Q
+0 X
+0 0 0 1 0 0 0 K
+(90%) 145.98 439.88 T
+(58%) 316.98 565.88 T
+(72%) 226.98 456.94 T
+(96%) 461 447.94 T
+(86%) 596 483.94 T
+(56%) 659 438.94 T
+72 234 720 675 C
+0 180 792 792 C
+1 1 0 0 0 0 1 K
+0 36 Q
+0 X
+1 1 0 0 0 0 1 K
+(W) 242.6 705 T
+(orkstation Af) 275.94 705 T
+(\336nity) 475.38 705 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "7" 7
+%%Page: "8" 8
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63 693 729 693 2 L
+2 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+63 234 729 738 18 RR
+N
+0 1 1 0 1 0 0 K
+0 24 Q
+0 1 1 0 1 0 0 K
+-0.36 (Scenario:) 72 659 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.36 (One process in cluster performing I/O over network) 179.68 659 P
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+(Should other I/O-bound jobs be scheduled?) 72 623 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+(Experiment:) 72 589 T
+0 0 0 1 0 0 0 K
+1 16 Q
+0 0 0 1 0 0 0 K
+(\245) 99 557 T
+0 24 Q
+(Run workload with job repeatedly reading 100 MB \336le) 126 557 T
+(over Ethernet from secondary server) 126 533 T
+72 234 720 675 C
+73.5 241 718.5 525 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+228.5 321 282.5 375 R
+0 X
+1 0 0 0 0 1 1 K
+V
+2 H
+2 Z
+N
+0 1 0 0 1 0 1 K
+345.5 447 399.5 501 R
+0 1 0 0 1 0 1 K
+V
+N
+1 0 1 0 0 1 0 K
+390.5 285 444.5 339 R
+1 0 1 0 0 1 0 K
+V
+N
+0 0 0 1 0 0 0 K
+300.5 285 354.5 339 R
+0 0 0 1 0 0 0 K
+V
+N
+0 1 1 0 1 0 0 K
+462.5 321 516.5 375 R
+0 1 1 0 1 0 0 K
+V
+N
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+90 450 81 36 372.5 393 A
+255.5 375 291.5 393 2 L
+N
+327.5 339 328.47 362.79 2 L
+N
+417.5 339 418.1 363.26 2 L
+N
+489.5 375 453.5 393 2 L
+N
+0 1 0 0 1 0 1 K
+0 18 Q
+0 1 0 0 1 0 1 K
+(NFS Server) 332.49 505.88 T
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+(Ethernet) 420.5 427 T
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+(Network Hog) 525.5 341 T
+1 0 0 0 0 1 1 K
+1 0 0 0 0 1 1 K
+(Secondary) 136.5 352 T
+(Server) 152.5 333 T
+1 0 1 0 0 1 0 K
+1 0 1 0 0 1 0 K
+(User) 398.5 268 T
+(W) 383.5 249 T
+(orkload) 400.17 249 T
+1 1 0 0 0 0 1 K
+372.5 447 372.5 429 2 L
+1 1 0 0 0 0 1 K
+N
+0 1 1 0 1 0 0 K
+255.19 382.87 239 375 248.56 390.25 251.87 386.56 4 Y
+0 1 1 0 1 0 0 K
+V
+506 375 M
+ 505.8 398.48 488.36 407.7 464.5 407.37 D
+ 411.09 406.64 357.54 416.14 306.5 412.22 D
+ 283.1 410.42 266.7 399.3 251.89 386.56 D
+N
+458.04 392.84 470 379.39 452.73 384.46 455.39 388.65 4 Y
+V
+272 376 M
+ 306.68 430.29 368.56 393.05 413 390.81 D
+ 426.82 390.11 441.7 393.43 455.38 388.66 D
+N
+0 0 0 1 0 0 0 K
+72 234 720 675 C
+0 180 792 792 C
+1 1 0 0 0 0 1 K
+0 36 Q
+0 X
+1 1 0 0 0 0 1 K
+(Network Sharing) 262.96 705 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "8" 8
+%%Page: "9" 9
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63 693 729 693 2 L
+2 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+63 234 729 738 18 RR
+N
+0 1 1 0 1 0 0 K
+0 24 Q
+0 1 1 0 1 0 0 K
+(Measurement Results:) 72 659 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+1 0 1 0 0 1 0 K
+(\245) 72 623 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+(I/O and Production W) 99 623 T
+(orkloads:) 328.01 623 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+(Scheduling Implications:) 72 367 T
+0 0 0 1 0 0 0 K
+1 16 Q
+0 0 0 1 0 0 0 K
+(\245) 99 335 T
+0 24 Q
+(Charge I/O-intensive workloads for network usage by) 126 335 T
+(lowering priority) 126 311 T
+1 16 Q
+(\245) 99 279 T
+0 24 Q
+(A) 126 279 T
+(void scheduling multiple I/O jobs simultaneously) 141.58 279 T
+0 1 1 0 1 0 0 K
+0 0 0 1 0 0 0 K
+72 234 720 675 C
+72 393 720 615 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 56 53 394 301 311 216 76 399 FMBEGINEPSF
+%%BeginDocument: /disks/barad-dur/now/research/Slides/NetworkIORank.epsi
+%!PS-Adobe-2.0 EPSF-1.2
+%%BoundingBox: 56 53 394 301
+save
+countdictstack
+mark
+newpath
+/showpage {} def
+%!PS-Adobe-2.0 EPSF-2.0
+%%Creator: gnuplot
+%%DocumentFonts: Helvetica
+%%BoundingBox: 50 50 410 302
+%%EndComments
+/gnudict 40 dict def
+gnudict begin
+/Color true def
+/Solid true def
+/gnu2 250 def
+/gnulinewidth 5.000 def
+/vshift -66 def
+/dl {10 mul} def
+/hpt 31.5 def
+/vpt 31.5 def
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow { currentpoint stroke M
+  0 vshift R show } def
+/Rshow { currentpoint stroke M
+  dup stringwidth pop neg vshift R show } def
+/Cshow { currentpoint stroke M
+  dup stringwidth pop -2 div vshift R show } def
+/DL { Color {setrgbcolor Solid {pop []} if 0 setdash }
+ {pop pop pop Solid {pop []} if 0 setdash} ifelse } def
+/BL { stroke gnulinewidth 2 mul setlinewidth } def
+/AL { stroke gnulinewidth 2 div setlinewidth } def
+/PL { stroke gnu2 setlinewidth } def
+/LTb { BL [] 0 0 0 DL } def
+/LTa { AL [1 dl 2 dl] 0 setdash 0 0 0 setrgbcolor } def
+/LT0 { PL [] 0 1 0 DL } def
+/LT1 { PL [4 dl 2 dl] 0 0 1 DL } def
+/LT2 { PL [2 dl 3 dl] 1 0 0 DL } def
+/LT3 { PL [1 dl 1.5 dl] 1 0 1 DL } def
+/LT4 { PL [5 dl 2 dl 1 dl 2 dl] 0 1 1 DL } def
+/LT5 { PL [4 dl 3 dl 1 dl 3 dl] 1 1 0 DL } def
+/LT6 { PL [2 dl 2 dl 2 dl 4 dl] 0 0 0 DL } def
+/LT7 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 1 0.3 0 DL } def
+/LT8 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 0.5 0.5 0.5 DL } def
+/P { stroke [] 0 setdash
+  currentlinewidth 2 div sub M
+  0 currentlinewidth V stroke } def
+/D { stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  P } def
+/A { stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+  } def
+/B { stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  P } def
+/C { stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke } def
+/T { stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  P  } def
+/S { 2 copy A C} def
+end
+%%EndProlog
+gnudict begin
+gsave
+50 50 translate
+0.050 0.050 scale
+0 setgray
+/Helvetica findfont 200 scalefont setfont
+newpath
+LTa
+LTb
+1200 501 M
+-63 0 V
+-57 0 R
+(1) Rshow
+1200 1389 M
+-63 0 V
+-57 0 R
+(1.2) Rshow
+1200 2276 M
+-63 0 V
+-57 0 R
+(1.4) Rshow
+1200 3164 M
+-63 0 V
+-57 0 R
+(1.6) Rshow
+1200 4051 M
+-63 0 V
+-57 0 R
+(1.8) Rshow
+1200 4939 M
+-63 0 V
+-57 0 R
+(2) Rshow
+1833 501 M
+0 -63 V
+0 -137 R
+(sim1) Cshow
+2466 501 M
+0 -63 V
+0 -137 R
+(seis) Cshow
+3099 501 M
+0 -63 V
+0 -137 R
+(arps) Cshow
+3732 501 M
+0 -63 V
+0 -137 R
+(sched2) Cshow
+4365 501 M
+0 -63 V
+0 -137 R
+(sim2) Cshow
+4998 501 M
+0 -63 V
+0 -137 R
+(sort) Cshow
+5631 501 M
+0 -63 V
+0 -137 R
+(sched1) Cshow
+6264 501 M
+0 -63 V
+0 -137 R
+(mpeg) Cshow
+1200 501 M
+5697 0 V
+0 4438 V
+-5697 0 V
+0 -4438 V
+200 2720 M
+currentpoint gsave translate 90 rotate 0 0 M
+(Slowdown) Cshow
+grestore
+4048 101 M
+(I/O Workload) Cshow
+LT0
+1833 501 M
+0 1185 V
+2466 501 M
+0 888 V
+3099 501 M
+0 504 V
+3732 501 M
+0 2807 V
+4365 501 M
+0 1952 V
+4998 501 M
+0 2365 V
+5631 501 M
+0 1314 V
+6264 501 M
+0 3461 V
+stroke
+grestore
+end
+showpage
+cleartomark
+countdictstack exch sub { end } repeat
+restore
+
+%%EndDocument
+FMENDEPSF
+0 56 53 394 290 306 213 396 399 FMBEGINEPSF
+%%BeginDocument: /disks/barad-dur/now/research/Slides/NetworkCPUSlow.epsi
+%!PS-Adobe-2.0 EPSF-1.2
+%%BoundingBox: 56 53 394 290
+save
+countdictstack
+mark
+newpath
+/showpage {} def
+%!PS-Adobe-2.0 EPSF-2.0
+%%Creator: gnuplot
+%%DocumentFonts: Helvetica
+%%BoundingBox: 50 50 410 302
+%%EndComments
+/gnudict 40 dict def
+gnudict begin
+/Color true def
+/Solid true def
+/gnu2 150 def
+/gnulinewidth 5.000 def
+/vshift -66 def
+/dl {10 mul} def
+/hpt 31.5 def
+/vpt 31.5 def
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow { currentpoint stroke M
+  0 vshift R show } def
+/Rshow { currentpoint stroke M
+  dup stringwidth pop neg vshift R show } def
+/Cshow { currentpoint stroke M
+  dup stringwidth pop -2 div vshift R show } def
+/DL { Color {setrgbcolor Solid {pop []} if 0 setdash }
+ {pop pop pop Solid {pop []} if 0 setdash} ifelse } def
+/BL { stroke gnulinewidth 2 mul setlinewidth } def
+/AL { stroke gnulinewidth 2 div setlinewidth } def
+/PL { stroke gnu2 setlinewidth } def
+/LTb { BL [] 0 0 0 DL } def
+/LTa { AL [1 dl 2 dl] 0 setdash 0 0 0 setrgbcolor } def
+/LT0 { PL [] 0 1 0 DL } def
+/LT1 { PL [4 dl 2 dl] 0 0 1 DL } def
+/LT2 { PL [2 dl 3 dl] 1 0 0 DL } def
+/LT3 { PL [1 dl 1.5 dl] 1 0 1 DL } def
+/LT4 { PL [5 dl 2 dl 1 dl 2 dl] 0 1 1 DL } def
+/LT5 { PL [4 dl 3 dl 1 dl 3 dl] 1 1 0 DL } def
+/LT6 { PL [2 dl 2 dl 2 dl 4 dl] 0 0 0 DL } def
+/LT7 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 1 0.3 0 DL } def
+/LT8 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 0.5 0.5 0.5 DL } def
+/P { stroke [] 0 setdash
+  currentlinewidth 2 div sub M
+  0 currentlinewidth V stroke } def
+/D { stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  P } def
+/A { stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+  } def
+/B { stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  P } def
+/C { stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke } def
+/T { stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  P  } def
+/S { 2 copy A C} def
+end
+%%EndProlog
+gnudict begin
+gsave
+50 50 translate
+0.050 0.050 scale
+0 setgray
+/Helvetica findfont 200 scalefont setfont
+newpath
+LTa
+LTb
+1200 501 M
+63 0 V
+5634 0 R
+-63 0 V
+-5754 0 R
+(1) Rshow
+1200 1349 M
+63 0 V
+5634 0 R
+-63 0 V
+-5754 0 R
+(1.02) Rshow
+1200 2196 M
+63 0 V
+5634 0 R
+-63 0 V
+-5754 0 R
+(1.04) Rshow
+1200 3044 M
+63 0 V
+5634 0 R
+-63 0 V
+-5754 0 R
+(1.06) Rshow
+1200 3891 M
+63 0 V
+5634 0 R
+-63 0 V
+-5754 0 R
+(1.08) Rshow
+1200 4739 M
+63 0 V
+5634 0 R
+-63 0 V
+-5754 0 R
+(1.1) Rshow
+1535 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(0) Cshow
+1870 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(1) Cshow
+2205 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(2) Cshow
+2540 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(3) Cshow
+2876 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(4) Cshow
+3211 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(5) Cshow
+3546 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(6) Cshow
+3881 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(7) Cshow
+4216 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(8) Cshow
+4551 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(9) Cshow
+4886 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(10) Cshow
+5221 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(11) Cshow
+5557 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(12) Cshow
+5892 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(13) Cshow
+6227 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(14) Cshow
+6562 501 M
+0 63 V
+0 4175 R
+0 -63 V
+0 -4375 R
+(15) Cshow
+1200 501 M
+5697 0 V
+0 4238 V
+-5697 0 V
+0 -4238 V
+200 2620 M
+currentpoint gsave translate 90 rotate 0 0 M
+(Slowdown) Cshow
+grestore
+4048 101 M
+(Production Workload) Cshow
+4048 4939 M
+() Cshow
+LT0
+1535 501 M
+0 1962 V
+1870 501 M
+0 862 V
+2205 501 M
+0 617 V
+2540 501 M
+0 334 V
+2876 501 M
+0 1648 V
+3211 501 M
+0 513 V
+3546 501 M
+0 432 V
+3881 501 M
+0 2149 V
+4216 501 M
+0 270 V
+4551 501 M
+0 523 V
+4886 501 M
+0 1077 V
+5221 501 M
+0 150 V
+5557 501 M
+0 467 V
+5892 501 M
+0 989 V
+6227 501 M
+0 545 V
+6562 501 M
+0 2479 V
+stroke
+grestore
+end
+showpage
+%%Trailer
+cleartomark
+countdictstack exch sub { end } repeat
+restore
+
+%%EndDocument
+FMENDEPSF
+72 234 720 675 C
+0 180 792 792 C
+1 1 0 0 0 0 1 K
+0 36 Q
+0 X
+1 1 0 0 0 0 1 K
+(Network Sharing) 262.96 705 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "9" 9
+%%Page: "10" 10
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63 693 729 693 2 L
+2 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+63 234 729 738 18 RR
+N
+0 1 1 0 1 0 0 K
+0 24 Q
+0 1 1 0 1 0 0 K
+(Develop scheduling policy that considers:) 72 659 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+1 0 1 0 0 1 0 K
+(\245) 72 627 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+(Heterogeneity:) 99 627 T
+0 0 0 1 0 0 0 K
+1 16 Q
+0 0 0 1 0 0 0 K
+(\245) 99 595 T
+0 24 Q
+(CPU jobs sensitive to model; others not) 126 595 T
+1 16 Q
+(\245) 99 565 T
+0 24 Q
+(Find best model for CPU jobs; run others on available) 126 565 T
+1 0 1 0 0 1 0 K
+1 0 1 0 0 1 0 K
+(\245) 72 529 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+(Locality:) 99 529 T
+0 0 0 1 0 0 0 K
+1 16 Q
+0 0 0 1 0 0 0 K
+(\245) 99 497 T
+0 24 Q
+(I/O-intensive jobs are slowed down 1.0 - 1.8) 126 497 T
+1 16 Q
+(\245) 99 467 T
+0 24 Q
+(Schedule user) 126 467 T
+(\325) 280.3 467 T
+(s I/O jobs on same workstation) 285.19 467 T
+1 0 1 0 0 1 0 K
+1 0 1 0 0 1 0 K
+(\245) 72 431 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+(Network usage:) 99 431 T
+0 0 0 1 0 0 0 K
+1 16 Q
+0 0 0 1 0 0 0 K
+(\245) 99 399 T
+0 24 Q
+(I/O-bound jobs af) 126 399 T
+(fect all users) 309.67 399 T
+1 16 Q
+(\245) 99 369 T
+0 24 Q
+(Decrease priority of I/O jobs; schedule one at a time) 126 369 T
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+(Knowlege of workload helpful when scheduling) 72 333 T
+0 0 0 1 0 0 0 K
+1 16 Q
+0 0 0 1 0 0 0 K
+(\245) 99 301 T
+0 24 Q
+-1.26 ([Devarakonda&Iyer89] predict CPU, \336le, & memory from) 126 301 P
+(job names) 126 277 T
+1 1 0 0 0 0 1 K
+0 36 Q
+1 1 0 0 0 0 1 K
+(Future W) 297.31 705 T
+(ork) 444.69 705 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "10" 10
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Ascend
+%%Pages: 10
+%%DocumentFonts: Helvetica
+%%+ Courier-Bold
+%%+ Helvetica-Oblique
+%%+ Times-Bold
+%%+ Times-Roman
+%%EOF

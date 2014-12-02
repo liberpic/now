@@ -1,0 +1,5359 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 612 792 0 1 14 FMDOCUMENT
+0 0 /Helvetica-Bold FMFONTDEFINE
+1 0 /Helvetica FMFONTDEFINE
+2 0 /Times-Roman FMFONTDEFINE
+3 0 /Times-Bold FMFONTDEFINE
+4 0 /Times-Italic FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "mini" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+31.64 153 823.64 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 165.49 743.53 S
+162.49 742.71 165.49 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+162.49 742.71 165.49 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+162.55 744.06 164.72 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 -208 1000 792 C
+253.01 742.71 256.01 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+253.01 742.71 256.01 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+253.06 744.06 255.23 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 -208 1000 792 C
+59.89 518.76 358.61 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 424.63 273.84 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 69.81 514.28 S
+1.79 (June 1995) 117.06 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+2 15.25 Q
+0 1 0 0 1 0 1 K
+(The W) 113.07 666.33 T
+(ell-Adjusted File System) 153.77 666.33 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 10.76 Q
+1 1 0 0 0 0 1 K
+(Dr) 179.9 633.44 T
+(ew Roselli) 192.26 633.44 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 8.07 Q
+(NOW Retr) 185.22 610.11 T
+(eat) 222.97 610.11 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(June 1995) 191.87 596.66 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 529.99 743.53 S
+526.99 742.71 529.99 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+526.99 742.71 529.99 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+527.05 744.06 529.22 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+617.51 742.71 620.51 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+617.51 742.71 620.51 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+617.56 744.06 619.73 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+424.39 518.76 723.11 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 424.63 638.34 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 434.31 514.28 S
+1.79 (June 1995) 481.56 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(State of the W) 531.74 715.07 T
+(orld) 596.62 715.07 T
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 F
+1 0 0 0 0 1 1 K
+(Magic upon magic) 468.8 691.74 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 680.38 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Many arbitrary constants require human tuning) 474.96 680.38 T
+(eg, \336le cache size, Sprite aging rate) 481.51 670.51 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 659.75 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(T) 474.96 659.75 T
+(uning changes with con\336guration, workload) 480.13 659.75 T
+(eg, cleaning policy \050Seltzer93\051) 481.51 649.88 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 639.12 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Multiple layers) 474.96 639.12 T
+(disk cache, \336le cache, NFS cache) 481.51 629.25 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 618.49 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Complexity increasing) 474.96 618.49 T
+(NFS \050code lines +60%/2 yrs\051) 481.51 608.62 T
+1 0 0 0 0 1 1 K
+2 10.76 Q
+1 0 0 0 0 1 1 K
+(System managers mired in manual tuning.) 468.8 576.03 T
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+(Many installations poorly tuned.) 468.8 552.7 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 165.49 469.03 S
+162.49 468.21 165.49 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+162.49 468.21 165.49 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+162.55 469.56 164.72 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+253.01 468.21 256.01 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+253.01 468.21 256.01 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+253.06 469.56 255.23 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+59.89 244.26 358.61 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 150.13 273.84 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 69.81 239.78 S
+1.79 (June 1995) 117.06 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(Changing Envir) 155.07 440.57 T
+(onment) 228.75 440.57 T
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 F
+1 0 0 0 0 1 1 K
+(Hardware continuing to change rapidly) 104.3 417.24 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 405.88 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Dif) 110.46 405.88 T
+(fering rates of change) 122.26 405.88 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 395.12 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Re-evaluate trade-of) 110.46 395.12 T
+(fs) 183.78 395.12 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 384.35 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Heterogeneity) 110.46 384.35 T
+1 0 0 0 0 1 1 K
+2 10.76 Q
+1 0 0 0 0 1 1 K
+(Application demands increasing) 104.3 361.63 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 350.27 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Lar) 110.46 350.27 T
+(ger applications \050Baker91\051) 122.75 350.27 T
+(-  scienti\336c \050HPCC93\051, multimedia \050Rangan92\051) 117.01 340.4 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 329.63 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Broad range of I/O demands) 110.46 329.63 T
+1 0 0 0 0 1 1 K
+2 10.76 Q
+1 0 0 0 0 1 1 K
+(File systems must adapt to changing conditions.) 104.3 306.91 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 529.99 469.03 S
+526.99 468.21 529.99 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+526.99 468.21 529.99 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+527.05 469.56 529.22 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+617.51 468.21 620.51 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+617.51 468.21 620.51 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+617.56 469.56 619.73 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+424.39 244.26 723.11 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 150.13 638.34 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 434.31 239.78 S
+1.79 (June 1995) 481.56 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(Relative Performance) 521.82 439.45 T
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+466.93 258.55 676.83 446.62 C
+473.84 259.83 669.93 412.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+476.53 262.52 667.24 408.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+497 279.66 655.23 279.66 2 L
+0.45 H
+2 Z
+5 X
+0 0 0 1 0 0 0 K
+N
+497 279.66 498.78 279.66 2 L
+0 X
+N
+655.23 279.66 653.45 279.66 2 L
+N
+0 0 0 1 0 0 0 K
+2 4.04 Q
+(0) 490.75 279 T
+0 0 0 1 0 0 0 K
+497 295.22 498.78 295.22 2 L
+N
+655.23 295.22 653.45 295.22 2 L
+N
+0 0 0 1 0 0 0 K
+(1) 490.75 294.57 T
+0 0 0 1 0 0 0 K
+497 310.81 498.78 310.81 2 L
+N
+655.23 310.81 653.45 310.81 2 L
+N
+0 0 0 1 0 0 0 K
+(2) 490.75 310.16 T
+0 0 0 1 0 0 0 K
+497 326.38 498.78 326.38 2 L
+N
+655.23 326.38 653.45 326.38 2 L
+N
+0 0 0 1 0 0 0 K
+(3) 490.75 325.72 T
+0 0 0 1 0 0 0 K
+497 341.94 498.78 341.94 2 L
+N
+655.23 341.94 653.45 341.94 2 L
+N
+0 0 0 1 0 0 0 K
+(4) 490.75 341.28 T
+0 0 0 1 0 0 0 K
+497 357.5 498.78 357.5 2 L
+N
+655.23 357.5 653.45 357.5 2 L
+N
+0 0 0 1 0 0 0 K
+(5) 490.75 356.85 T
+0 0 0 1 0 0 0 K
+497 373.1 498.78 373.1 2 L
+N
+655.23 373.1 653.45 373.1 2 L
+N
+0 0 0 1 0 0 0 K
+(6) 490.75 372.44 T
+0 0 0 1 0 0 0 K
+497 388.66 498.78 388.66 2 L
+N
+655.23 388.66 653.45 388.66 2 L
+N
+0 0 0 1 0 0 0 K
+(7) 490.75 388 T
+0 0 0 1 0 0 0 K
+497 404.22 498.78 404.22 2 L
+N
+655.23 404.22 653.45 404.22 2 L
+N
+0 0 0 1 0 0 0 K
+(8) 490.75 403.56 T
+0 0 0 1 0 0 0 K
+497 279.66 497 281.55 2 L
+N
+497 404.22 497 402.33 2 L
+N
+0 0 0 1 0 0 0 K
+(89) 494.98 269.79 T
+0 0 0 1 0 0 0 K
+528.65 279.66 528.65 281.55 2 L
+N
+528.65 404.22 528.65 402.33 2 L
+N
+0 0 0 1 0 0 0 K
+(90) 526.64 269.79 T
+0 0 0 1 0 0 0 K
+560.31 279.66 560.31 281.55 2 L
+N
+560.31 404.22 560.31 402.33 2 L
+N
+0 0 0 1 0 0 0 K
+(91) 558.29 269.79 T
+0 0 0 1 0 0 0 K
+591.93 279.66 591.93 281.55 2 L
+N
+591.93 404.22 591.93 402.33 2 L
+N
+0 0 0 1 0 0 0 K
+(92) 589.91 269.79 T
+0 0 0 1 0 0 0 K
+623.58 279.66 623.58 281.55 2 L
+N
+623.58 404.22 623.58 402.33 2 L
+N
+0 0 0 1 0 0 0 K
+(93) 621.57 269.79 T
+0 0 0 1 0 0 0 K
+655.23 279.66 655.23 281.55 2 L
+N
+655.23 404.22 655.23 402.33 2 L
+N
+0 0 0 1 0 0 0 K
+(94) 653.22 269.79 T
+0 0 0 1 0 0 0 K
+497 279.66 655.23 279.66 655.23 404.22 497 404.22 497 279.66 5 L
+N
+0 1 1 0 1 0 0 K
+0 0 0 1 0 0 0 K
+("cpu") 623.15 392.46 T
+0 1 1 0 1 0 0 K
+636.51 393.12 649.22 393.12 2 L
+0.22 H
+0 1 1 0 1 0 0 K
+N
+497 295.22 497 295.22 528.65 303 560.31 314.7 591.93 332.3 623.58 358.45 655.23 397.84 7 L
+N
+1 0 1 0 0 1 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+("mem") 620.91 383.25 T
+1 0 1 0 0 1 0 K
+636.51 383.91 649.22 383.91 2 L
+1 X
+1 0 1 0 0 1 0 K
+N
+497 295.22 497 295.22 528.65 301.46 560.31 310.18 591.93 322.32 623.58 339.45 655.23 363.43 7 L
+N
+1 1 0 0 0 0 1 K
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+("disk") 622.25 374.04 T
+1 1 0 0 0 0 1 K
+636.51 374.7 649.22 374.7 2 L
+2 X
+1 1 0 0 0 0 1 K
+N
+497 295.22 497 295.22 528.65 297.88 560.31 302.86 591.93 309.1 623.58 317.02 655.23 327.01 7 L
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+473.84 259.83 669.93 412.54 C
+466.93 258.55 676.83 446.62 C
+396.14 -121.5 1188.14 490.5 C
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "mini" 1
+%%Page: "mini" 2
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+31.64 153 823.64 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 165.49 743.53 S
+162.49 742.71 165.49 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+162.49 742.71 165.49 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+162.55 744.06 164.72 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+253.01 742.71 256.01 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+253.01 742.71 256.01 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+253.06 744.06 255.23 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+59.89 518.76 358.61 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 424.63 273.84 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 69.81 514.28 S
+1.79 (June 1995) 117.06 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(Goal) 199.98 715.07 T
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 F
+1 0 0 0 0 1 1 K
+(Automate \336le system tuning) 106.09 691.74 T
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+(Proposal: add hooks so running \336le systems:) 106.09 668.42 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 106.09 657.06 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(T) 112.26 657.06 T
+(une themselves) 117.42 657.06 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 106.09 646.29 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Provide insight into performance) 112.26 646.29 T
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 529.99 743.53 S
+526.99 742.71 529.99 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+526.99 742.71 529.99 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+527.05 744.06 529.22 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+617.51 742.71 620.51 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+617.51 742.71 620.51 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+617.56 744.06 619.73 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+424.39 518.76 723.11 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 424.63 638.34 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 434.31 514.28 S
+1.79 (June 1995) 481.56 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+( Policies and Parameters) 517.1 715.07 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+4 F
+1 0 0 0 0 1 1 K
+(Policy) 468.8 566.16 T
+0 0 0 1 0 0 0 K
+2 F
+0 0 0 1 0 0 0 K
+(:) 496.3 566.16 T
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+(algorithm used to manage a system) 501.98 566.16 T
+1 0 0 0 0 1 1 K
+4 F
+1 0 0 0 0 1 1 K
+(Parameter) 468.8 548.22 T
+0 0 0 1 0 0 0 K
+2 F
+0 0 0 1 0 0 0 K
+(: policy \322knob\323) 514.84 548.22 T
+3 8.07 Q
+(System) 483.01 683.67 T
+(Policy) 530.16 683.67 T
+(Parameters) 599.16 683.67 T
+2 F
+(File) 479.22 670.21 T
+(Cache) 479.22 660.35 T
+(prefetch on) 516.84 670.21 T
+(seq access) 516.84 660.35 T
+(sequential threshold,) 569.95 670.21 T
+(prefetch amount) 569.95 660.35 T
+(Disk) 479.22 647.79 T
+(Layout) 479.22 637.92 T
+(threaded) 516.84 647.79 T
+(segments) 516.84 637.92 T
+(segment size) 569.95 647.79 T
+(indexing) 516.84 625.36 T
+(block size) 569.95 625.36 T
+(Cleaning) 479.22 612.8 T
+(greedy) 516.84 612.8 T
+(high/low watermarks) 569.95 612.8 T
+(Coop) 479.22 600.25 T
+(Cache) 479.22 590.38 T
+(Nth Chance) 516.84 600.25 T
+4 F
+(N) 569.95 600.25 T
+514.15 693.09 514.15 585.78 2 L
+V
+0.22 H
+N
+567.26 693.09 567.26 585.78 2 L
+V
+N
+476.53 692.64 670.97 692.64 2 L
+V
+0.9 H
+N
+476.53 678.29 670.97 678.29 2 L
+V
+N
+476.53 655.86 670.97 655.86 2 L
+V
+0.22 H
+N
+476.53 633.44 670.97 633.44 2 L
+V
+N
+476.53 620.88 670.97 620.88 2 L
+V
+N
+476.53 608.32 670.97 608.32 2 L
+V
+N
+476.53 585.89 670.97 585.89 2 L
+V
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 165.49 469.03 S
+162.49 468.21 165.49 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+162.49 468.21 165.49 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+162.55 469.56 164.72 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+253.01 468.21 256.01 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+253.01 468.21 256.01 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+253.06 469.56 255.23 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+59.89 244.26 358.61 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 150.13 273.84 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 69.81 239.78 S
+1.79 (June 1995) 117.06 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(Policy Strategies) 171.13 440.57 T
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+4 F
+1 0 0 0 0 1 1 K
+(Fixed) 104.3 417.24 T
+2 F
+( -- optimize for common case) 128.81 417.24 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(+ simple) 117.01 406.78 T
+( - bad for uncommon case) 117.01 396.91 T
+1 0 0 0 0 1 1 K
+4 10.76 Q
+1 0 0 0 0 1 1 K
+(Aided) 104.3 374.19 T
+2 F
+( -- application hints/control) 129.41 374.19 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(+ best knowledge) 117.01 363.72 T
+( - dif) 117.01 353.85 T
+(\336cult to program application, non-portable) 134.29 353.85 T
+( - OS must isolate ef) 117.01 343.99 T
+(fects from other processes) 190.35 343.99 T
+1 0 0 0 0 1 1 K
+4 10.76 Q
+1 0 0 0 0 1 1 K
+(Adaptive) 104.3 321.26 T
+2 F
+( -- observe application behavior) 142.56 321.26 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(+ broader range of applications than) 117.01 310.8 T
+4 F
+(\336xed) 249.12 310.8 T
+2 F
+(+ easier to program applications than) 117.01 300.93 T
+4 F
+(aided) 252.62 300.93 T
+2 F
+( - some factors not observable \050ie, priority\051) 117.01 291.06 T
+( - may not get enough information fast enough) 117.01 281.19 T
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 529.99 469.03 S
+526.99 468.21 529.99 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+526.99 468.21 529.99 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+527.05 469.56 529.22 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+617.51 468.21 620.51 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+617.51 468.21 620.51 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+617.56 469.56 619.73 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+424.39 244.26 723.11 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 150.13 638.34 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 434.31 239.78 S
+1.79 (June 1995) 481.56 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(Example Strategies) 529.35 440.57 T
+0 0 0 1 0 0 0 K
+3 8.07 Q
+0 0 0 1 0 0 0 K
+(Policy) 486.58 422.63 T
+(\336xed) 539.91 422.63 T
+(aided) 589.87 422.63 T
+(adaptive) 635.58 422.63 T
+2 F
+(Prefetching) 474.26 409.17 T
+(Zebra) 525.35 409.17 T
+(TIP) 576.44 409.17 T
+(, 2-level) 587.66 409.17 T
+(replacement) 576.44 399.3 T
+(predictive) 627.53 409.17 T
+(prefetch, NFS) 627.53 399.3 T
+(VM) 474.26 386.74 T
+(replacement) 474.26 376.88 T
+(FIFO) 525.35 386.74 T
+(procedure) 576.44 386.74 T
+(overlay) 576.44 376.88 T
+(LRU) 627.53 386.74 T
+(Scheduling) 474.26 364.32 T
+(Round Robin) 525.35 364.32 T
+(priorities,) 576.44 364.32 T
+(scheduler) 576.44 354.45 T
+(activations) 576.44 344.58 T
+(multi-level) 627.53 364.32 T
+(feedback,) 627.53 354.45 T
+(load sharing) 627.53 344.58 T
+471.57 430.92 471.57 340.21 2 L
+V
+0.22 H
+N
+522.1 430.92 522.1 340.21 2 L
+V
+N
+523.22 430.92 523.22 340.21 2 L
+V
+N
+573.75 432.27 573.75 339.99 2 L
+V
+N
+624.84 432.27 624.84 339.99 2 L
+V
+N
+675.93 430.92 675.93 417.92 2 L
+V
+1.35 H
+N
+675.93 416.57 675.93 340.21 2 L
+V
+0.22 H
+N
+471.46 431.6 676.6 431.6 2 L
+V
+1.35 H
+N
+471.46 417.24 676.6 417.24 2 L
+V
+N
+471.46 394.82 676.04 394.82 2 L
+V
+0.22 H
+N
+471.46 372.39 676.04 372.39 2 L
+V
+N
+471.46 340.1 676.04 340.1 2 L
+V
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "mini" 2
+%%Page: "mini" 3
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+31.64 153 823.64 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 165.49 743.53 S
+162.49 742.71 165.49 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+162.49 742.71 165.49 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+162.55 744.06 164.72 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+253.01 742.71 256.01 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+253.01 742.71 256.01 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+253.06 744.06 255.23 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+59.89 518.76 358.61 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 424.63 273.84 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 69.81 514.28 S
+1.79 (June 1995) 117.06 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(Strategy T) 164.65 715.07 T
+(ransition) 212.58 715.07 T
+0 0 0 1 0 0 0 K
+104.3 534.17 314.2 722.24 C
+110.2 536.54 308.3 711.48 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 X
+1 0 0 0 0 1 1 K
+90 450 25.43 15.89 208.87 687.99 G
+0.22 H
+2 Z
+0 X
+90 450 25.43 15.89 208.87 687.99 A
+2 X
+90 450 25.43 15.89 140.9 572.31 G
+0 X
+90 450 25.43 15.89 140.9 572.31 A
+2 X
+90 450 25.43 15.89 270.87 572.31 G
+0 X
+90 450 25.43 15.89 270.87 572.31 A
+0 0 0 1 0 0 0 K
+266.75 592.54 267.62 587.23 264.07 591.27 265.41 591.9 4 Y
+0 0 0 1 0 0 0 K
+V
+225.46 676.48 265.42 591.9 2 L
+N
+233.99 677.45 233.08 682.75 236.66 678.74 235.33 678.09 4 Y
+V
+235.33 678.09 279.29 586.77 2 L
+N
+190.25 670.88 194.07 674.68 192.85 669.44 191.55 670.16 4 Y
+V
+145.63 587.67 191.55 670.16 2 L
+N
+139.53 591.07 135.76 587.23 136.92 592.48 138.22 591.78 4 Y
+V
+185.99 680.06 138.22 591.77 2 L
+N
+171.43 573.18 166.26 574.66 171.43 576.15 171.43 574.66 4 Y
+V
+171.43 574.66 245.2 574.66 2 L
+N
+243.61 566.28 248.79 564.79 243.61 563.31 243.61 564.79 4 Y
+V
+164.02 564.79 243.61 564.79 2 L
+N
+2 8.97 Q
+(   Fixed) 192.27 685 T
+(Aided) 128.58 569.73 T
+(Adaptive) 254.17 569.73 T
+2 8.07 Q
+(More resources, new algoritms:) 159.98 553.58 T
+2 6.28 Q
+(procedure overlay ->LRU) 159.98 547.75 T
+2 8.07 Q
+(Increased demands:) 172.09 584.98 T
+2 6.28 Q
+(scheduler activations) 171.64 578.7 T
+2 8.07 Q
+(Abundant resources:) 0 -65 251.03 669.75 TF
+2 6.28 Q
+(VMS FIFO VM) 0 -65 244.75 666.61 TF
+2 8.07 Q
+(Increased Demands:) 0 -300 138.45 610.99 TF
+2 6.28 Q
+(procedure overlay) 0 -300 145.18 608.3 TF
+2 8.07 Q
+(New Algorithm:) 0 -65 227.71 653.6 TF
+2 6.28 Q
+(RR->MLFQ) 0 -65 222.77 650.01 TF
+2 8.07 Q
+(Abundant resources:) 0 -299 160.88 599.33 TF
+104.3 534.17 314.2 722.24 C
+31.64 153 823.64 765 C
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 529.99 743.53 S
+526.99 742.71 529.99 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+526.99 742.71 529.99 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+527.05 744.06 529.22 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+617.51 742.71 620.51 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+617.51 742.71 620.51 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+617.56 744.06 619.73 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+424.39 518.76 723.11 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 424.63 638.34 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 434.31 514.28 S
+1.79 (June 1995) 481.56 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(Disk Block Layout) 530.98 715.07 T
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 F
+1 0 0 0 0 1 1 K
+(FFS \336xed layout policy) 468.8 691.74 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 680.38 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(2 choices for block size) 474.96 680.38 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 669.62 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Fragmentation -> dif) 474.96 669.62 T
+(\336cult to allocate contiguous blocks) 549.62 669.62 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 658.85 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Poor support for lar) 474.96 658.85 T
+(ge \336les) 545.31 658.85 T
+( - lar) 481.51 648.99 T
+(ge amounts of metadata, low bandwidth) 498.29 648.99 T
+1 0 0 0 0 1 1 K
+2 10.76 Q
+1 0 0 0 0 1 1 K
+(LFS more \337exible) 468.8 626.26 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 614.9 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Easy contiguous allocation) 474.96 614.9 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 604.13 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Data can be re-or) 474.96 604.13 T
+(ganized during cleaning) 536.81 604.13 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 593.37 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Opportunity to make policy more adaptive) 474.96 593.37 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 582.6 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(V) 474.96 582.6 T
+(ariable block size) 480.44 582.6 T
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 165.49 469.03 S
+162.49 468.21 165.49 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+162.49 468.21 165.49 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+162.55 469.56 164.72 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+253.01 468.21 256.01 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+253.01 468.21 256.01 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+253.06 469.56 255.23 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+59.89 244.26 358.61 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 150.13 273.84 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 69.81 239.78 S
+1.79 (June 1995) 117.06 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(File Cache Replacement) 153.65 440.57 T
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 F
+1 0 0 0 0 1 1 K
+(Current policies ignore access pattern) 104.3 417.24 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 405.88 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(LRU assumes locality) 110.46 405.88 T
+(eg, Andrew) 117.01 396.01 T
+(, Sprite, Coda) 158.27 396.01 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 385.25 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Lar) 110.46 385.25 T
+(ge, read-once \336les \337ush cache) 122.75 385.25 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 374.49 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Burden for random-access) 110.46 374.49 T
+(eg, databases bypass \336le cache) 117.01 364.62 T
+1 0 0 0 0 1 1 K
+2 10.76 Q
+1 0 0 0 0 1 1 K
+(New algorithms:) 104.3 341.89 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 330.53 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(T) 110.46 330.53 T
+(wo-level replacement \050aided\051) 115.32 330.53 T
+(application chooses page to replace) 117.01 320.66 T
+(OS checks against global LRU) 117.01 310.8 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 300.03 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(SLRU \050adaptive\051) 110.46 300.03 T
+(new pages added mid-way through LRU queue) 117.01 290.16 T
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 529.99 469.03 S
+526.99 468.21 529.99 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+526.99 468.21 529.99 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+527.05 469.56 529.22 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+617.51 468.21 620.51 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+617.51 468.21 620.51 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+617.56 469.56 619.73 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+424.39 244.26 723.11 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 150.13 638.34 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 434.31 239.78 S
+1.79 (June 1995) 481.56 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(File Cache Pr) 528.71 440.57 T
+(efetch) 591.3 440.57 T
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 F
+1 0 0 0 0 1 1 K
+(Current policies: single \336le after open) 468.8 417.24 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 405.88 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(NFS: prefetch on sequential access) 474.96 405.88 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 395.12 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Zebra: prefetch on reading \336rst block) 474.96 395.12 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 384.35 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Andrew: prefetch entire \336le/64KB blocks) 474.96 384.35 T
+1 0 0 0 0 1 1 K
+2 10.76 Q
+1 0 0 0 0 1 1 K
+(New algorithms:) 468.8 361.63 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 350.27 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(TIP \050aided\051) 474.96 350.27 T
+(+ prefetch many \336les concurrently) 481.51 340.4 T
+(-  rewrite application, clashes with LRU) 481.51 330.53 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 319.77 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+( Predictive prefetching \050adaptive\051) 474.96 319.77 T
+(+ spans applications) 481.51 309.9 T
+(-  probability graph lar) 481.51 300.03 T
+(ge) 562.57 300.03 T
+(? time to examine/update) 481.51 290.16 T
+( graph in lar) 487.87 280.3 T
+(ge system) 531.3 280.3 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "mini" 3
+%%Page: "mini" 4
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+31.64 153 823.64 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 165.49 743.53 S
+162.49 742.71 165.49 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+162.49 742.71 165.49 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+162.55 744.06 164.72 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+253.01 742.71 256.01 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+253.01 742.71 256.01 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+253.06 744.06 255.23 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+59.89 518.76 358.61 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 424.63 273.84 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 69.81 514.28 S
+1.79 (June 1995) 117.06 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(Implications for File System Design) 127.62 715.07 T
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 F
+1 0 0 0 0 1 1 K
+(Increasing demands on performance) 104.3 691.74 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 680.38 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Increasing demands on I/O) 110.46 680.38 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 669.62 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Hit rate same, disk relatively slower) 110.46 669.62 T
+1 0 0 0 0 1 1 K
+2 10.76 Q
+1 0 0 0 0 1 1 K
+(Need easy and accurate evaluation) 104.3 646.89 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 635.53 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(T) 110.46 635.53 T
+(racing involves kernel hacking) 115.63 635.53 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 624.77 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Implement hooks in \336le system) 110.46 624.77 T
+(- trace workload) 117.01 614.9 T
+(- evaluate performance) 117.01 605.03 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 594.27 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Customize policy to workload) 110.46 594.27 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 583.5 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(T) 110.46 583.5 T
+(ool for next version) 115.32 583.5 T
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 529.99 743.53 S
+526.99 742.71 529.99 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+526.99 742.71 529.99 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+527.05 744.06 529.22 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+617.51 742.71 620.51 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+617.51 742.71 620.51 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+617.56 744.06 619.73 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+424.39 518.76 723.11 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 424.63 638.34 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 434.31 514.28 S
+1.79 (June 1995) 481.56 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(Some Parameters) 533.25 715.07 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(\336le cache size, disk rotation speed, interrupt service time,) 468.8 699.22 T
+(sectors per track, Sprite relative aging rate, # NFS) 468.8 689.35 T
+(daemons, Coda hoard walking interval, NFS cache) 468.8 679.49 T
+(validation interval, # sequential accesses to trigger) 468.8 669.62 T
+-0.18 (prefetch, prefetch amount, FFS # inodes, # direct pointers,) 468.8 659.75 P
+(Sprite segment size, disk block size, \336le cache block size,) 468.8 649.88 T
+(N in Nth chance, fragment size, cylinder group size, disk) 468.8 640.01 T
+(free space amount, \336le name length, DEMOS lar) 468.8 630.15 T
+(ge \336le) 643.77 630.15 T
+(threshold, LFS cleaner high and low watermarks, LFS) 468.8 620.28 T
+(checkpoint interval, write delay time, server concurrency) 468.8 610.41 T
+(level, network bandwidth, predictive prefetching:) 468.8 600.55 T
+(lookahead period,  minimum chance threshold, and) 468.8 590.68 T
+(required accuracy) 468.8 580.81 T
+(, network packet size, tracks per disk, #) 532.22 580.81 T
+-0.16 (indirect pointers, coop cache: local vs. global cache sizes,) 468.8 570.94 P
+(Andrew number of volume replications, stripe group size,) 468.8 561.08 T
+(parity level, FFS free block threshold, SLRU boundary) 468.8 551.21 T
+(,...) 665.79 551.21 T
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 165.49 469.03 S
+162.49 468.21 165.49 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+162.49 468.21 165.49 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+162.55 469.56 164.72 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+253.01 468.21 256.01 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+253.01 468.21 256.01 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+253.06 469.56 255.23 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+59.89 244.26 358.61 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 150.13 273.84 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 69.81 239.78 S
+1.79 (June 1995) 117.06 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(Determining Parameter V) 138 440.57 T
+(alues) 257.17 440.57 T
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 F
+1 0 0 0 0 1 1 K
+(Dif) 104.3 417.24 T
+(\336culties:) 118.45 417.24 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 405.88 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Plethora of  parameters) 110.46 405.88 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 395.12 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Huge search space) 110.46 395.12 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 384.35 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Optimal values change with workload) 110.46 384.35 T
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 10.76 Q
+1 0 0 0 0 1 1 K
+(V) 104.3 338.3 T
+(oodoo constant syndrome) 110.68 338.3 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 326.94 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(eg,  \336le cache size = 10% of memory) 110.46 326.94 T
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 10.76 Q
+1 0 0 0 0 1 1 K
+(Alternative: design \336le system to be tunable) 104.3 280.89 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 529.99 469.03 S
+526.99 468.21 529.99 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+526.99 468.21 529.99 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+527.05 469.56 529.22 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+617.51 468.21 620.51 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+617.51 468.21 620.51 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+617.56 469.56 619.73 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+424.39 244.26 723.11 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 150.13 638.34 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 434.31 239.78 S
+1.79 (June 1995) 481.56 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(Method for T) 502.04 440.57 T
+(uning Parameters) 563.24 440.57 T
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 F
+1 0 0 0 0 1 1 K
+(Method 1: Hill Climb) 468.8 417.24 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 405.88 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Make all parameters changeable) 474.96 405.88 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 395.12 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Instrument \336le system to monitor performance) 474.96 395.12 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 384.35 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Periodically change parameter value by x%) 474.96 384.35 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 373.59 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Use feedback to adjust parameter) 474.96 373.59 T
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 10.76 Q
+1 0 0 0 0 1 1 K
+(Problems with Hill Climb) 468.8 327.54 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 316.18 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(File system out of date by the time its tuned) 474.96 316.18 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 305.41 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Complicated to make all parameters mutable) 474.96 305.41 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 294.65 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Local maximum) 474.96 294.65 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "mini" 4
+%%Page: "mini" 5
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+31.64 153 823.64 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 165.49 743.53 S
+162.49 742.71 165.49 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+162.49 742.71 165.49 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+162.55 744.06 164.72 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+253.01 742.71 256.01 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+253.01 742.71 256.01 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+253.06 744.06 255.23 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+59.89 518.76 358.61 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 424.63 273.84 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 69.81 514.28 S
+1.79 (June 1995) 117.06 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 10.76 Q
+1 0 0 0 0 1 1 K
+(Method 2: Parameter Model) 104.3 691.74 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(1.) 104.3 681.28 T
+(Guess important parameters) 112.37 681.28 T
+(2.) 104.3 670.51 T
+(Graph each parameter) 112.37 670.51 T
+(, holding others constant) 191.21 670.51 T
+(- vary value and workload) 117.01 659.75 T
+(3.) 104.3 649.88 T
+(Predict performance from independent measures) 112.37 649.88 T
+(\050Chen93\051) 112.37 639.12 T
+(4.) 104.3 628.35 T
+(T) 112.37 628.35 T
+(est accuracy of model) 117.22 628.35 T
+(- Compare predicted values against actual workload) 117.01 617.59 T
+(with same parameter values) 123.37 607.72 T
+104.3 534.17 314.2 722.24 C
+106.27 553.89 312.23 604.73 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+120.44 593.44 120.44 556.06 2 L
+0.22 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+120.59 555.54 187.5 555.54 2 L
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+225.7 593.21 225.7 555.84 2 L
+N
+225.85 555.31 292.75 555.31 2 L
+N
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+90 180 66.53 33.64 187.5 555.54 A
+0 1 0 0 1 0 1 K
+[7.454 6.46] 3.727 I
+0 1 0 0 1 0 1 K
+270 360 66.9 12.71 180 188.24 555.91 AA
+1 1 0 0 0 0 1 K
+J
+0.45 H
+1 1 0 0 0 0 1 K
+90 180 64.29 47.84 290.28 555.16 A
+0 1 1 0 1 0 0 K
+244.68 585.81 246.18 592.54 R
+0 1 1 0 1 0 0 K
+V
+N
+257.24 593.06 258.74 599.79 R
+V
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+104.3 534.17 314.2 722.24 C
+31.64 153 823.64 765 C
+2 8.07 Q
+0 X
+0 0 0 1 0 0 0 K
+(Predicted Performance \050Chen93\051) 174.41 544.1 T
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 529.99 743.53 S
+526.99 742.71 529.99 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+526.99 742.71 529.99 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+527.05 744.06 529.22 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+617.51 742.71 620.51 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+617.51 742.71 620.51 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+617.56 744.06 619.73 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+424.39 518.76 723.11 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 424.63 638.34 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 434.31 514.28 S
+1.79 (June 1995) 481.56 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 10.76 Q
+1 0 0 0 0 1 1 K
+(Determine Pivotal Parameters) 467.68 668.05 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 467.68 656.68 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Importance for estimated workload) 473.84 656.68 T
+(vs. cost and feasibility) 475.75 646.82 T
+(- eg,  fragment size, SLRU boundary) 480.39 636.05 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 467.68 625.29 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Design mutability of parameters) 473.84 625.29 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 467.68 614.52 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Aspects of workload to monitor) 473.84 614.52 T
+(Fixed) 644.32 560.55 T
+(Hot) 474.25 585.96 T
+(Recon\336guration) 474.25 577.74 T
+0 1 1 0 1 0 0 K
+483.11 570.66 472.76 573.63 483.11 576.6 483.11 573.63 4 Y
+0 1 1 0 1 0 0 K
+V
+664.62 576.6 674.97 573.63 664.62 570.66 664.62 573.63 4 Y
+V
+483.11 573.63 664.62 573.63 2 L
+1.79 H
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Recompile) 627.5 588.95 T
+(File System) 627.12 578.86 T
+(Restart) 555.36 586.71 T
+(File System) 554.61 577.37 T
+(Pivotal) 475 560.17 T
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 165.49 469.03 S
+162.49 468.21 165.49 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+162.49 468.21 165.49 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+162.55 469.56 164.72 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+253.01 468.21 256.01 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+253.01 468.21 256.01 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+253.06 469.56 255.23 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+59.89 244.26 358.61 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 150.13 273.84 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 69.81 239.78 S
+1.79 (June 1995) 117.06 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+0 0 0 1 0 0 0 K
+70.66 248.08 314.2 447.74 C
+72.23 257.8 312.63 436.98 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 43 133 567 658 232.03 170.44 76.41 263.1 FMBEGINEPSF
+%%BeginDocument: <inline>
+%!PS-Adobe-2.0 EPSF-1.2
+%%BoundingBox: 43 133 567 658
+save
+countdictstack
+mark
+newpath
+/showpage {} def
+%!
+%%EndComments
+%
+% Xgraph postscript output
+% Rick Spickelmier and David Harrison
+% University of California, Berkeley
+%
+% Scaling information
+%
+% Change these if you would like to change the centering
+% of the plot in either dimension
+/X-CENTER-PLOT 1 def
+/Y-CENTER-PLOT 1 def
+%
+% Page size computation
+clippath pathbbox
+/page-height exch def
+/page-width exch def
+pop pop
+% Determine whether rotation is required
+538.583 page-width gt
+{ % Rotation required
+   90 rotate
+   0 page-width neg translate
+   % Handle centering
+   Y-CENTER-PLOT 1 eq { % Center in y
+      page-height 538.583 sub 2 div
+   } { % Don't center in y
+      0
+   } ifelse
+   X-CENTER-PLOT 1 eq { % Center in x
+      page-width 538.583 sub 2 div
+   } { % Don't center in x
+      0
+   } ifelse
+   translate
+} { % No rotation - just handle centering
+   X-CENTER-PLOT 1 eq { % Center in x
+      page-width 538.583 sub 2 div
+   } { % Don't center in x
+      0
+   } ifelse
+   Y-CENTER-PLOT 1 eq { % Center in y
+      page-height 538.583 sub 2 div
+   } { % Don't center in y
+      0
+   } ifelse
+   translate
+} ifelse
+% Set the scale
+0.06 0.06 scale
+% Font Handling Functions
+%
+% Function giving y-offset to center of font
+% Assumes font is set and uses numbers to gauge center
+%
+/choose-font	% stack: fontsize fontname => ---
+{
+   findfont 
+   exch scalefont 
+   setfont
+   newpath
+   0 0 moveto (0) true charpath flattenpath pathbbox
+   /top exch def pop
+   /bottom exch def pop
+   bottom top bottom top add 2 div
+   /center-font-val exch def 
+   /upper-font-val exch def 
+   /lower-font-val exch def
+} def
+%
+% Justfication offset routines
+%
+/center-x-just	% stack: (string) x y => (string) newx y
+{
+   exch 2 index stringwidth pop 2 div sub exch
+} def
+%
+/left-x-just	% stack: (string) x y => (string) newx y
+{ 
+} def
+%
+/right-x-just	% stack: (string) x y => (string) newx y
+{
+   exch 2 index stringwidth pop sub exch
+} def
+%
+/center-y-just	% stack: (string) x y => (string) x newy
+{
+   center-font-val sub
+} def
+%
+/lower-y-just	% stack: (string) x y => (string) x newy
+{
+   lower-font-val sub
+} def
+%
+/upper-y-just	% stack: (string) x y => (string) x newy
+{
+   upper-font-val sub
+} def
+%
+% Shows a string on the page subject to justification
+%   
+/just-string	% stack: (string) x y just => ---
+{
+   dup 0 eq { pop center-x-just center-y-just 		} if
+   dup 1 eq { pop left-x-just center-y-just		} if
+   dup 2 eq { pop left-x-just upper-y-just	 	} if
+   dup 3 eq { pop center-x-just upper-y-just 		} if
+   dup 4 eq { pop right-x-just upper-y-just	 	} if
+   dup 5 eq { pop right-x-just center-y-just 		} if
+   dup 6 eq { pop right-x-just lower-y-just	 	} if
+   dup 7 eq { pop center-x-just lower-y-just  		} if
+   dup 8 eq { pop left-x-just lower-y-just	 	} if
+   moveto show
+} def
+%
+% Marker definitions
+/mark0 {/size exch def /y exch def /x exch def
+newpath x size sub y size sub moveto
+size size add 0 rlineto 0 size size add rlineto
+0 size size add sub 0 rlineto closepath fill} def
+/mark1 {/size exch def /y exch def /x exch def
+newpath x size sub y size sub moveto
+size size add 0 rlineto 0 size size add rlineto
+0 size size add sub 0 rlineto closepath stroke} def
+/mark2 {/size exch def /y exch def /x exch def
+newpath x y moveto x y size 0 360 arc stroke} def
+/mark3 {/size exch def /y exch def /x exch def
+newpath x size sub y size sub moveto x size add y size add lineto
+x size sub y size add moveto x size add y size sub lineto stroke} def
+/mark4 {/size exch def /y exch def /x exch def
+newpath x size sub y moveto x y size add lineto
+x size add y lineto x y size sub lineto
+closepath stroke} def
+/mark5 {/size exch def /y exch def /x exch def
+x y size mark1
+newpath x size sub y moveto size size add 0 rlineto stroke} def
+/mark6 {/size exch def /y exch def /x exch def
+newpath x y moveto x y size 0 360 arc fill} def
+/mark7 {/size exch def /y exch def /x exch def
+newpath x y moveto x size sub y size sub lineto
+x size add y size sub lineto closepath fill
+newpath x y moveto x size add y size add lineto
+x size sub y size add lineto closepath fill} def
+%
+% Main body begins here
+%
+300 /Times-Bold choose-font
+(Disk Read Bandwidth, 10% of disk) 4488 8856 3 just-string
+200 /Times-Roman choose-font
+(0% seek) 7766 8104 2 just-string
+(10% seek) 7766 7812 2 just-string
+(50% seek) 7766 7520 2 just-string
+(Track) 7766 7228 2 just-string
+(Buffer) 7766 6936 2 just-string
+(Cyl) 7766 6644 2 just-string
+14 setlinewidth
+[] 0 setdash
+newpath
+  7766 8136 moveto
+  8646 8136 lineto
+stroke
+[] 0 setdash 8 setlinewidth 7766 8136 24 mark0
+14 setlinewidth
+[25] 0 setdash
+newpath
+  7766 7844 moveto
+  8646 7844 lineto
+stroke
+[] 0 setdash 8 setlinewidth 7766 7844 24 mark0
+14 setlinewidth
+[50] 0 setdash
+newpath
+  7766 7552 moveto
+  8646 7552 lineto
+stroke
+[] 0 setdash 8 setlinewidth 7766 7552 24 mark0
+14 setlinewidth
+[75] 0 setdash
+newpath
+  7766 7260 moveto
+  8646 7260 lineto
+stroke
+[] 0 setdash 8 setlinewidth 7766 7260 24 mark0
+14 setlinewidth
+[100] 0 setdash
+newpath
+  7766 6968 moveto
+  8646 6968 lineto
+stroke
+[] 0 setdash 8 setlinewidth 7766 6968 24 mark0
+14 setlinewidth
+[125] 0 setdash
+newpath
+  7766 6676 moveto
+  8646 6676 lineto
+stroke
+[] 0 setdash 8 setlinewidth 7766 6676 24 mark0
+("MB/s") 90 8496 2 just-string
+(3) 8776 380 8 just-string
+("frag size" x 10) 8776 380 5 just-string
+(0.50) 860 800 5 just-string
+(1.00) 860 1290 5 just-string
+(1.50) 860 1781 5 just-string
+(2.00) 860 2271 5 just-string
+(2.50) 860 2762 5 just-string
+(3.00) 860 3252 5 just-string
+(3.50) 860 3743 5 just-string
+(4.00) 860 4233 5 just-string
+(4.50) 860 4724 5 just-string
+(5.00) 860 5214 5 just-string
+(5.50) 860 5705 5 just-string
+(6.00) 860 6195 5 just-string
+(6.50) 860 6686 5 just-string
+(7.00) 860 7176 5 just-string
+(7.50) 860 7667 5 just-string
+(0.00) 1244 90 7 just-string
+(100.00) 2412 90 7 just-string
+(200.00) 3581 90 7 just-string
+(300.00) 4749 90 7 just-string
+(400.00) 5918 90 7 just-string
+(500.00) 7086 90 7 just-string
+[] 0 setdash
+2 setlinewidth
+newpath
+  950 800 moveto
+  7676 800 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  950 1290 moveto
+  7676 1290 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  950 1781 moveto
+  7676 1781 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  950 2271 moveto
+  7676 2271 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  950 2762 moveto
+  7676 2762 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  950 3252 moveto
+  7676 3252 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  950 3743 moveto
+  7676 3743 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  950 4233 moveto
+  7676 4233 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  950 4724 moveto
+  7676 4724 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  950 5214 moveto
+  7676 5214 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  950 5705 moveto
+  7676 5705 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  950 6195 moveto
+  7676 6195 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  950 6686 moveto
+  7676 6686 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  950 7176 moveto
+  7676 7176 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  950 7667 moveto
+  7676 7667 lineto
+stroke
+[] 0 setdash
+8 setlinewidth
+newpath
+  1244 8106 moveto
+  1244 380 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  2412 8106 moveto
+  2412 380 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  3581 8106 moveto
+  3581 380 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  4749 8106 moveto
+  4749 380 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  5918 8106 moveto
+  5918 380 lineto
+stroke
+[] 0 setdash
+2 setlinewidth
+newpath
+  7086 8106 moveto
+  7086 380 lineto
+stroke
+8 setlinewidth 1256 731 24 mark0
+1268 1241 24 mark0
+1280 1634 24 mark0
+1292 1987 24 mark0
+1339 3154 24 mark0
+1387 4331 24 mark0
+1435 4910 24 mark0
+1627 6215 24 mark0
+1818 6882 24 mark0
+2010 7255 24 mark0
+2201 7480 24 mark0
+2392 7637 24 mark0
+2584 7755 24 mark0
+2775 7068 24 mark0
+2967 7225 24 mark0
+3158 7323 24 mark0
+3350 7382 24 mark0
+3541 2291 24 mark0
+3733 2311 24 mark0
+3924 2281 24 mark0
+4116 2330 24 mark0
+4307 2311 24 mark0
+4498 2428 24 mark0
+4690 2409 24 mark0
+4881 2428 24 mark0
+5073 2379 24 mark0
+5264 2399 24 mark0
+5456 2428 24 mark0
+5647 2389 24 mark0
+5839 2438 24 mark0
+6030 2467 24 mark0
+6222 2428 24 mark0
+6413 2477 24 mark0
+6604 2458 24 mark0
+6796 2438 24 mark0
+6987 2467 24 mark0
+7179 2428 24 mark0
+7370 2458 24 mark0
+14 setlinewidth
+[] 0 setdash
+newpath
+  1256 731 moveto
+  1268 1241 lineto
+  1280 1634 lineto
+  1292 1987 lineto
+  1339 3154 lineto
+  1387 4331 lineto
+  1435 4910 lineto
+  1627 6215 lineto
+  1818 6882 lineto
+  2010 7255 lineto
+  2201 7480 lineto
+  2392 7637 lineto
+  2584 7755 lineto
+  2775 7068 lineto
+  2967 7225 lineto
+  3158 7323 lineto
+  3350 7382 lineto
+  3541 2291 lineto
+  3733 2311 lineto
+  3924 2281 lineto
+  4116 2330 lineto
+  4307 2311 lineto
+  4498 2428 lineto
+  4690 2409 lineto
+  4881 2428 lineto
+  5073 2379 lineto
+  5264 2399 lineto
+  5456 2428 lineto
+  5647 2389 lineto
+  5839 2438 lineto
+  6030 2467 lineto
+  6222 2428 lineto
+  6413 2477 lineto
+  6604 2458 lineto
+  6796 2438 lineto
+  6987 2467 lineto
+  7179 2428 lineto
+  7370 2458 lineto
+stroke
+[] 0 setdash 8 setlinewidth 1256 731 24 mark0
+1268 1241 24 mark0
+1280 1634 24 mark0
+1292 1987 24 mark0
+1339 3135 24 mark0
+1387 4282 24 mark0
+1435 4802 24 mark0
+1627 6097 24 mark0
+1818 6646 24 mark0
+2010 6970 24 mark0
+2201 7098 24 mark0
+2392 7176 24 mark0
+2584 7225 24 mark0
+2775 6744 24 mark0
+2967 6568 24 mark0
+3158 6744 24 mark0
+3350 6852 24 mark0
+3541 2242 24 mark0
+3733 2281 24 mark0
+3924 2330 24 mark0
+4116 2281 24 mark0
+4307 2311 24 mark0
+4498 2448 24 mark0
+4690 2379 24 mark0
+4881 2418 24 mark0
+5073 2369 24 mark0
+5264 2389 24 mark0
+5456 2428 24 mark0
+5647 2379 24 mark0
+5839 2467 24 mark0
+6030 2438 24 mark0
+6222 2418 24 mark0
+6413 2477 24 mark0
+6604 2487 24 mark0
+6796 2458 24 mark0
+6987 2428 24 mark0
+7179 2418 24 mark0
+7370 2467 24 mark0
+14 setlinewidth
+[25] 0 setdash
+newpath
+  1256 731 moveto
+  1268 1241 lineto
+  1280 1634 lineto
+  1292 1987 lineto
+  1339 3135 lineto
+  1387 4282 lineto
+  1435 4802 lineto
+  1627 6097 lineto
+  1818 6646 lineto
+  2010 6970 lineto
+  2201 7098 lineto
+  2392 7176 lineto
+  2584 7225 lineto
+  2775 6744 lineto
+  2967 6568 lineto
+  3158 6744 lineto
+  3350 6852 lineto
+  3541 2242 lineto
+  3733 2281 lineto
+  3924 2330 lineto
+  4116 2281 lineto
+  4307 2311 lineto
+  4498 2448 lineto
+  4690 2379 lineto
+  4881 2418 lineto
+  5073 2369 lineto
+  5264 2389 lineto
+  5456 2428 lineto
+  5647 2379 lineto
+  5839 2467 lineto
+  6030 2438 lineto
+  6222 2418 lineto
+  6413 2477 lineto
+  6604 2487 lineto
+  6796 2458 lineto
+  6987 2428 lineto
+  7179 2418 lineto
+  7370 2467 lineto
+stroke
+[] 0 setdash 8 setlinewidth 1256 731 24 mark0
+1268 1241 24 mark0
+1280 1634 24 mark0
+1292 1997 24 mark0
+1339 3154 24 mark0
+1387 4302 24 mark0
+1435 4910 24 mark0
+1627 6254 24 mark0
+1818 6882 24 mark0
+2010 7225 24 mark0
+2201 7451 24 mark0
+2392 7608 24 mark0
+2584 7608 24 mark0
+2775 7049 24 mark0
+2967 7215 24 mark0
+3158 7245 24 mark0
+3350 7470 24 mark0
+3541 2242 24 mark0
+3733 2281 24 mark0
+3924 2340 24 mark0
+4116 2271 24 mark0
+4307 2311 24 mark0
+4498 2448 24 mark0
+4690 2389 24 mark0
+4881 2428 24 mark0
+5073 2369 24 mark0
+5264 2389 24 mark0
+5456 2438 24 mark0
+5647 2379 24 mark0
+5839 2477 24 mark0
+6030 2428 24 mark0
+6222 2448 24 mark0
+6413 2477 24 mark0
+6604 2487 24 mark0
+6796 2438 24 mark0
+6987 2418 24 mark0
+7179 2418 24 mark0
+7370 2467 24 mark0
+14 setlinewidth
+[50] 0 setdash
+newpath
+  1256 731 moveto
+  1268 1241 lineto
+  1280 1634 lineto
+  1292 1997 lineto
+  1339 3154 lineto
+  1387 4302 lineto
+  1435 4910 lineto
+  1627 6254 lineto
+  1818 6882 lineto
+  2010 7225 lineto
+  2201 7451 lineto
+  2392 7608 lineto
+  2584 7608 lineto
+  2775 7049 lineto
+  2967 7215 lineto
+  3158 7245 lineto
+  3350 7470 lineto
+  3541 2242 lineto
+  3733 2281 lineto
+  3924 2340 lineto
+  4116 2271 lineto
+  4307 2311 lineto
+  4498 2448 lineto
+  4690 2389 lineto
+  4881 2428 lineto
+  5073 2369 lineto
+  5264 2389 lineto
+  5456 2438 lineto
+  5647 2379 lineto
+  5839 2477 lineto
+  6030 2428 lineto
+  6222 2448 lineto
+  6413 2477 lineto
+  6604 2487 lineto
+  6796 2438 lineto
+  6987 2418 lineto
+  7179 2418 lineto
+  7370 2467 lineto
+stroke
+[] 0 setdash 8 setlinewidth 1675 800 24 mark0
+1675 2762 24 mark0
+14 setlinewidth
+[75] 0 setdash
+newpath
+  1675 800 moveto
+  1675 2762 lineto
+stroke
+[] 0 setdash 8 setlinewidth 4235 800 24 mark0
+4235 2762 24 mark0
+14 setlinewidth
+[100] 0 setdash
+newpath
+  4235 800 moveto
+  4235 2762 lineto
+stroke
+[] 0 setdash 8 setlinewidth 7370 800 24 mark0
+7370 2762 24 mark0
+14 setlinewidth
+[125] 0 setdash
+newpath
+  7370 800 moveto
+  7370 2762 lineto
+stroke
+showpage
+% End of xgraph output
+cleartomark
+countdictstack exch sub { end } repeat
+restore
+
+%%EndDocument
+FMENDEPSF
+70.66 248.08 314.2 447.74 C
+31.64 -121.5 823.64 490.5 C
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 529.99 469.03 S
+526.99 468.21 529.99 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+526.99 468.21 529.99 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+527.05 469.56 529.22 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+617.51 468.21 620.51 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+617.51 468.21 620.51 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+617.56 469.56 619.73 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+424.39 244.26 723.11 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 150.13 638.34 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 434.31 239.78 S
+1.79 (June 1995) 481.56 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(SLRU Segment Boundary) 511.7 439.07 T
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+481.99 421.09 490.55 421.09 2 L
+0.45 H
+2 Z
+1 1 0 0 0 0 1 K
+N
+482.22 417.13 490.77 417.13 2 L
+N
+481.99 413.99 490.55 413.99 2 L
+N
+482.22 410.03 490.77 410.03 2 L
+N
+482.07 406.81 490.62 406.81 2 L
+N
+479.15 377.94 494.85 403.35 R
+0.9 H
+N
+481.99 395.66 490.55 395.66 2 L
+0.45 H
+N
+482.14 399.25 490.7 399.25 2 L
+N
+482.22 391.7 490.77 391.7 2 L
+N
+481.99 388.56 490.55 388.56 2 L
+N
+482.22 384.6 490.77 384.6 2 L
+N
+482.07 381.39 490.62 381.39 2 L
+N
+479.15 352.51 494.85 377.93 R
+7 X
+V
+0.9 H
+0 X
+N
+481.99 370.23 490.55 370.23 2 L
+0.45 H
+N
+482.14 373.82 490.7 373.82 2 L
+N
+482.22 366.27 490.77 366.27 2 L
+N
+481.99 363.13 490.55 363.13 2 L
+N
+482.22 359.17 490.77 359.17 2 L
+N
+482.07 355.96 490.62 355.96 2 L
+N
+479.15 327.08 494.85 352.5 R
+7 X
+V
+0.9 H
+0 X
+N
+481.99 344.81 490.55 344.81 2 L
+0.45 H
+N
+482.14 348.39 490.7 348.39 2 L
+N
+482.22 340.85 490.77 340.85 2 L
+N
+481.99 337.71 490.55 337.71 2 L
+N
+482.22 333.74 490.77 333.74 2 L
+N
+482.07 330.53 490.62 330.53 2 L
+N
+1 0 0 0 0 1 1 K
+479.15 301.67 494.85 327.08 R
+7 X
+1 0 0 0 0 1 1 K
+V
+0.9 H
+0 X
+N
+481.99 319.39 490.55 319.39 2 L
+0.45 H
+N
+482.14 322.98 490.7 322.98 2 L
+N
+482.22 315.43 490.77 315.43 2 L
+N
+481.99 312.29 490.55 312.29 2 L
+N
+482.22 308.33 490.77 308.33 2 L
+N
+482.07 305.11 490.62 305.11 2 L
+N
+1 1 0 0 0 0 1 K
+479.15 428.79 M
+ 486.23 428.8 487.61 419.66 494.44 418.36 D
+0.9 H
+1 1 0 0 0 0 1 K
+N
+479.15 403.36 479.15 428.79 2 L
+N
+494.44 404.16 494.06 418.73 2 L
+N
+481.73 424.34 486.21 424.34 2 L
+0.22 H
+N
+1 0 0 0 0 1 1 K
+491.64 284.68 483.08 284.68 2 L
+0.45 H
+1 0 0 0 0 1 1 K
+N
+491.42 288.64 482.86 288.64 2 L
+N
+491.64 291.78 483.08 291.78 2 L
+N
+491.42 295.74 482.86 295.74 2 L
+N
+491.57 298.96 483.01 298.96 2 L
+N
+494.48 276.98 M
+ 487.4 276.97 486.03 286.11 479.2 287.41 D
+0.9 H
+N
+494.48 302.4 494.48 276.98 2 L
+N
+479.2 301.61 479.57 287.04 2 L
+N
+491.91 281.43 487.42 281.43 2 L
+0.22 H
+N
+0 1 1 0 1 0 0 K
+510.82 326.05 505.65 327.54 510.82 329.02 510.82 327.54 4 Y
+0 1 1 0 1 0 0 K
+V
+510.82 327.54 534.8 327.54 2 L
+N
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Least Recently Used) 506.4 288.29 T
+(Most Recently Used) 507.14 408.27 T
+1 1 0 0 0 0 1 K
+0 0 0 1 0 0 0 K
+(New Pages) 508.64 331.27 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "mini" 5
+%%Page: "mini" 6
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+31.64 153 823.64 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 165.49 743.53 S
+162.49 742.71 165.49 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+162.49 742.71 165.49 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+162.55 744.06 164.72 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+253.01 742.71 256.01 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+253.01 742.71 256.01 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+253.06 744.06 255.23 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+59.89 518.76 358.61 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 424.63 273.84 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 69.81 514.28 S
+1.79 (June 1995) 117.06 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 10.76 Q
+1 0 0 0 0 1 1 K
+(Initialize Parameters) 104.3 691.74 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 680.38 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Estimate workload) 110.46 680.38 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 669.62 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Set voodoo constants accordingly) 110.46 669.62 T
+1 0 0 0 0 1 1 K
+2 10.76 Q
+1 0 0 0 0 1 1 K
+(Run File System) 104.3 646.89 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 635.53 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Sample workload) 110.46 635.53 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 624.77 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Check estimated against actual workload) 110.46 624.77 T
+(- adjust parameter values) 117.01 614.9 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 604.13 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Check predicted against actual performance) 110.46 604.13 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 593.37 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(- Discrepancies -> incorrect model) 110.46 593.37 T
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Self-tuning File Systems) 529.99 743.53 S
+526.99 742.71 529.99 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+526.99 742.71 529.99 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+527.05 744.06 529.22 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+617.51 742.71 620.51 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+617.51 742.71 620.51 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+617.56 744.06 619.73 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+424.39 518.76 723.11 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 424.63 638.34 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Drew Roselli,) 434.31 514.28 S
+1.79 (June 1995) 481.56 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 0 0 1 0 1 K
+3 10.76 Q
+0 1 0 0 1 0 1 K
+(Conclusions) 545.93 715.07 T
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+2 F
+1 0 0 0 0 1 1 K
+(File systems must be adaptive) 468.8 691.74 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 680.38 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Hardware and workload continually evolving) 474.96 680.38 T
+1 0 0 0 0 1 1 K
+2 10.76 Q
+1 0 0 0 0 1 1 K
+(Goal: Automate \336le system tuning) 468.8 657.66 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 646.29 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Self-evaluating) 474.96 646.29 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 635.53 T
+0 0 0 1 0 0 0 K
+2 8.97 Q
+0 0 0 1 0 0 0 K
+(Instrument \336le system to facilitate tuning) 474.96 635.53 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "mini" 6
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Ascend
+%%Pages: 6
+%%DocumentFonts: Helvetica-Bold
+%%+ Helvetica
+%%+ Times-Roman
+%%+ Times-Bold
+%%+ Times-Italic
+%%EOF

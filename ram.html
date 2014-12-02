@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Network RAM | NOW</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">NOW</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="news.html">News</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li calss="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="case.html">Case</a></li>
+                <li><a href="recent.html">Recent NOW Papers</a></li>
+                <li><a href="paper.html">NOW Papers</a></li>
+                <li><a href="phd.html">NOW PhD's</a></li>
+                <li><a href="slides.html">NOW Slides</a></li>
+                <li><a href="data.html">Data</a></li>
+              </ul>
+            </li>
+            <li><a href="software.html">Software</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="people.html">People</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="retreats.html">Retreats</a></li>
+              </ul>
+            </li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.berkeley.edu/index.html/">UC Berkeley</a></li>
+                <li><a href="http://www.cs.berkeley.edu/">Berkeley CS</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="search.html">Search</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div style="background-color:#B1E5FF;">
+      <div class="container" style="padding-top:5em;">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="files/title.gif" width="800" height="159.2"/>
+            <p style="color:#5448C8; font-size:15px; margin-left:3.2em"><q>What can anyone give you greater than now" - William Stafford</q></p> 
+          </div>
+          <div class="col-lg-6">
+            <img src="files/logo.gif" width="376.875" height="200.625" style="margin-left:15em;" />
+
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+    <div style="background-color:#D0EFFF;">
+      <div class="container" style="padding-top:2em;">
+        <div class="row">
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-10" style="font-size:18px">
+            <img src="files/project/network-ram.gif" align="center">
+            <h1>Network RAM: Serverless Network Memory Service</h1>
+            <p>While the speed of CPU and semiconductor memory has been increasing rapidly over the years, the hard disks, limited by physical constraints of moving parts, haven't been enjoying the same kind of success in terms of speedups. This trend doesn't appear to change in the near future, and as program sizes get larger, paging overhead will be a more and more serious problems from the performance standpoint. <br><br>
+            On the other hand, network performance has been improving very rapidly in the recent years, and the days when the local disk was faster than memory on a remote machine are over. On a fast network with <a href="activemessage.html">Active Messages</a>, fetching a page from a remote machine's main memory can be more than an order of magnitude faster getting the same amount of data from the local disk. <br><br>
+            We are currently designing a system in which idle machines on a Network of Workstations (NOW) can supply their memory as a paging devices for busy machines. This memory, called Network RAM, will appear as an additional memory hierarchy between the local RAM and the paging space on disk. <br><br>
+            The Network RAM system we are desgining is serverless, in that there is no dedicated Network RAM server - client relationship in the traditional sense. Any machine can be a server when it is idle, and a client when it needs more memory than the physical memory it has. <br><br>
+            We are trying to avoid having a central point of failure, and make the system as scalable as possible. For instance, we don't have a central meta-server or inventory manager that keeps track of the amount of free memory on each machine on the network. Instead, each and every machine does the bookkeeping themselves. Also, we are trying to keep down the number of messages as low as possible. </p> <hr>
+            <h2>People who used to work on Network RAM</h2> 
+            <h4>Faculty: </h4>
+            <ul>
+              <li><a href="http://www.cs.berkeley.edu/~pattrsn/">Dave Patterson</a></li>
+              <li><a href="http://www.cs.washington.edu/people/faculty/tom">Tom Anderson</a></li>
+            </ul>
+            <h4>Students:</h4>
+            <ul>
+              <li>Satoshi Asami</li>
+              <li>Alan Mainwaring</li>
+              <li>Kristin Wright</li>
+              <li>Chad Yoshikawa</li>
+            </ul>
+          </div>
+        </div>
+        <br><br><br><br><br><br><br>
+      </div>      
+    </div>
+    <!-- End of Centent Section -->
+
+    <div style="background-color:#2E8AE6;">
+      <div class="container" style="padding-top:0.6em;">
+        <p style="color:#ffffff">Note: The project was terminated on June 15, 1998</p>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/vendor/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8057 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 612 792 0 1 21 FMDOCUMENT
+0 0 /Helvetica FMFONTDEFINE
+1 0 /Helvetica-Bold FMFONTDEFINE
+2 0 /Helvetica-Narrow-Oblique FMFONTDEFINE
+3 0 /Helvetica-BoldOblique FMFONTDEFINE
+4 0 /Helvetica-Narrow FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(GSC/Myrinet Card Design Review) 72 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(April 13, 1995) 358.98 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 1 of 15) 651.95 226 T
+0 0 0 1 0 0 0 K
+63 243 729 729 18 RR
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 36 Q
+(GSC/Myrinet Card) 241.97 696 T
+(Design Review) 268.96 653 T
+0 24 Q
+(Cedric Krumbein) 306.65 575 T
+(Computer Science Division) 251.96 546 T
+(University of California, Berkeley) 222.62 517 T
+0 18 Q
+(Myricom, Inc.) 342.49 463 T
+(Arcadia, CA) 347.98 441 T
+(April 13, 1995) 340.47 419 T
+72 252 720 720 C
+72 252 720 360 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 252 341 360 450 108 109 72 251 FMBEGINEPSF
+%%BeginDocument: /home/orodruin/b/threadid/ced/hp/doc/univ_cal.ps
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: univ_cal.ps
+%%Creator: XV Version 2.21  Rev: 4/29/92  -  by John Bradley
+%%BoundingBox: 252 341 360 450
+%%Pages: 1
+%%DocumentFonts:
+%%EndComments
+%%EndProlog
+
+%%Page: 1 1
+
+% remember original state
+/origstate save def
+
+% build a temporary dictionary
+20 dict begin
+
+% define string to hold a scanline's worth of data
+/pix 108 string def
+
+% lower left corner
+252 341 translate
+
+% size of image (on paper, in 1/72inch coords)
+108 109 scale
+
+108 109 8			% dimensions of data
+[108 0 0 -109 0 109]		% mapping matrix
+{currentfile pix readhexstring pop}
+image
+
+434343434343434343434343434343434343434343434343434343434343434343434343
+434343434343434343434343434343434343434343434343434343434343434343434343
+434343434343434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434343434343434343434343
+434343434343434343434343434343434343434343434343434343434343434343434343
+434343434343434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434343434343434343434343
+434343434343434312121212121212121243434343434343434343434343434343434343
+434343434343434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434343434343434343434343
+434343434343431212121212121212121212121212121212121212124343434343434343
+434343434343434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434343434343434343434343
+434343434312121212121212121212121212121212121212121212121212434343434343
+434343434343434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434343434343434343434343
+434343431212121212121212121212121212121212121212121212121212121212121212
+121212434343434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434343434343434343434343
+434312121212121212121212121212121212121212121212121212121212121212121212
+121212121243434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434343434343124343431212
+121212121212121212121212121212121212121212121212121212121212121212121212
+121212121212434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434312121212121212121212
+121212121212121212121212bebebebebebebebebebebebebe1212121212121212121212
+121212121212434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343431212121212121212121212
+121212121212bebebebebebebebebe1212bebebebebebebebebebebe1212121212121212
+121212121212124343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343121212121212121212121212
+121212bebebebe121212be1212bebe1212bebebebebebebebebebebebebebebe12121212
+121212121212121243434343434343434343434343434343434343434343434343434343
+
+4343434343434343434343434343434343434343434343121212121212121212121212be
+bebebebe1212121212bebebe12121212bebebebebe12bebebebebe1212121212bebebebe
+121212121212121212434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343431212121212121212121212bebebe
+be12bebe12be1212bebebebebe121212bebebebebe12bebebebe1212bebebe12bebebebe
+bebe12121212121212121243434343434343434343434343434343434343434343434343
+
+4343434343434343434343434343434343434343434312121212121212121212bebebebe
+be1212bebebebe12bebebebebebe1212bebebebebebebebebebe1212bebebe1212bebebe
+12bebe121212121212121212121243434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343431212121212121212bebe121212be
+be1212bebebebe1212bebebebebe1212bebebebebebebebebebe1212bebebe1212bebe12
+1212bebebe12121212121212121212121243434343434343434343434343434343434343
+
+43434343434343434343434343434343434343434312121212121212bebebe121212bebe
+bebe12bebebebe1212bebebebebebebebebe1212bebebebebebe1212bebebe12bebebe12
+12121212bebe121212121212121212121212124343434343434343434343434343434343
+
+4343434343434343434343434343434343434343121212121212bebebebebe12bebe1212
+bebe1212bebebebebebebebebebebe121212121212bebebebebebe1212121212bebe1212
+12bebe12bebebebe12121212121212121212121243434343434343434343434343434343
+
+43434343434343434343434343434343434343121212121212bebebebebebe1212121212
+12be1212bebebebebebe1212121212121212be121212121212bebebebebebebebebe12be
+1212bebebebebebebe121212121212121212121243434343434343434343434343434343
+
+434343434343434343434343434343434312121212121212bebe121212bebebe12bebe12
+12bebebebebebe1212121212bebebebe1212be121212121212121212bebebebebe1212be
+bebebebebebebebebebebe12121212121212121212434343434343434343434343434343
+
+4343434343434343434343434343121212121212121212bebe12121212bebebebebe1212
+bebe12121212121212121212121212121212be121212121212121212121212bebebebebe
+bebebebebebebebebebebebe121212121212121212434343434343434343434343434343
+
+4343434343434343434343431212121212121212121212be1212bebe12bebebe121212be
+be1212121212121212bebebe121212121212be1212bebe12121212be1212121212bebebe
+bebebebebebe12bebebebebebe1212121212121212434343434343434343434343434343
+
+434343434343434343434312121212121212121212bebebe1212be1212bebebebebebebe
+1212121212121212121212121212be1212121212121212121212be1212121212121212be
+bebebebebe1212bebebebebebebe12121212121212124343434343434343434343434343
+
+4343434343434343434312121212121212121212bebebebebe12121212121212bebe1212
+121212121212bebebebe1212be1212bebebe121212bebe1212be12121212121212121212
+12bebebebebebebebebebebebebebe121212121212124343434343434343434343434343
+
+43434343434343434343121212121212121212bebe12bebebebe1212bebebebe12121212
+bebebebebebebe12121212bebebe12bebe12121212121212bebe12121212121212121212
+1212bebebebebebebebebe1212bebebe1212121212124343434343434343434343434343
+
+434343434343434343121212121212121212bebe1212bebebebebe12bebebe121212bebe
+bebe12121212121212bebe1212be12bebe1212be121212bebe121212bebebe1212121212
+121212bebebebebebe121212121212bebe12121212121243434343434343434343434343
+
+4343434343434343431212121212121212bebe1212be12bebebebebebe121212bebebe12
+12121212121212bebe121212121212be121212bebe1212be1212be12121212bebebebe12
+12121212bebebebebe1212bebebe12bebebe121212121243434343434343434343434343
+
+43434343434343434312121212121212bebe1212121212be1212bebe1212121212121212
+12121212bebebe121212be1212be121212121212be121212be121212be1212121212bebe
+bebebe121212bebebe12bebebebe1212bebe121212121212434343434343434343434343
+
+43434343434343434312121212121212bebebe121212bebe12bebe121212121212121212
+1212bebebe12121212121212be1212121212be1212be12121212be121212be1212121212
+12bebebebe1212bebe12bebebebebebebebebe1212121212121243434343434343434343
+
+434343434343434312121212121212bebebebebe12121212bebe121212121212121212be
+bebebe12121212be121212be12be1212be12be12be121212be1212be121212bebe121212
+12121212bebebe12be1212bebebebebebebebe1212121212121212434343434343434343
+
+434343434343434312121212121212be1212bebebebe1212be1212121212121212bebebe
+be12121212bebe121212be1212121212121212121212bebebebe1212bebe121212bebe12
+121212121212121212be1212bebebebebebebebe12121212121212124343434343434343
+
+4343434343434343121212121212bebebe12bebebebebebe121212121212121212121212
+1212121212121212121212121212121212121212121212121212be121212be12121212be
+be121212121212121212bebebebebe12121212bebe121212121212121243434343434343
+
+43434343434343431212121212bebebebe1212bebebebebe12121212be12be1212121212
+bebebebebebebebebebebebebebe121212121212121212bebebe12121212121212121212
+1212121212121212121212be12121212121212bebebe1212121212121212434343434343
+
+434343434343431212121212bebebebebebe1212bebebe1212bebebebe12be1212121212
+bebe121212bebe12bebebe12be1212be12121212bebe1212bebebebebebebebebebebebe
+1212121212121212121212bebebebe12be1212bebebe1212121212121212434343434343
+
+434343434343431212121212be12121212121212bebe1212bebebebebe12be1212121212
+bebe12121212bebe12be12bebebebebebe1212121212bebebebebebe12be1212be12be12
+121212121212121212121212bebebe121212bebebebebe12121212121212434343434343
+
+4343434343121212121212bebe12121212121212bebe1212bebebebe1212be1212121212
+be121212be12bebebebebebe121212be12121212be1212be1212bebebebebebebebebebe
+12121212121212bebebe121212bebe1212bebebebebebe12121212121212124343434343
+
+4343434312121212121212bebebebebebebebebebebe12bebebe12121212be1212121212
+be12be12be12bebe12121212bebebe12121212bebebebebebebebe1212be1212be12bebe
+12121212121212bebebebe1212bebe1212bebebebebebebe121212121212124343434343
+
+43434312121212121212bebe1212bebebebebebebe1212be121212121212be1212121212
+be1212121212bebebebebebebe1212be12121212121212be12bebebebebebebebebebe12
+121212121212121212bebebebe12bebebebebebe1212bebe121212121212124343434343
+
+43431212121212121212bebebe1212121212bebe12121212121212121212be1212121212
+be1212121212bebebebe12be121212be12121212bebebebebebebe12be1212be12bebebe
+1212121212121212121212bebebe12bebebe12121212bebe121212121212124343434343
+
+43431212121212121212bebebebebebe1212bebe12121212121212be1212be1212121212
+be1212121212be1212be12bebebe1212121212121212be1212be12bebe12be1212be12be
+121212121212121212121212bebe12be121212bebebebebebe1212121212434343434343
+
+43431212121212121212bebebebebebebebebe121212121212bebebe1212be1212121212
+bebebebebebebebebebebebebe1212be121212be121212bebebebebebebebebebebebe12
+12121212121212be121212121212be12be12bebebebebebebe1212121212124343434343
+
+431212121212121212be1212121212bebebebe1212121212bebebebe1212121212121212
+bebe12121212be12be1212bebebebe1212121212bebebebebebe12be1212be1212bebebe
+12121212121212bebe12121212121212be1212bebebebebebe1212121212124343434343
+
+431212121212121212bebebebe121212bebe1212121212bebebebe121212be1212121212
+bebebebebebebebebebebebebe1212bebe121212121212121212be1212be12bebe1212be
+1212121212121212bebebe121212121212be12bebebebebebe1212121212124343434343
+
+4343121212121212bebebebe12121212bebe121212bebebebe1212121212121212121212
+be12be1212121212be1212121212bebe121212be1212bebebebebebebebebebebebebe12
+121212121212121212bebebe1212121212bebebebebebebebebe12121212121243434343
+
+4343121212121212bebe12121212bebebe121212bebebebe121212121212121212121212
+bebebebebebebebebebebebebebebe12be121212bebebebebebebe12bebe12bebebebebe
+12121212be1212121212bebebe12121212bebebebe121212bebe12121212121212434343
+
+4343121212121212be121212bebebebebe1212bebebebe121212121212be121212121212
+bebebe121212bebebe1212121212bebe121212121212be12be1212bebe12121212bebebe
+1212121212121212121212bebebebe1212bebe12121212bebebebe121212121212124343
+
+43431212121212bebe121212121212bebe1212bebebe12121212121212be121212121212
+be121212be121212be12bebebebebe12121212bebebebebebebebebebebebebebebebe12
+12121212be12121212121212bebebebe12bebebebebebebebebebe121212121212124343
+
+43431212121212bebebebebebebe12be1212bebe121212121212bebe12be121212121212
+bebebebebebebebebebebebe1212bebebe12121212bebebebebe12be12be1212be12be12
+12121212be1212be1212121212bebebe12bebebebebebebebebebe121212121212121243
+
+43431212121212bebebebebebebebebe1212be121212121212bebebe12be121212121212
+be12be12121212be12bebe1212bebebe1212be1212bebe12bebebebebebebebebebebe12
+12121212be12121212121212121212bebe12bebebebe121212bebebe1212121212121243
+
+43431212121212bebe121212bebebebe1212121212121212bebebe1212be121212121212
+1212be12bebebebebebebebebe121212be121212bebebebebebebebe12be1212be121212
+12121212be1212be12be121212121212be12bebe1212121212bebebe1212121212121243
+
+43431212121212bebe1212121212bebe12121212121212bebebe121212be121212121212
+bebebebebe12bebebebe12121212bebe1212121212be1212be1212be12bebebebebebe12
+12121212be12121212bebe12121212121212bebebebe12be1212bebe1212121212121243
+
+43431212121212bebebebebebe12bebe121212121212bebebebe121212be121212121212
+12121212bebebe12bebebebebebe1212be1212bebebebebebebebebebebebe1212bebe12
+12121212be121212be12be12be1212121212bebebebe12be1212bebe1212121212121212
+
+43121212121212bebebebebebe1212be1212121212bebebebe12121212be121212121212
+bebebebebebebebebebe12121212bebe1212121212bebebebe12be1212bebebebebebe12
+12121212be121212be121212121212121212bebebebe12be1212bebe1212121212121243
+
+43121212121212be121212be1212bebe12121212bebebebe1212121212be121212121212
+bebebe12121212be1212be1212bebe12121212121212121212be12bebebebebebebebe12
+12121212be121212be1212be121212121212bebebebebebebebebebe1212121212121243
+
+12121212121212be121212121212bebe121212bebebebe12121212be12be121212121212
+bebebebebebebebebebebebebebebe12be12bebebebebebebebebebebe12bebebebe1212
+bebebe12be12be12be12121212be12121212bebebebebebebebebebe1212121212121243
+
+12121212121212be12bebebebebebebe1212bebebebe12121212bebe12be121212121212
+bebe12121212be12be1212121212bebe121212121212bebe12bebe12bebebebebe1212be
+1212be12be12be12bebebebebe1212be1212bebebe12121212bebebe1212121212121243
+
+12121212121212bebebebebebebebebe12bebebebe12121212bebebe12be121212121212
+121212121212bebe12bebebebebe12121212bebe1212bebebebebebebe12be121212bebe
+12121212121212bebebebebe1212bebebe12bebe1212bebe1212bebe1212121212121243
+
+12121212121212bebebebebebebebebe12bebebe1212121212bebe1212be121212121212
+bebebebebebebebebebebe12121212bebe121212bebebebebebe12be1212be1212bebebe
+be1212bebebebebebebebe121212bebebe12bebe12bebebebe12bebe1212121212124343
+
+12121212121212bebebebebebebebebe12bebe1212121212bebe121212be121212121212
+121212be1212be1212be121212bebe121212121212121212be1212bebebebe12bebe1212
+121212bebebebebebebe1212121212bebe12bebe12bebebebe12bebe1212121212124343
+
+12121212121212bebebe1212bebebebe12121212121212bebebe121212be121212121212
+bebe121212bebebebebebebebe12be12be12bebebebebebebebebebebebe1212be121212
+1212121212bebebe1212121212121212be1212be1212bebe1212bebe1212121212434343
+
+12121212121212bebebebe12bebebebe121212121212bebebe12121212be1212121212be
+bebebebebebebe1212be12121212bebe1212121212bebe1212be12bebebebe121212be12
+be1212121212121212bebebe121212121212bebebe12121212bebebe1212121212434343
+
+12121212121212bebebebebebebebebe1212121212bebebe121212121212121212121212
+be1212121212bebebebebebebebebe12121212121212be12bebebebebebebe121212be12
+12121212121212121212bebebe1212121212bebebebebebebebebebe1212121212434343
+
+43121212121212bebebebebebebebebebe121212bebebe121212121212121212121212be
+bebebebebebebebebe12121212bebebe121212bebebebebebebe12be12bebebe12121212
+12121212121212121212bebebe1212121212bebebebebebebebebebe1212121212434343
+
+43431212121212bebebebebebebebebebe1212bebebe12121212121212121212121212be
+be12be12121212121212121212bebe121212121212be1212be1212bebebebebe12be1212
+121212bebebebebebe1212bebebe12121212be12121212bebebebe121212121212434343
+
+4343121212121212bebebebebe1212bebe1212bebebe12121212be121212121212121212
+12be12121212bebebebebebebebe121212121212be12bebebebebebebebebe1212bebebe
+bebebebebebe121212121212bebebe121212bebebe12121212bebe121212121212434343
+
+4343431212121212bebebebebebe12bebe1212bebe12121212be1212121212bebebe1212
+12bebebebebe1212be1212121212bebe121212bebebebebebebe12bebe12bebe12bebebe
+bebebebe121212121212121212bebebe12bebebebe12be1212bebe121212121212434343
+
+4343431212121212be12121212be1212be1212be121212121212bebebebebebebebe12be
+12121212121212bebe1212bebebebe121212121212121212121212bebebebebe12121212
+be1212121212bebe1212bebe12bebebe12be12121212be12bebe12121212121212124343
+
+4343431212121212be1212be12be1212be12121212121212be12bebebebebebebe1212be
+bebe1212bebebebebebebebe121212be1212bebebe1212bebebebebe12121212bebe1212
+12121212121212bebe12bebe1212be1212be121212121212bebe12121212121212124343
+
+434343121212121212be12be12121212bebe121212121212be12bebebebebebebe12bebe
+1212be1212121212be12121212bebebe12121212be1212bebebebebebe1212121212be12
+121212121212121212bebebe12121212bebebebebe1212bebe1212121212121212124343
+
+434343121212121212be12121212bebebebe1212121212be1212bebebebebebe12121212
+121212bebe12bebebebebebebebe121212121212121212bebebebebebe12bebebebe1212
+121212121212121212bebebe12121212bebebebebebebebebe1212121212121212124343
+
+434343121212121212121212bebebebebebebe121212bebe1212121212121212be121212
+1212bebebe121212bebe121212be12be121212bebe1212bebebebebebe12bebe12bebe12
+12bebebebebebebebebebebe121212bebe12bebebebebebebe1212121212121212434343
+
+43434312121212121212bebebebebebe12bebe121212be12be121212121212121212be12
+12bebe1212be1212be121212bebebe1212121212121212bebebebebe1212bebe12be1212
+121212be12121212bebebe12121212bebe121212bebebebe121212121212121212434343
+
+43434312121212121212bebebebe12121212bebe12be1212be1212121212121212121212
+1212be121212be1212bebebebebe12121212be121212121212bebebe1212121212121212
+12be121212be1212bebe1212121212bebebebe121212bebe121212121212121212434343
+
+43434312121212121212bebe12121212bebebebe12121212bebe12121212121212121212
+12be12121212bebe121212121212bebe121212be12bebebe121212bebebe12be12be1212
+12be121212be1212bebe1212be12bebebebe12121212bebe121212121212121243434343
+
+4343431212121212121212be12121212bebebebebe12be12bebebe121212121212121212
+12bebebebebebebebe121212121212121212121212bebebe1212121212121212bebebe12
+12be12be12bebe12be1212be12bebe12121212bebebebebe121212121212124343434343
+
+4343431212121212121212bebebebe12121212bebe12121212be1212be12121212121212
+1212bebebebe1212be121212121212121212121212bebebe1212121212121212121212be
+bebebebebebebe1212121212bebebe121212bebebebebe12121212121212434343434343
+
+434343431212121212121212bebebe12121212bebebe1212121212121212121212121212
+121212bebebe1212bebe121212121212bebe12121212bebebe1212121212121212121212
+121212121212121212121212bebebebebe121212bebebe12121212121243434343434343
+
+434343434312121212121212bebe12121212bebebebebe121212bebe1212be1212121212
+121212bebe12121212be121212121212bebe121212121212bebe121212121212bebebebe
+bebebebe12bebe12121212bebe12bebebebebe12bebebe12121212124343434343434343
+
+43434343434312121212121212be1212bebebebebebebe121212bebe12bebebebebe1212
+121212121212bebe12bebe1212be12121212121212121212121212121212121212121212
+1212121212bebebe121212bebe1212bebebebebebebe1212121212434343434343434343
+
+43434343434343431212121212bebebebebebebebe12bebe12bebebe1212bebebebe1212
+1212be12bebebe1212bebebe1212be12121212bebe1212121212bebe1212121212bebebe
+1212121212bebebe1212bebebebe121212bebebebebe1212121212434343434343434343
+
+4343434343434343431212121212bebe12bebebe121212bebe12be12121212bebe12be12
+12bebe1212be1212121212bebebe1212121212bebe12121212bebebe1212121212bebebe
+be1212121212bebe1212be12bebebebe1212bebebe121212121212434343434343434343
+
+434343434343434343121212121212be1212be1212bebebebebe1212121212be12121212
+12bebe1212be12be1212121212bebebe12121212121212121212bebe1212121212bebebe
+be1212121212bebe12bebe1212bebebebe12bebe12121212121243434343434343434343
+
+4343434343434343434312121212121212121212bebebebebebebe121212121212121212
+12bebe121212be121212121212121212bebebebebebebe121212bebe121212121212bebe
+be12121212121212bebebe1212bebebebebebe1212121212121243434343434343434343
+
+43434343434343434343121212121212be1212bebebebebebebebebe12121212be121212
+bebebe121212bebebe121212be12be12121212be12121212121212be121212121212bebe
+bebe1212121212bebebe12121212bebebebe121212121212121243434343434343434343
+
+4343434343434343434312121212121212be1212bebebebebebebebebebe121212121212
+bebebe12121212bebe121212121212121212bebebe12121212121212121212121212bebe
+bebe12121212bebe12121212be1212bebebe121212121212121243434343434343434343
+
+434343434343434343434312121212121212be12bebebebebebebebebebebe1212121212
+121212121212121212bebebe121212be121212bebe12be12bebe1212be1212121212bebe
+bebe121212bebebebebe1212121212bebe12121212121212121243434343434343434343
+
+434343434343434343434312121212121212bebebebebebebebebebebebebebe12121212
+be1212121212bebe12121212bebe12be121212bebe121212be1212bebe121212121212be
+be1212bebebebebebebebebebe12bebe1212121212121212124343434343434343434343
+
+43434343434343434343431212121212121212bebebebebebe12bebebebebebebe121212
+bebebe121212bebe12121212121212bebebebebebebebe121212bebe12121212be1212be
+1212bebebebebebebebebebebebebe121212121212121212124343434343434343434343
+
+43434343434343434343431212121212121212bebebebebebe1212bebebebebebebebe12
+12be12121212bebe121212121212121212121212121212121212be12bebebebe12121212
+bebebebebebebebebebebebebebebe121212121212121212434343434343434343434343
+
+434343434343434343434343121212121212121212bebebebebebebebebebebebebebe12
+121212121212bebe12121212bebebe1212121212bebe12121212be121212be12121212be
+bebebebebe12bebebebebebebebe12121212121212121243434343434343434343434343
+
+43434343434343434343434312121212121212121212bebebebebebebebebebebebe1212
+be1212121212bebe12121212bebebe12121212bebebe12121212be121212121212bebebe
+bebebebe1212bebebebebebebe1212121212121212124343434343434343434343434343
+
+4343434343434343434343434343121212121212121212bebebebebebebebebebebe1212
+be12bebebebe121212121212bebebe12121212bebe1212121212121212be12be12bebebe
+bebebebebebebebebebebebe121212121212124343434343434343434343434343434343
+
+434343434343434343434343434343431212121212121212bebebebebebebebebe1212be
+be12bebebebebebebebe121212121212121212121212bebebebebebebebe1212be12bebe
+bebebebebebebebebebe1212121212121243434343434343434343434343434343434343
+
+43434343434343434343434343434343434312121212121212bebebebebebebebe1212be
+12bebebebebebebebebebebebebebe12121212bebebebebebebebebebebe1212be1212be
+bebebebebebebebe12121212121212124343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434312121212121212bebebebebebe12be12
+12be12bebebebe1212121212bebebebebebebebe1212bebebebebebebebebe12bebe12be
+bebebebebebebe1212121212121212124343434343434343434343434343434343434343
+
+4343434343434343434343434343434343434343431212121212121212bebebe12121212
+bebe1212bebe1212bebebe12bebebe121212bebebe12bebebebebebebebebe1212be12be
+bebebebebe12121212121212121212434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343121212121212121212121212121212
+bebebebebebe1212bebebebebebe12121212bebebe12bebebebebebe12bebebe121212be
+bebebebe1212121212121212121212434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343431212121212121212121212121212
+bebebebebebe1212bebebebebebe12121212bebebe1212bebebebebebebebebe12121212
+bebebe121212121212121212121212434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343431212121212121212121212121212
+bebebebebebebe1212bebebebebe1212121212bebe121212121212bebebebebebe121212
+121212121212121212121212121243434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434312121212121212121212121212
+12bebebebebebebe121212bebe1212bebe1212bebe1212121212bebebebebebe12121212
+121212121212121212121212124343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343121212121212121212121212
+121212121212121212bebebebebebebebebe12bebebebebebebebebebe12121212121212
+121212121212121212121243434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343431212121212121212121212
+12121212121212121212121212bebebebebebebebebebe12121212121212121212121212
+121212121243434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434343121212121212121212
+121212121212121212121212121212121212121212121212121212121212121212121212
+121212434343434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434343434343434343431212
+121212121212121212121212121212121212121212121212121212121212121212121212
+121212434343434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434343434343434343434343
+121212121212121212121212121212121212121212121212121212121212121212121212
+121243434343434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434343434343434343434343
+431212121212121212121212121212121212121212121212121212121212121212121212
+124343434343434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434343434343434343434343
+434312121212121243434343121212121212121212121212121212121212121212121212
+434343434343434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434343434343434343434343
+434343434343434343434343434312121212121212121243434343434343434343434343
+434343434343434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434343434343434343434343
+434343434343434343434343434343121212121212124343434343434343434343434343
+434343434343434343434343434343434343434343434343434343434343434343434343
+
+434343434343434343434343434343434343434343434343434343434343434343434343
+434343434343434343434343434343434343434343434343434343434343434343434343
+434343434343434343434343434343434343434343434343434343434343434343434343
+
+
+showpage
+
+% stop using temporary dictionary
+end
+
+% restore original state
+origstate restore
+
+%%Trailer
+
+%%EndDocument
+FMENDEPSF
+355.5 333 396 333 396 279 355.5 279 4 L
+0 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+2 Z
+N
+7 X
+0 90 27 27 355.5 306 G
+0 X
+0 90 27 27 355.5 306 A
+7 X
+270 360 27 27 355.5 306 G
+0 X
+270 360 27 27 355.5 306 A
+342 333 301.5 333 301.5 279 342 279 4 L
+V
+N
+7 X
+90 180 27 27 342 306 G
+0 X
+90 180 27 27 342 306 A
+7 X
+180 270 27 27 342 306 G
+0 X
+180 270 27 27 342 306 A
+2 40 Q
+(hp) 331.88 288.51 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 18 Q
+(HEWLETT) 404.32 305.35 T
+(P) 404.82 288.29 T
+(ACKARD) 415.49 288.29 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 50 Q
+(Myricom) 512.5 296.05 T
+514.51 290 717.5 290 717.5 284.5 514.51 284.5 4 Y
+V
+N
+642 305.5 719.5 313 R
+7 X
+V
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 252 720 720 C
+0 180 792 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(GSC/Myrinet Card Design Review) 72 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(April 13, 1995) 358.98 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 2 of 15) 651.95 226 T
+0 0 0 1 0 0 0 K
+63 243 729 729 18 RR
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 24 Q
+(Outline) 354.66 704 T
+0 F
+(\245) 288.67 646 T
+(Block Diagram) 305 646 T
+(\245) 288.67 617 T
+(GSC and TSI Busses) 305 617 T
+(\245) 288.67 588 T
+(EBus) 305 588 T
+(\245) 288.67 559 T
+(DIO Glue Logic) 305 559 T
+(\245) 288.67 530 T
+(DMA Glue Logic) 305 530 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(GSC/Myrinet Card Design Review) 72 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(April 13, 1995) 358.98 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 3 of 15) 651.95 226 T
+0 0 0 1 0 0 0 K
+63 243 729 729 18 RR
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 24 Q
+(Card Block Diagram) 281.3 704 T
+72 252 720 720 C
+72 264 720 696 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+252 408 306 624 R
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+180 462 198 570 R
+N
+261 300 297 354 R
+N
+275.69 396.46 279 408 282.31 396.46 279 396.46 4 Y
+V
+282.31 365.54 279 354 275.69 365.54 279 365.54 4 Y
+V
+279 396.46 279 365.54 2 L
+0 Z
+N
+0 18 Q
+(Slipstream) 0 -270 283.68 469.11 TF
+(GSC Bus) 0 -270 194.58 474.16 TF
+0 14 Q
+(DMA Glue) 0 -270 381.52 554.74 TF
+4 12 Q
+(FLASH) 0 -270 271.89 311.14 TF
+360 552 396 624 R
+2 Z
+N
+0 18 Q
+(TSI Bus) 304.97 628.88 T
+4 12 Q
+(EEPROM) 0 -270 283.93 305.68 TF
+407.54 584.69 396 588 407.54 591.31 407.54 588 4 Y
+V
+438.46 591.31 450 588 438.46 584.69 438.46 588 4 Y
+V
+407.54 588 438.46 588 2 L
+0 Z
+N
+0 14 Q
+(DIO Glue) 0 -270 379.91 464.17 TF
+438.46 510.31 450 507 438.46 503.69 438.46 507 4 Y
+V
+396 507 438.46 507 2 L
+2 Z
+N
+360 462 396 534 R
+N
+450 408 504 624 R
+N
+473.17 395.44 476.48 406.97 479.79 395.44 476.48 395.44 4 Y
+V
+479.79 365.54 476.48 354 473.17 365.54 476.48 365.54 4 Y
+V
+476.48 395.44 476.48 365.54 2 L
+0 Z
+N
+459.52 300 459.52 354 495.52 354 495.52 300 4 Y
+2 Z
+N
+0 12 Q
+(LANai) 0 -270 477.52 311.81 TF
+(Memory) 0 -270 486.52 306.48 TF
+587.53 512.69 576 516 587.53 519.31 587.53 516 4 Y
+V
+618.47 519.31 630 516 618.47 512.69 618.47 516 4 Y
+V
+587.53 516 618.47 516 2 L
+0 Z
+N
+558 489.24 558 543 576 543 576 489.24 4 Y
+2 Z
+N
+4 F
+(T) 0 -270 569.14 490.6 TF
+(ransceiver) 0 -270 569.14 496.25 TF
+515.54 512.69 504 516 515.54 519.31 515.54 516 4 Y
+V
+546.47 519.31 558 516 546.47 512.69 546.47 516 4 Y
+V
+515.54 516 546.47 516 2 L
+0 Z
+N
+629.48 460.97 647.48 568.97 R
+2 Z
+N
+0 18 Q
+(Myrinet) 0 -270 644.06 481.14 TF
+531 570 531 623.76 549 623.76 549 570 4 Y
+N
+4 12 Q
+(Oscillator) 0 -270 542.14 576.38 TF
+540 570 540 534 2 L
+0 Z
+N
+515.53 530.69 504 534 515.53 537.31 515.53 534 4 Y
+V
+515.53 534 540 534 2 L
+N
+0 18 Q
+(LANai) 0 -270 485.48 490.47 TF
+(EBus) 405 628.88 T
+(LBus) 480.98 375.94 T
+317.54 584.69 306 588 317.54 591.31 317.54 588 4 Y
+V
+348.46 591.31 360 588 348.46 584.69 348.46 588 4 Y
+V
+317.54 588 348.46 588 2 L
+N
+317.54 503.69 306 507 317.54 510.31 317.54 507 4 Y
+V
+348.46 510.31 360 507 348.46 503.69 348.46 507 4 Y
+V
+317.54 507 348.46 507 2 L
+N
+317.54 440.69 306 444 317.54 447.31 317.54 444 4 Y
+V
+438.46 447.31 450 444 438.46 440.69 438.46 444 4 Y
+V
+317.54 444 438.46 444 2 L
+N
+209.01 512.69 197.48 516 209.01 519.31 209.01 516 4 Y
+V
+239.94 519.31 251.48 516 239.94 512.69 239.94 516 4 Y
+V
+209.01 516 239.94 516 2 L
+N
+360 372 360 426 396 426 396 372 4 Y
+2 Z
+N
+0 12 Q
+(Parity) 0 -270 378 384.81 TF
+(Generator) 0 -270 387 373.14 TF
+423 444 423 399 2 L
+N
+407.54 394.53 396 397.84 407.54 401.15 407.54 397.84 4 Y
+V
+423 397.84 407.54 397.84 2 L
+N
+360 397.84 333 397.84 2 L
+N
+333 399 333 426 2 L
+N
+317.54 422.69 306 426 317.54 429.31 317.54 426 4 Y
+V
+333 426 317.54 426 2 L
+N
+0 0 0 1 0 0 0 K
+(tiodata/ED) 351 446.63 T
+0 0 0 1 0 0 0 K
+438.46 492.31 450 489 438.46 485.69 438.46 489 4 Y
+V
+396 489 438.46 489 2 L
+N
+0 14 Q
+(EA) 409.55 492.07 T
+(Ctrl) 410.23 510.07 T
+333 444 333 489 2 L
+0 Z
+N
+348.46 492.31 360 489 348.46 485.69 348.46 489 4 Y
+V
+333 489 348.46 489 2 L
+N
+(Ctrl) 324 510.07 T
+(Addr) 324 492.07 T
+(Ctrl) 324 591.07 T
+(Ctrl) 410.23 591.07 T
+72 252 720 720 C
+0 180 792 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(GSC/Myrinet Card Design Review) 72 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(April 13, 1995) 358.98 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 4 of 15) 651.95 226 T
+0 0 0 1 0 0 0 K
+63 243 729 729 18 RR
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 24 Q
+(Card Schematic) 305.3 704 T
+72 252 720 720 C
+72 264 720 696 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 7 Q
+0 X
+0 0 0 1 0 0 0 K
+(giodata[31:0]) 112.5 536.27 T
+(gof) 112.5 455.28 T
+(fset[0:2]) 122.1 455.28 T
+(gparity) 112.5 527.28 T
+(gaddv_l) 112.5 509.28 T
+(gerror_l) 112.5 491.28 T
+(gtype[0:3]) 112.5 518.27 T
+(gready_l) 112.5 500.28 T
+(gxq_l) 112.5 482.28 T
+(greset_l) 112.5 437.28 T
+(gbr_l) 112.5 473.28 T
+(gbg_l) 112.5 464.28 T
+(synch) 112.5 428.27 T
+(syncl) 112.5 419.27 T
+(tclk) 247.5 427.45 T
+(tclk_in) 247.5 418.45 T
+(tint_l) 247.5 463.45 T
+(tiodata[31:0]) 247.5 535.29 T
+(tparity) 247.5 526.3 T
+(taddv_l) 247.5 508.32 T
+(tready_l) 247.5 499.34 T
+(terror_l) 247.5 490.35 T
+(ttype[2:0]) 247.5 517.31 T
+(tprefetch_l) 247.5 454.45 T
+(treset_l) 247.5 436.42 T
+(pritbr_l) 247.53 481.44 T
+(sectbr_l) 247.5 472.45 T
+(tbg_l) 247.5 445.41 T
+(iodc_oe_l) 0 -270 173.97 361.29 TF
+(iodc_ce_l) 0 -270 182.97 361.29 TF
+(iodc_we_l) 0 -270 191.97 361.29 TF
+(iodc[7:0]) 0 -270 200.97 361.29 TF
+(iodc_size) 0 -270 209.97 361.29 TF
+166.5 407.92 220.5 542.68 R
+0.5 H
+2 Z
+N
+76.5 407.68 94.5 542.68 R
+N
+166.5 318 220.5 344.92 R
+N
+106.04 530.37 94.5 533.68 106.04 536.98 106.04 533.68 4 Y
+V
+154.96 536.98 166.5 533.68 154.96 530.37 154.96 533.68 4 Y
+V
+106.04 533.68 154.96 533.68 2 L
+1 H
+0 Z
+N
+106.04 521.39 94.5 524.7 106.04 528 106.04 524.7 4 Y
+V
+154.96 528 166.5 524.7 154.96 521.39 154.96 524.7 4 Y
+V
+106.04 524.7 154.96 524.7 2 L
+0.5 H
+N
+106.04 512.41 94.5 515.71 106.04 519.02 106.04 515.71 4 Y
+V
+154.96 519.02 166.5 515.71 154.96 512.41 154.96 515.71 4 Y
+V
+106.04 515.71 154.96 515.71 2 L
+1 H
+N
+106.04 503.42 94.5 506.73 106.04 510.04 106.04 506.73 4 Y
+V
+154.96 510.04 166.5 506.73 154.96 503.42 154.96 506.73 4 Y
+V
+106.04 506.73 154.96 506.73 2 L
+0.5 H
+N
+106.04 494.44 94.5 497.75 106.04 501.06 106.04 497.75 4 Y
+V
+154.96 501.06 166.5 497.75 154.96 494.44 154.96 497.75 4 Y
+V
+106.04 497.75 154.96 497.75 2 L
+N
+106.04 485.46 94.5 488.77 106.04 492.08 106.04 488.77 4 Y
+V
+154.96 492.08 166.5 488.77 154.96 485.46 154.96 488.77 4 Y
+V
+106.04 488.77 154.96 488.77 2 L
+N
+106.04 476.48 94.5 479.79 106.04 483.1 106.04 479.79 4 Y
+V
+106.04 479.79 166.5 479.79 2 L
+2 Z
+N
+106.04 467.5 94.5 470.81 106.04 474.11 106.04 470.81 4 Y
+V
+106.04 470.81 166.5 470.81 2 L
+N
+154.96 465.13 166.5 461.83 154.96 458.52 154.96 461.83 4 Y
+V
+94.5 461.83 154.96 461.83 2 L
+N
+154.96 456.15 166.5 452.85 154.96 449.54 154.96 452.85 4 Y
+V
+94.5 452.85 154.96 452.85 2 L
+1 H
+N
+106.04 440.56 94.5 443.86 106.04 447.17 106.04 443.86 4 Y
+V
+154.96 447.17 166.5 443.86 154.96 440.56 154.96 443.86 4 Y
+V
+106.04 443.86 154.96 443.86 2 L
+0.5 H
+0 Z
+N
+154.96 438.43 166.5 435.12 154.96 431.81 154.96 435.12 4 Y
+V
+94.5 435.12 154.96 435.12 2 L
+2 Z
+N
+154.96 429.21 166.5 425.9 154.96 422.59 154.96 425.9 4 Y
+V
+94.5 425.9 154.96 425.9 2 L
+N
+154.96 420.23 166.5 416.92 154.96 413.61 154.96 416.92 4 Y
+V
+94.5 416.92 154.96 416.92 2 L
+N
+(gof) 112.5 446.27 T
+(fset[3]) 122.1 446.27 T
+178.8 356.46 175.49 344.92 172.18 356.46 175.49 356.46 4 Y
+V
+175.49 407.92 175.49 356.46 2 L
+N
+187.8 356.46 184.49 344.92 181.19 356.46 184.49 356.46 4 Y
+V
+184.49 407.92 184.49 356.46 2 L
+N
+196.8 356.46 193.49 344.92 190.19 356.46 193.49 356.46 4 Y
+V
+193.49 407.92 193.49 356.46 2 L
+N
+199.19 396.38 202.5 407.92 205.8 396.38 202.5 396.38 4 Y
+V
+205.8 356.46 202.5 344.92 199.19 356.46 202.5 356.46 4 Y
+V
+202.5 396.38 202.5 356.46 2 L
+1 H
+0 Z
+N
+208.19 396.38 211.5 407.92 214.81 396.38 211.5 396.38 4 Y
+V
+211.5 396.38 211.5 360.88 2 L
+0.5 H
+2 Z
+N
+0 18 Q
+(Slipstream) 0 -270 198.18 428.41 TF
+(GSC Bus) 0 -270 91.08 433.41 TF
+0 14 Q
+(DMA Glue) 0 -270 407.64 560.22 TF
+450 336 450 372 477 372 477 336 4 Y
+N
+4 12 Q
+(FLASH) 177.64 336 T
+0 9 Q
+(32kx8) 0 -270 463.5 341.99 TF
+(SRAM) 0 -270 470.25 341 TF
+391.5 543 418.5 642 R
+N
+232.04 530.46 220.5 533.77 232.04 537.08 232.04 533.77 4 Y
+V
+469.96 537.08 481.5 533.77 469.96 530.46 469.96 533.77 4 Y
+V
+232.04 533.77 469.96 533.77 2 L
+1 H
+0 Z
+N
+232.04 521.47 220.5 524.78 232.04 528.09 232.04 524.78 4 Y
+V
+232.04 524.78 292.5 524.78 2 L
+0.5 H
+2 Z
+N
+232.04 512.49 220.5 515.79 232.04 519.1 232.04 515.79 4 Y
+V
+232.04 515.79 297 515.79 2 L
+1 H
+N
+232.04 503.5 220.5 506.81 232.04 510.11 232.04 506.81 4 Y
+V
+232.04 506.81 301.5 506.81 2 L
+0.5 H
+N
+232.04 494.69 220.5 498 232.04 501.31 232.04 498 4 Y
+V
+232.04 498 306 498 2 L
+N
+220.5 488.83 310.5 488.83 2 L
+N
+232.04 458.64 220.5 461.93 232.03 465.26 232.04 461.95 4 Y
+V
+232.04 461.95 274.5 462.01 2 L
+N
+232.04 449.63 220.5 452.93 232.04 456.24 232.04 452.93 4 Y
+V
+232.04 452.93 274.5 452.93 2 L
+N
+232.04 476.69 220.5 480 232.04 483.31 232.04 480 4 Y
+V
+232.04 480 315 480 2 L
+N
+232.04 467.63 220.5 470.93 232.04 474.24 232.04 470.93 4 Y
+V
+232.04 470.93 274.5 470.93 2 L
+N
+379.96 447.2 391.5 443.89 379.96 440.59 379.96 443.89 4 Y
+V
+220.5 443.89 379.96 443.89 2 L
+N
+379.96 438.31 391.5 435 379.96 431.69 379.96 435 4 Y
+V
+220.5 435 379.96 435 2 L
+N
+379.96 429.23 391.5 425.92 379.96 422.61 379.96 425.92 4 Y
+V
+220.5 425.92 379.96 425.92 2 L
+N
+232.04 413.61 220.5 416.92 232.04 420.23 232.04 416.92 4 Y
+V
+283.5 425.92 283.5 416.92 232.04 416.92 3 L
+N
+0 18 Q
+(TSI Bus) 0 -270 261.56 550.97 TF
+0 7 Q
+(tbg_l) 337.5 580.53 T
+(ttype[2:0]) 337.5 625.46 T
+(pritbr_l) 337.5 589.51 T
+(taddv_l) 337.53 616.47 T
+(tready_l) 337.5 607.48 T
+(terror_l) 337.5 598.49 T
+297 624 391.5 624 2 L
+1 H
+N
+301.5 615 391.5 615 2 L
+0.5 H
+N
+379.96 609.31 391.5 606 379.96 602.69 379.96 606 4 Y
+V
+306 606 379.96 606 2 L
+N
+379.96 600.31 391.5 597 379.96 593.69 379.96 597 4 Y
+V
+310.5 597 379.96 597 2 L
+N
+315 587.91 391.5 587.91 2 L
+N
+379.96 582.31 391.5 579 379.96 575.69 379.96 579 4 Y
+V
+319.5 579 379.96 579 2 L
+N
+288 534 288 327 2 L
+1 H
+N
+(tiodata[31:0]) 238.5 328.53 T
+232.04 323.71 220.5 327.02 232.04 330.32 232.04 327.02 4 Y
+V
+232.04 327.02 288 327.02 2 L
+N
+(wiper_ce_l) 0 -270 173.96 559.29 TF
+(wiper_cntl) 0 -270 182.97 559.29 TF
+(wiper_u_d) 0 -270 191.97 559.29 TF
+(wiper_\337ag) 0 -270 200.97 559.29 TF
+157.5 614.92 229.5 632.92 R
+0.5 H
+N
+172.18 603.38 175.49 614.92 178.79 603.38 175.49 603.38 4 Y
+V
+175.49 542.92 175.49 603.38 2 L
+N
+181.18 603.38 184.49 614.92 187.79 603.38 184.49 603.38 4 Y
+V
+184.49 542.92 184.49 603.38 2 L
+N
+190.18 603.38 193.49 614.92 196.79 603.38 193.49 603.38 4 Y
+V
+193.49 542.92 193.49 603.38 2 L
+N
+205.79 554.45 202.49 542.92 199.18 554.45 202.49 554.45 4 Y
+V
+202.49 554.45 202.49 614.92 2 L
+N
+4 12 Q
+(Potentiometer) 162.87 623.92 T
+(EEPROM) 172.18 327 T
+0 7 Q
+(DPEND) 436.5 634.51 T
+(DDIR) 436.5 625.54 T
+(DSIZ[2:0]) 436.55 616.56 T
+(DCS-) 436.5 598.57 T
+(DWR-) 436.5 589.59 T
+430.04 629.68 418.5 632.99 430.04 636.3 430.04 632.99 4 Y
+V
+430.04 632.99 481.5 632.99 2 L
+N
+430.04 620.7 418.5 624.01 430.04 627.32 430.04 624.01 4 Y
+V
+430.04 624.01 481.5 624.01 2 L
+N
+430.04 611.72 418.5 615.02 430.04 618.33 430.04 615.02 4 Y
+V
+430.04 615.02 481.5 615.02 2 L
+1 H
+N
+469.96 600.33 481.5 597.02 469.96 593.71 469.96 597.02 4 Y
+V
+418.5 597.02 469.96 597.02 2 L
+0.5 H
+N
+469.96 591.45 481.5 588.14 469.96 584.84 469.96 588.14 4 Y
+V
+418.5 588.14 469.96 588.14 2 L
+N
+0 14 Q
+(DIO Glue) 0 -270 406.43 428.17 TF
+0 7 Q
+(tclk) 337.5 427.53 T
+(tiodata[13:2]) 337.5 481.44 T
+(ttype[2]) 337.5 463.53 T
+(treset_l) 337.5 436.51 T
+(taddv_l) 337.53 472.53 T
+(tready_l) 337.5 454.48 T
+(tbg_l) 337.5 445.49 T
+379.96 483.31 391.5 480 379.96 476.69 379.96 480 4 Y
+V
+333 480 379.96 480 2 L
+1 H
+N
+379.96 465.31 391.5 462 379.96 458.69 379.96 462 4 Y
+V
+297 462 379.96 462 2 L
+0.5 H
+N
+379.96 474.24 391.5 470.93 379.96 467.63 379.96 470.93 4 Y
+V
+301.5 470.93 379.96 470.93 2 L
+N
+306 453 391.5 453 2 L
+N
+(RST) 436.5 481.44 T
+(-) 450.11 481.44 T
+(EA[16:2]) 436.5 472.46 T
+(CS-) 436.55 463.48 T
+(WE[3:0]-) 436.5 454.51 T
+(EHLD-) 436.5 445.53 T
+469.96 483.31 481.5 480 469.96 476.69 469.96 480 4 Y
+V
+418.5 480 469.96 480 2 L
+1 H
+N
+469.96 474.15 481.5 470.85 469.96 467.54 469.96 470.85 4 Y
+V
+418.5 470.85 469.96 470.85 2 L
+0.5 H
+N
+469.96 465.31 481.5 462 469.96 458.69 469.96 462 4 Y
+V
+418.5 462 469.96 462 2 L
+N
+469.96 456.19 481.5 452.88 469.96 449.57 469.96 452.88 4 Y
+V
+418.5 452.88 469.96 452.88 2 L
+1 H
+N
+469.96 447.31 481.5 444 469.96 440.69 469.96 444 4 Y
+V
+418.5 444 469.96 444 2 L
+0.5 H
+N
+(DMA_EHLD) 337.5 490.38 T
+379.96 492.31 391.5 489 379.96 485.69 379.96 489 4 Y
+V
+337.5 489 379.96 489 2 L
+N
+391.5 417 418.5 498 R
+N
+(tclk) 337.5 562.53 T
+(treset_l) 337.5 571.51 T
+379.96 573.31 391.5 570 379.96 566.69 379.96 570 4 Y
+V
+324 570 379.96 570 2 L
+N
+379.96 564.31 391.5 561 379.96 557.69 379.96 561 4 Y
+V
+328.5 561 379.96 561 2 L
+N
+(DMA_EHLD) 337.5 553.53 T
+337.5 552.02 391.5 552.02 2 L
+N
+(DMAA) 436.5 580.55 T
+(DADR) 436.5 571.57 T
+(DINC) 436.55 562.6 T
+(DSUM) 436.5 553.62 T
+469.96 582.3 481.5 578.99 469.96 575.68 469.96 578.99 4 Y
+V
+418.5 578.99 469.96 578.99 2 L
+N
+469.96 573.32 481.5 570.01 469.96 566.7 469.96 570.01 4 Y
+V
+418.5 570.01 469.96 570.01 2 L
+N
+469.96 564.33 481.5 561.02 469.96 557.72 469.96 561.02 4 Y
+V
+418.5 561.02 469.96 561.02 2 L
+N
+469.96 555.31 481.5 552 469.96 548.69 469.96 552 4 Y
+V
+418.5 552 469.96 552 2 L
+N
+(DMORE) 436.55 607.57 T
+430.04 602.72 418.5 606.03 430.04 609.34 430.04 606.03 4 Y
+V
+430.04 606.03 481.5 606.03 2 L
+N
+297 462 297 624 2 L
+1 H
+N
+301.5 615 301.5 471 2 L
+0.5 H
+N
+306 606 306 453 2 L
+N
+310.5 597 310.5 489 2 L
+N
+315 588 315 480 2 L
+N
+319.5 579 319.5 444 2 L
+N
+324 570 324 435 2 L
+N
+328.5 561 328.5 426 2 L
+N
+337.5 552 337.5 489 2 L
+N
+333 534 333 480 2 L
+1 H
+N
+481.5 435 526.5 642 R
+0.5 H
+N
+(ED[31:0]) 436.5 535.61 T
+(A[16:2]) 0 -270 488.96 388.37 TF
+(D[31:0]) 0 -270 497.97 388.37 TF
+(WR[0:3]-) 0 -270 506.97 388.37 TF
+(OE-) 0 -270 515.97 388.37 TF
+493.79 383.54 490.49 372 487.18 383.54 490.49 383.54 4 Y
+V
+490.49 435 490.49 383.54 2 L
+1 H
+N
+496.18 423.46 499.49 435 502.8 423.46 499.49 423.46 4 Y
+V
+502.8 383.54 499.49 372 496.18 383.54 499.49 383.54 4 Y
+V
+499.49 423.46 499.49 383.54 2 L
+0 Z
+N
+511.8 383.54 508.49 372 505.18 383.54 508.49 383.54 4 Y
+V
+508.49 435 508.49 383.54 2 L
+0.5 H
+2 Z
+N
+514.18 423.46 517.49 435 520.8 423.46 517.49 423.46 4 Y
+V
+517.49 423.46 517.49 372 2 L
+N
+477 336 477 372 504 372 504 336 4 Y
+N
+0 9 Q
+(32kx8) 0 -270 490.5 341.99 TF
+(SRAM) 0 -270 497.25 341 TF
+504 336 504 372 531 372 531 336 4 Y
+N
+(32kx8) 0 -270 517.5 341.99 TF
+(SRAM) 0 -270 524.25 341 TF
+531 336 531 372 558 372 558 336 4 Y
+N
+(32kx8) 0 -270 544.5 341.99 TF
+(SRAM) 0 -270 551.25 341 TF
+589.74 588 634.5 588 634.5 561 589.74 561 4 Y
+N
+4 F
+(T) 592.98 572.44 T
+(ransceiver) 597.22 572.44 T
+0 7 Q
+(T[7:0]) 650.87 549.03 T
+(TD) 650.87 540.03 T
+(R[7:0]) 650.87 531.03 T
+(RD) 650.87 522.03 T
+685.97 550.82 697.5 547.51 685.97 544.2 685.97 547.51 4 Y
+V
+634.5 547.51 685.97 547.51 2 L
+1 H
+N
+685.97 541.82 697.5 538.51 685.97 535.2 685.97 538.51 4 Y
+V
+634.5 538.51 685.97 538.51 2 L
+0 Z
+N
+646.04 526.2 634.5 529.51 646.04 532.81 646.04 529.51 4 Y
+V
+646.04 529.51 697.5 529.51 2 L
+N
+646.04 517.2 634.5 520.5 646.04 523.81 646.04 520.5 4 Y
+V
+646.04 520.5 697.5 520.5 2 L
+0.5 H
+N
+589.74 561 634.5 561 634.5 534 589.74 534 4 Y
+2 Z
+N
+4 9 Q
+(T) 592.98 545.44 T
+(ransceiver) 597.22 545.44 T
+589.74 534 634.5 534 634.5 507 589.74 507 4 Y
+N
+(T) 592.98 518.44 T
+(ransceiver) 597.22 518.44 T
+589.74 507 634.5 507 634.5 480 589.74 480 4 Y
+N
+(T) 592.98 491.44 T
+(ransceiver) 597.22 491.44 T
+0 7 Q
+(T[7:0]) 542.87 549.04 T
+(TD) 542.87 540.03 T
+(R[7:0]) 542.87 531.03 T
+(RD) 542.87 522.03 T
+577.97 550.82 589.5 547.51 577.97 544.21 577.97 547.51 4 Y
+V
+526.5 547.51 577.97 547.51 2 L
+1 H
+0 Z
+N
+577.97 541.82 589.5 538.51 577.97 535.2 577.97 538.51 4 Y
+V
+526.5 538.51 577.97 538.51 2 L
+0.5 H
+N
+538.04 526.2 526.5 529.51 538.04 532.82 538.04 529.51 4 Y
+V
+538.04 529.51 589.5 529.51 2 L
+1 H
+N
+538.04 517.2 526.5 520.51 538.04 523.82 538.04 520.51 4 Y
+V
+538.04 520.51 589.5 520.51 2 L
+0.5 H
+N
+696.98 480 714.98 588 R
+2 Z
+N
+0 18 Q
+(Myrinet) 0 -270 711.56 500.17 TF
+553.5 642 589.26 642 589.26 615 553.5 615 4 Y
+N
+4 9 Q
+(Oscillator) 556.01 626.44 T
+571.5 615 571.5 556.5 2 L
+0 Z
+N
+0 7 Q
+(TCLK) 542.87 558.04 T
+538.04 553.21 526.5 556.51 538.04 559.82 538.04 556.51 4 Y
+V
+538.04 556.51 571.5 556.51 2 L
+N
+1 12 Q
+(LANai) 0 -270 508.5 516.67 TF
+0 18 Q
+(LBus) 0 -270 539.62 382.48 TF
+0 14 Q
+(Parity Gen.) 0 -270 406.43 323.33 TF
+391.5 318 418.5 399 R
+2 Z
+N
+432 534 432 354 2 L
+1 H
+N
+430.04 350.69 418.5 354 430.04 357.31 430.04 354 4 Y
+V
+432 354 430.04 354 2 L
+N
+292.5 525 292.5 354 2 L
+0.5 H
+N
+292.5 354 391.5 354 2 L
+N
+0 7 Q
+(tparity) 337.5 355.61 T
+418.5 435 427.5 435 2 L
+N
+427.5 435 427.5 363 2 L
+N
+427.5 360.42 418.5 363 427.5 365.58 427.5 363 4 Y
+V
+427.5 363 427.5 363 2 L
+N
+(OutputParity) 436.5 436.53 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 252 720 720 C
+0 180 792 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "4" 4
+%%Page: "5" 5
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(GSC/Myrinet Card Design Review) 72 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(April 13, 1995) 358.98 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 5 of 15) 651.95 226 T
+0 0 0 1 0 0 0 K
+63 243 729 729 18 RR
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 24 Q
+(Card Address W) 268.09 704 T
+(indow) 454.57 704 T
+72 252 720 720 C
+72 264 720 696 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+243 309 459 651 R
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 14 Q
+(Reset Register) 304.71 585.18 T
+(0C00) 207 585.18 T
+(P) 267.11 621.18 T
+(A-RISC Control Registers) 275.41 621.18 T
+(0000) 207 639.18 T
+(Page 1 Map Register) 285.25 567.18 T
+(0C04) 207 567.18 T
+(Page 2 Map Register) 285.25 549.18 T
+(0C08) 207 549.18 T
+(Page 3 Map Register) 285.25 531.18 T
+(0C0C) 207 531.18 T
+(Page 0 Window) 301.98 495.18 T
+(0C10) 207 513.18 T
+(Page 1 Window) 301.98 441.18 T
+(1000) 207 459.18 T
+(Page 2 Window) 301.98 387.18 T
+(2000) 207 405.18 T
+243 597 459 597 2 L
+0 Z
+N
+243 579 459 579 2 L
+N
+243 561 459 561 2 L
+N
+243 543 459 543 2 L
+N
+243 525 459 525 2 L
+N
+243 471 459 471 2 L
+N
+243 417 459 417 2 L
+N
+(0BFF) 207 603.18 T
+(0FFF) 207 477.18 T
+(1FFF) 207 423.18 T
+(2FFF) 207 369.18 T
+(Page 3 Window) 301.98 333.18 T
+(3000) 207 351.18 T
+243 363 459 363 2 L
+N
+(3FFF) 207 315.18 T
+513.03 651 549.03 651 2 L
+2 Z
+N
+527.72 639.46 531.03 651 534.34 639.46 531.03 639.46 4 Y
+V
+531.03 639.46 531.03 633 2 L
+N
+513.03 309 549.03 309 2 L
+N
+513.03 597 549.03 597 2 L
+N
+513.03 525 549.03 525 2 L
+N
+527.72 585.46 531.03 597 534.34 585.46 531.03 585.46 4 Y
+V
+531.03 585.46 531.03 579 2 L
+N
+527.72 513.46 531.03 525 534.34 513.46 531.03 513.46 4 Y
+V
+531.03 513.46 531.03 435 2 L
+N
+(Slipstream region) 476.57 621.25 T
+(External registers) 476.57 558.25 T
+(LANai region) 490.57 414.25 T
+534.34 608.54 531.03 597 527.72 608.54 531.03 608.54 4 Y
+V
+531.03 615 531.03 608.54 2 L
+N
+534.34 536.54 531.03 525 527.72 536.54 531.03 536.54 4 Y
+V
+531.03 543 531.03 536.54 2 L
+N
+534.34 320.54 531.03 309 527.72 320.54 531.03 320.54 4 Y
+V
+531.03 399 531.03 320.54 2 L
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 252 720 720 C
+0 180 792 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "5" 5
+%%Page: "6" 6
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(GSC/Myrinet Card Design Review) 72 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(April 13, 1995) 358.98 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 6 of 15) 651.95 226 T
+0 0 0 1 0 0 0 K
+63 243 729 729 18 RR
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 24 Q
+(External Registers) 290.63 704 T
+1 18 Q
+(Reset Register) 332.98 664 T
+(Page 1-3 Map Registers) 294.97 573 T
+72 252 720 720 C
+126 604 666 658 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+198 622 450 640 R
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+414 640 414 622 2 L
+N
+0 12 Q
+(RST) 420 629.2 T
+(0) 428.66 641.8 T
+(1) 401.66 641.8 T
+(31) 200.33 641.8 T
+(0C00) 154.8 629.2 T
+(Reserved) 280.33 629.2 T
+0 18 Q
+(RST) 562 625.94 T
+(-) 597.01 625.94 T
+534.93 637.62 558 631 534.93 624.38 534.93 631 4 Y
+V
+450 631 534.93 631 2 L
+4 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 252 720 720 C
+0 180 792 792 C
+72 252 720 720 C
+126 387 666 567 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+197.59 476 449.59 494 R
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+377.59 494 377.59 476 2 L
+N
+0 10 Q
+(Page 1 Mapping) 377.18 483.2 T
+0 12 Q
+(0) 437.25 495.8 T
+(5) 365.25 495.8 T
+(31) 199.92 495.8 T
+(0C04) 154.39 483.2 T
+(4) 383.25 495.8 T
+197.59 458 449.59 476 R
+N
+377.59 476 377.59 458 2 L
+N
+0 10 Q
+(Page 2 Mapping) 377.18 465.2 T
+0 12 Q
+(0C08) 153.98 465.2 T
+197.59 440 449.59 458 R
+N
+377.59 458 377.59 440 2 L
+N
+0 10 Q
+(Page 3 Mapping) 377.18 447.2 T
+0 12 Q
+(0C0C) 153.98 447.2 T
+0 10 Q
+(Reserved) 266.2 447.2 T
+(Reserved) 266.2 465.2 T
+(Reserved) 266.2 483.2 T
+509.79 514.19 504 494 498.21 514.19 504 514.19 4 Y
+V
+504 530 504 514.19 2 L
+3 H
+0 Z
+N
+534.93 410.61 558 404 534.93 397.39 534.93 404 4 Y
+V
+450 404 534.93 404 2 L
+4 H
+N
+0 18 Q
+(tiodata[1) 352.26 398.94 T
+(1:2]) 419.98 398.94 T
+(EA[1) 558 398.94 T
+(1:2]) 595.69 398.94 T
+(EA[16:12]) 559.94 462.88 T
+462.93 491.61 486 485 462.93 478.39 462.93 485 4 Y
+V
+450 485 462.93 485 2 L
+N
+462.93 473.61 486 467 462.93 460.39 462.93 467 4 Y
+V
+450 467 462.93 467 2 L
+N
+462.93 455.61 486 449 462.93 442.39 462.93 449 4 Y
+V
+450 449 462.93 449 2 L
+N
+486 503 486 431 522 449 522 485 4 Y
+0.5 H
+N
+534.93 473.61 558 467 534.93 460.39 534.93 467 4 Y
+V
+522 467 534.93 467 2 L
+4 H
+N
+(tiodata[13:12]) 449.46 530 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 252 720 720 C
+0 180 792 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "6" 6
+%%Page: "7" 7
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(GSC/Myrinet Card Design Review) 72 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(April 13, 1995) 358.98 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 7 of 15) 651.95 226 T
+0 0 0 1 0 0 0 K
+63 243 729 729 18 RR
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 24 Q
+(GSC and TSI Bus T) 219.95 704 T
+(ransactions) 437.34 704 T
+72 252 720 720 C
+72 264 720 696 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+234 624 234 642 258 642 258 624 282 624 5 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+282 624 282 642 306 642 306 624 330 624 5 L
+N
+330 624 330 642 354 642 354 624 377.99 624 5 L
+N
+210 624 234 624 2 L
+N
+4 14 Q
+(tclk) 144 629.6 T
+132.46 636.31 144 633 132.46 629.69 132.46 633 4 Y
+V
+132.46 633 126 633 2 L
+N
+(1) 235.33 647.54 T
+(2) 283.33 647.54 T
+(3) 331.33 647.54 T
+(tiodata[31:0]) 144 593.6 T
+(taddv_l) 144 521.6 T
+(tready_l) 144 485.6 T
+132.46 528.31 144 525 132.46 521.69 132.46 525 4 Y
+V
+132.46 525 126 525 2 L
+N
+137.54 485.69 126 489 137.54 492.31 137.54 489 4 Y
+V
+144 489 137.54 489 2 L
+0 Z
+N
+210 525 240 525 2 L
+2 Z
+N
+240 525 246 516 2 L
+N
+246 516 282 516 2 L
+N
+336 489 210 489 2 L
+N
+336 525 431.99 525 2 L
+N
+(ttype[2:0]]) 144 557.6 T
+240 561 246 570 282 570 288 561 282 552 246 552 6 Y
+N
+(0 \050read\051) 245.33 557.54 T
+282 516 294 534 2 L
+N
+132.46 600.31 144 597 132.46 593.69 132.46 597 4 Y
+V
+119.54 593.69 108 597 119.54 600.31 119.54 597 4 Y
+V
+132.46 597 119.54 597 2 L
+0 Z
+N
+288 561 431.99 561 2 L
+2 Z
+N
+132.46 564.48 144 561.17 132.46 557.86 132.46 561.17 4 Y
+V
+132.46 561.17 126 561.17 2 L
+N
+(Data) 341.33 593.54 T
+210 606 234 606 240 597 234 588 210 588 5 L
+8 X
+V
+0 X
+N
+240 597 246 606 282 606 288 597 282 588 246 588 6 Y
+N
+(Addr) 245.33 593.54 T
+336 489 342 480 2 L
+N
+342 480 377.99 480 2 L
+N
+234 660 234 462 2 L
+0.5 H
+0 Z
+N
+282 660 282 462 2 L
+N
+330 660 330 462 2 L
+N
+377.99 624 377.99 642 401.99 642 401.99 624 425.99 624 5 L
+1 H
+2 Z
+N
+(4) 379.33 647.54 T
+377.99 660 377.99 462 2 L
+0.5 H
+0 Z
+N
+336 597 342 606 378 606 384 597 378 588 342 588 6 Y
+1 H
+2 Z
+N
+377.99 480 389.99 498 2 L
+0 Z
+N
+389.99 498 425.99 498 2 L
+N
+425.99 498 431.99 489 2 L
+N
+431.99 489 450 489 2 L
+N
+(5) 427.33 647.54 T
+425.99 660 425.99 462 2 L
+0.5 H
+N
+425.99 624 425.99 642 450 642 3 L
+1 H
+N
+383.99 597 431.99 597 2 L
+N
+450 606 437.99 606 431.99 597 437.99 588 450 588 5 L
+8 X
+V
+0 X
+N
+450 570 437.99 570 431.99 561 437.99 552 450 552 5 L
+8 X
+V
+0 X
+N
+318 552 321 556.5 315 565.5 318 570 4 L
+0.5 H
+N
+321 552 324 556.5 318 565.5 321 570 4 L
+N
+365.99 516 368.99 520.5 362.99 529.5 365.99 534 4 L
+N
+368.99 516 371.99 520.5 365.99 529.5 368.99 534 4 L
+N
+318 480 321 484.5 315 493.5 318 498 4 L
+N
+321 480 324 484.5 318 493.5 321 498 4 L
+N
+0 18 Q
+(Read) 308.49 660 T
+516 624 516 642 540 642 540 624 564 624 5 L
+1 H
+2 Z
+N
+564 624 564 642 588 642 588 624 612 624 5 L
+N
+612 624 612 642 636 642 636 624 659.99 624 5 L
+N
+492 624 516 624 2 L
+N
+4 14 Q
+(1) 517.33 647.54 T
+(2) 565.33 647.54 T
+(3) 613.33 647.54 T
+492 525 522 525 2 L
+N
+522 525 528 516 2 L
+N
+528 516 564 516 2 L
+N
+618 489 522 489 2 L
+N
+576 534 612 534 2 L
+N
+522 561 528 570 564 570 570 561 564 552 528 552 6 Y
+N
+(1 \050write\051) 527.33 557.54 T
+564 516 576 534 2 L
+N
+492 570 516 570 522 561 516 552 492 552 5 L
+8 X
+V
+0 X
+N
+570 561 666 561 2 L
+N
+(Data) 575.33 593.54 T
+492 606 516 606 522 597 516 588 492 588 5 L
+8 X
+V
+0 X
+N
+522 597 528 606 564 606 570 597 564 588 528 588 6 Y
+N
+(Addr) 527.33 593.54 T
+618 489 624 480 2 L
+N
+624 480 660 480 2 L
+N
+516 660 516 462 2 L
+0.5 H
+0 Z
+N
+564 660 564 462 2 L
+N
+612 660 612 462 2 L
+N
+570 597 576 606 612 606 618 597 612 588 576 588 6 Y
+1 H
+2 Z
+N
+660 480 672 498 2 L
+0 Z
+N
+672 498 684 498 2 L
+N
+648 471 651 475.5 645 484.5 648 489 4 L
+0.5 H
+N
+651 471 654 475.5 648 484.5 651 489 4 L
+N
+0 18 Q
+(W) 567.16 660 T
+(rite) 583.83 660 T
+4 14 Q
+(4) 661.33 647.54 T
+659.99 660 659.99 462 2 L
+N
+659.99 624 659.99 642 684 642 3 L
+1 H
+N
+210 561 240 561 2 L
+N
+450 534 437.99 534 431.99 525 437.99 516 450 516 5 L
+8 X
+V
+0 X
+N
+294 534 330 534 2 L
+N
+330 534 336 525 2 L
+N
+648 516 651 520.5 645 529.5 648 534 4 L
+0.5 H
+N
+651 516 654 520.5 648 529.5 651 534 4 L
+N
+648 552 651 556.5 645 565.5 648 570 4 L
+N
+651 552 654 556.5 648 565.5 651 570 4 L
+N
+288 597 336 597 2 L
+1 H
+N
+318 588 321 592.5 315 601.5 318 606 4 L
+0.5 H
+N
+321 588 324 592.5 318 601.5 321 606 4 L
+N
+492 498 516 498 522 489 516 480 492 480 5 L
+8 X
+V
+1 H
+2 Z
+0 X
+N
+684 606 671.99 606 665.99 597 671.99 588 684 588 5 L
+8 X
+V
+0 Z
+0 X
+N
+684 570 671.99 570 665.99 561 671.99 552 684 552 5 L
+8 X
+V
+0 X
+N
+684 534 671.99 534 665.99 525 671.99 516 684 516 5 L
+8 X
+V
+0 X
+N
+611.99 534 617.99 525 2 L
+N
+617.99 525 666 525 2 L
+N
+648 588 651 592.5 645 601.5 648 606 4 L
+0.5 H
+N
+651 588 654 592.5 648 601.5 651 606 4 L
+N
+617.99 597 666 597 2 L
+1 H
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 252 720 720 C
+0 180 792 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "7" 7
+%%Page: "8" 8
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(GSC/Myrinet Card Design Review) 72 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(April 13, 1995) 358.98 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 8 of 15) 651.95 226 T
+0 0 0 1 0 0 0 K
+63 243 729 729 18 RR
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 24 Q
+(EBus T) 287.96 704 T
+(ransactions) 369.32 704 T
+72 252 720 720 C
+72 264 720 696 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+232.6 610.5 232.6 624 259.49 624 259.49 610.5 286.38 610.5 5 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+286.38 610.5 286.38 624 313.27 624 313.27 610.5 340.16 610.5 5 L
+N
+340.16 610.5 340.16 624 367.04 624 367.04 610.5 393.93 610.5 5 L
+N
+393.93 610.5 393.93 624 420.82 624 420.82 610.5 447.73 610.5 5 L
+N
+205.71 610.5 232.6 610.5 2 L
+N
+232.6 637.5 232.6 300 2 L
+0.5 H
+N
+286.38 637.5 286.38 300 2 L
+N
+340.16 637.5 340.16 300 2 L
+N
+393.93 637.5 393.93 300 2 L
+N
+4 12 Q
+(MCLK-) 151.94 613.05 T
+(ED[31:00]) 151.94 559.05 T
+(CS-) 151.94 505.05 T
+(WE[3:0]-) 151.94 478.05 T
+(EHLD-) 151.94 451.05 T
+(D[31:00]) 151.94 370.05 T
+(WR[0:3]-) 151.94 343.05 T
+(A[16:02]) 151.94 397.05 T
+(OE-) 151.94 316.06 T
+138.49 621.11 151.94 617.25 138.49 613.4 138.49 617.25 4 Y
+V
+138.49 617.25 138.49 617.25 2 L
+3 H
+N
+4 10 Q
+(0) 234.1 626.5 T
+(1) 287.87 626.5 T
+(2) 341.65 626.5 T
+(3) 395.43 626.5 T
+138.49 513.11 151.94 509.25 138.49 505.4 138.49 509.25 4 Y
+V
+138.49 509.25 138.49 509.25 2 L
+N
+138.49 486.11 151.94 482.26 138.49 478.4 138.49 482.26 4 Y
+V
+138.49 482.26 138.49 482.26 2 L
+N
+138.49 459.11 151.94 455.26 138.49 451.4 138.49 455.26 4 Y
+V
+138.49 455.26 138.49 455.26 2 L
+N
+151.94 397.4 138.49 401.26 151.94 405.11 151.94 401.26 4 Y
+V
+151.94 401.26 151.94 401.26 2 L
+N
+138.49 378.11 151.94 374.26 138.49 370.4 138.49 374.26 4 Y
+V
+138.49 374.26 138.49 374.26 2 L
+N
+151.94 343.4 138.49 347.26 151.94 351.11 151.94 347.26 4 Y
+V
+151.94 347.26 151.94 347.26 2 L
+N
+151.94 316.4 138.49 320.26 151.94 324.11 151.94 320.26 4 Y
+V
+151.94 320.26 151.94 320.26 2 L
+N
+0 18 Q
+(EBus) 0 -270 121.12 488.57 TF
+(LBus) 0 -270 121.12 340.25 TF
+286.38 401.26 289.74 408.01 309.91 408.01 313.27 401.26 309.91 394.51 289.74 394.51 6 Y
+1 H
+N
+4 10 Q
+(Addr1) 289.37 397 T
+293.1 374.26 296.46 381.01 316.63 381.01 319.99 374.26 316.63 367.51 296.46 367.51 6 Y
+N
+(Data1) 296.09 370.01 T
+319.99 374.26 323.35 381.01 343.52 381.01 346.88 374.26 343.52 367.51 323.35 367.51 6 Y
+8 X
+V
+0 X
+N
+340.16 320.26 343.52 313.51 363.68 313.51 367.04 320.26 4 L
+N
+313.27 401.26 316.63 408.01 336.79 408.01 340.16 401.26 336.79 394.51 316.63 394.51 6 Y
+8 X
+V
+0 X
+N
+340.16 401.26 343.52 408.01 363.68 408.01 367.04 401.26 363.68 394.51 343.52 394.51 6 Y
+N
+(Addr2) 343.14 397 T
+346.88 374.26 350.24 381.01 370.4 381.01 373.77 374.26 370.4 367.51 350.24 367.51 6 Y
+N
+(Data2) 349.86 370.01 T
+205.71 516 232.6 516 2 L
+N
+232.6 516 246.05 502.5 2 L
+N
+246.05 502.5 340.16 502.5 2 L
+N
+447.73 489.01 205.71 489.01 2 L
+N
+353.6 516 447.73 516 2 L
+N
+340.16 347.26 343.52 354.01 363.68 354.01 367.04 347.26 4 L
+N
+286.38 320.26 289.74 313.51 309.91 313.51 313.27 320.26 4 L
+N
+313.27 320.26 316.63 327.01 336.79 327.01 340.16 320.26 336.79 313.51 316.63 313.51 6 Y
+8 X
+V
+0 X
+N
+286.38 347.26 289.74 354.01 309.91 354.01 313.27 347.26 4 L
+N
+313.27 347.26 316.63 354.01 336.79 354.01 340.16 347.26 336.79 340.51 316.63 340.51 6 Y
+8 X
+V
+0 X
+N
+346.88 563.25 353.6 570 393.93 570 400.65 563.25 393.93 556.5 353.6 556.5 6 Y
+N
+(Data1) 352.85 559 T
+(Data2) 406.63 559 T
+4 12 Q
+(EA[16:02]) 151.94 532.05 T
+239.32 536.25 246.05 543 286.38 543 293.1 536.25 286.38 529.5 246.05 529.5 6 Y
+N
+4 10 Q
+(Addr1) 245.3 532 T
+340.16 502.5 353.6 516 2 L
+N
+205.71 448.51 313.27 448.51 2 L
+N
+313.27 448.51 326.71 462.01 2 L
+N
+326.71 462.01 340.16 462.01 2 L
+N
+407.38 448.51 447.73 448.51 2 L
+N
+340.16 462.01 353.6 448.51 2 L
+N
+367.04 448.51 380.49 462.01 2 L
+N
+393.93 462.01 407.38 448.51 2 L
+N
+353.6 448.51 367.04 448.51 2 L
+N
+380.49 462.01 393.93 462.01 2 L
+N
+138.49 567.11 151.94 563.25 138.49 559.4 138.49 563.25 4 Y
+V
+138.49 559.4 125.05 563.25 138.49 567.11 138.49 563.25 4 Y
+V
+138.49 563.25 138.49 563.25 2 L
+3 H
+0 Z
+N
+138.49 540.11 151.94 536.25 138.49 532.4 138.49 536.25 4 Y
+V
+138.49 536.25 138.49 536.25 2 L
+2 Z
+N
+205.71 381.01 289.74 381.01 293.1 374.26 289.74 367.51 205.71 367.51 5 L
+8 X
+V
+1 H
+0 X
+N
+447.73 570 407.38 570 400.65 563.25 407.38 556.5 447.73 556.5 5 L
+0.5 H
+N
+239.32 563.25 346.88 563.25 2 L
+N
+205.71 543 232.6 543 239.32 536.25 232.6 529.5 205.71 529.5 5 L
+8 X
+V
+0 X
+N
+293.1 536.25 299.82 543 340.16 543 346.88 536.25 340.16 529.5 299.82 529.5 6 Y
+1 H
+N
+(Addr2) 299.08 532 T
+205.71 570 232.6 570 239.32 563.25 232.6 556.5 205.71 556.5 5 L
+8 X
+V
+0.5 H
+0 X
+N
+346.88 536.25 447.73 536.25 2 L
+N
+205.71 408.01 283.02 408.01 286.38 401.26 283.02 394.51 205.71 394.51 5 L
+8 X
+V
+0 X
+N
+447.73 408.01 370.4 408.01 367.04 401.26 370.4 394.51 447.73 394.51 5 L
+8 X
+V
+0 X
+N
+447.73 354.01 370.4 354.01 367.04 347.26 370.4 340.51 447.73 340.51 5 L
+8 X
+V
+0 X
+N
+447.73 327.01 370.4 327.01 367.04 320.26 370.4 313.51 447.73 313.51 5 L
+8 X
+V
+0 X
+N
+205.71 354.01 283.02 354.01 286.38 347.26 283.02 340.51 205.71 340.51 5 L
+8 X
+V
+0 X
+N
+205.71 327.01 283.02 327.01 286.38 320.26 283.02 313.51 205.71 313.51 5 L
+8 X
+V
+0 X
+N
+447.73 381.01 377.13 381.01 373.77 374.26 377.13 367.51 447.73 367.51 5 L
+8 X
+V
+0 X
+N
+501.73 610.5 501.73 624 528.73 624 528.73 610.5 555.73 610.5 5 L
+1 H
+N
+555.73 610.5 555.73 624 582.73 624 582.73 610.5 609.73 610.5 5 L
+N
+609.73 610.5 609.73 624 636.73 624 636.73 610.5 663.73 610.5 5 L
+N
+474.73 610.5 501.73 610.5 2 L
+N
+501.73 637.5 501.73 300 2 L
+0.5 H
+N
+555.73 637.5 555.73 300 2 L
+N
+609.73 637.5 609.73 300 2 L
+N
+(0) 503.23 626.5 T
+(1) 557.23 626.5 T
+(2) 611.23 626.5 T
+609.73 401.26 613.1 408.01 633.35 408.01 636.73 401.26 633.35 394.51 613.1 394.51 6 Y
+1 H
+N
+(Addr1) 612.73 397.01 T
+609.73 374.26 613.1 381.01 633.35 381.01 636.73 374.26 633.35 367.51 613.1 367.51 6 Y
+N
+(Data2) 612.73 370.01 T
+636.73 374.26 640.1 381.01 660.35 381.01 663.73 374.26 660.35 367.51 640.1 367.51 6 Y
+8 X
+V
+0 X
+N
+609.73 320.26 613.1 327.01 633.35 327.01 636.73 320.26 4 L
+N
+636.73 401.26 640.1 408.01 660.35 408.01 663.73 401.26 660.35 394.51 640.1 394.51 6 Y
+8 X
+V
+0 X
+N
+474.73 516.01 501.73 516.01 2 L
+N
+501.73 516.01 515.23 502.51 2 L
+N
+515.23 502.51 609.73 502.51 2 L
+N
+663.73 448.51 474.73 448.51 2 L
+N
+623.23 516.01 663.73 516.01 2 L
+N
+609.73 347.26 613.1 340.51 633.35 340.51 636.73 347.26 4 L
+N
+636.73 347.26 640.1 354.01 660.35 354.01 663.73 347.26 660.35 340.51 640.1 340.51 6 Y
+8 X
+V
+0 X
+N
+636.73 320.26 640.1 327.01 660.35 327.01 663.73 320.26 660.35 313.51 640.1 313.51 6 Y
+8 X
+V
+0 X
+N
+555.73 320.26 559.11 327.01 579.35 327.01 582.73 320.26 4 L
+N
+582.73 320.26 586.1 327.01 606.35 327.01 609.73 320.26 606.35 313.51 586.1 313.51 6 Y
+8 X
+V
+0 X
+N
+555.73 347.26 559.11 340.51 579.35 340.51 582.73 347.26 4 L
+N
+582.73 347.26 586.1 354.01 606.35 354.01 609.73 347.26 606.35 340.51 586.1 340.51 6 Y
+8 X
+V
+0 X
+N
+508.48 563.25 515.23 570 555.73 570 562.48 563.25 555.73 556.5 515.23 556.5 6 Y
+N
+(Data1) 514.48 559 T
+562.48 563.25 569.23 570 609.73 570 616.48 563.25 609.73 556.5 569.23 556.5 6 Y
+N
+(Data2) 568.48 559 T
+474.73 570 501.73 570 508.48 563.25 501.73 556.5 474.73 556.5 5 L
+8 X
+V
+0 X
+N
+663.73 570 623.23 570 616.48 563.25 623.23 556.5 663.73 556.5 5 L
+8 X
+V
+0 X
+N
+609.73 502.51 623.23 516.01 2 L
+N
+474.73 489.01 501.73 489.01 2 L
+N
+501.73 489.01 515.23 475.51 2 L
+N
+515.23 475.51 609.73 475.51 2 L
+N
+582.73 401.26 586.1 408.01 606.35 408.01 609.73 401.26 606.35 394.51 586.1 394.51 6 Y
+8 X
+V
+0 X
+N
+508.48 536.25 515.23 543 555.73 543 562.48 536.25 555.73 529.51 515.23 529.51 6 Y
+N
+(Addr1) 514.48 532 T
+562.48 536.25 569.23 543 609.73 543 616.48 536.25 609.73 529.51 569.23 529.51 6 Y
+N
+(Addr2) 568.48 532 T
+474.73 543 501.73 543 508.48 536.25 501.73 529.51 474.73 529.51 5 L
+8 X
+V
+0 X
+N
+663.73 543 623.23 543 616.48 536.25 623.23 529.51 663.73 529.51 5 L
+8 X
+V
+0 X
+N
+623.23 489.01 663.73 489.01 2 L
+N
+609.73 475.51 623.23 489.01 2 L
+N
+474.73 408.01 552.36 408.01 555.73 401.26 552.36 394.51 474.73 394.51 5 L
+8 X
+V
+0.5 H
+0 X
+N
+555.73 401.26 559.11 408.01 579.35 408.01 582.73 401.26 579.35 394.51 559.11 394.51 6 Y
+1 H
+N
+(Addr1) 558.73 397.01 T
+582.73 374.26 586.1 381.01 606.35 381.01 609.73 374.26 606.35 367.51 586.1 367.51 6 Y
+8 X
+V
+0 X
+N
+474.73 381.01 552.36 381.01 555.73 374.26 552.36 367.51 474.73 367.51 5 L
+8 X
+V
+0.5 H
+0 X
+N
+555.73 374.26 559.11 381.01 579.35 381.01 582.73 374.26 579.35 367.51 559.11 367.51 6 Y
+1 H
+N
+(Data1) 558.73 370.01 T
+474.73 354.01 552.36 354.01 555.73 347.26 552.36 340.51 474.73 340.51 5 L
+8 X
+V
+0.5 H
+0 X
+N
+474.73 327.01 552.36 327.01 555.73 320.26 552.36 313.51 474.73 313.51 5 L
+8 X
+V
+0 X
+N
+0 18 Q
+(Read) 314.71 645.94 T
+(W) 541.06 646.88 T
+(rite) 557.73 646.88 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 252 720 720 C
+0 180 792 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "8" 8
+%%Page: "9" 9
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(GSC/Myrinet Card Design Review) 72 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(April 13, 1995) 358.98 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 9 of 15) 651.95 226 T
+0 0 0 1 0 0 0 K
+63 243 729 729 18 RR
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 24 Q
+(TSI and EBus DIO T) 216.61 704 T
+(ransactions) 440.68 704 T
+72 252 720 720 C
+72 264 720 696 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+289.44 609.24 289.44 621.12 313.2 621.12 313.2 609.24 336.96 609.24 5 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+336.96 609.24 336.96 621.12 360.72 621.12 360.72 609.24 384.48 609.24 5 L
+N
+384.48 609.24 384.48 621.12 408.23 621.12 408.23 609.24 432 609.24 5 L
+N
+265.68 609.24 289.44 609.24 2 L
+N
+289.44 632.99 289.44 336 2 L
+0.5 H
+N
+336.96 632.99 336.96 336 2 L
+N
+384.48 632.99 384.48 336 2 L
+N
+4 14 Q
+(tclk, MCLK-) 181.52 611.72 T
+(ED[31:0]) 181.52 445.41 T
+(CS-) 181.52 397.89 T
+(WE[3:0]-) 181.52 374.13 T
+(EHLD-) 181.52 350.37 T
+169.65 618.58 181.52 615.18 169.65 611.77 169.65 615.18 4 Y
+V
+169.65 615.18 169.65 615.18 2 L
+3 H
+N
+4 10 Q
+(1) 290.76 623.56 T
+(2) 338.28 623.56 T
+(3) 385.8 623.56 T
+169.65 404.75 181.52 401.35 169.65 397.94 169.65 401.35 4 Y
+V
+169.65 401.35 169.65 401.35 2 L
+N
+169.65 380.99 181.52 377.59 169.65 374.18 169.65 377.59 4 Y
+V
+169.65 377.59 169.65 377.59 2 L
+N
+169.65 357.23 181.52 353.83 169.65 350.42 169.65 353.83 4 Y
+V
+169.65 353.83 169.65 353.83 2 L
+N
+0 18 Q
+(EBus) 0 -270 154.3 381.38 TF
+(Read) 332.97 633.5 T
+313.2 395.4 348.84 395.4 2 L
+1 H
+N
+432 383.52 313.2 383.52 2 L
+N
+360.72 407.28 432 407.28 2 L
+N
+4 10 Q
+(Data) 395.7 445.36 T
+4 14 Q
+(EA[16:2]) 181.52 421.65 T
+4 10 Q
+(Addr) 312.54 421.61 T
+348.84 395.4 360.72 407.28 2 L
+N
+313.2 347.89 360.72 347.89 2 L
+N
+360.72 347.89 372.6 359.77 2 L
+N
+372.6 359.77 384.48 359.77 2 L
+N
+396.36 347.89 432 347.89 2 L
+N
+384.48 359.77 396.36 347.89 2 L
+N
+169.65 452.27 181.52 448.86 169.65 445.46 169.65 448.86 4 Y
+V
+169.65 445.46 157.76 448.86 169.65 452.27 169.65 448.86 4 Y
+V
+169.65 448.86 169.65 448.86 2 L
+3 H
+0 Z
+N
+169.65 428.51 181.52 425.1 169.65 421.7 169.65 425.1 4 Y
+V
+169.65 425.1 169.65 425.1 2 L
+2 Z
+N
+342.9 448.86 390.42 448.86 2 L
+1 H
+N
+265.68 454.8 289.44 454.8 295.38 448.86 289.44 442.92 265.68 442.92 5 L
+8 X
+V
+0 X
+N
+4 14 Q
+(tiodata[31:0]) 181.52 564.2 T
+(taddv_l) 181.52 516.68 T
+(tready_l) 181.52 492.93 T
+169.65 523.55 181.52 520.14 169.65 516.73 169.65 520.14 4 Y
+V
+169.65 520.14 169.65 520.14 2 L
+3 H
+N
+181.52 492.97 169.65 496.38 181.52 499.79 181.52 496.38 4 Y
+V
+181.52 496.38 181.52 496.38 2 L
+0 Z
+N
+265.68 526.08 289.44 526.08 2 L
+1 H
+2 Z
+N
+289.44 526.08 301.32 514.2 2 L
+N
+301.32 514.2 336.96 514.2 2 L
+N
+396.36 502.32 265.68 502.32 2 L
+N
+348.84 526.08 432 526.08 2 L
+N
+(ttype[2:0]]) 181.52 540.44 T
+295.38 543.9 301.32 549.84 336.96 549.84 342.9 543.9 336.96 537.96 301.32 537.96 6 Y
+N
+4 10 Q
+(0 \050read\051) 300.66 540.4 T
+336.96 514.2 348.84 526.08 2 L
+N
+169.65 571.06 181.52 567.66 169.65 564.25 169.65 567.66 4 Y
+V
+169.65 564.25 157.76 567.66 169.65 571.06 169.65 567.66 4 Y
+V
+169.65 567.66 169.65 567.66 2 L
+3 H
+0 Z
+N
+265.68 549.84 289.44 549.84 295.38 543.9 289.44 537.96 265.68 537.96 5 L
+8 X
+V
+1 H
+2 Z
+0 X
+N
+342.9 543.9 432 543.9 2 L
+N
+169.65 547.42 181.52 544.01 169.65 540.6 169.65 544.01 4 Y
+V
+169.65 544.01 169.65 544.01 2 L
+3 H
+N
+0 18 Q
+(TSI) 0 -270 154.3 518.95 TF
+295.38 448.86 301.32 454.8 336.96 454.8 342.9 448.86 336.96 442.92 301.32 442.92 6 Y
+1 H
+N
+4 10 Q
+(Pg+Of) 300.66 445.36 T
+(fset) 324 445.36 T
+307.26 425.1 313.2 431.04 336.96 431.04 342.9 425.1 336.96 419.16 313.2 419.16 6 Y
+N
+265.68 431.04 301.32 431.04 307.26 425.1 301.32 419.16 265.68 419.16 5 L
+8 X
+V
+0 X
+N
+(Data) 395.7 564.16 T
+342.9 567.66 390.42 567.66 2 L
+N
+265.68 573.6 289.44 573.6 295.38 567.66 289.44 561.72 265.68 561.72 5 L
+8 X
+V
+0 X
+N
+295.38 567.66 301.32 573.6 336.96 573.6 342.9 567.66 336.96 561.72 301.32 561.72 6 Y
+N
+(Pg+Of) 300.66 564.16 T
+(fset) 324 564.16 T
+432 573.6 396.36 573.6 390.42 567.66 396.36 561.72 432 561.72 5 L
+N
+432 454.8 396.36 454.8 390.42 448.86 396.36 442.92 432 442.92 5 L
+N
+432 431.04 348.84 431.04 342.9 425.1 348.84 419.16 432 419.16 5 L
+8 X
+V
+0 X
+N
+396.36 502.32 408.23 490.44 2 L
+N
+408.23 490.44 432 490.44 2 L
+N
+265.68 407.28 301.32 407.28 313.2 395.4 265.68 395.4 4 L
+8 X
+V
+0 X
+N
+265.68 371.65 301.32 371.65 313.2 383.52 265.68 383.52 4 L
+8 X
+V
+0 X
+N
+265.68 359.77 301.32 359.77 313.2 347.89 265.68 347.89 4 L
+8 X
+V
+0 X
+N
+505.44 609.24 505.44 621.12 529.2 621.12 529.2 609.24 552.96 609.24 5 L
+N
+552.96 609.24 552.96 621.12 576.72 621.12 576.72 609.24 600.48 609.24 5 L
+N
+481.68 609.24 505.44 609.24 2 L
+N
+505.44 632.99 505.44 336 2 L
+0.5 H
+N
+552.96 632.99 552.96 336 2 L
+N
+(1) 506.76 623.56 T
+(2) 554.28 623.56 T
+0 18 Q
+(W) 550.38 634.48 T
+(rite) 567.04 634.48 T
+529.2 407.28 564.84 407.28 2 L
+1 H
+N
+564.84 407.28 576.72 395.4 2 L
+N
+576.72 395.4 612.36 395.4 2 L
+N
+648 347.89 529.2 347.89 2 L
+N
+529.2 383.52 564.84 383.52 2 L
+N
+564.84 383.52 576.72 371.65 2 L
+N
+576.72 371.65 612.36 371.65 2 L
+N
+564.84 502.32 481.68 502.32 2 L
+N
+481.68 526.08 505.44 526.08 2 L
+N
+511.38 567.66 517.32 573.6 552.96 573.6 558.9 567.66 552.96 561.72 517.32 561.72 6 Y
+N
+4 10 Q
+(Pg+Of) 516.66 564.16 T
+(fset) 540 564.16 T
+(Data) 564.18 564.16 T
+481.68 573.6 505.44 573.6 511.38 567.66 505.44 561.72 481.68 561.72 5 L
+8 X
+V
+0 X
+N
+511.38 543.9 517.32 549.84 552.96 549.84 558.9 543.9 552.96 537.96 517.32 537.96 6 Y
+N
+(4 \050write\051) 516.66 540.4 T
+481.68 549.84 505.44 549.84 511.38 543.9 505.44 537.96 481.68 537.96 5 L
+8 X
+V
+0 X
+N
+558.9 543.9 606.42 543.9 2 L
+N
+552.96 514.2 564.84 526.08 2 L
+N
+564.84 526.08 600.48 526.08 2 L
+N
+564.84 502.32 576.72 490.44 2 L
+N
+576.72 490.44 612.36 490.44 2 L
+N
+505.44 526.08 517.32 514.2 2 L
+N
+517.32 514.2 552.96 514.2 2 L
+N
+511.38 448.86 517.32 454.8 552.96 454.8 558.9 448.86 552.96 442.92 517.32 442.92 6 Y
+N
+(Pg+Of) 516.66 445.36 T
+(fset) 540 445.36 T
+481.68 454.8 505.44 454.8 511.38 448.86 505.44 442.92 481.68 442.92 5 L
+8 X
+V
+0 X
+N
+612.36 371.65 624.23 383.52 2 L
+N
+612.36 395.4 624.23 407.28 2 L
+N
+624.23 407.28 648 407.28 2 L
+N
+624.23 383.52 648 383.52 2 L
+N
+600.48 609.24 600.48 621.12 624.23 621.12 624.23 609.24 648 609.24 5 L
+N
+(3) 601.8 623.56 T
+600.48 632.99 600.48 336 2 L
+0.5 H
+N
+648 573.6 612.36 573.6 606.42 567.66 612.36 561.72 648 561.72 5 L
+8 X
+V
+1 H
+0 X
+N
+558.9 567.66 564.84 573.6 600.48 573.6 606.42 567.66 600.48 561.72 564.84 561.72 6 Y
+N
+648 549.84 612.36 549.84 606.42 543.9 612.36 537.96 648 537.96 5 L
+8 X
+V
+0 X
+N
+648 526.08 600.48 526.08 612.36 514.2 648 514.2 4 L
+8 X
+V
+0 X
+N
+612.36 490.44 624.23 502.32 2 L
+N
+624.23 502.32 648 502.32 2 L
+N
+(Data) 564.18 445.36 T
+648 454.8 612.36 454.8 606.42 448.86 612.36 442.92 648 442.92 5 L
+8 X
+V
+0 X
+N
+558.9 448.86 564.84 454.8 600.48 454.8 606.42 448.86 600.48 442.92 564.84 442.92 6 Y
+N
+(Addr) 564.18 421.61 T
+558.9 425.1 564.84 431.04 600.48 431.04 606.42 425.1 600.48 419.16 564.84 419.16 6 Y
+N
+481.68 431.04 552.96 431.04 558.9 425.1 552.96 419.16 481.68 419.16 5 L
+8 X
+V
+0 X
+N
+481.68 395.4 517.32 395.4 529.2 407.28 481.68 407.28 4 L
+8 X
+V
+0 X
+N
+481.68 371.65 517.32 371.65 529.2 383.52 481.68 383.52 4 L
+8 X
+V
+0 X
+N
+481.68 359.77 517.32 359.77 529.2 347.89 481.68 347.89 4 L
+8 X
+V
+0 X
+N
+648 431.04 612.36 431.04 606.42 425.1 612.36 419.16 648 419.16 5 L
+8 X
+V
+0 X
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 252 720 720 C
+0 180 792 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "9" 9
+%%Page: "10" 10
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(GSC/Myrinet Card Design Review) 72 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(April 13, 1995) 358.98 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 10 of 15) 645.28 226 T
+0 0 0 1 0 0 0 K
+63 243 729 729 18 RR
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 24 Q
+(DIO Glue Logic) 309.31 704 T
+72 252 720 720 C
+72 264 720 696 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+232.65 542.37 244.53 566.13 5.94 RR
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+256.41 548.31 268.29 560.19 R
+N
+244.88 557.55 256.41 554.25 244.88 550.94 244.88 554.25 4 Y
+V
+244.53 554.25 244.88 554.25 2 L
+N
+256.41 557.22 262.35 554.25 256.41 551.28 3 L
+N
+0 7 Q
+(ExtReg) 268.29 556.21 T
+232.65 506.73 244.53 530.49 5.94 RR
+N
+256.41 512.67 268.29 524.55 R
+N
+244.88 521.92 256.41 518.61 244.88 515.3 244.88 518.61 4 Y
+V
+244.53 518.61 244.88 518.61 2 L
+N
+256.41 521.58 262.35 518.61 256.41 515.64 3 L
+N
+(W) 274.23 523.54 T
+(rite) 280.71 523.54 T
+(Read) 274.23 517.6 T
+256.41 583.94 268.29 595.82 R
+N
+256.41 592.85 262.35 589.89 256.41 586.92 3 L
+N
+(Addr[13:2]) 268.29 591.85 T
+172.91 669.74 161.37 673.04 172.91 676.35 172.91 673.04 4 Y
+V
+172.91 673.04 618.75 673.04 2 L
+0 Z
+N
+149.84 676.03 161.37 672.72 149.84 669.42 149.84 672.72 4 Y
+V
+113.86 672.72 149.84 672.72 2 L
+2 Z
+N
+(tiodata[13:2]) 113.86 673.3 T
+J
+161.37 684.92 630.63 684.92 630.63 275.08 161.37 275.08 4 Y
+J
+161.37 681.17 161.37 684.92 165.12 684.92 3 L
+N
+[7.62 6.604] 7.62 I
+165.12 684.92 626.87 684.92 2 L
+N
+J
+626.87 684.92 630.63 684.92 630.63 681.17 3 L
+N
+[7.572 6.563] 7.572 I
+630.63 681.17 630.63 278.83 2 L
+N
+J
+630.63 278.83 630.63 275.08 626.88 275.08 3 L
+N
+[7.62 6.604] 7.62 I
+626.88 275.08 165.13 275.08 2 L
+N
+J
+165.13 275.08 161.37 275.08 161.37 278.83 3 L
+N
+[7.572 6.563] 7.572 I
+161.37 278.83 161.37 681.17 2 L
+N
+J
+149.84 664.15 161.37 660.85 149.84 657.54 149.84 660.85 4 Y
+V
+113.86 660.85 149.84 660.85 2 L
+N
+(ttype[2]) 113.86 661.11 T
+149.84 651.96 161.37 648.65 149.84 645.34 149.84 648.65 4 Y
+V
+113.86 648.65 149.84 648.65 2 L
+N
+(taddv_l) 113.86 649.23 T
+149.84 628.2 161.37 624.89 149.84 621.58 149.84 624.89 4 Y
+V
+113.86 624.89 149.84 624.89 2 L
+N
+(tclk) 113.86 625.47 T
+149.84 640.08 161.37 636.77 149.84 633.46 149.84 636.77 4 Y
+V
+113.86 636.77 149.84 636.77 2 L
+N
+(tbg_l) 113.86 637.35 T
+113.86 298.52 161.37 298.52 2 L
+N
+(tready_l) 113.86 299.1 T
+149.84 616.63 161.37 613.33 149.84 610.02 149.84 613.33 4 Y
+V
+113.86 613.33 149.84 613.33 2 L
+N
+(DMA_EHLD) 113.86 613.59 T
+161.37 661.16 339.57 661.16 2 L
+N
+161.37 649.28 333.63 649.28 2 L
+N
+161.37 637.4 327.69 637.4 2 L
+N
+161.37 625.52 321.75 625.52 2 L
+N
+161.37 613.65 315.81 613.65 2 L
+N
+191.07 672.72 191.07 553.93 2 L
+N
+185.13 660.85 185.13 524.23 2 L
+N
+179.19 648.97 179.19 518.29 2 L
+N
+173.25 637.09 173.25 512.35 2 L
+N
+244.88 593.19 256.41 589.89 244.88 586.58 244.88 589.89 4 Y
+V
+191.07 589.89 244.88 589.89 2 L
+N
+221.12 557.24 232.65 553.93 221.12 550.62 221.12 553.93 4 Y
+V
+191.07 553.93 221.12 553.93 2 L
+N
+221.12 527.54 232.65 524.23 221.12 520.92 221.12 524.23 4 Y
+V
+185.13 524.23 221.12 524.23 2 L
+N
+221.12 521.6 232.65 518.29 221.12 514.98 221.12 518.29 4 Y
+V
+179.19 518.29 221.12 518.29 2 L
+N
+221.12 515.66 232.65 512.35 221.12 509.04 221.12 512.35 4 Y
+V
+173.25 512.35 221.12 512.35 2 L
+N
+(RstReg) 446.49 609.67 T
+393.03 447.33 404.91 471.09 5.94 RR
+N
+(CS-) 446.34 461.18 T
+393.03 411.69 404.91 435.45 5.94 RR
+N
+(WE[3:0]-) 446.34 425.54 T
+393.03 376.05 404.91 399.81 5.94 RR
+N
+(EHLD-) 446.34 389.9 T
+416.79 346.35 428.67 358.23 R
+N
+416.79 355.27 422.73 352.3 416.79 349.33 3 L
+N
+630.63 625.52 678.15 625.52 2 L
+N
+(RST) 630.63 626.1 T
+(-) 644.24 626.1 T
+630.63 506.73 678.15 506.73 2 L
+N
+(EA[16:2]) 630.63 507.31 T
+630.63 459.21 678.15 459.21 2 L
+N
+(CS-) 630.63 459.79 T
+630.63 387.93 678.15 387.93 2 L
+N
+(EHLD-) 630.63 388.51 T
+630.63 423.57 678.15 423.57 2 L
+N
+(WE[3:0]-) 630.63 424.15 T
+381.49 474.4 393.03 471.09 381.49 467.78 381.49 471.09 4 Y
+V
+339.57 471.09 381.49 471.09 2 L
+N
+381.49 468.46 393.03 465.15 381.49 461.84 381.49 465.15 4 Y
+V
+333.63 465.15 381.49 465.15 2 L
+N
+381.49 462.52 393.03 459.21 381.49 455.9 381.49 459.21 4 Y
+V
+327.69 459.21 381.49 459.21 2 L
+N
+327.69 637.4 327.69 459.21 2 L
+N
+333.63 649.28 333.63 465.15 2 L
+N
+339.57 661.16 339.57 471.09 2 L
+N
+381.49 557.55 393.03 554.25 381.49 550.94 381.49 554.25 4 Y
+V
+268.29 554.25 381.49 554.25 2 L
+N
+297.99 554.25 297.99 322.6 2 L
+N
+381.49 456.58 393.03 453.27 381.49 449.96 381.49 453.27 4 Y
+V
+297.99 453.27 381.49 453.27 2 L
+N
+268.29 521.58 292.05 521.58 2 L
+N
+321.75 625.52 321.75 396.84 2 L
+N
+315.81 613.65 315.81 390.9 2 L
+N
+268.29 515.64 286.11 515.64 2 L
+N
+292.05 548.31 292.05 316.66 2 L
+N
+381.49 382.33 393.03 379.02 381.49 375.72 381.49 379.02 4 Y
+V
+286.11 379.02 381.49 379.02 2 L
+N
+381.49 388.27 393.03 384.96 381.49 381.66 381.49 384.96 4 Y
+V
+297.99 384.96 381.49 384.96 2 L
+N
+381.49 394.21 393.03 390.9 381.49 387.6 381.49 390.9 4 Y
+V
+315.81 390.9 381.49 390.9 2 L
+N
+381.49 400.15 393.03 396.84 381.49 393.54 381.49 396.84 4 Y
+V
+321.75 396.84 381.49 396.84 2 L
+N
+381.49 349.66 393.03 346.36 381.49 343.05 381.49 346.36 4 Y
+V
+286.11 346.36 381.49 346.36 2 L
+N
+345.51 673.04 345.51 500.79 2 L
+N
+393.38 611.01 404.91 607.71 393.38 604.4 393.38 607.71 4 Y
+V
+345.51 607.71 393.38 607.71 2 L
+N
+589.39 611.01 600.93 607.71 589.39 604.4 589.39 607.71 4 Y
+V
+440.55 607.71 589.39 607.71 2 L
+N
+268.29 589.89 303.93 589.89 2 L
+N
+(Pg1Reg[4:0]) 446.49 597.79 T
+381.49 563.49 393.03 560.19 381.49 556.88 381.49 560.19 4 Y
+V
+303.93 560.19 381.49 560.19 2 L
+N
+589.39 599.13 600.93 595.82 589.39 592.52 589.39 595.82 4 Y
+V
+440.55 595.82 589.39 595.82 2 L
+N
+(Pg2Reg[4:0]) 446.49 585.91 T
+381.49 551.62 393.03 548.31 381.49 545 381.49 548.31 4 Y
+V
+292.05 548.31 381.49 548.31 2 L
+N
+589.39 587.25 600.93 583.95 589.39 580.64 589.39 583.95 4 Y
+V
+440.55 583.95 589.39 583.95 2 L
+N
+(Pg3Reg[4:0]) 446.49 574.03 T
+589.39 575.37 600.93 572.07 589.39 568.76 589.39 572.07 4 Y
+V
+440.55 572.07 589.39 572.07 2 L
+N
+286.11 515.64 286.11 310.72 2 L
+N
+381.49 450.64 393.03 447.33 381.49 444.02 381.49 447.33 4 Y
+V
+292.05 447.33 381.49 447.33 2 L
+N
+381.49 432.82 393.03 429.51 381.49 426.2 381.49 429.51 4 Y
+V
+297.99 429.51 381.49 429.51 2 L
+N
+381.49 420.94 393.03 417.63 381.49 414.33 381.49 417.63 4 Y
+V
+292.05 417.63 381.49 417.63 2 L
+N
+381.49 361.54 393.03 358.23 381.49 354.93 381.49 358.23 4 Y
+V
+297.99 358.23 381.49 358.23 2 L
+N
+405.26 355.6 416.79 352.3 405.26 348.99 405.26 352.3 4 Y
+V
+404.91 352.3 405.26 352.3 2 L
+N
+600.93 601.76 600.93 589.89 612.81 595.82 3 Y
+N
+393.03 340.42 404.91 364.17 5.94 RR
+N
+(Read2) 446.34 354.26 T
+393.03 482.97 404.91 506.73 5.94 RR
+N
+(EA[1) 446.34 496.81 T
+(1:2]) 460.99 496.81 T
+381.49 504.1 393.03 500.79 381.49 497.48 381.49 500.79 4 Y
+V
+345.51 500.79 381.49 500.79 2 L
+N
+381.49 492.22 393.03 488.91 381.49 485.6 381.49 488.91 4 Y
+V
+292.05 488.91 381.49 488.91 2 L
+N
+303.93 589.89 303.93 328.54 2 L
+N
+381.49 498.16 393.03 494.85 381.49 491.54 381.49 494.85 4 Y
+V
+303.93 494.85 381.49 494.85 2 L
+N
+303.93 328.54 476.19 328.54 2 L
+N
+297.99 322.6 482.13 322.6 2 L
+N
+292.05 316.66 488.07 316.66 2 L
+N
+286.11 310.72 494.01 310.72 2 L
+N
+(Addr[3:2]) 446.34 330.5 T
+(W) 446.34 318.62 T
+(rite) 452.82 318.62 T
+(ExtReg) 446.34 324.56 T
+(Read) 446.34 312.68 T
+476.19 328.54 476.19 560.19 2 L
+N
+482.13 322.6 482.13 554.25 2 L
+N
+488.07 316.66 488.07 500.79 2 L
+N
+494.01 310.72 494.01 548.31 2 L
+N
+600.93 613.65 600.93 601.76 612.81 607.71 3 Y
+N
+600.93 589.89 600.93 578.01 612.81 583.95 3 Y
+N
+600.93 578.01 600.93 566.13 612.81 572.07 3 Y
+N
+529.65 595.82 529.65 536.43 2 L
+N
+523.71 583.95 523.71 530.49 2 L
+N
+517.77 572.07 517.77 524.55 2 L
+N
+505.89 673.04 505.89 512.67 2 L
+N
+488.07 500.79 594.99 500.79 2 L
+N
+505.89 512.67 583.11 512.67 2 L
+N
+571.57 527.86 583.11 524.55 571.57 521.24 571.57 524.55 4 Y
+V
+517.77 524.55 571.57 524.55 2 L
+N
+571.57 533.8 583.11 530.49 571.57 527.18 571.57 530.49 4 Y
+V
+523.71 530.49 571.57 530.49 2 L
+N
+571.57 539.74 583.11 536.43 571.57 533.12 571.57 536.43 4 Y
+V
+529.65 536.43 571.57 536.43 2 L
+N
+618.75 572.07 618.75 673.04 2 L
+N
+612.81 607.71 618.75 607.71 2 L
+N
+612.81 595.82 618.75 595.82 2 L
+N
+612.81 583.95 618.75 583.95 2 L
+N
+612.81 572.07 618.75 572.07 2 L
+N
+594.99 530.49 618.75 530.49 2 L
+N
+(EA[16:12]) 595.43 532.45 T
+583.11 331.51 594.99 355.27 5.94 RR
+N
+571.57 337.78 583.11 334.48 571.57 331.17 571.57 334.48 4 Y
+V
+494.01 334.48 571.57 334.48 2 L
+N
+571.57 343.72 583.11 340.42 571.57 337.11 571.57 340.42 4 Y
+V
+488.07 340.42 571.57 340.42 2 L
+N
+571.57 349.66 583.11 346.36 571.57 343.05 571.57 346.36 4 Y
+V
+482.13 346.36 571.57 346.36 2 L
+N
+571.57 355.6 583.11 352.3 571.57 348.99 571.57 352.3 4 Y
+V
+428.67 352.3 571.57 352.3 2 L
+N
+594.99 343.39 618.75 343.39 2 L
+N
+(tready) 595.43 345.35 T
+618.75 343.39 618.75 298.84 2 L
+0 Z
+N
+172.91 295.53 161.37 298.84 172.91 302.14 172.91 298.84 4 Y
+V
+618.75 298.84 172.91 298.84 2 L
+N
+404.91 494.85 618.75 494.85 2 L
+N
+619.09 462.52 630.63 459.21 619.09 455.9 619.09 459.21 4 Y
+V
+404.91 459.21 619.09 459.21 2 L
+N
+619.09 426.88 630.63 423.57 619.09 420.27 619.09 423.57 4 Y
+V
+404.91 423.57 619.09 423.57 2 L
+N
+619.09 391.24 630.63 387.93 619.09 384.63 619.09 387.93 4 Y
+V
+404.91 387.93 619.09 387.93 2 L
+N
+618.75 530.49 618.75 494.85 2 L
+N
+619.09 510.04 630.63 506.73 619.09 503.42 619.09 506.73 4 Y
+V
+618.75 506.73 619.09 506.73 2 L
+N
+476.19 607.71 476.19 625.52 2 L
+N
+619.09 628.83 630.63 625.52 619.09 622.22 619.09 625.52 4 Y
+V
+476.19 625.52 619.09 625.52 2 L
+N
+476.19 506.73 589.05 506.73 2 L
+2 Z
+N
+(tiodata[13:4]) 191.07 555.9 T
+(tiodata[13:2]) 191.07 591.53 T
+(ttype[2]) 191.07 526.2 T
+(taddv_l) 191.07 520.26 T
+(tbg_l) 191.07 514.32 T
+(tiodata[1) 345.95 502.75 T
+(1:2]) 372.28 502.75 T
+(Addr[1) 345.51 496.81 T
+(1:2]) 365.61 496.81 T
+(W) 345.51 490.88 T
+(rite) 351.99 490.88 T
+(ttype[2]) 345.51 473.05 T
+(taddv_l) 345.51 467.12 T
+(tbg_l) 345.51 461.18 T
+(ExtReg) 345.51 455.24 T
+(W) 345.51 449.3 T
+(rite) 351.99 449.3 T
+(ExtReg) 345.51 431.48 T
+(W) 345.51 419.6 T
+(rite) 351.99 419.6 T
+(DMA_EHLD) 345.51 392.87 T
+(ExtReg) 345.51 386.93 T
+(Read) 345.51 380.99 T
+(ExtReg) 345.51 360.2 T
+(Read) 345.51 348.32 T
+(Pg1Reg[4:0]) 530.09 538.39 T
+(Pg2Reg[4:0]) 529.65 532.45 T
+(Pg3Reg[4:0]) 529.65 526.51 T
+(tiodata[13:12]) 529.65 514.63 T
+(Addr[13:12]) 529.65 508.69 T
+(W) 529.65 502.75 T
+(rite) 536.13 502.75 T
+(ExtReg) 529.65 348.32 T
+(W) 529.65 342.38 T
+(rite) 536.13 342.38 T
+(Read) 529.65 336.44 T
+(Read2) 529.65 354.26 T
+404.91 566.13 440.55 613.65 R
+N
+404.91 601.76 440.55 601.76 2 L
+N
+404.91 589.89 440.55 589.89 2 L
+N
+404.91 578.01 440.55 578.01 2 L
+N
+404.91 610.68 410.85 607.71 404.91 604.74 3 L
+N
+404.91 598.79 410.85 595.82 404.91 592.85 3 L
+N
+404.91 586.92 410.85 583.95 404.91 580.98 3 L
+N
+404.91 575.04 410.85 572.07 404.91 569.1 3 L
+N
+(Pg3Reg) 410.85 570.27 T
+(Pg2Reg) 410.85 582.15 T
+(RstReg) 410.85 605.91 T
+(Pg1Reg) 410.85 594.03 T
+404.91 554.25 422.73 554.25 2 L
+N
+419.42 554.59 422.73 566.13 426.04 554.59 422.73 554.59 4 Y
+V
+422.73 554.25 422.73 554.59 2 L
+N
+393.38 601.11 404.91 597.8 393.38 594.5 393.38 597.8 4 Y
+V
+345.51 597.8 393.38 597.8 2 L
+N
+393.38 591.21 404.91 587.91 393.38 584.6 393.38 587.91 4 Y
+V
+345.51 587.91 393.38 587.91 2 L
+N
+393.38 581.31 404.91 578.01 393.38 574.7 393.38 578.01 4 Y
+V
+345.51 578.01 393.38 578.01 2 L
+N
+(tiodata[4:0]) 345.95 579.04 T
+(tiodata[0]) 345.95 608.72 T
+(tiodata[4:0]) 345.95 598.82 T
+(tiodata[4:0]) 345.95 588.93 T
+393.03 542.37 404.91 566.13 5.94 RR
+N
+(Addr[3:2]) 345.95 562.15 T
+(ExtReg) 345.95 556.21 T
+(W) 345.95 550.27 T
+(rite) 352.43 550.27 T
+(tclk) 345.51 398.81 T
+571.57 563.49 583.11 560.19 571.57 556.88 571.57 560.19 4 Y
+V
+476.19 560.19 571.57 560.19 2 L
+N
+571.57 551.62 583.11 548.31 571.57 545 571.57 548.31 4 Y
+V
+494.01 548.31 571.57 548.31 2 L
+N
+594.99 554.25 606.87 554.25 2 L
+N
+603.56 557.56 606.87 569.1 610.17 557.56 606.87 557.56 4 Y
+V
+606.87 554.25 606.87 557.56 2 L
+N
+583.11 542.37 594.99 566.13 5.94 RR
+N
+(Addr[3:2]) 530.08 562.15 T
+(ExtReg) 530.08 556.21 T
+(Read) 530.08 550.27 T
+571.57 557.55 583.11 554.25 571.57 550.94 571.57 554.25 4 Y
+V
+482.13 554.25 571.57 554.25 2 L
+N
+583.11 542.37 594.99 536.43 594.99 524.55 583.11 518.61 4 Y
+N
+585.74 510.04 589.05 521.58 592.35 510.04 589.05 510.04 4 Y
+V
+589.05 506.73 589.05 510.04 2 L
+N
+591.68 513.01 594.99 524.55 598.29 513.01 594.99 513.01 4 Y
+V
+594.99 500.79 594.99 513.01 2 L
+N
+581.4 512.67 583.11 518.61 584.81 512.67 583.11 512.67 4 Y
+V
+583.11 512.67 583.11 512.67 2 L
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 252 720 720 C
+0 180 792 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "10" 10
+%%Page: "11" 11
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(GSC/Myrinet Card Design Review) 72 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(April 13, 1995) 358.98 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 11 of 15) 645.28 226 T
+0 0 0 1 0 0 0 K
+63 243 729 729 18 RR
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 24 Q
+(LANai DMA Engine) 287.33 704 T
+72 252 720 720 C
+72 264 720 696 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+289.08 533.46 348.48 563.16 R
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+4 8 Q
+(External Address) 293.8 550.24 T
+(Register \050EAR\051) 296.73 538.36 T
+289.08 533.46 295.02 539.4 289.08 545.34 3 L
+V
+N
+289.08 592.86 348.48 622.56 R
+N
+(Local Address) 298 609.64 T
+(Register \050LAR\051) 297.09 597.76 T
+289.08 592.86 295.02 598.8 289.08 604.74 3 L
+V
+N
+289.08 569.1 348.48 580.98 R
+N
+(Incrementer) 301.28 572.41 T
+289.08 628.5 348.48 640.38 R
+N
+(Incrementer) 301.28 631.8 T
+289.08 462.18 348.48 491.88 R
+N
+(DMA W) 290.22 478.96 T
+(ord Counter) 312.7 478.96 T
+(\050DMA_CTR\051) 300.74 467.08 T
+289.08 462.18 295.02 468.12 289.08 474.06 3 L
+V
+N
+289.08 497.82 348.48 509.7 R
+N
+(Decrementer) 299.83 501.13 T
+289.08 296.24 348.48 325.94 R
+N
+(DMA Direction) 297.64 313.02 T
+(Reg. \050DMA_DIR\051) 294 301.14 T
+289.08 296.24 295.02 302.18 289.08 308.12 3 L
+V
+N
+289.08 396.84 348.48 426.54 R
+N
+(DMA Status) 301.28 413.62 T
+(Reg. \050DMA_STS\051) 293.27 401.74 T
+289.08 396.84 295.02 402.78 289.08 408.72 3 L
+V
+N
+265.32 598.8 277.2 622.56 5.94 RR
+N
+277.55 613.99 289.08 610.68 277.55 607.37 277.55 610.68 4 Y
+V
+277.2 610.68 277.55 610.68 2 L
+1 H
+N
+289.08 634.6 247.5 634.6 2 L
+N
+247.5 652.26 247.5 616.62 2 L
+N
+253.79 619.93 265.32 616.62 253.79 613.31 253.79 616.62 4 Y
+V
+247.5 616.62 253.79 616.62 2 L
+N
+(NewLAR[15:1]) 247.5 636.53 T
+253.79 608.04 265.32 604.74 253.79 601.43 253.79 604.74 4 Y
+V
+235.62 604.74 253.79 604.74 2 L
+0.5 H
+N
+414.16 643.68 425.7 640.38 414.16 637.07 414.16 640.38 4 Y
+V
+360.36 640.38 414.16 640.38 2 L
+1 H
+0 Z
+N
+(LAR[15:1]) 378.18 642.31 T
+360.36 604.74 360.36 640.38 2 L
+2 Z
+N
+360.02 631.13 348.48 634.44 360.02 637.74 360.02 634.44 4 Y
+V
+360.36 634.44 360.02 634.44 2 L
+N
+265.32 539.4 277.2 563.16 5.94 RR
+0.5 H
+N
+277.55 554.59 289.08 551.28 277.55 547.97 277.55 551.28 4 Y
+V
+277.2 551.28 277.55 551.28 2 L
+1 H
+N
+289.08 575.21 247.5 575.21 2 L
+N
+247.5 575.04 247.5 557.22 2 L
+N
+253.79 560.53 265.32 557.22 253.79 553.91 253.79 557.22 4 Y
+V
+247.5 557.22 253.79 557.22 2 L
+N
+(NewEAR[31:2]) 247.5 577.13 T
+253.79 548.65 265.32 545.34 253.79 542.03 253.79 545.34 4 Y
+V
+235.62 545.34 253.79 545.34 2 L
+0.5 H
+N
+348.48 545.34 372.24 545.34 2 L
+1 H
+0 Z
+N
+(EAR[31:2]) 378.18 547.27 T
+372.24 545.34 372.24 575.04 2 L
+2 Z
+N
+360.02 571.73 348.48 575.04 360.02 578.35 360.02 575.04 4 Y
+V
+372.24 575.04 360.02 575.04 2 L
+N
+425.7 462.18 437.58 485.94 5.94 RR
+0.5 H
+N
+277.55 483.31 289.08 480 277.55 476.69 277.55 480 4 Y
+V
+277.2 480 277.55 480 2 L
+1 H
+N
+289.08 503.93 247.5 503.93 2 L
+N
+247.5 503.76 247.5 485.94 2 L
+N
+253.79 489.25 265.32 485.94 253.79 482.63 253.79 485.94 4 Y
+V
+247.5 485.94 253.79 485.94 2 L
+N
+(NewCTR[15:1]) 247.5 505.86 T
+253.79 477.37 265.32 474.06 253.79 470.75 253.79 474.06 4 Y
+V
+223.74 474.06 253.79 474.06 2 L
+0.5 H
+N
+414.16 477.37 425.7 474.06 414.16 470.75 414.16 474.06 4 Y
+V
+348.48 474.06 414.16 474.06 2 L
+1 H
+N
+(DMA_CTR[15:1]) 378.18 475.99 T
+360.36 474.06 360.36 503.76 2 L
+N
+360.02 500.45 348.48 503.76 360.02 507.07 360.02 503.76 4 Y
+V
+360.36 503.76 360.02 503.76 2 L
+N
+348.48 308.12 360.36 308.12 2 L
+0.5 H
+N
+414.16 412.03 425.7 408.72 414.16 405.41 414.16 408.72 4 Y
+V
+348.48 408.72 414.16 408.72 2 L
+1 H
+N
+(DMA_STS[3:0]) 378.18 410.65 T
+235.62 474.06 235.62 604.74 2 L
+0.5 H
+N
+199.98 462.18 223.74 485.94 R
+N
+188.45 477.37 199.98 474.06 188.45 470.75 188.45 474.06 4 Y
+V
+188.45 474.06 176.22 474.06 2 L
+N
+199.98 462.18 205.92 468.12 199.98 474.06 3 L
+N
+414.16 655.57 425.7 652.26 414.16 648.95 414.16 652.26 4 Y
+V
+247.5 652.26 414.16 652.26 2 L
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+449.46 462.18 473.22 485.94 R
+0.5 H
+2 Z
+N
+449.46 462.18 455.4 468.12 449.46 474.06 3 L
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+437.92 477.37 449.46 474.06 437.92 470.75 437.92 474.06 4 Y
+V
+437.58 474.06 437.92 474.06 2 L
+N
+473.22 474.06 485.1 474.06 2 L
+N
+(DINC_L) 0 -270 232.65 484.9 TF
+265.32 468.12 277.2 491.88 5.94 RR
+N
+372.24 545.34 372.24 432.48 2 L
+1 H
+N
+360.36 474.06 360.36 361.2 2 L
+N
+425.7 402.78 437.58 438.42 5.94 RR
+0.5 H
+N
+414.16 423.91 425.7 420.6 414.16 417.29 414.16 420.6 4 Y
+V
+360.36 420.6 414.16 420.6 2 L
+1 H
+N
+414.16 435.79 425.7 432.48 414.16 429.17 414.16 432.48 4 Y
+V
+372.24 432.48 414.16 432.48 2 L
+N
+449.46 408.72 473.22 432.48 R
+0.5 H
+N
+449.46 408.72 455.4 414.66 449.46 420.6 3 L
+V
+N
+437.92 423.91 449.46 420.6 437.92 417.29 437.92 420.6 4 Y
+V
+437.58 420.6 437.92 420.6 2 L
+1 H
+N
+(EAR[5:2]) 378.18 434.41 T
+(DMA_CTR[5:1]) 378.18 422.53 T
+485.1 474.06 485.1 450.3 2 L
+0.5 H
+N
+187.76 446.99 176.22 450.3 187.76 453.61 187.76 450.3 4 Y
+V
+485.1 450.3 187.76 450.3 2 L
+N
+140.24 281.22 128.71 284.53 140.24 287.84 140.24 284.53 4 Y
+V
+176.22 284.53 140.24 284.53 2 L
+0 Z
+N
+0 F
+(DDIR) 140.58 284.68 T
+164.69 478.15 176.22 474.84 164.69 471.54 164.69 474.84 4 Y
+V
+164.69 474.84 128.71 474.84 2 L
+2 Z
+N
+(DINC) 140.58 474.99 T
+360.36 308.12 360.36 284.36 2 L
+N
+187.76 280.71 176.22 283.99 187.75 287.33 187.76 284.02 4 Y
+V
+360.36 284.36 187.76 284.01 2 L
+N
+140.24 447.61 128.71 450.92 140.24 454.23 140.24 450.92 4 Y
+V
+176.22 450.92 140.24 450.92 2 L
+N
+(DPEND) 140.58 451.23 T
+473.22 420.6 485.1 420.6 2 L
+1 H
+N
+485.1 420.6 485.1 373.08 2 L
+N
+187.76 381.65 176.22 384.96 187.76 388.27 187.76 384.96 4 Y
+V
+485.1 384.96 187.76 384.96 2 L
+N
+140.24 382.03 128.71 385.34 140.24 388.65 140.24 385.34 4 Y
+V
+176.22 385.34 140.24 385.34 2 L
+N
+(DSIZ[2:0]) 140.58 385.66 T
+437.92 364.51 449.46 361.2 437.92 357.89 437.92 361.2 4 Y
+V
+360.36 361.2 437.92 361.2 2 L
+N
+4 F
+(DMA_CTR[15:1]) 378.18 363.13 T
+449.46 349.32 473.22 373.08 R
+0.5 H
+N
+449.46 349.32 455.4 355.26 449.46 361.2 3 L
+V
+N
+(NewLAR[15:1]) 378.18 654.19 T
+348.48 604.74 360.36 604.74 2 L
+1 H
+0 Z
+N
+425.7 634.44 437.58 670.08 5.94 RR
+0.5 H
+2 Z
+N
+604.24 655.57 615.78 652.26 604.24 648.95 604.24 652.26 4 Y
+V
+437.58 652.26 604.24 652.26 2 L
+N
+414.16 667.44 425.7 664.14 414.16 660.83 414.16 664.14 4 Y
+V
+176.22 664.14 414.16 664.14 2 L
+0 Z
+N
+(DNEW) 378.18 666.07 T
+(-) 398.11 666.07 T
+532.96 364.51 544.5 361.2 532.96 357.89 532.96 361.2 4 Y
+V
+473.22 361.2 532.96 361.2 2 L
+1 H
+2 Z
+N
+(DMA_CTR_L[15:1]) 485.1 363.13 T
+532.96 376.39 544.5 373.08 532.96 369.77 532.96 373.08 4 Y
+V
+485.1 373.08 532.96 373.08 2 L
+N
+(DSIZ[2:0]) 485.1 375.01 T
+544.5 355.26 556.38 379.02 5.94 RR
+0.5 H
+N
+568.26 355.26 592.02 379.02 R
+N
+568.26 355.26 574.2 361.2 568.26 367.14 3 L
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+556.72 370.45 568.26 367.14 556.72 363.83 556.72 367.14 4 Y
+V
+556.38 367.14 556.72 367.14 2 L
+N
+592.02 367.14 603.9 367.14 2 L
+N
+603.9 367.14 603.9 337.44 2 L
+N
+187.76 334.14 176.22 337.44 187.76 340.75 187.76 337.44 4 Y
+V
+603.9 337.44 187.76 337.44 2 L
+N
+140.24 335.13 128.71 338.44 140.24 341.75 140.24 338.44 4 Y
+V
+176.22 338.44 140.24 338.44 2 L
+1 H
+N
+0 F
+(DMORE) 140.58 338.75 T
+164.69 668.61 176.22 665.3 164.69 661.99 164.69 665.3 4 Y
+V
+164.69 665.3 128.71 665.3 2 L
+0.5 H
+N
+(DNEW) 140.58 665.45 T
+(-) 164.88 665.45 T
+651.76 656.11 663.29 652.8 651.76 649.5 651.76 652.8 4 Y
+V
+651.76 652.8 615.78 652.8 2 L
+N
+(LAR[15:1]) 615.78 652.95 T
+J
+176.22 687.9 615.78 687.9 615.78 272.1 176.22 272.1 4 Y
+J
+176.22 683.9 176.22 687.9 180.22 687.9 3 L
+0 Z
+N
+[8.104 6.078] 8.104 I
+180.22 687.9 611.77 687.9 2 L
+N
+J
+611.77 687.9 615.78 687.9 615.78 683.9 3 L
+N
+[7.918 5.939] 7.918 I
+615.78 683.9 615.78 276.11 2 L
+N
+J
+615.78 276.11 615.78 272.1 611.78 272.1 3 L
+N
+[8.104 6.078] 8.104 I
+611.78 272.1 180.23 272.1 2 L
+N
+J
+180.23 272.1 176.22 272.1 176.22 276.1 3 L
+N
+[7.918 5.939] 7.918 I
+176.22 276.1 176.22 683.89 2 L
+N
+J
+223.74 509.7 223.74 533.46 199.98 521.58 3 Y
+N
+188.1 533.46 199.98 569.1 5.94 RR
+2 Z
+N
+199.98 551.28 211.86 551.28 2 L
+0 Z
+N
+215.17 539.05 211.86 527.52 208.56 539.05 211.86 539.05 4 Y
+V
+211.86 551.28 211.86 539.05 2 L
+N
+176.57 566.47 188.1 563.16 176.57 559.85 176.57 563.16 4 Y
+V
+176.22 563.16 176.57 563.16 2 L
+N
+176.57 554.59 188.1 551.28 176.57 547.97 176.57 551.28 4 Y
+V
+176.22 551.28 176.57 551.28 2 L
+N
+176.57 542.71 188.1 539.4 176.57 536.09 176.57 539.4 4 Y
+V
+176.22 539.4 176.57 539.4 2 L
+N
+164.69 565.44 176.22 562.14 164.69 558.83 164.69 562.14 4 Y
+V
+164.69 562.14 128.71 562.14 2 L
+2 Z
+N
+(CS-) 140.58 562.28 T
+164.69 555.13 176.22 551.82 164.69 548.52 164.69 551.82 4 Y
+V
+164.69 551.82 128.71 551.82 2 L
+N
+(DCS-) 140.58 551.97 T
+164.69 543.25 176.22 539.95 164.69 536.64 164.69 539.95 4 Y
+V
+164.69 539.95 128.71 539.95 2 L
+N
+(DADR) 140.58 540.09 T
+235.28 518.27 223.74 521.58 235.28 524.89 235.28 521.58 4 Y
+V
+372.24 521.58 235.28 521.58 2 L
+1 H
+N
+187.76 518.27 176.22 521.58 187.76 524.89 187.76 521.58 4 Y
+V
+199.98 521.58 187.76 521.58 2 L
+N
+140.24 518.65 128.71 521.96 140.24 525.27 140.24 521.96 4 Y
+V
+176.22 521.96 140.24 521.96 2 L
+N
+(ED[31:2]) 140.58 522.27 T
+4 F
+(EAR[31:2]) 247.5 523.51 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 252 720 720 C
+0 180 792 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "11" 11
+%%Page: "12" 12
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(GSC/Myrinet Card Design Review) 72 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(April 13, 1995) 358.98 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 12 of 15) 645.28 226 T
+0 0 0 1 0 0 0 K
+63 243 729 729 18 RR
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 24 Q
+(Host Memory-to-LANai Memory DMA T) 135.31 704 T
+(ransfer) 575.33 704 T
+72 252 720 720 C
+72 264 720 696 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+256.55 680.65 256.55 270.25 2 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+285.35 680.65 285.35 270.25 2 L
+N
+314.15 680.65 314.15 270.25 2 L
+N
+342.95 680.65 342.95 270.25 2 L
+N
+371.75 680.65 371.75 270.25 2 L
+N
+400.55 680.65 400.55 270.25 2 L
+N
+429.35 680.65 429.35 270.25 2 L
+N
+458.14 680.65 458.14 270.25 2 L
+N
+486.94 680.65 486.94 270.25 2 L
+N
+544.54 680.65 544.54 270.25 2 L
+N
+515.74 680.65 515.74 270.25 2 L
+N
+4 7 Q
+(ED[31:00]) 213.35 522.35 T
+(DCS-) 213.35 507.95 T
+(DADR) 213.35 464.75 T
+(DPEND) 213.35 450.35 T
+(DWR-) 213.35 493.55 T
+(EHLD-) 213.35 479.15 T
+(DDIR) 213.35 435.95 T
+(DINC) 213.35 378.36 T
+(DNEW) 213.35 363.96 T
+(-) 230.79 363.96 T
+(DSIZ[2:0]) 213.35 421.55 T
+(DMORE) 213.35 407.16 T
+(DMAA) 213.35 392.76 T
+(DSUM) 213.35 349.56 T
+(LAR[15:01]) 213.35 320.76 T
+(EAR[31:02]) 213.35 306.36 T
+(DMA_CTR[15:01]) 213.35 291.96 T
+(DMA_DIR) 213.35 277.56 T
+(tclk, MCLK-) 213.35 666.35 T
+(pritbr_l) 213.35 637.55 T
+(tbg_l) 213.35 623.15 T
+(tiodata[31:00]) 213.35 608.75 T
+(ttype[0:2]) 213.35 594.35 T
+(taddv_l) 213.35 579.95 T
+(0) 257.35 673.52 T
+(1) 286.15 673.52 T
+(2) 314.95 673.52 T
+(3) 343.75 673.52 T
+(4) 372.55 673.52 T
+(5) 401.35 673.35 T
+(6) 430.14 673.35 T
+(7) 458.94 673.52 T
+(8) 487.74 673.52 T
+(9) 516.54 673.35 T
+(10) 544.54 673.35 T
+206.15 527.92 213.35 525.85 206.15 523.79 206.15 525.85 4 Y
+V
+206.15 523.79 198.95 525.85 206.15 527.92 206.15 525.85 4 Y
+V
+206.15 525.85 206.15 525.85 2 L
+3 H
+0 Z
+N
+206.15 513.52 213.35 511.45 206.15 509.39 206.15 511.45 4 Y
+V
+206.15 511.45 206.15 511.45 2 L
+2 Z
+N
+206.15 499.12 213.35 497.05 206.15 494.99 206.15 497.05 4 Y
+V
+206.15 497.05 206.15 497.05 2 L
+N
+206.15 484.72 213.35 482.65 206.15 480.59 206.15 482.65 4 Y
+V
+206.15 482.65 206.15 482.65 2 L
+N
+206.15 470.32 213.35 468.25 206.15 466.19 206.15 468.25 4 Y
+V
+206.15 468.25 206.15 468.25 2 L
+N
+213.35 451.79 206.15 453.86 213.35 455.92 213.35 453.86 4 Y
+V
+213.35 453.86 213.35 453.86 2 L
+N
+213.35 437.39 206.15 439.45 213.35 441.52 213.35 439.45 4 Y
+V
+213.35 439.45 213.35 439.45 2 L
+N
+213.35 422.99 206.15 425.06 213.35 427.12 213.35 425.06 4 Y
+V
+213.35 425.06 213.35 425.06 2 L
+N
+213.35 408.59 206.15 410.66 213.35 412.72 213.35 410.66 4 Y
+V
+213.35 410.66 213.35 410.66 2 L
+N
+206.15 383.92 213.35 381.86 206.15 379.79 206.15 381.86 4 Y
+V
+206.15 381.86 206.15 381.86 2 L
+N
+206.15 369.52 213.35 367.46 206.15 365.39 206.15 367.46 4 Y
+V
+206.15 367.46 206.15 367.46 2 L
+N
+206.15 398.32 213.35 396.26 206.15 394.19 206.15 396.26 4 Y
+V
+206.15 396.26 206.15 396.26 2 L
+N
+206.15 355.12 213.35 353.06 206.15 350.99 206.15 353.06 4 Y
+V
+206.15 353.06 206.15 353.06 2 L
+N
+206.15 671.91 213.35 669.85 206.15 667.78 206.15 669.85 4 Y
+V
+206.15 669.85 206.15 669.85 2 L
+N
+213.35 638.98 206.15 641.05 213.35 643.11 213.35 641.05 4 Y
+V
+213.35 641.05 213.35 641.05 2 L
+N
+206.15 628.71 213.35 626.65 206.15 624.58 206.15 626.65 4 Y
+V
+206.15 626.65 206.15 626.65 2 L
+N
+213.35 610.18 206.15 612.25 213.35 614.31 213.35 612.25 4 Y
+V
+213.35 612.25 213.35 612.25 2 L
+N
+213.35 595.79 206.15 597.85 213.35 599.91 213.35 597.85 4 Y
+V
+213.35 597.85 213.35 597.85 2 L
+N
+213.35 581.39 206.15 583.45 213.35 585.51 213.35 583.45 4 Y
+V
+213.35 583.45 213.35 583.45 2 L
+N
+0 10 Q
+(EBus) 0 -270 196.85 425.23 TF
+(LANai-internal) 0 -270 196.85 267.05 TF
+(TSI) 0 -270 196.85 587.47 TF
+256.55 666.25 256.55 673.45 270.95 673.45 270.95 666.25 285.35 666.25 5 L
+1 H
+N
+285.35 666.25 285.35 673.45 299.75 673.45 299.75 666.25 314.15 666.25 5 L
+N
+314.15 666.25 314.15 673.45 328.55 673.45 328.55 666.25 342.95 666.25 5 L
+N
+342.95 666.25 342.95 673.45 357.35 673.45 357.35 666.25 371.75 666.25 5 L
+N
+371.75 666.25 371.75 673.45 386.15 673.45 386.15 666.25 400.55 666.25 5 L
+N
+400.55 666.25 400.55 673.45 414.95 673.45 414.95 666.25 429.35 666.25 5 L
+N
+429.35 666.25 429.35 673.45 443.74 673.45 443.74 666.25 458.14 666.25 5 L
+N
+458.14 666.25 458.14 673.45 472.54 673.45 472.54 666.25 486.94 666.25 5 L
+N
+242.15 666.25 256.55 666.25 2 L
+N
+486.94 666.25 486.94 673.45 501.34 673.45 501.34 666.25 515.74 666.25 5 L
+N
+515.74 666.25 515.74 673.45 530.14 673.45 530.14 666.25 544.54 666.25 5 L
+N
+317.75 612.25 346.55 612.25 2 L
+N
+317.75 597.85 346.55 597.85 2 L
+N
+346.55 612.24 350.15 615.84 371.75 615.84 375.35 612.24 371.75 608.64 350.15 608.64 6 Y
+N
+4 7 Q
+(3000) 349.75 608.71 T
+404.15 612.25 407.75 615.85 429.35 615.85 432.95 612.25 429.35 608.65 407.75 608.65 6 Y
+N
+(D1) 407.35 608.72 T
+432.95 612.25 436.55 615.85 458.14 615.85 461.74 612.25 458.14 608.65 436.55 608.65 6 Y
+N
+(D2) 436.14 608.72 T
+346.55 597.84 350.15 601.44 371.75 601.44 375.35 597.84 371.75 594.24 350.15 594.24 6 Y
+N
+(2\0504-wd rd\051) 349.75 594.31 T
+(1002) 457.74 320.74 T
+(3004) 457.74 306.34 T
+(0006) 457.74 291.94 T
+(1004) 486.54 320.74 T
+(3008) 486.54 306.34 T
+(0004) 486.54 291.94 T
+242.15 284.66 602.15 284.66 2 L
+N
+242.15 443.05 602.15 443.05 2 L
+N
+461.74 612.25 465.34 615.85 486.94 615.85 490.54 612.25 486.94 608.65 465.34 608.65 6 Y
+N
+(D3) 464.94 608.72 T
+490.54 612.25 494.14 615.85 515.74 615.85 519.34 612.25 515.74 608.65 494.14 608.65 6 Y
+N
+(D4) 493.74 608.72 T
+375.35 597.83 602.15 597.83 2 L
+N
+(1006) 515.34 320.76 T
+(300c) 515.34 306.36 T
+(0002) 515.34 291.96 T
+(1008) 544.14 320.76 T
+(3010) 544.14 306.36 T
+(0000) 544.14 291.96 T
+242.15 450.26 285.35 450.26 2 L
+N
+242.15 371.06 602.15 371.06 2 L
+N
+(3 \050no xfer\051) 263.75 421.53 T
+(4 \0504-wd xfer\051) 306.55 421.53 T
+(0 \0501-wd\051) 479.34 421.53 T
+(7 \0502-wd\051) 507.97 421.53 T
+(3 \050no xfer\051) 566.81 421.94 T
+242.15 515.05 350.15 515.05 2 L
+N
+(tready_l) 213.35 565.74 T
+206.15 571.3 213.35 569.24 206.15 567.17 206.15 569.24 4 Y
+V
+206.15 569.24 206.15 569.24 2 L
+3 H
+N
+317.75 583.45 346.55 583.45 2 L
+1 H
+N
+321.35 572.65 400.55 572.65 2 L
+N
+242.15 644.65 292.55 644.65 2 L
+N
+292.55 644.65 299.75 637.45 2 L
+N
+299.75 637.45 580.54 637.45 2 L
+N
+242.15 630.25 314.15 630.25 2 L
+N
+314.15 630.25 321.35 623.05 2 L
+N
+321.35 623.05 602.15 623.05 2 L
+N
+242.15 464.65 350.15 464.65 2 L
+N
+350.15 464.65 357.35 471.85 2 L
+N
+357.35 471.85 378.95 471.85 2 L
+N
+378.95 471.85 386.15 464.65 2 L
+N
+386.15 464.65 602.15 464.65 2 L
+N
+285.35 450.26 292.55 457.45 2 L
+N
+292.55 457.45 544.54 457.45 2 L
+N
+544.54 457.45 551.74 450.26 2 L
+N
+551.74 450.26 602.15 450.26 2 L
+N
+242.15 428.65 299.75 428.65 2 L
+N
+242.15 421.46 299.75 421.46 2 L
+N
+306.95 428.65 472.54 428.65 2 L
+N
+306.95 421.46 472.54 421.46 2 L
+N
+472.54 428.65 479.74 421.46 2 L
+N
+472.54 421.46 479.74 428.65 2 L
+N
+501.17 428.65 508.37 421.46 2 L
+N
+501.17 421.46 508.37 428.65 2 L
+N
+(0 \0501-wd\051) 538.01 421.94 T
+479.74 428.65 501.34 428.65 2 L
+N
+479.74 421.46 501.34 421.46 2 L
+N
+537.34 428.65 558.94 428.65 2 L
+N
+537.34 421.46 558.94 421.46 2 L
+N
+566.14 428.65 602.15 428.65 2 L
+N
+566.14 421.46 602.15 421.46 2 L
+N
+508.37 428.65 529.97 428.65 2 L
+N
+508.37 421.46 529.97 421.46 2 L
+N
+530.14 428.65 537.34 421.46 2 L
+N
+530.14 421.46 537.34 428.65 2 L
+N
+558.94 428.65 566.14 421.46 2 L
+N
+558.94 421.46 566.14 428.65 2 L
+N
+242.15 407.06 486.94 407.06 2 L
+N
+486.94 407.06 494.14 414.26 2 L
+N
+494.14 414.26 515.74 414.26 2 L
+N
+515.74 414.26 522.94 407.06 2 L
+N
+522.94 407.06 602.15 407.06 2 L
+N
+407.75 515.05 414.95 507.85 2 L
+N
+414.95 507.85 522.94 507.85 2 L
+N
+602.15 479.05 242.15 479.05 2 L
+N
+242.15 378.26 407.75 378.26 2 L
+N
+407.75 378.26 414.95 385.46 2 L
+N
+414.95 385.46 522.94 385.46 2 L
+N
+522.94 385.46 530.14 378.26 2 L
+N
+530.14 378.26 602.15 378.26 2 L
+N
+242.15 392.66 407.75 392.66 2 L
+N
+522.94 399.86 530.14 392.66 2 L
+N
+414.95 399.86 522.94 399.86 2 L
+N
+530.14 392.66 602.15 392.66 2 L
+N
+242.15 349.46 407.75 349.46 2 L
+N
+407.75 349.46 414.95 356.66 2 L
+N
+414.95 356.66 522.94 356.66 2 L
+N
+522.94 356.66 530.14 349.46 2 L
+N
+530.14 349.46 602.15 349.46 2 L
+N
+443.74 327.86 450.95 320.66 2 L
+N
+443.74 320.66 450.95 327.86 2 L
+N
+472.54 327.86 479.74 320.66 2 L
+N
+472.54 320.66 479.74 327.86 2 L
+N
+501.34 327.86 508.54 320.66 2 L
+N
+501.34 320.66 508.54 327.86 2 L
+N
+530.14 327.86 537.34 320.66 2 L
+N
+530.14 320.66 537.34 327.86 2 L
+N
+242.15 327.86 443.74 327.86 2 L
+N
+242.15 320.66 443.74 320.66 2 L
+N
+450.95 327.86 472.54 327.86 2 L
+N
+450.95 320.66 472.54 320.66 2 L
+N
+479.74 327.86 501.34 327.86 2 L
+N
+479.74 320.66 501.34 320.66 2 L
+N
+508.54 327.86 530.14 327.86 2 L
+N
+508.54 320.66 530.14 320.66 2 L
+N
+537.34 320.66 602.15 320.66 2 L
+N
+537.34 327.86 602.15 327.86 2 L
+N
+443.74 313.46 450.95 306.26 2 L
+N
+443.74 306.26 450.95 313.46 2 L
+N
+472.54 313.46 479.74 306.26 2 L
+N
+472.54 306.26 479.74 313.46 2 L
+N
+501.34 313.46 508.54 306.26 2 L
+N
+501.34 306.26 508.54 313.46 2 L
+N
+530.14 313.46 537.34 306.26 2 L
+N
+530.14 306.26 537.34 313.46 2 L
+N
+242.15 313.46 443.74 313.46 2 L
+N
+242.15 306.26 443.74 306.26 2 L
+N
+450.95 313.46 472.54 313.46 2 L
+N
+450.95 306.26 472.54 306.26 2 L
+N
+479.74 313.46 501.34 313.46 2 L
+N
+479.74 306.26 501.34 306.26 2 L
+N
+508.54 313.46 530.14 313.46 2 L
+N
+508.54 306.26 530.14 306.26 2 L
+N
+537.34 306.26 602.15 306.26 2 L
+N
+537.34 313.46 602.15 313.46 2 L
+N
+270.95 291.86 278.15 299.06 2 L
+N
+443.74 299.06 450.95 291.86 2 L
+N
+443.74 291.86 450.95 299.06 2 L
+N
+472.54 299.06 479.74 291.86 2 L
+N
+472.54 291.86 479.74 299.06 2 L
+N
+501.34 299.06 508.54 291.86 2 L
+N
+501.34 291.86 508.54 299.06 2 L
+N
+530.14 299.06 537.34 291.86 2 L
+N
+278.15 299.06 443.74 299.06 2 L
+N
+242.15 291.86 443.74 291.86 2 L
+N
+450.95 299.06 472.54 299.06 2 L
+N
+450.95 291.86 472.54 291.86 2 L
+N
+479.74 299.06 501.34 299.06 2 L
+N
+479.74 291.86 501.34 291.86 2 L
+N
+508.54 299.06 530.14 299.06 2 L
+N
+508.54 291.86 602.15 291.86 2 L
+N
+371.75 579.83 378.95 587.05 2 L
+N
+404.15 583.43 602.15 583.43 2 L
+N
+346.55 583.43 350.15 579.83 2 L
+N
+350.15 579.83 371.75 579.83 2 L
+N
+429.35 565.45 436.55 572.65 2 L
+N
+436.55 572.65 602.15 572.65 2 L
+N
+400.55 572.65 407.75 565.45 2 L
+N
+407.75 565.45 429.35 565.45 2 L
+N
+299.75 428.65 306.95 421.46 2 L
+N
+299.75 421.46 306.95 428.65 2 L
+N
+573.34 680.65 573.34 270.25 2 L
+0.5 H
+N
+(1) 573.34 673.35 T
+(1) 576.11 673.35 T
+544.54 666.25 544.54 673.45 558.94 673.45 558.94 666.25 573.34 666.25 5 L
+1 H
+N
+573.34 666.25 573.34 673.45 587.74 673.45 587.74 666.25 602.15 666.25 5 L
+N
+375.35 612.25 404.15 612.25 2 L
+N
+317.75 525.85 346.55 525.85 2 L
+N
+346.55 525.84 350.15 529.44 371.75 529.44 375.35 525.84 371.75 522.24 350.15 522.24 6 Y
+N
+(3000) 349.75 522.31 T
+404.15 525.85 407.75 529.45 429.35 529.45 432.95 525.85 429.35 522.25 407.75 522.25 6 Y
+N
+(D1) 407.35 522.33 T
+432.95 525.85 436.55 529.45 458.14 529.45 461.74 525.85 458.14 522.25 436.55 522.25 6 Y
+N
+(D2) 436.14 522.33 T
+461.74 525.85 465.34 529.45 486.94 529.45 490.54 525.85 486.94 522.25 465.34 522.25 6 Y
+N
+(D3) 464.94 522.33 T
+490.54 525.85 494.14 529.45 515.74 529.45 519.34 525.85 515.74 522.25 494.14 522.25 6 Y
+N
+(D4) 493.74 522.33 T
+375.35 525.85 404.15 525.85 2 L
+N
+407.75 500.65 414.95 493.45 2 L
+N
+414.95 493.45 522.94 493.45 2 L
+N
+522.94 493.45 530.14 500.65 2 L
+N
+530.14 500.65 602.15 500.65 2 L
+N
+242.15 500.65 407.75 500.65 2 L
+N
+407.75 392.66 414.95 399.86 2 L
+N
+522.94 507.85 530.14 515.05 2 L
+N
+530.14 515.05 602.15 515.05 2 L
+N
+378.95 587.05 400.55 587.05 2 L
+N
+400.55 587.05 404.15 583.45 2 L
+N
+(terror_l) 213.35 551.34 T
+206.15 556.9 213.35 554.84 206.15 552.77 206.15 554.84 4 Y
+V
+206.15 554.84 206.15 554.84 2 L
+3 H
+N
+321.35 558.25 602.15 558.25 2 L
+1 H
+N
+(1000) 285.35 320.74 T
+(3000) 285.35 306.34 T
+(0008) 285.35 291.94 T
+242.15 615.85 314.15 615.85 317.75 612.25 314.15 608.65 242.15 608.65 5 L
+8 X
+V
+0 X
+N
+242.15 601.45 314.15 601.45 317.75 597.85 314.15 594.25 242.15 594.25 5 L
+8 X
+V
+0 X
+N
+242.15 587.05 314.15 587.05 317.75 583.45 314.15 579.85 242.15 579.85 5 L
+8 X
+V
+0 X
+N
+242.15 572.65 321.35 572.65 314.15 565.45 242.15 565.45 4 L
+8 X
+V
+0 X
+N
+242.15 558.25 321.35 558.25 314.15 551.05 242.15 551.05 4 L
+8 X
+V
+0 X
+N
+242.15 529.45 314.15 529.45 317.75 525.85 314.15 522.25 242.15 522.25 5 L
+8 X
+V
+0 X
+N
+519.34 612.25 602.15 612.25 2 L
+N
+519.34 525.85 602.15 525.85 2 L
+N
+350.15 515.05 357.35 507.85 2 L
+N
+357.35 507.85 378.95 507.85 2 L
+N
+378.95 507.85 386.15 515.05 2 L
+N
+386.15 515.05 407.75 515.05 2 L
+N
+580.54 637.45 587.74 644.65 2 L
+0 Z
+N
+587.74 644.65 602.15 644.65 2 L
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 252 720 720 C
+0 180 792 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "12" 12
+%%Page: "13" 13
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(GSC/Myrinet Card Design Review) 72 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(April 13, 1995) 358.98 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 13 of 15) 645.28 226 T
+0 0 0 1 0 0 0 K
+63 243 729 729 18 RR
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 24 Q
+(LANai Memory-to-Host Memory DMA T) 135.31 704 T
+(ransfer) 575.33 704 T
+72 252 720 720 C
+72 264 720 696 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+270.95 670.8 270.95 678 285.35 678 285.35 670.8 299.75 670.8 5 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+299.75 670.8 299.75 678 314.15 678 314.15 670.8 328.55 670.8 5 L
+N
+328.55 670.8 328.55 678 342.95 678 342.95 670.8 357.35 670.8 5 L
+N
+357.35 670.8 357.35 678 371.74 678 371.74 670.8 386.14 670.8 5 L
+N
+386.14 670.8 386.14 678 400.54 678 400.54 670.8 414.94 670.8 5 L
+N
+414.94 670.8 414.94 678 429.34 678 429.34 670.8 443.74 670.8 5 L
+N
+443.74 670.8 443.74 678 458.14 678 458.14 670.8 472.54 670.8 5 L
+N
+472.54 670.8 472.54 678 486.94 678 486.94 670.8 501.34 670.8 5 L
+N
+256.55 670.8 270.95 670.8 2 L
+N
+501.34 670.8 501.34 678 515.74 678 515.74 670.8 530.14 670.8 5 L
+N
+530.14 670.8 530.14 678 544.53 678 544.53 670.8 558.93 670.8 5 L
+N
+270.95 685.2 270.95 274.8 2 L
+0.5 H
+N
+299.75 685.2 299.75 274.8 2 L
+N
+328.55 685.2 328.55 274.8 2 L
+N
+357.35 685.2 357.35 274.8 2 L
+N
+386.14 685.2 386.14 274.8 2 L
+N
+414.94 685.2 414.94 274.8 2 L
+N
+443.74 685.2 443.74 274.8 2 L
+N
+472.54 685.2 472.54 274.8 2 L
+N
+501.34 685.2 501.34 274.8 2 L
+N
+558.93 685.2 558.93 274.8 2 L
+N
+530.14 685.2 530.14 274.8 2 L
+N
+4 7 Q
+(tclk, MCLK-) 227.75 670.9 T
+(LAR[15:01]) 227.55 325.3 T
+(EAR[31:02]) 227.55 310.9 T
+(DMA_CTR[15:01]) 227.55 296.5 T
+(DMA_DIR) 227.55 282.1 T
+(pritbr_l) 227.75 642.12 T
+(tbg_l) 227.75 627.72 T
+(tiodata[31:00]) 227.75 613.32 T
+(ttype[0:2]) 227.75 598.92 T
+(taddv_l) 227.75 584.52 T
+220.55 676.46 227.75 674.4 220.55 672.33 220.55 674.4 4 Y
+V
+220.55 674.4 220.55 674.4 2 L
+3 H
+N
+(0) 271.75 678.07 T
+(1) 300.55 678.07 T
+(2) 329.35 678.07 T
+(3) 358.14 678.07 T
+(4) 386.94 678.07 T
+(5) 415.74 677.9 T
+(6) 444.54 677.9 T
+(7) 473.34 678.07 T
+(8) 502.14 678.07 T
+(9) 530.94 677.9 T
+(10) 558.93 677.9 T
+558.93 670.8 558.93 678 573.33 678 573.33 670.8 587.73 670.8 5 L
+1 H
+N
+227.75 643.56 220.55 645.62 227.75 647.68 227.75 645.62 4 Y
+V
+227.75 645.62 227.75 645.62 2 L
+3 H
+N
+220.55 633.28 227.75 631.22 220.55 629.16 220.55 631.22 4 Y
+V
+220.55 631.22 220.55 631.22 2 L
+N
+227.75 614.76 220.55 616.82 227.75 618.88 227.75 616.82 4 Y
+V
+227.75 616.82 227.75 616.82 2 L
+N
+227.75 600.36 220.55 602.42 227.75 604.49 227.75 602.42 4 Y
+V
+227.75 602.42 227.75 602.42 2 L
+N
+227.75 585.96 220.55 588.02 227.75 590.09 227.75 588.02 4 Y
+V
+227.75 588.02 227.75 588.02 2 L
+N
+0 10 Q
+(LANai-internal) 0 -270 211.05 271.59 TF
+(TSI) 0 -270 211.25 592.02 TF
+360.95 616.8 389.74 616.8 2 L
+1 H
+N
+360.95 602.4 389.74 602.4 2 L
+N
+4 7 Q
+(1000) 300.14 325.29 T
+(3000) 300.14 310.89 T
+(0008) 300.14 296.49 T
+256.35 281.98 587.73 281.98 2 L
+N
+389.94 616.82 393.54 620.42 415.14 620.42 418.74 616.82 415.14 613.22 393.54 613.22 6 Y
+N
+(3000) 393.14 613.29 T
+418.74 616.82 422.34 620.42 443.94 620.42 447.54 616.82 443.94 613.22 422.34 613.22 6 Y
+N
+(D1) 421.94 613.29 T
+447.54 616.82 451.14 620.42 472.74 620.42 476.34 616.82 472.74 613.22 451.14 613.22 6 Y
+N
+(D2) 450.74 613.29 T
+476.34 616.82 479.93 620.42 501.53 620.42 505.13 616.82 501.53 613.22 479.93 613.22 6 Y
+N
+(D3) 479.54 613.29 T
+505.13 616.82 508.73 620.42 530.33 620.42 533.93 616.82 530.33 613.22 508.73 613.22 6 Y
+N
+(D4) 508.33 613.29 T
+533.93 616.8 587.73 616.8 2 L
+N
+389.94 602.41 393.54 606.01 415.14 606.01 418.74 602.41 415.14 598.81 393.54 598.81 6 Y
+N
+(6\0504-wd wt\051) 393.14 598.88 T
+418.74 602.4 587.73 602.4 2 L
+N
+(1002) 415.53 325.3 T
+(3004) 415.53 310.9 T
+(0006) 415.53 296.5 T
+(1004) 444.33 325.3 T
+(3008) 444.33 310.9 T
+(0004) 444.33 296.5 T
+(1006) 473.12 325.3 T
+(300c) 473.12 310.9 T
+(0002) 473.12 296.5 T
+(1008) 501.92 325.3 T
+(3010) 501.92 310.9 T
+(0000) 501.92 296.5 T
+(tready_l) 227.75 570.3 T
+220.55 575.87 227.75 573.81 220.55 571.74 220.55 573.81 4 Y
+V
+220.55 573.81 220.55 573.81 2 L
+3 H
+N
+360.95 588 389.74 588 2 L
+1 H
+N
+256.55 649.2 306.95 649.2 2 L
+N
+306.95 649.2 314.34 642 2 L
+N
+314.15 642 566.13 642 2 L
+N
+566.13 642 573.33 649.2 2 L
+N
+573.33 649.2 587.73 649.2 2 L
+N
+252.95 634.8 357.54 634.8 2 L
+N
+357.54 634.8 364.74 627.6 2 L
+N
+364.74 627.6 587.73 627.6 2 L
+N
+494.14 332.4 587.73 332.4 2 L
+N
+494.14 318 587.73 318 2 L
+N
+494.14 310.8 587.73 310.8 2 L
+N
+400.54 332.4 407.74 325.2 2 L
+N
+400.54 325.2 407.74 332.4 2 L
+N
+429.34 332.4 436.54 325.2 2 L
+N
+429.34 325.2 436.54 332.4 2 L
+N
+458.14 332.4 465.34 325.2 2 L
+N
+458.14 325.2 465.34 332.4 2 L
+N
+486.94 332.4 494.14 325.2 2 L
+N
+486.94 325.2 494.14 332.4 2 L
+N
+494.14 325.2 587.73 325.2 2 L
+N
+256.35 332.38 400.54 332.38 2 L
+N
+256.35 325.18 400.54 325.18 2 L
+N
+407.74 332.4 429.34 332.4 2 L
+N
+407.74 325.2 429.34 325.2 2 L
+N
+436.54 325.2 458.14 325.2 2 L
+N
+436.54 332.4 458.14 332.4 2 L
+N
+465.34 332.4 486.94 332.4 2 L
+N
+465.34 325.2 486.94 325.2 2 L
+N
+400.54 318 407.74 310.8 2 L
+N
+400.54 310.8 407.74 318 2 L
+N
+429.34 318 436.54 310.8 2 L
+N
+429.34 310.8 436.54 318 2 L
+N
+458.14 318 465.34 310.8 2 L
+N
+458.14 310.8 465.34 318 2 L
+N
+486.94 318 494.14 310.8 2 L
+N
+486.94 310.8 494.14 318 2 L
+N
+256.35 317.99 400.54 317.99 2 L
+N
+256.35 310.79 400.54 310.79 2 L
+N
+407.74 318 429.34 318 2 L
+N
+407.74 310.8 429.34 310.8 2 L
+N
+436.54 310.8 458.14 310.8 2 L
+N
+436.54 318 458.14 318 2 L
+N
+465.34 318 486.94 318 2 L
+N
+465.34 310.8 486.94 310.8 2 L
+N
+285.15 296.4 292.35 303.6 2 L
+N
+494.14 303.6 587.73 303.6 2 L
+N
+400.54 303.6 407.74 296.4 2 L
+N
+400.54 296.4 407.74 303.6 2 L
+N
+429.34 303.6 436.54 296.4 2 L
+N
+429.34 296.4 436.54 303.6 2 L
+N
+458.14 303.6 465.34 296.4 2 L
+N
+458.14 296.4 465.34 303.6 2 L
+N
+486.94 303.6 494.14 296.4 2 L
+N
+486.94 296.4 494.14 303.6 2 L
+N
+494.14 296.4 587.73 296.4 2 L
+N
+292.35 303.58 400.54 303.58 2 L
+N
+256.35 296.4 400.54 296.4 2 L
+N
+407.74 303.6 429.34 303.6 2 L
+N
+407.74 296.4 429.34 296.4 2 L
+N
+436.54 296.4 458.14 296.4 2 L
+N
+436.54 303.6 458.14 303.6 2 L
+N
+465.34 303.6 486.94 303.6 2 L
+N
+465.34 296.4 486.94 296.4 2 L
+N
+415.14 584.4 422.14 591.62 2 L
+N
+447.34 588 587.73 588 2 L
+N
+393.54 584.4 415.14 584.4 2 L
+N
+530.33 577.2 537.53 570 2 L
+N
+537.53 570 558.93 570 2 L
+N
+364.55 577.2 530.14 577.2 2 L
+N
+(ED[31:00]) 227.55 526.9 T
+(DCS-) 227.55 512.5 T
+(DADR) 227.55 469.3 T
+(DPEND) 227.55 454.9 T
+(DWR-) 227.55 498.1 T
+(EHLD-) 227.55 483.7 T
+(DDIR) 227.55 440.5 T
+(DINC) 227.55 382.9 T
+(DNEW) 227.55 368.5 T
+(-) 244.99 368.5 T
+(DSIZ[2:0]) 227.55 426.1 T
+(DMORE) 227.55 411.7 T
+(DMAA) 227.55 397.3 T
+(DSUM) 227.55 354.1 T
+227.55 528.33 220.36 530.4 227.55 532.46 227.55 530.4 4 Y
+V
+227.55 530.4 227.55 530.4 2 L
+3 H
+N
+220.36 518.06 227.55 516 220.36 513.93 220.36 516 4 Y
+V
+220.36 516 220.36 516 2 L
+N
+220.36 503.66 227.55 501.6 220.36 499.54 220.36 501.6 4 Y
+V
+220.36 501.6 220.36 501.6 2 L
+N
+220.36 489.26 227.55 487.2 220.36 485.14 220.36 487.2 4 Y
+V
+220.36 487.2 220.36 487.2 2 L
+N
+220.36 474.86 227.55 472.8 220.36 470.74 220.36 472.8 4 Y
+V
+220.36 472.8 220.36 472.8 2 L
+N
+227.55 456.34 220.36 458.4 227.55 460.46 227.55 458.4 4 Y
+V
+227.55 458.4 227.55 458.4 2 L
+N
+227.55 441.94 220.36 444 227.55 446.07 227.55 444 4 Y
+V
+227.55 444 227.55 444 2 L
+N
+227.55 427.54 220.36 429.6 227.55 431.67 227.55 429.6 4 Y
+V
+227.55 429.6 227.55 429.6 2 L
+N
+227.55 413.14 220.36 415.2 227.55 417.27 227.55 415.2 4 Y
+V
+227.55 415.2 227.55 415.2 2 L
+N
+220.36 388.47 227.55 386.4 220.36 384.34 220.36 386.4 4 Y
+V
+220.36 386.4 220.36 386.4 2 L
+N
+220.36 374.07 227.55 372 220.36 369.94 220.36 372 4 Y
+V
+220.36 372 220.36 372 2 L
+N
+220.36 402.87 227.55 400.8 220.36 398.74 220.36 400.8 4 Y
+V
+220.36 400.8 220.36 400.8 2 L
+N
+220.36 359.67 227.55 357.6 220.36 355.54 220.36 357.6 4 Y
+V
+220.36 357.6 220.36 357.6 2 L
+N
+0 10 Q
+(EBus) 0 -270 211.05 426.99 TF
+256.35 440.38 587.73 440.38 2 L
+1 H
+N
+256.35 454.8 299.55 454.8 2 L
+N
+256.35 505.18 587.73 505.18 2 L
+N
+256.35 375.58 587.73 375.58 2 L
+N
+4 7 Q
+(3 \050no xfer\051) 277.95 426.07 T
+(4 \0504-wd xfer\051) 320.95 426.05 T
+(7 \0502-wd\051) 466.01 426.48 T
+(0 \0501-wd\051) 494.81 426.48 T
+(3 \050no xfer\051) 523.61 426.48 T
+256.35 519.58 364.55 519.58 2 L
+N
+256.35 469.18 386.14 469.18 2 L
+N
+386.14 469.18 393.34 476.38 2 L
+N
+393.34 476.4 414.94 476.4 2 L
+N
+414.94 476.28 422.04 469.18 2 L
+N
+422.14 469.18 587.73 469.18 2 L
+N
+299.55 454.8 306.75 462 2 L
+N
+306.95 462 501.34 462 2 L
+N
+501.34 462 508.54 454.8 2 L
+N
+508.54 454.8 587.73 454.8 2 L
+N
+256.35 433.2 313.95 433.2 2 L
+N
+256.35 426 313.95 426 2 L
+N
+321.35 433.18 429.34 433.18 2 L
+N
+321.35 425.98 429.34 425.98 2 L
+N
+(0 \0501-wd\051) 437.21 426.48 T
+436.54 433.2 458.14 433.2 2 L
+N
+436.54 426 458.14 426 2 L
+N
+465.34 433.2 486.94 433.2 2 L
+N
+465.34 426 486.94 426 2 L
+N
+494.14 433.2 515.74 433.2 2 L
+N
+494.14 426 515.74 426 2 L
+N
+429.34 433.2 436.54 426 2 L
+N
+429.34 426 436.54 433.2 2 L
+N
+458.14 433.2 465.34 426 2 L
+N
+458.14 426 465.34 433.2 2 L
+N
+486.94 433.2 494.14 426 2 L
+N
+486.94 426 494.14 433.2 2 L
+N
+515.74 433.2 522.94 426 2 L
+N
+515.74 426 522.94 433.2 2 L
+N
+522.94 433.2 587.73 433.2 2 L
+N
+522.94 426 587.73 426 2 L
+N
+256.35 411.58 443.74 411.58 2 L
+N
+443.74 411.6 450.94 418.8 2 L
+N
+472.54 418.78 479.74 411.58 2 L
+N
+479.74 411.6 587.73 411.6 2 L
+N
+479.74 512.4 486.94 519.6 2 L
+N
+486.94 519.6 587.73 519.6 2 L
+N
+400.74 483.6 256.55 483.6 2 L
+N
+400.54 483.6 407.74 490.9 2 L
+N
+407.74 490.9 414.94 490.9 2 L
+N
+414.94 490.9 422.14 483.7 2 L
+N
+422.14 483.7 429.34 483.8 2 L
+N
+429.34 483.6 436.54 490.9 2 L
+N
+436.54 490.9 443.74 490.9 2 L
+N
+443.74 490.9 450.94 483.7 2 L
+N
+450.94 483.7 458.14 483.8 2 L
+N
+458.14 483.6 465.34 490.9 2 L
+N
+465.34 490.9 472.54 490.9 2 L
+N
+472.54 490.9 479.74 483.7 2 L
+N
+479.74 483.7 486.94 483.8 2 L
+N
+486.94 483.7 494.14 491 2 L
+N
+494.14 491 501.34 491 2 L
+N
+501.34 491 508.54 483.8 2 L
+N
+508.54 483.7 587.73 483.6 2 L
+N
+256.35 382.79 364.55 382.79 2 L
+N
+364.55 382.8 371.74 390 2 L
+N
+371.74 390 479.74 390 2 L
+N
+479.74 390 486.94 382.8 2 L
+N
+486.94 382.79 587.94 382.79 2 L
+N
+256.35 397.18 364.55 397.18 2 L
+N
+364.55 397.2 371.74 404.4 2 L
+N
+479.74 404.4 486.94 397.2 2 L
+N
+371.74 404.4 479.74 404.4 2 L
+N
+486.94 397.18 587.94 397.18 2 L
+N
+256.35 354 364.55 354 2 L
+N
+364.55 354 371.74 361.2 2 L
+N
+479.74 361.2 486.94 354 2 L
+N
+371.74 361.2 479.74 361.2 2 L
+N
+486.94 354 587.94 354 2 L
+N
+314.15 433.18 321.35 425.98 2 L
+N
+314.15 425.98 321.35 433.18 2 L
+N
+360.95 530.38 389.74 530.38 2 L
+N
+389.74 530.4 393.34 534 414.94 534 418.54 530.4 414.94 526.8 393.34 526.8 6 Y
+N
+(3000) 392.94 526.87 T
+418.54 530.4 422.14 534 443.74 534 447.34 530.4 443.74 526.8 422.14 526.8 6 Y
+N
+(D1) 421.74 526.87 T
+447.34 530.4 450.94 534 472.54 534 476.14 530.4 472.54 526.8 450.94 526.8 6 Y
+N
+(D2) 450.54 526.87 T
+476.14 530.4 479.74 534 501.34 534 504.94 530.4 501.34 526.8 479.74 526.8 6 Y
+N
+(D3) 479.34 526.87 T
+504.94 530.4 508.54 534 530.14 534 533.74 530.4 530.14 526.8 508.54 526.8 6 Y
+N
+(D4) 508.14 526.87 T
+533.74 530.38 587.54 530.38 2 L
+N
+(terror_l) 227.75 555.88 T
+220.55 561.45 227.75 559.38 220.55 557.32 220.55 559.38 4 Y
+V
+220.55 559.38 220.55 559.38 2 L
+3 H
+N
+364.74 562.78 587.73 562.78 2 L
+1 H
+N
+256.55 620.4 357.35 620.4 360.95 616.8 357.35 613.2 256.55 613.2 5 L
+8 X
+V
+0 X
+N
+256.55 606 357.35 606 360.95 602.4 357.35 598.8 256.55 598.8 5 L
+8 X
+V
+0 X
+N
+256.55 591.6 357.35 591.6 360.95 588 357.35 584.4 256.55 584.4 5 L
+8 X
+V
+0 X
+N
+256.55 577.2 364.55 577.2 357.35 570 256.55 570 4 L
+8 X
+V
+0 X
+N
+256.55 562.8 364.55 562.8 357.35 555.6 256.55 555.6 4 L
+8 X
+V
+0 X
+N
+422.14 591.62 443.74 591.62 2 L
+N
+443.74 591.62 447.34 588.02 2 L
+N
+256.35 534 357.15 534 360.75 530.4 357.15 526.8 256.35 526.8 5 L
+8 X
+V
+0 X
+N
+364.55 519.6 371.74 512.4 2 L
+N
+371.74 512.4 479.74 512.4 2 L
+N
+558.93 570.02 566.13 577.22 2 L
+N
+566.13 577.22 587.73 577.22 2 L
+N
+389.74 588 393.34 584.4 2 L
+N
+450.94 418.8 472.54 418.8 2 L
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 252 720 720 C
+0 180 792 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "13" 13
+%%Page: "14" 14
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(GSC/Myrinet Card Design Review) 72 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(April 13, 1995) 358.98 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 14 of 15) 645.28 226 T
+0 0 0 1 0 0 0 K
+63 243 729 729 18 RR
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 24 Q
+(DMA Glue Logic) 303.32 704 T
+72 252 720 720 C
+72 264 720 696 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+J
+154.8 632.69 637.2 632.69 637.2 330.3 154.8 330.3 4 Y
+J
+154.8 628.94 154.8 632.69 158.55 632.69 3 L
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+[7.602 6.589] 7.602 I
+158.55 632.69 633.44 632.69 2 L
+N
+J
+633.44 632.69 637.2 632.69 637.2 628.94 3 L
+N
+[7.36 6.379] 7.36 I
+637.2 628.94 637.2 334.05 2 L
+N
+J
+637.2 334.05 637.2 330.3 633.45 330.3 3 L
+N
+[7.602 6.589] 7.602 I
+633.45 330.3 158.56 330.3 2 L
+N
+J
+158.56 330.3 154.8 330.3 154.8 334.05 3 L
+N
+[7.36 6.379] 7.36 I
+154.8 334.05 154.8 628.93 2 L
+N
+J
+399.6 524.69 414 582.29 7.2 RR
+N
+396.73 550.18 385.2 553.49 396.73 556.8 396.73 553.49 4 Y
+V
+399.6 553.49 396.73 553.49 2 L
+N
+310.34 593.38 298.8 596.69 310.34 600 310.34 596.69 4 Y
+V
+356.4 596.69 310.34 596.69 2 L
+N
+342 553.49 342 596.69 2 L
+N
+327.6 596.69 493.2 596.69 2 L
+N
+450 596.69 450 575.09 2 L
+N
+425.54 571.78 414 575.09 425.54 578.4 425.54 575.09 4 Y
+V
+450 575.09 425.54 575.09 2 L
+N
+0 6 Q
+(State[3:0]) 421.2 577.85 T
+425.54 564.58 414 567.89 425.54 571.2 425.54 567.89 4 Y
+V
+457.2 567.89 425.54 567.89 2 L
+N
+(DPEND) 421.2 570.65 T
+425.54 557.38 414 560.69 425.54 564 425.54 560.69 4 Y
+V
+637.2 560.69 425.54 560.69 2 L
+N
+(DDIR]) 421.2 563.45 T
+425.54 550.18 414 553.49 425.54 556.8 425.54 553.49 4 Y
+V
+464.4 553.49 425.54 553.49 2 L
+N
+(Done) 421.2 556.25 T
+425.54 542.98 414 546.29 425.54 549.6 425.54 546.29 4 Y
+V
+457.2 546.29 425.54 546.29 2 L
+N
+(Done_L) 421.2 549.05 T
+425.54 528.58 414 531.89 425.54 535.2 425.54 531.89 4 Y
+V
+442.8 531.89 425.54 531.89 2 L
+N
+(tready_l) 421.2 534.65 T
+425.54 535.78 414 539.09 425.54 542.4 425.54 539.09 4 Y
+V
+450 539.09 425.54 539.09 2 L
+N
+(tbg_l) 421.2 541.85 T
+425.54 521.38 414 524.69 425.54 528 425.54 524.69 4 Y
+V
+435.6 524.69 425.54 524.69 2 L
+N
+(terror_l) 421.2 527.45 T
+435.6 524.69 435.6 474.29 2 L
+N
+524.86 477.6 536.4 474.29 524.86 470.98 524.86 474.29 4 Y
+V
+493.2 474.29 524.86 474.29 2 L
+0 Z
+N
+143.27 484.8 154.8 481.49 143.27 478.18 143.27 481.49 4 Y
+V
+97.21 481.49 143.27 481.49 2 L
+2 Z
+N
+(terror_l) 97.21 482.35 T
+442.8 531.89 442.8 467.09 2 L
+N
+524.86 470.4 536.4 467.09 524.86 463.79 524.86 467.09 4 Y
+V
+154.8 467.09 524.86 467.09 2 L
+0 Z
+N
+450 539.09 450 459.89 2 L
+2 Z
+N
+524.86 463.2 536.4 459.89 524.86 456.58 524.86 459.89 4 Y
+V
+169.2 459.89 524.86 459.89 2 L
+0 Z
+N
+143.27 470.4 154.8 467.09 143.27 463.79 143.27 467.09 4 Y
+V
+97.21 467.09 143.27 467.09 2 L
+2 Z
+N
+(tready_l) 97.21 468.33 T
+143.27 456 154.8 452.69 143.27 449.39 143.27 452.69 4 Y
+V
+97.21 452.69 143.27 452.69 2 L
+N
+(tbg_l) 97.21 453.93 T
+457.2 546.29 457.2 452.69 2 L
+N
+464.4 553.49 464.4 445.49 2 L
+N
+524.86 448.8 536.4 445.49 524.86 442.19 524.86 445.49 4 Y
+V
+234 445.49 524.86 445.49 2 L
+0 Z
+N
+356.4 359.1 385.2 416.69 R
+2 Z
+N
+385.2 395.1 378 387.89 385.2 380.7 3 L
+N
+399.6 373.5 414 402.3 7.2 RR
+N
+396.73 384.59 385.2 387.89 396.73 391.2 396.73 387.89 4 Y
+V
+399.6 387.89 396.73 387.89 2 L
+N
+310.34 384.59 298.8 387.89 310.34 391.2 310.34 387.89 4 Y
+V
+356.4 387.89 310.34 387.89 2 L
+N
+342 387.89 342 431.09 2 L
+N
+342 431.09 450 431.09 2 L
+N
+450 431.09 450 395.1 2 L
+N
+425.54 391.79 414 395.1 425.54 398.4 425.54 395.1 4 Y
+V
+450 395.1 425.54 395.1 2 L
+N
+(Count[3:0]) 421.2 397.86 T
+425.54 384.59 414 387.89 425.54 391.2 425.54 387.89 4 Y
+V
+478.8 387.89 425.54 387.89 2 L
+N
+(DSIZ[2:0]) 421.2 390.66 T
+425.54 377.39 414 380.7 425.54 384 425.54 380.7 4 Y
+V
+572.4 380.7 425.54 380.7 2 L
+N
+(LoadCount) 421.2 383.46 T
+(Counter) 374.53 351.28 T
+356.4 524.69 385.2 582.29 R
+N
+385.2 560.69 378 553.49 385.2 546.29 3 L
+N
+(State Machine) 366.02 516.88 T
+284.4 589.49 298.8 618.29 7.2 RR
+N
+310.34 607.78 298.8 611.09 310.34 614.4 310.34 611.09 4 Y
+V
+637.2 611.09 310.34 611.09 2 L
+N
+(State[3:0]) 306 599.45 T
+(DPEND) 306 613.85 T
+166.34 600.58 154.8 603.89 166.34 607.2 166.34 603.89 4 Y
+V
+284.4 603.89 166.34 603.89 2 L
+N
+97.21 603.89 154.8 603.89 2 L
+N
+(pritbr_l) 97.21 605.13 T
+(pritbr_l) 234 606.65 T
+270 517.49 270 503.09 255.6 510.29 3 Y
+N
+164.9 535.78 153.37 539.09 164.9 542.4 164.9 539.09 4 Y
+V
+254.16 539.09 164.9 539.09 2 L
+N
+(taddv_l) 232.56 541.85 T
+270 546.29 270 531.89 255.6 539.09 3 Y
+N
+164.9 506.98 153.37 510.29 164.9 513.6 164.9 510.29 4 Y
+V
+254.16 510.29 164.9 510.29 2 L
+N
+(ttype[2:0]) 232.56 513.05 T
+284.4 539.09 298.8 567.89 7.2 RR
+N
+310.34 550.18 298.8 553.49 310.34 556.8 310.34 553.49 4 Y
+V
+356.4 553.49 310.34 553.49 2 L
+N
+(State[3:0]) 306 556.25 T
+284.4 553.49 262.8 553.49 2 L
+N
+284.4 495.89 298.8 524.69 7.2 RR
+N
+(DSIZ[2:0]) 306 513.05 T
+281.54 506.98 270 510.29 281.54 513.6 281.54 510.29 4 Y
+V
+284.4 510.29 281.54 510.29 2 L
+0 Z
+N
+97.21 538.71 154.8 538.71 2 L
+2 Z
+N
+(taddv_l) 97.21 539.95 T
+97.21 510.29 154.8 510.29 2 L
+N
+(ttype[2:0]) 97.21 511.53 T
+270 539.09 277.2 539.09 2 L
+0 Z
+N
+277.2 539.09 277.2 531.89 2 L
+N
+273.6 530.45 280.8 530.45 277.2 526.85 3 Y
+N
+265.9 553.49 262.8 542.69 259.7 553.49 262.8 553.49 4 Y
+V
+262.8 553.49 262.8 553.49 2 L
+N
+266.11 525.43 262.8 513.89 259.49 525.43 262.8 525.43 4 Y
+V
+262.8 535.49 262.8 525.43 2 L
+N
+310.34 506.98 298.8 510.29 310.34 513.6 310.34 510.29 4 Y
+V
+310.34 510.29 637.2 510.29 2 L
+N
+478.8 510.29 478.8 387.89 2 L
+N
+284.4 373.5 298.8 402.3 7.2 RR
+2 Z
+N
+(Count[2:0]) 306 390.66 T
+281.54 384.59 270 387.89 281.54 391.2 281.54 387.89 4 Y
+V
+284.4 387.89 281.54 387.89 2 L
+0 Z
+N
+255.6 380.7 270 395.1 R
+2 Z
+N
+270 391.49 262.8 387.89 270 384.3 3 L
+N
+(Done) 234 390.66 T
+234 445.49 234 387.89 2 L
+0 Z
+N
+205.2 380.7 219.6 395.1 R
+2 Z
+N
+219.6 391.49 212.4 387.89 219.6 384.3 3 L
+N
+(Done_L) 183.6 390.66 T
+205.2 387.89 183.6 387.89 2 L
+0 Z
+N
+183.6 387.89 183.6 452.69 2 L
+N
+231.14 384.59 219.6 387.89 231.14 391.2 231.14 387.89 4 Y
+V
+255.6 387.89 231.14 387.89 2 L
+N
+457.2 567.89 457.2 611.09 2 L
+N
+648.73 607.78 637.2 611.09 648.73 614.4 648.73 611.09 4 Y
+V
+648.73 611.09 694.79 611.09 2 L
+N
+(DPEND) 637.2 612.33 T
+648.73 557.38 637.2 560.69 648.73 564 648.73 560.69 4 Y
+V
+648.73 560.69 694.79 560.69 2 L
+N
+(DDIR) 637.2 561.93 T
+648.73 506.98 637.2 510.29 648.73 513.6 648.73 510.29 4 Y
+V
+648.73 510.29 694.79 510.29 2 L
+N
+(DSIZ[2:0]) 637.2 511.53 T
+536.4 431.09 550.8 495.89 7.2 RR
+2 Z
+N
+507.6 560.69 507.6 488.69 2 L
+0 Z
+N
+500.4 611.09 500.4 481.49 2 L
+N
+493.2 596.69 493.2 474.29 2 L
+N
+(DDIR) 507.6 491.45 T
+(DPEND) 507.6 484.25 T
+(State[3:0]) 507.6 477.05 T
+(tready_l) 507.6 469.85 T
+(tbg_l) 507.6 462.65 T
+(Done_l) 507.6 455.45 T
+(Done) 507.6 448.25 T
+524.86 492 536.4 488.69 524.86 485.38 524.86 488.69 4 Y
+V
+507.6 488.69 524.86 488.69 2 L
+N
+524.86 484.8 536.4 481.49 524.86 478.18 524.86 481.49 4 Y
+V
+500.4 481.49 524.86 481.49 2 L
+N
+524.86 456 536.4 452.69 524.86 449.39 524.86 452.69 4 Y
+V
+183.6 452.69 524.86 452.69 2 L
+N
+169.2 474.29 435.6 474.29 2 L
+N
+154.8 452.69 169.2 452.69 2 L
+N
+154.8 481.49 169.2 481.49 2 L
+N
+169.2 481.49 169.2 474.29 2 L
+N
+169.2 452.69 169.2 459.89 2 L
+N
+(DCS) 550.8 491.45 T
+550.8 488.69 565.2 488.69 2 L
+N
+(DWR) 550.8 484.25 T
+625.66 484.8 637.2 481.49 625.66 478.18 625.66 481.49 4 Y
+V
+550.8 481.49 625.66 481.49 2 L
+N
+(DMAA) 550.8 477.05 T
+550.8 474.29 608.4 474.29 2 L
+N
+(DADR) 550.8 469.85 T
+550.8 467.09 601.2 467.09 2 L
+N
+(DINC) 550.8 462.65 T
+550.8 459.89 594 459.89 2 L
+N
+550.8 445.49 579.6 445.49 2 L
+N
+(DSUM) 550.8 455.45 T
+550.8 452.69 586.8 452.69 2 L
+N
+625.66 470.4 637.2 467.09 625.66 463.79 625.66 467.09 4 Y
+V
+608.4 467.09 625.66 467.09 2 L
+N
+(LoadCount) 550.8 441.05 T
+550.8 438.29 572.4 438.29 2 L
+N
+572.4 438.29 572.4 380.7 2 L
+N
+594 373.49 608.4 387.89 R
+2 Z
+N
+594 384.3 601.2 380.7 594 377.1 3 L
+N
+565.2 488.69 565.2 495.89 2 L
+0 Z
+N
+625.66 499.2 637.2 495.89 625.66 492.58 625.66 495.89 4 Y
+V
+565.2 495.89 625.66 495.89 2 L
+N
+579.6 445.49 579.6 380.7 2 L
+N
+625.66 456 637.2 452.69 625.66 449.39 625.66 452.69 4 Y
+V
+601.2 452.69 625.66 452.69 2 L
+N
+625.66 441.6 637.2 438.29 625.66 434.99 625.66 438.29 4 Y
+V
+594 438.29 625.66 438.29 2 L
+N
+608.4 474.29 608.4 467.09 2 L
+N
+601.2 467.09 601.2 452.69 2 L
+N
+594 459.89 594 438.29 2 L
+N
+586.8 452.69 586.8 423.89 2 L
+N
+625.66 427.2 637.2 423.89 625.66 420.59 625.66 423.89 4 Y
+V
+586.8 423.89 625.66 423.89 2 L
+N
+625.66 384 637.2 380.7 625.66 377.39 625.66 380.7 4 Y
+V
+608.4 380.7 625.66 380.7 2 L
+N
+582.46 384 594 380.7 582.46 377.39 582.46 380.7 4 Y
+V
+579.6 380.7 582.46 380.7 2 L
+N
+(Fetch) 550.8 448.25 T
+637.2 495.89 694.79 495.89 2 L
+N
+(DCS-) 637.2 497.13 T
+637.2 467.09 694.79 467.09 2 L
+N
+(DMAA) 637.2 468.33 T
+637.2 452.69 694.79 452.69 2 L
+N
+(DADR) 637.2 453.93 T
+637.2 438.29 694.79 438.29 2 L
+N
+(DINC) 637.2 439.54 T
+637.2 423.89 694.79 423.89 2 L
+N
+(DSUM) 637.2 425.14 T
+637.2 380.7 694.79 380.7 2 L
+N
+(DMA_EHLD) 637.2 381.94 T
+637.2 481.11 694.79 481.11 2 L
+N
+(DWR-) 637.2 482.35 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 252 720 720 C
+0 180 792 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "14" 14
+%%Page: "15" 15
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(GSC/Myrinet Card Design Review) 72 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(April 13, 1995) 358.98 226 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 15 of 15) 645.28 226 T
+0 0 0 1 0 0 0 K
+63 243 729 729 18 RR
+1 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 24 Q
+(DMA Glue Logic State Machine) 219.3 704 T
+72 252 720 720 C
+72 264 720 696 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+379.85 612.34 447.35 652.84 R
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+379.85 639.34 413.6 639.34 413.6 652.84 3 L
+N
+0 10 Q
+(Idle) 388.67 645.32 T
+379.85 342.35 447.35 382.85 R
+N
+379.85 369.35 413.6 369.35 413.6 382.85 3 L
+N
+(Error) 385.62 375.33 T
+298.85 409.84 366.35 450.34 R
+N
+298.85 436.84 332.6 436.84 332.6 450.34 3 L
+N
+(W) 301.37 442.83 T
+(rite3) 310.63 442.83 T
+4 F
+(\050W) 300.4 415.83 T
+(ait for Done_L\051) 310.57 415.83 T
+298.85 477.34 366.35 517.84 R
+N
+298.85 504.34 332.6 504.34 332.6 517.84 3 L
+N
+0 F
+(W) 301.37 510.33 T
+(rite2) 310.63 510.33 T
+4 F
+(\050W) 300.17 483.33 T
+(ait for) 310.34 483.33 T
+362.3 492.44 333.13 492.44 2 L
+V
+0.73 H
+0 Z
+N
+(tready_l) 333.13 483.33 T
+(\051) 362.3 483.33 T
+298.85 544.84 366.35 585.34 R
+0.5 H
+2 Z
+N
+298.85 571.84 332.6 571.84 332.6 585.34 3 L
+N
+0 F
+(W) 301.37 577.83 T
+(rite1) 310.63 577.83 T
+4 F
+(\050Output address\051) 301.84 550.83 T
+460.85 274.84 528.35 315.35 R
+N
+460.85 301.85 494.6 301.85 494.6 315.35 3 L
+N
+0 F
+(Read5) 463 307.83 T
+4 F
+(\050W) 470.37 280.83 T
+(ait state 2\051) 480.54 280.83 T
+460.85 342.35 528.35 382.85 R
+N
+460.85 369.35 494.6 369.35 494.6 382.85 3 L
+N
+0 F
+(Read4) 463 375.33 T
+4 F
+(\050W) 470.37 348.33 T
+(ait state 1\051) 480.54 348.33 T
+460.85 544.84 528.35 585.34 R
+N
+460.85 571.84 494.6 571.84 494.6 585.34 3 L
+N
+0 F
+(Read1) 463 577.83 T
+4 F
+(\050Output address\051) 463.84 550.83 T
+460.85 477.34 528.35 517.84 R
+N
+460.85 504.34 494.6 504.34 494.6 517.84 3 L
+N
+0 F
+(Read2) 463 510.33 T
+4 F
+(\050W) 462.17 483.33 T
+(ait for) 472.34 483.33 T
+524.3 492.44 495.13 492.44 2 L
+V
+0.73 H
+0 Z
+N
+(tready_l) 495.13 483.33 T
+(\051) 524.3 483.33 T
+460.85 409.84 528.35 450.34 R
+0.5 H
+2 Z
+N
+460.85 436.84 494.6 436.84 494.6 450.34 3 L
+N
+0 F
+(Read3) 463 442.83 T
+4 F
+(\050W) 466.96 415.83 T
+(ait for Done\051) 477.13 415.83 T
+466.58 594.49 474.35 585.34 462.91 588.99 464.75 591.74 4 Y
+V
+433.85 612.34 464.76 591.74 2 L
+1 H
+N
+336.05 533.31 339.35 544.84 342.66 533.31 339.35 533.31 4 Y
+V
+339.35 517.84 339.35 533.31 2 L
+N
+335.91 461.88 332.6 450.34 329.3 461.88 332.6 461.88 4 Y
+V
+332.6 477.34 332.6 461.88 2 L
+N
+180 270 13.5 13.5 298.85 450.34 A
+285.35 450.34 285.35 551.59 2 L
+N
+286.83 563.03 298.85 565.09 289.75 556.98 288.29 560.01 4 Y
+V
+141.45 180 13.5 13.5 298.85 551.59 A
+180 270 27 27 298.85 450.34 A
+271.85 450.34 271.85 605.59 2 L
+N
+90 180 27 27 298.85 605.59 A
+368.32 635.9 379.85 632.59 368.32 629.28 368.32 632.59 4 Y
+V
+298.85 632.59 368.32 632.59 2 L
+N
+90 180 13.5 13.5 447.35 652.84 A
+0 90 13.5 13.5 447.35 652.84 A
+459.36 641.4 447.35 639.34 456.45 647.46 457.9 644.43 4 Y
+V
+321.45 360 13.5 13.5 447.35 652.84 A
+416.91 664.38 413.6 652.84 410.3 664.38 413.6 664.38 4 Y
+V
+413.6 679.84 413.6 664.38 2 L
+N
+180 270 27 27 298.85 524.59 A
+0 90 47.25 47.25 366.35 443.59 A
+416.91 394.38 413.6 382.85 410.3 394.38 413.6 394.38 4 Y
+V
+413.6 443.59 413.6 394.38 2 L
+N
+90 180 47.25 47.25 460.85 443.59 A
+497.91 529.38 494.6 517.84 491.3 529.38 494.6 529.38 4 Y
+V
+494.6 544.84 494.6 529.38 2 L
+N
+497.91 461.88 494.6 450.34 491.3 461.88 494.6 461.88 4 Y
+V
+494.6 477.34 494.6 461.88 2 L
+N
+497.91 394.38 494.6 382.85 491.3 394.38 494.6 394.38 4 Y
+V
+494.6 409.85 494.6 394.38 2 L
+N
+497.91 326.88 494.6 315.35 491.3 326.88 494.6 326.88 4 Y
+V
+494.6 342.35 494.6 326.88 2 L
+N
+329.16 529.38 325.85 517.84 322.55 529.38 325.85 529.38 4 Y
+V
+325.85 544.84 325.85 529.38 2 L
+N
+0 90 13.5 13.5 528.35 484.09 A
+541.85 484.09 541.85 376.1 2 L
+N
+540.36 364.66 528.34 362.6 537.44 370.71 538.9 367.69 4 Y
+V
+321.45 360 13.5 13.5 528.35 376.1 A
+270 360 27 27 528.35 328.85 A
+270 360 40.5 40.5 528.35 328.85 A
+539.11 559.22 528.34 565.09 540.59 565.82 539.85 562.52 4 Y
+V
+0 64.78 27 27 528.35 538.09 A
+555.35 328.85 555.35 538.09 2 L
+N
+568.85 328.85 568.85 585.34 2 L
+N
+0 90 40.5 40.5 528.35 585.34 A
+458.89 622.53 447.35 625.84 458.89 629.15 458.89 625.84 4 Y
+V
+528.35 625.84 458.89 625.84 2 L
+N
+470.31 673.12 447.35 673.12 2 L
+V
+0.58 H
+0 Z
+N
+4 8 Q
+(DPEND) 447.35 665.83 T
+( + tbg_l) 470.31 665.83 T
+1 H
+2 Z
+90 180 13.5 13.5 366.35 517.84 A
+0 90 13.5 13.5 366.35 517.84 A
+378.36 506.4 366.35 504.35 375.45 512.46 376.91 509.43 4 Y
+V
+321.45 360 13.5 13.5 366.35 517.84 A
+(tready_l + terror_l) 381.06 524.91 T
+90 180 13.5 13.5 366.35 450.34 A
+0 90 13.5 13.5 366.35 450.34 A
+378.36 438.91 366.35 436.85 375.45 444.96 376.91 441.93 4 Y
+V
+321.45 360 13.5 13.5 366.35 450.34 A
+390.33 472.62 367.35 472.62 2 L
+V
+0.58 H
+0 Z
+N
+(Done_L) 367.35 465.33 T
+1 H
+2 Z
+0 90 13.16 13.5 461.19 517.84 A
+90 180 13.17 13.5 461.19 517.84 A
+452.3 512.5 461.18 504.35 449.33 506.55 450.81 509.52 4 Y
+V
+180 218.07 13.17 13.5 461.19 517.84 A
+(tready_l +  terror_l) 435.06 533.91 T
+0 90 13.16 13.5 461.19 450.34 A
+90 180 13.17 13.5 461.19 450.34 A
+452.3 445 461.18 436.85 449.33 439.05 450.81 442.03 4 Y
+V
+180 218.07 13.17 13.5 461.19 450.34 A
+461.6 474.38 445.92 474.38 2 L
+V
+0.58 H
+0 Z
+N
+(Done) 445.92 467.08 T
+(DPEND * DDIR *) 454.1 598.33 T
+519.72 605.62 505.49 605.62 2 L
+V
+N
+(tbg_l) 505.49 598.33 T
+366.24 588.99 354.81 585.34 362.57 594.49 364.41 591.74 4 Y
+V
+395.32 612.34 364.41 591.74 2 L
+1 H
+2 Z
+N
+(DPEND *) 307.49 598.33 T
+352.68 605.62 336.65 605.62 2 L
+V
+0.58 H
+0 Z
+N
+(DDIR) 336.65 598.33 T
+( *) 352.68 598.33 T
+373.1 605.62 358.88 605.62 2 L
+V
+N
+(tbg_l) 358.88 598.33 T
+424.36 686.62 402.85 686.62 2 L
+V
+N
+(treset_l) 402.85 679.33 T
+368.4 541.21 345.06 541.21 2 L
+V
+N
+(tready_l) 345.06 533.91 T
+( * Done_L * DPEND) 368.4 533.91 T
+388.63 500.38 367.85 500.38 2 L
+V
+N
+(terror_l) 367.85 493.08 T
+301.18 475.95 277.84 475.95 2 L
+V
+N
+(tready_l) 277.84 468.66 T
+( *) 301.18 468.66 T
+330.35 475.95 307.38 475.95 2 L
+V
+N
+(Done_L) 307.38 468.66 T
+(Done_L * DPEND) 246.06 443.91 T
+(Done_L *) 246.72 416.08 T
+298.85 423.38 275.89 423.38 2 L
+V
+N
+(DPEND) 275.89 416.08 T
+240.52 497.62 217.18 497.62 2 L
+V
+N
+(tready_l) 217.18 490.33 T
+( * Done_L *) 240.52 490.33 T
+298.85 497.62 275.89 497.62 2 L
+V
+N
+(DPEND) 275.89 490.33 T
+522.63 475.88 497.1 475.88 2 L
+V
+N
+(tready_L) 497.1 468.58 T
+( *) 522.63 468.58 T
+544.51 475.88 528.83 475.88 2 L
+V
+N
+(Done) 528.83 468.58 T
+(Done) 494.6 402.58 T
+552.94 507.38 529.6 507.38 2 L
+V
+N
+(tready_l) 529.6 500.08 T
+( * Done) 552.94 500.08 T
+(DPEND *) 528.47 303.09 T
+571.85 310.38 557.63 310.38 2 L
+V
+N
+(tbg_l) 557.63 303.09 T
+551.31 288.38 528.35 288.38 2 L
+V
+N
+(DPEND) 528.35 281.09 T
+( + tbg_l) 551.31 281.09 T
+458.4 501.45 433.06 501.45 2 L
+V
+N
+0 F
+(terror_l) 433.06 494.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 252 720 720 C
+0 180 792 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "15" 15
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Ascend
+%%Pages: 15
+%%DocumentFonts: Helvetica
+%%+ Helvetica-Bold
+%%+ Helvetica-Narrow-Oblique
+%%+ Helvetica-BoldOblique
+%%+ Helvetica-Narrow
+%%EOF

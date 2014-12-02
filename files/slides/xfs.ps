@@ -1,0 +1,8482 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 612 792 0 1 25 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Courier FMFONTDEFINE
+2 0 /Helvetica FMFONTDEFINE
+3 0 /NewCenturySchlbk-Bold FMFONTDEFINE
+4 0 /Helvetica-Bold FMFONTDEFINE
+5 0 /Times-Roman FMFONTDEFINE
+6 0 /Times-Italic FMFONTDEFINE
+7 1 /Symbol FMFONTDEFINE
+8 0 /Courier-Bold FMFONTDEFINE
+9 0 /NewCenturySchlbk-BoldItalic FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "mini" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+27 -31.64 639 760.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+0 16.15 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a) 93.83 701.48 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Parallel Pr) 104.53 679.95 T
+(ogram) 179.13 679.95 T
+0 0 0 1 0 0 0 K
+0 8.07 Q
+0 0 0 1 0 0 0 K
+(T) 89.05 583.07 T
+(om Anderson, Mike Dahlin, Jeanna Neefe,) 93.69 583.07 T
+(Dave Patterson, Dr) 89.31 569.62 T
+(ew Roselli, Randy W) 155.3 569.62 T
+(ang) 226.62 569.62 T
+1 F
+(xfs@now.cs.berkeley.edu) 108.54 556.16 T
+1 1 0 0 0 0 1 K
+0 0 0 1 0 0 0 K
+0 F
+(Now Retr) 142.47 488.54 T
+(eat) 175.72 488.54 T
+(June 7, 1995) 142.83 475.08 T
+59.36 446.08 269.14 712.25 C
+137.79 499.3 190.71 553.47 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+%%BeginBinary:  4154     
+100 108 44.85 48.44 0 141.82 502.17
+/red <
+00FF3F00FF00E6528FB94FFF00978CCF4D059411704F0000662C8BBA4BFFFE00
+80706050403020FFFFFFFFFFFFFF80706050403020FFFFFFFFFFFFFF80706050
+4030208070605040FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFBFBFBFBFBFBFBFBFBFBFBFBFBFBF00F300FEFEFF8BFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA55555555555555555555
+555555555555000000000000000000000000000000000D18879AB5BE0AC40FF3
+00D0B5ED08C6CEBD8C22B2D2A097B5CDA34B5129259F6F31922A715A78D9B4AF
+FF0000B44574D399FFFFB08FEE6BFAB2307368FF00B04670AD19FF00FFC000FF
+> store
+/green <
+00FF3FFFFE00E6277F7DCF9B3F7C8CAF2000792A7F4F510B972C8BBA4B0000FE
+80706050403020FFFFFFFFFFFFFFFFFFFFFFFFFFFF8070605040302080706050
+403020FFFFFFFFFFFFFFFFBFFFFFFFBFBFBFBFBF7F7F7F7F7F3F3F3F3F3F0000
+00FFFFFFFFFFBFBFBFBFBF7F7F7F7F00FA00FE00FE99FFFFFFFFAAAAAAAA5555
+555500000000FFFFFFFFAAAAAAAA5555555500000000FFFFFFFFAAAAAAAA5555
+555500000000FFFFFFFFAAAAAAAA555555550000000009108496B2DF0A300F77
+3DA021D008E7EFDE8C8B22B42096C0E1B15151252487761F9E217F5370D9EEEE
+00FFFFB44574D368F4AEB080D586FFDF507383C064308280D819FF0000C000FF
+> store
+/blue <
+01FE3EFE00FE8F196F4B9FFF34748CAF11007048914F4600902C8BBA4BFE0000
+8070605040302080706050403020FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFF8070605040BF7F3FFFBF7F3FFFBF7F3F00FFBF7F3F00FFBF7F3F00BF7F
+3FFFBF7F3F00FFBF7F3F00FFBF7F3FFEF5FEFE00FEB5FFAA5500FFAA5500FFAA
+5500FFAA5500FFAA5500FFAA5500FFAA5500FFAA5500FFAA5500FFAA5500FFAA
+5500FFAA5500FFAA5500FFAA5500FFAA5500FFAA550049A584E5B2F70A610F3E
+759F524E08F7F7F78C22228CF0A0D1F9D7B18C6F4A62A0B3D38BCA576BD9B4EE
+FFFF00B44574D36FFFB9B06EB78FFFEE50738BCB0060B490E67000FF00C000FF
+> store
+ BEGINBITMAPCOLORc
+z
+P(74
+J'
+O$737373737373J(
+O#73717171717171J#<"
+O"717173J"
+O!73J$
+M737371J$
+L737171J#9#<"
+K7371737374J";"<"
+J737473J";(
+K7174737373737374J&
+O$7474747474J#;"
+I737173
+J"
+H73J"
+I71
+J#
+O"7173J#=$
+H7473717373
+J#
+O$7171J#
+I7473
+
+J"
+O&73J#
+J7473J#
+O&7173
+J"
+K74:z?z
+I73L73:z>z
+I71L71:"J#
+73OM7374J"
+P$74:#:z?z:"
+7473E73C7373;#:z@z:#
+7473C74B747374@#J#8#
+7173O?73717374<#9"J"J#8#
+747371L73?73717374="J#
+74F7473>"9"J"9"
+7373O=7174J"9"
+OI7373>#8$J">#J#8#
+7473717173@747173<73717374?#J"
+7473E73@#8#J#8#
+74737173O773717374J#
+O*7374A"9"J#J#8#
+7471@7473B71717474B"9"
+7373F#J"9"
+7173O37373B#
+7473C#8#J):"J(
+747371739737373737474737374873717171737474D#8#J&
+7473717387171717173I"J"J#8#
+71773D73717374E"J#;$9"
+74:737173717173F"9"J#:'I#8#
+7373;717173747373737373717374F#8#J"?(
+7473717357373747371717171J"?%:"G#8#
+J74737473717373717374G#8#J&
+74737173;7373747371H#8#I,J(
+747371737473737373747474747371673717171737474I"9"E*
+7471737373737374747474J)J"9"
+E7373717171717173?7174J"9"A$;%B"
+473737371717173737374J#8#=%>*9$E"9"
+474737173737371717171717171737374737373747373J#8#;$E#;$D#8#
+574737173737171717171737373717374J"I$9$B#8#
+@7173747371717373717374J#8#8#@$E%
+674737173737373737371737373J"9&>%G';#8#
+77471737171717474747471717171717373717374J"9"@"J%8"
+8737173:7173737371J#D#A&:"
+F73747473717171737374J#A#F"D#:&
+8747373747471717373737373J#<%8$9$Gs$
+D73747474747373737474747371737373J#@"@&<#J&
+87371747473737474747387171717373J"@"B#@"J$
+87173747473:717173J"@#J$J$
+77373747747473;717373J#?#J'J$
+673717374:7474747473737717173J#J$J#
+57371J74737387173J#J":$I$
+47371L74737373717373J"J#8+D#
+471M7371737474747373737373737171I"?#8#J#8#9u
+7373737173>7371737474H#@#8#J'<"
+737174737173O"73737373737373G#?#J#8#D):"
+73717374B73717374747474747474737371:&=#@"8"9"J"9"J#;"
+73737373737371747471<717457474739(<"?#:"9"J"9"J#
+737171717171737173747373:7373874738#A"?#?#J#9#
+73717373747173O(73717173?":#>#<#J#8#J#
+71737173747473<7371737477371@"8#>#>#8#J#8#
+737371737474737173673717374@%=$@#8#J#8#J#
+7173717173747474737173473717374873718#=">#G"J#
+747371737471O+73749#D#D"J"9"J"
+747373747487174?73:#@%F"9"J"J"
+7473737373747373673A74;/G#8#F#8#J$8#
+74747474747373737373747474747473717373717374:7474737374@&J%
+7474747474O?74737374J#8#D#8#J#
+E7473717373717374>7474J#
+O.7374J#8#B#8"
+F74747171737174J"
+O*71J"9"@"9"
+H73737373J#
+O,7374J#8#>&
+H747371737371717374J#8#<#
+I747371737371J#8#:#8#
+J7473717373717374J"
+O*74J"9"8$8"
+K747173737173J"9"<"
+L737374J#9$8"
+L747373717173J#9#
+O"71717374J#;#
+M74737374J"
+O&74J#8#
+O 74737373J&
+O!7473737474
+ENDBITMAP
+%%EndBinary
+59.36 446.08 269.14 712.25 C
+27 -31.64 639 760.36 C
+301.5 -31.64 913.5 760.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+321.77 453.57 556.97 713.09 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+324.56 439.14 556.97 447.21 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 324.56 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(1 of 25) 430.73 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 524.86 444.22 T
+(ang) 543.14 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Outline) 414.63 698.73 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 675.26 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 10.76 Q
+(Intr) 338.1 675.26 T
+(oduction) 356.44 675.26 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+5 9.87 Q
+(- Previous approaches to \336le system parallelism) 338.29 661.51 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+(- xFS overview) 338.29 648.05 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+(\245) 331.93 631.3 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Design) 338.1 631.3 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 614.26 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Results) 338.1 614.26 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 597.22 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Conclusion) 338.1 597.22 T
+325.58 456.42 552.98 707.1 C
+349.57 456.42 528.98 539.74 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+351.37 458.53 526.74 537.02 R
+7 X
+0 0 0 1 0 0 0 K
+V
+5 8.97 Q
+0 X
+0.98 (There is nothing more dif) 351.37 531.04 P
+0.98 (\336cult to take in hand,) 446.82 531.04 P
+0 (more perilous to conduct or more uncertain in its) 351.37 521.18 P
+0.68 (success than to take the lead in the introduction) 351.37 511.31 P
+(of a new order of things.) 351.37 501.44 T
+(- Niccolo Machiavelli,) 389.51 486.19 T
+(\322The Prince\323 1532) 393.98 476.33 T
+J
+J
+325.58 456.42 552.98 707.1 C
+301.5 -31.64 913.5 760.36 C
+27 -396.14 639 395.86 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+47.27 89.07 282.47 348.59 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+50.06 74.64 282.47 82.71 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 50.06 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(2 of 25) 156.23 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 250.36 79.72 T
+(ang) 268.64 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(The File System as a) 98.15 334.23 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Parallel Program) 108.2 320.78 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 297.3 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Parallel program:) 63.6 297.3 T
+5 9.87 Q
+(- a collection of processing elements, that) 63.79 283.55 T
+(- cooperate and communicate,) 63.79 270.09 T
+(- to solve lar) 63.79 256.64 T
+(ge problems fast) 113.22 256.64 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 239.89 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Distributed \336le system:) 63.6 239.89 T
+5 9.87 Q
+(- many CPU\325) 63.79 226.14 T
+(s, many memories, many disks) 115.87 226.14 T
+(- lar) 63.79 212.68 T
+(ge amount of data, computation) 79.78 212.68 T
+(- complex coordination) 63.79 199.23 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 182.48 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(File system is a parallel program,) 63.6 182.48 T
+(Parallel programs will be like xFS) 63.6 170.82 T
+301.5 -396.14 913.5 395.86 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+321.77 89.07 556.97 348.59 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+324.56 74.64 556.97 82.71 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 324.56 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(3 of 25) 430.73 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 524.86 79.72 T
+(ang) 543.14 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Parallel Programming vs.) 355.67 334.23 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Client/Server Computing) 357.58 320.78 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 297.3 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Dif) 338.1 297.3 T
+(ferent style of division of labor) 352.26 297.3 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 280.26 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Dif) 338.1 280.26 T
+(ferent degree of) 352.26 280.26 T
+5 9.87 Q
+(- Parallelism) 338.29 266.51 T
+(- T) 338.29 253.05 T
+(rust) 349.73 253.05 T
+(- Sharing) 338.29 239.59 T
+(- Cooperation) 338.29 226.14 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 209.39 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Dif) 338.1 209.39 T
+(ferent availability/fault tolerance requirements) 352.26 209.39 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 192.35 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Dif) 338.1 192.35 T
+(ferent performance) 352.26 192.35 T
+FMENDPAGE
+%%EndPage: "mini" 1
+%%Page: "mini" 2
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+27 -31.64 639 760.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+47.27 453.57 282.47 713.09 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+50.06 439.14 282.47 447.21 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 50.06 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(4 of 25) 156.23 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 250.36 444.22 T
+(ang) 268.64 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Previous Approaches to) 86.98 698.73 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(File System Parallelism) 87.57 685.28 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 667.63 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Ad hoc approaches) 63.6 667.63 T
+5 9.87 Q
+(- Static \336le system partitioning \050AFS, NFS,...\051) 63.79 653.88 T
+6 F
+(too coarse grain, hot spots) 68.88 643.12 T
+5 F
+(- \322Functional multiprocessing\323 \050Auspex\051) 63.79 629.66 T
+(\322Symmetric multiprocessing\323 \050SparcCenter 2000\051) 68.88 618.9 T
+6 F
+(expensive, limited scale) 68.88 608.13 T
+5 F
+(- Parallel disks \050RAID, Zebra\051) 63.79 594.68 T
+6 F
+(other sequential bottlenecks) 68.88 583.91 T
+5 F
+(- MPP parallel \336le systems \050CFS\051) 63.79 570.46 T
+6 F
+(not suitable for conventional workload,) 68.88 559.69 T
+(poor err) 68.88 548.93 T
+(or r) 101.68 548.93 T
+(ecovery) 116.39 548.93 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 532.18 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(The entire system needs to be parallel) 63.6 532.18 T
+301.5 -31.64 913.5 760.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+321.77 453.57 556.97 713.09 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+324.56 439.14 556.97 447.21 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 324.56 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(5 of 25) 430.73 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 524.86 444.22 T
+(ang) 543.14 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(xFS Approaches) 386.31 698.73 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 675.26 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Parallel metadata management) 338.1 675.26 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 658.21 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Parallel stable storage) 338.1 658.21 T
+5 9.87 Q
+(- Stripe groups) 338.29 644.46 T
+(- Parallel parity) 338.29 631.01 T
+(- Parallel cleaner) 338.29 617.55 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 600.8 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Parallel memory management) 338.1 600.8 T
+5 9.87 Q
+(- Cooperative caching) 338.29 587.05 T
+(- Parallel data structures) 338.29 573.6 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 556.85 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Parallel program style communication) 338.1 556.85 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 539.81 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Self-tuning) 338.1 539.81 T
+5 9.87 Q
+(- Stayed tuned \050pun intended\051) 338.29 526.05 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 509.31 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Parallel I/O support) 338.1 509.31 T
+27 -396.14 639 395.86 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+47.27 89.07 282.47 348.59 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+50.06 74.64 282.47 82.71 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 50.06 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(6 of 25) 156.23 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 250.36 79.72 T
+(ang) 268.64 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(xFS Overview) 119.14 334.23 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Each step involves a parallel service) 51.08 128.42 T
+51.08 91.92 278.48 342.6 C
+54.22 142.78 275.34 330.05 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+56.16 144.64 272.79 327.77 R
+1.35 H
+2 Z
+0 X
+1 0 0 0 0 1 1 K
+N
+0 0 0 1 0 0 0 K
+175.16 278.99 204.97 315.88 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0.22 H
+0 Z
+0 X
+N
+0 1 1 0 1 0 0 K
+175.16 304.17 204.97 312.18 R
+4 X
+0 1 1 0 1 0 0 K
+V
+0 X
+N
+0 0 0 1 0 0 0 K
+0 8.07 Q
+0 0 0 1 0 0 0 K
+(bar) 183.68 305.66 T
+5 F
+(disk) 178.67 264.27 T
+(cache) 214.93 264.27 T
+(location) 172.39 256.79 T
+(locations) 209.55 256.79 T
+0 F
+(foo) 146.42 246.57 T
+(bar) 146.42 237.95 T
+132.15 304.73 142.59 309.1 120.35 310.19 104.29 305.82 4 Y
+6 X
+V
+0.01 H
+0 X
+N
+104.29 305.82 132.15 304.73 132.15 283.99 104.29 286.18 104.29 287.75 104.54 287.96 104.54 288.34
+ 104.29 288.36 104.29 303.58 104.54 303.73 104.54 304.13 104.29 304.13 12 Y
+6 X
+V
+0 X
+N
+132.15 304.73 142.59 309.1 142.59 293.82 132.15 283.99 4 Y
+6 X
+V
+0 X
+N
+104.29 304.13 132.15 302.79 142.59 307.64 3 L
+2 Z
+N
+104.29 303.58 132.15 302.12 142.59 307.1 3 L
+N
+104.29 296.73 132.15 295.15 132.15 294.55 131.82 294.22 104.52 295.84 104.29 296.2 6 Y
+0 Z
+N
+104.29 296.2 132.15 294.55 2 L
+2 Z
+N
+130.89 295.23 130.89 294.62 120.25 295.25 120.25 295.82 4 Y
+V
+0 Z
+N
+105.23 302.43 130.89 301.01 2 L
+V
+2 Z
+N
+105.23 301.22 130.89 299.75 2 L
+V
+N
+105.23 300 130.89 298.49 2 L
+V
+N
+105.23 298.79 130.89 297.22 2 L
+V
+N
+105.23 297.58 130.89 295.96 2 L
+V
+N
+130.89 302.87 130.89 302.27 129.53 302.35 129.53 302.92 4 Y
+3 X
+V
+0 Z
+0 X
+N
+1 0 1 0 0 1 0 K
+130.89 286.27 130.89 285.8 129.28 285.92 129.28 286.4 4 Y
+4 X
+1 0 1 0 0 1 0 K
+V
+0 X
+N
+0 0 0 1 0 0 0 K
+104.29 288.36 132.15 286.18 142.59 295.76 3 L
+2 Z
+0 0 0 1 0 0 0 K
+N
+90 450 0.13 0.16 131.44 294.95 G
+107.85 288.08 108.19 288.05 108.19 287.45 107.85 287.47 4 Y
+6 X
+V
+0 Z
+0 X
+N
+105.87 288.25 105.87 287.63 107.75 287.48 107.75 288.09 4 Y
+6 X
+V
+0 X
+N
+108.19 288.05 108.33 288.04 108.33 287.53 108.19 287.45 4 Y
+4 X
+V
+0 X
+N
+107.75 288.09 107.85 288.08 107.85 287.47 107.75 287.48 4 Y
+4 X
+V
+0 X
+N
+121.89 310.11 110.35 306.88 2 L
+4 X
+V
+2 Z
+0 X
+N
+122.65 310.07 111.16 306.84 2 L
+4 X
+V
+0 X
+N
+123.34 310.03 111.97 306.81 2 L
+4 X
+V
+0 X
+N
+124.04 310.03 112.78 306.78 2 L
+4 X
+V
+0 X
+N
+124.73 309.99 113.58 306.74 2 L
+4 X
+V
+0 X
+N
+125.42 309.95 114.39 306.71 2 L
+4 X
+V
+0 X
+N
+126.11 309.91 115.2 306.68 2 L
+4 X
+V
+0 X
+N
+126.81 309.87 116 306.64 2 L
+4 X
+V
+0 X
+N
+127.5 309.83 116.81 306.61 2 L
+4 X
+V
+0 X
+N
+128.19 309.81 117.62 306.58 2 L
+4 X
+V
+0 X
+N
+128.92 309.79 118.42 306.55 2 L
+4 X
+V
+0 X
+N
+129.57 309.7 119.23 306.51 2 L
+4 X
+V
+0 X
+N
+130.27 309.67 120.04 306.48 2 L
+4 X
+V
+0 X
+N
+130.96 309.67 120.85 306.45 2 L
+4 X
+V
+0 X
+N
+131.65 309.62 121.65 306.41 2 L
+4 X
+V
+0 X
+N
+132.34 309.58 122.46 306.38 2 L
+4 X
+V
+0 X
+N
+133.04 309.58 123.27 306.35 2 L
+4 X
+V
+0 X
+N
+133.73 309.5 124.07 306.32 2 L
+4 X
+V
+0 X
+N
+134.42 309.52 124.88 306.28 2 L
+4 X
+V
+0 X
+N
+135.11 309.46 125.69 306.25 2 L
+4 X
+V
+0 X
+N
+135.79 309.43 126.49 306.22 2 L
+4 X
+V
+0 X
+N
+136.5 309.4 127.3 306.18 2 L
+4 X
+V
+0 X
+N
+137.19 309.4 128.11 306.15 2 L
+4 X
+V
+0 X
+N
+137.88 309.34 128.91 306.12 2 L
+4 X
+V
+0 X
+N
+138.62 309.29 129.72 306.08 2 L
+4 X
+V
+0 X
+N
+139.27 309.28 130.53 306.05 2 L
+4 X
+V
+0 X
+N
+139.96 309.18 131.34 306.02 2 L
+4 X
+V
+0 X
+N
+140.65 309.2 132.15 305.99 2 L
+4 X
+V
+0 X
+N
+104.29 287.75 132.15 285.57 142.59 295.15 3 L
+N
+0 Z
+90 450 0.11 0.13 106.78 287.86 A
+108.59 288.02 108.94 288 108.94 287.38 108.59 287.41 4 Y
+6 X
+V
+0 X
+N
+111.02 287.83 111.36 287.8 111.36 287.2 111.02 287.22 4 Y
+6 X
+V
+0 X
+N
+109.04 288 109.04 287.37 110.92 287.23 110.92 287.83 4 Y
+6 X
+V
+0 X
+N
+111.36 287.8 111.5 287.79 111.5 287.28 111.36 287.19 4 Y
+4 X
+V
+0 X
+N
+110.92 287.83 111.02 287.83 111.02 287.22 110.92 287.23 4 Y
+4 X
+V
+0 X
+N
+108.94 288 109.04 288 109.04 287.41 108.94 287.38 4 Y
+4 X
+V
+0 X
+N
+90 450 0.11 0.13 109.95 287.61 A
+0 1 1 0 1 0 0 K
+105.08 291.12 M
+ 105.02 291.24 105.02 291.24 104.95 291.25 D
+ 104.88 291.27 104.81 291.26 104.75 291.21 D
+ 104.67 291.17 104.67 291.17 104.59 291.19 D
+ 104.51 291.21 104.51 291.21 104.45 291.2 D
+ 104.37 291.19 104.31 291.1 104.29 291 D
+ 104.24 290.86 104.29 290.69 104.36 290.56 D
+ 104.42 290.46 104.46 290.3 104.58 290.29 D
+ 104.67 290.23 104.76 290.34 104.86 290.3 D
+ 104.92 290.29 104.92 290.29 104.97 290.3 D
+ 105.1 290.33 105.14 290.53 105.17 290.66 D
+0 1 1 0 1 0 0 K
+N
+105.1 291.04 M
+ 104.95 290.94 104.99 290.61 105.2 290.58 D
+N
+104.76 291.21 M
+ 104.76 291.21 104.76 291.21 104.76 291.21 D
+ 104.75 291.36 104.84 291.47 104.94 291.48 D
+ 104.94 291.48 104.94 291.48 104.94 291.48 D
+ 104.95 291.32 104.89 291.23 104.76 291.21 D
+O
+N
+0 0 0 1 0 0 0 K
+105.42 288.27 105.76 288.25 105.76 287.63 105.42 287.66 4 Y
+6 X
+0 0 0 1 0 0 0 K
+V
+0 X
+N
+105.76 288.25 105.87 288.25 105.87 287.67 105.76 287.63 4 Y
+4 X
+V
+0 X
+N
+0.22 H
+90 450 24.4 2.76 190.07 223.01 A
+90 450 24.4 2.76 190.07 208.56 A
+214.47 223.01 214.47 208.56 2 L
+2 Z
+N
+165.67 223.01 165.67 208.56 2 L
+N
+133.35 175.81 143.8 180.17 121.55 181.27 105.5 176.9 4 Y
+6 X
+V
+0.01 H
+0 Z
+0 X
+N
+105.5 176.9 133.35 175.81 133.35 155.07 105.5 157.25 105.5 158.83 105.74 159.04 105.74 159.41
+ 105.5 159.43 105.5 174.66 105.74 174.81 105.74 175.2 105.5 175.2 12 Y
+6 X
+V
+0 X
+N
+133.35 175.81 143.8 180.17 143.8 164.89 133.35 155.07 4 Y
+6 X
+V
+0 X
+N
+105.5 175.2 133.35 173.87 143.8 178.72 3 L
+2 Z
+N
+105.5 174.66 133.35 173.2 143.8 178.17 3 L
+N
+105.5 167.8 133.35 166.23 133.35 165.62 133.02 165.3 105.72 166.91 105.5 167.28 6 Y
+0 Z
+N
+105.5 167.28 133.35 165.62 2 L
+2 Z
+N
+132.09 166.31 132.09 165.7 121.45 166.33 121.45 166.9 4 Y
+V
+0 Z
+N
+106.43 173.5 132.09 172.09 2 L
+V
+2 Z
+N
+106.43 172.29 132.09 170.83 2 L
+V
+N
+106.43 171.08 132.09 169.56 2 L
+V
+N
+106.43 169.86 132.09 168.3 2 L
+V
+N
+106.43 168.65 132.09 167.03 2 L
+V
+N
+132.09 173.95 132.09 173.34 130.74 173.42 130.74 173.99 4 Y
+3 X
+V
+0 Z
+0 X
+N
+1 0 1 0 0 1 0 K
+132.09 157.35 132.09 156.88 130.48 157 130.48 157.48 4 Y
+4 X
+1 0 1 0 0 1 0 K
+V
+0 X
+N
+0 0 0 1 0 0 0 K
+105.5 159.43 133.35 157.25 143.8 166.83 3 L
+2 Z
+0 0 0 1 0 0 0 K
+N
+90 450 0.13 0.16 132.64 166.02 G
+109.05 159.16 109.39 159.13 109.39 158.53 109.05 158.55 4 Y
+6 X
+V
+0 Z
+0 X
+N
+107.07 159.33 107.07 158.7 108.95 158.56 108.95 159.16 4 Y
+6 X
+V
+0 X
+N
+109.39 159.13 109.53 159.12 109.53 158.61 109.39 158.52 4 Y
+4 X
+V
+0 X
+N
+108.95 159.16 109.05 159.16 109.05 158.55 108.95 158.56 4 Y
+4 X
+V
+0 X
+N
+123.1 181.19 111.56 177.95 2 L
+4 X
+V
+2 Z
+0 X
+N
+123.85 181.15 112.36 177.92 2 L
+4 X
+V
+0 X
+N
+124.55 181.1 113.17 177.89 2 L
+4 X
+V
+0 X
+N
+125.24 181.1 113.98 177.85 2 L
+4 X
+V
+0 X
+N
+125.93 181.06 114.79 177.82 2 L
+4 X
+V
+0 X
+N
+126.62 181.02 115.59 177.79 2 L
+4 X
+V
+0 X
+N
+127.32 180.98 116.4 177.75 2 L
+4 X
+V
+0 X
+N
+128.01 180.94 117.21 177.72 2 L
+4 X
+V
+0 X
+N
+128.7 180.9 118.01 177.69 2 L
+4 X
+V
+0 X
+N
+129.39 180.88 118.82 177.66 2 L
+4 X
+V
+0 X
+N
+130.12 180.86 119.63 177.62 2 L
+4 X
+V
+0 X
+N
+130.78 180.78 120.43 177.59 2 L
+4 X
+V
+0 X
+N
+131.47 180.74 121.24 177.56 2 L
+4 X
+V
+0 X
+N
+132.16 180.74 122.05 177.52 2 L
+4 X
+V
+0 X
+N
+132.85 180.7 122.86 177.49 2 L
+4 X
+V
+0 X
+N
+133.55 180.66 123.66 177.46 2 L
+4 X
+V
+0 X
+N
+134.24 180.66 124.47 177.42 2 L
+4 X
+V
+0 X
+N
+134.93 180.58 125.28 177.39 2 L
+4 X
+V
+0 X
+N
+135.62 180.6 126.08 177.36 2 L
+4 X
+V
+0 X
+N
+136.32 180.54 126.89 177.33 2 L
+4 X
+V
+0 X
+N
+136.99 180.51 127.7 177.29 2 L
+4 X
+V
+0 X
+N
+137.7 180.48 128.5 177.26 2 L
+4 X
+V
+0 X
+N
+138.39 180.48 129.31 177.23 2 L
+4 X
+V
+0 X
+N
+139.09 180.42 130.12 177.19 2 L
+4 X
+V
+0 X
+N
+139.83 180.37 130.92 177.16 2 L
+4 X
+V
+0 X
+N
+140.47 180.36 131.73 177.13 2 L
+4 X
+V
+0 X
+N
+141.16 180.26 132.54 177.09 2 L
+4 X
+V
+0 X
+N
+141.86 180.27 133.35 177.06 2 L
+4 X
+V
+0 X
+N
+105.5 158.83 133.35 156.64 143.8 166.23 3 L
+N
+0 Z
+90 450 0.11 0.13 107.98 158.94 A
+109.8 159.09 110.14 159.07 110.14 158.45 109.8 158.48 4 Y
+6 X
+V
+0 X
+N
+112.22 158.9 112.57 158.87 112.57 158.27 112.22 158.29 4 Y
+6 X
+V
+0 X
+N
+110.25 159.07 110.25 158.45 112.12 158.3 112.12 158.91 4 Y
+6 X
+V
+0 X
+N
+112.57 158.87 112.71 158.86 112.71 158.35 112.57 158.27 4 Y
+4 X
+V
+0 X
+N
+112.12 158.91 112.22 158.9 112.22 158.29 112.12 158.3 4 Y
+4 X
+V
+0 X
+N
+110.14 159.07 110.25 159.07 110.25 158.49 110.14 158.45 4 Y
+4 X
+V
+0 X
+N
+90 450 0.11 0.13 111.15 158.68 A
+0 1 1 0 1 0 0 K
+107.11 162.25 M
+ 107.06 162.37 107.06 162.37 106.99 162.38 D
+ 106.92 162.4 106.84 162.39 106.78 162.34 D
+ 106.71 162.29 106.71 162.29 106.63 162.32 D
+ 106.55 162.34 106.55 162.34 106.49 162.32 D
+ 106.4 162.32 106.34 162.22 106.32 162.12 D
+ 106.28 161.98 106.32 161.81 106.39 161.69 D
+ 106.45 161.59 106.5 161.43 106.61 161.41 D
+ 106.71 161.35 106.8 161.47 106.89 161.43 D
+ 106.96 161.42 106.96 161.42 107.01 161.42 D
+ 107.13 161.46 107.17 161.65 107.21 161.78 D
+0 1 1 0 1 0 0 K
+N
+107.14 162.17 M
+ 106.98 162.07 107.02 161.74 107.23 161.7 D
+N
+106.8 162.33 M
+ 106.8 162.33 106.8 162.33 106.8 162.33 D
+ 106.78 162.48 106.87 162.6 106.98 162.61 D
+ 106.98 162.61 106.98 162.61 106.98 162.61 D
+ 106.99 162.45 106.92 162.36 106.8 162.33 D
+O
+N
+0 0 0 1 0 0 0 K
+106.62 159.35 106.97 159.33 106.97 158.71 106.62 158.74 4 Y
+6 X
+0 0 0 1 0 0 0 K
+V
+0 X
+N
+106.97 159.33 107.07 159.33 107.07 158.74 106.97 158.71 4 Y
+4 X
+V
+0 X
+N
+132.75 260.42 143.19 264.79 120.95 265.88 104.9 261.51 4 Y
+6 X
+V
+0 X
+N
+104.9 261.51 132.75 260.42 132.75 239.68 104.9 241.86 104.9 243.44 105.14 243.65 105.14 244.03
+ 104.9 244.05 104.9 259.27 105.14 259.42 105.14 259.82 104.9 259.82 12 Y
+6 X
+V
+0 X
+N
+132.75 260.42 143.19 264.79 143.19 249.51 132.75 239.68 4 Y
+6 X
+V
+0 X
+N
+104.9 259.82 132.75 258.48 143.19 263.33 3 L
+2 Z
+N
+104.9 259.27 132.75 257.82 143.19 262.79 3 L
+N
+104.9 252.42 132.75 250.84 132.75 250.23 132.42 249.91 105.12 251.53 104.9 251.89 6 Y
+0 Z
+N
+104.9 251.89 132.75 250.23 2 L
+2 Z
+N
+131.49 250.92 131.49 250.32 120.85 250.94 120.85 251.51 4 Y
+V
+0 Z
+N
+105.83 258.12 131.49 256.7 2 L
+V
+2 Z
+N
+105.83 256.91 131.49 255.44 2 L
+V
+N
+105.83 255.69 131.49 254.18 2 L
+V
+N
+105.83 254.48 131.49 252.91 2 L
+V
+N
+105.83 253.27 131.49 251.65 2 L
+V
+N
+131.49 258.56 131.49 257.96 130.13 258.04 130.13 258.61 4 Y
+3 X
+V
+0 Z
+0 X
+N
+1 0 1 0 0 1 0 K
+131.49 241.96 131.49 241.49 129.88 241.61 129.88 242.09 4 Y
+4 X
+1 0 1 0 0 1 0 K
+V
+0 X
+N
+0 0 0 1 0 0 0 K
+104.9 244.05 132.75 241.86 143.19 251.45 3 L
+2 Z
+0 0 0 1 0 0 0 K
+N
+90 450 0.13 0.16 132.04 250.64 G
+108.45 243.77 108.79 243.74 108.79 243.14 108.45 243.16 4 Y
+6 X
+V
+0 Z
+0 X
+N
+106.47 243.94 106.47 243.32 108.35 243.17 108.35 243.78 4 Y
+6 X
+V
+0 X
+N
+108.79 243.74 108.93 243.73 108.93 243.22 108.79 243.14 4 Y
+4 X
+V
+0 X
+N
+108.35 243.78 108.45 243.77 108.45 243.16 108.35 243.17 4 Y
+4 X
+V
+0 X
+N
+122.5 265.8 110.96 262.57 2 L
+4 X
+V
+2 Z
+0 X
+N
+123.25 265.76 111.76 262.53 2 L
+4 X
+V
+0 X
+N
+123.94 265.72 112.57 262.5 2 L
+4 X
+V
+0 X
+N
+124.64 265.72 113.38 262.47 2 L
+4 X
+V
+0 X
+N
+125.33 265.68 114.18 262.43 2 L
+4 X
+V
+0 X
+N
+126.02 265.64 114.99 262.4 2 L
+4 X
+V
+0 X
+N
+126.71 265.6 115.8 262.37 2 L
+4 X
+V
+0 X
+N
+127.41 265.56 116.61 262.33 2 L
+4 X
+V
+0 X
+N
+128.1 265.52 117.41 262.3 2 L
+4 X
+V
+0 X
+N
+128.79 265.49 118.22 262.27 2 L
+4 X
+V
+0 X
+N
+129.52 265.48 119.03 262.24 2 L
+4 X
+V
+0 X
+N
+130.18 265.4 119.83 262.2 2 L
+4 X
+V
+0 X
+N
+130.87 265.35 120.64 262.17 2 L
+4 X
+V
+0 X
+N
+131.56 265.35 121.45 262.14 2 L
+4 X
+V
+0 X
+N
+132.25 265.31 122.25 262.1 2 L
+4 X
+V
+0 X
+N
+132.95 265.27 123.06 262.07 2 L
+4 X
+V
+0 X
+N
+133.64 265.27 123.87 262.04 2 L
+4 X
+V
+0 X
+N
+134.33 265.19 124.67 262.01 2 L
+4 X
+V
+0 X
+N
+135.02 265.21 125.48 261.97 2 L
+4 X
+V
+0 X
+N
+135.71 265.15 126.29 261.94 2 L
+4 X
+V
+0 X
+N
+136.39 265.12 127.1 261.91 2 L
+4 X
+V
+0 X
+N
+137.1 265.09 127.9 261.87 2 L
+4 X
+V
+0 X
+N
+137.79 265.09 128.71 261.84 2 L
+4 X
+V
+0 X
+N
+138.49 265.03 129.52 261.81 2 L
+4 X
+V
+0 X
+N
+139.23 264.98 130.32 261.77 2 L
+4 X
+V
+0 X
+N
+139.87 264.97 131.13 261.74 2 L
+4 X
+V
+0 X
+N
+140.56 264.87 131.94 261.71 2 L
+4 X
+V
+0 X
+N
+141.26 264.88 132.75 261.68 2 L
+4 X
+V
+0 X
+N
+104.9 243.44 132.75 241.26 143.19 250.84 3 L
+N
+0 Z
+90 450 0.11 0.13 107.38 243.55 A
+109.2 243.71 109.54 243.69 109.54 243.07 109.2 243.1 4 Y
+6 X
+V
+0 X
+N
+111.62 243.52 111.96 243.49 111.96 242.88 111.62 242.91 4 Y
+6 X
+V
+0 X
+N
+109.64 243.69 109.64 243.06 111.52 242.92 111.52 243.52 4 Y
+6 X
+V
+0 X
+N
+111.96 243.49 112.1 243.48 112.1 242.97 111.96 242.88 4 Y
+4 X
+V
+0 X
+N
+111.52 243.52 111.62 243.52 111.62 242.91 111.52 242.92 4 Y
+4 X
+V
+0 X
+N
+109.54 243.69 109.64 243.69 109.64 243.1 109.54 243.07 4 Y
+4 X
+V
+0 X
+N
+90 450 0.11 0.13 110.55 243.3 A
+0 1 1 0 1 0 0 K
+105.96 246.83 M
+ 105.91 246.95 105.91 246.95 105.84 246.96 D
+ 105.77 246.98 105.69 246.97 105.63 246.92 D
+ 105.56 246.87 105.56 246.87 105.48 246.9 D
+ 105.4 246.92 105.4 246.92 105.34 246.91 D
+ 105.26 246.9 105.19 246.8 105.18 246.71 D
+ 105.13 246.57 105.18 246.4 105.25 246.27 D
+ 105.3 246.17 105.35 246.01 105.46 245.99 D
+ 105.56 245.93 105.65 246.05 105.75 246.01 D
+ 105.81 246 105.81 246 105.86 246.01 D
+ 105.99 246.04 106.02 246.24 106.06 246.36 D
+0 1 1 0 1 0 0 K
+N
+105.99 246.75 M
+ 105.84 246.65 105.88 246.32 106.08 246.28 D
+N
+105.65 246.91 M
+ 105.65 246.91 105.65 246.91 105.65 246.91 D
+ 105.64 247.06 105.72 247.18 105.83 247.19 D
+ 105.83 247.19 105.83 247.19 105.83 247.19 D
+ 105.84 247.03 105.77 246.94 105.65 246.91 D
+O
+N
+0 0 0 1 0 0 0 K
+106.02 243.96 106.37 243.94 106.37 243.32 106.02 243.35 4 Y
+6 X
+0 0 0 1 0 0 0 K
+V
+0 X
+N
+106.37 243.94 106.47 243.94 106.47 243.36 106.37 243.32 4 Y
+4 X
+V
+0 X
+N
+132.75 219.46 143.19 223.83 120.95 224.92 104.9 220.55 4 Y
+6 X
+V
+0 X
+N
+104.9 220.55 132.75 219.46 132.75 198.72 104.9 200.9 104.9 202.48 105.14 202.69 105.14 203.07
+ 104.9 203.09 104.9 218.31 105.14 218.46 105.14 218.85 104.9 218.85 12 Y
+6 X
+V
+0 X
+N
+132.75 219.46 143.19 223.83 143.19 208.54 132.75 198.72 4 Y
+6 X
+V
+0 X
+N
+104.9 218.85 132.75 217.52 143.19 222.37 3 L
+2 Z
+N
+104.9 218.31 132.75 216.85 143.19 221.83 3 L
+N
+104.9 211.46 132.75 209.88 132.75 209.27 132.42 208.95 105.12 210.57 104.9 210.93 6 Y
+0 Z
+N
+104.9 210.93 132.75 209.27 2 L
+2 Z
+N
+131.49 209.96 131.49 209.35 120.85 209.98 120.85 210.55 4 Y
+V
+0 Z
+N
+105.83 217.16 131.49 215.74 2 L
+V
+2 Z
+N
+105.83 215.94 131.49 214.48 2 L
+V
+N
+105.83 214.73 131.49 213.21 2 L
+V
+N
+105.83 213.52 131.49 211.95 2 L
+V
+N
+105.83 212.3 131.49 210.69 2 L
+V
+N
+131.49 217.6 131.49 216.99 130.13 217.08 130.13 217.65 4 Y
+3 X
+V
+0 Z
+0 X
+N
+1 0 1 0 0 1 0 K
+131.49 201 131.49 200.53 129.88 200.65 129.88 201.13 4 Y
+4 X
+1 0 1 0 0 1 0 K
+V
+0 X
+N
+0 0 0 1 0 0 0 K
+104.9 203.09 132.75 200.9 143.19 210.48 3 L
+2 Z
+0 0 0 1 0 0 0 K
+N
+90 450 0.13 0.16 132.04 209.68 G
+108.45 202.81 108.79 202.78 108.79 202.18 108.45 202.2 4 Y
+6 X
+V
+0 Z
+0 X
+N
+106.47 202.98 106.47 202.36 108.35 202.21 108.35 202.82 4 Y
+6 X
+V
+0 X
+N
+108.79 202.78 108.93 202.77 108.93 202.26 108.79 202.17 4 Y
+4 X
+V
+0 X
+N
+108.35 202.82 108.45 202.81 108.45 202.2 108.35 202.21 4 Y
+4 X
+V
+0 X
+N
+122.5 224.84 110.96 221.6 2 L
+4 X
+V
+2 Z
+0 X
+N
+123.25 224.8 111.76 221.57 2 L
+4 X
+V
+0 X
+N
+123.94 224.76 112.57 221.54 2 L
+4 X
+V
+0 X
+N
+124.64 224.76 113.38 221.5 2 L
+4 X
+V
+0 X
+N
+125.33 224.72 114.18 221.47 2 L
+4 X
+V
+0 X
+N
+126.02 224.68 114.99 221.44 2 L
+4 X
+V
+0 X
+N
+126.71 224.64 115.8 221.41 2 L
+4 X
+V
+0 X
+N
+127.41 224.59 116.61 221.37 2 L
+4 X
+V
+0 X
+N
+128.1 224.55 117.41 221.34 2 L
+4 X
+V
+0 X
+N
+128.79 224.53 118.22 221.31 2 L
+4 X
+V
+0 X
+N
+129.52 224.51 119.03 221.27 2 L
+4 X
+V
+0 X
+N
+130.18 224.43 119.83 221.24 2 L
+4 X
+V
+0 X
+N
+130.87 224.39 120.64 221.21 2 L
+4 X
+V
+0 X
+N
+131.56 224.39 121.45 221.17 2 L
+4 X
+V
+0 X
+N
+132.25 224.35 122.25 221.14 2 L
+4 X
+V
+0 X
+N
+132.95 224.31 123.06 221.11 2 L
+4 X
+V
+0 X
+N
+133.64 224.31 123.87 221.08 2 L
+4 X
+V
+0 X
+N
+134.33 224.23 124.67 221.04 2 L
+4 X
+V
+0 X
+N
+135.02 224.25 125.48 221.01 2 L
+4 X
+V
+0 X
+N
+135.71 224.19 126.29 220.98 2 L
+4 X
+V
+0 X
+N
+136.39 224.16 127.1 220.95 2 L
+4 X
+V
+0 X
+N
+137.1 224.13 127.9 220.91 2 L
+4 X
+V
+0 X
+N
+137.79 224.13 128.71 220.88 2 L
+4 X
+V
+0 X
+N
+138.49 224.07 129.52 220.85 2 L
+4 X
+V
+0 X
+N
+139.23 224.02 130.32 220.81 2 L
+4 X
+V
+0 X
+N
+139.87 224.01 131.13 220.78 2 L
+4 X
+V
+0 X
+N
+140.56 223.91 131.94 220.75 2 L
+4 X
+V
+0 X
+N
+141.26 223.92 132.75 220.71 2 L
+4 X
+V
+0 X
+N
+104.9 202.48 132.75 200.3 143.19 209.88 3 L
+N
+0 Z
+90 450 0.11 0.13 107.38 202.59 A
+109.2 202.74 109.54 202.72 109.54 202.1 109.2 202.14 4 Y
+6 X
+V
+0 X
+N
+111.62 202.55 111.96 202.53 111.96 201.92 111.62 201.95 4 Y
+6 X
+V
+0 X
+N
+109.64 202.72 109.64 202.1 111.52 201.96 111.52 202.56 4 Y
+6 X
+V
+0 X
+N
+111.96 202.53 112.1 202.52 112.1 202.01 111.96 201.92 4 Y
+4 X
+V
+0 X
+N
+111.52 202.56 111.62 202.55 111.62 201.95 111.52 201.96 4 Y
+4 X
+V
+0 X
+N
+109.54 202.72 109.64 202.72 109.64 202.14 109.54 202.1 4 Y
+4 X
+V
+0 X
+N
+90 450 0.11 0.13 110.55 202.33 A
+0 1 1 0 1 0 0 K
+106.23 205.88 M
+ 106.18 206 106.18 206 106.11 206.01 D
+ 106.04 206.03 105.96 206.02 105.9 205.97 D
+ 105.82 205.92 105.82 205.92 105.74 205.95 D
+ 105.66 205.97 105.66 205.97 105.61 205.96 D
+ 105.52 205.95 105.46 205.85 105.44 205.76 D
+ 105.39 205.62 105.44 205.45 105.51 205.32 D
+ 105.57 205.22 105.61 205.06 105.73 205.05 D
+ 105.82 204.98 105.91 205.1 106.01 205.06 D
+ 106.07 205.05 106.07 205.05 106.13 205.06 D
+ 106.25 205.09 106.29 205.29 106.32 205.42 D
+0 1 1 0 1 0 0 K
+N
+106.25 205.8 M
+ 106.1 205.7 106.14 205.37 106.35 205.34 D
+N
+105.91 205.97 M
+ 105.91 205.97 105.91 205.97 105.91 205.97 D
+ 105.9 206.11 105.99 206.23 106.1 206.24 D
+ 106.1 206.24 106.1 206.24 106.1 206.24 D
+ 106.11 206.08 106.04 205.99 105.91 205.97 D
+O
+N
+0 0 0 1 0 0 0 K
+106.02 203 106.37 202.98 106.37 202.36 106.02 202.39 4 Y
+6 X
+0 0 0 1 0 0 0 K
+V
+0 X
+N
+106.37 202.98 106.47 202.98 106.47 202.4 106.37 202.36 4 Y
+4 X
+V
+0 X
+N
+(Storage Server Disk) 155.54 229.57 T
+(Manager Location T) 148.24 272.16 T
+(able) 218.81 272.16 T
+(Client Cache) 167.76 318.91 T
+175.16 150.63 204.97 187.53 R
+7 X
+V
+0.22 H
+0 X
+N
+(Client Cache) 167.76 190.56 T
+116.56 250.64 123.57 259.66 R
+7 X
+V
+0 X
+N
+5 F
+(1) 118.05 253.76 T
+116.56 294.43 123.57 303.44 R
+7 X
+V
+0 X
+N
+(0) 118.05 297.54 T
+115.95 209.87 122.97 218.89 R
+7 X
+V
+0 X
+N
+(2) 117.44 212.99 T
+116.56 166.45 123.57 175.46 R
+7 X
+V
+0 X
+N
+(3) 118.05 169.56 T
+(\0502, <disk addr>\051) 161.31 247.81 T
+(0) 221.46 239.26 T
+(read\050) 145.4 302.56 T
+0 F
+(foo) 161.98 302.56 T
+5 F
+(\051) 172.74 302.56 T
+6 F
+(miss) 181.68 288.42 T
+1 1 0 0 0 0 1 K
+214.4 288.02 205.6 291.37 214.84 293.19 214.62 290.6 4 Y
+1 1 0 0 0 0 1 K
+V
+215.49 211.95 M
+ 258.39 214.16 258.39 214.16 258.16 250.55 D
+ 257.93 284.73 257.92 286.82 214.62 290.59 D
+1.35 H
+2 Z
+N
+166.26 296.99 172.66 290.08 163.57 292.55 164.92 294.77 4 Y
+V
+148.3 296.94 M
+ 156.76 297.91 158.87 298.15 164.92 294.77 D
+N
+0 0 0 1 0 0 0 K
+175.82 285.35 205.15 285.35 2 L
+0.22 H
+0 0 0 1 0 0 0 K
+N
+5 F
+(read\050) 145.14 178.5 T
+0 F
+(bar) 161.72 178.5 T
+5 F
+(\051) 173.83 178.5 T
+0 1 1 0 1 0 0 K
+J
+166.88 176.98 175.37 172.89 166.01 171.86 166.45 174.42 4 Y
+0 1 1 0 1 0 0 K
+V
+[0.954 4.772] 0.477 I
+148.75 172.03 M
+ 157.9 174.51 160.43 175.2 166.44 174.41 D
+1.35 H
+N
+0 0 0 1 0 0 0 K
+J
+175.16 293.3 204.97 293.3 2 L
+0.22 H
+0 0 0 1 0 0 0 K
+N
+0 1 1 0 1 0 0 K
+J
+214.15 168.88 205.14 171.6 214.23 174.06 214.19 171.47 4 Y
+0 1 1 0 1 0 0 K
+V
+[0.997 4.983] 0.498 I
+205.9 311.11 M
+ 270.15 311.11 270.15 311.11 270.34 242.64 D
+ 270.52 177.4 272.24 170.82 214.2 171.46 D
+1.35 H
+N
+0 0 0 1 0 0 0 K
+J
+6 F
+0 0 0 1 0 0 0 K
+(miss) 181.68 172.51 T
+175.82 169.45 205.15 169.45 2 L
+0.22 H
+N
+175.16 177.39 204.97 177.39 2 L
+N
+(Read of) 68.74 312.03 T
+0 F
+(foo) 61.11 304.29 T
+6 F
+( Satis\336ed) 71.88 304.29 T
+(via Storage) 62.68 296.57 T
+(Server Disk) 62.24 288.85 T
+J
+(Read of) 68.74 184.53 T
+0 F
+(bar) 60.44 176.8 T
+6 F
+( Satis\336ed) 72.55 176.8 T
+(via) 76.25 169.08 T
+(Cooperative) 61.23 161.35 T
+J
+(Caching) 67.5 153.62 T
+1 1 0 0 0 0 1 K
+J
+194.11 212.31 213.09 219.44 R
+4 X
+1 1 0 0 0 0 1 K
+V
+0 Z
+0 X
+N
+0 0 0 1 0 0 0 K
+0 F
+0 0 0 1 0 0 0 K
+(foo) 199.16 213.14 T
+145.37 235.34 240.56 269.04 R
+N
+145.37 253.7 240.56 253.7 2 L
+0.45 H
+2 Z
+N
+160.03 268.61 160.03 234.91 2 L
+0.22 H
+N
+145.37 243.93 240.56 243.93 2 L
+N
+1 1 0 0 0 0 1 K
+249.97 251.64 240.56 251.44 248.43 256.6 249.2 254.12 4 Y
+1 1 0 0 0 0 1 K
+V
+205.15 287.29 M
+ 249.36 281.92 249.09 281.88 251.28 267.75 D
+ 252.42 260.38 252.89 256.51 249.21 254.11 D
+1.35 H
+N
+224.06 215.74 214.84 217.53 223.61 220.9 223.84 218.32 4 Y
+V
+241.83 247.36 M
+ 255.91 247.36 255.91 247.36 255.56 234.16 D
+ 255.24 222.03 255.21 221.05 223.86 218.3 D
+N
+0 1 1 0 1 0 0 K
+J
+249.77 235.62 240.78 238.35 249.86 240.8 249.82 238.21 4 Y
+0 1 1 0 1 0 0 K
+V
+[1 4.998] 0.5 I
+204.69 175.46 M
+ 258.16 177.39 258.16 177.39 262.33 207.76 D
+ 265.94 234.04 266.43 237.58 249.84 238.2 D
+N
+J
+213.67 302.42 205.14 306.39 214.48 307.54 214.07 304.98 4 Y
+V
+[1.002 5.012] 0.501 I
+240.34 242.21 M
+ 265.83 242.21 265.83 242.21 264.81 269.68 D
+ 263.85 295.68 263.8 297.08 214.09 304.98 D
+N
+0 0 0 1 0 0 0 K
+J
+51.08 91.92 278.48 342.6 C
+27 -396.14 639 395.86 C
+301.5 -396.14 913.5 395.86 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+321.77 89.07 556.97 348.59 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+324.56 74.64 556.97 82.71 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 324.56 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(7 of 25) 430.73 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 524.86 79.72 T
+(ang) 543.14 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Outline) 414.63 334.23 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 310.76 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Introduction) 338.1 310.76 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 293.72 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 10.76 Q
+(Design) 338.1 293.72 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+5 9.87 Q
+(- Metadata management) 338.29 279.96 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+(- Secondary storage management) 338.29 266.51 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+(- Memory management) 338.29 253.05 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+(- Other issues) 338.29 239.59 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+(\245) 331.93 222.85 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Results) 338.1 222.85 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 205.81 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Conclusion) 338.1 205.81 T
+325.58 91.92 552.98 342.6 C
+349.57 91.92 528.98 160.44 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+351.37 94.03 526.74 157.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+5 8.97 Q
+0 X
+2.27 (But in our enthusiasm, we could not resist a) 351.37 151.74 P
+0 (radical overhaul of the system, in which all of its) 351.37 141.88 P
+0.35 (major weaknesses have been exposed, analyzed,) 351.37 132.01 P
+(and replaced with new weaknesses.) 351.37 122.14 T
+-0.46 (- Bruce Leverett,) 389.51 106.89 P
+-0.46 (\322Register Allocation) 451.41 106.89 P
+(in Optimizing Compilers\323) 393.99 97.02 T
+J
+J
+325.58 91.92 552.98 342.6 C
+301.5 -396.14 913.5 395.86 C
+FMENDPAGE
+%%EndPage: "mini" 2
+%%Page: "mini" 3
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+27 -31.64 639 760.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+47.27 453.57 282.47 713.09 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+50.06 439.14 282.47 447.21 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 50.06 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(8 of 25) 156.23 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 250.36 444.22 T
+(ang) 268.64 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Distributed Management) 82.98 698.73 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 506.62 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(T) 63.6 506.62 T
+(racks dynamically moving data and metadata) 69.8 506.62 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 489.57 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Management responsibilities can change) 63.6 489.57 T
+(dynamically) 63.6 477.91 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 460.87 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(T) 63.6 460.87 T
+(rade-of) 69.8 460.87 T
+(f between locality and load balancing) 100.68 460.87 T
+51.08 456.42 278.48 707.1 C
+54.22 517.38 275.34 694.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+56.74 519.45 272.65 691.81 R
+1.35 H
+2 Z
+0 X
+1 0 0 0 0 1 1 K
+N
+1 1 0 0 0 0 1 K
+70.39 634.31 267.45 671.36 R
+5 X
+1 1 0 0 0 0 1 K
+V
+0.45 H
+0 Z
+6 X
+N
+0 1 1 0 1 0 0 K
+69.75 583.03 252.06 614.49 R
+5 X
+0 1 1 0 1 0 0 K
+V
+6 X
+N
+0 0 0 1 0 0 0 K
+6 8.07 Q
+0 X
+0 0 0 1 0 0 0 K
+(index number) 96.14 651.54 T
+(Par) 89.68 666.08 T
+(ent Dir) 101.49 666.08 T
+(ectory) 124.29 666.08 T
+(Manager Map) 182.55 666.61 T
+(manager) 194.67 650.4 T
+(Imap) 71.5 609.55 T
+(index node addr) 76.92 597.2 T
+(ess) 129.09 597.2 T
+(data block addr) 175.93 598.06 T
+(ess) 226.76 598.06 T
+(Manager) 146.94 618.41 T
+(Storage Server) 88.13 564.08 T
+(Storage Server) 188.9 563.95 T
+(Client) 159.05 674.42 T
+90.4 641.36 145.88 663.91 R
+N
+(r) 64.57 682.06 T
+(ead\050name, offset\051) 67.41 682.06 T
+183.19 637.9 238.67 663.24 R
+N
+90.4 656.06 145.88 656.06 2 L
+2 Z
+N
+90.4 648.61 145.88 648.61 2 L
+N
+183.83 655.46 238.67 655.46 2 L
+N
+183.19 648.01 238.03 648.01 2 L
+N
+72.46 586.23 148.35 606.98 R
+0 Z
+N
+72.46 602.79 148.35 602.79 2 L
+2 Z
+N
+73.1 593.74 148.35 594.01 2 L
+N
+(index node) 169.79 609.55 T
+170.03 592.81 242.1 607.31 R
+0 Z
+N
+170.03 602.85 241.86 602.85 2 L
+2 Z
+N
+170.59 595.54 242.34 595.54 2 L
+N
+(data) 248.23 684.46 T
+(block) 246.67 678.67 T
+J
+1 0 1 0 0 1 0 K
+72.38 521.77 152.1 560.42 R
+5 X
+1 0 1 0 0 1 0 K
+V
+0 Z
+6 X
+N
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+(index node) 108.49 545.01 T
+108.49 534.75 146.03 543.2 R
+N
+90 450 36.99 1.42 112.24 556.34 A
+90 450 36.99 1.42 112.24 526.26 A
+149.23 556.34 149.23 526.26 2 L
+2 Z
+N
+75.25 556.34 75.25 526.26 2 L
+N
+1 0 1 0 0 1 0 K
+173.14 521.98 252.86 560.62 R
+5 X
+1 0 1 0 0 1 0 K
+V
+0 Z
+6 X
+N
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+(data block) 179.12 540.03 T
+179.12 529.76 216.66 538.21 R
+N
+90 450 36.99 1.42 213 556.54 A
+90 450 36.99 1.42 213 526.46 A
+249.99 556.54 249.99 526.46 2 L
+2 Z
+N
+176.01 556.54 176.01 526.46 2 L
+N
+177.61 652.22 182.79 650.74 177.61 649.26 177.61 650.74 4 Y
+V
+145.96 652.93 159.35 652.93 159.35 650.74 177.61 650.74 4 L
+0.22 H
+N
+67.36 599.35 72.54 597.87 67.36 596.38 67.36 597.87 4 Y
+V
+159.35 650.74 159.35 629.39 62.25 629.39 62.49 597.87 67.36 597.87 5 L
+N
+102.28 542.09 107.45 540.6 102.28 539.12 102.28 540.6 4 Y
+V
+148.11 598.46 155.04 598.46 155.04 575.12 64.89 575.12 64.89 540.6 102.28 540.6 6 L
+N
+74.3 567.62 79.47 566.14 74.3 564.66 74.3 566.14 4 Y
+V
+64.89 566.14 74.3 566.14 2 L
+N
+134.8 621.5 139.98 620.01 134.8 618.53 134.8 620.01 4 Y
+V
+238.99 651.74 247.36 651.54 247.36 625 116.54 625 116.54 620.01 134.8 620.01 6 L
+N
+166.05 588.66 169.63 592.68 168.72 587.38 167.39 588.02 4 Y
+V
+145.96 543.4 167.39 588.01 2 L
+N
+174 536.03 179.19 534.62 174.04 533.06 174.02 534.55 4 Y
+V
+242.1 599.26 248.55 599.26 248.79 578.11 165.09 578.31 165.33 534.42 174.03 534.54 6 L
+N
+173.55 566.83 178.72 565.34 173.55 563.86 173.55 565.34 4 Y
+V
+165.33 565.34 173.55 565.34 2 L
+N
+259.74 670.51 261.23 675.68 262.71 670.51 261.23 670.51 4 Y
+V
+216.51 534.22 261.23 534.42 261.23 670.51 3 L
+N
+85.3 653.42 90.47 651.94 85.3 650.45 85.3 651.94 4 Y
+V
+91.91 680.07 91.91 674.48 78.04 674.48 78.28 651.94 85.3 651.94 5 L
+N
+(offset) 150.26 606.04 T
+164.46 600.74 169.63 599.26 164.46 597.78 164.46 599.26 4 Y
+V
+158.87 603.85 158.87 599.26 164.46 599.26 3 L
+N
+51.08 456.42 278.48 707.1 C
+27 -31.64 639 760.36 C
+301.5 -31.64 913.5 760.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+321.77 453.57 556.97 713.09 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+324.56 439.14 556.97 447.21 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 324.56 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(9 of 25) 430.73 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 524.86 444.22 T
+(ang) 543.14 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Stripe Groups) 393.28 698.73 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 594.21 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(\322Bandwidth matching\323) 338.1 594.21 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 544.88 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(T) 338.1 544.88 T
+(rade-of) 344.3 544.88 T
+(f between parity storage and availability) 375.18 544.88 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 527.83 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Implemented with a global stripe group map) 338.1 527.83 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 510.79 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Simpli\336es data reconstruction from parity) 338.1 510.79 T
+325.58 456.42 552.98 707.1 C
+329.01 607.67 549.54 694.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+340.52 641.51 436.51 676.49 8.07 RR
+6 X
+1 1 0 0 0 0 1 K
+V
+0.45 H
+2 Z
+0 X
+N
+1 0 0 0 0 1 1 K
+335.13 614.94 543.42 687.28 R
+1.35 H
+1 0 0 0 0 1 1 K
+N
+1 1 0 0 0 0 1 K
+0 Z
+1 1 0 0 0 0 1 K
+90 450 8.19 2.71 399.5 664.97 A
+90 450 8.19 2.71 399.5 650.78 A
+407.68 664.97 407.68 650.78 2 L
+2 Z
+N
+391.31 664.97 391.31 650.78 2 L
+N
+0 Z
+90 450 8.19 2.71 421.27 665.51 A
+90 450 8.19 2.71 421.27 651.32 A
+429.45 665.51 429.45 651.32 2 L
+2 Z
+N
+413.08 665.51 413.08 651.32 2 L
+N
+0 Z
+90 450 8.19 2.71 355 664.97 A
+90 450 8.19 2.71 355 650.78 A
+363.19 664.97 363.19 650.78 2 L
+2 Z
+N
+346.81 664.97 346.81 650.78 2 L
+N
+0 Z
+90 450 8.19 2.71 376.77 665.51 A
+90 450 8.19 2.71 376.77 651.32 A
+384.96 665.51 384.96 651.32 2 L
+2 Z
+N
+368.58 665.51 368.58 651.32 2 L
+N
+0 8.97 Q
+(P) 419.43 655.52 T
+0 1 1 0 1 0 0 K
+440.1 641.51 536.08 676.49 8.07 RR
+6 X
+0 1 1 0 1 0 0 K
+V
+0.45 H
+0 X
+N
+1.35 H
+0 Z
+90 450 8.19 2.71 499.07 664.97 A
+90 450 8.19 2.71 499.07 650.78 A
+507.26 664.97 507.26 650.78 2 L
+2 Z
+N
+490.88 664.97 490.88 650.78 2 L
+N
+0 Z
+90 450 8.19 2.71 520.84 665.51 A
+90 450 8.19 2.71 520.84 651.32 A
+529.03 665.51 529.03 651.32 2 L
+2 Z
+N
+512.65 665.51 512.65 651.32 2 L
+N
+0 Z
+90 450 8.19 2.71 454.57 664.97 A
+90 450 8.19 2.71 454.57 650.78 A
+462.76 664.97 462.76 650.78 2 L
+2 Z
+N
+446.39 664.97 446.39 650.78 2 L
+N
+0 Z
+90 450 8.19 2.71 476.34 665.51 A
+90 450 8.19 2.71 476.34 651.32 A
+484.53 665.51 484.53 651.32 2 L
+2 Z
+N
+468.15 665.51 468.15 651.32 2 L
+N
+(P) 518.55 655.97 T
+1 1 0 0 0 0 1 K
+0 10.76 Q
+1 1 0 0 0 0 1 K
+(Stripe Gr) 355.33 628.5 T
+(oup 0) 399.08 628.5 T
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+(Stripe Gr) 454.45 628.5 T
+(oup 1) 498.2 628.5 T
+0 0 0 1 0 0 0 K
+325.58 456.42 552.98 707.1 C
+301.5 -31.64 913.5 760.36 C
+325.58 456.42 552.98 707.1 C
+328.27 558.33 550.29 590.63 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+6 8.07 Q
+0 X
+0 0 0 1 0 0 0 K
+(S) 356.52 574.48 T
+(t) 361.03 574.48 T
+(r) 363.75 574.48 T
+(i) 367.37 574.48 T
+(p) 370.09 574.48 T
+(e) 374.6 574.48 T
+(G) 378.66 574.48 T
+(r) 384.97 574.48 T
+(o) 388.58 574.48 T
+(u) 393.1 574.48 T
+(p) 397.61 574.48 T
+(S) 402.12 574.48 T
+(i) 406.64 574.48 T
+(z) 409.36 574.48 T
+(e) 412.97 574.48 T
+(C) 429.34 578.96 T
+(l) 435.2 578.96 T
+(i) 437.92 578.96 T
+(e) 440.64 578.96 T
+(n) 444.7 578.96 T
+(t) 449.21 578.96 T
+(N) 451.93 578.96 T
+(e) 457.8 578.96 T
+(t) 461.86 578.96 T
+(w) 464.58 578.96 T
+(o) 470.44 578.96 T
+(r) 474.95 578.96 T
+(k) 478.57 578.96 T
+(B) 482.63 578.96 T
+(a) 488.04 578.96 T
+(n) 492.55 578.96 T
+(d) 497.06 578.96 T
+(w) 501.58 578.96 T
+(i) 507.44 578.96 T
+(d) 510.16 578.96 T
+(t) 514.67 578.96 T
+(h) 517.39 578.96 T
+(D) 447.63 569.07 T
+(i) 453.94 569.07 T
+(s) 456.66 569.07 T
+(k) 460.27 569.07 T
+(B) 464.33 569.07 T
+(a) 469.74 569.07 T
+(n) 474.26 569.07 T
+(d) 478.77 569.07 T
+(w) 483.28 569.07 T
+(i) 489.14 569.07 T
+(d) 491.86 569.07 T
+(t) 496.38 569.07 T
+(h) 499.1 569.07 T
+5 F
+(-) 429.34 574.48 T
+(-) 430.68 574.48 T
+(-) 432.03 574.48 T
+(-) 433.37 574.48 T
+(-) 434.72 574.48 T
+(-) 436.06 574.48 T
+(-) 437.4 574.48 T
+(-) 438.75 574.48 T
+(-) 440.09 574.48 T
+(-) 441.44 574.48 T
+(-) 442.78 574.48 T
+(-) 444.13 574.48 T
+(-) 445.47 574.48 T
+(-) 446.81 574.48 T
+(-) 448.16 574.48 T
+(-) 449.5 574.48 T
+(-) 450.85 574.48 T
+(-) 452.19 574.48 T
+(-) 453.54 574.48 T
+(-) 454.88 574.48 T
+(-) 456.22 574.48 T
+(-) 457.57 574.48 T
+(-) 458.91 574.48 T
+(-) 460.26 574.48 T
+(-) 461.6 574.48 T
+(-) 462.95 574.48 T
+(-) 464.29 574.48 T
+(-) 465.63 574.48 T
+(-) 466.98 574.48 T
+(-) 468.32 574.48 T
+(-) 469.67 574.48 T
+(-) 471.01 574.48 T
+(-) 472.35 574.48 T
+(-) 473.7 574.48 T
+(-) 475.04 574.48 T
+(-) 476.39 574.48 T
+(-) 477.73 574.48 T
+(-) 479.08 574.48 T
+(-) 480.42 574.48 T
+(-) 481.76 574.48 T
+(-) 483.11 574.48 T
+(-) 484.45 574.48 T
+(-) 485.8 574.48 T
+(-) 487.14 574.48 T
+(-) 488.48 574.48 T
+(-) 489.83 574.48 T
+(-) 491.17 574.48 T
+(-) 492.52 574.48 T
+(-) 493.86 574.48 T
+(-) 495.21 574.48 T
+(-) 496.55 574.48 T
+(-) 497.89 574.48 T
+(-) 499.24 574.48 T
+(-) 500.58 574.48 T
+(-) 501.93 574.48 T
+(-) 503.27 574.48 T
+(-) 504.61 574.48 T
+(-) 505.96 574.48 T
+(-) 507.3 574.48 T
+(-) 508.65 574.48 T
+(-) 509.99 574.48 T
+(-) 511.34 574.48 T
+(-) 512.68 574.48 T
+(-) 514.03 574.48 T
+(-) 515.37 574.48 T
+(-) 516.71 574.48 T
+(-) 518.06 574.48 T
+(-) 518.74 574.48 T
+(=) 420.59 574.48 T
+325.58 456.42 552.98 707.1 C
+301.5 -31.64 913.5 760.36 C
+27 -396.14 639 395.86 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+47.27 89.07 282.47 348.59 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+50.06 74.64 282.47 82.71 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 50.06 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(10 of 25) 154.99 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 250.36 79.72 T
+(ang) 268.64 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Parallel Data Reconstruction) 69.31 334.23 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 213.2 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Parallel xor reduction) 63.6 213.2 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 196.16 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Advantage:) 63.6 196.16 T
+5 9.87 Q
+(- Greater reconstruction bandwidth) 63.79 182.41 T
+(- with no extra network traf) 63.79 168.95 T
+(\336c) 172.4 168.95 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 152.21 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(May be applicable to parity computation too) 63.6 152.21 T
+51.08 91.92 278.48 342.6 C
+55.11 232.49 274.44 330.05 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+1.35 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+90 450 5.63 2.01 227.27 256.1 A
+90 450 5.63 2.01 227.27 245.61 A
+232.9 256.1 232.9 245.61 2 L
+2 Z
+N
+221.63 256.1 221.63 245.61 2 L
+N
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+233.06 255.44 222.14 244.23 2 L
+3.59 H
+4 X
+0 1 1 0 1 0 0 K
+N
+222.42 255.44 233.35 244.23 2 L
+N
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+5 7.18 Q
+0 X
+1 1 0 0 0 0 1 K
+(1) 99.94 248.73 T
+1.35 H
+0 Z
+90 450 5.63 2.01 100.84 256.43 A
+90 450 5.63 2.01 100.84 245.95 A
+106.48 256.43 106.48 245.95 2 L
+2 Z
+N
+95.21 256.43 95.21 245.95 2 L
+N
+(2) 127.72 248.73 T
+0 Z
+90 450 5.63 2.01 128.62 256.43 A
+90 450 5.63 2.01 128.62 245.95 A
+134.26 256.43 134.26 245.95 2 L
+2 Z
+N
+122.99 256.43 122.99 245.95 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+180 270 14.39 3.65 115.16 243.65 A
+120.4 242.94 129.93 243.82 122.31 238.02 121.35 240.48 4 Y
+V
+270 293.83 14.39 3.65 115.54 243.81 A
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+(3) 142.23 248.4 T
+0 Z
+90 450 5.63 2.01 143.13 256.1 A
+90 450 5.63 2.01 143.13 245.61 A
+148.77 256.1 148.77 245.61 2 L
+2 Z
+N
+137.5 256.1 137.5 245.61 2 L
+N
+(4) 170.01 248.4 T
+0 Z
+90 450 5.63 2.01 170.92 256.1 A
+90 450 5.63 2.01 170.92 245.61 A
+176.55 256.1 176.55 245.61 2 L
+2 Z
+N
+165.28 256.1 165.28 245.61 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+180 270 14.39 3.65 157.45 243.32 A
+162.69 242.61 172.22 243.48 164.6 237.69 163.65 240.15 4 Y
+V
+270 293.83 14.39 3.65 157.84 243.48 A
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+(5) 184.07 248.73 T
+0 Z
+90 450 5.63 2.01 184.98 256.43 A
+90 450 5.63 2.01 184.98 245.95 A
+190.61 256.43 190.61 245.95 2 L
+2 Z
+N
+179.34 256.43 179.34 245.95 2 L
+N
+(6) 211.86 248.73 T
+0 Z
+90 450 5.63 2.01 212.76 256.43 A
+90 450 5.63 2.01 212.76 245.95 A
+218.4 256.43 218.4 245.95 2 L
+2 Z
+N
+207.13 256.43 207.13 245.95 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+180 270 14.39 3.65 199.29 243.65 A
+204.53 242.94 214.06 243.81 206.44 238.02 205.49 240.48 4 Y
+V
+270 293.83 14.39 3.65 199.68 243.81 A
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+(7) 226.37 248.4 T
+(P) 254.15 248.4 T
+0 Z
+90 450 5.63 2.01 255.05 256.1 A
+90 450 5.63 2.01 255.05 245.61 A
+260.69 256.1 260.69 245.61 2 L
+2 Z
+N
+249.42 256.1 249.42 245.61 2 L
+N
+(2) 119.68 281.33 T
+0 Z
+90 450 5.63 2.01 120.59 289.03 A
+90 450 5.63 2.01 120.59 278.55 A
+126.22 289.03 126.22 278.55 2 L
+2 Z
+N
+114.95 289.03 114.95 278.55 2 L
+N
+(4) 147.47 281.33 T
+0 Z
+90 450 5.63 2.01 148.37 289.03 A
+90 450 5.63 2.01 148.37 278.55 A
+154.01 289.03 154.01 278.55 2 L
+2 Z
+N
+142.74 289.03 142.74 278.55 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+180 270 14.39 3.65 134.9 276.25 A
+140.14 275.54 149.68 276.41 142.06 270.62 141.1 273.08 4 Y
+V
+270 293.83 14.39 3.65 135.29 276.41 A
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+(6) 204.13 281.7 T
+0 Z
+90 450 5.63 2.01 205.03 289.41 A
+90 450 5.63 2.01 205.03 278.92 A
+210.66 289.41 210.66 278.92 2 L
+2 Z
+N
+199.4 289.41 199.4 278.92 2 L
+N
+(P) 231.91 281.7 T
+0 Z
+90 450 5.63 2.01 232.81 289.41 A
+90 450 5.63 2.01 232.81 278.92 A
+238.45 289.41 238.45 278.92 2 L
+2 Z
+N
+227.18 289.41 227.18 278.92 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+180 270 14.39 3.65 219.34 276.62 A
+224.58 275.91 234.12 276.79 226.49 270.99 225.54 273.45 4 Y
+V
+270 293.83 14.39 3.65 219.73 276.79 A
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+(4) 161.59 312.45 T
+0 Z
+90 450 5.63 2.01 162.49 320.15 A
+90 450 5.63 2.01 162.49 309.67 A
+168.13 320.15 168.13 309.67 2 L
+2 Z
+N
+156.86 320.15 156.86 309.67 2 L
+N
+(P) 189.37 312.45 T
+0 Z
+90 450 5.63 2.01 190.28 320.15 A
+90 450 5.63 2.01 190.28 309.67 A
+195.91 320.15 195.91 309.67 2 L
+2 Z
+N
+184.64 320.15 184.64 309.67 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+180 270 14.39 3.65 176.81 307.36 A
+182.05 306.65 191.58 307.53 183.96 301.73 183 304.19 4 Y
+V
+270 293.83 14.39 3.65 177.19 307.53 A
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Step 1) 61.62 245.24 T
+(Step 2) 61.62 278.72 T
+(Step 3) 61.19 308.24 T
+0 1 1 0 1 0 0 K
+5 7.18 Q
+0 1 1 0 1 0 0 K
+(7) 222.96 312.13 T
+0.22 H
+0 Z
+90 450 5.63 2.01 223.86 319.83 A
+90 450 5.63 2.01 223.86 309.35 A
+229.5 319.83 229.5 309.35 2 L
+2 Z
+N
+218.23 319.83 218.23 309.35 2 L
+N
+0 0 0 1 0 0 0 K
+61.62 307.03 268.38 307.4 2 L
+4 X
+0 0 0 1 0 0 0 K
+N
+0 1 1 0 1 0 0 K
+209.24 317.04 218.3 314.45 209.24 311.85 209.24 314.45 4 Y
+0 X
+0 1 1 0 1 0 0 K
+V
+196.55 314.45 209.24 314.45 2 L
+1.35 H
+N
+0 0 0 1 0 0 0 K
+60.04 275.97 266.8 276.34 2 L
+0.22 H
+4 X
+0 0 0 1 0 0 0 K
+N
+61.33 243.45 268.09 243.82 2 L
+N
+1 0 0 0 0 1 1 K
+59.6 236.75 269.95 325.78 R
+1.35 H
+0 X
+1 0 0 0 0 1 1 K
+N
+0 0 0 1 0 0 0 K
+51.08 91.92 278.48 342.6 C
+27 -396.14 639 395.86 C
+301.5 -396.14 913.5 395.86 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+321.77 89.07 556.97 348.59 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+324.56 74.64 556.97 82.71 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 324.56 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(1) 429.65 79.72 T
+(1 of 25) 431.81 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 524.86 79.72 T
+(ang) 543.14 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Parallel Cleaner) 385.84 334.23 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 137.5 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Clients: track stats of written segments) 338.1 137.5 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 120.46 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Cleaners: read and write live data) 338.1 120.46 T
+325.58 91.92 552.98 342.6 C
+326.25 156.79 552.31 330.05 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+336.12 159.46 542.43 327.37 R
+1.35 H
+2 Z
+0 X
+1 0 0 0 0 1 1 K
+N
+0 0 0 1 0 0 0 K
+5 X
+0 0 0 1 0 0 0 K
+90 450 6.01 0.81 351.52 279.62 G
+0.09 H
+0 Z
+0 X
+90 450 6.01 0.81 351.52 279.62 A
+346.88 280.45 340.93 279.15 356.64 278.74 360.91 280.21 4 Y
+4 X
+V
+0 X
+N
+5 X
+180 356 5.56 0.82 351.67 279.91 G
+0 X
+180 356 5.56 0.82 351.67 279.91 A
+5 X
+90 450 5.29 0.78 351.52 280.18 G
+0.11 H
+0 X
+90 450 5.29 0.78 351.52 280.18 A
+5 X
+180 270 0.75 0.32 353.77 279.8 G
+0.09 H
+0 X
+180 270 0.75 0.32 353.77 279.8 A
+362.4 290.53 359.89 291.35 359.89 281.71 362.4 282.74 4 Y
+6 X
+V
+0.11 H
+0 X
+N
+339.96 293.86 357 294.76 357 279.73 339.96 279.94 4 Y
+6 X
+V
+0 X
+N
+348.47 293.02 M
+ 355.11 293.36 355.11 293.46 355.34 293.15 D
+ 355.57 292.85 355.57 292.85 355.57 287.27 D
+ 355.57 281.7 355.57 281.7 355.31 281.54 D
+ 355.06 281.39 355.06 281.39 348.32 281.39 D
+ 341.58 281.39 341.58 281.39 341.48 281.69 D
+ 341.38 281.99 341.38 281.99 341.38 287.11 D
+ 341.38 292.23 341.38 292.23 341.61 292.41 D
+ 341.83 292.59 342.12 292.7 348.47 293.02 D
+O
+3 X
+V
+0 X
+N
+342.54 292.06 M
+ 342.95 292.45 342.95 292.45 348.75 292.77 D
+ 354.56 293.09 354.56 293.09 354.97 292.79 D
+ 355.38 292.49 355.38 292.49 355.38 287.47 D
+ 355.38 282.47 355.38 282.47 355.03 282.08 D
+ 354.68 281.71 354.68 281.71 348.66 281.71 D
+ 342.63 281.71 342.63 281.71 342.38 282.02 D
+ 342.12 282.35 342.12 282.35 342.12 287.02 D
+ 342.12 291.69 342.12 291.69 342.54 292.06 D
+O
+7 X
+V
+0 X
+N
+359.89 293.3 358.63 294.25 356.99 294.77 356.99 279.74 358.63 279.87 359.89 280.5 6 Y
+5 X
+V
+0 X
+N
+358.67 294.18 358.67 279.91 2 L
+5 X
+V
+0.09 H
+0 X
+N
+356.64 278.74 356.64 277.34 360.91 279.02 360.91 280.21 4 Y
+6 X
+V
+0 X
+N
+356.64 278.74 340.93 279.15 340.93 277.77 356.64 277.34 4 Y
+6 X
+V
+0 X
+N
+356.64 277.09 340.93 277.5 340.93 275.29 356.64 274.68 4 Y
+6 X
+V
+0 X
+N
+356.64 277.09 356.64 274.68 360.91 276.82 360.91 278.78 4 Y
+6 X
+V
+0 X
+N
+341.04 277.76 342.59 277.72 342.59 277.46 341.27 277.49 341.04 277.5 5 Y
+5 X
+V
+0.01 H
+0 X
+N
+356.64 277.34 360.91 279.02 360.91 278.78 356.64 277.09 4 Y
+4 X
+V
+0 X
+N
+355.08 277.38 355.35 277.38 356.64 277.34 356.64 277.09 355.08 277.13 5 Y
+5 X
+V
+0 X
+N
+342.59 277.72 343.14 277.71 349.85 277.53 353.26 277.43 354.94 277.39 355.08 277.38 355.08 277.13
+ 354.87 277.14 349.7 277.27 343.58 277.43 342.59 277.46 11 Y
+3 X
+V
+0 X
+N
+90 450 0.14 0.19 355.45 275.86 G
+90 450 0.14 0.19 355.45 275.86 A
+357.32 277.36 357.32 275.02 358.99 275.86 358.99 278.01 4 Y
+5 X
+V
+0 X
+N
+357.47 276.73 358.89 277.34 358.89 277.07 358.42 276.84 358.42 276.63 358.07 276.45 358.07 276.68
+ 357.47 276.42 8 Y
+V
+N
+358.07 276.45 358.07 276.29 358.42 276.47 358.42 276.63 4 Y
+7 X
+V
+0 X
+N
+356.64 274.55 356.64 274.01 354.62 274.1 354.62 274.62 4 Y
+4 X
+V
+0 X
+N
+356.64 274.01 356.64 274.55 357.32 274.89 357.32 274.47 4 Y
+2 X
+V
+0 X
+N
+354.69 274.76 356.64 274.68 356.64 274.55 354.62 274.62 4 Y
+3 X
+V
+0 X
+N
+356.64 274.55 357.32 274.89 357.24 274.98 356.64 274.68 4 Y
+V
+N
+342.95 275.07 342.95 274.62 340.93 274.74 340.93 275.17 4 Y
+4 X
+V
+0 X
+N
+342.95 274.62 342.95 275.07 343.5 275.19 343.87 275.18 343.87 274.97 5 Y
+2 X
+V
+0 X
+N
+340.93 275.17 341.01 275.29 342.95 275.22 342.95 275.07 4 Y
+3 X
+V
+0 X
+N
+342.95 275.07 343.5 275.19 342.95 275.22 3 Y
+V
+N
+360.24 276.07 360.24 276.41 360.92 276.77 360.92 276.5 4 Y
+4 X
+V
+0 X
+N
+360.92 276.77 360.85 276.79 360.24 276.48 360.24 276.41 4 Y
+3 X
+V
+0 X
+N
+360.24 276.07 359.47 276.1 360.11 276.42 360.24 276.41 4 Y
+2 X
+V
+0 X
+N
+360.24 276.41 360.11 276.42 360.24 276.48 3 Y
+V
+N
+516.41 288.02 507.85 286.14 530.47 285.55 536.62 287.67 4 Y
+4 X
+V
+0.09 H
+0 X
+N
+530.47 285.55 530.47 283.54 536.62 285.95 536.62 287.67 4 Y
+6 X
+V
+0 X
+N
+530.47 285.55 507.85 286.14 507.85 284.15 530.47 283.54 4 Y
+6 X
+V
+0 X
+N
+530.47 283.18 507.85 283.77 507.85 280.59 530.47 279.71 4 Y
+6 X
+V
+0 X
+N
+530.47 283.18 530.47 279.71 536.62 282.79 536.62 285.6 4 Y
+6 X
+V
+0 X
+N
+508.01 284.15 510.24 284.09 510.24 283.71 508.34 283.76 508.01 283.76 5 Y
+5 X
+V
+0.01 H
+0 X
+N
+530.46 283.54 536.62 285.95 536.62 285.6 530.46 283.18 4 Y
+4 X
+V
+0 X
+N
+528.23 283.6 528.61 283.6 530.46 283.54 530.46 283.18 528.22 283.23 5 Y
+5 X
+V
+0 X
+N
+510.24 284.09 511.02 284.07 520.68 283.8 525.6 283.67 528.02 283.6 528.23 283.6 528.23 283.23
+ 527.92 283.24 520.47 283.44 511.67 283.67 510.24 283.71 11 Y
+3 X
+V
+0 X
+N
+90 450 0.19 0.27 528.76 281.41 G
+90 450 0.19 0.27 528.76 281.41 A
+531.45 283.57 531.45 280.2 533.85 281.4 533.85 284.51 4 Y
+5 X
+V
+0 X
+N
+531.67 282.66 533.71 283.54 533.71 283.14 533.03 282.81 533.03 282.52 532.53 282.26 532.53 282.59
+ 531.67 282.22 8 Y
+V
+N
+532.53 282.26 532.53 282.02 533.03 282.28 533.03 282.52 4 Y
+7 X
+V
+0 X
+N
+530.47 279.51 530.47 278.74 527.56 278.88 527.56 279.63 4 Y
+4 X
+V
+0 X
+N
+530.47 278.74 530.47 279.51 531.45 280 531.45 279.4 4 Y
+2 X
+V
+0 X
+N
+527.66 279.82 530.47 279.71 530.47 279.51 527.56 279.63 4 Y
+3 X
+V
+0 X
+N
+530.47 279.51 531.45 280 531.33 280.14 530.47 279.71 4 Y
+V
+N
+510.75 280.27 510.75 279.62 507.84 279.79 507.84 280.42 4 Y
+4 X
+V
+0 X
+N
+510.75 279.62 510.75 280.27 511.54 280.45 512.08 280.42 512.08 280.13 5 Y
+2 X
+V
+0 X
+N
+507.84 280.42 507.96 280.58 510.75 280.48 510.75 280.27 4 Y
+3 X
+V
+0 X
+N
+510.75 280.27 511.54 280.45 510.75 280.48 3 Y
+V
+N
+535.66 281.71 535.66 282.2 536.64 282.72 536.64 282.33 4 Y
+4 X
+V
+0 X
+N
+536.64 282.72 536.53 282.74 535.65 282.3 535.66 282.2 4 Y
+3 X
+V
+0 X
+N
+535.66 281.71 534.55 281.75 535.46 282.21 535.66 282.2 4 Y
+2 X
+V
+0 X
+N
+535.66 282.2 535.46 282.21 535.65 282.3 3 Y
+V
+N
+5 7.18 Q
+(Clients) 340.61 319.49 T
+(Cleaners) 508.11 319.43 T
+410.73 290.37 431.78 290.37 431.78 279.3 410.73 279.3 4 L
+0.45 H
+2 Z
+N
+0 1 1 0 1 0 0 K
+424.76 279.3 431.78 290.37 R
+3 X
+0 1 1 0 1 0 0 K
+V
+0.22 H
+0 X
+N
+0 0 0 1 0 0 0 K
+392.57 284.52 382.01 281.75 382.01 282.86 373.58 282.86 373.58 286.2 382.01 286.2 382.01 287.31 7 Y
+7 X
+0 0 0 1 0 0 0 K
+V
+0.11 H
+0 Z
+0 X
+N
+380.59 281.35 382.01 281.71 382.01 282.82 373.58 282.82 373.58 286.15 372.14 285.79 372.14 282.46
+ 380.59 282.46 8 Y
+V
+N
+382.01 286.24 382.01 287.32 380.44 286.75 380.44 286.24 4 Y
+V
+N
+5 X
+90 450 6.01 0.81 351.74 244.92 G
+0.09 H
+0 X
+90 450 6.01 0.81 351.74 244.92 A
+347.1 245.75 341.15 244.45 356.86 244.03 361.14 245.51 4 Y
+4 X
+V
+0 X
+N
+5 X
+180 356 5.56 0.82 351.89 245.21 G
+0 X
+180 356 5.56 0.82 351.89 245.21 A
+5 X
+90 450 5.29 0.78 351.74 245.48 G
+0.11 H
+0 X
+90 450 5.29 0.78 351.74 245.48 A
+5 X
+180 270 0.75 0.32 353.99 245.1 G
+0.09 H
+0 X
+180 270 0.75 0.32 353.99 245.1 A
+362.62 255.83 360.12 256.65 360.12 247 362.62 248.04 4 Y
+6 X
+V
+0.11 H
+0 X
+N
+340.18 259.15 357.22 260.05 357.22 245.02 340.18 245.24 4 Y
+6 X
+V
+0 X
+N
+348.7 258.32 M
+ 355.34 258.66 355.33 258.75 355.56 258.45 D
+ 355.8 258.15 355.8 258.15 355.8 252.57 D
+ 355.8 246.99 355.8 246.99 355.54 246.84 D
+ 355.28 246.68 355.28 246.68 348.54 246.68 D
+ 341.8 246.68 341.8 246.68 341.71 246.99 D
+ 341.61 247.29 341.61 247.29 341.61 252.41 D
+ 341.61 257.52 341.61 257.52 341.83 257.7 D
+ 342.06 257.88 342.34 257.99 348.7 258.32 D
+O
+3 X
+V
+0 X
+N
+342.77 257.36 M
+ 343.17 257.74 343.17 257.74 348.98 258.06 D
+ 354.79 258.38 354.79 258.38 355.2 258.09 D
+ 355.61 257.79 355.61 257.79 355.61 252.77 D
+ 355.61 247.76 355.61 247.76 355.25 247.37 D
+ 354.91 247 354.91 247 348.88 247 D
+ 342.85 247 342.85 247 342.61 247.31 D
+ 342.35 247.64 342.35 247.64 342.35 252.31 D
+ 342.35 256.99 342.35 256.99 342.77 257.36 D
+O
+7 X
+V
+0 X
+N
+360.11 258.6 358.85 259.54 357.22 260.07 357.22 245.03 358.85 245.17 360.11 245.8 6 Y
+5 X
+V
+0 X
+N
+358.89 259.47 358.89 245.21 2 L
+5 X
+V
+0.09 H
+0 X
+N
+356.86 244.03 356.86 242.64 361.14 244.32 361.14 245.51 4 Y
+6 X
+V
+0 X
+N
+356.86 244.03 341.15 244.45 341.15 243.06 356.86 242.64 4 Y
+6 X
+V
+0 X
+N
+356.86 242.39 341.15 242.8 341.15 240.59 356.86 239.98 4 Y
+6 X
+V
+0 X
+N
+356.86 242.39 356.86 239.98 361.14 242.12 361.14 244.07 4 Y
+6 X
+V
+0 X
+N
+341.26 243.06 342.81 243.02 342.81 242.76 341.49 242.79 341.26 242.79 5 Y
+5 X
+V
+0.01 H
+0 X
+N
+356.86 242.64 361.14 244.32 361.14 244.07 356.86 242.39 4 Y
+4 X
+V
+0 X
+N
+355.31 242.68 355.58 242.68 356.86 242.64 356.86 242.39 355.3 242.43 5 Y
+5 X
+V
+0 X
+N
+342.81 243.02 343.36 243 350.07 242.82 353.48 242.73 355.16 242.68 355.31 242.68 355.31 242.43
+ 355.1 242.43 349.92 242.57 343.81 242.73 342.81 242.76 11 Y
+3 X
+V
+0 X
+N
+90 450 0.14 0.19 355.68 241.16 G
+90 450 0.14 0.19 355.68 241.16 A
+357.55 242.66 357.55 240.32 359.21 241.15 359.21 243.31 4 Y
+5 X
+V
+0 X
+N
+357.7 242.03 359.12 242.64 359.12 242.36 358.64 242.13 358.64 241.93 358.29 241.75 358.29 241.98
+ 357.7 241.72 8 Y
+V
+N
+358.29 241.75 358.29 241.59 358.64 241.76 358.64 241.93 4 Y
+7 X
+V
+0 X
+N
+356.86 239.84 356.86 239.31 354.84 239.4 354.84 239.92 4 Y
+4 X
+V
+0 X
+N
+356.86 239.31 356.86 239.84 357.55 240.18 357.55 239.77 4 Y
+2 X
+V
+0 X
+N
+354.91 240.05 356.86 239.98 356.86 239.84 354.84 239.92 4 Y
+3 X
+V
+0 X
+N
+356.86 239.84 357.55 240.18 357.46 240.28 356.86 239.98 4 Y
+V
+N
+343.17 240.37 343.17 239.92 341.15 240.03 341.15 240.47 4 Y
+4 X
+V
+0 X
+N
+343.17 239.92 343.17 240.37 343.72 240.49 344.1 240.48 344.1 240.27 5 Y
+2 X
+V
+0 X
+N
+341.15 240.47 341.24 240.59 343.17 240.51 343.17 240.37 4 Y
+3 X
+V
+0 X
+N
+343.17 240.37 343.72 240.49 343.17 240.51 3 Y
+V
+N
+360.47 241.37 360.47 241.71 361.15 242.07 361.15 241.8 4 Y
+4 X
+V
+0 X
+N
+361.15 242.07 361.07 242.08 360.47 241.78 360.47 241.71 4 Y
+3 X
+V
+0 X
+N
+360.47 241.37 359.7 241.4 360.33 241.71 360.47 241.71 4 Y
+2 X
+V
+0 X
+N
+360.47 241.71 360.33 241.71 360.47 241.78 3 Y
+V
+N
+516.64 253.32 508.07 251.44 530.69 250.85 536.85 252.97 4 Y
+4 X
+V
+0.09 H
+0 X
+N
+530.69 250.85 530.69 248.83 536.85 251.25 536.85 252.97 4 Y
+6 X
+V
+0 X
+N
+530.69 250.85 508.07 251.44 508.07 249.45 530.69 248.83 4 Y
+6 X
+V
+0 X
+N
+530.69 248.47 508.07 249.07 508.07 245.89 530.69 245.01 4 Y
+6 X
+V
+0 X
+N
+530.69 248.47 530.69 245.01 536.85 248.08 536.85 250.9 4 Y
+6 X
+V
+0 X
+N
+508.23 249.44 510.46 249.38 510.46 249 508.56 249.05 508.23 249.06 5 Y
+5 X
+V
+0.01 H
+0 X
+N
+530.68 248.83 536.85 251.25 536.85 250.9 530.68 248.47 4 Y
+4 X
+V
+0 X
+N
+528.45 248.89 528.84 248.89 530.68 248.83 530.68 248.47 528.44 248.53 5 Y
+5 X
+V
+0 X
+N
+510.46 249.38 511.25 249.36 520.91 249.1 525.82 248.96 528.24 248.9 528.45 248.89 528.45 248.53
+ 528.15 248.54 520.69 248.73 511.89 248.97 510.46 249 11 Y
+3 X
+V
+0 X
+N
+90 450 0.19 0.27 528.98 246.7 G
+90 450 0.19 0.27 528.98 246.7 A
+531.67 248.86 531.67 245.5 534.07 246.7 534.07 249.8 4 Y
+5 X
+V
+0 X
+N
+531.89 247.95 533.94 248.83 533.94 248.44 533.26 248.11 533.26 247.82 532.75 247.56 532.75 247.89
+ 531.89 247.51 8 Y
+V
+N
+532.75 247.56 532.75 247.32 533.26 247.58 533.26 247.82 4 Y
+7 X
+V
+0 X
+N
+530.69 244.81 530.69 244.04 527.78 244.17 527.78 244.92 4 Y
+4 X
+V
+0 X
+N
+530.69 244.04 530.69 244.81 531.67 245.3 531.67 244.7 4 Y
+2 X
+V
+0 X
+N
+527.88 245.12 530.69 245.01 530.69 244.81 527.78 244.92 4 Y
+3 X
+V
+0 X
+N
+530.69 244.81 531.67 245.3 531.55 245.43 530.69 245.01 4 Y
+V
+N
+510.98 245.57 510.98 244.92 508.07 245.09 508.07 245.71 4 Y
+4 X
+V
+0 X
+N
+510.98 244.92 510.98 245.57 511.77 245.74 512.31 245.72 512.31 245.42 5 Y
+2 X
+V
+0 X
+N
+508.07 245.71 508.19 245.88 510.98 245.77 510.98 245.57 4 Y
+3 X
+V
+0 X
+N
+510.98 245.57 511.77 245.74 510.98 245.77 3 Y
+V
+N
+535.88 247.01 535.88 247.49 536.86 248.01 536.86 247.62 4 Y
+4 X
+V
+0 X
+N
+536.86 248.01 536.75 248.04 535.88 247.6 535.88 247.49 4 Y
+3 X
+V
+0 X
+N
+535.88 247.01 534.77 247.05 535.69 247.51 535.88 247.49 4 Y
+2 X
+V
+0 X
+N
+535.88 247.49 535.69 247.51 535.88 247.6 3 Y
+V
+N
+410.96 255.67 432 255.67 432 244.59 410.96 244.59 4 L
+0.45 H
+2 Z
+N
+0 1 1 0 1 0 0 K
+424.99 244.59 432 255.67 R
+3 X
+0 1 1 0 1 0 0 K
+V
+0.22 H
+0 X
+N
+0 0 0 1 0 0 0 K
+392.79 249.82 382.23 247.05 382.23 248.16 373.81 248.16 373.81 251.49 382.23 251.49 382.23 252.6 7 Y
+7 X
+0 0 0 1 0 0 0 K
+V
+0.11 H
+0 Z
+0 X
+N
+380.82 246.65 382.23 247 382.23 248.11 373.81 248.11 373.81 251.45 372.36 251.09 372.36 247.76
+ 380.82 247.76 8 Y
+V
+N
+382.23 251.53 382.23 252.62 380.66 252.04 380.66 251.53 4 Y
+V
+N
+5 X
+90 450 6.01 0.81 351.97 210.77 G
+0.09 H
+0 X
+90 450 6.01 0.81 351.97 210.77 A
+347.33 211.61 341.38 210.3 357.09 209.89 361.36 211.36 4 Y
+4 X
+V
+0 X
+N
+5 X
+180 356 5.56 0.82 352.11 211.06 G
+0 X
+180 356 5.56 0.82 352.11 211.06 A
+5 X
+90 450 5.29 0.78 351.97 211.33 G
+0.11 H
+0 X
+90 450 5.29 0.78 351.97 211.33 A
+5 X
+180 270 0.75 0.32 354.22 210.95 G
+0.09 H
+0 X
+180 270 0.75 0.32 354.22 210.95 A
+362.85 221.68 360.34 222.51 360.34 212.86 362.85 213.9 4 Y
+6 X
+V
+0.11 H
+0 X
+N
+340.41 225.01 357.45 225.91 357.45 210.88 340.41 211.09 4 Y
+6 X
+V
+0 X
+N
+348.92 224.17 M
+ 355.56 224.51 355.56 224.61 355.79 224.31 D
+ 356.02 224.01 356.02 224.01 356.02 218.43 D
+ 356.02 212.85 356.02 212.85 355.76 212.7 D
+ 355.5 212.54 355.5 212.54 348.77 212.54 D
+ 342.03 212.54 342.03 212.54 341.93 212.84 D
+ 341.83 213.15 341.83 213.15 341.83 218.26 D
+ 341.83 223.38 341.83 223.38 342.06 223.56 D
+ 342.28 223.74 342.57 223.85 348.92 224.17 D
+O
+3 X
+V
+0 X
+N
+342.99 223.22 M
+ 343.4 223.6 343.4 223.6 349.2 223.92 D
+ 355.01 224.24 355.01 224.24 355.42 223.94 D
+ 355.83 223.65 355.83 223.65 355.83 218.62 D
+ 355.83 213.62 355.83 213.62 355.48 213.23 D
+ 355.13 212.86 355.13 212.86 349.11 212.86 D
+ 343.08 212.86 343.08 212.86 342.83 213.17 D
+ 342.57 213.5 342.57 213.5 342.57 218.17 D
+ 342.57 222.84 342.57 222.84 342.99 223.22 D
+O
+7 X
+V
+0 X
+N
+360.34 224.45 359.08 225.4 357.44 225.92 357.44 210.89 359.08 211.03 360.34 211.65 6 Y
+5 X
+V
+0 X
+N
+359.11 225.33 359.11 211.07 2 L
+5 X
+V
+0.09 H
+0 X
+N
+357.09 209.89 357.09 208.49 361.36 210.17 361.36 211.36 4 Y
+6 X
+V
+0 X
+N
+357.09 209.89 341.38 210.3 341.38 208.92 357.09 208.49 4 Y
+6 X
+V
+0 X
+N
+357.09 208.24 341.38 208.66 341.38 206.45 357.09 205.84 4 Y
+6 X
+V
+0 X
+N
+357.09 208.24 357.09 205.84 361.36 207.97 361.36 209.93 4 Y
+6 X
+V
+0 X
+N
+341.49 208.92 343.04 208.87 343.04 208.61 341.72 208.65 341.49 208.65 5 Y
+5 X
+V
+0.01 H
+0 X
+N
+357.08 208.49 361.36 210.17 361.36 209.93 357.08 208.24 4 Y
+4 X
+V
+0 X
+N
+355.53 208.53 355.8 208.53 357.08 208.49 357.08 208.24 355.53 208.28 5 Y
+5 X
+V
+0 X
+N
+343.04 208.87 343.58 208.86 350.29 208.68 353.7 208.58 355.39 208.54 355.53 208.53 355.53 208.28
+ 355.32 208.29 350.14 208.42 344.03 208.59 343.04 208.61 11 Y
+3 X
+V
+0 X
+N
+90 450 0.14 0.19 355.9 207.01 G
+90 450 0.14 0.19 355.9 207.01 A
+357.77 208.51 357.77 206.18 359.43 207.01 359.43 209.17 4 Y
+5 X
+V
+0 X
+N
+357.92 207.88 359.34 208.49 359.34 208.22 358.87 207.99 358.87 207.79 358.52 207.61 358.52 207.84
+ 357.92 207.58 8 Y
+V
+N
+358.52 207.61 358.52 207.44 358.87 207.62 358.87 207.79 4 Y
+7 X
+V
+0 X
+N
+357.09 205.7 357.09 205.16 355.07 205.26 355.07 205.78 4 Y
+4 X
+V
+0 X
+N
+357.09 205.16 357.09 205.7 357.77 206.04 357.77 205.62 4 Y
+2 X
+V
+0 X
+N
+355.14 205.91 357.09 205.84 357.09 205.7 355.07 205.78 4 Y
+3 X
+V
+0 X
+N
+357.09 205.7 357.77 206.04 357.68 206.13 357.09 205.84 4 Y
+V
+N
+343.39 206.23 343.39 205.78 341.37 205.89 341.37 206.33 4 Y
+4 X
+V
+0 X
+N
+343.39 205.78 343.39 206.23 343.94 206.35 344.32 206.33 344.32 206.13 5 Y
+2 X
+V
+0 X
+N
+341.37 206.33 341.46 206.44 343.39 206.37 343.39 206.23 4 Y
+3 X
+V
+0 X
+N
+343.39 206.23 343.94 206.35 343.39 206.37 3 Y
+V
+N
+360.69 207.22 360.69 207.56 361.37 207.92 361.37 207.65 4 Y
+4 X
+V
+0 X
+N
+361.37 207.92 361.3 207.94 360.69 207.64 360.69 207.56 4 Y
+3 X
+V
+0 X
+N
+360.69 207.22 359.92 207.25 360.56 207.57 360.69 207.56 4 Y
+2 X
+V
+0 X
+N
+360.69 207.56 360.56 207.57 360.69 207.64 3 Y
+V
+N
+516.86 219.17 508.3 217.3 530.92 216.7 537.07 218.82 4 Y
+4 X
+V
+0.09 H
+0 X
+N
+530.92 216.7 530.92 214.69 537.07 217.11 537.07 218.82 4 Y
+6 X
+V
+0 X
+N
+530.92 216.7 508.3 217.3 508.3 215.3 530.92 214.69 4 Y
+6 X
+V
+0 X
+N
+530.92 214.33 508.3 214.92 508.3 211.74 530.92 210.86 4 Y
+6 X
+V
+0 X
+N
+530.92 214.33 530.92 210.86 537.07 213.94 537.07 216.75 4 Y
+6 X
+V
+0 X
+N
+508.45 215.3 510.69 215.24 510.69 214.86 508.79 214.91 508.45 214.91 5 Y
+5 X
+V
+0.01 H
+0 X
+N
+530.91 214.69 537.07 217.11 537.07 216.75 530.91 214.33 4 Y
+4 X
+V
+0 X
+N
+528.68 214.75 529.06 214.75 530.91 214.69 530.91 214.33 528.67 214.39 5 Y
+5 X
+V
+0 X
+N
+510.69 215.24 511.47 215.22 521.13 214.95 526.05 214.82 528.47 214.75 528.68 214.75 528.68 214.39
+ 528.37 214.4 520.92 214.59 512.11 214.82 510.69 214.86 11 Y
+3 X
+V
+0 X
+N
+90 450 0.19 0.27 529.21 212.56 G
+90 450 0.19 0.27 529.21 212.56 A
+531.9 214.72 531.9 211.35 534.29 212.55 534.29 215.66 4 Y
+5 X
+V
+0 X
+N
+532.12 213.81 534.16 214.69 534.16 214.29 533.48 213.96 533.48 213.67 532.98 213.41 532.98 213.74
+ 532.12 213.37 8 Y
+V
+N
+532.98 213.41 532.98 213.18 533.48 213.43 533.48 213.67 4 Y
+7 X
+V
+0 X
+N
+530.92 210.66 530.92 209.9 528.01 210.03 528.01 210.78 4 Y
+4 X
+V
+0 X
+N
+530.92 209.9 530.92 210.66 531.9 211.16 531.9 210.55 4 Y
+2 X
+V
+0 X
+N
+528.11 210.97 530.92 210.86 530.92 210.66 528.01 210.78 4 Y
+3 X
+V
+0 X
+N
+530.92 210.66 531.9 211.16 531.78 211.29 530.92 210.86 4 Y
+V
+N
+511.2 211.42 511.2 210.78 508.29 210.94 508.29 211.57 4 Y
+4 X
+V
+0 X
+N
+511.2 210.78 511.2 211.42 511.99 211.6 512.53 211.58 512.53 211.28 5 Y
+2 X
+V
+0 X
+N
+508.29 211.57 508.41 211.74 511.2 211.63 511.2 211.42 4 Y
+3 X
+V
+0 X
+N
+511.2 211.42 511.99 211.6 511.2 211.63 3 Y
+V
+N
+536.11 212.86 536.11 213.35 537.09 213.87 537.09 213.48 4 Y
+4 X
+V
+0 X
+N
+537.09 213.87 536.98 213.89 536.1 213.46 536.11 213.35 4 Y
+3 X
+V
+0 X
+N
+536.11 212.86 535 212.9 535.91 213.36 536.11 213.35 4 Y
+2 X
+V
+0 X
+N
+536.11 213.35 535.91 213.36 536.1 213.46 3 Y
+V
+N
+411.18 221.53 432.23 221.53 432.23 210.45 411.18 210.45 4 L
+0.45 H
+2 Z
+N
+0 1 1 0 1 0 0 K
+425.21 210.45 432.22 221.53 R
+3 X
+0 1 1 0 1 0 0 K
+V
+0.22 H
+0 X
+N
+0 0 0 1 0 0 0 K
+393.01 215.68 382.45 212.91 382.45 214.02 374.03 214.02 374.03 217.35 382.45 217.35 382.45 218.46 7 Y
+7 X
+0 0 0 1 0 0 0 K
+V
+0.11 H
+0 Z
+0 X
+N
+381.04 212.5 382.45 212.86 382.45 213.97 374.03 213.97 374.03 217.3 372.58 216.95 372.58 213.61
+ 381.04 213.61 8 Y
+V
+N
+382.45 217.39 382.45 218.47 380.89 217.9 380.89 217.39 4 Y
+V
+N
+5 X
+90 450 6.01 0.81 351.63 176.07 G
+0.09 H
+0 X
+90 450 6.01 0.81 351.63 176.07 A
+346.99 176.9 341.04 175.6 356.75 175.19 361.03 176.66 4 Y
+4 X
+V
+0 X
+N
+5 X
+180 356 5.56 0.82 351.78 176.36 G
+0 X
+180 356 5.56 0.82 351.78 176.36 A
+5 X
+90 450 5.29 0.78 351.63 176.63 G
+0.11 H
+0 X
+90 450 5.29 0.78 351.63 176.63 A
+5 X
+180 270 0.75 0.32 353.88 176.25 G
+0.09 H
+0 X
+180 270 0.75 0.32 353.88 176.25 A
+362.51 186.98 360.01 187.8 360.01 178.15 362.51 179.19 4 Y
+6 X
+V
+0.11 H
+0 X
+N
+340.07 190.31 357.11 191.2 357.11 176.17 340.07 176.39 4 Y
+6 X
+V
+0 X
+N
+348.58 189.47 M
+ 355.23 189.81 355.22 189.91 355.45 189.6 D
+ 355.68 189.3 355.68 189.3 355.68 183.72 D
+ 355.68 178.15 355.68 178.15 355.43 177.99 D
+ 355.17 177.84 355.17 177.84 348.43 177.84 D
+ 341.69 177.84 341.69 177.84 341.59 178.14 D
+ 341.5 178.44 341.5 178.44 341.5 183.56 D
+ 341.5 188.67 341.5 188.67 341.72 188.85 D
+ 341.95 189.03 342.23 189.15 348.58 189.47 D
+O
+3 X
+V
+0 X
+N
+342.65 188.51 M
+ 343.06 188.9 343.06 188.9 348.86 189.22 D
+ 354.67 189.53 354.67 189.53 355.08 189.24 D
+ 355.49 188.94 355.49 188.94 355.49 183.92 D
+ 355.49 178.91 355.49 178.91 355.14 178.53 D
+ 354.79 178.16 354.79 178.16 348.77 178.16 D
+ 342.74 178.16 342.74 178.16 342.49 178.46 D
+ 342.24 178.79 342.24 178.79 342.24 183.46 D
+ 342.24 188.14 342.24 188.14 342.65 188.51 D
+O
+7 X
+V
+0 X
+N
+360 189.75 358.74 190.7 357.1 191.22 357.1 176.18 358.74 176.32 360 176.95 6 Y
+5 X
+V
+0 X
+N
+358.78 190.63 358.78 176.36 2 L
+5 X
+V
+0.09 H
+0 X
+N
+356.75 175.19 356.75 173.79 361.03 175.47 361.03 176.66 4 Y
+6 X
+V
+0 X
+N
+356.75 175.19 341.04 175.6 341.04 174.22 356.75 173.79 4 Y
+6 X
+V
+0 X
+N
+356.75 173.54 341.04 173.95 341.04 171.74 356.75 171.13 4 Y
+6 X
+V
+0 X
+N
+356.75 173.54 356.75 171.13 361.03 173.27 361.03 175.22 4 Y
+6 X
+V
+0 X
+N
+341.15 174.21 342.7 174.17 342.7 173.91 341.38 173.94 341.15 173.94 5 Y
+5 X
+V
+0.01 H
+0 X
+N
+356.75 173.79 361.03 175.47 361.03 175.22 356.75 173.54 4 Y
+4 X
+V
+0 X
+N
+355.2 173.83 355.46 173.83 356.75 173.79 356.75 173.54 355.19 173.58 5 Y
+5 X
+V
+0 X
+N
+342.7 174.17 343.25 174.16 349.96 173.97 353.37 173.88 355.05 173.83 355.2 173.83 355.2 173.58
+ 354.98 173.59 349.81 173.72 343.69 173.88 342.7 173.91 11 Y
+3 X
+V
+0 X
+N
+90 450 0.14 0.19 355.57 172.31 G
+90 450 0.14 0.19 355.57 172.31 A
+357.43 173.81 357.43 171.47 359.1 172.3 359.1 174.46 4 Y
+5 X
+V
+0 X
+N
+357.59 173.18 359.01 173.79 359.01 173.51 358.53 173.28 358.53 173.08 358.18 172.9 358.18 173.13
+ 357.59 172.87 8 Y
+V
+N
+358.18 172.9 358.18 172.74 358.53 172.92 358.53 173.08 4 Y
+7 X
+V
+0 X
+N
+356.75 170.99 356.75 170.46 354.73 170.55 354.73 171.07 4 Y
+4 X
+V
+0 X
+N
+356.75 170.46 356.75 170.99 357.43 171.34 357.43 170.92 4 Y
+2 X
+V
+0 X
+N
+354.8 171.21 356.75 171.13 356.75 170.99 354.73 171.07 4 Y
+3 X
+V
+0 X
+N
+356.75 170.99 357.43 171.34 357.35 171.43 356.75 171.13 4 Y
+V
+N
+343.06 171.52 343.06 171.07 341.04 171.19 341.04 171.62 4 Y
+4 X
+V
+0 X
+N
+343.06 171.07 343.06 171.52 343.61 171.64 343.98 171.63 343.98 171.42 5 Y
+2 X
+V
+0 X
+N
+341.04 171.62 341.12 171.74 343.06 171.66 343.06 171.52 4 Y
+3 X
+V
+0 X
+N
+343.06 171.52 343.61 171.64 343.06 171.66 3 Y
+V
+N
+360.36 172.52 360.36 172.86 361.04 173.22 361.04 172.95 4 Y
+4 X
+V
+0 X
+N
+361.04 173.22 360.96 173.24 360.35 172.93 360.36 172.86 4 Y
+3 X
+V
+0 X
+N
+360.36 172.52 359.59 172.55 360.22 172.87 360.36 172.86 4 Y
+2 X
+V
+0 X
+N
+360.36 172.86 360.22 172.87 360.35 172.93 3 Y
+V
+N
+516.53 184.47 507.96 182.59 530.58 182 536.73 184.12 4 Y
+4 X
+V
+0.09 H
+0 X
+N
+530.58 182 530.58 179.98 536.73 182.4 536.73 184.12 4 Y
+6 X
+V
+0 X
+N
+530.58 182 507.96 182.59 507.96 180.6 530.58 179.98 4 Y
+6 X
+V
+0 X
+N
+530.58 179.62 507.96 180.22 507.96 177.04 530.58 176.16 4 Y
+6 X
+V
+0 X
+N
+530.58 179.62 530.58 176.16 536.73 179.24 536.73 182.05 4 Y
+6 X
+V
+0 X
+N
+508.12 180.59 510.35 180.53 510.35 180.16 508.45 180.21 508.12 180.21 5 Y
+5 X
+V
+0.01 H
+0 X
+N
+530.57 179.98 536.73 182.4 536.73 182.05 530.57 179.62 4 Y
+4 X
+V
+0 X
+N
+528.34 180.05 528.73 180.05 530.57 179.98 530.57 179.62 528.33 179.68 5 Y
+5 X
+V
+0 X
+N
+510.35 180.53 511.14 180.51 520.8 180.25 525.71 180.12 528.13 180.05 528.34 180.05 528.34 179.68
+ 528.03 179.69 520.58 179.89 511.78 180.12 510.35 180.16 11 Y
+3 X
+V
+0 X
+N
+90 450 0.19 0.27 528.87 177.86 G
+90 450 0.19 0.27 528.87 177.86 A
+531.56 180.01 531.56 176.65 533.96 177.85 533.96 180.96 4 Y
+5 X
+V
+0 X
+N
+531.78 179.1 533.83 179.98 533.83 179.59 533.15 179.26 533.15 178.97 532.64 178.71 532.64 179.04
+ 531.78 178.66 8 Y
+V
+N
+532.64 178.71 532.64 178.47 533.15 178.73 533.15 178.97 4 Y
+7 X
+V
+0 X
+N
+530.58 175.96 530.58 175.19 527.67 175.32 527.67 176.07 4 Y
+4 X
+V
+0 X
+N
+530.58 175.19 530.58 175.96 531.56 176.45 531.56 175.85 4 Y
+2 X
+V
+0 X
+N
+527.77 176.27 530.58 176.16 530.58 175.96 527.67 176.07 4 Y
+3 X
+V
+0 X
+N
+530.58 175.96 531.56 176.45 531.44 176.59 530.58 176.16 4 Y
+V
+N
+510.86 176.72 510.86 176.07 507.95 176.24 507.95 176.86 4 Y
+4 X
+V
+0 X
+N
+510.86 176.07 510.86 176.72 511.65 176.89 512.2 176.87 512.2 176.58 5 Y
+2 X
+V
+0 X
+N
+507.95 176.86 508.08 177.03 510.86 176.92 510.86 176.72 4 Y
+3 X
+V
+0 X
+N
+510.86 176.72 511.65 176.89 510.86 176.92 3 Y
+V
+N
+535.77 178.16 535.77 178.65 536.75 179.16 536.75 178.78 4 Y
+4 X
+V
+0 X
+N
+536.75 179.16 536.64 179.19 535.77 178.75 535.77 178.65 4 Y
+3 X
+V
+0 X
+N
+535.77 178.16 534.66 178.2 535.58 178.66 535.77 178.65 4 Y
+2 X
+V
+0 X
+N
+535.77 178.65 535.58 178.66 535.77 178.75 3 Y
+V
+N
+410.85 186.82 431.89 186.82 431.89 175.75 410.85 175.75 4 L
+0.45 H
+2 Z
+N
+0 1 1 0 1 0 0 K
+424.88 175.75 431.89 186.82 R
+3 X
+0 1 1 0 1 0 0 K
+V
+0.22 H
+0 X
+N
+0 0 0 1 0 0 0 K
+392.68 180.97 382.12 178.2 382.12 179.31 373.69 179.31 373.69 182.65 382.12 182.65 382.12 183.76 7 Y
+7 X
+0 0 0 1 0 0 0 K
+V
+0.11 H
+0 Z
+0 X
+N
+380.7 177.8 382.12 178.16 382.12 179.27 373.69 179.27 373.69 182.6 372.25 182.24 372.25 178.91
+ 380.7 178.91 8 Y
+V
+N
+382.12 182.68 382.12 183.77 380.55 183.2 380.55 182.68 4 Y
+V
+N
+[1.494 4.481] 0 I
+0.22 H
+2 Z
+90 450 16.82 72.04 420.95 233.84 A
+J
+(Segment) 370.85 313.49 T
+(Stats) 370.85 306.32 T
+(Distributed) 403.49 319.86 T
+(W) 403.49 312.69 T
+(ork Queue) 409.69 312.69 T
+(Enqueue) 370.41 320.54 T
+456.15 232.73 475.61 240.71 475.61 237.51 491.14 237.51 491.14 227.92 475.61 227.92 475.61 224.72 7 Y
+7 X
+V
+0.11 H
+0 Z
+0 X
+N
+478.22 241.87 475.61 240.84 475.61 237.64 491.14 237.64 491.14 228.05 493.8 229.08 493.8 238.67
+ 478.22 238.67 8 Y
+V
+N
+475.61 227.8 475.61 224.68 478.5 226.33 478.5 227.8 4 Y
+V
+N
+(Dequeue) 464.28 260.31 T
+(Segments) 464.28 253.14 T
+(to Clean) 464.28 245.96 T
+325.58 91.92 552.98 342.6 C
+301.5 -396.14 913.5 395.86 C
+FMENDPAGE
+%%EndPage: "mini" 3
+%%Page: "mini" 4
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+27 -31.64 639 760.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+47.27 453.57 282.47 713.09 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+50.06 439.14 282.47 447.21 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 50.06 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(12 of 25) 154.99 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 250.36 444.22 T
+(ang) 268.64 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Cooperative Caching) 96.11 698.73 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 540.39 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Aggregate remote client memory form middle) 63.6 540.39 T
+(level of storage hierarchy) 63.6 528.73 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 511.69 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Greedy algorithm: no coordination of client) 63.6 511.69 T
+(memories) 63.6 500.03 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 482.98 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(N-Chance algorithm: reduces redundancy of) 63.6 482.98 T
+(cached copies) 63.6 471.32 T
+51.08 456.42 278.48 707.1 C
+58.55 559.68 271.01 694.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+69.21 563.77 260.35 690.46 R
+1.35 H
+2 Z
+0 X
+1 0 0 0 0 1 1 K
+N
+0 1 1 0 1 0 0 K
+165.21 655.16 176.12 676.47 R
+0.45 H
+0 Z
+0 1 1 0 1 0 0 K
+N
+165.21 672.58 176.12 672.58 2 L
+2 Z
+N
+165.21 668.97 176.12 668.97 2 L
+N
+165.47 665.36 176.38 665.36 2 L
+N
+165.21 661.75 176.12 661.75 2 L
+N
+165.21 658.14 176.12 658.14 2 L
+N
+167.29 676.24 167.29 654.93 2 L
+N
+0 1 0 0 1 0 1 K
+196.27 604.92 207.17 626.24 R
+0 Z
+0 1 0 0 1 0 1 K
+N
+196.27 622.34 207.17 622.34 2 L
+2 Z
+N
+196.27 618.74 207.17 618.74 2 L
+N
+196.53 615.12 207.43 615.12 2 L
+N
+196.27 611.51 207.17 611.51 2 L
+N
+196.27 607.91 207.17 607.91 2 L
+N
+198.35 626.01 198.35 604.7 2 L
+N
+236.29 604.92 247.2 626.24 R
+0 Z
+N
+236.29 622.34 247.2 622.34 2 L
+2 Z
+N
+236.29 618.74 247.2 618.74 2 L
+N
+236.55 615.12 247.46 615.12 2 L
+N
+236.29 611.51 247.2 611.51 2 L
+N
+236.29 607.91 247.2 607.91 2 L
+N
+238.37 626.01 238.37 604.7 2 L
+N
+0 1 1 0 1 0 0 K
+5 8.07 Q
+0 1 1 0 1 0 0 K
+(1. Local Memory) 73.62 667.24 T
+(Client 1) 156.81 681.07 T
+0 1 0 0 1 0 1 K
+0 1 0 0 1 0 1 K
+(Client 2) 188.66 630.84 T
+(Client N) 227.68 630.84 T
+90 450 1.12 0.68 214.45 616.85 G
+0 Z
+90 450 1.12 0.68 214.45 616.85 A
+90 450 1.12 0.68 220.5 616.85 G
+90 450 1.12 0.68 220.5 616.85 A
+90 450 1.12 0.68 226.56 616.85 G
+90 450 1.12 0.68 226.56 616.85 A
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+90 450 17.92 2.17 174.32 581.28 A
+90 450 17.92 2.17 174.32 569.29 A
+192.23 581.28 192.23 569.29 2 L
+2 Z
+N
+156.4 581.28 156.4 569.29 2 L
+N
+(3. Software RAID) 73.48 572.12 T
+0 1 0 0 1 0 1 K
+0 1 0 0 1 0 1 K
+(2. Remote Client) 73.47 622.16 T
+(Memory) 100.62 615.39 T
+0 1 1 0 1 0 0 K
+5 16.15 Q
+0 1 1 0 1 0 0 K
+({) 138.01 664.83 T
+0 1 0 0 1 0 1 K
+0 1 0 0 1 0 1 K
+({) 138.01 617.88 T
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+({) 137.71 571.54 T
+0 0 0 1 0 0 0 K
+169.07 624.15 166.63 624.15 171.5 648.71 176.37 624.15 173.94 624.15 5 L
+7 X
+0 0 0 1 0 0 0 K
+V
+0.09 H
+0 X
+N
+169.07 624.15 169.07 589.07 173.94 589.07 173.94 624.15 4 L
+7 X
+V
+0 X
+N
+5 6.73 Q
+(Global Miss) 0 -270 173.35 590.84 TF
+191.94 650.68 193.18 652.82 176.48 656.76 188.24 644.28 189.48 646.41 5 L
+7 X
+V
+0 X
+N
+191.94 650.68 212.27 638.95 209.8 634.68 189.48 646.41 4 L
+7 X
+V
+0 X
+N
+(Local Miss) 0 -30 183.45 650.7 TF
+202.75 654.59 204.02 656.78 215.71 644.17 198.94 647.99 200.21 650.19 5 L
+7 X
+V
+0 X
+N
+202.75 654.59 182.43 666.32 179.89 661.92 200.21 650.19 4 L
+7 X
+V
+0 X
+N
+(Replacement) 0 -30 181.25 661.92 TF
+51.08 456.42 278.48 707.1 C
+27 -31.64 639 760.36 C
+301.5 -31.64 913.5 760.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+321.77 453.57 556.97 713.09 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+324.56 439.14 556.97 447.21 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 324.56 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(13 of 25) 429.48 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 524.86 444.22 T
+(ang) 543.14 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Parallel Recovery) 380.96 698.73 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 675.26 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Secondary storage:) 338.1 675.26 T
+(reconstruct from parity in parallel) 338.1 663.6 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 646.55 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Communication:) 338.1 646.55 T
+(reach group membership consensus after failure) 338.1 634.89 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 617.85 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Manager metadata) 338.1 617.85 T
+5 9.87 Q
+(- start from checkpoint,) 338.29 604.09 T
+(roll forward by reading client log, or) 343.38 593.33 T
+(ask clients to help rebuild lost state) 343.38 582.57 T
+(- responsibility of failed manager distributed,) 338.29 569.11 T
+(rolling forward in parallel on many machines) 343.38 558.35 T
+27 -396.14 639 395.86 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+47.27 89.07 282.47 348.59 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+50.06 74.64 282.47 82.71 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 50.06 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(14 of 25) 154.99 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 250.36 79.72 T
+(ang) 268.64 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Parallel I/O Support) 98.84 334.23 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(\050Future W) 118.32 320.78 T
+(ork\051) 183.79 320.78 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 297.3 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Prototype model \050Unix interface\051:) 63.6 297.3 T
+(Synchronous, strict consistency model,) 63.6 285.64 T
+(no user control over data layout) 63.6 273.98 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 256.94 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Asynchronous operations) 63.6 256.94 T
+5 9.87 Q
+(- Split-C) 63.79 243.18 T
+7 F
+(\336) 100.53 243.18 T
+5 F
+( Split-IO?) 110.27 243.18 T
+(-) 63.79 229.73 T
+8 F
+(get\050\051) 69.54 229.73 T
+5 F
+(,) 99.15 229.73 T
+8 F
+(put\050\051) 104.08 229.73 T
+5 F
+(,) 133.68 229.73 T
+8 F
+(store\050\051) 138.62 229.73 T
+5 F
+(,) 180.06 229.73 T
+8 F
+(sync\050\051) 184.99 229.73 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 212.98 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Consistency models) 63.6 212.98 T
+(Explore weaker consistency) 63.6 201.32 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 184.28 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Layout) 63.6 184.28 T
+5 9.87 Q
+(- User directives) 63.79 170.52 T
+(- Split-C spread array style?) 63.79 157.07 T
+301.5 -396.14 913.5 395.86 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+321.77 89.07 556.97 348.59 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+324.56 74.64 556.97 82.71 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 324.56 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(15 of 25) 429.48 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 524.86 79.72 T
+(ang) 543.14 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Outline) 414.63 334.23 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 310.76 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Introduction) 338.1 310.76 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 293.72 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Design) 338.1 293.72 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 276.67 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 10.76 Q
+(Results) 338.1 276.67 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+5 9.87 Q
+(- Policy evaluations) 338.29 262.92 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+(- Prototype performance) 338.29 249.46 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+(\245) 331.93 232.72 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Conclusion) 338.1 232.72 T
+325.58 91.92 552.98 342.6 C
+349.57 91.92 528.98 160.44 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+351.37 94.03 526.74 157.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+5 8.97 Q
+0 X
+1.53 (Numbers and lines have many charms, unseen) 351.37 151.74 P
+3.41 (by vulgar eyes, and only discovered to the) 351.37 141.88 P
+(unwearied and respectful sons of Art.) 351.37 132.01 T
+(- E. De Joncourt) 389.51 116.76 T
+J
+J
+325.58 91.92 552.98 342.6 C
+301.5 -396.14 913.5 395.86 C
+FMENDPAGE
+%%EndPage: "mini" 4
+%%Page: "mini" 5
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+27 -31.64 639 760.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+47.27 453.57 282.47 713.09 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+50.06 439.14 282.47 447.21 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 50.06 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(16 of 25) 154.99 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 250.36 444.22 T
+(ang) 268.64 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Management Distribution Policies) 52.82 698.73 T
+0 0 0 1 0 0 0 K
+51.08 456.42 278.48 707.1 C
+52.27 456.41 277.29 694.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+55.34 586.89 274.22 692.29 R
+7 X
+1 0 0 0 0 1 1 K
+V
+1.35 H
+2 Z
+0 X
+N
+0 0 0 1 0 0 0 K
+55.26 457.17 275.48 583.65 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 X
+0 1 1 0 1 0 0 K
+(\245) 61.62 576.47 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Hash/RR) 67.78 576.47 T
+5 9.87 Q
+(- Randomly assigns managers) 67.97 562.72 T
+(- Emphasizes load balancing) 67.97 549.26 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 61.62 532.52 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Last W) 67.78 532.52 T
+(riter) 98.74 532.52 T
+5 9.87 Q
+(- Assigns manager to the last writer) 67.97 518.76 T
+(- Emphasizes locality) 67.97 505.31 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 61.62 488.56 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Hybrid) 67.78 488.56 T
+5 9.87 Q
+(- 1st 100K: last writer) 67.97 474.81 T
+(, the rest: round robin) 154.18 474.81 T
+-0.03 (- Load balancing for big \336les, locality for small ones) 67.97 461.35 P
+J
+J
+74.72 599.04 259.12 599.04 2 L
+0.45 H
+5 X
+N
+74.72 599.04 74.72 685.1 2 L
+N
+1 1 0 0 0 0 1 K
+74.72 599.04 76.79 599.04 2 L
+0 X
+1 1 0 0 0 0 1 K
+N
+5 6.28 Q
+(0) 66.64 598.28 T
+74.72 609.54 76.79 609.54 2 L
+N
+(500) 60.36 608.77 T
+75.84 620.01 76.79 620.01 2 L
+N
+(1000) 57.22 619.25 T
+74.72 630.51 76.79 630.51 2 L
+N
+(1500) 57.22 629.74 T
+74.72 640.99 76.79 640.99 2 L
+N
+(2000) 57.22 640.22 T
+74.72 651.48 76.79 651.48 2 L
+N
+(2500) 57.22 650.72 T
+74.72 661.98 76.79 661.98 2 L
+N
+(3000) 57.22 661.21 T
+74.72 672.45 76.79 672.45 2 L
+N
+(3500) 57.22 671.69 T
+74.72 682.95 76.79 682.95 2 L
+N
+(4000) 57.22 682.18 T
+74.72 599.04 74.72 600.35 2 L
+N
+74.72 685.1 74.72 683.8 2 L
+N
+0 0 0 1 0 0 0 K
+111.6 599.04 111.6 600.35 2 L
+0 0 0 1 0 0 0 K
+N
+111.6 685.1 111.6 683.8 2 L
+N
+(Single Manager) 91.64 591.91 T
+148.49 599.04 148.49 600.35 2 L
+N
+148.49 685.1 148.49 683.8 2 L
+N
+(Hash/RR) 136.98 591.91 T
+185.34 599.04 185.34 600.35 2 L
+N
+185.34 685.1 185.34 683.8 2 L
+N
+(Last Writer) 170.96 591.91 T
+222.23 599.04 222.23 600.35 2 L
+N
+222.23 685.1 222.23 683.8 2 L
+N
+(Hybrid) 213.34 591.91 T
+74.72 599.04 259.12 599.04 259.12 685.1 74.72 685.1 74.72 599.04 5 L
+N
+1 1 0 0 0 0 1 K
+99.09 599.22 99.09 677.45 110.87 677.45 110.87 599.22 99.09 599.22 5 L
+3 X
+1 1 0 0 0 0 1 K
+V
+0.22 H
+0 X
+N
+136.04 599.22 136.04 601.73 147.8 601.73 147.8 599.22 136.04 599.22 5 L
+3 X
+V
+0 X
+N
+172.98 599.39 172.98 636.95 184.75 636.95 184.75 599.39 172.98 599.39 5 L
+3 X
+V
+0 X
+N
+209.91 599.22 209.91 606.55 221.7 606.55 221.7 599.22 209.91 599.22 5 L
+3 X
+V
+0 X
+N
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+258.76 599.05 256.08 599.05 2 L
+0.45 H
+0 1 1 0 1 0 0 K
+N
+(0) 263.16 597.82 T
+258.76 616.27 256.08 616.27 2 L
+N
+(0.2) 263.05 615.04 T
+258.76 633.48 256.08 633.48 2 L
+N
+(0.4) 263.05 632.25 T
+258.76 650.68 256.08 650.68 2 L
+N
+(0.6) 263.05 649.45 T
+258.76 667.89 256.08 667.89 2 L
+N
+(0.8) 263.05 666.66 T
+258.76 685.11 256.08 685.11 2 L
+N
+(1) 263.16 683.88 T
+258.76 599.05 258.76 600.36 2 L
+N
+258.76 685.11 258.76 683.81 2 L
+N
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+112.29 599.19 112.29 685.25 124.03 685.25 124.03 599.19 112.29 599.19 5 L
+3 X
+V
+0.22 H
+0 X
+N
+149.24 599.19 149.24 684.38 160.96 684.38 160.96 599.19 149.24 599.19 5 L
+3 X
+V
+0 X
+N
+186.19 599.19 186.19 600.91 197.91 600.91 197.91 599.19 186.19 599.19 5 L
+3 X
+V
+0 X
+N
+222.96 599.37 222.96 620.02 234.71 620.02 234.71 599.37 222.96 599.37 5 L
+3 X
+V
+0 X
+N
+1 1 0 0 0 0 1 K
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+202.84 656.75 214.84 662.47 R
+3 X
+V
+0 X
+N
+1 1 0 0 0 0 1 K
+202.99 674.34 214.99 680.06 R
+3 X
+1 1 0 0 0 0 1 K
+V
+0 X
+N
+5 5.38 Q
+(Load Imbalance) 216.39 676.55 T
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+(Lack of Locality) 216.44 658.6 T
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+( \050Peak Requests) 214.71 672.23 T
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+(\050Network hops per) 216.61 654.4 T
+1 1 0 0 0 0 1 K
+0 1 1 0 1 0 0 K
+(Write Update\051) 216.84 649.91 T
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+(per Second\051) 216.28 668.42 T
+0 0 0 1 0 0 0 K
+51.08 456.42 278.48 707.1 C
+27 -31.64 639 760.36 C
+301.5 -31.64 913.5 760.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+321.77 453.57 556.97 713.09 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+324.56 439.14 556.97 447.21 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 324.56 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(17 of 25) 429.48 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 524.86 444.22 T
+(ang) 543.14 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(WST Cleaning Policy) 371.03 698.73 T
+0 0 0 1 0 0 0 K
+325.58 456.42 552.98 707.1 C
+334.62 588.83 543.94 694.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+369.8 603.83 507.86 691.21 R
+1.35 H
+2 Z
+0 X
+1 0 0 0 0 1 1 K
+N
+1 1 0 0 0 0 1 K
+482.62 620.52 491.67 617.92 482.62 615.32 482.62 617.92 4 Y
+1 1 0 0 0 0 1 K
+V
+378.67 617.92 482.62 617.92 2 L
+N
+376.07 680.47 378.67 689.53 381.26 680.47 378.67 680.47 4 Y
+V
+378.67 617.92 378.67 680.47 2 L
+N
+0 1 1 0 1 0 0 K
+4 X
+0 1 1 0 1 0 0 K
+180 270 43.26 70.18 270 448.84 617.51 GG
+0 X
+180 270 43.26 70.18 270 448.84 617.51 AA
+449.33 660.68 M
+ 461.57 660.84 474.2 660.87 486.74 660.95 D
+N
+0 0 0 1 0 0 0 K
+9 10.76 Q
+0 0 0 1 0 0 0 K
+(t) 445.45 608.16 T
+9 8.61 Q
+(current) 449.83 605.47 T
+9 10.76 Q
+(WST) 408.86 631.36 T
+3 6.28 Q
+(W) 381.98 682.72 T
+(asted) 387.67 682.72 T
+(Free Space) 382.81 675.8 T
+(T) 474.69 625.35 T
+(ime) 479.06 625.35 T
+337.69 590.82 540.87 602.04 R
+7 X
+V
+5 8.97 Q
+0 X
+(Clean segment with greatest wasted space-time product) 337.69 596.06 T
+325.58 456.42 552.98 707.1 C
+301.5 -31.64 913.5 760.36 C
+325.58 456.42 552.98 707.1 C
+327.22 469.22 551.34 588.83 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+448.62 510.09 506.92 531.02 R
+4 X
+0 1 1 0 1 0 0 K
+V
+0.22 H
+2 Z
+7 X
+N
+1 0 0 0 0 1 1 K
+329.72 496.95 436.49 571.7 R
+1.35 H
+0 X
+1 0 0 0 0 1 1 K
+N
+1 1 0 0 0 0 1 K
+422.43 513.1 431.48 510.51 422.43 507.91 422.43 510.51 4 Y
+1 1 0 0 0 0 1 K
+V
+337.13 510.51 422.43 510.51 2 L
+N
+334.53 561.24 337.13 570.3 339.73 561.24 337.13 561.24 4 Y
+V
+337.13 510.51 337.13 561.24 2 L
+N
+4 X
+180 270 21.54 58.59 270 395.72 510.16 GG
+0 X
+180 270 21.54 58.59 270 395.72 510.16 AA
+396.69 531.91 M
+ 406.91 532.05 417.46 532.07 427.93 532.14 D
+N
+0 0 0 1 0 0 0 K
+9 10.76 Q
+0 0 0 1 0 0 0 K
+(t) 392.89 502.07 T
+9 8.61 Q
+(current) 397.27 499.38 T
+3 6.28 Q
+(W) 339.89 564.34 T
+(asted) 345.59 564.34 T
+(Free Space) 340.59 558.55 T
+(T) 417.3 516.44 T
+(ime) 421.68 516.44 T
+0 1 1 0 1 0 0 K
+9 X
+0 1 1 0 1 0 0 K
+90 180 5.33 50.18 395.52 511.1 G
+0 X
+90 180 5.33 50.18 395.52 511.1 A
+1 0 0 0 0 1 1 K
+441.4 496.95 548.17 571.7 R
+1 0 0 0 0 1 1 K
+N
+1 1 0 0 0 0 1 K
+534.11 513.1 543.16 510.51 534.11 507.91 534.11 510.51 4 Y
+1 1 0 0 0 0 1 K
+V
+448.81 510.51 534.11 510.51 2 L
+N
+446.21 561.24 448.81 570.3 451.41 561.24 448.81 561.24 4 Y
+V
+448.81 510.51 448.81 561.24 2 L
+N
+0 1 1 0 1 0 0 K
+4 X
+0 1 1 0 1 0 0 K
+180 270 14.53 58.29 270 507.11 510.16 GG
+0 X
+180 270 14.53 58.29 270 507.11 510.16 AA
+507.53 524.9 M
+ 517.75 525.04 528.3 525.06 538.77 525.13 D
+N
+0 0 0 1 0 0 0 K
+9 10.76 Q
+0 0 0 1 0 0 0 K
+(t) 504.57 502.07 T
+9 8.61 Q
+(current) 508.95 499.38 T
+3 6.28 Q
+(W) 451.57 564.34 T
+(asted) 457.27 564.34 T
+(Free Space) 452.27 558.55 T
+(T) 528.98 516.44 T
+(ime) 533.36 516.44 T
+0 1 1 0 1 0 0 K
+4 X
+0 1 1 0 1 0 0 K
+180 270 14.53 58.59 270 507.07 530.12 GG
+0 X
+180 270 14.53 58.59 270 507.07 530.12 AA
+506.35 544.58 M
+ 516.57 544.72 527.12 544.74 537.59 544.81 D
+N
+J
+506.7 525.9 506.7 544.4 2 L
+J
+506.7 525.9 506.7 526.24 2 L
+0.22 H
+N
+[1.472 4.417] 1.472 I
+506.7 526.24 506.7 544.06 2 L
+N
+J
+506.7 544.06 506.7 544.4 2 L
+N
+0 0 0 1 0 0 0 K
+328.98 473.14 436.62 494.5 R
+7 X
+0 0 0 1 0 0 0 K
+V
+5 8.97 Q
+0 X
+(Sprite-like workload:) 328.98 488.52 T
+(favors cold segments) 337.95 478.65 T
+J
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+(Hot) 398.5 559.54 T
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+(Cold) 398.5 534.31 T
+0 0 0 1 0 0 0 K
+440.83 473.31 549.59 495.06 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 X
+(TPC-like workload:) 440.83 489.08 T
+(favors emptier segments) 449.8 479.22 T
+J
+0 1 1 0 1 0 0 K
+5 8.07 Q
+0 1 1 0 1 0 0 K
+(Emptier) 508.72 548.21 T
+1 1 0 0 0 0 1 K
+0 1 1 0 1 0 0 K
+(Fuller) 509.17 528.48 T
+0 0 0 1 0 0 0 K
+J
+325.58 456.42 552.98 707.1 C
+301.5 -31.64 913.5 760.36 C
+27 -396.14 639 395.86 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+47.27 89.07 282.47 348.59 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+50.06 74.64 282.47 82.71 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 50.06 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(18 of 25) 154.99 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 250.36 79.72 T
+(ang) 268.64 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(WST Cleaning Policy) 96.53 334.23 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 208.64 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Greedy) 63.6 208.64 T
+5 9.87 Q
+(- Favors emptier segments) 63.79 194.88 T
+(- Good for TPC-like workload) 63.79 181.42 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 164.68 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Cost/Bene\336t [Rosenblum 91]) 63.6 164.68 T
+5 9.87 Q
+(- Favors colder segments) 63.79 150.93 T
+(- Good for Sprite-like workload) 63.79 137.47 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 120.73 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(WST) 63.6 120.73 T
+5 9.87 Q
+(- Considers both rate of change and age) 63.79 106.97 T
+(- Good for both types of workloads) 63.79 93.52 T
+51.08 91.92 278.48 342.6 C
+54.29 222.09 275.27 330.05 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+71.33 238.62 206.74 238.62 2 L
+0.45 H
+2 Z
+5 X
+0 0 0 1 0 0 0 K
+N
+71.33 238.62 71.33 317.69 2 L
+N
+71.33 238.62 72.86 238.62 2 L
+0 X
+N
+206.74 238.62 205.22 238.62 2 L
+N
+5 7.18 Q
+(0) 64.12 237.83 T
+71.33 247.41 72.86 247.41 2 L
+N
+206.74 247.41 205.22 247.41 2 L
+N
+(1) 64.12 246.62 T
+71.33 256.2 72.86 256.2 2 L
+N
+206.74 256.2 205.22 256.2 2 L
+N
+(2) 64.12 255.41 T
+71.33 264.97 72.86 264.97 2 L
+N
+206.74 264.97 205.22 264.97 2 L
+N
+(3) 64.12 264.18 T
+71.33 273.76 72.86 273.76 2 L
+N
+206.74 273.76 205.22 273.76 2 L
+N
+(4) 64.12 272.97 T
+71.33 282.55 72.86 282.55 2 L
+N
+206.74 282.55 205.22 282.55 2 L
+N
+(5) 64.12 281.76 T
+71.33 291.34 72.86 291.34 2 L
+N
+206.74 291.34 205.22 291.34 2 L
+N
+(6) 64.12 290.55 T
+71.33 300.11 72.86 300.11 2 L
+N
+206.74 300.11 205.22 300.11 2 L
+N
+(7) 64.12 299.32 T
+71.33 308.9 72.86 308.9 2 L
+N
+206.74 308.9 205.22 308.9 2 L
+N
+(8) 64.12 308.11 T
+71.33 317.69 72.86 317.69 2 L
+N
+206.74 317.69 205.22 317.69 2 L
+N
+(9) 64.12 316.9 T
+71.33 238.62 71.33 239.82 2 L
+N
+71.33 317.69 71.33 316.49 2 L
+N
+98.42 238.62 98.42 239.82 2 L
+N
+125.5 238.62 125.5 239.82 2 L
+N
+206.74 238.62 206.74 239.82 2 L
+N
+206.74 317.69 206.74 316.49 2 L
+N
+71.33 238.62 206.74 238.62 206.74 317.69 71.33 317.69 71.33 238.62 5 L
+N
+0 1 1 0 1 0 0 K
+88.26 238.62 88.26 306.36 108.58 306.36 108.58 238.62 88.26 238.62 5 L
+3 X
+0 1 1 0 1 0 0 K
+V
+0.22 H
+0 X
+N
+1 0 1 0 0 1 0 K
+98.65 238.62 98.65 278.34 118.94 278.34 118.94 238.62 98.65 238.62 5 L
+3 X
+1 0 1 0 0 1 0 K
+V
+0 X
+N
+1 1 0 0 0 0 1 K
+108.42 238.62 108.42 275.43 128.72 275.43 128.72 238.62 108.42 238.62 5 L
+3 X
+1 1 0 0 0 0 1 K
+V
+0 X
+N
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+147.05 238.73 147.05 300.21 167.38 300.21 167.38 238.73 147.05 238.73 5 L
+3 X
+0 1 1 0 1 0 0 K
+V
+0 X
+N
+1 0 1 0 0 1 0 K
+156.42 238.73 156.42 309.27 176.72 309.27 176.72 238.73 156.42 238.73 5 L
+3 X
+1 0 1 0 0 1 0 K
+V
+0 X
+N
+1 1 0 0 0 0 1 K
+166.4 238.73 166.4 300.39 186.7 300.39 186.7 238.73 166.4 238.73 5 L
+3 X
+1 1 0 0 0 0 1 K
+V
+0 X
+N
+208.41 296.12 208.41 302.82 228.71 302.82 228.71 296.12 208.41 296.12 5 L
+3 X
+V
+0 X
+N
+1 0 1 0 0 1 0 K
+208.41 303.65 208.41 310.34 228.71 310.34 228.71 303.65 208.41 303.65 5 L
+3 X
+1 0 1 0 0 1 0 K
+V
+0 X
+N
+0 1 1 0 1 0 0 K
+208.41 311.17 208.41 317.87 228.71 317.87 228.71 311.17 208.41 311.17 5 L
+3 X
+0 1 1 0 1 0 0 K
+V
+0 X
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Greedy) 230.26 312.3 T
+(Cost/Benefit) 230.26 304.78 T
+(WST) 230.71 297.9 T
+(Hot/Cold \050Sprite\051) 83.37 230.65 T
+(Uniform \050TPC\051) 145.88 230.27 T
+(Cleaning Cost) 69.13 319.87 T
+1 0 0 0 0 1 1 K
+61.21 225.13 268.35 327.9 R
+1.35 H
+1 0 0 0 0 1 1 K
+N
+0 0 0 1 0 0 0 K
+51.08 91.92 278.48 342.6 C
+27 -396.14 639 395.86 C
+301.5 -396.14 913.5 395.86 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+321.77 89.07 556.97 348.59 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+324.56 74.64 556.97 82.71 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 324.56 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(19 of 25) 429.48 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 524.86 79.72 T
+(ang) 543.14 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Prototype Status) 383.98 334.23 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 310.76 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Features implemented) 338.1 310.76 T
+5 9.87 Q
+(- Distributed management) 338.29 297.01 T
+(- Software RAID) 338.29 283.55 T
+(- Greedy cooperative caching) 338.29 270.09 T
+(- Data reconstruction from single parity) 338.29 256.64 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 239.89 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Prototype status) 338.1 239.89 T
+5 9.87 Q
+(- Performance limited by user level servers and poor) 338.29 226.14 T
+(RPC performance) 343.38 215.38 T
+(- Still buggy and lar) 338.29 201.92 T
+(gely untuned) 417.05 201.92 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 185.17 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(T) 338.1 185.17 T
+(o do \050near term\051:) 343.92 185.17 T
+5 9.87 Q
+(- Debugging) 338.29 171.42 T
+(- Moving to T) 338.29 157.97 T
+(AC) 393.14 157.97 T
+(- Eliminating address space crossings) 338.29 144.51 T
+(- Implementing parallel cleaner) 338.29 131.05 T
+(- Completing recovery) 338.29 117.6 T
+FMENDPAGE
+%%EndPage: "mini" 5
+%%Page: "mini" 6
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+27 -31.64 639 760.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+47.27 453.57 282.47 713.09 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+50.06 439.14 282.47 447.21 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 50.06 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(20 of 25) 154.99 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 250.36 444.22 T
+(ang) 268.64 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Bandwidth Matching) 95.77 698.73 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 532.17 T
+0 0 0 1 0 0 0 K
+5 8.97 Q
+0 0 0 1 0 0 0 K
+(As stripe group size increases, per client bandwidth) 63.6 532.17 T
+(approaches limit) 63.6 522.3 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 507.95 T
+0 0 0 1 0 0 0 K
+5 8.97 Q
+0 0 0 1 0 0 0 K
+(Expect the elimination of address space crossings and fast) 63.6 507.95 T
+(communication to improve bandwidth signi\336cantly) 63.6 498.08 T
+51.08 456.42 278.48 707.1 C
+52.72 550.26 276.84 694.54 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 0 0 0 0 1 1 K
+54.93 553.38 274.18 692.33 R
+1.35 H
+2 Z
+0 X
+1 0 0 0 0 1 1 K
+N
+0 0 0 1 0 0 0 K
+5 8.07 Q
+0 0 0 1 0 0 0 K
+(# Storage Servers) 136.47 559.15 T
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+(Ethernet-no parity) 153.39 609.61 T
+1 1 0 0 0 0 1 K
+1 1 0 0 0 0 1 K
+(A) 165.99 668.26 T
+(TM-no parity) 170.93 668.26 T
+0 0 0 1 0 0 0 K
+99.77 579.57 248.87 579.57 2 L
+7 X
+0 0 0 1 0 0 0 K
+V
+0.45 H
+0 X
+N
+99.77 579.57 101.44 579.57 2 L
+7 X
+V
+0 X
+N
+248.87 579.57 247.2 579.57 2 L
+7 X
+V
+0 X
+N
+(0) 91.74 578.79 T
+99.77 600 101.44 600 2 L
+7 X
+V
+0 X
+N
+248.87 600 247.2 600 2 L
+7 X
+V
+0 X
+N
+(5) 91.74 599.22 T
+99.77 620.43 101.44 620.43 2 L
+7 X
+V
+0 X
+N
+248.87 620.43 247.2 620.43 2 L
+7 X
+V
+0 X
+N
+(10) 87.7 619.65 T
+99.77 640.84 101.44 640.84 2 L
+7 X
+V
+0 X
+N
+248.87 640.84 247.2 640.84 2 L
+7 X
+V
+0 X
+N
+(15) 87.7 640.06 T
+99.77 661.27 101.44 661.27 2 L
+7 X
+V
+0 X
+N
+248.87 661.27 247.2 661.27 2 L
+7 X
+V
+0 X
+N
+(20) 87.7 660.49 T
+99.77 681.71 101.44 681.71 2 L
+7 X
+V
+0 X
+N
+248.87 681.71 247.2 681.71 2 L
+7 X
+V
+0 X
+N
+(25) 87.7 680.93 T
+99.77 579.57 99.77 581.12 2 L
+7 X
+V
+0 X
+N
+99.77 681.71 99.77 680.16 2 L
+7 X
+V
+0 X
+N
+(1) 97.75 571.23 T
+121.07 579.57 121.07 581.12 2 L
+7 X
+V
+0 X
+N
+121.07 681.71 121.07 680.16 2 L
+7 X
+V
+0 X
+N
+(2) 119.06 571.23 T
+142.36 579.57 142.36 581.12 2 L
+7 X
+V
+0 X
+N
+142.36 681.71 142.36 680.16 2 L
+7 X
+V
+0 X
+N
+(3) 140.34 571.23 T
+163.67 579.57 163.67 581.12 2 L
+7 X
+V
+0 X
+N
+163.67 681.71 163.67 680.16 2 L
+7 X
+V
+0 X
+N
+(4) 161.65 571.23 T
+184.97 579.57 184.97 581.12 2 L
+7 X
+V
+0 X
+N
+184.97 681.71 184.97 680.16 2 L
+7 X
+V
+0 X
+N
+(5) 182.96 571.23 T
+206.28 579.57 206.28 581.12 2 L
+7 X
+V
+0 X
+N
+206.28 681.71 206.28 680.16 2 L
+7 X
+V
+0 X
+N
+(6) 204.26 571.23 T
+227.57 579.57 227.57 581.12 2 L
+7 X
+V
+0 X
+N
+227.57 681.71 227.57 680.16 2 L
+7 X
+V
+0 X
+N
+(7) 225.55 571.23 T
+248.87 579.57 248.87 581.12 2 L
+7 X
+V
+0 X
+N
+248.87 681.71 248.87 680.16 2 L
+7 X
+V
+0 X
+N
+(8) 246.86 571.23 T
+99.77 579.57 248.87 579.57 248.87 681.71 99.77 681.71 99.77 579.57 5 L
+N
+0 1 1 0 1 0 0 K
+99.77 598.52 99.77 598.52 121.07 600.4 163.67 604.48 248.87 608.09 5 L
+1.35 H
+0 1 1 0 1 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+J
+121.07 589.98 121.07 589.98 163.67 593.13 248.87 604.41 4 L
+J
+121.07 589.98 121.07 589.98 121.3 590 3 L
+N
+[0.992 4.959] 0.992 I
+121.3 590 163.44 593.11 2 L
+N
+J
+163.44 593.11 163.67 593.13 163.89 593.16 3 L
+N
+[0.998 4.99] 0.998 I
+163.89 593.16 248.65 604.38 2 L
+N
+J
+248.65 604.38 248.87 604.41 2 L
+N
+0 0 0 1 0 0 0 K
+J
+1 1 0 0 0 0 1 K
+99.77 609.97 99.77 609.97 121.07 645.58 163.67 658.67 206.28 663.08 5 L
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+J
+121.07 609.81 121.07 609.81 163.67 638.73 206.28 648.16 4 L
+J
+121.07 609.81 121.07 609.81 121.26 609.93 3 L
+N
+[1.007 5.035] 1.007 I
+121.26 609.93 163.48 638.6 2 L
+N
+J
+163.48 638.6 163.67 638.73 163.88 638.78 3 L
+N
+[0.954 4.768] 0.954 I
+163.88 638.78 206.06 648.11 2 L
+N
+J
+206.06 648.11 206.28 648.16 2 L
+N
+0 0 0 1 0 0 0 K
+J
+1 1 0 0 0 0 1 K
+(A) 178.33 633.07 T
+(TM-parity) 183.26 633.07 T
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+(Ethernet-parity) 187.32 586.15 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Bandwidth \050Mb/s\051) 0 -270 79.63 592.36 TF
+J
+51.08 456.42 278.48 707.1 C
+27 -31.64 639 760.36 C
+301.5 -31.64 913.5 760.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+321.77 453.57 556.97 713.09 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+324.56 439.14 556.97 447.21 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 324.56 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(21 of 25) 429.48 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 524.86 444.22 T
+(ang) 543.14 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Small File Performance) 362.06 698.73 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 597.67 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Per) 338.1 597.67 T
+(-client logging dramatically improves small) 352.23 597.67 T
+(write performance) 338.1 586 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 568.96 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(As # of clients increases, xFS did not show) 338.1 568.96 T
+-0.12 (performance degradation as a result of its parallel) 338.1 557.3 P
+(storage and management) 338.1 545.64 T
+0 8.97 Q
+(NFS Con\336g.) 404.59 675.11 T
+(xFS Con\336g.) 485.9 675.11 T
+5 F
+(1 clnt) 398.25 663.45 T
+(1 svr) 399.49 652.68 T
+(2 clnts) 437.45 663.45 T
+(1 svr) 440.45 652.68 T
+(1 clnt) 478.56 663.45 T
+(2 svrs) 478.06 652.68 T
+(1mgr) 479.18 641.92 T
+(2 clnts) 516.18 663.45 T
+(4 svrs) 517.42 652.68 T
+(2 mgrs) 515.68 641.92 T
+0 F
+-0.13 (Elapsed T) 331.76 631.15 P
+-0.13 (ime) 370.11 631.15 P
+(\050sec.\051) 331.76 620.39 T
+5 F
+(33.2) 413.02 620.39 T
+(49.4) 452.38 620.39 T
+(6.9) 496.22 620.39 T
+(6.9) 535.59 620.39 T
+330.86 683.22 330.86 617.06 2 L
+V
+N
+387.07 683.44 387.07 616.84 2 L
+V
+N
+429.61 670.89 429.61 616.84 2 L
+V
+N
+468.97 683.44 468.97 616.84 2 L
+V
+N
+508.33 670.89 508.33 616.84 2 L
+V
+N
+547.69 683.22 547.69 617.06 2 L
+V
+N
+330.75 683.33 547.81 683.33 2 L
+V
+N
+386.95 670.77 547.81 670.77 2 L
+V
+N
+330.97 639.04 547.58 639.04 2 L
+V
+N
+330.97 637.92 547.58 637.92 2 L
+V
+N
+330.75 616.95 547.81 616.95 2 L
+V
+N
+27 -396.14 639 395.86 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+47.27 89.07 282.47 348.59 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+50.06 74.64 282.47 82.71 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 50.06 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(22 of 25) 154.99 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 250.36 79.72 T
+(ang) 268.64 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Copying & Compiling xFS) 80.3 334.23 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 168.58 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Copying xFS source tree and compiling its user) 63.6 168.58 T
+(code) 63.6 156.92 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 139.87 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Copying phase is FS intensive and shows) 63.6 139.87 T
+(scalability) 63.6 128.21 T
+0 8.97 Q
+(NFS Con\336g.) 130.09 310.61 T
+(xFS Con\336g.) 211.4 310.61 T
+5 F
+(1 clnt) 123.75 298.95 T
+(1 svr) 124.99 288.18 T
+(2 clnts) 162.96 298.95 T
+(1 svr) 165.95 288.18 T
+(1 clnt) 204.06 298.95 T
+(4 svrs) 203.56 288.18 T
+(2 mgrs) 201.82 277.42 T
+(2 clnts) 241.68 298.95 T
+(4 svrs) 242.92 288.18 T
+(2 mgrs) 241.18 277.42 T
+0 F
+(cp -r) 57.26 266.66 T
+(\050sec.\051) 57.26 255.89 T
+5 F
+(61.4) 138.51 266.66 T
+(90.2) 177.88 266.66 T
+(21.0) 217.24 266.66 T
+(27.6) 256.6 266.66 T
+0 F
+(chmod -R) 57.26 245.13 T
+(\050sec.\051) 57.26 234.36 T
+5 F
+(7.5) 143 245.13 T
+(13.6) 177.88 245.13 T
+(2.1) 221.72 245.13 T
+(2.4) 261.08 245.13 T
+0 F
+(make) 57.26 223.6 T
+(\050sec.\051) 57.26 212.83 T
+5 F
+(204) 140.76 223.6 T
+(247) 180.12 223.6 T
+(198) 219.48 223.6 T
+(221) 258.84 223.6 T
+0 F
+(total) 57.26 202.07 T
+(\050sec.\051) 57.26 191.3 T
+5 F
+(273) 140.76 202.07 T
+(351) 180.12 202.07 T
+(221) 219.48 202.07 T
+(251) 258.84 202.07 T
+56.36 318.72 56.36 187.98 2 L
+V
+N
+112.57 318.95 112.57 187.75 2 L
+V
+N
+155.11 306.39 155.11 187.75 2 L
+V
+N
+194.47 318.95 194.47 187.75 2 L
+V
+N
+233.83 306.39 233.83 187.75 2 L
+V
+N
+273.2 318.72 273.2 187.98 2 L
+V
+N
+56.25 318.83 273.31 318.83 2 L
+V
+N
+112.46 306.27 273.31 306.27 2 L
+V
+N
+56.47 274.54 273.08 274.54 2 L
+V
+N
+56.47 273.42 273.08 273.42 2 L
+V
+N
+56.25 252.45 273.31 252.45 2 L
+V
+N
+56.25 230.92 273.31 230.92 2 L
+V
+N
+56.25 209.4 273.31 209.4 2 L
+V
+N
+56.25 187.87 273.31 187.87 2 L
+V
+N
+301.5 -396.14 913.5 395.86 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+321.77 89.07 556.97 348.59 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+324.56 74.64 556.97 82.71 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 324.56 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(23 of 25) 429.48 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 524.86 79.72 T
+(ang) 543.14 79.72 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Outline) 414.63 334.23 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 310.76 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Introduction) 338.1 310.76 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 293.72 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Design) 338.1 293.72 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 276.67 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Results) 338.1 276.67 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 259.63 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 10.76 Q
+(Conclusion) 338.1 259.63 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 0 0 1 0 0 0 K
+325.58 91.92 552.98 342.6 C
+326.48 91.91 552.08 161.78 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+333.2 123.56 431.88 157.65 R
+7 X
+0 0 0 1 0 0 0 K
+V
+5 7.18 Q
+0 X
+(Oh give me your pity!) 333.2 152.86 T
+(I\325m on a committee,) 333.2 144.79 T
+(Which means that from morning) 333.2 136.72 T
+(to night,) 358.63 128.64 T
+J
+446.68 123.11 545.35 158.1 R
+7 X
+V
+0 X
+(W) 446.68 153.31 T
+(e attend and amend) 452.88 153.31 T
+(And contend and defend) 446.68 145.24 T
+(W) 446.68 137.17 T
+(ithout a conclusion in sight.) 453.17 137.17 T
+(...) 446.68 129.09 T
+J
+J
+371.07 109.18 507.49 120.77 R
+7 X
+V
+5 8.97 Q
+0 X
+(-) 371.07 114.79 T
+5 7.18 Q
+(Leslie Lipson, \322The Committee\323) 376.3 114.79 T
+325.58 91.92 552.98 342.6 C
+301.5 -396.14 913.5 395.86 C
+FMENDPAGE
+%%EndPage: "mini" 6
+%%Page: "mini" 7
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+27 -31.64 639 760.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+47.27 453.57 282.47 713.09 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+50.06 439.14 282.47 447.21 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 50.06 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(24 of 25) 154.99 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 250.36 444.22 T
+(ang) 268.64 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Parallel Program as xFS?!) 80.06 698.73 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 675.26 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Parallel programs: MPP) 63.6 675.26 T
+7 F
+(\336) 169.75 675.26 T
+5 F
+(NOW) 183.07 675.26 T
+(Many assumptions will change) 63.6 663.6 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 57.44 646.55 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Some questions that might be applicable to both) 63.6 646.55 T
+(xFS and parallel programs) 63.6 634.89 T
+5 9.87 Q
+(- Recovery from communication error) 63.79 621.14 T
+(- Reliable parallel data structures) 63.79 607.68 T
+(- Distributed checkpointing) 63.79 594.23 T
+(- Dynamic recon\336guration) 63.79 580.77 T
+301.5 -31.64 913.5 760.36 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+321.77 453.57 556.97 713.09 R
+0.22 H
+0 Z
+0 X
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+324.56 439.14 556.97 447.21 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+2 4.49 Q
+0 X
+1 1 0 0 0 0 1 K
+(The File System as a Parallel Program) 324.56 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(25 of 25) 429.48 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Randy W) 524.86 444.22 T
+(ang) 543.14 444.22 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+3 12.56 Q
+(Conclusion) 402.65 698.73 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 675.26 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Client/server system) 338.1 675.26 T
+7 F
+(\271) 429 675.26 T
+5 F
+(Parallel system) 436.48 675.26 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 658.21 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(File system must systematically parallelize:) 338.1 658.21 T
+5 9.87 Q
+(- Metadata management) 338.29 644.46 T
+(- Secondary storage management) 338.29 631.01 T
+(- Memory management) 338.29 617.55 T
+(- Communication) 338.29 604.09 T
+0 1 1 0 1 0 0 K
+4 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 331.93 587.35 T
+0 0 0 1 0 0 0 K
+5 10.76 Q
+0 0 0 1 0 0 0 K
+(Result: better) 338.1 587.35 T
+5 9.87 Q
+(- Scalability) 338.29 573.6 T
+(- Performance) 338.29 560.14 T
+(- A) 338.29 546.68 T
+(vailability) 350.44 546.68 T
+FMENDPAGE
+%%EndPage: "mini" 7
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Ascend
+%%Pages: 7
+%%DocumentFonts: Times-Bold
+%%+ Courier
+%%+ Helvetica
+%%+ NewCenturySchlbk-Bold
+%%+ Helvetica-Bold
+%%+ Times-Roman
+%%+ Times-Italic
+%%+ Symbol
+%%+ Courier-Bold
+%%+ NewCenturySchlbk-BoldItalic
+%%EOF

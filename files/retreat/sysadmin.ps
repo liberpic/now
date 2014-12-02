@@ -1,0 +1,5034 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 612 792 0 1 9 FMDOCUMENT
+0 0 /Helvetica-Bold FMFONTDEFINE
+1 0 /Helvetica FMFONTDEFINE
+2 0 /Times-Bold FMFONTDEFINE
+3 0 /Times-Roman FMFONTDEFINE
+4 0 /Courier-Bold FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "11" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 0.31 0.58 0.04 0.96 0.64 0.38]
+[ 0 0.27 0.47 0.46 0.55 0.27 0.08]
+[ 0 0.5 1 0 1 0.5 0]
+[ 0.7 0 0.7 0.3 0 0.7 0]
+ 11 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+657.22 468.75 656.84 436 655.97 399.5 653.09 360 649.97 331.25 643.47 293.75 640.47 282
+ 633.97 262.75 630.22 255.25 626.97 250 624.84 247.12 633.47 254.75 636.47 258.12 638.97 260.5 642.97 253.25
+ 648.34 242.38 651.97 254.62 657.22 268.88 659.97 261 666.09 243.25 670.97 256.75 675.22 269.62 683.97 261
+ 702.22 242.75 697.22 250.62 693.22 262.25 689.97 274 685.47 301.25 682.59 327.5 680.97 351.5 679.59 382.12
+ 678.48 419.12 677.22 442.88 675.22 469 34 L
+0 X
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+V
+0.01 H
+2 Z
+N
+0 0 0 1 0 0 0 K
+0 8 Q
+0 0 0 1 0 0 0 K
+4 (NOW RETREA) 296.29 750 S
+4 (T - JUNE 1995) 390.36 750 S
+277.61 748.16 284.29 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+277.61 748.16 284.29 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+277.61 751.16 282.45 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+507.71 748.16 514.39 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+507.71 748.16 514.39 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+507.71 751.16 512.56 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+1 7 Q
+0 X
+0 0 0 1 0 0 0 K
+(ERIC ANDERSON) 344.33 219.49 T
+(U.C. BERKELEY) 347.05 210.49 T
+(510-642-9669) 351.71 201.49 T
+370.16 226.16 376.84 234 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+370.16 226.16 376.84 234 R
+7 X
+0 0 0 1 0 0 0 K
+V
+370.16 229.16 375 234 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+657.09 216 711.09 227 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 9 Q
+0 X
+(1) 679.9 220.44 T
+(1 of 1) 684.24 220.44 T
+(1) 706.09 220.44 T
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+621.09 243 M
+ 654.52 273.61 658.21 424.49 657.09 468 D
+2 H
+2 Z
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+N
+702.09 243 M
+ 675.09 276.34 681.09 436.52 675.09 468 D
+N
+621.09 243 630.09 252 639.09 261 648.09 243 657.09 270 666.09 243 675.09 270
+ 702.09 243 8 L
+N
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+673.59 469 M
+ 683.63 460.48 704.99 463.16 692.46 481.5 D
+ 682.51 496.06 705.11 482.77 710.13 489 D
+ 716.52 496.93 711.09 509.01 704.09 513.38 D
+ 677.04 530.27 709.95 505.09 713.96 523 D
+ 717.07 536.84 706.51 554.26 691.09 558.91 D
+ 681.17 561.9 680.09 544.78 677.85 541.5 D
+ 686.7 554.46 671.28 552.23 662.59 552.24 D
+ 649.33 552.27 670.27 528.92 652.59 546.16 D
+ 642.54 555.96 617.59 536.5 633.09 527.98 D
+ 650.45 518.45 616.79 529.32 614.03 515.5 D
+ 611.36 502.14 628.84 499.13 629.4 496.5 D
+ 628.71 499.75 619.56 494.59 614.69 489 D
+ 608.16 481.48 614.28 471.18 622.59 467.05 D
+ 625.57 465.57 656.21 479.8 646.43 467.5 D
+ 636.09 454.5 649.37 461.17 655.59 469.5 D
+1 0 1 0 0 1 0 K
+V
+0.01 H
+N
+0 0 1 0 1 1 0 K
+0 0 1 0 1 1 0 K
+180 270 72.28 67.46 711.06 728.66 G
+180 270 72.28 67.46 711.06 728.66 A
+0 0.5 1 0 1 0.5 0 K
+619.62 721.68 639.89 724.77 640.57 720.32 620.3 717.23 4 Y
+0 0.5 1 0 1 0.5 0 K
+V
+N
+698.21 662.76 693.33 635.95 688.69 636.8 693.58 663.6 4 Y
+V
+N
+681.11 667.39 672.24 641.63 667.79 643.16 676.66 668.93 4 Y
+V
+N
+665.93 675.9 652.55 655.53 648.61 658.12 661.99 678.49 4 Y
+V
+N
+653.01 689.93 636.69 674.44 633.45 677.85 649.76 693.34 4 Y
+V
+N
+642.98 706.01 624.56 697.88 622.66 702.18 641.08 710.32 4 Y
+V
+N
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+1.5 H
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+90 450 6.83 8.03 666.06 356.64 A
+643.16 266.68 657.62 305.23 2 L
+N
+666.46 270.69 668.06 276.32 675.29 312.46 3 L
+N
+684.93 275.51 684.93 280.33 677.7 326.92 672.08 342.99 4 L
+N
+661.64 279.53 662.44 282.74 665.66 313.27 660.84 340.58 4 L
+N
+660.03 376.72 664.85 447.41 2 L
+N
+672.88 379.93 671.28 445 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+90 450 4.02 4.02 639.15 485.16 G
+90 450 4.02 4.02 639.15 485.16 A
+90 450 4.02 4.02 683.33 508.46 G
+90 450 4.02 4.02 683.33 508.46 A
+90 450 4.02 4.02 660.03 499.62 G
+90 450 4.02 4.02 660.03 499.62 A
+90 450 4.02 4.02 643.16 511.67 G
+90 450 4.02 4.02 643.16 511.67 A
+90 450 4.02 4.02 672.88 483.55 G
+90 450 4.02 4.02 672.88 483.55 A
+90 450 4.02 4.02 682.52 532.55 G
+90 450 4.02 4.02 682.52 532.55 A
+90 450 4.02 4.02 660.83 524.52 G
+90 450 4.02 4.02 660.83 524.52 A
+0.7 0 0.7 0.3 0 0.7 0 K
+112.95 243 M
+ 84.81 263.33 123.69 288.55 117.44 312.88 D
+ 110.98 338.05 76.7 369.68 105.72 394.42 D
+ 142.24 425.57 102.36 457.19 102.2 490.4 D
+ 102.1 512.39 130.06 543.12 98.64 553.97 D
+ 78.37 560.98 89.89 587.08 99.76 598.84 D
+ 110.56 611.71 126.57 630.79 111.89 646.23 D
+ 91.29 667.88 112.1 697.54 130.64 715.22 D
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+94.14 375.22 91.39 407.97 2 L
+N
+0 1 1 0 1 0 0 K
+75.64 427.47 76.14 422.72 76.64 418.72 78.64 414.97 82.14 410.22 86.64 408.72 91.14 406.97
+ 94.89 408.97 98.39 412.72 100.39 417.97 100.89 422.72 100.14 429.72 98.89 433.72 96.14 426.22 91.82 431.57
+ 89.89 423.72 85.54 429.18 84.89 421.97 80.39 429.97 80.64 421.72 75.64 427.72 21 L
+3 X
+0 1 1 0 1 0 0 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+113.39 531.22 117.89 559.47 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 1 0 0 1 0 1 K
+112.51 585.67 111.08 581.02 109.94 577.07 110.29 572.77 111.61 566.95 115.15 563.78 118.6 560.38
+ 122.84 560.79 127.56 562.93 131.49 567.07 133.85 571.32 135.95 578.18 136.4 582.42 130.88 576.46 129.04 583.17
+ 124.13 576.57 122.3 583.39 118.83 576.89 117.88 586.15 114.82 578.32 112.61 585.9 21 L
+3 X
+0 1 0 0 1 0 1 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+0.7 0 0.7 0.3 0 0.7 0 K
+102.89 667.22 99.64 695.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+1 1 0 0 0 0 1 K
+84.23 716.84 84.64 711.99 85.07 707.91 87 704.05 90.41 699.15 94.88 697.54 99.35 695.68
+ 103.14 697.65 106.7 701.4 108.8 706.71 109.39 711.54 108.77 718.69 107.59 722.78 104.7 715.19 100.49 720.72
+ 98.41 712.76 94.16 718.39 93.38 711.07 89.03 719.3 89.12 710.89 84.24 717.1 21 L
+3 X
+1 1 0 0 0 0 1 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+118.14 303.97 122.64 327.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 0 1 0 1 1 0 K
+121.17 354.13 118.96 349.9 117.17 346.29 116.76 342.05 117.06 336.16 119.98 332.43 122.76 328.48
+ 126.99 328.08 131.98 329.27 136.55 332.54 139.59 336.22 142.83 342.47 144 346.49 137.56 341.76 136.92 348.6
+ 130.97 343.13 130.36 350.08 125.84 344.44 126.51 353.59 122.16 346.58 121.31 354.34 21 L
+3 X
+0 0 1 0 1 1 0 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+2 36 Q
+0 0 0 1 0 0 0 K
+(Questions and Comments) 176.49 685.5 T
+3 20 Q
+(Is the proposed de\336nition reasonable and useful?) 144 624.17 T
+(Do the questions ask cover an interesting subset of) 144 584.17 T
+(System Administration?) 144 560.17 T
+(Am I missing important problems?) 144 520.17 T
+(Are the proposed solutions appropriate?) 144 480.17 T
+FMENDPAGE
+%%EndPage: "11" 1
+%%Page: "10" 2
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 0.31 0.58 0.04 0.96 0.64 0.38]
+[ 0 0.27 0.47 0.46 0.55 0.27 0.08]
+[ 0 0.5 1 0 1 0.5 0]
+[ 0.7 0 0.7 0.3 0 0.7 0]
+ 11 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+657.22 468.75 656.84 436 655.97 399.5 653.09 360 649.97 331.25 643.47 293.75 640.47 282
+ 633.97 262.75 630.22 255.25 626.97 250 624.84 247.12 633.47 254.75 636.47 258.12 638.97 260.5 642.97 253.25
+ 648.34 242.38 651.97 254.62 657.22 268.88 659.97 261 666.09 243.25 670.97 256.75 675.22 269.62 683.97 261
+ 702.22 242.75 697.22 250.62 693.22 262.25 689.97 274 685.47 301.25 682.59 327.5 680.97 351.5 679.59 382.12
+ 678.48 419.12 677.22 442.88 675.22 469 34 L
+0 X
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+V
+0.01 H
+2 Z
+N
+0 0 0 1 0 0 0 K
+0 8 Q
+0 0 0 1 0 0 0 K
+4 (NOW RETREA) 296.29 750 S
+4 (T - JUNE 1995) 390.36 750 S
+277.61 748.16 284.29 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+277.61 748.16 284.29 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+277.61 751.16 282.45 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+507.71 748.16 514.39 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+507.71 748.16 514.39 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+507.71 751.16 512.56 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+1 7 Q
+0 X
+0 0 0 1 0 0 0 K
+(ERIC ANDERSON) 344.33 219.49 T
+(U.C. BERKELEY) 347.05 210.49 T
+(510-642-9669) 351.71 201.49 T
+370.16 226.16 376.84 234 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+370.16 226.16 376.84 234 R
+7 X
+0 0 0 1 0 0 0 K
+V
+370.16 229.16 375 234 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+657.09 216 711.09 227 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 9 Q
+0 X
+(10 of 1) 679.23 220.44 T
+(1) 706.09 220.44 T
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+621.09 243 M
+ 654.52 273.61 658.21 424.49 657.09 468 D
+2 H
+2 Z
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+N
+702.09 243 M
+ 675.09 276.34 681.09 436.52 675.09 468 D
+N
+621.09 243 630.09 252 639.09 261 648.09 243 657.09 270 666.09 243 675.09 270
+ 702.09 243 8 L
+N
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+673.59 469 M
+ 683.63 460.48 704.99 463.16 692.46 481.5 D
+ 682.51 496.06 705.11 482.77 710.13 489 D
+ 716.52 496.93 711.09 509.01 704.09 513.38 D
+ 677.04 530.27 709.95 505.09 713.96 523 D
+ 717.07 536.84 706.51 554.26 691.09 558.91 D
+ 681.17 561.9 680.09 544.78 677.85 541.5 D
+ 686.7 554.46 671.28 552.23 662.59 552.24 D
+ 649.33 552.27 670.27 528.92 652.59 546.16 D
+ 642.54 555.96 617.59 536.5 633.09 527.98 D
+ 650.45 518.45 616.79 529.32 614.03 515.5 D
+ 611.36 502.14 628.84 499.13 629.4 496.5 D
+ 628.71 499.75 619.56 494.59 614.69 489 D
+ 608.16 481.48 614.28 471.18 622.59 467.05 D
+ 625.57 465.57 656.21 479.8 646.43 467.5 D
+ 636.09 454.5 649.37 461.17 655.59 469.5 D
+1 0 1 0 0 1 0 K
+V
+0.01 H
+N
+0 0 1 0 1 1 0 K
+0 0 1 0 1 1 0 K
+180 270 72.28 67.46 711.06 728.66 G
+180 270 72.28 67.46 711.06 728.66 A
+0 0.5 1 0 1 0.5 0 K
+619.62 721.68 639.89 724.77 640.57 720.32 620.3 717.23 4 Y
+0 0.5 1 0 1 0.5 0 K
+V
+N
+698.21 662.76 693.33 635.95 688.69 636.8 693.58 663.6 4 Y
+V
+N
+681.11 667.39 672.24 641.63 667.79 643.16 676.66 668.93 4 Y
+V
+N
+665.93 675.9 652.55 655.53 648.61 658.12 661.99 678.49 4 Y
+V
+N
+653.01 689.93 636.69 674.44 633.45 677.85 649.76 693.34 4 Y
+V
+N
+642.98 706.01 624.56 697.88 622.66 702.18 641.08 710.32 4 Y
+V
+N
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+1.5 H
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+90 450 6.83 8.03 666.06 356.64 A
+643.16 266.68 657.62 305.23 2 L
+N
+666.46 270.69 668.06 276.32 675.29 312.46 3 L
+N
+684.93 275.51 684.93 280.33 677.7 326.92 672.08 342.99 4 L
+N
+661.64 279.53 662.44 282.74 665.66 313.27 660.84 340.58 4 L
+N
+660.03 376.72 664.85 447.41 2 L
+N
+672.88 379.93 671.28 445 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+90 450 4.02 4.02 639.15 485.16 G
+90 450 4.02 4.02 639.15 485.16 A
+90 450 4.02 4.02 683.33 508.46 G
+90 450 4.02 4.02 683.33 508.46 A
+90 450 4.02 4.02 660.03 499.62 G
+90 450 4.02 4.02 660.03 499.62 A
+90 450 4.02 4.02 643.16 511.67 G
+90 450 4.02 4.02 643.16 511.67 A
+90 450 4.02 4.02 672.88 483.55 G
+90 450 4.02 4.02 672.88 483.55 A
+90 450 4.02 4.02 682.52 532.55 G
+90 450 4.02 4.02 682.52 532.55 A
+90 450 4.02 4.02 660.83 524.52 G
+90 450 4.02 4.02 660.83 524.52 A
+0.7 0 0.7 0.3 0 0.7 0 K
+112.95 243 M
+ 84.81 263.33 123.69 288.55 117.44 312.88 D
+ 110.98 338.05 76.7 369.68 105.72 394.42 D
+ 142.24 425.57 102.36 457.19 102.2 490.4 D
+ 102.1 512.39 130.06 543.12 98.64 553.97 D
+ 78.37 560.98 89.89 587.08 99.76 598.84 D
+ 110.56 611.71 126.57 630.79 111.89 646.23 D
+ 91.29 667.88 112.1 697.54 130.64 715.22 D
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+94.14 375.22 91.39 407.97 2 L
+N
+0 1 1 0 1 0 0 K
+75.64 427.47 76.14 422.72 76.64 418.72 78.64 414.97 82.14 410.22 86.64 408.72 91.14 406.97
+ 94.89 408.97 98.39 412.72 100.39 417.97 100.89 422.72 100.14 429.72 98.89 433.72 96.14 426.22 91.82 431.57
+ 89.89 423.72 85.54 429.18 84.89 421.97 80.39 429.97 80.64 421.72 75.64 427.72 21 L
+3 X
+0 1 1 0 1 0 0 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+113.39 531.22 117.89 559.47 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 1 0 0 1 0 1 K
+112.51 585.67 111.08 581.02 109.94 577.07 110.29 572.77 111.61 566.95 115.15 563.78 118.6 560.38
+ 122.84 560.79 127.56 562.93 131.49 567.07 133.85 571.32 135.95 578.18 136.4 582.42 130.88 576.46 129.04 583.17
+ 124.13 576.57 122.3 583.39 118.83 576.89 117.88 586.15 114.82 578.32 112.61 585.9 21 L
+3 X
+0 1 0 0 1 0 1 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+0.7 0 0.7 0.3 0 0.7 0 K
+102.89 667.22 99.64 695.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+1 1 0 0 0 0 1 K
+84.23 716.84 84.64 711.99 85.07 707.91 87 704.05 90.41 699.15 94.88 697.54 99.35 695.68
+ 103.14 697.65 106.7 701.4 108.8 706.71 109.39 711.54 108.77 718.69 107.59 722.78 104.7 715.19 100.49 720.72
+ 98.41 712.76 94.16 718.39 93.38 711.07 89.03 719.3 89.12 710.89 84.24 717.1 21 L
+3 X
+1 1 0 0 0 0 1 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+118.14 303.97 122.64 327.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 0 1 0 1 1 0 K
+121.17 354.13 118.96 349.9 117.17 346.29 116.76 342.05 117.06 336.16 119.98 332.43 122.76 328.48
+ 126.99 328.08 131.98 329.27 136.55 332.54 139.59 336.22 142.83 342.47 144 346.49 137.56 341.76 136.92 348.6
+ 130.97 343.13 130.36 350.08 125.84 344.44 126.51 353.59 122.16 346.58 121.31 354.34 21 L
+3 X
+0 0 1 0 1 1 0 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+2 36 Q
+0 0 0 1 0 0 0 K
+(How can I allocate machines?) 145.51 685.5 T
+3 20 Q
+(Facilitating Interaction:) 144 624.17 T
+4 16 Q
+(\245) 162 596.83 T
+3 F
+(Get people on the machines that they need) 180 596.83 T
+4 F
+(\245) 162 572.83 T
+3 F
+(Maximize the usage of the machine) 180 572.83 T
+4 F
+(\245) 162 548.83 T
+3 F
+(W) 180 548.83 T
+(arn people of changes in authorized users) 193.82 548.83 T
+4 F
+(\245) 162 524.83 T
+3 F
+(Allow for individual only or group access) 180 524.83 T
+3 20 Q
+(Preventing Interaction:) 144 464.17 T
+4 16 Q
+(\245) 162 436.83 T
+3 F
+(Keep unauthorized users of) 180 436.83 T
+(f machines) 355.22 436.83 T
+4 F
+(\245) 162 412.83 T
+3 F
+(Require authentication for reservations) 180 412.83 T
+4 F
+(\245) 162 388.83 T
+3 F
+(Prevent hogging) 180 388.83 T
+FMENDPAGE
+%%EndPage: "10" 2
+%%Page: "9" 3
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 0.31 0.58 0.04 0.96 0.64 0.38]
+[ 0 0.27 0.47 0.46 0.55 0.27 0.08]
+[ 0 0.5 1 0 1 0.5 0]
+[ 0.7 0 0.7 0.3 0 0.7 0]
+ 11 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+657.22 468.75 656.84 436 655.97 399.5 653.09 360 649.97 331.25 643.47 293.75 640.47 282
+ 633.97 262.75 630.22 255.25 626.97 250 624.84 247.12 633.47 254.75 636.47 258.12 638.97 260.5 642.97 253.25
+ 648.34 242.38 651.97 254.62 657.22 268.88 659.97 261 666.09 243.25 670.97 256.75 675.22 269.62 683.97 261
+ 702.22 242.75 697.22 250.62 693.22 262.25 689.97 274 685.47 301.25 682.59 327.5 680.97 351.5 679.59 382.12
+ 678.48 419.12 677.22 442.88 675.22 469 34 L
+0 X
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+V
+0.01 H
+2 Z
+N
+0 0 0 1 0 0 0 K
+0 8 Q
+0 0 0 1 0 0 0 K
+4 (NOW RETREA) 296.29 750 S
+4 (T - JUNE 1995) 390.36 750 S
+277.61 748.16 284.29 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+277.61 748.16 284.29 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+277.61 751.16 282.45 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+507.71 748.16 514.39 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+507.71 748.16 514.39 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+507.71 751.16 512.56 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+1 7 Q
+0 X
+0 0 0 1 0 0 0 K
+(ERIC ANDERSON) 344.33 219.49 T
+(U.C. BERKELEY) 347.05 210.49 T
+(510-642-9669) 351.71 201.49 T
+370.16 226.16 376.84 234 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+370.16 226.16 376.84 234 R
+7 X
+0 0 0 1 0 0 0 K
+V
+370.16 229.16 375 234 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+657.09 216 711.09 227 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 9 Q
+0 X
+(9 of 1) 684.24 220.44 T
+(1) 706.09 220.44 T
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+621.09 243 M
+ 654.52 273.61 658.21 424.49 657.09 468 D
+2 H
+2 Z
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+N
+702.09 243 M
+ 675.09 276.34 681.09 436.52 675.09 468 D
+N
+621.09 243 630.09 252 639.09 261 648.09 243 657.09 270 666.09 243 675.09 270
+ 702.09 243 8 L
+N
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+673.59 469 M
+ 683.63 460.48 704.99 463.16 692.46 481.5 D
+ 682.51 496.06 705.11 482.77 710.13 489 D
+ 716.52 496.93 711.09 509.01 704.09 513.38 D
+ 677.04 530.27 709.95 505.09 713.96 523 D
+ 717.07 536.84 706.51 554.26 691.09 558.91 D
+ 681.17 561.9 680.09 544.78 677.85 541.5 D
+ 686.7 554.46 671.28 552.23 662.59 552.24 D
+ 649.33 552.27 670.27 528.92 652.59 546.16 D
+ 642.54 555.96 617.59 536.5 633.09 527.98 D
+ 650.45 518.45 616.79 529.32 614.03 515.5 D
+ 611.36 502.14 628.84 499.13 629.4 496.5 D
+ 628.71 499.75 619.56 494.59 614.69 489 D
+ 608.16 481.48 614.28 471.18 622.59 467.05 D
+ 625.57 465.57 656.21 479.8 646.43 467.5 D
+ 636.09 454.5 649.37 461.17 655.59 469.5 D
+1 0 1 0 0 1 0 K
+V
+0.01 H
+N
+0 0 1 0 1 1 0 K
+0 0 1 0 1 1 0 K
+180 270 72.28 67.46 711.06 728.66 G
+180 270 72.28 67.46 711.06 728.66 A
+0 0.5 1 0 1 0.5 0 K
+619.62 721.68 639.89 724.77 640.57 720.32 620.3 717.23 4 Y
+0 0.5 1 0 1 0.5 0 K
+V
+N
+698.21 662.76 693.33 635.95 688.69 636.8 693.58 663.6 4 Y
+V
+N
+681.11 667.39 672.24 641.63 667.79 643.16 676.66 668.93 4 Y
+V
+N
+665.93 675.9 652.55 655.53 648.61 658.12 661.99 678.49 4 Y
+V
+N
+653.01 689.93 636.69 674.44 633.45 677.85 649.76 693.34 4 Y
+V
+N
+642.98 706.01 624.56 697.88 622.66 702.18 641.08 710.32 4 Y
+V
+N
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+1.5 H
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+90 450 6.83 8.03 666.06 356.64 A
+643.16 266.68 657.62 305.23 2 L
+N
+666.46 270.69 668.06 276.32 675.29 312.46 3 L
+N
+684.93 275.51 684.93 280.33 677.7 326.92 672.08 342.99 4 L
+N
+661.64 279.53 662.44 282.74 665.66 313.27 660.84 340.58 4 L
+N
+660.03 376.72 664.85 447.41 2 L
+N
+672.88 379.93 671.28 445 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+90 450 4.02 4.02 639.15 485.16 G
+90 450 4.02 4.02 639.15 485.16 A
+90 450 4.02 4.02 683.33 508.46 G
+90 450 4.02 4.02 683.33 508.46 A
+90 450 4.02 4.02 660.03 499.62 G
+90 450 4.02 4.02 660.03 499.62 A
+90 450 4.02 4.02 643.16 511.67 G
+90 450 4.02 4.02 643.16 511.67 A
+90 450 4.02 4.02 672.88 483.55 G
+90 450 4.02 4.02 672.88 483.55 A
+90 450 4.02 4.02 682.52 532.55 G
+90 450 4.02 4.02 682.52 532.55 A
+90 450 4.02 4.02 660.83 524.52 G
+90 450 4.02 4.02 660.83 524.52 A
+0.7 0 0.7 0.3 0 0.7 0 K
+112.95 243 M
+ 84.81 263.33 123.69 288.55 117.44 312.88 D
+ 110.98 338.05 76.7 369.68 105.72 394.42 D
+ 142.24 425.57 102.36 457.19 102.2 490.4 D
+ 102.1 512.39 130.06 543.12 98.64 553.97 D
+ 78.37 560.98 89.89 587.08 99.76 598.84 D
+ 110.56 611.71 126.57 630.79 111.89 646.23 D
+ 91.29 667.88 112.1 697.54 130.64 715.22 D
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+94.14 375.22 91.39 407.97 2 L
+N
+0 1 1 0 1 0 0 K
+75.64 427.47 76.14 422.72 76.64 418.72 78.64 414.97 82.14 410.22 86.64 408.72 91.14 406.97
+ 94.89 408.97 98.39 412.72 100.39 417.97 100.89 422.72 100.14 429.72 98.89 433.72 96.14 426.22 91.82 431.57
+ 89.89 423.72 85.54 429.18 84.89 421.97 80.39 429.97 80.64 421.72 75.64 427.72 21 L
+3 X
+0 1 1 0 1 0 0 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+113.39 531.22 117.89 559.47 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 1 0 0 1 0 1 K
+112.51 585.67 111.08 581.02 109.94 577.07 110.29 572.77 111.61 566.95 115.15 563.78 118.6 560.38
+ 122.84 560.79 127.56 562.93 131.49 567.07 133.85 571.32 135.95 578.18 136.4 582.42 130.88 576.46 129.04 583.17
+ 124.13 576.57 122.3 583.39 118.83 576.89 117.88 586.15 114.82 578.32 112.61 585.9 21 L
+3 X
+0 1 0 0 1 0 1 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+0.7 0 0.7 0.3 0 0.7 0 K
+102.89 667.22 99.64 695.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+1 1 0 0 0 0 1 K
+84.23 716.84 84.64 711.99 85.07 707.91 87 704.05 90.41 699.15 94.88 697.54 99.35 695.68
+ 103.14 697.65 106.7 701.4 108.8 706.71 109.39 711.54 108.77 718.69 107.59 722.78 104.7 715.19 100.49 720.72
+ 98.41 712.76 94.16 718.39 93.38 711.07 89.03 719.3 89.12 710.89 84.24 717.1 21 L
+3 X
+1 1 0 0 0 0 1 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+118.14 303.97 122.64 327.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 0 1 0 1 1 0 K
+121.17 354.13 118.96 349.9 117.17 346.29 116.76 342.05 117.06 336.16 119.98 332.43 122.76 328.48
+ 126.99 328.08 131.98 329.27 136.55 332.54 139.59 336.22 142.83 342.47 144 346.49 137.56 341.76 136.92 348.6
+ 130.97 343.13 130.36 350.08 125.84 344.44 126.51 353.59 122.16 346.58 121.31 354.34 21 L
+3 X
+0 0 1 0 1 1 0 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+2 36 Q
+0 0 0 1 0 0 0 K
+(What\325) 161.66 685.5 T
+(s working right now?) 258.32 685.5 T
+3 20 Q
+(Facilitate interaction:) 144 624.17 T
+4 16 Q
+(\245) 162 596.83 T
+3 F
+(Faster noti\336cation when parts break) 180 596.83 T
+4 F
+(\245) 162 572.83 T
+3 F
+(Ability to deal with simple problems) 180 572.83 T
+4 F
+(\245) 162 548.83 T
+3 F
+(Provide high scalability) 180 548.83 T
+3 20 Q
+(Prevent interaction) 144 512.17 T
+4 16 Q
+(\245) 162 484.83 T
+3 F
+(Discover attacks on system by combining information) 180 484.83 T
+4 F
+(\245) 162 460.83 T
+3 F
+(Disable parts of the system?) 180 460.83 T
+3 20 Q
+(Reduce learning curve) 144 424.17 T
+4 16 Q
+(\245) 162 396.83 T
+3 F
+(Interface with existing tools) 180 396.83 T
+4 F
+(\245) 162 372.83 T
+3 F
+(Allow for highly generalized noti\336cation) 180 372.83 T
+FMENDPAGE
+%%EndPage: "9" 3
+%%Page: "8" 4
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 0.31 0.58 0.04 0.96 0.64 0.38]
+[ 0 0.27 0.47 0.46 0.55 0.27 0.08]
+[ 0 0.5 1 0 1 0.5 0]
+[ 0.7 0 0.7 0.3 0 0.7 0]
+ 11 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+657.22 468.75 656.84 436 655.97 399.5 653.09 360 649.97 331.25 643.47 293.75 640.47 282
+ 633.97 262.75 630.22 255.25 626.97 250 624.84 247.12 633.47 254.75 636.47 258.12 638.97 260.5 642.97 253.25
+ 648.34 242.38 651.97 254.62 657.22 268.88 659.97 261 666.09 243.25 670.97 256.75 675.22 269.62 683.97 261
+ 702.22 242.75 697.22 250.62 693.22 262.25 689.97 274 685.47 301.25 682.59 327.5 680.97 351.5 679.59 382.12
+ 678.48 419.12 677.22 442.88 675.22 469 34 L
+0 X
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+V
+0.01 H
+2 Z
+N
+0 0 0 1 0 0 0 K
+0 8 Q
+0 0 0 1 0 0 0 K
+4 (NOW RETREA) 296.29 750 S
+4 (T - JUNE 1995) 390.36 750 S
+277.61 748.16 284.29 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+277.61 748.16 284.29 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+277.61 751.16 282.45 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+507.71 748.16 514.39 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+507.71 748.16 514.39 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+507.71 751.16 512.56 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+1 7 Q
+0 X
+0 0 0 1 0 0 0 K
+(ERIC ANDERSON) 344.33 219.49 T
+(U.C. BERKELEY) 347.05 210.49 T
+(510-642-9669) 351.71 201.49 T
+370.16 226.16 376.84 234 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+370.16 226.16 376.84 234 R
+7 X
+0 0 0 1 0 0 0 K
+V
+370.16 229.16 375 234 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+657.09 216 711.09 227 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 9 Q
+0 X
+(8 of 1) 684.24 220.44 T
+(1) 706.09 220.44 T
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+621.09 243 M
+ 654.52 273.61 658.21 424.49 657.09 468 D
+2 H
+2 Z
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+N
+702.09 243 M
+ 675.09 276.34 681.09 436.52 675.09 468 D
+N
+621.09 243 630.09 252 639.09 261 648.09 243 657.09 270 666.09 243 675.09 270
+ 702.09 243 8 L
+N
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+673.59 469 M
+ 683.63 460.48 704.99 463.16 692.46 481.5 D
+ 682.51 496.06 705.11 482.77 710.13 489 D
+ 716.52 496.93 711.09 509.01 704.09 513.38 D
+ 677.04 530.27 709.95 505.09 713.96 523 D
+ 717.07 536.84 706.51 554.26 691.09 558.91 D
+ 681.17 561.9 680.09 544.78 677.85 541.5 D
+ 686.7 554.46 671.28 552.23 662.59 552.24 D
+ 649.33 552.27 670.27 528.92 652.59 546.16 D
+ 642.54 555.96 617.59 536.5 633.09 527.98 D
+ 650.45 518.45 616.79 529.32 614.03 515.5 D
+ 611.36 502.14 628.84 499.13 629.4 496.5 D
+ 628.71 499.75 619.56 494.59 614.69 489 D
+ 608.16 481.48 614.28 471.18 622.59 467.05 D
+ 625.57 465.57 656.21 479.8 646.43 467.5 D
+ 636.09 454.5 649.37 461.17 655.59 469.5 D
+1 0 1 0 0 1 0 K
+V
+0.01 H
+N
+0 0 1 0 1 1 0 K
+0 0 1 0 1 1 0 K
+180 270 72.28 67.46 711.06 728.66 G
+180 270 72.28 67.46 711.06 728.66 A
+0 0.5 1 0 1 0.5 0 K
+619.62 721.68 639.89 724.77 640.57 720.32 620.3 717.23 4 Y
+0 0.5 1 0 1 0.5 0 K
+V
+N
+698.21 662.76 693.33 635.95 688.69 636.8 693.58 663.6 4 Y
+V
+N
+681.11 667.39 672.24 641.63 667.79 643.16 676.66 668.93 4 Y
+V
+N
+665.93 675.9 652.55 655.53 648.61 658.12 661.99 678.49 4 Y
+V
+N
+653.01 689.93 636.69 674.44 633.45 677.85 649.76 693.34 4 Y
+V
+N
+642.98 706.01 624.56 697.88 622.66 702.18 641.08 710.32 4 Y
+V
+N
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+1.5 H
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+90 450 6.83 8.03 666.06 356.64 A
+643.16 266.68 657.62 305.23 2 L
+N
+666.46 270.69 668.06 276.32 675.29 312.46 3 L
+N
+684.93 275.51 684.93 280.33 677.7 326.92 672.08 342.99 4 L
+N
+661.64 279.53 662.44 282.74 665.66 313.27 660.84 340.58 4 L
+N
+660.03 376.72 664.85 447.41 2 L
+N
+672.88 379.93 671.28 445 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+90 450 4.02 4.02 639.15 485.16 G
+90 450 4.02 4.02 639.15 485.16 A
+90 450 4.02 4.02 683.33 508.46 G
+90 450 4.02 4.02 683.33 508.46 A
+90 450 4.02 4.02 660.03 499.62 G
+90 450 4.02 4.02 660.03 499.62 A
+90 450 4.02 4.02 643.16 511.67 G
+90 450 4.02 4.02 643.16 511.67 A
+90 450 4.02 4.02 672.88 483.55 G
+90 450 4.02 4.02 672.88 483.55 A
+90 450 4.02 4.02 682.52 532.55 G
+90 450 4.02 4.02 682.52 532.55 A
+90 450 4.02 4.02 660.83 524.52 G
+90 450 4.02 4.02 660.83 524.52 A
+0.7 0 0.7 0.3 0 0.7 0 K
+112.95 243 M
+ 84.81 263.33 123.69 288.55 117.44 312.88 D
+ 110.98 338.05 76.7 369.68 105.72 394.42 D
+ 142.24 425.57 102.36 457.19 102.2 490.4 D
+ 102.1 512.39 130.06 543.12 98.64 553.97 D
+ 78.37 560.98 89.89 587.08 99.76 598.84 D
+ 110.56 611.71 126.57 630.79 111.89 646.23 D
+ 91.29 667.88 112.1 697.54 130.64 715.22 D
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+94.14 375.22 91.39 407.97 2 L
+N
+0 1 1 0 1 0 0 K
+75.64 427.47 76.14 422.72 76.64 418.72 78.64 414.97 82.14 410.22 86.64 408.72 91.14 406.97
+ 94.89 408.97 98.39 412.72 100.39 417.97 100.89 422.72 100.14 429.72 98.89 433.72 96.14 426.22 91.82 431.57
+ 89.89 423.72 85.54 429.18 84.89 421.97 80.39 429.97 80.64 421.72 75.64 427.72 21 L
+3 X
+0 1 1 0 1 0 0 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+113.39 531.22 117.89 559.47 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 1 0 0 1 0 1 K
+112.51 585.67 111.08 581.02 109.94 577.07 110.29 572.77 111.61 566.95 115.15 563.78 118.6 560.38
+ 122.84 560.79 127.56 562.93 131.49 567.07 133.85 571.32 135.95 578.18 136.4 582.42 130.88 576.46 129.04 583.17
+ 124.13 576.57 122.3 583.39 118.83 576.89 117.88 586.15 114.82 578.32 112.61 585.9 21 L
+3 X
+0 1 0 0 1 0 1 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+0.7 0 0.7 0.3 0 0.7 0 K
+102.89 667.22 99.64 695.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+1 1 0 0 0 0 1 K
+84.23 716.84 84.64 711.99 85.07 707.91 87 704.05 90.41 699.15 94.88 697.54 99.35 695.68
+ 103.14 697.65 106.7 701.4 108.8 706.71 109.39 711.54 108.77 718.69 107.59 722.78 104.7 715.19 100.49 720.72
+ 98.41 712.76 94.16 718.39 93.38 711.07 89.03 719.3 89.12 710.89 84.24 717.1 21 L
+3 X
+1 1 0 0 0 0 1 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+118.14 303.97 122.64 327.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 0 1 0 1 1 0 K
+121.17 354.13 118.96 349.9 117.17 346.29 116.76 342.05 117.06 336.16 119.98 332.43 122.76 328.48
+ 126.99 328.08 131.98 329.27 136.55 332.54 139.59 336.22 142.83 342.47 144 346.49 137.56 341.76 136.92 348.6
+ 130.97 343.13 130.36 350.08 125.84 344.44 126.51 353.59 122.16 346.58 121.31 354.34 21 L
+3 X
+0 0 1 0 1 1 0 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+2 36 Q
+0 0 0 1 0 0 0 K
+(What status messages ar) 177.35 685.5 T
+(e) 553.66 685.5 T
+(pr) 203.35 649.5 T
+(ograms generating?) 238.7 649.5 T
+3 20 Q
+(Facilitate interaction:) 144 588.17 T
+4 16 Q
+(\245) 162 560.83 T
+3 F
+(Allow for user testing) 180 560.83 T
+4 F
+(\245) 162 536.83 T
+3 F
+(Remove \336xed-size restrictions) 180 536.83 T
+3 20 Q
+(Prevent interaction:) 144 500.17 T
+4 16 Q
+(\245) 162 472.83 T
+3 F
+(Increase \337exibility of alert forwarding) 180 472.83 T
+4 F
+(\245) 162 448.83 T
+3 F
+(Detect attacks through combining information) 180 448.83 T
+3 20 Q
+(Reduce learning curve:) 144 412.17 T
+4 16 Q
+(\245) 162 384.83 T
+3 F
+(Retain compatibility with old implementation) 180 384.83 T
+FMENDPAGE
+%%EndPage: "8" 4
+%%Page: "7" 5
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 0.31 0.58 0.04 0.96 0.64 0.38]
+[ 0 0.27 0.47 0.46 0.55 0.27 0.08]
+[ 0 0.5 1 0 1 0.5 0]
+[ 0.7 0 0.7 0.3 0 0.7 0]
+ 11 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+657.22 468.75 656.84 436 655.97 399.5 653.09 360 649.97 331.25 643.47 293.75 640.47 282
+ 633.97 262.75 630.22 255.25 626.97 250 624.84 247.12 633.47 254.75 636.47 258.12 638.97 260.5 642.97 253.25
+ 648.34 242.38 651.97 254.62 657.22 268.88 659.97 261 666.09 243.25 670.97 256.75 675.22 269.62 683.97 261
+ 702.22 242.75 697.22 250.62 693.22 262.25 689.97 274 685.47 301.25 682.59 327.5 680.97 351.5 679.59 382.12
+ 678.48 419.12 677.22 442.88 675.22 469 34 L
+0 X
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+V
+0.01 H
+2 Z
+N
+0 0 0 1 0 0 0 K
+0 8 Q
+0 0 0 1 0 0 0 K
+4 (NOW RETREA) 296.29 750 S
+4 (T - JUNE 1995) 390.36 750 S
+277.61 748.16 284.29 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+277.61 748.16 284.29 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+277.61 751.16 282.45 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+507.71 748.16 514.39 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+507.71 748.16 514.39 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+507.71 751.16 512.56 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+1 7 Q
+0 X
+0 0 0 1 0 0 0 K
+(ERIC ANDERSON) 344.33 219.49 T
+(U.C. BERKELEY) 347.05 210.49 T
+(510-642-9669) 351.71 201.49 T
+370.16 226.16 376.84 234 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+370.16 226.16 376.84 234 R
+7 X
+0 0 0 1 0 0 0 K
+V
+370.16 229.16 375 234 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+657.09 216 711.09 227 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 9 Q
+0 X
+(7 of 1) 684.24 220.44 T
+(1) 706.09 220.44 T
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+621.09 243 M
+ 654.52 273.61 658.21 424.49 657.09 468 D
+2 H
+2 Z
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+N
+702.09 243 M
+ 675.09 276.34 681.09 436.52 675.09 468 D
+N
+621.09 243 630.09 252 639.09 261 648.09 243 657.09 270 666.09 243 675.09 270
+ 702.09 243 8 L
+N
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+673.59 469 M
+ 683.63 460.48 704.99 463.16 692.46 481.5 D
+ 682.51 496.06 705.11 482.77 710.13 489 D
+ 716.52 496.93 711.09 509.01 704.09 513.38 D
+ 677.04 530.27 709.95 505.09 713.96 523 D
+ 717.07 536.84 706.51 554.26 691.09 558.91 D
+ 681.17 561.9 680.09 544.78 677.85 541.5 D
+ 686.7 554.46 671.28 552.23 662.59 552.24 D
+ 649.33 552.27 670.27 528.92 652.59 546.16 D
+ 642.54 555.96 617.59 536.5 633.09 527.98 D
+ 650.45 518.45 616.79 529.32 614.03 515.5 D
+ 611.36 502.14 628.84 499.13 629.4 496.5 D
+ 628.71 499.75 619.56 494.59 614.69 489 D
+ 608.16 481.48 614.28 471.18 622.59 467.05 D
+ 625.57 465.57 656.21 479.8 646.43 467.5 D
+ 636.09 454.5 649.37 461.17 655.59 469.5 D
+1 0 1 0 0 1 0 K
+V
+0.01 H
+N
+0 0 1 0 1 1 0 K
+0 0 1 0 1 1 0 K
+180 270 72.28 67.46 711.06 728.66 G
+180 270 72.28 67.46 711.06 728.66 A
+0 0.5 1 0 1 0.5 0 K
+619.62 721.68 639.89 724.77 640.57 720.32 620.3 717.23 4 Y
+0 0.5 1 0 1 0.5 0 K
+V
+N
+698.21 662.76 693.33 635.95 688.69 636.8 693.58 663.6 4 Y
+V
+N
+681.11 667.39 672.24 641.63 667.79 643.16 676.66 668.93 4 Y
+V
+N
+665.93 675.9 652.55 655.53 648.61 658.12 661.99 678.49 4 Y
+V
+N
+653.01 689.93 636.69 674.44 633.45 677.85 649.76 693.34 4 Y
+V
+N
+642.98 706.01 624.56 697.88 622.66 702.18 641.08 710.32 4 Y
+V
+N
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+1.5 H
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+90 450 6.83 8.03 666.06 356.64 A
+643.16 266.68 657.62 305.23 2 L
+N
+666.46 270.69 668.06 276.32 675.29 312.46 3 L
+N
+684.93 275.51 684.93 280.33 677.7 326.92 672.08 342.99 4 L
+N
+661.64 279.53 662.44 282.74 665.66 313.27 660.84 340.58 4 L
+N
+660.03 376.72 664.85 447.41 2 L
+N
+672.88 379.93 671.28 445 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+90 450 4.02 4.02 639.15 485.16 G
+90 450 4.02 4.02 639.15 485.16 A
+90 450 4.02 4.02 683.33 508.46 G
+90 450 4.02 4.02 683.33 508.46 A
+90 450 4.02 4.02 660.03 499.62 G
+90 450 4.02 4.02 660.03 499.62 A
+90 450 4.02 4.02 643.16 511.67 G
+90 450 4.02 4.02 643.16 511.67 A
+90 450 4.02 4.02 672.88 483.55 G
+90 450 4.02 4.02 672.88 483.55 A
+90 450 4.02 4.02 682.52 532.55 G
+90 450 4.02 4.02 682.52 532.55 A
+90 450 4.02 4.02 660.83 524.52 G
+90 450 4.02 4.02 660.83 524.52 A
+0.7 0 0.7 0.3 0 0.7 0 K
+112.95 243 M
+ 84.81 263.33 123.69 288.55 117.44 312.88 D
+ 110.98 338.05 76.7 369.68 105.72 394.42 D
+ 142.24 425.57 102.36 457.19 102.2 490.4 D
+ 102.1 512.39 130.06 543.12 98.64 553.97 D
+ 78.37 560.98 89.89 587.08 99.76 598.84 D
+ 110.56 611.71 126.57 630.79 111.89 646.23 D
+ 91.29 667.88 112.1 697.54 130.64 715.22 D
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+94.14 375.22 91.39 407.97 2 L
+N
+0 1 1 0 1 0 0 K
+75.64 427.47 76.14 422.72 76.64 418.72 78.64 414.97 82.14 410.22 86.64 408.72 91.14 406.97
+ 94.89 408.97 98.39 412.72 100.39 417.97 100.89 422.72 100.14 429.72 98.89 433.72 96.14 426.22 91.82 431.57
+ 89.89 423.72 85.54 429.18 84.89 421.97 80.39 429.97 80.64 421.72 75.64 427.72 21 L
+3 X
+0 1 1 0 1 0 0 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+113.39 531.22 117.89 559.47 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 1 0 0 1 0 1 K
+112.51 585.67 111.08 581.02 109.94 577.07 110.29 572.77 111.61 566.95 115.15 563.78 118.6 560.38
+ 122.84 560.79 127.56 562.93 131.49 567.07 133.85 571.32 135.95 578.18 136.4 582.42 130.88 576.46 129.04 583.17
+ 124.13 576.57 122.3 583.39 118.83 576.89 117.88 586.15 114.82 578.32 112.61 585.9 21 L
+3 X
+0 1 0 0 1 0 1 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+0.7 0 0.7 0.3 0 0.7 0 K
+102.89 667.22 99.64 695.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+1 1 0 0 0 0 1 K
+84.23 716.84 84.64 711.99 85.07 707.91 87 704.05 90.41 699.15 94.88 697.54 99.35 695.68
+ 103.14 697.65 106.7 701.4 108.8 706.71 109.39 711.54 108.77 718.69 107.59 722.78 104.7 715.19 100.49 720.72
+ 98.41 712.76 94.16 718.39 93.38 711.07 89.03 719.3 89.12 710.89 84.24 717.1 21 L
+3 X
+1 1 0 0 0 0 1 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+118.14 303.97 122.64 327.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 0 1 0 1 1 0 K
+121.17 354.13 118.96 349.9 117.17 346.29 116.76 342.05 117.06 336.16 119.98 332.43 122.76 328.48
+ 126.99 328.08 131.98 329.27 136.55 332.54 139.59 336.22 142.83 342.47 144 346.49 137.56 341.76 136.92 348.6
+ 130.97 343.13 130.36 350.08 125.84 344.44 126.51 353.59 122.16 346.58 121.31 354.34 21 L
+3 X
+0 0 1 0 1 1 0 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+2 28 Q
+0 0 0 1 0 0 0 K
+(What\325) 144 690.83 T
+(s changing?) 219.18 690.83 T
+3 20 Q
+(Facilitate interaction:) 144 652.17 T
+4 16 Q
+(\245) 162 624.83 T
+3 F
+(Performance tuning) 180 624.83 T
+4 F
+(\245) 162 600.83 T
+3 F
+(Purchasing decisions) 180 600.83 T
+4 F
+(\245) 162 576.83 T
+3 F
+(Problem identi\336cation) 180 576.83 T
+3 20 Q
+(Prevent interaction:) 144 540.17 T
+4 16 Q
+(\245) 162 512.83 T
+3 F
+(W) 180 512.83 T
+(atch for unexpected changes) 193.82 512.83 T
+2 28 Q
+(How do I update everything?) 144 458.83 T
+3 20 Q
+(Facilitate interaction:) 144 420.17 T
+4 16 Q
+(\245) 162 392.83 T
+3 F
+(W) 180 392.83 T
+(arn users of change) 193.82 392.83 T
+4 F
+(\245) 162 368.83 T
+3 F
+(Rolling updates) 180 368.83 T
+4 F
+(\245) 162 344.83 T
+3 F
+(Keep pieces synchronized) 180 344.83 T
+3 20 Q
+(Prevent interaction:) 144 308.17 T
+4 16 Q
+(\245) 162 280.83 T
+3 F
+(Limit people allowed to update system) 180 280.83 T
+FMENDPAGE
+%%EndPage: "7" 5
+%%Page: "6" 6
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 0.31 0.58 0.04 0.96 0.64 0.38]
+[ 0 0.27 0.47 0.46 0.55 0.27 0.08]
+[ 0 0.5 1 0 1 0.5 0]
+[ 0.7 0 0.7 0.3 0 0.7 0]
+ 11 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+657.22 468.75 656.84 436 655.97 399.5 653.09 360 649.97 331.25 643.47 293.75 640.47 282
+ 633.97 262.75 630.22 255.25 626.97 250 624.84 247.12 633.47 254.75 636.47 258.12 638.97 260.5 642.97 253.25
+ 648.34 242.38 651.97 254.62 657.22 268.88 659.97 261 666.09 243.25 670.97 256.75 675.22 269.62 683.97 261
+ 702.22 242.75 697.22 250.62 693.22 262.25 689.97 274 685.47 301.25 682.59 327.5 680.97 351.5 679.59 382.12
+ 678.48 419.12 677.22 442.88 675.22 469 34 L
+0 X
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+V
+0.01 H
+2 Z
+N
+0 0 0 1 0 0 0 K
+0 8 Q
+0 0 0 1 0 0 0 K
+4 (NOW RETREA) 296.29 750 S
+4 (T - JUNE 1995) 390.36 750 S
+277.61 748.16 284.29 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+277.61 748.16 284.29 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+277.61 751.16 282.45 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+507.71 748.16 514.39 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+507.71 748.16 514.39 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+507.71 751.16 512.56 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+1 7 Q
+0 X
+0 0 0 1 0 0 0 K
+(ERIC ANDERSON) 344.33 219.49 T
+(U.C. BERKELEY) 347.05 210.49 T
+(510-642-9669) 351.71 201.49 T
+370.16 226.16 376.84 234 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+370.16 226.16 376.84 234 R
+7 X
+0 0 0 1 0 0 0 K
+V
+370.16 229.16 375 234 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+657.09 216 711.09 227 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 9 Q
+0 X
+(6 of 1) 684.24 220.44 T
+(1) 706.09 220.44 T
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+621.09 243 M
+ 654.52 273.61 658.21 424.49 657.09 468 D
+2 H
+2 Z
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+N
+702.09 243 M
+ 675.09 276.34 681.09 436.52 675.09 468 D
+N
+621.09 243 630.09 252 639.09 261 648.09 243 657.09 270 666.09 243 675.09 270
+ 702.09 243 8 L
+N
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+673.59 469 M
+ 683.63 460.48 704.99 463.16 692.46 481.5 D
+ 682.51 496.06 705.11 482.77 710.13 489 D
+ 716.52 496.93 711.09 509.01 704.09 513.38 D
+ 677.04 530.27 709.95 505.09 713.96 523 D
+ 717.07 536.84 706.51 554.26 691.09 558.91 D
+ 681.17 561.9 680.09 544.78 677.85 541.5 D
+ 686.7 554.46 671.28 552.23 662.59 552.24 D
+ 649.33 552.27 670.27 528.92 652.59 546.16 D
+ 642.54 555.96 617.59 536.5 633.09 527.98 D
+ 650.45 518.45 616.79 529.32 614.03 515.5 D
+ 611.36 502.14 628.84 499.13 629.4 496.5 D
+ 628.71 499.75 619.56 494.59 614.69 489 D
+ 608.16 481.48 614.28 471.18 622.59 467.05 D
+ 625.57 465.57 656.21 479.8 646.43 467.5 D
+ 636.09 454.5 649.37 461.17 655.59 469.5 D
+1 0 1 0 0 1 0 K
+V
+0.01 H
+N
+0 0 1 0 1 1 0 K
+0 0 1 0 1 1 0 K
+180 270 72.28 67.46 711.06 728.66 G
+180 270 72.28 67.46 711.06 728.66 A
+0 0.5 1 0 1 0.5 0 K
+619.62 721.68 639.89 724.77 640.57 720.32 620.3 717.23 4 Y
+0 0.5 1 0 1 0.5 0 K
+V
+N
+698.21 662.76 693.33 635.95 688.69 636.8 693.58 663.6 4 Y
+V
+N
+681.11 667.39 672.24 641.63 667.79 643.16 676.66 668.93 4 Y
+V
+N
+665.93 675.9 652.55 655.53 648.61 658.12 661.99 678.49 4 Y
+V
+N
+653.01 689.93 636.69 674.44 633.45 677.85 649.76 693.34 4 Y
+V
+N
+642.98 706.01 624.56 697.88 622.66 702.18 641.08 710.32 4 Y
+V
+N
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+1.5 H
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+90 450 6.83 8.03 666.06 356.64 A
+643.16 266.68 657.62 305.23 2 L
+N
+666.46 270.69 668.06 276.32 675.29 312.46 3 L
+N
+684.93 275.51 684.93 280.33 677.7 326.92 672.08 342.99 4 L
+N
+661.64 279.53 662.44 282.74 665.66 313.27 660.84 340.58 4 L
+N
+660.03 376.72 664.85 447.41 2 L
+N
+672.88 379.93 671.28 445 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+90 450 4.02 4.02 639.15 485.16 G
+90 450 4.02 4.02 639.15 485.16 A
+90 450 4.02 4.02 683.33 508.46 G
+90 450 4.02 4.02 683.33 508.46 A
+90 450 4.02 4.02 660.03 499.62 G
+90 450 4.02 4.02 660.03 499.62 A
+90 450 4.02 4.02 643.16 511.67 G
+90 450 4.02 4.02 643.16 511.67 A
+90 450 4.02 4.02 672.88 483.55 G
+90 450 4.02 4.02 672.88 483.55 A
+90 450 4.02 4.02 682.52 532.55 G
+90 450 4.02 4.02 682.52 532.55 A
+90 450 4.02 4.02 660.83 524.52 G
+90 450 4.02 4.02 660.83 524.52 A
+0.7 0 0.7 0.3 0 0.7 0 K
+112.95 243 M
+ 84.81 263.33 123.69 288.55 117.44 312.88 D
+ 110.98 338.05 76.7 369.68 105.72 394.42 D
+ 142.24 425.57 102.36 457.19 102.2 490.4 D
+ 102.1 512.39 130.06 543.12 98.64 553.97 D
+ 78.37 560.98 89.89 587.08 99.76 598.84 D
+ 110.56 611.71 126.57 630.79 111.89 646.23 D
+ 91.29 667.88 112.1 697.54 130.64 715.22 D
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+94.14 375.22 91.39 407.97 2 L
+N
+0 1 1 0 1 0 0 K
+75.64 427.47 76.14 422.72 76.64 418.72 78.64 414.97 82.14 410.22 86.64 408.72 91.14 406.97
+ 94.89 408.97 98.39 412.72 100.39 417.97 100.89 422.72 100.14 429.72 98.89 433.72 96.14 426.22 91.82 431.57
+ 89.89 423.72 85.54 429.18 84.89 421.97 80.39 429.97 80.64 421.72 75.64 427.72 21 L
+3 X
+0 1 1 0 1 0 0 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+113.39 531.22 117.89 559.47 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 1 0 0 1 0 1 K
+112.51 585.67 111.08 581.02 109.94 577.07 110.29 572.77 111.61 566.95 115.15 563.78 118.6 560.38
+ 122.84 560.79 127.56 562.93 131.49 567.07 133.85 571.32 135.95 578.18 136.4 582.42 130.88 576.46 129.04 583.17
+ 124.13 576.57 122.3 583.39 118.83 576.89 117.88 586.15 114.82 578.32 112.61 585.9 21 L
+3 X
+0 1 0 0 1 0 1 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+0.7 0 0.7 0.3 0 0.7 0 K
+102.89 667.22 99.64 695.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+1 1 0 0 0 0 1 K
+84.23 716.84 84.64 711.99 85.07 707.91 87 704.05 90.41 699.15 94.88 697.54 99.35 695.68
+ 103.14 697.65 106.7 701.4 108.8 706.71 109.39 711.54 108.77 718.69 107.59 722.78 104.7 715.19 100.49 720.72
+ 98.41 712.76 94.16 718.39 93.38 711.07 89.03 719.3 89.12 710.89 84.24 717.1 21 L
+3 X
+1 1 0 0 0 0 1 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+118.14 303.97 122.64 327.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 0 1 0 1 1 0 K
+121.17 354.13 118.96 349.9 117.17 346.29 116.76 342.05 117.06 336.16 119.98 332.43 122.76 328.48
+ 126.99 328.08 131.98 329.27 136.55 332.54 139.59 336.22 142.83 342.47 144 346.49 137.56 341.76 136.92 348.6
+ 130.97 343.13 130.36 350.08 125.84 344.44 126.51 353.59 122.16 346.58 121.31 354.34 21 L
+3 X
+0 0 1 0 1 1 0 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+2 36 Q
+0 0 0 1 0 0 0 K
+(How do I manage the) 209.5 685.5 T
+(components?) 272.5 649.5 T
+2 28 Q
+(What\325) 144 582.83 T
+(s out ther) 219.18 582.83 T
+(e?) 332.22 582.83 T
+3 20 Q
+(Facilitate interaction:) 144 544.17 T
+4 16 Q
+(\245) 162 516.83 T
+3 F
+(Discover available parts & con\336gurations) 180 516.83 T
+4 F
+(\245) 162 492.83 T
+3 F
+(Cluster similar pieces) 180 492.83 T
+4 F
+(\245) 162 468.83 T
+3 F
+(Highlight dif) 180 468.83 T
+(ferences) 262.83 468.83 T
+3 20 Q
+(Prevent interaction:) 144 432.17 T
+4 16 Q
+(\245) 162 404.83 T
+3 F
+(Highlight dif) 180 404.83 T
+(ferences) 262.83 404.83 T
+FMENDPAGE
+%%EndPage: "6" 6
+%%Page: "5" 7
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 0.31 0.58 0.04 0.96 0.64 0.38]
+[ 0 0.27 0.47 0.46 0.55 0.27 0.08]
+[ 0 0.5 1 0 1 0.5 0]
+[ 0.7 0 0.7 0.3 0 0.7 0]
+ 11 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+657.22 468.75 656.84 436 655.97 399.5 653.09 360 649.97 331.25 643.47 293.75 640.47 282
+ 633.97 262.75 630.22 255.25 626.97 250 624.84 247.12 633.47 254.75 636.47 258.12 638.97 260.5 642.97 253.25
+ 648.34 242.38 651.97 254.62 657.22 268.88 659.97 261 666.09 243.25 670.97 256.75 675.22 269.62 683.97 261
+ 702.22 242.75 697.22 250.62 693.22 262.25 689.97 274 685.47 301.25 682.59 327.5 680.97 351.5 679.59 382.12
+ 678.48 419.12 677.22 442.88 675.22 469 34 L
+0 X
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+V
+0.01 H
+2 Z
+N
+0 0 0 1 0 0 0 K
+0 8 Q
+0 0 0 1 0 0 0 K
+4 (NOW RETREA) 296.29 750 S
+4 (T - JUNE 1995) 390.36 750 S
+277.61 748.16 284.29 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+277.61 748.16 284.29 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+277.61 751.16 282.45 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+507.71 748.16 514.39 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+507.71 748.16 514.39 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+507.71 751.16 512.56 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+1 7 Q
+0 X
+0 0 0 1 0 0 0 K
+(ERIC ANDERSON) 344.33 219.49 T
+(U.C. BERKELEY) 347.05 210.49 T
+(510-642-9669) 351.71 201.49 T
+370.16 226.16 376.84 234 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+370.16 226.16 376.84 234 R
+7 X
+0 0 0 1 0 0 0 K
+V
+370.16 229.16 375 234 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+657.09 216 711.09 227 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 9 Q
+0 X
+(5 of 1) 684.24 220.44 T
+(1) 706.09 220.44 T
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+621.09 243 M
+ 654.52 273.61 658.21 424.49 657.09 468 D
+2 H
+2 Z
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+N
+702.09 243 M
+ 675.09 276.34 681.09 436.52 675.09 468 D
+N
+621.09 243 630.09 252 639.09 261 648.09 243 657.09 270 666.09 243 675.09 270
+ 702.09 243 8 L
+N
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+673.59 469 M
+ 683.63 460.48 704.99 463.16 692.46 481.5 D
+ 682.51 496.06 705.11 482.77 710.13 489 D
+ 716.52 496.93 711.09 509.01 704.09 513.38 D
+ 677.04 530.27 709.95 505.09 713.96 523 D
+ 717.07 536.84 706.51 554.26 691.09 558.91 D
+ 681.17 561.9 680.09 544.78 677.85 541.5 D
+ 686.7 554.46 671.28 552.23 662.59 552.24 D
+ 649.33 552.27 670.27 528.92 652.59 546.16 D
+ 642.54 555.96 617.59 536.5 633.09 527.98 D
+ 650.45 518.45 616.79 529.32 614.03 515.5 D
+ 611.36 502.14 628.84 499.13 629.4 496.5 D
+ 628.71 499.75 619.56 494.59 614.69 489 D
+ 608.16 481.48 614.28 471.18 622.59 467.05 D
+ 625.57 465.57 656.21 479.8 646.43 467.5 D
+ 636.09 454.5 649.37 461.17 655.59 469.5 D
+1 0 1 0 0 1 0 K
+V
+0.01 H
+N
+0 0 1 0 1 1 0 K
+0 0 1 0 1 1 0 K
+180 270 72.28 67.46 711.06 728.66 G
+180 270 72.28 67.46 711.06 728.66 A
+0 0.5 1 0 1 0.5 0 K
+619.62 721.68 639.89 724.77 640.57 720.32 620.3 717.23 4 Y
+0 0.5 1 0 1 0.5 0 K
+V
+N
+698.21 662.76 693.33 635.95 688.69 636.8 693.58 663.6 4 Y
+V
+N
+681.11 667.39 672.24 641.63 667.79 643.16 676.66 668.93 4 Y
+V
+N
+665.93 675.9 652.55 655.53 648.61 658.12 661.99 678.49 4 Y
+V
+N
+653.01 689.93 636.69 674.44 633.45 677.85 649.76 693.34 4 Y
+V
+N
+642.98 706.01 624.56 697.88 622.66 702.18 641.08 710.32 4 Y
+V
+N
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+1.5 H
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+90 450 6.83 8.03 666.06 356.64 A
+643.16 266.68 657.62 305.23 2 L
+N
+666.46 270.69 668.06 276.32 675.29 312.46 3 L
+N
+684.93 275.51 684.93 280.33 677.7 326.92 672.08 342.99 4 L
+N
+661.64 279.53 662.44 282.74 665.66 313.27 660.84 340.58 4 L
+N
+660.03 376.72 664.85 447.41 2 L
+N
+672.88 379.93 671.28 445 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+90 450 4.02 4.02 639.15 485.16 G
+90 450 4.02 4.02 639.15 485.16 A
+90 450 4.02 4.02 683.33 508.46 G
+90 450 4.02 4.02 683.33 508.46 A
+90 450 4.02 4.02 660.03 499.62 G
+90 450 4.02 4.02 660.03 499.62 A
+90 450 4.02 4.02 643.16 511.67 G
+90 450 4.02 4.02 643.16 511.67 A
+90 450 4.02 4.02 672.88 483.55 G
+90 450 4.02 4.02 672.88 483.55 A
+90 450 4.02 4.02 682.52 532.55 G
+90 450 4.02 4.02 682.52 532.55 A
+90 450 4.02 4.02 660.83 524.52 G
+90 450 4.02 4.02 660.83 524.52 A
+0.7 0 0.7 0.3 0 0.7 0 K
+112.95 243 M
+ 84.81 263.33 123.69 288.55 117.44 312.88 D
+ 110.98 338.05 76.7 369.68 105.72 394.42 D
+ 142.24 425.57 102.36 457.19 102.2 490.4 D
+ 102.1 512.39 130.06 543.12 98.64 553.97 D
+ 78.37 560.98 89.89 587.08 99.76 598.84 D
+ 110.56 611.71 126.57 630.79 111.89 646.23 D
+ 91.29 667.88 112.1 697.54 130.64 715.22 D
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+94.14 375.22 91.39 407.97 2 L
+N
+0 1 1 0 1 0 0 K
+75.64 427.47 76.14 422.72 76.64 418.72 78.64 414.97 82.14 410.22 86.64 408.72 91.14 406.97
+ 94.89 408.97 98.39 412.72 100.39 417.97 100.89 422.72 100.14 429.72 98.89 433.72 96.14 426.22 91.82 431.57
+ 89.89 423.72 85.54 429.18 84.89 421.97 80.39 429.97 80.64 421.72 75.64 427.72 21 L
+3 X
+0 1 1 0 1 0 0 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+113.39 531.22 117.89 559.47 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 1 0 0 1 0 1 K
+112.51 585.67 111.08 581.02 109.94 577.07 110.29 572.77 111.61 566.95 115.15 563.78 118.6 560.38
+ 122.84 560.79 127.56 562.93 131.49 567.07 133.85 571.32 135.95 578.18 136.4 582.42 130.88 576.46 129.04 583.17
+ 124.13 576.57 122.3 583.39 118.83 576.89 117.88 586.15 114.82 578.32 112.61 585.9 21 L
+3 X
+0 1 0 0 1 0 1 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+0.7 0 0.7 0.3 0 0.7 0 K
+102.89 667.22 99.64 695.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+1 1 0 0 0 0 1 K
+84.23 716.84 84.64 711.99 85.07 707.91 87 704.05 90.41 699.15 94.88 697.54 99.35 695.68
+ 103.14 697.65 106.7 701.4 108.8 706.71 109.39 711.54 108.77 718.69 107.59 722.78 104.7 715.19 100.49 720.72
+ 98.41 712.76 94.16 718.39 93.38 711.07 89.03 719.3 89.12 710.89 84.24 717.1 21 L
+3 X
+1 1 0 0 0 0 1 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+118.14 303.97 122.64 327.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 0 1 0 1 1 0 K
+121.17 354.13 118.96 349.9 117.17 346.29 116.76 342.05 117.06 336.16 119.98 332.43 122.76 328.48
+ 126.99 328.08 131.98 329.27 136.55 332.54 139.59 336.22 142.83 342.47 144 346.49 137.56 341.76 136.92 348.6
+ 130.97 343.13 130.36 350.08 125.84 344.44 126.51 353.59 122.16 346.58 121.31 354.34 21 L
+3 X
+0 0 1 0 1 1 0 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+2 48 Q
+0 0 0 1 0 0 0 K
+(Possible Pr) 201.3 677.5 T
+(ojects) 428.44 677.5 T
+3 20 Q
+(How do I manage the components?) 144 624.17 T
+3 16 Q
+(What\325) 162 596.83 T
+(s out there?) 201.1 596.83 T
+(What\325) 162 572.83 T
+(s changing?) 201.1 572.83 T
+(How can I update everything?) 162 548.83 T
+3 20 Q
+(What status messages are programs generating?) 144 512.17 T
+(What\325) 144 472.17 T
+(s working right now?) 192.88 472.17 T
+(How do I allocate machines to users?) 144 432.17 T
+FMENDPAGE
+%%EndPage: "5" 7
+%%Page: "4" 8
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 0.31 0.58 0.04 0.96 0.64 0.38]
+[ 0 0.27 0.47 0.46 0.55 0.27 0.08]
+[ 0 0.5 1 0 1 0.5 0]
+[ 0.7 0 0.7 0.3 0 0.7 0]
+ 11 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+657.22 468.75 656.84 436 655.97 399.5 653.09 360 649.97 331.25 643.47 293.75 640.47 282
+ 633.97 262.75 630.22 255.25 626.97 250 624.84 247.12 633.47 254.75 636.47 258.12 638.97 260.5 642.97 253.25
+ 648.34 242.38 651.97 254.62 657.22 268.88 659.97 261 666.09 243.25 670.97 256.75 675.22 269.62 683.97 261
+ 702.22 242.75 697.22 250.62 693.22 262.25 689.97 274 685.47 301.25 682.59 327.5 680.97 351.5 679.59 382.12
+ 678.48 419.12 677.22 442.88 675.22 469 34 L
+0 X
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+V
+0.01 H
+2 Z
+N
+0 0 0 1 0 0 0 K
+0 8 Q
+0 0 0 1 0 0 0 K
+4 (NOW RETREA) 296.29 750 S
+4 (T - JUNE 1995) 390.36 750 S
+277.61 748.16 284.29 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+277.61 748.16 284.29 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+277.61 751.16 282.45 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+507.71 748.16 514.39 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+507.71 748.16 514.39 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+507.71 751.16 512.56 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+1 7 Q
+0 X
+0 0 0 1 0 0 0 K
+(ERIC ANDERSON) 344.33 219.49 T
+(U.C. BERKELEY) 347.05 210.49 T
+(510-642-9669) 351.71 201.49 T
+370.16 226.16 376.84 234 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+370.16 226.16 376.84 234 R
+7 X
+0 0 0 1 0 0 0 K
+V
+370.16 229.16 375 234 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+657.09 216 711.09 227 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 9 Q
+0 X
+(4 of 1) 684.24 220.44 T
+(1) 706.09 220.44 T
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+621.09 243 M
+ 654.52 273.61 658.21 424.49 657.09 468 D
+2 H
+2 Z
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+N
+702.09 243 M
+ 675.09 276.34 681.09 436.52 675.09 468 D
+N
+621.09 243 630.09 252 639.09 261 648.09 243 657.09 270 666.09 243 675.09 270
+ 702.09 243 8 L
+N
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+673.59 469 M
+ 683.63 460.48 704.99 463.16 692.46 481.5 D
+ 682.51 496.06 705.11 482.77 710.13 489 D
+ 716.52 496.93 711.09 509.01 704.09 513.38 D
+ 677.04 530.27 709.95 505.09 713.96 523 D
+ 717.07 536.84 706.51 554.26 691.09 558.91 D
+ 681.17 561.9 680.09 544.78 677.85 541.5 D
+ 686.7 554.46 671.28 552.23 662.59 552.24 D
+ 649.33 552.27 670.27 528.92 652.59 546.16 D
+ 642.54 555.96 617.59 536.5 633.09 527.98 D
+ 650.45 518.45 616.79 529.32 614.03 515.5 D
+ 611.36 502.14 628.84 499.13 629.4 496.5 D
+ 628.71 499.75 619.56 494.59 614.69 489 D
+ 608.16 481.48 614.28 471.18 622.59 467.05 D
+ 625.57 465.57 656.21 479.8 646.43 467.5 D
+ 636.09 454.5 649.37 461.17 655.59 469.5 D
+1 0 1 0 0 1 0 K
+V
+0.01 H
+N
+0 0 1 0 1 1 0 K
+0 0 1 0 1 1 0 K
+180 270 72.28 67.46 711.06 728.66 G
+180 270 72.28 67.46 711.06 728.66 A
+0 0.5 1 0 1 0.5 0 K
+619.62 721.68 639.89 724.77 640.57 720.32 620.3 717.23 4 Y
+0 0.5 1 0 1 0.5 0 K
+V
+N
+698.21 662.76 693.33 635.95 688.69 636.8 693.58 663.6 4 Y
+V
+N
+681.11 667.39 672.24 641.63 667.79 643.16 676.66 668.93 4 Y
+V
+N
+665.93 675.9 652.55 655.53 648.61 658.12 661.99 678.49 4 Y
+V
+N
+653.01 689.93 636.69 674.44 633.45 677.85 649.76 693.34 4 Y
+V
+N
+642.98 706.01 624.56 697.88 622.66 702.18 641.08 710.32 4 Y
+V
+N
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+1.5 H
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+90 450 6.83 8.03 666.06 356.64 A
+643.16 266.68 657.62 305.23 2 L
+N
+666.46 270.69 668.06 276.32 675.29 312.46 3 L
+N
+684.93 275.51 684.93 280.33 677.7 326.92 672.08 342.99 4 L
+N
+661.64 279.53 662.44 282.74 665.66 313.27 660.84 340.58 4 L
+N
+660.03 376.72 664.85 447.41 2 L
+N
+672.88 379.93 671.28 445 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+90 450 4.02 4.02 639.15 485.16 G
+90 450 4.02 4.02 639.15 485.16 A
+90 450 4.02 4.02 683.33 508.46 G
+90 450 4.02 4.02 683.33 508.46 A
+90 450 4.02 4.02 660.03 499.62 G
+90 450 4.02 4.02 660.03 499.62 A
+90 450 4.02 4.02 643.16 511.67 G
+90 450 4.02 4.02 643.16 511.67 A
+90 450 4.02 4.02 672.88 483.55 G
+90 450 4.02 4.02 672.88 483.55 A
+90 450 4.02 4.02 682.52 532.55 G
+90 450 4.02 4.02 682.52 532.55 A
+90 450 4.02 4.02 660.83 524.52 G
+90 450 4.02 4.02 660.83 524.52 A
+0.7 0 0.7 0.3 0 0.7 0 K
+112.95 243 M
+ 84.81 263.33 123.69 288.55 117.44 312.88 D
+ 110.98 338.05 76.7 369.68 105.72 394.42 D
+ 142.24 425.57 102.36 457.19 102.2 490.4 D
+ 102.1 512.39 130.06 543.12 98.64 553.97 D
+ 78.37 560.98 89.89 587.08 99.76 598.84 D
+ 110.56 611.71 126.57 630.79 111.89 646.23 D
+ 91.29 667.88 112.1 697.54 130.64 715.22 D
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+94.14 375.22 91.39 407.97 2 L
+N
+0 1 1 0 1 0 0 K
+75.64 427.47 76.14 422.72 76.64 418.72 78.64 414.97 82.14 410.22 86.64 408.72 91.14 406.97
+ 94.89 408.97 98.39 412.72 100.39 417.97 100.89 422.72 100.14 429.72 98.89 433.72 96.14 426.22 91.82 431.57
+ 89.89 423.72 85.54 429.18 84.89 421.97 80.39 429.97 80.64 421.72 75.64 427.72 21 L
+3 X
+0 1 1 0 1 0 0 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+113.39 531.22 117.89 559.47 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 1 0 0 1 0 1 K
+112.51 585.67 111.08 581.02 109.94 577.07 110.29 572.77 111.61 566.95 115.15 563.78 118.6 560.38
+ 122.84 560.79 127.56 562.93 131.49 567.07 133.85 571.32 135.95 578.18 136.4 582.42 130.88 576.46 129.04 583.17
+ 124.13 576.57 122.3 583.39 118.83 576.89 117.88 586.15 114.82 578.32 112.61 585.9 21 L
+3 X
+0 1 0 0 1 0 1 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+0.7 0 0.7 0.3 0 0.7 0 K
+102.89 667.22 99.64 695.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+1 1 0 0 0 0 1 K
+84.23 716.84 84.64 711.99 85.07 707.91 87 704.05 90.41 699.15 94.88 697.54 99.35 695.68
+ 103.14 697.65 106.7 701.4 108.8 706.71 109.39 711.54 108.77 718.69 107.59 722.78 104.7 715.19 100.49 720.72
+ 98.41 712.76 94.16 718.39 93.38 711.07 89.03 719.3 89.12 710.89 84.24 717.1 21 L
+3 X
+1 1 0 0 0 0 1 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+118.14 303.97 122.64 327.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 0 1 0 1 1 0 K
+121.17 354.13 118.96 349.9 117.17 346.29 116.76 342.05 117.06 336.16 119.98 332.43 122.76 328.48
+ 126.99 328.08 131.98 329.27 136.55 332.54 139.59 336.22 142.83 342.47 144 346.49 137.56 341.76 136.92 348.6
+ 130.97 343.13 130.36 350.08 125.84 344.44 126.51 353.59 122.16 346.58 121.31 354.34 21 L
+3 X
+0 0 1 0 1 1 0 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+2 36 Q
+0 0 0 1 0 0 0 K
+(System Administration) 196 685.5 T
+(Surveys) 312.5 649.5 T
+3 20 Q
+(Rob Kolstad\325) 144 588.17 T
+(s 1992 LISA \050Lar) 250.12 588.17 T
+(ge Installation System) 391.4 588.17 T
+(Administration\051 survey:) 144 564.17 T
+4 16 Q
+(\245) 162 536.83 T
+3 F
+(Most time spent dealing with users \05037%\051) 180 536.83 T
+4 F
+(\245) 162 512.83 T
+3 F
+(Backups take very little time \0503%\051) 180 512.83 T
+4 F
+(\245) 162 488.83 T
+3 F
+(Almost nothing correlated) 180 488.83 T
+3 20 Q
+(My 1995 SANS survey) 144 452.17 T
+4 16 Q
+(\245) 162 424.83 T
+3 F
+(Some Correlation between # machines & # administrators) 180 424.83 T
+4 F
+(\245) 162 400.83 T
+3 F
+(Little Correlation found between # users & # administrators) 180 400.83 T
+FMENDPAGE
+%%EndPage: "4" 8
+%%Page: "3" 9
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 0.31 0.58 0.04 0.96 0.64 0.38]
+[ 0 0.27 0.47 0.46 0.55 0.27 0.08]
+[ 0 0.5 1 0 1 0.5 0]
+[ 0.7 0 0.7 0.3 0 0.7 0]
+ 11 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+657.22 468.75 656.84 436 655.97 399.5 653.09 360 649.97 331.25 643.47 293.75 640.47 282
+ 633.97 262.75 630.22 255.25 626.97 250 624.84 247.12 633.47 254.75 636.47 258.12 638.97 260.5 642.97 253.25
+ 648.34 242.38 651.97 254.62 657.22 268.88 659.97 261 666.09 243.25 670.97 256.75 675.22 269.62 683.97 261
+ 702.22 242.75 697.22 250.62 693.22 262.25 689.97 274 685.47 301.25 682.59 327.5 680.97 351.5 679.59 382.12
+ 678.48 419.12 677.22 442.88 675.22 469 34 L
+0 X
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+V
+0.01 H
+2 Z
+N
+0 0 0 1 0 0 0 K
+0 8 Q
+0 0 0 1 0 0 0 K
+4 (NOW RETREA) 296.29 750 S
+4 (T - JUNE 1995) 390.36 750 S
+277.61 748.16 284.29 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+277.61 748.16 284.29 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+277.61 751.16 282.45 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+507.71 748.16 514.39 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+507.71 748.16 514.39 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+507.71 751.16 512.56 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+1 7 Q
+0 X
+0 0 0 1 0 0 0 K
+(ERIC ANDERSON) 344.33 219.49 T
+(U.C. BERKELEY) 347.05 210.49 T
+(510-642-9669) 351.71 201.49 T
+370.16 226.16 376.84 234 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+370.16 226.16 376.84 234 R
+7 X
+0 0 0 1 0 0 0 K
+V
+370.16 229.16 375 234 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+657.09 216 711.09 227 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 9 Q
+0 X
+(3 of 1) 684.24 220.44 T
+(1) 706.09 220.44 T
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+621.09 243 M
+ 654.52 273.61 658.21 424.49 657.09 468 D
+2 H
+2 Z
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+N
+702.09 243 M
+ 675.09 276.34 681.09 436.52 675.09 468 D
+N
+621.09 243 630.09 252 639.09 261 648.09 243 657.09 270 666.09 243 675.09 270
+ 702.09 243 8 L
+N
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+673.59 469 M
+ 683.63 460.48 704.99 463.16 692.46 481.5 D
+ 682.51 496.06 705.11 482.77 710.13 489 D
+ 716.52 496.93 711.09 509.01 704.09 513.38 D
+ 677.04 530.27 709.95 505.09 713.96 523 D
+ 717.07 536.84 706.51 554.26 691.09 558.91 D
+ 681.17 561.9 680.09 544.78 677.85 541.5 D
+ 686.7 554.46 671.28 552.23 662.59 552.24 D
+ 649.33 552.27 670.27 528.92 652.59 546.16 D
+ 642.54 555.96 617.59 536.5 633.09 527.98 D
+ 650.45 518.45 616.79 529.32 614.03 515.5 D
+ 611.36 502.14 628.84 499.13 629.4 496.5 D
+ 628.71 499.75 619.56 494.59 614.69 489 D
+ 608.16 481.48 614.28 471.18 622.59 467.05 D
+ 625.57 465.57 656.21 479.8 646.43 467.5 D
+ 636.09 454.5 649.37 461.17 655.59 469.5 D
+1 0 1 0 0 1 0 K
+V
+0.01 H
+N
+0 0 1 0 1 1 0 K
+0 0 1 0 1 1 0 K
+180 270 72.28 67.46 711.06 728.66 G
+180 270 72.28 67.46 711.06 728.66 A
+0 0.5 1 0 1 0.5 0 K
+619.62 721.68 639.89 724.77 640.57 720.32 620.3 717.23 4 Y
+0 0.5 1 0 1 0.5 0 K
+V
+N
+698.21 662.76 693.33 635.95 688.69 636.8 693.58 663.6 4 Y
+V
+N
+681.11 667.39 672.24 641.63 667.79 643.16 676.66 668.93 4 Y
+V
+N
+665.93 675.9 652.55 655.53 648.61 658.12 661.99 678.49 4 Y
+V
+N
+653.01 689.93 636.69 674.44 633.45 677.85 649.76 693.34 4 Y
+V
+N
+642.98 706.01 624.56 697.88 622.66 702.18 641.08 710.32 4 Y
+V
+N
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+1.5 H
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+90 450 6.83 8.03 666.06 356.64 A
+643.16 266.68 657.62 305.23 2 L
+N
+666.46 270.69 668.06 276.32 675.29 312.46 3 L
+N
+684.93 275.51 684.93 280.33 677.7 326.92 672.08 342.99 4 L
+N
+661.64 279.53 662.44 282.74 665.66 313.27 660.84 340.58 4 L
+N
+660.03 376.72 664.85 447.41 2 L
+N
+672.88 379.93 671.28 445 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+90 450 4.02 4.02 639.15 485.16 G
+90 450 4.02 4.02 639.15 485.16 A
+90 450 4.02 4.02 683.33 508.46 G
+90 450 4.02 4.02 683.33 508.46 A
+90 450 4.02 4.02 660.03 499.62 G
+90 450 4.02 4.02 660.03 499.62 A
+90 450 4.02 4.02 643.16 511.67 G
+90 450 4.02 4.02 643.16 511.67 A
+90 450 4.02 4.02 672.88 483.55 G
+90 450 4.02 4.02 672.88 483.55 A
+90 450 4.02 4.02 682.52 532.55 G
+90 450 4.02 4.02 682.52 532.55 A
+90 450 4.02 4.02 660.83 524.52 G
+90 450 4.02 4.02 660.83 524.52 A
+0.7 0 0.7 0.3 0 0.7 0 K
+112.95 243 M
+ 84.81 263.33 123.69 288.55 117.44 312.88 D
+ 110.98 338.05 76.7 369.68 105.72 394.42 D
+ 142.24 425.57 102.36 457.19 102.2 490.4 D
+ 102.1 512.39 130.06 543.12 98.64 553.97 D
+ 78.37 560.98 89.89 587.08 99.76 598.84 D
+ 110.56 611.71 126.57 630.79 111.89 646.23 D
+ 91.29 667.88 112.1 697.54 130.64 715.22 D
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+94.14 375.22 91.39 407.97 2 L
+N
+0 1 1 0 1 0 0 K
+75.64 427.47 76.14 422.72 76.64 418.72 78.64 414.97 82.14 410.22 86.64 408.72 91.14 406.97
+ 94.89 408.97 98.39 412.72 100.39 417.97 100.89 422.72 100.14 429.72 98.89 433.72 96.14 426.22 91.82 431.57
+ 89.89 423.72 85.54 429.18 84.89 421.97 80.39 429.97 80.64 421.72 75.64 427.72 21 L
+3 X
+0 1 1 0 1 0 0 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+113.39 531.22 117.89 559.47 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 1 0 0 1 0 1 K
+112.51 585.67 111.08 581.02 109.94 577.07 110.29 572.77 111.61 566.95 115.15 563.78 118.6 560.38
+ 122.84 560.79 127.56 562.93 131.49 567.07 133.85 571.32 135.95 578.18 136.4 582.42 130.88 576.46 129.04 583.17
+ 124.13 576.57 122.3 583.39 118.83 576.89 117.88 586.15 114.82 578.32 112.61 585.9 21 L
+3 X
+0 1 0 0 1 0 1 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+0.7 0 0.7 0.3 0 0.7 0 K
+102.89 667.22 99.64 695.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+1 1 0 0 0 0 1 K
+84.23 716.84 84.64 711.99 85.07 707.91 87 704.05 90.41 699.15 94.88 697.54 99.35 695.68
+ 103.14 697.65 106.7 701.4 108.8 706.71 109.39 711.54 108.77 718.69 107.59 722.78 104.7 715.19 100.49 720.72
+ 98.41 712.76 94.16 718.39 93.38 711.07 89.03 719.3 89.12 710.89 84.24 717.1 21 L
+3 X
+1 1 0 0 0 0 1 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+118.14 303.97 122.64 327.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 0 1 0 1 1 0 K
+121.17 354.13 118.96 349.9 117.17 346.29 116.76 342.05 117.06 336.16 119.98 332.43 122.76 328.48
+ 126.99 328.08 131.98 329.27 136.55 332.54 139.59 336.22 142.83 342.47 144 346.49 137.56 341.76 136.92 348.6
+ 130.97 343.13 130.36 350.08 125.84 344.44 126.51 353.59 122.16 346.58 121.31 354.34 21 L
+3 X
+0 0 1 0 1 1 0 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+2 36 Q
+0 0 0 1 0 0 0 K
+(A Pr) 184.32 685.5 T
+(oposed De\336nition of) 256.64 685.5 T
+(System Administration) 196 649.5 T
+3 20 Q
+(A system administrator mediates interactions among) 144 588.17 T
+(hardware, software and people.) 144 564.17 T
+4 16 Q
+(\245) 162 536.83 T
+3 F
+(Facilitates some interactions) 180 536.83 T
+4 F
+(\245) 162 512.83 T
+3 F
+(Prevents other interactions) 180 512.83 T
+FMENDPAGE
+%%EndPage: "3" 9
+%%Page: "2" 10
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 0.31 0.58 0.04 0.96 0.64 0.38]
+[ 0 0.27 0.47 0.46 0.55 0.27 0.08]
+[ 0 0.5 1 0 1 0.5 0]
+[ 0.7 0 0.7 0.3 0 0.7 0]
+ 11 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+657.22 468.75 656.84 436 655.97 399.5 653.09 360 649.97 331.25 643.47 293.75 640.47 282
+ 633.97 262.75 630.22 255.25 626.97 250 624.84 247.12 633.47 254.75 636.47 258.12 638.97 260.5 642.97 253.25
+ 648.34 242.38 651.97 254.62 657.22 268.88 659.97 261 666.09 243.25 670.97 256.75 675.22 269.62 683.97 261
+ 702.22 242.75 697.22 250.62 693.22 262.25 689.97 274 685.47 301.25 682.59 327.5 680.97 351.5 679.59 382.12
+ 678.48 419.12 677.22 442.88 675.22 469 34 L
+0 X
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+V
+0.01 H
+2 Z
+N
+0 0 0 1 0 0 0 K
+0 8 Q
+0 0 0 1 0 0 0 K
+4 (NOW RETREA) 296.29 750 S
+4 (T - JUNE 1995) 390.36 750 S
+277.61 748.16 284.29 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+277.61 748.16 284.29 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+277.61 751.16 282.45 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+507.71 748.16 514.39 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+507.71 748.16 514.39 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+507.71 751.16 512.56 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+1 7 Q
+0 X
+0 0 0 1 0 0 0 K
+(ERIC ANDERSON) 344.33 219.49 T
+(U.C. BERKELEY) 347.05 210.49 T
+(510-642-9669) 351.71 201.49 T
+370.16 226.16 376.84 234 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+370.16 226.16 376.84 234 R
+7 X
+0 0 0 1 0 0 0 K
+V
+370.16 229.16 375 234 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+657.09 216 711.09 227 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 9 Q
+0 X
+(2 of 1) 684.24 220.44 T
+(1) 706.09 220.44 T
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+621.09 243 M
+ 654.52 273.61 658.21 424.49 657.09 468 D
+2 H
+2 Z
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+N
+702.09 243 M
+ 675.09 276.34 681.09 436.52 675.09 468 D
+N
+621.09 243 630.09 252 639.09 261 648.09 243 657.09 270 666.09 243 675.09 270
+ 702.09 243 8 L
+N
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+673.59 469 M
+ 683.63 460.48 704.99 463.16 692.46 481.5 D
+ 682.51 496.06 705.11 482.77 710.13 489 D
+ 716.52 496.93 711.09 509.01 704.09 513.38 D
+ 677.04 530.27 709.95 505.09 713.96 523 D
+ 717.07 536.84 706.51 554.26 691.09 558.91 D
+ 681.17 561.9 680.09 544.78 677.85 541.5 D
+ 686.7 554.46 671.28 552.23 662.59 552.24 D
+ 649.33 552.27 670.27 528.92 652.59 546.16 D
+ 642.54 555.96 617.59 536.5 633.09 527.98 D
+ 650.45 518.45 616.79 529.32 614.03 515.5 D
+ 611.36 502.14 628.84 499.13 629.4 496.5 D
+ 628.71 499.75 619.56 494.59 614.69 489 D
+ 608.16 481.48 614.28 471.18 622.59 467.05 D
+ 625.57 465.57 656.21 479.8 646.43 467.5 D
+ 636.09 454.5 649.37 461.17 655.59 469.5 D
+1 0 1 0 0 1 0 K
+V
+0.01 H
+N
+0 0 1 0 1 1 0 K
+0 0 1 0 1 1 0 K
+180 270 72.28 67.46 711.06 728.66 G
+180 270 72.28 67.46 711.06 728.66 A
+0 0.5 1 0 1 0.5 0 K
+619.62 721.68 639.89 724.77 640.57 720.32 620.3 717.23 4 Y
+0 0.5 1 0 1 0.5 0 K
+V
+N
+698.21 662.76 693.33 635.95 688.69 636.8 693.58 663.6 4 Y
+V
+N
+681.11 667.39 672.24 641.63 667.79 643.16 676.66 668.93 4 Y
+V
+N
+665.93 675.9 652.55 655.53 648.61 658.12 661.99 678.49 4 Y
+V
+N
+653.01 689.93 636.69 674.44 633.45 677.85 649.76 693.34 4 Y
+V
+N
+642.98 706.01 624.56 697.88 622.66 702.18 641.08 710.32 4 Y
+V
+N
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+1.5 H
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+90 450 6.83 8.03 666.06 356.64 A
+643.16 266.68 657.62 305.23 2 L
+N
+666.46 270.69 668.06 276.32 675.29 312.46 3 L
+N
+684.93 275.51 684.93 280.33 677.7 326.92 672.08 342.99 4 L
+N
+661.64 279.53 662.44 282.74 665.66 313.27 660.84 340.58 4 L
+N
+660.03 376.72 664.85 447.41 2 L
+N
+672.88 379.93 671.28 445 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+90 450 4.02 4.02 639.15 485.16 G
+90 450 4.02 4.02 639.15 485.16 A
+90 450 4.02 4.02 683.33 508.46 G
+90 450 4.02 4.02 683.33 508.46 A
+90 450 4.02 4.02 660.03 499.62 G
+90 450 4.02 4.02 660.03 499.62 A
+90 450 4.02 4.02 643.16 511.67 G
+90 450 4.02 4.02 643.16 511.67 A
+90 450 4.02 4.02 672.88 483.55 G
+90 450 4.02 4.02 672.88 483.55 A
+90 450 4.02 4.02 682.52 532.55 G
+90 450 4.02 4.02 682.52 532.55 A
+90 450 4.02 4.02 660.83 524.52 G
+90 450 4.02 4.02 660.83 524.52 A
+0.7 0 0.7 0.3 0 0.7 0 K
+112.95 243 M
+ 84.81 263.33 123.69 288.55 117.44 312.88 D
+ 110.98 338.05 76.7 369.68 105.72 394.42 D
+ 142.24 425.57 102.36 457.19 102.2 490.4 D
+ 102.1 512.39 130.06 543.12 98.64 553.97 D
+ 78.37 560.98 89.89 587.08 99.76 598.84 D
+ 110.56 611.71 126.57 630.79 111.89 646.23 D
+ 91.29 667.88 112.1 697.54 130.64 715.22 D
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+94.14 375.22 91.39 407.97 2 L
+N
+0 1 1 0 1 0 0 K
+75.64 427.47 76.14 422.72 76.64 418.72 78.64 414.97 82.14 410.22 86.64 408.72 91.14 406.97
+ 94.89 408.97 98.39 412.72 100.39 417.97 100.89 422.72 100.14 429.72 98.89 433.72 96.14 426.22 91.82 431.57
+ 89.89 423.72 85.54 429.18 84.89 421.97 80.39 429.97 80.64 421.72 75.64 427.72 21 L
+3 X
+0 1 1 0 1 0 0 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+113.39 531.22 117.89 559.47 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 1 0 0 1 0 1 K
+112.51 585.67 111.08 581.02 109.94 577.07 110.29 572.77 111.61 566.95 115.15 563.78 118.6 560.38
+ 122.84 560.79 127.56 562.93 131.49 567.07 133.85 571.32 135.95 578.18 136.4 582.42 130.88 576.46 129.04 583.17
+ 124.13 576.57 122.3 583.39 118.83 576.89 117.88 586.15 114.82 578.32 112.61 585.9 21 L
+3 X
+0 1 0 0 1 0 1 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+0.7 0 0.7 0.3 0 0.7 0 K
+102.89 667.22 99.64 695.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+1 1 0 0 0 0 1 K
+84.23 716.84 84.64 711.99 85.07 707.91 87 704.05 90.41 699.15 94.88 697.54 99.35 695.68
+ 103.14 697.65 106.7 701.4 108.8 706.71 109.39 711.54 108.77 718.69 107.59 722.78 104.7 715.19 100.49 720.72
+ 98.41 712.76 94.16 718.39 93.38 711.07 89.03 719.3 89.12 710.89 84.24 717.1 21 L
+3 X
+1 1 0 0 0 0 1 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+118.14 303.97 122.64 327.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 0 1 0 1 1 0 K
+121.17 354.13 118.96 349.9 117.17 346.29 116.76 342.05 117.06 336.16 119.98 332.43 122.76 328.48
+ 126.99 328.08 131.98 329.27 136.55 332.54 139.59 336.22 142.83 342.47 144 346.49 137.56 341.76 136.92 348.6
+ 130.97 343.13 130.36 350.08 125.84 344.44 126.51 353.59 122.16 346.58 121.31 354.34 21 L
+3 X
+0 0 1 0 1 1 0 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+2 36 Q
+0 0 0 1 0 0 0 K
+(The SysAdmin Pr) 189.81 685.5 T
+(oblem) 463.19 685.5 T
+3 20 Q
+(Cost of machines dropping; hardware improving) 144 624.17 T
+(More people using machines) 144 584.17 T
+4 16 Q
+(\245) 162 556.83 T
+3 F
+(More Machines) 180 556.83 T
+4 F
+(\245) 162 532.83 T
+3 F
+(More Naive Users) 180 532.83 T
+3 20 Q
+(Complexity of systems increasing) 144 496.17 T
+(Continuing lack of standardization) 144 456.17 T
+(What makes it hard?) 144 416.17 T
+4 16 Q
+(\245) 162 388.83 T
+3 F
+(Heterogeneity) 180 388.83 T
+4 F
+(\245) 162 364.83 T
+3 F
+(Security) 180 364.83 T
+4 F
+(\245) 162 340.83 T
+3 F
+(Networking) 180 340.83 T
+FMENDPAGE
+%%EndPage: "2" 10
+%%Page: "1" 11
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 0.31 0.58 0.04 0.96 0.64 0.38]
+[ 0 0.27 0.47 0.46 0.55 0.27 0.08]
+[ 0 0.5 1 0 1 0.5 0]
+[ 0.7 0 0.7 0.3 0 0.7 0]
+ 11 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+657.22 468.75 656.84 436 655.97 399.5 653.09 360 649.97 331.25 643.47 293.75 640.47 282
+ 633.97 262.75 630.22 255.25 626.97 250 624.84 247.12 633.47 254.75 636.47 258.12 638.97 260.5 642.97 253.25
+ 648.34 242.38 651.97 254.62 657.22 268.88 659.97 261 666.09 243.25 670.97 256.75 675.22 269.62 683.97 261
+ 702.22 242.75 697.22 250.62 693.22 262.25 689.97 274 685.47 301.25 682.59 327.5 680.97 351.5 679.59 382.12
+ 678.48 419.12 677.22 442.88 675.22 469 34 L
+0 X
+0 0.31 0.58 0.04 0.96 0.64 0.38 K
+V
+0.01 H
+2 Z
+N
+0 0 0 1 0 0 0 K
+0 8 Q
+0 0 0 1 0 0 0 K
+4 (NOW RETREA) 296.29 750 S
+4 (T - JUNE 1995) 390.36 750 S
+277.61 748.16 284.29 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+277.61 748.16 284.29 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+277.61 751.16 282.45 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+507.71 748.16 514.39 756 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+507.71 748.16 514.39 756 R
+7 X
+0 0 0 1 0 0 0 K
+V
+507.71 751.16 512.56 756 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+1 7 Q
+0 X
+0 0 0 1 0 0 0 K
+(ERIC ANDERSON) 344.33 219.49 T
+(U.C. BERKELEY) 347.05 210.49 T
+(510-642-9669) 351.71 201.49 T
+370.16 226.16 376.84 234 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+370.16 226.16 376.84 234 R
+7 X
+0 0 0 1 0 0 0 K
+V
+370.16 229.16 375 234 R
+0 X
+V
+0.01 H
+0 Z
+N
+0 180 792 792 C
+657.09 216 711.09 227 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 9 Q
+0 X
+(1 of 1) 684.24 220.44 T
+(1) 706.09 220.44 T
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+621.09 243 M
+ 654.52 273.61 658.21 424.49 657.09 468 D
+2 H
+2 Z
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+N
+702.09 243 M
+ 675.09 276.34 681.09 436.52 675.09 468 D
+N
+621.09 243 630.09 252 639.09 261 648.09 243 657.09 270 666.09 243 675.09 270
+ 702.09 243 8 L
+N
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+673.59 469 M
+ 683.63 460.48 704.99 463.16 692.46 481.5 D
+ 682.51 496.06 705.11 482.77 710.13 489 D
+ 716.52 496.93 711.09 509.01 704.09 513.38 D
+ 677.04 530.27 709.95 505.09 713.96 523 D
+ 717.07 536.84 706.51 554.26 691.09 558.91 D
+ 681.17 561.9 680.09 544.78 677.85 541.5 D
+ 686.7 554.46 671.28 552.23 662.59 552.24 D
+ 649.33 552.27 670.27 528.92 652.59 546.16 D
+ 642.54 555.96 617.59 536.5 633.09 527.98 D
+ 650.45 518.45 616.79 529.32 614.03 515.5 D
+ 611.36 502.14 628.84 499.13 629.4 496.5 D
+ 628.71 499.75 619.56 494.59 614.69 489 D
+ 608.16 481.48 614.28 471.18 622.59 467.05 D
+ 625.57 465.57 656.21 479.8 646.43 467.5 D
+ 636.09 454.5 649.37 461.17 655.59 469.5 D
+1 0 1 0 0 1 0 K
+V
+0.01 H
+N
+0 0 1 0 1 1 0 K
+0 0 1 0 1 1 0 K
+180 270 72.28 67.46 711.06 728.66 G
+180 270 72.28 67.46 711.06 728.66 A
+0 0.5 1 0 1 0.5 0 K
+619.62 721.68 639.89 724.77 640.57 720.32 620.3 717.23 4 Y
+0 0.5 1 0 1 0.5 0 K
+V
+N
+698.21 662.76 693.33 635.95 688.69 636.8 693.58 663.6 4 Y
+V
+N
+681.11 667.39 672.24 641.63 667.79 643.16 676.66 668.93 4 Y
+V
+N
+665.93 675.9 652.55 655.53 648.61 658.12 661.99 678.49 4 Y
+V
+N
+653.01 689.93 636.69 674.44 633.45 677.85 649.76 693.34 4 Y
+V
+N
+642.98 706.01 624.56 697.88 622.66 702.18 641.08 710.32 4 Y
+V
+N
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+1.5 H
+0 0.27 0.47 0.46 0.55 0.27 0.08 K
+90 450 6.83 8.03 666.06 356.64 A
+643.16 266.68 657.62 305.23 2 L
+N
+666.46 270.69 668.06 276.32 675.29 312.46 3 L
+N
+684.93 275.51 684.93 280.33 677.7 326.92 672.08 342.99 4 L
+N
+661.64 279.53 662.44 282.74 665.66 313.27 660.84 340.58 4 L
+N
+660.03 376.72 664.85 447.41 2 L
+N
+672.88 379.93 671.28 445 2 L
+N
+0 1 1 0 1 0 0 K
+0 1 1 0 1 0 0 K
+90 450 4.02 4.02 639.15 485.16 G
+90 450 4.02 4.02 639.15 485.16 A
+90 450 4.02 4.02 683.33 508.46 G
+90 450 4.02 4.02 683.33 508.46 A
+90 450 4.02 4.02 660.03 499.62 G
+90 450 4.02 4.02 660.03 499.62 A
+90 450 4.02 4.02 643.16 511.67 G
+90 450 4.02 4.02 643.16 511.67 A
+90 450 4.02 4.02 672.88 483.55 G
+90 450 4.02 4.02 672.88 483.55 A
+90 450 4.02 4.02 682.52 532.55 G
+90 450 4.02 4.02 682.52 532.55 A
+90 450 4.02 4.02 660.83 524.52 G
+90 450 4.02 4.02 660.83 524.52 A
+0.7 0 0.7 0.3 0 0.7 0 K
+112.95 243 M
+ 84.81 263.33 123.69 288.55 117.44 312.88 D
+ 110.98 338.05 76.7 369.68 105.72 394.42 D
+ 142.24 425.57 102.36 457.19 102.2 490.4 D
+ 102.1 512.39 130.06 543.12 98.64 553.97 D
+ 78.37 560.98 89.89 587.08 99.76 598.84 D
+ 110.56 611.71 126.57 630.79 111.89 646.23 D
+ 91.29 667.88 112.1 697.54 130.64 715.22 D
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+94.14 375.22 91.39 407.97 2 L
+N
+0 1 1 0 1 0 0 K
+75.64 427.47 76.14 422.72 76.64 418.72 78.64 414.97 82.14 410.22 86.64 408.72 91.14 406.97
+ 94.89 408.97 98.39 412.72 100.39 417.97 100.89 422.72 100.14 429.72 98.89 433.72 96.14 426.22 91.82 431.57
+ 89.89 423.72 85.54 429.18 84.89 421.97 80.39 429.97 80.64 421.72 75.64 427.72 21 L
+3 X
+0 1 1 0 1 0 0 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+113.39 531.22 117.89 559.47 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 1 0 0 1 0 1 K
+112.51 585.67 111.08 581.02 109.94 577.07 110.29 572.77 111.61 566.95 115.15 563.78 118.6 560.38
+ 122.84 560.79 127.56 562.93 131.49 567.07 133.85 571.32 135.95 578.18 136.4 582.42 130.88 576.46 129.04 583.17
+ 124.13 576.57 122.3 583.39 118.83 576.89 117.88 586.15 114.82 578.32 112.61 585.9 21 L
+3 X
+0 1 0 0 1 0 1 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+0.7 0 0.7 0.3 0 0.7 0 K
+102.89 667.22 99.64 695.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+1 1 0 0 0 0 1 K
+84.23 716.84 84.64 711.99 85.07 707.91 87 704.05 90.41 699.15 94.88 697.54 99.35 695.68
+ 103.14 697.65 106.7 701.4 108.8 706.71 109.39 711.54 108.77 718.69 107.59 722.78 104.7 715.19 100.49 720.72
+ 98.41 712.76 94.16 718.39 93.38 711.07 89.03 719.3 89.12 710.89 84.24 717.1 21 L
+3 X
+1 1 0 0 0 0 1 K
+V
+0.5 H
+0 X
+N
+0.7 0 0.7 0.3 0 0.7 0 K
+118.14 303.97 122.64 327.22 2 L
+3 H
+0.7 0 0.7 0.3 0 0.7 0 K
+N
+0 0 1 0 1 1 0 K
+121.17 354.13 118.96 349.9 117.17 346.29 116.76 342.05 117.06 336.16 119.98 332.43 122.76 328.48
+ 126.99 328.08 131.98 329.27 136.55 332.54 139.59 336.22 142.83 342.47 144 346.49 137.56 341.76 136.92 348.6
+ 130.97 343.13 130.36 350.08 125.84 344.44 126.51 353.59 122.16 346.58 121.31 354.34 21 L
+3 X
+0 0 1 0 1 1 0 K
+V
+0.5 H
+0 X
+N
+0 0 0 1 0 0 0 K
+2 48 Q
+0 0 0 1 0 0 0 K
+(Intr) 243.25 677.5 T
+(oduction) 325.04 677.5 T
+3 20 Q
+(The System Administration Problem) 144 624.17 T
+(A Proposed De\336nition of System Administration) 144 584.17 T
+(System Administration Surveys) 144 544.17 T
+(Possible Projects) 144 504.17 T
+(Questions and Comments) 144 464.17 T
+FMENDPAGE
+%%EndPage: "1" 11
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Descend
+%%Pages: 11
+%%DocumentFonts: Helvetica-Bold
+%%+ Helvetica
+%%+ Times-Bold
+%%+ Times-Roman
+%%+ Courier-Bold
+%%EOF

@@ -1,0 +1,4886 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 612 792 0 1 23 FMDOCUMENT
+0 0 /Helvetica-Bold FMFONTDEFINE
+1 0 /Helvetica FMFONTDEFINE
+2 0 /Times-Bold FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 0 /Times-Roman FMFONTDEFINE
+5 1 /ZapfDingbats FMFONTDEFINE
+6 0 /Times-BoldItalic FMFONTDEFINE
+32 FMFILLS
+0 0.1 FMFILL
+1 0.3 FMFILL
+2 0.5 FMFILL
+3 0.7 FMFILL
+4 0.9 FMFILL
+5 0.97 FMFILL
+6 1 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <0814224922140880> FMFILL
+11 <088070248301201c> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 0.9 FMFILL
+17 0.7 FMFILL
+18 0.5 FMFILL
+19 0.3 FMFILL
+20 0.1 FMFILL
+21 0.03 FMFILL
+22 0 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <f7ebddb6ddebf77f> FMFILL
+27 <f77f8fdb7cfedfe3> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "mini" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0.5 0.2 0 0 0.5 0.8 1]
+[ 0 1 1 0 1 0 0]
+ 9 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+31.64 153 823.64 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 156.52 743.53 S
+153.52 742.71 156.52 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+153.52 742.71 156.52 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+153.57 744.06 155.75 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+261.98 742.71 264.98 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+261.98 742.71 264.98 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+262.03 744.06 264.21 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+59.89 518.76 358.61 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 424.63 273.84 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 69.81 514.28 S
+1.79 (1) 204.88 514.28 S
+1.79 (January 10, 1996) 292.36 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+2 12.56 Q
+1 1 0 0 0 0 1 K
+(Measuring Application) 147.32 688.75 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Performance) 174.38 676.19 T
+0 0 0 1 0 0 0 K
+2 8.07 Q
+0 0 0 1 0 0 0 K
+(Mike Dahlin) 187.6 655.86 T
+(1998 W) 162.87 637.02 T
+(inter NOW Retr) 188.97 637.02 T
+(eat) 245.32 637.02 T
+0.5 0.2 0 0 0.5 0.8 1 K
+0 0 0 1 0 0 0 K
+0.5 0.2 0 0 0.5 0.8 1 K
+0 0 0 1 0 0 0 K
+0.5 0.2 0 0 0.5 0.8 1 K
+0 0 0 1 0 0 0 K
+0.5 0.2 0 0 0.5 0.8 1 K
+3 F
+0.5 0.2 0 0 0.5 0.8 1 K
+(\322It doesn\325) 167.87 583.2 T
+(t matter how beautiful your theory) 199.93 583.2 T
+0 0 0 1 0 0 0 K
+0.5 0.2 0 0 0.5 0.8 1 K
+(is, it doesn\325) 170.41 575.13 T
+(t matter how smart you ar) 206.96 575.13 T
+(e) 290.77 575.13 T
+(\321 if) 296.37 575.13 T
+0 0 0 1 0 0 0 K
+0.5 0.2 0 0 0.5 0.8 1 K
+(it doesn\325) 170.41 567.06 T
+(t agr) 197.54 567.06 T
+(ee with experiment, it\325) 212.72 567.06 T
+(s) 283.88 567.06 T
+0 0 0 1 0 0 0 K
+0.5 0.2 0 0 0.5 0.8 1 K
+(wr) 170.41 558.98 T
+(ong.\323) 178.64 558.98 T
+0 0 0 1 0 0 0 K
+0.5 0.2 0 0 0.5 0.8 1 K
+(- R.P) 255.18 550.91 T
+(. Feynman) 270.73 550.91 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 521.02 743.53 S
+518.02 742.71 521.02 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+518.02 742.71 521.02 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+518.08 744.06 520.25 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+626.48 742.71 629.48 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+626.48 742.71 629.48 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+626.53 744.06 628.71 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+424.39 518.76 723.11 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 424.63 638.34 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 434.31 514.28 S
+1.79 (2) 569.38 514.28 S
+1.79 (January 10, 1996) 656.86 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+2 10.76 Q
+1 1 0 0 0 0 1 K
+(Application Benchmarking is Hard) 492.86 715.07 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 702.36 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Requires Cross-Project-Group Cooperation) 474.96 702.36 T
+(W) 481.51 692.49 T
+(on\325) 489.26 692.49 T
+(t Set Land-Speed Records for Individual Groups) 501.06 692.49 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 681.73 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Exposes Grungy Interface Details) 474.96 681.73 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 670.96 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Reveals T) 474.96 670.96 T
+(rade-of) 510.77 670.96 T
+(fs) 536.51 670.96 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 660.2 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Uncovers Bugs and Mistakes) 474.96 660.2 T
+3 F
+(\050These ar) 468.8 644.95 T
+(e a big part of why it\325) 502.6 644.95 T
+(s important, too.\051) 579.19 644.95 T
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 156.52 469.03 S
+153.52 468.21 156.52 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+153.52 468.21 156.52 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+153.57 469.56 155.75 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+261.98 468.21 264.98 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+261.98 468.21 264.98 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+262.03 469.56 264.21 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+59.89 244.26 358.61 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 150.13 273.84 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 69.81 239.78 S
+1.79 (3) 204.88 239.78 S
+1.79 (January 10, 1996) 292.36 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+2 10.76 Q
+1 1 0 0 0 0 1 K
+(Outline) 191.9 440.57 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 110.65 424.42 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+4 10.76 Q
+1 1 0 0 0 0 1 K
+(Limitations of Microbenchmarks) 116.82 424.42 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 110.65 408.27 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+4 10.76 Q
+1 1 0 0 0 0 1 K
+(Better Microbenchmarks) 116.82 408.27 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 110.65 392.13 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+4 10.76 Q
+1 1 0 0 0 0 1 K
+(Application-Level Benchmarks) 116.82 392.13 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 521.02 469.03 S
+518.02 468.21 521.02 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+518.02 468.21 521.02 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+518.08 469.56 520.25 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+626.48 468.21 629.48 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+626.48 468.21 629.48 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+626.53 469.56 628.71 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+424.39 244.26 723.11 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 150.13 638.34 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 434.31 239.78 S
+1.79 (4) 569.38 239.78 S
+1.79 (January 10, 1996) 656.86 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+2 10.76 Q
+1 1 0 0 0 0 1 K
+(Micr) 498.9 440.57 T
+(obenchmarks Don\325t Pr) 521.42 440.57 T
+(edict) 626.47 440.57 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(Performance) 543.86 428.9 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+4 F
+1 0 1 0 0 1 0 K
+(Example: NRAM \050Eric Anderson\051 \0501995\051) 468.8 417.24 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 277.85 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Microbenchmarks May Not Predict Performance) 474.96 277.85 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 267.08 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Microbenchmarks Don\325) 474.96 267.08 T
+(t Expose Incorrect Design) 560.74 267.08 T
+468.8 259.67 678.7 447.74 C
+471.06 285.62 676.44 413.66 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 8.07 Q
+0 X
+0 0 0 1 0 0 0 K
+(benchmark) 546.07 288.83 T
+0 0 0 1 0 0 0 K
+493.86 304.99 669.18 304.99 2 L
+0.45 H
+2 Z
+5 X
+N
+493.86 304.99 493.86 408.11 2 L
+N
+493.86 304.99 495.84 304.99 2 L
+0 X
+N
+669.18 304.99 667.2 304.99 2 L
+N
+0 0 0 1 0 0 0 K
+(0 ms) 473.69 304.25 T
+0 0 0 1 0 0 0 K
+493.86 316.45 495.84 316.45 2 L
+N
+669.18 316.45 667.2 316.45 2 L
+N
+0 0 0 1 0 0 0 K
+(1 ms) 473.69 315.71 T
+0 0 0 1 0 0 0 K
+493.86 327.91 495.84 327.91 2 L
+N
+669.18 327.91 667.2 327.91 2 L
+N
+0 0 0 1 0 0 0 K
+(2 ms) 473.69 327.17 T
+0 0 0 1 0 0 0 K
+493.86 339.35 495.84 339.35 2 L
+N
+669.18 339.35 667.2 339.35 2 L
+N
+0 0 0 1 0 0 0 K
+(3 ms) 473.69 338.61 T
+0 0 0 1 0 0 0 K
+493.86 350.82 495.84 350.82 2 L
+N
+669.18 350.82 667.2 350.82 2 L
+N
+0 0 0 1 0 0 0 K
+(4 ms) 473.69 350.08 T
+0 0 0 1 0 0 0 K
+493.86 362.28 495.84 362.28 2 L
+N
+669.18 362.28 667.2 362.28 2 L
+N
+0 0 0 1 0 0 0 K
+(5 ms) 473.69 361.54 T
+0 0 0 1 0 0 0 K
+493.86 373.74 495.84 373.74 2 L
+N
+669.18 373.74 667.2 373.74 2 L
+N
+0 0 0 1 0 0 0 K
+(6 ms) 473.69 373 T
+0 0 0 1 0 0 0 K
+493.86 385.18 495.84 385.18 2 L
+N
+669.18 385.18 667.2 385.18 2 L
+N
+0 0 0 1 0 0 0 K
+(7 ms) 473.69 384.44 T
+0 0 0 1 0 0 0 K
+493.86 396.64 495.84 396.64 2 L
+N
+669.18 396.64 667.2 396.64 2 L
+N
+0 0 0 1 0 0 0 K
+(8 ms) 473.69 395.9 T
+0 0 0 1 0 0 0 K
+493.86 408.11 495.84 408.11 2 L
+N
+669.18 408.11 667.2 408.11 2 L
+N
+0 0 0 1 0 0 0 K
+(9 ms) 473.69 407.37 T
+0 0 0 1 0 0 0 K
+493.86 304.99 493.86 306.55 2 L
+N
+493.86 408.11 493.86 406.54 2 L
+N
+0 0 0 1 0 0 0 K
+(Predicted) 513.69 296.62 T
+(Micro-) 552.79 296.62 T
+(App.) 591.08 296.62 T
+(Hacked.) 620.77 296.62 T
+0 0 0 1 0 0 0 K
+669.18 304.99 669.18 306.55 2 L
+N
+669.18 408.11 669.18 406.54 2 L
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+493.86 304.99 669.18 304.99 669.18 408.11 493.86 408.11 493.86 304.99 5 L
+N
+1 1 0 0 0 0 1 K
+515.78 304.99 515.78 317.59 542.09 317.59 542.09 304.99 515.78 304.99 5 L
+3 X
+1 1 0 0 0 0 1 K
+V
+0.22 H
+0 X
+N
+550.85 304.99 550.85 318.75 577.12 318.75 577.12 304.99 550.85 304.99 5 L
+3 X
+V
+0 X
+N
+585.91 304.99 585.91 395.51 612.19 395.51 612.19 304.99 585.91 304.99 5 L
+3 X
+V
+0 X
+N
+620.95 304.99 620.95 340.51 647.26 340.51 647.26 304.99 620.95 304.99 5 L
+3 X
+V
+0 X
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(App.) 626.15 288.83 T
+(\050sim\051) 590.52 288.83 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(1.1 ms) 518.36 319.23 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(1.2 ms) 553.6 320.47 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(7.9 ms) 587.88 396.87 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(3.1 ms) 623.44 342.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+468.8 259.67 678.7 447.74 C
+396.14 -121.5 1188.14 490.5 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "mini" 1
+%%Page: "mini" 2
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0.5 0.2 0 0 0.5 0.8 1]
+[ 0 1 1 0 1 0 0]
+ 9 FrameSetSepColors
+FrameNoSep
+31.64 153 823.64 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 156.52 743.53 S
+153.52 742.71 156.52 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+153.52 742.71 156.52 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+153.57 744.06 155.75 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+261.98 742.71 264.98 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+261.98 742.71 264.98 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+262.03 744.06 264.21 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+59.89 518.76 358.61 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 424.63 273.84 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 69.81 514.28 S
+1.79 (5) 204.88 514.28 S
+1.79 (January 10, 1996) 292.36 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+2 10.76 Q
+1 1 0 0 0 0 1 K
+(\322Micr) 113.81 715.07 T
+(obenchmarks Bad\323 by E. Anderson) 141.71 715.07 T
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(TR-96-28 Mar) 157.18 703.4 T
+(ch, 1996) 223.65 703.4 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+4 F
+1 0 1 0 0 1 0 K
+(Enumerates Factors that Distort Performance) 104.3 686.36 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 553 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Factors Account for 91% of dif) 110.46 553 T
+(ference.) 222.65 553 T
+2 8.07 Q
+(Factor) 169.67 671.11 T
+(Impact) 266.76 671.11 T
+4 F
+(Paging) 113.96 657.66 T
+(73%) 271.69 657.66 T
+(Processor I-Cache) 113.96 645.1 T
+(7%) 273.71 645.1 T
+(Process Scheduling w/ Communication) 113.96 632.54 T
+(4%) 273.71 632.54 T
+(Processor D-Cache) 113.96 619.98 T
+(4%) 273.71 619.98 T
+(Paging Endpoints) 113.96 607.42 T
+(1%) 273.71 607.42 T
+(Interference \050daemons, other jobs\051) 113.96 594.86 T
+(1%) 273.71 594.86 T
+(Lost Packets and Retransmissions) 113.96 582.31 T
+(1%) 273.71 582.31 T
+(Unknown) 113.96 569.75 T
+(9%) 273.71 569.75 T
+111.26 679.97 111.26 565.37 2 L
+V
+0.22 H
+N
+250.95 680.19 250.95 565.15 2 L
+V
+N
+307.23 679.97 307.23 565.37 2 L
+V
+N
+111.15 680.08 307.35 680.08 2 L
+V
+N
+111.38 666.29 307.12 666.29 2 L
+V
+N
+111.38 665.17 307.12 665.17 2 L
+V
+N
+111.15 653.17 307.35 653.17 2 L
+V
+N
+111.15 640.61 307.35 640.61 2 L
+V
+N
+111.15 628.05 307.35 628.05 2 L
+V
+N
+111.15 615.5 307.35 615.5 2 L
+V
+N
+111.15 602.94 307.35 602.94 2 L
+V
+N
+111.15 590.38 307.35 590.38 2 L
+V
+N
+111.15 577.82 307.35 577.82 2 L
+V
+N
+111.15 565.26 307.35 565.26 2 L
+V
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 521.02 743.53 S
+518.02 742.71 521.02 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+518.02 742.71 521.02 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+518.08 744.06 520.25 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+626.48 742.71 629.48 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+626.48 742.71 629.48 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+626.53 744.06 628.71 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+424.39 518.76 723.11 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 424.63 638.34 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 434.31 514.28 S
+1.79 (6) 569.38 514.28 S
+1.79 (January 10, 1996) 656.86 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+2 10.76 Q
+1 1 0 0 0 0 1 K
+(T) 483.36 715.07 T
+(wo Appr) 489.74 715.07 T
+(oaches to Better Benchmarks) 529.91 715.07 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 702.36 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(More Sophisticated Microbenchmarks) 474.96 702.36 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 691.59 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Application-Level Benchmarks) 474.96 691.59 T
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 156.52 469.03 S
+153.52 468.21 156.52 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+153.52 468.21 156.52 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+153.57 469.56 155.75 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+261.98 468.21 264.98 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+261.98 468.21 264.98 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+262.03 469.56 264.21 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+59.89 244.26 358.61 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 150.13 273.84 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 69.81 239.78 S
+1.79 (7) 204.88 239.78 S
+1.79 (January 10, 1996) 292.36 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+2 10.76 Q
+1 1 0 0 0 0 1 K
+(Self-Scaling NOW Micr) 125.63 440.57 T
+(obenchmark) 234.86 440.57 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 427.86 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(See Pete Chen\325) 110.46 427.86 T
+(s \322Self-Scaling Benchmarks\323) 164.78 427.86 T
+(SIGMETRICS \32493) 110.46 417.99 T
+1 0 1 0 0 1 0 K
+4 10.76 Q
+1 0 1 0 0 1 0 K
+(Account for Factors that Distort Benchmarks) 104.3 401.55 T
+0 0 0 1 0 0 0 K
+1 8.97 Q
+0 0 0 1 0 0 0 K
+(For Each Factor \050working set, buf) 117.01 391.08 T
+(fer size, ...\051{) 249.46 391.08 T
+(Set other factors to 75% performance point) 129.73 381.21 T
+(Plot performance v) 129.73 371.35 T
+(. current factor) 204.34 371.35 T
+(}) 117.01 361.48 T
+1 0 1 0 0 1 0 K
+4 10.76 Q
+1 0 1 0 0 1 0 K
+(Predict Application Perf via Interpolation) 104.3 345.03 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 333.67 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Assumes Factors Independent) 110.46 333.67 T
+1 0 1 0 0 1 0 K
+4 10.76 Q
+1 0 1 0 0 1 0 K
+(Applications) 104.3 317.23 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 305.86 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(One Application \050NRAM\051) 110.46 305.86 T
+(Predict Page Access T) 117.01 295.99 T
+(ime) 197.16 295.99 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 285.23 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Evaluate Performance of Whole NOW) 110.46 285.23 T
+(T) 117.01 275.36 T
+(ime to Exercise All Subsystems) 122.18 275.36 T
+5 F
+(\324) 117.01 265.5 T
+4 F
+(AminMarks-II \050Spring \32496 Retreat\051) 127.27 265.5 T
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 521.02 469.03 S
+518.02 468.21 521.02 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+518.02 468.21 521.02 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+518.08 469.56 520.25 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+626.48 468.21 629.48 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+626.48 468.21 629.48 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+626.53 469.56 628.71 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+424.39 244.26 723.11 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 150.13 638.34 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 434.31 239.78 S
+1.79 (8) 569.38 239.78 S
+1.79 (January 10, 1996) 656.86 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+2 10.76 Q
+1 1 0 0 0 0 1 K
+(Results: Self-Scaling Benchmark) 498.4 440.57 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+4 F
+1 0 1 0 0 1 0 K
+(References) 468.8 279.42 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 268.06 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(SIGMETRICS \32497 \322Self-Scaling NOW Benchmark\323) 474.96 268.06 T
+468.8 259.67 678.7 447.74 C
+468.98 292.87 678.53 436.98 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+483.93 425.91 484.02 384.45 527.59 384.45 3 L
+0.22 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+4 8.07 Q
+(AminMarks) 0 -270 481.24 384.87 TF
+(Uniq. Mem) 486.96 377.92 T
+(Bytes) 496.38 369.85 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+551.28 425.91 551.36 384.45 594.93 384.45 3 L
+N
+(AminMarks) 0 -270 548.59 384.87 TF
+(Uniq. FS) 557.33 377.92 T
+(Bytes) 563.72 369.85 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+483.93 357.48 484.02 316.02 527.59 316.02 3 L
+N
+(AminMarks) 0 -270 481.24 316.44 TF
+(D$ Footprint) 484.61 309.49 T
+551.28 357.48 551.36 316.02 594.93 316.02 3 L
+N
+(AminMarks) 0 -270 548.59 316.44 TF
+(Message) 558.79 309.49 T
+(Size) 565.97 301.41 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+618.62 357.48 618.7 316.02 662.27 316.02 3 L
+N
+(AminMarks) 0 -270 615.93 316.44 TF
+(Active) 629.5 309.49 T
+(Endpoints) 623.89 301.41 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+618.62 425.91 618.7 384.45 662.27 384.45 3 L
+N
+(AminMarks) 0 -270 615.93 384.87 TF
+(I$ Footprint) 620.86 377.92 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+486.16 420.98 494.17 420.33 501.22 416.17 508.59 410.08 525.25 397.27 5 L
+N
+553.76 420.65 565.61 420.65 572.34 416.17 580.67 412.01 594.13 391.5 5 L
+N
+621.68 423.22 633.21 423.22 655 421.3 3 L
+N
+486.16 356.58 502.82 355.62 525.25 349.53 3 L
+N
+621.68 354.66 636.41 354.34 662.04 324.54 3 L
+N
+552.8 346.65 559.85 354.34 576.83 354.98 588.04 354.66 595.09 349.53 5 L
+N
+468.8 259.67 678.7 447.74 C
+396.14 -121.5 1188.14 490.5 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "mini" 2
+%%Page: "mini" 3
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0.5 0.2 0 0 0.5 0.8 1]
+[ 0 1 1 0 1 0 0]
+ 9 FrameSetSepColors
+FrameNoSep
+31.64 153 823.64 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 156.52 743.53 S
+153.52 742.71 156.52 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+153.52 742.71 156.52 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+153.57 744.06 155.75 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+261.98 742.71 264.98 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+261.98 742.71 264.98 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+262.03 744.06 264.21 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+59.89 518.76 358.61 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 424.63 273.84 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 69.81 514.28 S
+1.79 (9) 204.88 514.28 S
+1.79 (January 10, 1996) 292.36 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+2 10.76 Q
+1 1 0 0 0 0 1 K
+(Real Applications) 168.43 715.07 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+4 F
+1 0 1 0 0 1 0 K
+(Advantages) 104.3 698.02 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 686.66 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Realistic) 110.46 686.66 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 675.9 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Exercise All Functionality) 110.46 675.9 T
+(All Pieces Must W) 117.01 666.03 T
+(ork W) 184.32 666.03 T
+(ell) 206.27 666.03 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 655.26 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Do Cool Stuf) 110.46 655.26 T
+(f) 158.15 655.26 T
+(Make Everyday Life Better) 117.01 645.4 T
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 521.02 743.53 S
+518.02 742.71 521.02 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+518.02 742.71 521.02 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+518.08 744.06 520.25 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+626.48 742.71 629.48 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+626.48 742.71 629.48 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+626.53 744.06 628.71 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+424.39 518.76 723.11 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 424.63 638.34 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 434.31 514.28 S
+1.79 (10) 569.38 514.28 S
+1.79 (January 10, 1996) 656.86 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+2 10.76 Q
+1 1 0 0 0 0 1 K
+(NOW in T) 485.68 715.07 T
+(op 100 LINP) 533.14 715.07 T
+(ACK Machines) 590.96 715.07 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+4 F
+1 0 1 0 0 1 0 K
+(Background:) 468.8 698.02 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 686.66 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Dongarra et. al Maintain List of 500 Fastest Linpack) 474.96 686.66 T
+(Machines in W) 474.96 676.79 T
+(orld) 529.05 676.79 T
+1 0 1 0 0 1 0 K
+4 10.76 Q
+1 0 1 0 0 1 0 K
+(Goal: NOW) 468.8 660.35 T
+(-2 in T) 520.52 660.35 T
+(op 100) 549.07 660.35 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 648.99 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Requires Careful T) 474.96 648.99 T
+(uning) 543.41 648.99 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 638.22 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(T) 474.96 638.22 T
+(est NOW Cost/Performance Hypothesis) 479.82 638.22 T
+1 0 1 0 0 1 0 K
+4 10.76 Q
+1 0 1 0 0 1 0 K
+(July) 468.8 621.77 T
+(, 1996) 486.04 621.77 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 610.41 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Captured 77th Place in Performance) 474.96 610.41 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 599.65 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Best Cost/Performance in T) 474.96 599.65 T
+(op 100) 574.24 599.65 T
+1 0 1 0 0 1 0 K
+4 10.76 Q
+1 0 1 0 0 1 0 K
+(This is Cool: Let\325) 468.8 583.2 T
+(s Get Some Publicity) 544.46 583.2 T
+0 0 0 1 0 0 0 K
+5 8.97 Q
+0 0 0 1 0 0 0 K
+(\324) 481.51 572.74 T
+4 F
+( Culler Issues Press Release) 489.53 572.74 T
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 156.52 469.03 S
+153.52 468.21 156.52 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+153.52 468.21 156.52 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+153.57 469.56 155.75 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+261.98 468.21 264.98 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+261.98 468.21 264.98 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+262.03 469.56 264.21 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+59.89 244.26 358.61 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 150.13 273.84 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 69.81 239.78 S
+1.79 (1) 204.88 239.78 S
+1.79 (1) 208.4 239.78 S
+1.79 (January 10, 1996) 292.36 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+2 10.76 Q
+1 1 0 0 0 0 1 K
+(GA) 190.01 440.57 T
+(T) 205.36 440.57 T
+(OR) 212.35 440.57 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Parallel Atmospheric Chemistry Simulation) 104.3 424.72 T
+4 7.18 Q
+(*) 104.3 323.35 T
+4 8.97 Q
+(\322A Case for NOW\323 \050IEEE Micro \32495\051) 109.68 319.77 T
+4 7.18 Q
+(\340) 104.3 308.11 T
+4 8.97 Q
+( Kim Keeton \322Predicted and Measured Performance of a) 107.89 304.52 T
+(NOW Supercomputer\323 \050T) 104.3 294.65 T
+(iny W) 197.15 294.65 T
+(orkshop on NOWs, Paris) 218.61 294.65 T
+(France, June 1997.\051) 104.3 284.78 T
+0 1 1 0 1 0 0 K
+6 10.76 Q
+0 1 1 0 1 0 0 K
+(Conclusion: All Pieces Must W) 132.79 268.34 T
+(ork) 270.76 268.34 T
+0 0 0 1 0 0 0 K
+2 8.07 Q
+0 0 0 1 0 0 0 K
+(Machine) 129.22 405.13 T
+(Pr) 199.46 410.07 T
+(edicted) 207.84 410.07 T
+2 6.46 Q
+(*) 232.5 413.3 T
+2 8.07 Q
+(1995) 209.52 400.2 T
+(Measur) 241.86 410.07 T
+(ed) 268.17 410.07 T
+2 6.46 Q
+(\340) 276.25 413.3 T
+2 8.07 Q
+(1996) 252.6 400.2 T
+(Measur) 285.73 410.07 T
+(ed) 312.05 410.07 T
+2 6.46 Q
+(\340) 320.12 413.3 T
+2 8.07 Q
+(1997) 296.47 400.2 T
+4 F
+(C-90 \05016\051) 94.71 386.74 T
+(27 s) 210.98 386.74 T
+(26 s) 254.05 386.74 T
+(--) 301.85 386.74 T
+(100 UltraSP) 94.71 374.19 T
+(ARCs + GLUNIX) 133.67 374.19 T
+(22790 s) 204.93 374.19 T
+(21980 s) 248 374.19 T
+(21980 s) 291.87 374.19 T
+(+High BW Comm.) 94.71 361.63 T
+(696 s) 208.96 361.63 T
+(708 s) 252.04 361.63 T
+(703 s) 295.91 361.63 T
+(+xFS) 94.71 349.07 T
+(206 s) 208.96 349.07 T
+(351 s) 252.04 349.07 T
+(199 s) 295.91 349.07 T
+(+Low-overhead msgs.) 94.71 336.51 T
+(21 s) 210.98 336.51 T
+(193 s) 252.04 336.51 T
+(15 s) 297.93 336.51 T
+92.02 418.93 92.02 332.14 2 L
+V
+0.22 H
+N
+196.46 419.15 196.46 331.91 2 L
+V
+N
+238.73 419.15 238.73 331.91 2 L
+V
+N
+282.61 419.15 282.61 331.91 2 L
+V
+N
+326.48 418.93 326.48 332.14 2 L
+V
+N
+91.91 419.04 326.59 419.04 2 L
+V
+N
+92.13 395.38 326.37 395.38 2 L
+V
+N
+92.13 394.26 326.37 394.26 2 L
+V
+N
+91.91 382.26 326.59 382.26 2 L
+V
+N
+91.91 369.7 326.59 369.7 2 L
+V
+N
+91.91 357.14 326.59 357.14 2 L
+V
+N
+91.91 344.58 326.59 344.58 2 L
+V
+N
+91.91 332.03 326.59 332.03 2 L
+V
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 521.02 469.03 S
+518.02 468.21 521.02 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+518.02 468.21 521.02 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+518.08 469.56 520.25 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+626.48 468.21 629.48 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+626.48 468.21 629.48 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+626.53 469.56 628.71 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+424.39 244.26 723.11 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 150.13 638.34 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 434.31 239.78 S
+1.79 (12) 569.38 239.78 S
+1.79 (January 10, 1996) 656.86 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+2 10.76 Q
+1 1 0 0 0 0 1 K
+(pmake) 558.2 440.57 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 329.57 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Benchmark W) 474.96 329.57 T
+(e All Care About) 526.31 329.57 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 318.8 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(August \32496:) 474.96 318.8 T
+(Make xFS From Source in 5 Seconds) 481.51 308.93 T
+(Limited By Sequential Link Phase) 481.51 299.07 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 289.2 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Stress: GLUnix Functionality) 474.96 289.2 T
+(, xFS Functionality) 580.53 289.2 T
+(,) 648.99 289.2 T
+(GLUnix Performance, xFS Performance, CAL) 474.96 279.33 T
+(Performance) 474.96 269.47 T
+468.8 259.67 678.7 447.74 C
+468.98 336.44 678.53 436.98 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+485.84 434.18 485.84 349.25 589.32 349.25 3 L
+0.22 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+4 8.97 Q
+(Speedup) 0 -270 480.39 378.55 TF
+486.16 351.88 590.6 351.88 2 L
+N
+(No GLUnix) 592.84 348.48 T
+J
+485.52 352.17 594.77 432.43 2 L
+J
+485.52 352.17 485.79 352.37 2 L
+N
+[1.481 4.444] 1.481 I
+485.79 352.37 594.49 432.23 2 L
+N
+J
+594.49 432.23 594.77 432.43 2 L
+N
+1 1 0 0 0 0 1 K
+J
+485.52 352.46 492.57 355.97 588.68 354.51 3 L
+1 1 0 0 0 0 1 K
+N
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+(GLUnix + NFS) 592.52 355.2 T
+0 1 1 0 1 0 0 K
+486.16 352.76 538.7 383.69 580.03 393.32 597.33 394.78 4 L
+0 1 1 0 1 0 0 K
+N
+(GLUnix + xFS) 600.21 393.14 T
+1 0 1 0 0 1 0 K
+485.84 352.76 555.36 395.95 598.61 411.13 3 L
+1 0 1 0 0 1 0 K
+N
+(GLUnix +xFS) 598.61 420.06 T
+0 1 1 0 1 0 0 K
+1 1 0 0 0 0 1 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Linear) 599.89 430.5 T
+(Processors) 519.8 339.44 T
+(100) 580.67 342.65 T
+1 0 1 0 0 1 0 K
+J
+1 0 1 0 0 1 0 K
+(\050Idle Resource,) 598.61 411.09 T
+(Fast Spawn\051) 598.61 402.12 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+468.8 259.67 678.7 447.74 C
+396.14 -121.5 1188.14 490.5 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "mini" 3
+%%Page: "mini" 4
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0.5 0.2 0 0 0.5 0.8 1]
+[ 0 1 1 0 1 0 0]
+ 9 FrameSetSepColors
+FrameNoSep
+31.64 153 823.64 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 156.52 743.53 S
+153.52 742.71 156.52 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+153.52 742.71 156.52 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+153.57 744.06 155.75 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+261.98 742.71 264.98 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+261.98 742.71 264.98 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+262.03 744.06 264.21 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 153 823.64 765 C
+59.89 518.76 358.61 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 424.63 273.84 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 69.81 514.28 S
+1.79 (13) 204.88 514.28 S
+1.79 (January 10, 1996) 292.36 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+2 10.76 Q
+1 1 0 0 0 0 1 K
+(Other Inter) 138.78 715.07 T
+(esting Applications) 192.1 715.07 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+4 F
+1 0 1 0 0 1 0 K
+(External Sort \050IPPS Dec. \32596\051) 104.3 698.02 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 686.66 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Stresses Communication, FS) 110.46 686.66 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 675.9 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Hypothesis: NOW has Great Cost/Performance) 110.46 675.9 T
+1 0 1 0 0 1 0 K
+4 10.76 Q
+1 0 1 0 0 1 0 K
+(Boot System \050USENIX Jan. \32497\051) 104.3 659.45 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 648.09 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Stresses Functionality) 110.46 648.09 T
+(All Pieces Must Fit T) 117.01 638.22 T
+(ogether) 193.63 638.22 T
+1 0 1 0 0 1 0 K
+4 10.76 Q
+1 0 1 0 0 1 0 K
+(Inktomi \050Forbes April \32496\051) 104.3 621.77 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 610.41 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Application W) 110.46 610.41 T
+(e Care About) 162.81 610.41 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 599.65 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Stresses Communication, Resource Sharing) 110.46 599.65 T
+1 0 1 0 0 1 0 K
+4 10.76 Q
+1 0 1 0 0 1 0 K
+(MPI Apps \050Supercomputing \32497\051) 104.3 583.2 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 571.84 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Application People Care About) 110.46 571.84 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 561.08 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Opportunity for Cross-Platform Benchmarking) 110.46 561.08 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 104.3 550.31 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Lok Liu\325) 110.46 550.31 T
+(s T) 142.11 550.31 T
+(alk \050Jan \32496\051) 152.69 550.31 T
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 521.02 743.53 S
+518.02 742.71 521.02 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+518.02 742.71 521.02 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+518.08 744.06 520.25 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+626.48 742.71 629.48 746.22 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+626.48 742.71 629.48 746.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+626.53 744.06 628.71 746.23 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 153 1188.14 765 C
+424.39 518.76 723.11 736.74 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 424.63 638.34 429.15 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 434.31 514.28 S
+1.79 (14) 569.38 514.28 S
+1.79 (January 10, 1996) 656.86 514.28 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+2 10.76 Q
+1 1 0 0 0 0 1 K
+(Conclusions) 545.93 715.07 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+4 F
+1 0 1 0 0 1 0 K
+(Didn\325) 468.8 698.02 T
+(t Understand Performance in Jan, 1996) 493.72 698.02 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+(Real Apps W) 468.8 680.98 T
+(orth the Ef) 525.93 680.98 T
+(fort) 571.78 680.98 T
+0 0 0 1 0 0 0 K
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 669.62 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Improve Understanding of Performance) 474.96 669.62 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 658.85 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Force Integration of Functionality) 474.96 658.85 T
+5 F
+(\324) 481.51 648.99 T
+4 F
+( Pieces Must W) 489.53 648.99 T
+(ork T) 545.37 648.99 T
+(ogether) 564.42 648.99 T
+0 1 1 0 1 0 0 K
+0 7.18 Q
+0 1 1 0 1 0 0 K
+(\245) 468.8 638.22 T
+0 0 0 1 0 0 0 K
+4 8.97 Q
+0 0 0 1 0 0 0 K
+(Force Careful T) 474.96 638.22 T
+(uning) 531.94 638.22 T
+5 F
+(\324) 481.51 628.35 T
+4 F
+( Pieces Must W) 489.53 628.35 T
+(ork W) 545.37 628.35 T
+(ell T) 567.32 628.35 T
+(ogether) 583.39 628.35 T
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 156.52 469.03 S
+153.52 468.21 156.52 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+153.52 468.21 156.52 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+153.57 469.56 155.75 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+261.98 468.21 264.98 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+261.98 468.21 264.98 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+262.03 469.56 264.21 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+59.89 244.26 358.61 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+63.93 150.13 273.84 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 69.81 239.78 S
+1.79 (15) 204.88 239.78 S
+1.79 (January 10, 1996) 292.36 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+0 0 0 1 0 0 0 K
+96.63 319.47 321.87 436.98 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+%%BeginBinary:  4400     
+602 99 129.6 21.31 0 144.73 412.98 BEGINBITMAPBWc
+J"
+O=C0
+
+
+
+
+
+
+
+
+<"J"
+DFO#F3<"J"
+E7O#FC9"8"J&
+03F1O E07FFFFE3F8&E"J";#8"
+F8003FFFF0BF8F300071F8$8#>#J":'
+F000037FFDE03F<E7FE00007FFE0F8%8">'A"8"?":"8"
+E000007FF9801FFFFCFF3F07DFC3FC0F8"8%?%A#8"?":"8#
+C00FE07FF10FFFF87EFC018F07F801FC8"8%>&A&>#:"8#
+8000007FC10007FFF000F000FFFE07FE03F00000>"=&B&>#@"
+81FE0003FFE0E0007FFC01F807F7>"A$C#>#@"
+01C0007F7800F003E38":">&B'=#:";"
+007CFC0001FF80DE003FF0007FE007E0C18#9"?'@":"=#;":"
+03C078F000FF0000FFFF3FF00378808#9">"9#D"?#:$8$
+07FCFCFD800178F807E1FF801F007F8'>'D"@":$8$
+8FFFC00001FEFFFC007FE003FC03F1FFF83C003F8&C#B$?#:)
+9FFFFC0003F81F803FFEFC07F3FFFF80007E007F:$B$9"@"@"=&
+FFC0073FFF7FFDFF03F800FF00FF8&@"9"9"@"?#:(
+DFFBFFFC3FFEFFF17FF807FBFF7FFF87FF818&@&9"@"?#:(
+FFE7FFFFFFFF001FFF7FE3FFFC03FFFCFFFFFFFFC79#J"J#;$8"
+8FFE4C34F807F1FFDFCF9#C%9"J#;$8"
+1FFC800FFFFF814FC03E3FF1FFF8$C"8"D"@";#
+FE3FE0C07F7F07C7FC8$D$9"@"@";#
+FC3F0007FFFF80FF0387F08#<"8";":(@$9$9#?"=#
+F07E3FFE037F007FFFCFFFE77FFFFE07FFBF0F80FE9FEF9";"9#9":"8&;"909)8#8"
+FEFEFC7FE0FC3FFF87FFC37FFC3FFFFC7FCFB803FF0F9FFFFE1FC0E7FFFE7FFC7FFC7FFC7F0F8"<#8":#9);"9.;)8'
+E0F81FF0F001F03F800FFF03FF81FFF01FFFF83F803C07FF001FFFFCC3FFFC3FF83FF83FF83FFFFC038F8"<#8#8";"8&?.;(9"8$
+C0F00FC03FC1E007FE01FF00C007FFF03F003C03FE003FFFF881FFF81FF03FE0E0F8000F8"<#8"8%9*>*:"9*8'
+C1E00700FE03F800801F8003FC00FE007F2003FFE01E003807FC3FFE00FFF00FC01FC01F801FFFE4001F8"=&9"9+=/:*8"8"
+8103FFFEC01FFCFE401FC001F8007C001FFE3001FFC00C007C03F8007FFFF0FC007FC007800F800F408E8"8#8%9"90:$8%:"9#9.
+01FC7FF001FFF8FC7FFFFC600FE001F00078003FFFFC00F038000000F807E08FFE03C007C007FFFC600FFF07003F;+9"9-8"8-;3
+F83FFE00F800FFE0600FFEF07007F001F800FC007FFFE0FEC03C007FE00600FC03FE00FF07FF003FF001E003C003FFE07007FC0F80FF8"8&8&9$8%8$8"9+9(8$8"8$
+03F01FFE01FC80F007FFF83FFFC0F801FC01FFFFC0F73F001FE00703F807EFC77FC01E03FF801FF003E0C0F80FFF7"9#;#:.8"8"8,8"8#8#9"8&
+FEE0070070FF001FFF807803FC01FE01FF0180FF803F801FF007DFFC03E7FFC01C013FF8F0807803F807;#8"9#J+<+<"
+F01FFEF8038C03FC01FF807FFFC07C31E03FFC01FFC01F803F80F;#8"9"8&8$="=";#<#8'9#8"
+FC3FFF78FC1FFF800F7C01FE00E003831F073FFE01FC03FC7C01FD;#<"9"H":";#9"9"8"B"
+FE7FFC3F7FC0078180CF1FF87"9#<#8%8#A":"<"="8">'
+FCFFFF7E077FFFC0077E03FEE000FF3F7E07F807F07F?"9%8"9#:"9%?#A">#9"
+FEFE0FFFFEE07F0FFE0F803F7FF8061F7F0F3F8"<"9%9"9":"9"8"?%9";"?&
+01FFFF3FFFFF031FFF8FFFFC02007F3F3F1FF803C01FD"8$:#="C$?"?&
+7FFFFFF0FFFC9F06003F1FBFF8018007D";":"="C"A"?%
+FF01FEDF033FFFF800C08$8$?&;"9"8":":%;"9"@$
+00FE017E01FEF8007F807DFEFF7FC0F807801F7F1FFC01E07"8":"C$9"<":":%9$9"@$
+FE07FF7FFFFCFFFFE0FC03800F1FC0FF3FFE03F0:%A$9"C"=#9)@$
+1FFFFEFEFC00FFFE8007C0C01FC3FFDFDFC01FFF07F89#8";"="D"8"=$9%8">"8"
+7E7F7E7F7F7FC003E0070FCFFFFF3F5F8F9(?";"@":":%:"8$>"8"
+3FFFFFFCFE01FEFEFCFFC0F807E003FF9FC01F7FDF7":"8"9"A"E":$:"9$A"
+FFF8FFFFFEE0FC03F0071FC03FFF9"8"<";$G$;$8#8%
+1FF07FFF00FF803FC007F801E003FE3FC01F9"8"@"9"9"@"8$;$9"8"8"
+0FE1FD7FFC7FC03FE003F80001FC3F8#8"8"9"9%8$9"<"8"=#9#8"8">"
+8007C1FE3F003FFF803FFFFEFEFF8007FCF000F81F3F9"8"8"9"8&8";"?#<%9%="8"8"
+0383FF1FFC000FFFC01FFFC01F03FE007F7FFFF07F011F818)9"8$8+?#>(8#8$8&
+C000FFFE03FE00FE0FF80003FF8007FFFC00FE00FF0307C03FFFF8001FFFC00FFC01FC0007FFFE00788&8"9"8'9'>+9.9'
+E0003FF807FF07F00001FFE07FFE007E007F078003E03FF803FFF801FFFC0007FF00FFC007F8007800F803FFF400380F:'8#8%8#9%>'8"8"9&;+
+030007F8003EC003E000007FC0013E003F1FE001C1FFE0010017006001FFE078003FC001FFF000183F8&8&;-=08"8$9&:"
+F00000000F3F01FFE001FFF07FE000FFFC001E001F7F7FF000E7FFF8007FE0007F801FFFFE00F001FCFC007FE000FF8"9):"8#8'>&8(9-8$
+F81FFC007E00FFF00001FFF0FF0007800EFFF8006FFFFCF800FFC03FFFFF03FFF803FE00FC01FE00FFF0E000018"9)8)8%?*8"8"8"8+9"
+FE3FFE01FE01FFF803C00003FFF87FF801800FC003FC003FFFFE00FFFC017FC00707FF01FE03FF01FFF801078"9$9#9(8%<"8-8"8.8#
+FFFFFF03FC071807FFFC7FFE03E03FE00FFEFE00FFFFFF01FFFE07FFE0FFE01FFFFC0FFF83FF07FF03FFFE03601F9$8"9#9#9#8%:(9$8"9"82
+80000187FE0F7E0FFF0FF07FF81FBFDFFC00FFFF8387FFFFF1F03FFFFE1FFF87FF8FFFC7FFFF0FFFF1F83F9$8"9#9(8%9%9"9"8$9"8+8"8#
+F00007CFFF1FFF9FFFFEFFFF9FF8FFFC7FFEFFFF78C7CF9FFFF7FCFFFFFF3FFFCFFFDFFFCF9FFCFF9$8":"8$8$8%9"8#8"9"8$9$9R8%
+FC003FFFFFC1FFDF7FFFFFFDFFFEFFFDF003FFFFFFFFFFFF8007FFFFFBFF9$:";"P:$:"8#F#D"
+FFFFFF03E1FFFFFFF3FEFFFFFFFD?"J"J"
+FC:FFAFE@";"F"J"
+07F1E3DFF?#;"F"8#
+F80FF8C3FE3F?#;#E"8#
+F01FFC7FC10007?#;#G$
+E07FFFFFE00001?#J&
+C1FF6C07C000000?"J"9"
+9F8007F?"
+FFJ"
+F3FJ"
+AE0
+J"9"
+AF080J"8#
+AF83FE0J'
+AFC0007FFF07FJ$
+AFF80FFJ"9"
+BFFFFJ"
+EF1J"
+EE7J"
+EFF
+
+
+
+
+
+
+
+
+
+ENDBITMAP
+%%EndBinary
+2 4.49 Q
+(\322All the News) 108.87 426.3 T
+(That\325) 103.53 421.7 T
+(s Fit to Print\323) 114.08 421.7 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+102.87 418.45 141.27 431.62 R
+0.22 H
+2 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(National Edition) 279.58 427.7 T
+2 3.14 Q
+(Northern California: Disgustingly) 276.5 424.34 T
+(nice as usual. Why even bother) 276.5 421.2 T
+(r) 276.5 418.06 T
+(eading the for) 277.84 418.06 T
+(ecast?) 296.45 418.06 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+96.95 413.41 321.49 413.13 2 L
+N
+96.34 409.26 320.88 408.98 2 L
+0.45 H
+N
+(V) 97.79 410.04 T
+(OL.CXL) 100 410.04 T
+(VI...No 50,565                                                                 WEDNESDA) 111.66 410.04 T
+(Y OCT) 199.63 410.04 T
+(OBER 1) 209.43 410.04 T
+(1, 1996                                                                                        ONE DOLLAR) 220.51 410.04 T
+3 8.07 Q
+(Network of W) 108.28 393.05 T
+(orkstations) 151.94 393.05 T
+(Beats Super) 111.99 384.98 T
+(computers) 150.48 384.98 T
+(at Their Own Game) 115.87 376.91 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+6 F
+(Internet Security Threatened:) 98.49 401.18 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 3.14 Q
+(By Jeff Makon) 138.98 370.52 T
+4 1.79 Q
+(    SAN FRANCISCO, Oct. 10) 97.81 364.87 T
+(\321In an announcement that casts) 120.33 364.87 T
+(serious doubts  on the ability  of the  Internet to  maintain secure) 97.81 363.08 T
+(commercial transactions,  researchers at the  University of Calif-) 97.81 361.29 T
+(ornia  at   Berkeley  today   announced  that their  \322Network   of) 97.81 359.49 T
+(W) 97.81 357.7 T
+(orkstations\323 was one of the fastest supercomuters in existence.) 99.36 357.7 T
+(    They warned that such fast computing could allow so-called) 97.81 354.11 T
+(\322crackers\323 to break  computer codes  in  just a few  years rather) 97.81 352.32 T
+(than the  centuries  of  computing time  that it  would  currently) 97.81 350.52 T
+(require.) 97.81 348.73 T
+(    T) 97.92 338.64 T
+(o  dramatize  this  danger) 100.68 338.64 T
+(,  the  researchers ran LINP) 118.75 338.64 T
+(ACK, a) 138.26 338.64 T
+(widely-used  measure  of   supercomputer   performance.   They) 97.92 336.84 T
+(showed that their collection of machines could run this  program) 97.92 335.05 T
+(as quickly as all but 78 machines in the world.) 97.92 333.25 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(    Network of W) 97.81 345.14 T
+(orkstations, or NOW) 109.82 345.14 T
+(, technologies allow users to) 124.65 345.14 T
+(achieve supercomputer) 97.81 343.34 T
+(-class performance from machines that can) 114.36 343.34 T
+(be easily purchased by individuals for as little as $1,000 each.) 97.81 341.55 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(    Blah blah, ble blah blah blahble. Ble blrr lsj  dsdlks jjdkf fkslle) 97.92 329.67 T
+(lksjdf,  lksdjf lkskemcrhe lskdufje  d sdkf \322NOW\323 nsldkjrjs.  But,) 97.92 327.87 T
+(they warned, sldk lilkdufne n fusd lke nnnd dsdj\337 jkdjfkd. lksjune) 97.92 326.08 T
+(lsdkjfunendun.  Inwlkjdu ndfne ndjht Internet ,.sd\337kj lkjde.) 97.92 324.28 T
+(    Blah blah, ble blah blah blahble. Ble blrr lsj  dsdlks jjdkf fkslle) 149.16 365.21 T
+(lksjdf,  lksdjf lkskemcrhe lskdufje  d sdkf \322NOW\323 nsldkjrjs.  But,) 149.16 363.42 T
+(they warned, sldk lilkdufne n fusd lke nnnd dsdj\337 jkdjfkd. lksjune) 149.16 361.62 T
+(lsdkjfunendun.  Inwlkjdu ndfne ndjht Internet ,.sd\337kj lkjde.) 149.16 359.83 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(    Blah blah, ble blah blah blahble. Ble blrr lsj  dsdlks jjdkf fkslle) 149.16 355.6 T
+(lksjdf,  lksdjf lkskemcrhe lskdufje  d sdkf \322NOW\323 nsldkjrjs.  But,) 149.16 353.81 T
+(they warned, sldk lilkdufne n fusd lke nnnd dsdj\337 jkdjfkd. lksjune) 149.16 352.02 T
+(lsdkjfunendun.  Inwlkjdu ndfne ndjht Internet ,.sd\337kj lkjde.) 149.16 350.22 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(    Blah blah, ble blah blah blahble. Ble blrr lsj  dsdlks jjdkf fkslle) 149.16 346 T
+(lksjdf,  lksdjf lkskemcrhe lskdufje  d sdkf \322NOW\323 nsldkjrjs.  But,) 149.16 344.2 T
+(they warned, sldk lilkdufne n fusd lke nnnd dsdj\337 jkdjfkd. lksjune) 149.16 342.41 T
+(lsdkjfunendun.  Inwlkjdu ndfne ndjht Internet ,.sd\337kj lkjde.) 149.16 340.62 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(    Blah blah, ble blah blah blahble. Ble blrr lsj  dsdlks jjdkf fkslle) 149.16 336.39 T
+(lksjdf,  lksdjf lkskemcrhe lskdufje  d sdkf \322NOW\323 nsldkjrjs.  But,) 149.16 334.6 T
+(they warned, sldk lilkdufne n fusd lke nnnd dsdj\337 jkdjfkd. lksjune) 149.16 332.8 T
+(lsdkjfunendun.  Inwlkjdu ndfne ndjht Internet ,.sd\337kj lkjde.) 149.16 331.01 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(    Blah blah, ble blah blah blahble. Ble blrr lsj  dsdlks jjdkf fkslle) 148.94 327.53 T
+(lksjdf,  lksdjf lkskemcrhe lskdufje  d sdkf \322NOW\323 nsldkjrjs.  But,) 148.94 325.74 T
+(they warned, sldk lilkdufne n fusd lke nnnd dsdj\337 jkdjfkd. lksjune) 148.94 323.95 T
+(lsdkjfunendun.  Inwlkjdu ndfne ndjht Internet ,.sd\337kj lkjde.) 148.94 322.15 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+31.64 -121.5 823.64 490.5 C
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+0 0 0 1 0 0 0 K
+0 3.59 Q
+0 X
+0 0 0 1 0 0 0 K
+1.79 ( Application-Level Benchmarks) 521.02 469.03 S
+518.02 468.21 521.02 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+518.02 468.21 521.02 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+518.08 469.56 520.25 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+626.48 468.21 629.48 471.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+626.48 468.21 629.48 471.72 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 1 0 0 0 0 1 K
+626.53 469.56 628.71 471.73 R
+0 X
+1 1 0 0 0 0 1 K
+V
+-0.07 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+396.14 -121.5 1188.14 490.5 C
+424.39 244.26 723.11 462.24 R
+0.11 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+428.43 150.13 638.34 154.65 R
+7 X
+V
+1 3.59 Q
+0 X
+1.79 (Mike Dahlin) 434.31 239.78 S
+1.79 (16) 569.38 239.78 S
+1.79 (January 10, 1996) 656.86 239.78 S
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 1 0 0 0 0 1 K
+0 0 0 1 0 0 0 K
+468.8 259.67 678.7 447.74 C
+468.8 259.67 678.7 436.98 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 X
+0 0 0 1 0 0 0 K
+%%BeginBinary:  28209    
+558 635 155.45 175.95 0 500.53 260.02 BEGINBITMAPBWc
+J"
+O7FC
+
+
+
+
+
+
+
+
+
+
+
+
+
+=#
+FEDF=#8"J#8(
+FFFFDFO FBEFF7F4BB55AB6F7F=#8"J"9$8(
+F55FFFIBFFDFFFFDDEEFDFFFDEDEF=#8"J"9-
+FFBFBFIFFFFFFFEDFB5BFFEB7556FBF77=#8"J-
+BF5FFFMF7DFFBFFFEFF5FFBFBD5EDDF=#8"J-
+FD9FDFMFFFBEFF5DBF7759DFDFEBFFF=#8"="J-
+FF57FFEFEFBFF7FFBBFDFBF7FB6D7F6B7=#8"="J.
+FDFFBFFFEFFFDFFFF7EFED7EFFBFAFFFF8C=#8"J.
+FFDFFFLFEFFFFFFEFFFFFBDAEEF77B757=#F":#J0
+DEEF05EABF6FEFFC3FFEFFBFFFFB6FFFBFEBEFFFF=#8"=";"J.
+FEDFDFF746>F5FEFFFFFFEFFFFFBFFF5EFEB792:$9$J0
+000003FFFFFE00002FC0007FFF800007FFF0000F0000FE5FFFE0017FFF6AB7F5F5BAE80031FFF;%8#A$8"85
+001FFD7F3FA0800003F8E7C0001FE00000003E00007FC0003C000000001E0000FFFF00001DC000000000EB600001AAD<$9";";'B"9">%:#8#
+03FFFFE0010000007FFFC00380C000007E09F807FF=#9";"J"9"A":":"
+FEEEA007707C05E0B5B<$8#;":";"B"B"8":#8#
+00FFFF2FE001FC8003001A0ED001FF=#8#9"<";"F"="9":#9"
+3FF71FC000F80080FE1E0F6055=#9"@":"G"=">#8#
+17DEA0F0FDC0FC0C8000FF=#9"8"B"J"9#
+1EFFC0FDFCB0F01E5=#<"J"="9":":"
+0FF7FF>80F41C0D7F>"9"@":"C"9"="9":#9"
+FEA0C0F801C0F01E0F00FF=#8#;"?"J"
+03FB0FC000F0GDF>"9";"J"A":":"
+DFA001;801C0DF7=#9";"J"="9":":"
+01FFC000;C0E01E0EBF>"9"8"=":"J"
+76A0FE80C0GF7=#9"="J#8"A":"9#
+00F7C07F5007C801A0A00BF>"9"="J"A">#
+FAA0FF9C01E01D7>"8#E"J":"9#
+EB07C080=1C0800BF>"9"B#9#D"=&=$
+FFA00FC002FC80C00003C01E3401FF;"8"9"B#9$;#<"?#>$
+3CB5C02FF807FFFC6FFFC00FFCEF01DB>"9"B"B#<"A"=$
+7BA03F5EAF801A6B01FF;"8"9"8"9"<&=#9"8&<$8#8$
+3E2DC0FA7FFC7F00000F7FFF3CFFE0000FFFFE1FFF7FF8EFE1BF;"8"8"9":";#8"J#=$
+3F3B01F87FFFFF1F:FF9FF9F1EF>"9"=":":"J"9"9$
+3EA0FF0F3F;FF2FEFFAFF>"9":"="J#8$
+3BC0102FD7D58BFDDDF>"9"B"J#8$
+3EE00FD7FF0F6F7FD<$9"B$8"J'9"8$
+400016A007FFFC7F7E00003DFFFFDFA7FFD7F<$9"<"J"B%9"8$
+C0001AC05F71C01FFFFFFFC3EF7F7>"9"<"J#9"8$
+0CA07FFBFDFFA5FF5FF>"8#8"9"9$B#F%9"8$
+1F00C0F01FC00002000700FFFFFFFE0F5BDF>"9"B"J"8";"8$
+0CA000<F03F6E07FF7F>"9"@"8"9"B"C";"8$
+1EC0D03FFF0C1FBD0177AF>"9":";"8"9"B"H#8$
+1CE018E07F7F147BFF05F7BF>"9"@"8"9"B"C":#8$
+1E80F01FFF040F7FB701B7FF>"9"<"<"J"8$9'
+16600F0F;FC03FFEFFF800000FF7F>"9"8"="8"B"D"8$8#9#
+1A20E0F8070FFE01BEFE77FE5FFB>"9":";"8"B"G$8$8#
+0B4078FC030700FFFF7FDBE01FFF>"9"8$J"I"9#
+1620A00058900FF16DFB"8$;"8"J">#8#
+00E00078FF00;FF6DA00DFF>"J"8":#8"
+0CO C07FFFF007>$C"8"J":#8"
+1E0001807C>5F7EF805J"E"8":"9#
+G0FE07FF607DB>"@":"D"8"E"9$8#
+1A07C007181F7D7F7E017F>$:">"8"J"<$9"
+16000080F03C;F07FFFEFFF>%;"<";">"E"8"9(
+1A0001C07EF87F17FC0F7BEFFE800000DD>";"E">"J$9"
+0E7EFF0F67FFFEEFF>";"?";">"E"=$8"
+1A7FFC7F17FE57BFE0FB>">"<"8"@#8"J$8"
+1EFEFF0C7FFF1C4FFFF60FF<$J#;%8"
+000014O FFC07B5FF7F0AF<$J$9$9"
+C0001EO!0000077DFFFFFF<$8";%:$8"J$9%
+00003CE0000001DF80000D3F9C000067BFEFFF8>"<":"<"J$9$9"
+1700FF0E<E000077FFBEDDF>"D"9"D"A">$8"
+3ABF0F1ECFE9FFBEFF>"A"8"J"=$8"
+36EF3F?DDF97FFEDF;"8"A"8"<"J#=$8"
+3E3EFF870F7C3FFB8FFF4FF;"8"8">"8"<"J">$8"
+3C14F07F83077C1F81FF8BB;"8$?"8$8&;#D$=#8"
+006A0000FF807F00800003FF7C0003C03FC00EE8FF>$>">"8"J#8"
+2A00010000FD@0FF8DF>"E"9%@#A#=#8"
+FC00800000001F80060001E0FF>"A"J"8";#
+D6F7B000F0000=#8"8";"8"9#J"
+01FAF87EFF003FC0GEF>"D"J"
+AE80LF7>"J"9":"
+FAO$EFE8FF=#I"D"D#9"9#
+03DEF0C01FFFF801DF>"8";"?"J"
+75FC517FHFF>"8";"8"J"
+FEFA8877O!DF=#8"8(="J"
+0FF5FE780001FF80007FF8GFF=#?":"J">#
+1FBE0000B5F07F7=#=$:"8$D"D">#
+3FFA037F808001FFFCE07F06FF=#=#8";$J":"9"
+1DBC05FF7B00FFFD=FF7807=%;#8";$J"9#
+F7F70000077F5F03FFFFBF80EDF<';"8";"8"J"?#
+01FFFE0001FFFF7F0780;011FFF<$8"8";"8"8"8"J"8"?#
+03FFDBFD701FC00FC08E0037FFB>"8"8"J"9#
+7EFF78O"FA7DEF<$;"8"8"8"8"8"C"@"8";"9#
+3FF7F470FE1BF03FF8F8F00FFFF77F9P%;"8"8"8"8"8"J"8"<&
+BB0281FDFF1FFEFFFCFC5FE3FA00007DFFD=#S%8$9$Z$8*
+DEFDBFFFFFFAFFD03FFFC01F7E001FFFFBFFFFFF80009FF7B=$="8"9#:#J":*
+FFEEBFFDFBE037D02F7C0AAEF7FEFD8001BEEDF=&;"8"9#:#J#9*
+BBFB57FFFEEFFFFFFFFFFF7FFFFFFFFFFFFBFE1FF7BF7=&:#J&
+FFF76FFFFFFEFFO FFFFFDFF7F9":%:$J&
+FBFF3FFFFEFFFF7FMFBFFFFFFFF9"9&<"J(
+FFFEF7BFFFFFFFJFEFF7DDDEDF7EF=$8";"J)
+BFFADF7FDFJFFFFFFFFBFFFFFF59"9$8":#J%
+F7EFFF6BFF6EFFO FBFDFFFF9+8'J&
+FFFFBFFF7DD54FF7FF5FFEDBFF56FF7AJF7F7FFFFDF93J'
+FDFEFFFFFFFAABFFFFFEEFFFFFFF5BFFFFEFJFEFFFEFFFDDF93J'
+5757D56B6B6FFFABFEDBFFFFBFFFFFFBFFFFJDFEDDFDFFBFB9j"J'
+=01>FFFFFFFF7FFFJ"J"8$
+@02=F7FDFFFE8"J"J(
+FD=01<FB7FF77FFFF6DB8"J"J)
+01=02<FFFFFFDBB7FF775D7"J"J(
+FE>01=F6F77FFFBFFFBF7"J"J"8(
+FF>00:EFFFFFFEDFFFBF9B72D"J+
+FE010F35EFCFEF3FCF3C39EF7F07F1E1F802:FFFFFEFFDFEFF6FEFAFF7"8$="G"B"E)
+FF31EFEF8F00FBFFFF7DFBBFFFEDDF7"8*:"D"B%C(
+FE39DFCFEFF1CFF039EEFE02FFF0003FF7FBF0007777FF7"8/D"<+:%8+
+FFFFDF9F4FE3C3E01DFEF1EF79879E01F80000000017FFC00003F800000FF00001FDFD800007FEEF7"9$9&F"<":&:"8.
+FE9FDFCF3FFEE1EFF700FC1FFF800001FC007FFFF80005BFDE0000017FFF7"9"<"8"F"<";"="9(9"
+FFDFFAF302F8FEF4BFFFE80003FFBEFF9&8'F"<"<$:"9(8$
+0BDF1C1E1FC01EF8F1EFE701FC000000FC1FFFF80001FFF800DBAF7*9&D"B"9"=(9#
+FE010FDF1FDFDEF3F3FF9EE7F7FC00FC3F0FFDF00005FFF077FF7&8#8$8"J";"9"=(9#
+FF010BDE3FFFE3F07F1EF85F8F81F01FFF80001F7E01FBD9";";$J"C"=$:"
+0FF3F7F7F05FCF803FFA0FF9jJ"9"9";&9#
+/;E00FFCF00001F7E00F7FJ"B"="9(9#
+@01C0F400FFF80003FF8007FB7"J"<"?"9":'9#
+FE>00F803FC7FF00001EF0006FFJ"<"C"=$9"
+@02FCF803FF80077"J"J"=$
+FF>014FC01FF00J"<";"9"9":&:#
+@02F88001F81FF80005FE01DF7"85<"C":&;"
+FE=01FFFFE000FFFFE01FFFFFFFFE0FFFF8001FFF8003FFFF8007FFFD0001FCFC0FF00003F6FD7"?"="8&9$J":&;"
+FFF0FAFE80055B7FFC00024F81FF80005FEFF7"?"?-A#=":%<"
+FEE07FFF8007FFFF807FFFFFC0011E00FC0FF00003EF7"8"D"=#8#<"=$9"=#8%
+FF03FC00FFF800F8100000F801E8F80000FF7";"A$8"8"9#<"=";$8,
+FEF0FE00FF0F07FF02FCFEFC000107F80005F80001FE0007777"J"<"C$9$<"
+FF>01F8F80000F000037F7"J#A#8#>%:";#
+FE8FD0FFFFE7FFEFC0001E0017FFF7";#9"="8&:"A$<"8"8%8%
+FFFC017F01C03FFFFC3F00FC0001F8F0D80005E8FF01FF7F7"?":"D#D"8"8":,
+FEC0F8FD03FF3FFC03F80003F00007570F5EDB7"8"J#G"8":%9%
+FF07:FC007FF805F00005EF0FBFEF7"8"8"B"9%:"="?"8"8'9%
+FE0BFE077FFFF87F02FA3FFCFC0001F800015FFFEEBF:"J#=";"<";$9%
+0F:F801FE03F8F00003FEED7FFF7"<"G"8%C"<";+
+FF03F0F87FF80001FCF80001D00006EBBFFBEF7"<"9"G$C"<"=)
+FE01FF3FF80203F805F00007EFDADDFD7";#;$9"9"8'C"<";$9%
+FFFF03F000000FFFFFFFF007F00101FCF0000179FFBBBB:"<"8"8">"9$A$B$9%
+1F00E007C001C002F80003F80005FFB6EFDF7"<"D";%G"8"="8&
+FE43C3FC0040001FF40305EEFFFEED7"<"A"A"G"8";$8&
+FF831F013FFCF0000506FFFEFEDF7"<";"A"8%E$8";$8&
+FEC3E880FF80000080001FF8F8000307800000FF7"<"8"8$9"<"8$E":";%8"
+FFCF01FFFFE03F7FF80002C0FCD00005D0A0>"A"8"8"9$E":":(9"
+EF7FC700FD000140F800F80003F00005EFJ"9$E":";$8#8"
+:80FE0000C0FCF0000106C0FF7">";"?"9$J";$8#
+FEFEC000FF80024F8F8000507A07"8"A"9)9#E":";$8#8"
+FF3F80FFFBFFCFFFFD003FC00080FCF000030680F77"I(9#E":"=%9"
+FEF9FFEFFFFC000FF001C0F401E00007FD7"<"D">"J";%8"8"
+FFFFFF004FCF80003F0A0F7<":"="9"9"9#E":":%8#8"
+F707FFDF07F80100F801F0000105C0DF7":"@"9(:#D":":%8#8"
+FEF105F1FFFFFFF8000300BF40FC00F800050780FF7">"<"?":#D":":"8"9"
+FFFC030002FF00F40101E07"8";"<"@"8#C$:"="<"
+FE7FFE017FFC0101FF40F803DF7"8";";#=%9"C$:";$9"8"
+FFFFFC0003F000C01F0003FF00FCF0000580FF7":"=%9":$9"C"B$9"8"
+FEF000000001E102F0030101F80003A0F77"?"C&8"A$9"@"<"
+FF0FC003FC003F00FC00033F05DD7"?"?"@"A$D"9"8"
+FE07C101F800010380FF7":#8#?":#:"A$<"="9"
+FFE07FF80F8107FF02FC0003F805FE7";"8"D&8"C"<"="8"
+FE3FF4800FFFD07F0001FC03067$9"8"9$:":(J"8"9"
+FF01011FF0FFFF80011FFFFFFFFFF801<0507BF7";"H";"J"=%9"
+FE3F0F004F803E00006F77";"G#;"J"8"8'9"
+FF1F003F024FCF0F00005F00003FF7"?">#:";"J%8#
+FE1FFE007F01905F8000301F47":#F$:#C#8";$8#8%
+FFC00FFC00FFF00000FEFFE0000701F85E0001AF7">";"9";":#A"A"8$8#8"
+FEE000FC7FC001FEC0F0000500F8FF7"D#8"A"J";$8"9"
+FF8000FA004F8F8000301D79"B#8";":#D";%8$8"9"
+030001F83F80011CFC000000F0000100FF="?"<$:#D"A%8"
+0300F80007000000F80005FE00A">";"9"H">"8"<"
+3FF000FC010F037BA"J"G"8"="<"
+1F4027FF805FF7":#8#B"8"8$A#:"8"=";#
+FE0001C03FF03FF00001FF80FFFC0307B77#`)8(8"8$J":#>"
+FF01010040020000000049248000549480030000024F81FF0DF>%<b8$8"F"9";%;"
+000000000003400003FCF80005FFFF7"J#8"B"="=";#
+FE:05A002C0F40105BF7"J#8"J":"8";#
+FF:0000014FC7F050FFF7#ZB"9">"8$9#
+FE01>E00FFF03F7801FDF7":$J"=$9#
+FFEAFFFDLF801FFA01EFF<$J"9"=";"
+F6FFEFH1FFC05179(@.B"A"9$9#
+CFFF3DE13EDEDFF05FBFBDFFBBF77BFFBBFDFF7FE80103FFE05FBB9(@.B"9"="9$9#
+ED312DFEFECCFFF10F9DBACF3EF7CEFFBFBFF8FFFC3F0301FFF07FFF9(@.B"9"="9$9"
+E06E31E0DECCEFF0EF1FBBFFFFFFF5FFFFFEFF7FFEFF1F03FFB8FB9(@)8"J$9"
+E4AA39E0BECCFFF56FDBFFFFEFFFBC7F>01FFF8BF7)A$8$8$B%>"9$8$
+FE01FFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000013F05FFFA01FF6D7"8"J$=#9)
+FFFFIE0000B03FF07FFFF800007EFFF:)e,=%8$:%9*
+D2AD2910842108040400000020008928A009A7FFFFFFFFF0001FFDBFFFFF9527FFBFE0001F7F7F9*9$8.J$9&8$
+F7EF54A549092225520AA808AA0008420A54949052AAB6D4974FF6B6AFE548FFFFB5F7DFF8)ZC$;#9Q%
+0088112B7777FFDF7FFFFFFFFFF05EF57AB9a"9"J%
+0FDFO%FFBBFF7F?#8">"J$
+0B5F3FF5KFFFFFF@"8">"
+EF9FFB7"=#8">"
+FE07F5BFF57"=#8"8";#
+FF0EDB97B7FFFD?#8"8";$
+0BFF5FFDF9FF7F?"9&:$
+0FB7FFFDFFFDEDFBFF?#8&:#
+056D5FFFFFFFFFFEFF?#8">#J"
+0BF77FFFBELBF8"<#8"8"<"J$
+0203DFDFDFBFJ4DA9778"<#8'8$J$
+1007FD7EFFFBFF7FDFEFFEFFJB6F5DD8"<#8'8%J'
+0002FFDFFFFFFFFFFEFFFFAFEFFBAD6F7EFFFFF?#8":":#>"J%
+03DD2FFFFFFFEE=FFFFFFFF8"<&?"?"
+0401FFFBFF97EBFF8"<(="
+0003FFFFFF9FFFDFFF8"<#:"="
+20017FFFFA8"="8":":#J"
+00DBAFFDFF7FJEF?#8":";"J-
+03EEEDFFFF?FE0000FF00007F000000FFFF?#8"@"G$J"
+017DAF6FDFFF7F401?#8"@"C"8%J#
+03EFDFFFF7FBFFFFFF40007?&@#B"8"J"
+01FD7FFFBFFD7FFFFF8018"=%@#8#J#
+207DBFFFA7FFFFB77DD007F8"=%C%
+00ED7DFFAEAEDDEF6F@%C%J"
+BFFFFFAFFFFFFFFFD1F@%J"
+DDBFFFD7O'0F<"8&J"
+0220FEFFFFAFO'07<"8&
+00216EBEFFA7<"8&
+0301FBFFFFDF8"9"8&J"
+200000B7BFFFAFO'018"=%:"
+407FEFFFEDFD8"=%:"
+00BBDFFFB7FF@%
+5DDF7FEF@%;"J"
+377B7FF7FDO!00@$<"J"
+7FF9FFF7M70@%;"J"
+15507FEBFFM7E@%:"
+1BF07FE5FB@%:"J"
+3FD87FEBFFO FE@'8"J"
+177F7FE5FFFDDFO 7F@'8"J"
+1FDFDFFFFFFFFFO FF7"@#J"
+FEFFE5O%7F#?$J"
+FBFF7FDFF1O(7F"@%J"
+FFBFEFF1F6O'FF@&9"J"
+0BFFBFF7DFFDO#7F"?&9"J"
+FB0F7FFFF5FFF7O FF"?&9"J"
+FF0BFF9FF57FFFO 7F8"='
+140FFF8FF1FFF7$=(J"8"
+FBFF000BFF3FFDFFFFBFO"7EFF"?(
+FF0FFF1FFAFBFFFF7">&J"
+FE1FFFDFFAEFO$7C#@$J"
+FBFF7FFBFFO$00$="8"
+FFFF043FF88"?#
+405FF6$?#
+FBFF00FFF9"?"8"J"
+FFFFF8O'01C"
+FAD#
+F7FB">":$
+FB017FFFDF#A%J"
+FFFEFEFFFFFFO$07#="9#J"
+F7FF03FA7FO&0F#A$8"J"
+FBFEFE7FDFEFO"077#?(J"
+FF20F7FA6FFFFFFEFFO"0F$?$8$J"
+F7FF40FFFD7FFFFFF7O!1F$<"8$:"J"
+FFFF000FFBDE6FFFO!7F"A%
+F7FFFF5FBB"A%J"
+FBF7FE3FFFO%FF"A$J"
+FFFDF6BDO%07$<"8$J"
+F7FF101FFAFE57O%7F$@#
+FBFF00FB1F$?&J#
+FFFF08EBFE5FFFFEO"7FFF$<"8&8"
+FBFF003FF07E17FFFFFB$?$:"J"
+FFFF40DAFF4FFFGFE"A$9"
+F7E8FF1FFB$<+:"J"
+FFFF20FFFEBFAE5E8FFFFBFFFFFEC7E$=(<"J"8"8"
+FBFF00FFFF4A5FADFF7FFFC18FFFF"@(8"J"8";"
+FFE9AE7F57FFFFFBDFCFF007F$>(8"
+F7FF20F58F5F9BFFFBFFFF$;"8'8"J"
+FFFF1001F7AF5F4FFDFFF7O"DF%=*J"9$
+FBFF0040FD5F5FB6FFEF7FFFFFJFEBFEBFF"8"=)J"8$
+FF00FF8D1FEFEFFFFFFBKFF76FFBF8"?)J%
+089F9FE6FFBEFFEFDFM7FF7FFBF8";"8*J$
+0203D70F8B4BFFFBFFFFFFO FFFFFF$=)J"9#8$
+FBFF00ECFD0A8FF5FFFFEDGC001FE6BBEB9"?)J#8%
+FFFFEEAFAB73BBBFFFK03DF7FF7FFEDA)J#9$
+F685ADE5DFEFFFFBJ05BFFFDAFFA+J":"8%
+FF17E7F17FBFFFBFFF7EDE0FE5DB7F7BB"="8+J"9%
+FB0FE81002E0FFFFEDFFFFFFH0776ED5AEF"?+J"9"9#8%
+FFFDBC01F5F056FFBFF7BFABFF00FBF6FFFAB7B8"=,J">"8%
+40FFF600C3E85FBBFFBFFDFB@7FFE7EFAD5DD8">+C"G#9"9#8%
+00FA0AF97E5EDF7EF77FFFFEF5FFF81DEF6EEFAEEF>/A#G#9"9#8%
+1FFFF7FE6872FA2BFFFBFFDFDFDDDFBFFFFDFE6FFA376A7215@-?'F"9"9#8%
+FFE813787E0775FFDDFF7DFFF7FFFBFFEFEFFFFFFAEF544CA295>"8.=)D+8%
+3FFD1D5A5F01EEDF7FF7FFFFFBFDFFFFFFFFFDFEFF7EDBD7FFF75EE000075FAE35664D579"=*8#=)B(9#8%
+20FA9F6D2D45F3F5FBFDFFFFFEEFB7DDEFFBDFFFEFF6FFFFFB7DFFBFEE555556999":2:*8&<3
+00FFFF5AD0155E1F81AEDFBEDFFBEFFFEFEFDF7F7BFFFFFFFFEFFFFBDFFBFFEFFFFFFF7DFFFFDDFF00FDEADB757592A6A6958"='P&91=2
+04EDF04AAF0FB07FBF7FBF6FFDFBDF5DFEF7FFFFF7DDFAFFFFFFFDFDDFDFEFBFFFFFFFFFB4F5EDFEAE8A1240938"=192;3
+08FF706AEF97D05AB6EFFF7FFFFBFDFFFFFFDF7DF777DFADFFFD7F5FFF7FDFF77F7EFEFDF5FFED5BD76DEEEFBFFEA5C2494492418":2;493
+0001FFDDFFD069A50FF0B7DFFB77FFF7FFFFBFFFFEAFFFFEDFFFDB6FFFBBDDF7BFEFDFFEF7BFFFDF75BFEF7BEF77FBDFBB5755250240938"<.=493
+04FF57707EF7D7B94D7B57FDDADEF7BBEBDACBB7F5BD7FBD56EFB75EFD75FF6FFFFBF7FDFFFDFFF7FF9EAD72EF7B61121095A58#<594
+0880EE8F0276DF9F93FDFFEFFFFFFEEF7FBAFF6FFDEFFF6BF7F7EFD7FFFFFF7FFFDFFFBF7EFFBFFEDF7BFFFFF7ECDDF7AEEED09294000400400118#9"8+85
+400000FF101DDFE7FF817BFFF7O!7FDFBFFF7FDFFFFDFFFBB5F7F7DFBFFFFEFFFFEFEFDFF7BDFFFBEF7FFFDEFEEFDBEBF77AAFABB3EE96AAA11001556F8":"8+85
+0001ED201FB575FD4BBDBBFFO!FFFDFFFFFFFFFBF7DB6EFF5FFF77FFF7BFFEFFFBF77FDFFF777FFFFFFEFDBBFBED6F5DEF7F7ED92AAB4AA02050A4A58#9"8/:5
+704000FE1015FFF2F7E046DDBFBBBFFFFFIFFFF7FFBDFFB77EDDFBEFB6B695D7DFDF6FFFDF7FDDAADEF6FAFBDBBEFB5D5EA5055F6A55E8B0EDF7F8#9"85Q$R
+000001KFFC00FFF78FFFD4AF7F6EEF5B6DAFEF7FFFDBFFDFEBF7BEFFFBF75D3EFF7FFFFBBABADABAFBBDFFFFFFDFDEDFFFBB58R8#<$
+<07F7DF7FBFBB575BBDDFFBBFAF7EF7B7FFEFABEBEEB6BAFBFFFFFFFFFFFFFFFFFF8"@5<"
+207DFEFDDFF9BADF4F7FADDFFFDDBFFFFFF7BDD573BDB6FEFF78">18R<"
+004005FFBE77FF7FFFDFDEDF77DED7FFFEFF8":"9(P%8085
+2000C007BFFABFF8E4BBFFFFFBFB7FBD7BB5BD6BD7FB7F7D6DBDBF7F5F6EDD57DFF7EDDDB76DDB7F7EAAA99295FAADF6F5F8">5S"R
+40H6007FEEF7FBF16EB76BBFBBAFFBFBADFEFFFFFFFF7DFEEAFFD7EDEFDDFFFF7FFFB6DF5FFFFFFEFBFFD"@58&<"8"
+EFCC006FFFD5EFF5577BDEFDEF5EFEFFFFFFEFFFBFBDFD6DADB5BEF6F5F7B77DFF7FFFFBFBFBFFFFFFEFBFD$>5V8"8#8"<"8"
+FFFF045E001FFB77FFBFFDDEB5AABAEB55DAD7BAFB7AEB6FBFFFFFFFFFFFF8#=(YJ"
+1240C001FEFF87FFDFEAC%9"8)J"
+EFFF000001FEC000EFFFD57F7FO%8C$="8&
+FFFF20FBFFEEB6EBFF8"="8%J&
+00EE7FFFF97FO"F80001FFAC8":"8#8$J$
+4003FAE0FEFEBEO$03FF8C$:"8(J*@#9$
+EFFF0207ED00001FFFFBEB:80000001FC912FFFF7800105FFAC$:"8":#J*?":$
+FFFF080BFDFEBE;104009FEAAB7FFFB77A007FF8C8":"8"8&J58$
+000FFE0F7B6F687F:5000001F00003FFF00003FFC0001C0001FFFE00007F05FFAC9"<"9%J"?"9"8"8$
+20FFFFFFFEFF=F83CF80F07FF8C%=$8"J"?"9"8":"
+EFFF0200C00003FF>FC3EE007AC"?%9"J";&9"="
+FFF74000057F=F807FF80003CF08C8"=%8"J";$;"="
+00FFE0000169>F003FF00A0AC$>'J"C"="
+EFFF08C000007777FD>F4808C$>"8$J"9"?"="
+FFFF00E05FFFF7>F0FC00CC@#8%J"G"
+F7C07FFFFEFFAF88C9";$8%J"9";"8">"
+08FEFFE00FFF5F7F=F4FCBCFEAC9"9$:%J"?"A"
+C003FEAB07FFFEFF=F0FE8C%:%8%J";"9"A"
+EFFF1400FF624BC001FEDF3D=F401FCAC$;%9%J";"E"
+FFFF00F6A2AFE0FFFE7FF7<F0038C=&8&J"<">"
+07FFFC0AE1007BFF7FFFB01F8CC8":'8$J"J"
+100FFFFFEBFF7E1FDBF7=F858C8":"8*J"9"8"8"
+001FF575F7F80005FF5FAF<F0FEFEFE$=*9"J"A"
+EFFF02EB6BFFF00007FD7FFEFDBFCAC$:"8*9"J">"<";"
+FFFF00FFF8B0DFFF8000FF5BEFF78F401788C8#8"9+8#J$E"
+0A1003FEA0AAFFF00002BFFFF7FFF753FFFF0FF8#8"9+9#J$:"
+00000FFF78DBB7FE00005FFFFFFFBFE01FF87CC8"9":%8$8$J"B":"
+081F50A9DFFA7FBBDFDFFEFF:FAA7AC8"9":*8#J"B":"
+003F704AFFFF80001EFEFFFFFF;FEF7CC":#9*9#J$B":"
+EF1FFFFBD01576FFF0003FFF7DBF901FFFFFFAC"9#:)9%J"9"8#A"
+FF01FFBFFA82ABEF78001FF5AF6FFE8030003FE8C:";';%J"<"A"
+03FFF90ADDFFF8FEDEFFFF9FBFCAC:"<&;%A"@"8"A"<"
+0FECA45B6EFEDFF715FBEFF4FF008C:"9*:%;#:"@$:">";"
+BFEDBBFED74F5FFFFF80FF7FFFFF56EDFFF00001FC7FAC9#9+:"=#C#8"=";";"
+01FFF45FDBFDF565BFFFE03FFFFFFF2DB703FE1F8C"8":(8":"J$?"A"
+EF03E93BFEDBFB7AFF1FBF62AD3F4FCAC"8":+:"J$:"="8";"
+FF0BFC06B6DF7FDBB7F7FE5FFF60003F040FE0F8C9":,J"9"<$
+3FFF00BB0B5FFFFFFF7F1F77AC00F07FFFA8#;%9$J";$
+01FFC14440BAFF8BFFFFE01FFFC8"<%:"J"8":"
+0040108ABFAFGFCFFFA8";+J">$9"
+9BF7DA01500BDFFFDFFFF5D7C00FFFCAC8";+:"J"<"8"9"8":"
+FFFFEC0006019EFF7FFFFAFD8F83CFE807FCC>,9"J"<"8"<#9"
+DAB4010F00EFFDFFFFFE7FFF8F438FC5FFEAC>(8#J":&:"8"
+FFC00012F02D5FFFDF<F0E00030001FE01F>(9&J#="9"
+BF400515B05FFFFFFFFEFFF7A0FFEFCCC>'<$J#9"8#9"
+EB00106DF81EFFFFFFA1FFCF00FFE8C=)9#J"C"8":"
+FEBC00288B7F07DFFDDF;F4F807AC<*9#J"C"="
+F1FB4000253EEF80FFFF7F;F0FC8C=(9$8"J"9"="
+EF500010B77F81DFFBFF7FBFEFACC<.8#J"9"="
+E5BD4000001AEDA0015FFFFFFFEFFFBFCFE8C;%8'9#J$<"8":"
+F700000001000000055FBFFF>F00010FF01AC":";"9#8#J%:":$
+EFF80000165EEDA00003FFE800FFF8C":"@'J"<"8"?"
+FFF61FF7F7FBFFBF9F410FC07:#@"PJ$<"="<"
+F2C00273FFFF000E0AC:#@#:"J":)
+FC00003FFBBFEF00000FFFFFFFF8C:#@#9#J"
+FE0212FFE3FFBFC:#@#9"J"J"
+FD5288DFF59F45AC:$>$9"J":"?"<"
+FFEB401FFFFFAF9F0F4F88C8"8">#;#J":"9#8"
+F7FF07FFF1BF8F8FC7FFEF98"9"<#<#J">#8">"
+FF0002FFF0FF8F4FFFCF8AC;"=#J">"9">"
+FE057F@F0BFF08C;"=#<#J#8#:"
+FF1FFFF81FAFFFEF87FE0;"="=#J"?'9#
+FEFFFF0F8F4FC0000F01FF0001F;"<"?":"G(=$9&
+F40717F70001F00000001F01F807FE000FFFAC;"<"?":"J"A"
+FA059FFF=FE8C;"<"?":"J":"9%8$
+F41FC1FE8FEFC0000000107FFAC;"<"?":"I"="?"9"
+F07FF9FFF401F88C;"<"?"J"B"<"
+C0DFEA8F0F001":"<"?"J"8":"
+F7E07FB1BFEF8F0"A"?"J"?"A"
+FFFFFF8F4FCAC;";"="J"B"9":"
+C003EE;F0F0038C:#;"=$;"I":"="9":"
+FE400FF7F75FFBF4FFF807CC:#;"=$;"I"?"A"
+EF80066EBDFFFFF0FEAC:#;"=#="H"=$8">"
+BF400FB57F7FF803FFFCF08C:#;"<$<#H"B"9"
+FD001BFD00AFDFFFF0F80F:"<"<&:#H"F"
+F70FF21710977FF4BFF41F9"="<&:"I"
+FE1FF40519EFFF77F09#<"<%;#H"B"9#9"
+5BDE3DF000E57FDA7FF4F03FF8AC9#<#;%:$H";"<"9"8$
+F77DB7DFA0007B65FAAFAFF080F87F07FF8C8$<#:-J$:"8$
+FB5FFEBFFFFE8001009F7FFBDB7FFB92878C0000BFE01FFFE8$<";,I"="=$9"
+EFBBEEEFFFA0004AAFEEEFFFFFFDC5F40700FFFAAC8$<"8"9,H"=$8+
+BEFFFCBFEF000080016F7F756BFF7543F00FFFFEFF800007FFFE000FFF8C&<"8"8"8)EZ(
+F7FFEBFFF8FDBFF91959FBDFFF7FAA802F0001FFFFF001F&;&8-J$8%
+FFFFFFEFF402FFF6DBFFF60009100315F5F77FFF0003@FFA7FFE0FFFFAC9#;&8,J"<"
+BFF003BFFFFFFEDD00011089B7BF7DFFFA80BAF8C9"<&8-J"9"
+FF01F77FFFF7F20010C1049DF7F76FF90053AFFFF8$;5
+F7FFE04057FF5B5FFFBFFB0002710412FDEFCBFEF00167F8$;"P1J"
+FFFFF001FEA000088000EFFFDB7F7800695FFFFBEAC@%8,8$J"
+02EF7DDFFBB0004408255BFFFDFFFA77F7FFE8C:";5
+E0503BFFFFFBBFDBFC0001B40000DFEEADD2F00B7DB7E:";5J"
+C060BFBD7FFFFFFFF0006A17480BFFFFEF7F800DFFFEB5FEAC:";5J"
+4060AEEFD6DFDFFF940059FDE087FFFAD5F55026A6D780FE8C@5
+605BBFAFFDFEFFE8006ADF6A05FFFFFAF5500BD7FF82B:";5
+00617FF7FF7FDBD6900156EAD007FFFEAF5FC022DEB790F9"<5J"
+FC62EADBFBDFFFFFA0012F77BA097FDFE872950DFBF8007EAC9"<5J"
+FE523DFDAEEBBF78A005FFFDE90BFFFFD55288B77FAC0F8C@5
+792F6FFB5EF7F5400577EFF00AFFFEF4B4CA2BDF74407DB"8"<5J"
+EFFC72FBFFAFEFBD772003FDFDFE07FFFFFB0A012B6DC880FFEDCC"?.8)J"
+FF1BD6FFFFBF7F600075FFFF11FFD02502FDEB403FFBDAC9"<.8)J"
+F4DDEB6DDBF7FFD000BFFBFE81EFF40003DFDE803FEDD8C9"<.8*J"
+F02FBEDFFEFFFA040197FF5007BF6C00176FF9007FBD5FCAC">/8*J"
+EF015AEF7EDBDBAF2200DFFFE807FFF5000BB6FA007DF6FFC8C">.9*
+FF00EFBBEFFFFEFA880077B7FA00FEA86F7FAF817EBA979"<.8*J"
+E02ABD7EF5DFFDE001DDFD500F7FF7E3DFFEF803FB7F7FCAC"8";/8*J"
+EFC0012DD5DFDF7B4A0007BFFFE005FFFFF7EFDFFF03FFABFFC8C%;.9*J"
+FFFFF760002B6EF7BFAFB70001EDF5B00B7FD7F6F7FA03FB7EBFCCC%<,:*J"
+EFFFFFA091BB5FDAFD68A004575EA0FFFF7FDFB507DFB3FFCAC"8"<.:*J"
+FFC04BD7FEFFEEF78007AF7540057FFFFDE80FF4DD7FFF7FA8C8#;/8,
+EB400164DD55F7770A00047BDF0055DFF6FFFDFFBA0FFF7FFFFFFD8"</8)8#J"
+FB0091FF5FF7D55D0006BEF700257FDFFF7FDFFB07F6F7FFBF@AC%;58#J"
+EFFFED00801EAAAB55EEFEAD006D5A5005FFFFFFDFDDFFFFD780FAFFFFEFF@8C$<.8*8#
+FFFF5F000BFF6BFFBEF5200AF6EA006DFFFFFFFF7BF73C937EFFF6$=.;&9"J"
+EFFFF8B6AABED76B9ED0175D50002B7FFFAC3FFFFFDF@AC$</<$:"J":"
+FFFFF6022F6D57FFDFAFE015EEB40057DFB82FEFFD;DF8C$</8#8$:"J":"
+EFFFEA0A12B6ED45755B200B6560005EFFDFDFFA3D7F5F;FFAC$<.8$8$:#J"
+FFFFB801FAED5FBAED6DC044BDA0017FFDFFFFD85FFFFD7F?CC$<1:%8$J"
+EFFFF000D3EF629B7EDF601F7500046BFFBFFF747DFF5FFEFFFF?8C$<0:&8#J":"
+FFFFF402EAEF75D9B7BFA00EEA5002EDFFFFDFF82FBBEFF7FD;F7CC$8"9.8*8$J":"
+F7FFE08000053A88AF1DF5F8157F600D77FDFFFDFFFFF47EFFFFFF7F9F:FEAC(8.8(;#J#9"
+FFFFFC003FFFC001D8A6B551E64AA057DB80175FDFFEDFFBFF70FFFAEB:FFEB8C"P"85;$J(9"
+EFFC600054296ABB764D8117520FADDEFFFFFFFFFEFFFD83FEFFD774DFDFEFEFFFAFFFCC";"9.:%;%I':"
+FFF811699B55D756E91555805ABFFFFFFFF06FFB76EEBD7FFFF7BFFFFFAC";19"9#;%I%<"
+FBFF80004AA8995956ADB76A02EEB76FAFB7FFFFEFEC15EFFFFFDFFFCC"<09&<&J"="
+EFFFFFFFF426EB7AFADFFD5522AFEFDFFFFF7FFFF7FEB62212BF4FEAC"?-8"8%;(E"8"="
+FFFFE9FDA97FFEFFFFFFFF7DFFFBFFFFFB7FFFFEA5FEFB7F7FF7FF8CA&8$9(=(C$>"
+EDEAF5FFFFDFFFFFFFFFFBEDFFFFFF873DBFFDFFFF7FFFFFF7CCA%9"9"9%;+E#="
+FFFFAF7FFFEFFFFFFFDFFDD7BC20AD7EB7EFFFFFFFDFACC#="9"8":*F$
+FFFFFFD7FFF7EFFFDC142BA7DFFFFAFFFFJ"=*F"?"
+:FFFFFFFFFEC9FBFABDF7FFCCJ"=(J"
+<BFFBFD51DB6F7F7F:ACJ$;(J"
+<FFFF7F7FFF9EFBEFFFEF:CCJ"9*:"J"
+>FFFBEFFFFF842FBFFFFFF75ACJ#8%;"J"
+BFFFDC2B76BFEFF58CJ"9$J"
+CFF6FBFFF;CCJ"9$J"
+BEFEAB6EB<ACJ#8$
+BFEBFFA9FFF"J#8#J"
+EFAFFF6BFDD=CC"J&J"
+FFBDF7FFFFF75=ACJ(J"
+BFDFFF7FFFEC7EF<CCJQ"J"
+B7F<ACJ#J"
+GFDFF<8C"J"J"
+EFFFF=CC"J"
+FFO68CJ"
+O7ACJ"
+O78CJ"
+O7AC"J"
+EFO68C"J"
+FFO6CCJ"
+O78C
+
+J"
+O7ACJ"
+O78CJ"
+O7ACJ"
+O78CJ"
+O7CCJ"
+O7ACJ"
+O78CJ"
+O7CCJ"
+O78CJ"
+O7ACJ"
+O78CJ"
+O7ACJ"
+O78CJ"
+O7ACC"J"
+EBO)8CB#<"J"
+FEFFDFO"ACB#<"J"
+FBEFFFO"8C8"?#J"
+FEEFBFO)AC8"?$J"
+FF7EFFBFO(8C8#>$8$J"
+FBBDFDFDFBBFFFFDO#AC8#=%8$J"
+FFEFFEDBFFFFFFFFEFO#8C9"=&9"J"
+FFDBFFEFFFDFFFO#CC@'8$J"
+FB7FFFBFDFFFFEF77FO"AC8"='8$9"J"
+FBFFFFDFFFFBF7FFFDFFEBL8C8#<"P8#:"J"
+FF7DFBFAEF7FLCC9"<$8'9#J"
+FFFFD7EFBFFBFFFFB57FEFFBK8C9"<,9#J"
+EFEFFFBFFFF7EFBFFF7FFFFFFFBFKAC9#;#Q$8$J"
+FBFBFBBFFBBF7FFB7FF6K8C9#;'8$8$J"
+EBFFFFFAFEEFDFB77FF5FFFFFFFFKAC9#;'8)J"
+FFDDDF6FFFFEFFFFFD5BFBFFFDBFFFBFK8C8$;&8+
+FEFF7FFDFFFBFFDDEE95EE7FFFFFF7DFEFFB9#:,9&:"J"
+F7FFFBFFFEFFFFFFDFFFFFFADDFFF7DDFFDF7FDAC8$:$8(8&:"J"
+FDDAE7FFFFFFEABFDF75AE75DFD6FF7F5FFEFFD8C8$;3:"J"
+FFF7DBF7FBFBFD7FFF7DDFBBD77F7FFFFFDFFFFFFFEFDCC8$;39#J"
+F6BABFDF6FFFFFAF7BFFFDF121FFF7768CD757FF7FFCFED8C8%:39$J"
+FD577FBFFFFEFFDFDEFDFB76DBB5DFDFDF6DDFB7DFFFFDDFDFCAC8%:39$J"
+F7DE3DFF7FFFFFFF7F7FFFFF6A557BFF7FDB6EFBFFDBA7FFFFC8C8%95;"J"
+FD62853F8FDFBBFF7FDF5FBDDBB2001ED7BF8D7FFFFDBAFBBEEFFFDDF7F>CC8%95:"J"
+A731E31F9FFF7FFDEEF97FFF7D5D5009FFEEFEDFF977FFFEFFFFDFEBF7FEF>AC8&958"
+DAB5CB5F7F:F3FEFFFFEFFFBB74A882BFB7F4DFFDBB6EFFFFDDFED7FFFFFDEFF78&858#J"
+ED5D5B7BFF;FDFDEFFFBAB5B7FFAB6099F77DAFB4AFDBDFFF777FFFFFBBFFDFFFEF7F=8C8%959#J"
+25B22937:FFFFBFDEDFDDBEDDF4E820EDDFF3DFBF6FBBBDFFFF7BB76FEFFFFBFF=CC8%948%:"J"
+F59BABFBDFFFFFF7B6FF7FFE4E124B766A784DADF6EFFFFFFAFD7FFF>8C8)808&
+EB5557B7BFDFFD7FFFDD5FDBFB6451257AEB7D6E8FDB5FFDFF5B7BFF858&J"
+?3DB3BD11F7FFFFEEBDF7FFEBE67EAF96884AA737125BFF7DFEF7BFFFFFFFFFFEFFFDFBF7=AC8&85A"F"
+E29050EFFF@FFFFDFF6B4156BF57284167CFADF6AE7AAFFBBD5BFF76BDFAEFFFFFFFF57FEDFB78C8&:5A"B"9"
+1ED5A20BBF>7F7FFFF7FF8B9400D5C7A12E5D7FFAAFEFFFFD5AFCFEFBFB7FFFD7FFFFFFFEF5AC8&:28)C#=":"9"
+3EB2B26B7FFFF7EAD6F6BA962092F0B9576ABF75FFBF7DFAFFFEFFFFFFF5DFFF7FFF8C8&:5<#="9#9"
+B64B0B20FFBBFFF5EFFBB6D6004005A812000C076A908A82BAA0730BBD0BED52B49282AEB7FFF7EFEEDFFDBFBAC8&:Z<#:"8'8#
+0C14E04FBFBFFFFFBFB7FB5F7FD5F77CC8*J"8Q8#
+E359155E93F5FFEB77O FFFFEC8+J"
+491CA94D57BFFFEEDEFEO+CC8)j"
+D6D742A3FFFFF7C0O-0C8(
+893DA8985FFFFF8&
+E4ACDECFFE8(
+A20D8A955FEFDF8(="
+AB32F2F1F77BFF028'>"J"
+4A892A075FFF009408&J"
+2923EDED7FC008&J"J"
+0D86D4AEAB680@208'9#E#=$=":"?"
+2D481C4AFFFD03E003F061D9C8D42C008(8"G"<%=":"
+3C33D3337BBFD717F801FBF9F8FC3E8,F"<#?"@">"
+4B726DDDCEFFFFC1FFF7F0F007F9F401018(J#9#9#:";"<$
+E5AA8AAAAFDD7F;03FB018001F83F000400008(J"=":"9#:"=":"
+AB6A55AAD57EFF4F8F90800F43E10028':";"@$;"9(9";"8"8$
+E155AB6AFBFFE004F00004FB00000007C3F0F8FE02001F00008'9#;"B":#>#9";"8%
+4E85EF7FDEDFF180000001E1F1F43E044000085F8,C";"9#?"9"8"8"8%9#
+B5DAF5A8A1F5FFC0DFE00020080003F8FE40000000001F48028+D"8"8":"=$9"8"<";#
+5CCCEBF5C2DDEFC15FD000F10001CBF0F4BE000820008R(8"8#8):"9"9$@"8$9"
+C01F0560F80F82F8F00F50C00383F02C00700302C3F1F80400003F00A595
+;07E1FF1FF7E7E7FF0001FE1FFC7FFBFBFFF3F0FF83FC003E7C7DFB=1FE1FE3FFFFDFCBFC005FF3EFD1FE0003EF9F5F1F1FCFFE7F07EFF1F8CB%:":";":#958"
+E7FE7FE707FFA77FF9:7FE3FFBFFFFCF4FFE001FF3FFE3FF0007FF9F9F1F7FFFF8FF8FF0CE"C$:#9"9$?#8":"
+F7F9FF977DFB3FF7FDF8BFFBF57FA)8#<$8%9(<"8#8&
+47E7EC7EE7E7EFEFEE7FF3F7C72E7EFBF97FC3FFFFFFFCFDFF3FFFF7FEFFDFFEA&8%;,9$8&9";*
+07E7E07E078F8007E0FBFBF3F3F788001E7F7BFB7C07C7FDF5F3F009FCF7F7EAFF9F1E7FEF9FC#9"8&<(8"8)9$8*
+F07FAFF07E7C7CFCC0000E7FF9F9FB7EC7C3F0F9F1F000BEFC007FFFE7E07F1F1EFFEFBFH"9"8"9"<$>"9";$:"8#
+9F7FFDFBFBFBF9F1FE3FFFF89FAF9FC$8"8#8"9%9$8$8$8%8#9(
+FC7F87FFFA7EF8F3FFD7F8F9F9FB7FC7FFF1FDFFBE3E3EFFBEFEF87F3FFF7E0FFEA&:#;"9)8#:"9";":$
+87E1FE1FE701FEFAF3FC008FF7EBFBF93FEFF37E3EFE1F7FA&8%;,9,8#;"8#
+47E07F07F78000007FFBFBF7E000FD000FE7E1F907E7C00FC3F0FDF00000FEFC00A01F02A"C"9"8';%:";"9"8#
+07FCF3FE0007E7E3FBC407C3F1BE7EC15F048':,8"9%9#9%8"=$9)
+FD55555B6FBDE11F11F7F7EF8F80001F7FF8F7F0C03EE1F903E7C017F190003E807F5F3F007E07F88(9-9'9#9%8&9"8)
+FFFFFFFFFEF7DFE7FF7FF7FFEFFF0007FF7FFCFFF3F3F7C77FE3FB3BE7C7CFFDF5F000FEF4FCF87F871F3F1F5E<$8"8%8$=$:"9*:&9&
+FFFFFF27FFF1FF870FFE1FFFC7FCF97FE7FF87C3F0FCFFE0FFF0007EFEFF1F1FFEFEA"8"8"8$?"C#?"9$8"
+077F8F07FF3FFEF1F43E8FFF5F7E8#?&8$<%8$:":"9"8"8"8&9"
+F3EFFE7FE1FF870FFE1FF0FF8FFCC7C1FBE3F9BE3FBE5F0FFF1F0FF08(9-:+9$8'8%8$8$
+FEF56DB6DADDAFE1F81F80FE01F80001F80F7CC3F07F03F80003E7C1F93FC1FEF0FC3FC000FE1FE0003E3F07FEF87E018)j#h5
+F000000001004FC0003F0:14001400000000140000140A220680001208505F00F01501E16A8(J$>$:"90
+F4109229042A1F58000200A00100C0C0A0340001652A83F00F82903F0448"`"H"8$>$:"8d"a"
+FF0FF8000000000000007E038"QI"J#
+F580F07E08"`"H#=";"
+FD0FF0000408J";"
+D01008%@"=%>"J"<"
+FF3294802001000000007FC478"Q=#8"9"J"<#
+E300F05E00C0000008(=#8"
+EF000002A4925F01F87F;%="9"J"F"
+4801092F035F904208R="9"E"=):"<"
+077F1007E07E0001FCCD2880008"`"J">5
+DD0F;004E3FFC001FDFFFE001FFF07FFC3FE0FE07F1FE7F88"9"@%?"C#8"<">"
+F310F0007EFF7F1FE705C3F08"9#?"8"="E"9"8"@"
+F10240F87F101701FC0F8(>"@"C$8"="=#
+FF01254151154FE00004001FC1EBEFE09`"J"8%<(
+0FA00CFFF8003EFFFCFFE1FE0FF8"Q<";#8&E(8'9"
+F31C10070300500010D7E00001FC1FC0CFEFE00FFE0FFF8"B"?&J'9"
+F73A0280400000=1FC0FF2FFFC0108&>5:"9'?&9"
+FF292AFEBF6FF0FF801FFFFFE1FF0000FC7FC3FFCFFBF3F7CFE7F8008CFE40003FC3FA0FF0FFF80009%=*8$:%;"9#<"8#9%
+FFFFFFFF01FF9FF800FFBFFE7F3FC7FF7F7FFE3E00C7F03FF61FFE07FF008"`";$9"8"8"8"8&=$8":$9"
+FD0F03FFEFDFF8CFFF3E7FFFBE003FC7F8F0DFEFFE808"A";$8&8"A$:">"
+FE05FFFE7E7FCFBF3FFC3F1FC7F440A08"Q;";$:":$?$:"8#8$8"
+F507DFFEFE8F7E7FCF3FC3FE80FFCF7E9F81FE8"8%<*8*@$9"9'
+FFABD2AABFF7E7E0007E7F7EF8780F8FBF7F7F3F3F7F8F81FE80000FFE3F7F3F80;%<"<#9$:$?$;+
+FFFFFFFFE7FFF8FFBF7C0FFC027F000BFE1FFEBF7F7F81FE01F8J">"8#G"8":"
+7FC7EBC00FC7F079%?"<";"8%?"8$9%8$
+7F5576BFF7F87F3F7C0FFC800FF0BFFE1FC0BE01F8018"`"=";#9$:">$8$<#9"
+E20FE7F800803F7C07043F8227F0FFFFFF078"Q9"8#<"9#9/8#9"
+DF20EFEF689ABF7D7D07F8001F8003E00078003FB80FE0FF@$9";#9":"8"<":"8"8"=$
+800008E7F958AA7EFCF820FE7FFA07F08"`*;#8%8%8"8*9"8"9%
+E32FC00000000407FFEFFEF8CFBF3F7DFF7C27F8C001FC007FBFFF000FE4FFFFF9FFE7F88$9":'9"8&8$:"<"8"9$="
+FF40A40F0005FFA7E0017F3FCFFF3F7EFD7C0707FEE0FE3F3FF08"Q;&9#9):#9$@(
+F301FF87E0005FF0FC3F7C7F0FFC7F0303E87E7FFCFC7FFFFFFF87F28"A$;':%8&;">"8%
+FD00FF0F1FC0000FC7F8F87C13E08003E001F81FF8F7FF8FF08";"="9":#=%:&@":"
+D55F17FF1FC383F0003FFC027E3FF4FC878";"<b5;$:"
+FFFF<0500000700D000000002C00003E000020001C00078006A1FE0040FA0BFFFF08F9`";"<#8$9#:&b#8f:"
+0F021000000003000000000000040400018"Q;"8#8"8"8"C"=#C"9"
+F100021200010000200440008"D%8#?#="8"8#:"<$
+E100000040084007C004200000202000208(>"8"8#H&="<$
+FFB5AAEDAD552F080000000020028008000022009`">#@";">%D#
+0F000420C20000000080809'?"@":#J#
+B35FBB48009F00000000:04009'<&E#;$>">"
+6B6DDD50124F8800200002012202008004008(<&:"8$;#;%9"9"C#
+E3000000BFFFFF2000000000804000801800000000020400F8048#8#959%=$
+FF0803EDIBFF01FF80FFF0FF8FF07FFFF8FF7F0FF00200FF07F00FF8177C003FD3FFC001EC6A06800152202412001F0038007FF008(8%8#9385
+FDEFFFEB5D254FFFFE1FFF1FFE9F8FC7D7FF90007FF2FFC0FFF87FFC3FFE7F;1FC7E1FC001FFFDFEFF3FFE0000FFC3FF07FF8FFF9F8FE1F8FFF808(>":"8$?"G"
+FFDAAAAAD4D55F5FDFE7FF801F2F8'=&818&@%9$
+F321114445178FFF7FFEFE9F8FCFC7FF88017FF3FFF0FFFC7FFE3FF8003FC7F11FFCFFF8F3F8FF8P#9#:":+9"8":%9'9$9#
+6DBFFF7FF8BF8F8FFF8002FFD7FFF3FFFFF9F8003FE3FFC000FFF1FCFFF59F9F=#8"8(8":(8$9"9%=&8%
+FFFFFE9FBFFFFF1EFE0FFF13FFF7FFFBFFFEBFFE7F8FBFFF9FCFFC7FF8FFF73F1F9FC0D(9&9#?"9$>"9"8"8"
+1F9FFF7F1AFE07CF9FF78023FAFE973FFF5FFEF51FA0B"9$858$8'8$8%
+7FE1FF018F01FFF2F0FC00007FC0FC7FBFC7E7E3FBF827E0000BF9FFB23FC1FF00001FF0BFD01FE077F0A1F80=#=+9#="9":$8"8'8%
+FB7FA0FF00FE0FF00FFF3F3FF82F803F03F03FF4FE03F0FEFF00F0FF1F008":%;$8'8#8)?$8'8&
+FBFFFFC001FE7F89FF0FFD3C0FF0F01FF8FFFE3FFFC1FE40FFE3F1FC0BF1FEFE05F1FF7F005F8"8":"<#:#;#8"8%?$9&<"
+F7FE00FF81FC3D0FC3FEBFC0FE20DFE3F007F0FEFF033F8"`(8%929/8$9$
+F02FC001FEFE7F7F7FE1FC1F7C0FF8000FF03F87FBFAFDFE7E3FE1FFE0FFF00207F07FFFEFFF0003FC0FF2F1FFE709FF008R8&8,:&:"8&="8$8$
+FFFEFFFF1FF1FA0FFF07FC7807FC401FFFFDFFFE1F7FE0000FF03FE1F9FFEFFE07FEB)9';&B">";#
+F8FFFC1FFA0FF1F8F80023FC000FF1FFFC07F9CFF105F0B&@":"D#A";"
+FCFFFA1FF820FF0BE0E1078"?1:$8#9$8"="="
+F3F0FFF87FD807F9F81FFE07F00000FF00F7FFC103FD7E1FBF0FF4E38"?"9$8"B$8#8"<'8"9'
+FF808007FFE0C3FFE0FC007F1FCFE00007FCF88FF1F7FE06E0@%8$8"A&9$;#9"9'8#
+03F800FE0107F9A0F7D1FC0023017E3FFF3F03F9FE01F80FE50000@$9$8"9#:%8#8#;$9"8"
+01F8200007FFC0407F8FF7FFC103FF00FEF0BF1F0BE38"=-9#8"8+:&9";"8"8#
+FE03F800FEFE7FF987FDFF9FFE78FFF8C7F7F3FC01C3FDFFC001010FE0FF3F4307E701808"?":#9"8#8$9%;1<#
+FF03FFF70F7FFEFFBFFFF801FFFF3FC0001FE0FE3F9FFF4003FFEFFFF1F80FE19&9#@"8$?'=':(
+410092AAAFF001C4FC0007FBFFE0017E3E5FFF0001FFCBF01FE7F1F80FE08'E$:$=$?(;%
+FDB6B6AD4BBFD000FF3FFF87C001FEFE0003FFCFFFE1E5FC0FF08Q":"8$:$8*;$<"8$<&
+DFFAFFFFE7C0007F03FF0FFF8FF7FBF803FC3E1F1F01FFC3C7F1F80FE08%8":);"9$;":":";"9":#8"
+F014ADFBFFFCFFFFFDFF87FFBFF807FF0FE37EC0008787E1C09&8b"b(`*;"8&>"
+00000000037C0F8000003C00F03F8000000000181A803F023FC0FF0180G#;":$;";'8"8"9":":"
+5A10403D10F87E2A1640000F401F82058F108$9">#;$8$;#:j
+F5A4903F00000000000000000000:8Q
+8(J"
+F40000000003FFM408"J"
+F0O%008Q9"J#9"8"
+40D10404020A"J#9"8"
+00D00000000J"
+B02J$C"
+@08000008J"@":"I"
+@00400020?"H":";"9$G":"
+C20102020000400100?"H":";";"G"
+C00000000000
+?Z)
+O&F7EF56AAB4021108JS"
+O/FC
+
+
+
+
+
+ENDBITMAP
+%%EndBinary
+520.76 262.2 655.32 295.28 R
+V
+0.22 H
+2 Z
+N
+0 0 0 0 1 1 1 K
+0 8.97 Q
+7 X
+0 0 0 0 1 1 1 K
+(Blind Man and Lame Monkey) 522.13 281.36 T
+(Build Supercomputer) 522.13 272.39 T
+(.) 612.84 272.39 T
+0 0 0 1 0 0 0 K
+1 0 1 0 0 1 0 K
+663.21 273.29 655.95 276.81 662.63 281.34 662.92 277.32 4 Y
+0 X
+1 0 1 0 0 1 0 K
+V
+662.93 277.32 673.58 278.09 2 L
+3.59 H
+N
+513.56 281.43 520.18 276.82 512.88 273.39 513.22 277.41 4 Y
+V
+513.22 277.4 489.36 279.44 2 L
+N
+0 0 0 1 0 0 0 K
+468.8 259.67 678.7 447.74 C
+396.14 -121.5 1188.14 490.5 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "mini" 4
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Ascend
+%%Pages: 4
+%%DocumentFonts: Helvetica-Bold
+%%+ Helvetica
+%%+ Times-Bold
+%%+ Times-Italic
+%%+ Times-Roman
+%%+ ZapfDingbats
+%%+ Times-BoldItalic
+%%EOF

@@ -1,0 +1,623 @@
+Module Pervasive
+Begin
+	Type	ID;			-- virtual address
+	Type	INFO;			-- info per id; a record pointer
+	Type	NODE;			-- proc id
+	Type	INTEGER;		-- integer
+	Type	BOOLEAN;		-- boolean
+	Type    STRING;                 -- string
+	Type	POINTER;		-- void *
+	Type	STATE;			-- typically a pointer
+	Type	MSG;			-- a tag
+	Type	CONT;			-- continuation
+	Type	SHARER_LIST;		-- sharers list, assumed one per info
+	Type	SHARER_LIST_ITOR;	-- iterator for above
+	Type	QUEUE;			-- queue, one per info (2 priorities)
+	Type	Q_PRI;			-- hi/lo
+	Type	Q_ITEM;			-- some record pointer
+	Type	TAG_CHG;		-- tag changing 
+	Procedure	Thread_Resume(id:ID);	-- Tempest specific externals
+
+	Function 	Msg_To_Str(m : MSG) : STRING;
+
+	Procedure       TRACE_HANDLER(s1:STRING; s2:STRING; i:ID; n:NODE);
+	Procedure	TRACE_Q(s1:STRING; s2:STRING; i:ID; n:NODE);
+
+	Const   NULL : INTEGER;
+
+	Const   JunkNode: NODE;
+	Const   JunkItor: SHARER_LIST_ITOR;
+
+	Const	TPPI_Blk_Invalidate : TAG_CHG;
+	Const	TPPI_Blk_Validate_RW: TAG_CHG;
+	Const	TPPI_Blk_Downgrade_RO: TAG_CHG;
+	Const	TPPI_Blk_Upgrade_RW: TAG_CHG;
+	Const   TPPI_Blk_No_Tag_Change: TAG_CHG;
+
+End;
+
+Module	Info
+Begin
+	Function 	GetState(Var i:INFO):STATE;
+	Procedure	SetState(Var i:INFO; st:STATE);
+	Procedure	IncSharer(Var i:INFO; n:NODE);
+	Procedure	DelSharer(Var i:INFO; n:NODE);
+	Function	InSharers(Var i:INFO; n: NODE): BOOLEAN;
+	Function	NumSharers(Var i:INFO):INTEGER;
+	Function	GetSharers(Var i:INFO):SHARER_LIST;
+	Function	GetOwner(Var i:INFO): NODE;
+	Procedure	SetOwner(Var i:INFO; n:NODE);
+	Function	SameNode(n1: NODE; n2:NODE): BOOLEAN;
+End;
+
+Module Transfer
+Begin
+	Procedure 	Send(dest: NODE; msg: MSG; id: ID);
+	Procedure 	SendData(dest: NODE; msg: MSG; id: ID; post_tag_chg: TAG_CHG);
+	Procedure 	RecvData(id: ID; pre_tag_chg: TAG_CHG; post_tag_chg: TAG_CHG);
+	Procedure 	AccChg(id: ID; tag_chg: TAG_CHG);
+End;
+
+Module Stats
+Begin
+	Procedure	IncHomeRdMiss();
+	Procedure	IncHomeWrMiss();
+	Procedure	IncHomeWrRoMiss();
+	Procedure	IncCacheRdMiss();
+	Procedure	IncCacheWrMiss();
+	Procedure	IncCacheWrRoMiss();
+End;
+
+Module Queue
+Begin
+	Procedure 	Enqueue(tag: MSG; id: ID; Var info: INFO; arg1: NODE);
+	Function 	Dequeue(pri: Q_PRI; id: ID): Q_ITEM;
+End;
+
+Module Itor
+Begin
+	Procedure 	Init(Var itor: SHARER_LIST_ITOR; sh: SHARER_LIST; num: INTEGER);
+	Function	Next(Var itor: SHARER_LIST_ITOR; Var j : NODE): BOOLEAN;
+End;
+
+Protocol Base_Stache 
+Begin
+	-- declare all the states, and then all the messages
+
+	State Cache_Inv{};
+	State Cache_RO{};
+	State Cache_RW{};
+	State Cache_Inv_To_RO{C:CONT} Transient;
+	State Cache_Inv_To_RW{C:CONT} Transient;
+	State Cache_RO_To_RW{C:CONT}  Transient;
+
+	State Home_Idle{};
+	State Home_RS{};
+	State Home_Excl{};
+	State Home_RS_To_Idle{C:CONT} Transient;
+	State Home_Excl_To_Idle{C:CONT} Transient;
+	State Home_RS_To_RS_Sans{C: CONT; n: NODE} Transient;
+	State Home_Excl_To_Sh{C:CONT} Transient;
+
+	Message RD_FAULT;
+	Message WR_FAULT;
+	Message WR_RO_FAULT;
+	Message PUT_NO_DATA_REQ;
+	Message PUT_DATA_REQ;
+	Message GET_RO_REQ;
+	Message GET_RW_REQ;
+	Message UPGRADE_REQ;
+
+	Message PUT_NO_DATA_RESP Response;
+	Message PUT_DATA_RESP Response; 
+	Message GET_RO_RESP Response;
+	Message GET_RW_RESP Response;
+	Message UPGRADE_ACK Response;
+
+End;
+
+State Base_Stache.Cache_Inv{}
+Begin
+
+	Message RD_FAULT (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_Inv", "RD_FAULT", id, home);
+		Send(home, GET_RO_REQ, id);
+		IncCacheRdMiss();
+		Suspend(L, SetState(info, Cache_Inv_To_RO{L}));
+		Thread_Resume(id);
+	End;
+
+	Message WR_FAULT (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_Inv", "WR_FAULT", id, home);
+		Send(home, GET_RW_REQ, id);
+		IncCacheWrMiss();
+		Suspend(L, SetState(info, Cache_Inv_To_RW{L}));
+		Thread_Resume(id);
+	End;
+
+	Message PUT_NO_DATA_REQ (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_Inv", "PUT_NO_DATA_REQ", id, home);
+		-- ignore
+	End;
+
+	Message PUT_DATA_REQ (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_Inv", "PUT_DATA_REQ", id, home);
+		-- ignore
+	End;
+
+	Message DEFAULT (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_Inv", Msg_To_Str(MessageTag), id, home);
+		Print("Invalid message %s to state Cache_Inv", Msg_To_Str(MessageTag));
+	End;
+
+End;
+
+State Base_Stache.Cache_RO{}
+Begin
+	
+	Message WR_RO_FAULT (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_RO","WR_RO_FAULT", id, home);
+		Send(home, UPGRADE_REQ, id);
+		IncCacheWrRoMiss();
+		Suspend(L, SetState(info, Cache_RO_To_RW{L}));
+		Thread_Resume(id);
+	End;		
+
+	Message PUT_NO_DATA_REQ (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_RO","PUT_NO_DATA_REQ", id, home);
+		Send(home, PUT_NO_DATA_RESP, id);
+		SetState(info, Cache_Inv{});
+		AccChg(id, TPPI_Blk_Invalidate);
+	End;
+
+	Message DEFAULT (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_RO",Msg_To_Str(MessageTag), id, home);
+		Print("Invalid message %s to state Cache_RO", Msg_To_Str(MessageTag));
+	End;
+
+End;
+
+State Base_Stache.Cache_RW{}
+Begin
+	
+	Message PUT_DATA_REQ (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_RW", "PUT_DATA_REQ", id, home);
+		SendData(home, PUT_DATA_RESP, id, TPPI_Blk_Invalidate);
+		SetState(info, Cache_Inv{});
+	End;
+
+	Message PUT_NO_DATA_REQ (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_RW", "PUT_NO_DATA_REQ", id, home);
+		-- do nothing
+	End;
+
+	Message DEFAULT (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_RW", Msg_To_Str(MessageTag), id, home);
+		Print("Invalid message %s to state Cache_RW", Msg_To_Str(MessageTag));
+	End;
+
+End;
+
+State Base_Stache.Cache_Inv_To_RO{C:CONT}
+Begin
+	
+	Message GET_RO_RESP (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_Inv_To_RO", "GET_RO_RESP", id, home);
+		RecvData(id, TPPI_Blk_Validate_RW, TPPI_Blk_Downgrade_RO);
+		SetState(info, Cache_RO{});
+		Resume(C);
+	End;
+
+	Message DEFAULT (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_Inv_To_RO", Msg_To_Str(MessageTag), id, home);
+		TRACE_Q("Cache_Inv_To_RO", Msg_To_Str(MessageTag), id, home);
+		Enqueue(MessageTag, id, info, home);
+	End;
+
+End;
+
+State Base_Stache.Cache_Inv_To_RW{C:CONT}
+Begin
+
+	Message GET_RW_RESP (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_Inv_To_RW", "GET_RO_RESP", id, home);
+		RecvData(id, TPPI_Blk_Validate_RW, TPPI_Blk_No_Tag_Change);
+		SetState(info, Cache_RW{});
+		Resume(C);
+	End;
+
+	Message DEFAULT (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_Inv_To_RW", Msg_To_Str(MessageTag), id, home);
+		TRACE_Q("Cache_Inv_To_RW", Msg_To_Str(MessageTag), id, home);
+		Enqueue(MessageTag, id, info, home);
+	End;
+
+End;
+
+State Base_Stache.Cache_RO_To_RW{C:CONT}
+Begin
+	
+	Message UPGRADE_ACK (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_RO_To_RW", "UPGRADE_ACK", id, home);
+		SetState(info, Cache_RW{});
+		AccChg(id, TPPI_Blk_Upgrade_RW);
+		Resume(C);
+	End;	
+
+	Message GET_RW_RESP (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_RO_To_RW", "GET_RW_RESP", id, home);
+		RecvData(id, TPPI_Blk_Upgrade_RW, TPPI_Blk_No_Tag_Change);
+		SetState(info, Cache_RW{});
+		Resume(C);
+	End;
+
+	Message DEFAULT (id: ID; Var info: INFO; home: NODE)
+	Begin
+		TRACE_HANDLER("Cache_RO_To_RW", Msg_To_Str(MessageTag), id, home);
+		TRACE_Q("Cache_RO_To_RW", Msg_To_Str(MessageTag), id, home);
+		Enqueue(MessageTag, id, info, home);
+	End;
+
+End;
+
+State Base_Stache.Home_Idle{}
+Begin
+
+	Message GET_RO_REQ (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_Idle", "GET_RO_REQ", id, src);
+		SendData(src, GET_RO_RESP, id, TPPI_Blk_Downgrade_RO);
+		IncSharer(info, src);
+		SetState(info, Home_RS{});
+	End;
+
+	Message GET_RW_REQ (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_Idle", "GET_RW_REQ", id, src);
+		SendData(src, GET_RW_RESP, id, TPPI_Blk_Invalidate);
+		SetOwner(info, src);
+		SetState(info, Home_Excl{});
+	End;
+	
+	Message RD_FAULT (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_Idle", "RD_FAULT", id, src);
+		IncHomeRdMiss();
+		Thread_Resume(id);
+	End;
+
+	Message WR_FAULT (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_Idle", "WR_FAULT", id, src);
+		IncHomeWrMiss();
+		Thread_Resume(id);
+	End;
+
+	Message WR_RO_FAULT (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_Idle", "WR_RO_FAULT", id, src);
+		IncHomeWrRoMiss();
+		Thread_Resume(id);
+	End;
+
+	Message DEFAULT (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_Idle", Msg_To_Str(MessageTag), id, src);
+		Print("Invalid message %s to state Home_Idle", Msg_To_Str(MessageTag));
+	End;
+End;
+
+State Base_Stache.Home_RS{}
+Begin
+	
+	Message WR_RO_FAULT (id: ID; Var info: INFO; src: NODE)
+	Var
+		itor : SHARER_LIST_ITOR;
+		j : NODE;
+	Begin
+		TRACE_HANDLER("Home_RS", "WR_RO_FAULT", id, src);
+		Init(itor, GetSharers(info), NumSharers(info));
+		While (Next(itor, j)) Do
+			Send(j, PUT_NO_DATA_REQ, id);
+		End;
+		IncHomeWrRoMiss();
+		Suspend(L, SetState(info, Home_RS_To_Idle{L}));
+		Thread_Resume(id);
+	End;
+
+	Message GET_RO_REQ (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_RS", "GET_RO_REQ", id, src);
+		If (InSharers(info, src)) Then
+			Suspend(L, SetState(info, Home_RS_To_RS_Sans{L, src}));
+			SendData(src, GET_RO_RESP, id, TPPI_Blk_No_Tag_Change);
+			SetState(info, Home_RS{});
+			IncSharer(info, src);
+		Else
+			SendData(src, GET_RO_RESP, id, TPPI_Blk_No_Tag_Change);
+			IncSharer(info, src);
+		Endif;
+	End;
+
+	Message PUT_NO_DATA_RESP (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_RS", "PUT_NO_DATA_RESP", id, src);
+		DelSharer(info, src);
+		If (NumSharers(info) == 0) Then
+			SetState(info, Home_Idle{});
+			AccChg(id, TPPI_Blk_Upgrade_RW);
+		Endif;				
+	End;
+
+	Message GET_RW_REQ (id: ID; Var info: INFO; src: NODE)
+	Var
+		itor : SHARER_LIST_ITOR;
+		j : NODE;
+	Begin
+		TRACE_HANDLER("Home_RS", "GET_RW_REQ", id, src);
+		Init(itor, GetSharers(info), NumSharers(info));
+		While (Next(itor, j)) Do
+			Send(j, PUT_NO_DATA_REQ, id);
+		End;
+		SetOwner(info, src);
+		Suspend(L, SetState(info, Home_RS_To_Idle{L}));
+		SendData(GetOwner(info), GET_RW_RESP, id, TPPI_Blk_Invalidate);
+		SetState(info, Home_Excl{});
+	End;
+	
+	Message UPGRADE_REQ (id: ID; Var info: INFO; src: NODE)
+	Var
+		itor : SHARER_LIST_ITOR;
+		j : NODE;
+	Begin
+		TRACE_HANDLER("Home_RS", "UPGRADE_REQ", id, src);
+		DelSharer(info, src);
+		Init(itor, GetSharers(info), NumSharers(info));
+		While (Next(itor, j)) Do
+			Send(j, PUT_NO_DATA_REQ, id);
+		End;
+		SetOwner(info, src);
+		If (NumSharers(info) > 0) Then
+			Suspend(L, SetState(info, Home_RS_To_Idle{L}));
+		Endif;
+		Send(GetOwner(info), UPGRADE_ACK, id);
+		SetState(info, Home_Excl{});
+		AccChg(id, TPPI_Blk_Invalidate);
+	End;
+	
+	Message RD_FAULT (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_RS", "RD_FAULT", id, src);
+		IncHomeRdMiss();
+		Thread_Resume(id);
+	End;
+
+	Message WR_FAULT (id: ID; Var info: INFO; src: NODE)
+	Var
+		itor : SHARER_LIST_ITOR;
+		j : NODE;
+	Begin
+		TRACE_HANDLER("Home_RS", "WR_FAULT", id, src);
+		Init(itor, GetSharers(info), NumSharers(info));
+		While (Next(itor, j)) Do
+			Send(j, PUT_NO_DATA_REQ, id);
+		End;
+		IncHomeWrMiss();
+		Suspend(L, SetState(info, Home_RS_To_Idle{L}));
+		Thread_Resume(id);		
+	End;
+
+	Message DEFAULT (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_RS", Msg_To_Str(MessageTag), id, src);
+		Print("Invalid message %s to state Home_RS", Msg_To_Str(MessageTag));
+	End;
+	
+End;
+
+State Base_Stache.Home_Excl{}
+Begin
+	
+	Message RD_FAULT (id: ID; Var info: INFO; src: NODE)
+	Var
+		count : INTEGER;
+		itor : SHARER_LIST_ITOR;
+		j : NODE;
+	Begin
+		TRACE_HANDLER("Home_Excl", "RD_FAULT", id, src);
+		Send(GetOwner(info), PUT_DATA_REQ, id);
+		IncHomeRdMiss();
+		Suspend(L, SetState(info, Home_Excl_To_Idle{L}));
+		Thread_Resume(id);
+	End;
+
+	Message WR_FAULT (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_Excl", "WR_FAULT", id, src);
+		Send(GetOwner(info), PUT_DATA_REQ, id);
+		IncHomeWrMiss();
+		Suspend(L, SetState(info, Home_Excl_To_Idle{L}));
+		Thread_Resume(id);
+	End;
+
+	Message GET_RO_REQ (id: ID; Var info: INFO; src: NODE)
+	Var
+		itor : SHARER_LIST_ITOR;
+		j : NODE;
+	Begin
+		TRACE_HANDLER("Home_Excl", "GET_RO_REQ", id, src);
+		Send(GetOwner(info), PUT_DATA_REQ, id);
+		IncSharer(info, src);
+		Suspend(L, SetState(info, Home_Excl_To_Sh{L}));
+		-- SetState(info, Home_RS{});
+		j := JunkNode;
+		itor := JunkItor;
+		Init(itor, GetSharers(info), NumSharers(info));
+		While (Next(itor, j)) Do
+			SendData(j, GET_RO_RESP, id, TPPI_Blk_No_Tag_Change);
+		End;
+	End;
+
+	Message GET_RW_REQ (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_Excl", "GET_RW_REQ", id, src);
+		Send(GetOwner(info), PUT_DATA_REQ, id);
+		SetOwner(info, src);
+		Suspend(L, SetState(info, Home_Excl_To_Idle{L}));
+		SendData(GetOwner(info), GET_RW_RESP, id, TPPI_Blk_Invalidate);
+		SetState(info, Home_Excl{});
+	End;
+
+	Message WR_RO_FAULT (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_Excl", "WR_RO_REQ", id, src);
+		Send(GetOwner(info), PUT_DATA_REQ, id);
+		IncHomeWrRoMiss();
+		Suspend(L, SetState(info, Home_Excl_To_Idle{L}));
+		Thread_Resume(id);
+	End;
+
+	Message DEFAULT (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_Excl", Msg_To_Str(MessageTag), id, src);
+		Print("Invalid message %s to state Home_Excl", Msg_To_Str(MessageTag));
+	End;
+
+End;
+
+State Base_Stache.Home_RS_To_Idle{C:CONT}
+Begin
+	
+	Message PUT_NO_DATA_RESP (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_RS_To_Idle", "PUT_NO_DATA_RESP", id, src);
+		DelSharer(info, src);
+		If (NumSharers(info) == 0) Then
+			SetState(info, Home_Idle{});
+			AccChg(id, TPPI_Blk_Upgrade_RW);
+			Resume(C);
+		Endif;
+	End;
+
+	Message UPGRADE_REQ (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_RS_To_Idle", "UPGRADE_REQ", id, src);
+		TRACE_Q("Home_RS_To_Idle", "UPGRADE_REQ", id, src);
+		Enqueue(GET_RW_REQ, id, info, src);
+#ifndef BUG
+		DelSharer(info, src);
+#endif
+		If (NumSharers(info) == 0) Then
+			SetState(info, Home_Idle{});
+			AccChg(id, TPPI_Blk_Upgrade_RW);
+			Resume(C);
+		Endif;
+	End;
+
+	Message DEFAULT (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_RS_To_Idle", Msg_To_Str(MessageTag), id, src);
+		TRACE_Q("Home_RS_To_Idle", Msg_To_Str(MessageTag), id, src);
+		Enqueue(MessageTag, id, info, src);
+	End;
+
+End;
+
+State Base_Stache.Home_RS_To_RS_Sans{C: CONT; cont_src: NODE}
+Begin
+	
+	Message PUT_NO_DATA_RESP (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_RS_To_RS_Sans", "PUT_NO_DATA_RESP", id, src);
+		DelSharer(info, src);
+		If (SameNode(cont_src, src)) Then
+			Resume(C);
+		Endif;
+	End;
+
+	Message UPGRADE_REQ (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_RS_To_RS_Sans", "UPGRADE_REQ", id, src);
+		TRACE_Q("Home_RS_To_RS_Sans", "UPGRADE_REQ", id, src);
+		Enqueue(GET_RW_REQ, id, info, src);
+		DelSharer(info, src);
+		If (NumSharers(info) == 0) Then
+			SetState(info, Home_Idle{});
+			AccChg(id, TPPI_Blk_Upgrade_RW);
+		Endif;
+	End;
+
+	Message DEFAULT (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_RS_To_RS_Sans", Msg_To_Str(MessageTag), id, src);
+		TRACE_Q("Home_RS_To_RS_Sans", Msg_To_Str(MessageTag), id, src);
+		Enqueue(MessageTag, id, info, src);
+	End;
+
+End;
+
+State Base_Stache.Home_Excl_To_Idle{C:CONT}
+Begin
+	
+	Message PUT_DATA_RESP (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_Excl_To_Idle", "PUT_DATA_RESP", id, src);
+		RecvData(id, TPPI_Blk_Validate_RW, TPPI_Blk_No_Tag_Change);
+		SetState(info, Home_Idle{});
+		Resume(C);
+	End;
+
+	Message DEFAULT (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_Excl_To_Idle", Msg_To_Str(MessageTag), id, src);
+		TRACE_Q("Home_Excl_To_Idle", Msg_To_Str(MessageTag), id, src);
+		Enqueue(MessageTag, id, info, src);
+	End;
+
+End;
+
+State Base_Stache.Home_Excl_To_Sh{C:CONT}
+Begin
+	
+	Message PUT_DATA_RESP (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_Excl_To_Sh", "PUT_DATA_RESP", id, src);
+		RecvData(id, TPPI_Blk_Validate_RW, TPPI_Blk_Downgrade_RO);
+		-- SetState(info, Home_Idle{});
+		SetState(info, Home_RS{});
+		Resume(C);
+	End;
+
+	Message GET_RO_REQ (id: ID; Var info: INFO; src: NODE)
+	-- use the sharer list to maintain the list of wanna-sharers
+	Begin
+		TRACE_HANDLER("Home_Excl_To_Sh", "GET_RO_REQ", id, src);
+		IncSharer(info, src);
+	End;
+
+	Message DEFAULT (id: ID; Var info: INFO; src: NODE)
+	Begin
+		TRACE_HANDLER("Home_Excl_To_Sh", Msg_To_Str(MessageTag), id, src);
+		TRACE_Q("Home_Excl_To_Sh", Msg_To_Str(MessageTag), id, src);
+		Enqueue(MessageTag, id, info, src);
+	End;
+
+End;
+

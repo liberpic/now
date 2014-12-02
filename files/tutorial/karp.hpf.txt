@@ -1,0 +1,86 @@
+c     Parallelizing for HPF Lab
+c     Karp Example
+c     karpf.f
+c     DB 11/13/96
+c
+      program karp
+c     
+c     This simple program approximates pi by computing pi = integral
+c     from 0 to 1 of 4/(1+x*x)dx which is approximated by sum from k=1 to N
+c     of (4 / ((1+(k-1/2)**2))(1/N).  The only input data required is N.
+
+
+      implicit none
+      integer solicit, i, N, nworkers, j
+      real*8 sum(:), w, x, f
+      allocatable sum
+!hpf$ distribute sum(block)    ! cyclic is OK too. only 1 element per processor
+      f(x) = 4.0/(1.0+x*x)
+c     
+c     The startup routine returns each node's id and number of nodes
+      call startup (nworkers)
+      allocate (sum(nworkers))
+
+ 5    continue
+c     
+c     The solicit routine will get and propagate the value of N
+      N = solicit ()
+
+      if (N .le. 0) then
+         stop
+      endif
+
+      w = 1.0/N
+      sum = 0.0
+!hpf$ INDEPENDENT, NEW(i)
+      do j = 1, nworkers
+         do i = j, N, nworkers
+            sum(j) = sum(j) + f((i-0.5)*w)
+         enddo
+      enddo
+      sum = sum * w
+c     
+c     The collect routine will collect and print results
+      call collect (sum)
+
+      go to 5
+      end
+
+c     ------------------------------------------------------------------
+      subroutine startup (nworkers)
+      implicit none
+      integer nworkers
+c
+c     Each node learns how many nodes there are
+      nworkers = number_of_processors()
+c
+c The distinguished node does I/O
+      write (*,100) nworkers
+ 100  format ('There are ', i3, ' workers in all.')
+      return
+      end
+
+c     ------------------------------------------------------------------
+      integer function solicit ()
+      implicit none
+      integer N
+
+      print *,'Enter number of approximation intervals:(0 to exit)'
+      read *, N
+      solicit = N
+      end
+
+c     ------------------------------------------------------------------
+      subroutine collect (mysum)
+      implicit none
+      real*8 mysum(:), pi, err
+!hpf$ distribute mysum (BLOCK)
+      real*8 total
+      pi = 4.0*atan(1.0)
+
+      total = sum (mysum)
+      err = total - pi
+      write (*,300) total, err
+ 300  format ('sum =', f7.5, ', err =', e12.6)
+
+      end

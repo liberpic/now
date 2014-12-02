@@ -1,0 +1,18 @@
+
+You can retrieve an up-to-date copy of the Linpack Benchmark report in 
+postscript form by:
+
+1) use a web browser with the url http://www.netlib.org/liblist.html, 
+   click on "benchmark", click on "benchmark/performance.ps".
+
+2) anonymous ftp to netlib2.cs.utk.edu
+     cd benchmark
+     get performance.ps
+     quit
+
+3) sending email to netlib@netlib.org and in the message type:
+     send performance.ps from benchmark
+
+Hope this helps,
+Regards,
+Jack

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NOW - The Berkeley Network of Workstations Project</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">NOW</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="news.html">News</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li calss="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="case.html">Case</a></li>
+                <li><a href="recent.html">Recent NOW Papers</a></li>
+                <li><a href="paper.html">NOW Papers</a></li>
+                <li><a href="phd.html">NOW PhD's</a></li>
+                <li><a href="slides.html">NOW Slides</a></li>
+                <li><a href="data.html">Data</a></li>
+              </ul>
+            </li>
+            <li><a href="software.html">Software</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="people.html">People</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="retreats.html">Retreats</a></li>
+              </ul>
+            </li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.berkeley.edu/index.html/">UC Berkeley</a></li>
+                <li><a href="http://www.cs.berkeley.edu/">Berkeley CS</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="search.html">Search</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div style="background-color:#B1E5FF;">
+      <div class="container" style="padding-top:5em;">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="files/title.gif" width="800" height="159.2"/>
+            <p style="color:#5448C8; font-size:15px; margin-left:3.2em"><q>What can anyone give you greater than now" - William Stafford</q></p> 
+          </div>
+          <div class="col-lg-6">
+            <img src="files/logo.gif" width="376.875" height="200.625" style="margin-left:15em;" />
+
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+    <div style="background-color:#D0EFFF;">
+      <div class="container" style="padding-top:2em;">
+        <div class="row">
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-10" style="font-size:18px">
+            <h1>SLIC: An Extensibility System for Commodity Operating Systems</h1>
+            <hr>
+            <p>Modern commodity operating systems are large and complex systems developed over many years by large teams of programmers, containing many hundreds of thousands of lines of code. Consequently, it is extremely difficult to add significant new functionality to these systems. In response to this problem, a number of recent research projects have explored novel operating system architectures to support untrusted extensions; these include SPIN, VINO, Exokernel, Lipto, and Fluke. Unfortunately, the architectures employed by these projects required substantial implementation effort and are not generally available in commodity systems. In contrast, by leveraging the technique of interposition, our extension mechanism requires only trivial operating system changes to enable a large class of trusted extensions for existing commodity operating systems such as Solaris and Linux, while retaining full compatibility with existing application binaries. By interposing trusted extensions on existing kernel interfaces, our solution enables extensions which are protected from malicious applications, enforced upon non-cooperating applications, composable with extensions from other third-party sources, and significantly easier to develop than traditional kernel modifications. <br><br>
+            We have designed and implemented a prototype extension mechanism called Slic which utilizes interposition to efficiently insert trusted extension code into a commodity operating system kernel. We have used Slic to implement a number of useful operating system extensions: a patch to fix a security hole described in a CERT advisory, a simple encryption file system, and a restricted execution environment for arbitrary untrusted binaries. Performance measurements of the Slic prototype show that interposition on existing kernel interfaces can be accomplished efficiently. </p> <hr>
+            <h3>Publications</h3>
+            <ul>
+              <li><b>"SLIC: An Extensibility System for Commodity Operating Systems [DRAFT]"</b>, Douglas P. Ghormley, Steven H. Rodrigues, David Petrou, Thomas E. Anderson. To appear in the 1998 USENIX Technical Conference. <em>NOTE: This is an early draft, not the final version. Please check back after April 27th for the final copy.</em> <br>
+              Available as: <a href="files/project/slic_usenix.ps">Postscript</a>
+              </li>
+            </ul>
+
+          </div>  
+        </div>
+        <br><br><br><br><br><br><br>
+      </div>      
+    </div>
+    <!-- End of Centent Section -->
+
+    <div style="background-color:#2E8AE6;">
+      <div class="container" style="padding-top:0.6em;">
+        <p style="color:#ffffff">Note: The project was terminated on June 15, 1998</p>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/vendor/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fast Communication | NOW</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">NOW</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="news.html">News</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li calss="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="case.html">Case</a></li>
+                <li><a href="recent.html">Recent NOW Papers</a></li>
+                <li><a href="paper.html">NOW Papers</a></li>
+                <li><a href="phd.html">NOW PhD's</a></li>
+                <li><a href="slides.html">NOW Slides</a></li>
+                <li><a href="data.html">Data</a></li>
+              </ul>
+            </li>
+            <li><a href="software.html">Software</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="people.html">People</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="retreats.html">Retreats</a></li>
+              </ul>
+            </li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.berkeley.edu/index.html/">UC Berkeley</a></li>
+                <li><a href="http://www.cs.berkeley.edu/">Berkeley CS</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="search.html">Search</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div style="background-color:#B1E5FF;">
+      <div class="container" style="padding-top:5em;">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="files/title.gif" width="800" height="159.2"/>
+            <p style="color:#5448C8; font-size:15px; margin-left:3.2em"><q>What can anyone give you greater than now" - William Stafford</q></p> 
+          </div>
+          <div class="col-lg-6">
+            <img src="files/logo.gif" width="376.875" height="200.625" style="margin-left:15em;" />
+
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+    <div style="background-color:#D0EFFF;">
+      <div class="container" style="padding-top:2em;">
+        <div class="row">
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-10" style="font-size:18px">
+            <h1 align="center">Fast Communication</h1><hr>
+            <p>The development of high-speed networks such as ATM and Myrinet promised performance gains for network applications. In general, and especially for local-area traffic, this performance has not been realized (see [Keeton95] for a detailed explanation and performance measurements). Examination of these results shows that packet processing overhead is the primary culprit for poor performance - that is, the time spent perparing packets for transmission and receiving them off the network is absurdly high.<br><br>
+            The immediate problem, that of high processing overheads, has been licked by systems such as Fast Messages , U-Net, and our very own <a href="activemessage.html">Active Messages</a>. Unfortunately, all of these systems use new programming models - they deliver high performance for programs written to use them. If you have a legacy application, you're out of luck. (While U-Net has a version of TCP/IP running on it, you can't get it off their web page and I can't determine if they use a standard programming interface or not.) <br><br>
+            The nice thing about most network applications is that they are written to an interface, not a protocol or a network. This means that it is okay to change the underlying implementation or even the protocol, as long as things look the same to the programmer. Our Fast Communications work has exploited this feature. We have developed <b>Fast Sockets</b>, a user-level library which provides the Berkeley Sockets API but yields high-performance communication. It is built upon the Active Messages work done here at the University. <br><br>
+            We have recorded single-byte round-trip times of 81 microseconds using Fast Sockets on the Myrinet/SPARCstation 20 network here at Berkeley; preliminary results on the UltraSPARCS have single-byte round-trips of 54 microseconds. Realized bandwidth is currently about 12 MB/second on the SPARC20's and 18MB/s on the UltraSPARCS - this is due to a forced copy, which we are trying to eliminate. </p><hr>
+            <h2>Publications</h2>
+            <p>The Fast Sockets work has been the subject of my master's thesis, a poster at the Second NOW Workshop at ASPLOS VII, and an accepted paper in USENIX '97. <br><br>
+            Building a Better Byte Stream is a long (70-page) examination of how to build a fast byte stream and how Fast Sockets and Fast Streams were built. It is lacking a bit in its design evaluation of Active Message.<br><br>
+            <a href="files/project/usenix.ps">High-Performance Local-Area Communication With Fast Sockets</a> is our contribution to USENIX '97. It tackles the topic of reducing communications overhead while still providing a common API. While not as exhaustive as "Building A Better Byte Stream", it is much shorter.<br><br>
+            <b>Fast Sockets</b> for Fast Networks is the poster presented at the second NOW Workshop at ASPLOS VII. Click <a href="files/project/large-poster">here</a> for the full 3' by 3' poster, or, if you want something slightly more portable,, click <a href="files/project/small-poster">here</a> for the single-page version. </p> <hr>
+            <h2>People</h2>
+            <p>Perhaps this should read "Person," as only one body is working on this: <br>
+            <ul>
+              <li>Steven Rodrigues</li>
+            </ul>
+          </div>
+        </div>
+        <br><br><br><br><br><br><br>
+      </div>      
+    </div>
+    <!-- End of Centent Section -->
+
+    <div style="background-color:#2E8AE6;">
+      <div class="container" style="padding-top:0.6em;">
+        <p style="color:#ffffff">Note: The project was terminated on June 15, 1998</p>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/vendor/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

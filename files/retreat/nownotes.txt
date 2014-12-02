@@ -1,0 +1,372 @@
+Sun HPC areas -- Josh Simons
+     SMPs (HPC 10000) + SCI (4 port switch) + POSIX/Solaris
+       threads + MPI, HPF (compiles to F77), RTE (Run time
+       environment) /LSF + GlobalWorks & DevPro Tools + Prism
+       (debug, visualize)
+     RTE: || & serial jobs, interactive/batch, attribute-based
+       load balancing, software partitions, user/admin tools
+     Prism: || debugger with performance analysis and data
+       visualization; resource analysis: like quantify
+     Parallel IO --> scalable io (simple, strided, nested
+       strides, list based); programs for ls, cd, etc.
+     RAS: checkpoint, migration, fault tolerance, link balancing
+     Performance: hw, comm. software, co-sched, device striping,
+       tools, scalability improvements
+     Features: threads in prism, mpi2, GUI front ends, 64bits,
+       I18N, cluster admin, improved batch
+VIA architectures
+     ? Commercial U-Net
+SAN Stuff  -- Bob Selinger
+     1. SW interface (messages v. shared memory; push/pull; error
+       semantics)
+     2. Middleware (Implementation, e.g. avoiding copies,
+       protocol stacks, kernel mode)
+     3. Physical (standard v. proprietary; embedded semantics
+       (error handling, flow control); overheads (packet
+       headers, acks, media access control ==> inherent &
+       implementation efficiency)
+     Recommend trying to go across all three levels. Survey level
+       3 first. Thinks that different levels are coupled.
+     Do more evaluations because many ideas come out, but
+       comparisons are weak.
+NOW and THENN -- Jim Gray
+     NOW: 32 sparcs + 105 ultras + 4x8 Enterprise + 35 PPro =>
+       tools, apps, middleware (network, files, plumbing),
+       ideas, prototype, high-tech + high-touch (too manual)
+     THENN (THE New NOW): Need ~40 disks/machine to balance. Huge
+     "use Solaris, or even Linux"
+     Why use NT:  Nice tools (performance, programming, apps); ?
+       cost of ownership; multi-culturalism (problem with going
+       NT?); DCOM: distributed OO + transactions + web (Symbio a
+       good example); clusters (failover now, scalability
+       later); management tools; layering (installable file
+       system SDK, driver SDK, SAN/VIA connection)
+     Microsoft promises: Liaison from NT developers(DCOM, Hydra);
+       meetings between berkeley, MS researchers; money for
+       staff & students; sysadmin training; mind melds (USENIX
+       NT), PDC; source license
+     Remote access to NT nodes: (rcmd, rconsole, telnet,
+       Xwindows, PCanywhere, Citrix, NT5); service manager is
+       used to get servers running on the remote nodes
+     Multi-User environment: being added in NT5
+     Remote install, boot, display, management: yes; NT5 helps,
+       ZAW helps, you can help; Jim will send article on remote
+       install, autoboot through serial link, control via
+       objects, security management
+     Interoperability with UNIX/Mac: some
+     Source access: Think so
+     NT hooks: what do you need? Bill Bolosky says that stackable
+       schedulers being built
+     Remote logon, development: yes, but wrong, symbio for jobs,
+       imap/pope for mail, distrib file sys to serve files
+     Low latency network: PCI-myrinet or servernet or ethernet +
+       your drivers
+     Exist problems with NT NOW; no quotas; solutions to
+       problems; no show stoppers; polish solaris NOW for users;
+       should be an  NT NOW; let customers vote with their
+       demand
+     Research Topics:
+     -    17 departments will have MANY interesting apps
+     -    NOW concept good: peer-to-peer + harvest desktop +
+       distributed computation
+     -    distributed objects make this easier
+     -    layered OS makes this easier
+     -    still hard to scale up
+     -    automatic everything: placing data, computation,
+       getting idle resources, managing storage hierarchy
+     -    hiding parallelism
+     -    manageability
+     david chapell inside active x  microsoft press
+Greg Papadopoulos: NT vs. Solaris
+     Who cares?
+     NT 4.0  Solaris 2.1
+     Just go with Solaris x86, get on with life
+     Killer apps all network-based: services, content, commerce
+     NT v. Solaris decision is marketing
+     Sun has cooler names (Java, Swing) vs. MS (DCOM, Windows CE
+       - wince)
+     MS has much larger market capitalization
+     Market consolidation (look at ISV's): Winners: NT, x86,
+       Solaris, Sparc, Java; Losers: novell, sco, irix, aix,
+       mips, powerpc, alpha; Coasters: HPUX, S/390, MVS
+     Where will the data be? NT > 90% seats (volume); UNIX > 80%
+       data (value)
+     Year 2000 data estimates: 250 PB unix, 50 PB NT
+     Data Growth (5-12 months) >> moore's law (18 months)
+Opportunities -- Millenium
+     play with clumps/NT; think about vast non-desktop resources;
+       restart on fast comm + parallel comp work
+     webos + condor + globus + legion => real; 1Mil systems
+NT v. Solaris v. Linux -- Bill Saphir
+     Why Linux? (no marketing hype, no TPC benchmarks, no
+       lawyers)
+     People will use what you wrote, find bugs (and fix them),
+       You can use their stuff
+     Linux development cycle very fast (hack value)
+     Research: little benefit to re do it on new OS, dangerous
+       lock on hardware, non-portable
+Linux -- Rich
+     Metcalf's Law (value of network = users^2)
+     TCP/IP, BSD sockets "won"; implications for cluster
+       research:
+     Free OS development based on performance comparison
+     New issues: composability, filtering/accounting, interop
+     Run unmodified binaries over a fast network, get to outside
+       world; apply principles to get things fast
+Why JavaOS -- Eric
+     What OS will change the CS research agenda?
+     (choose most appropriate answer)
+     a)   Linux (wicked-fast development)
+     b)   Solaris (stable, much experience)
+     c)   Windows NT (tons o' cool apps)
+
+     d)   JavaOS
+     
+     Truths in OS (Things that I learned as a graduate student,
+     and how they'd change)
+     old                            new
+     kernel expensive               kernel calls = procedure call
+     inter-process communication (same node) expensive =
+     procedure call
+     kernel threads expensive       = user-level threads
+     kernel interposition hard      like emacs hooks, Chad's
+     extensibility
+     migration hard                 (ignoring fault tolerance)
+                                      trivial w/ Remote Objects
+     protected <blah> must check arguments   return opaque object
+     (checks free)
+     kernels copy a lot             return pointers
+     kernels bzero a lot            not any more
+     remote different from local    remote objects \approx local
+     objects
+                                      (but watch Spring concerns)
+     heterogeneity is a problem     can't see heterogeneity
+Apps of the future -- Kim
+     Information Retrieval: text document, image retrieval, data
+       mining & decision support, compression/decompression, web
+       searches
+     UI and multimedia: Speech recognition, vision, handwriting
+       recognition, 3D graphics for entertainment, medicine
+     Others: electronic commerce
+Scalable Graphcs -- Paul Pierce
+     Working with stanford, princeton on scalable 3d pipeline
+     Got parallel on one node working
+     Using stanford custom framebuffer (lightning) that each
+       display part of the display
+     Looking at bandwidths of TB/s through geometry engine, GE ->
+       rasterizer; down to .4GB/s at display
+     World is going to network attached I/O
+Getting Greg more Sleep -- Greg Papadopoulos
+     Big Needs:
+     1)   Manage complexity: desktop & applications. Distributed
+       applications trying to deliver results.
+     2)   Control total cost of ownership ($12K/DT/YR)
+     3)   Business model deltas (disintermediation, re-
+       intermediation) amazom.com model. They manage their
+       production chains through book producers to keep their
+       inventory very small. Look at FedEx v. UPS wars.  Look back
+       at WalMart.
+     4)   Global scaling: State & international boundaries are
+       going away.
+     Scalability is adding resources without adding complexity.
+     Example: high overhead, high latency, low BW communications
+     leads to:
+     1)   exposes architectural artifacts to application,
+       administrator
+     2)   this adds significant complexity
+     3)   not scalable
+     Big application trend:
+     client/server => client/server/server/server => user/network
+     service
+     mobile device to proxy to gateway to old setup (tpmon, dbs)
+     To achieve global scaling, need to:
+     1)   Partition application across tiers
+     2)   name the next layer
+     3)   agree on datatypes & methods
+     4)   accommodate constant change in the layers
+     Objects w./ containers (dcom/activex, corba, javabeans) seem
+     to be a solution
+     Example NT desktop (excel, word, ppt) connected via VB
+       objects. Then VB objects go into viper via DCOM. Exist
+       tools to support visual partitioning.  Java & JavaBeans
+       allow the boundaries to be completely dynamic
+     Long term is equivalent of global telecom (a $1T/Yr)
+     Network based services (directory, web, messaging,
+       authentication, commerce, etc.)  Clients will become
+       anything with a net connection and a CPU.
+     Q: When you buy a phone or a fax are you concerned with the
+       O/S of the phone company switch?
+     What keeps Greg awake:
+     Predictability
+     1)   availability (of a network service/application) 24 x 7
+       x 52
+     2)   responsiveness
+     3)   reasonable reaction to unexpected events: loads,
+       failures/catastrophes
+     Global scaling of network services & applications
+     1)   Design the national network for china
+     Managing large aggregates of services
+     1)   Independence!
+     2)   Single point of management
+     3)   Storage as a first-class entity
+     Divergence of demand vs. technology
+     1)   200%/yr growth in demand (storage, data rates) vs.
+       65%/yr of technology
+     2)   Phone company wants to look at call patterns in real-
+       time, but can't do that it's too large, so it needs to be
+       distributed, but can't figure out how to manage and organize
+       it.
+     
+
+
+**Industrial Feedback**
+
+Bob Selinger; Adaptec; selinger@corp.adaptec.com
+     Getting better, conference quality.
+     Alan, Brent: add scatter/gather; go next to lower layer
+     Jeanna: worrying about graceful degradation is important
+Paul Pierce; Intel; prp@ichips.intel.com
+     Ditto a lot.
+     Whine about xFS: said early on "lots of bells and whistles,
+       will be really hard to get it to work"  But was very
+       excited about it. Disappointed to see that xFS has fallen
+       off of the project.  Peer orientation has fallen off of
+       the project.
+     Note that "original" goals have changed.
+     Suggestion: Take a look at where things were left behind,
+       and figure out why the things were lost.
+     Original view was AM + glunix + xFS; now we've lost one of
+       the pieces, and are we really missing it?
+     Not asking why the piece didn't work out, look at original
+       goals, look at it now.  Given substitution of pieces, how
+       does it all fit together.  Which things were really
+       needed?  Desktop? What did it mean?
+     This project right on track
+Joe Barrera; Microsoft; joebar@microsoft.com
+     Very good presentations, lots of useful information; better
+       than some refereed conferences
+     Mention related work in the presentations
+     Critical to get out of 70's cryptic messages, go for ease of
+       use.
+     Focus more on user interface.  User interface is the
+       technology.  Has impact on the bytes that get transferred
+       between places.  Claim is error messages at the form of
+       structured objects allows for better interfaces.
+     Not enough on fault tolerance.  Don't want to restart
+       cluster or application on a failure.  Would like to make
+       it easier to write fault tolerant applications.
+       Automatic restart on failure? Make it easier for users to
+       write apps that continue over failures.
+     Great network performance is really good. Really great if
+       you looked at the rest of the RPC picture, e.g. typed
+       messages.  Stub generator targeted at AM?  No good reason
+       that this becomes so slow. Should be better than just
+       writing bits to network.
+     Design non high-touch systems.
+     Look at viper & corba for writing parallel applications,
+       rather than scientific programs. Leads to faster
+       prototyping.
+     If you want impact, commercial world is using these tools.
+       How can you let people with experience on these machines
+       write for clusters?
+Bill Bolosky; Microsoft; bolosky@microsoft.com
+     Getting toward wrap-up; think about what the products are
+       and how it's going
+     1)   knowledge -- papers, etc. doing good; 2) technology --
+       AM going well, glunix maybe, xFS dead; 3) Ph.D.'s - many
+       people looking much more ready
+     Microsoft is hiring
+     Main criticism, same as always: need apps -- Millenium will
+     be a big benefit for this, take advantage of this.
+     Dealing with software engineers: difference from
+       researchers: not brainpower 1) scope of focus 2) wider
+       breadth 3) mode of thinking -- measurable quantifiable
+       things
+     Doing very well on 3) Drew's measurements, Randy's
+       pipelining stuff
+     Fine arts application looks good; Andrea's scheduling good
+       technology
+     Presentation skills much better
+     Disappointed that xFS died
+     Glunix experience indicates that it's research rather than
+       production quality software
+     ToDo: Get individual projects focused & graduate. Look back
+       at the goals and evaluate how we did to learn how
+       projects evolve, and how methods works.
+Jim Gray; Microsoft; gray@microsoft.com
+     Congratulations on making it work.
+     Applications finally exist.
+     Angry he isn't the world's fastest sorter.  NAS,
+       cryptography stuff is good.
+     Projects produce papers, technology and people. Ignore
+       discussion of millenium.  Go and produce the people. Make
+       sure that the thesis build and measure balanced systems.
+     Think about auto everything for systems.  Don't worry about
+       objects, dcom, linux, corba, get the artifact you have to
+       really work, measure it and write it up.
+Bill Saphir; NERSC/LBNL; wcs@nersc.gov
+     Millenium has two parts (everyone else with machines up all
+       the time, trying to get results), (computer science
+       research) Concern is that grad students will get called;
+       and that production side lets things work.
+     Want to use production cluster to learn how things work in
+       the real world (otherwise, just let someone else manage
+       it)
+     Presentations good, quality comparable to real conference.
+     WebOS seems more connected to NOW than before.
+     Focus on fault tolerance, machines running themselves
+     good assesment of glunix
+     Improvement needed: assesment of the rest of NOW
+     Future direction: Liked JavaOS talk, stuck in 1970's mode of
+       computer use.  Need to figure out where things are going.
+     Exist desktop environment: both commercial and free GUI
+       environments.
+Greg Papadopoulos; Sun; gregp@eng.sun.com
+     +focus, +execution, +results, +influence, -applications
+     Concerns about focus have gone away.  Tremendously well
+       focused. Execution fantastic.
+     Results: measurements very useful.
+     Influence: lightweight communications, raising conciousness
+       that this can really work.
+     Shame that most interesting application is now a company.
+     Big impact in commercial & network computing space.
+     Talks really good, were over-prepared, now just right.
+Joshua Simons; Sun; joshua.simons@east.sun.com
+     Lilith fair for the left brain? 10 hours of 11 performers.
+       Very good in both places.
+     Proposed action item: "Lessons Learned" Analysis.  Clusters
+       are here to stay, concerned that NOW is winding down.
+       Very important area, important beyond thesis, Ph.D's.
+       Both collectively and individually think about
+       experiences over course of the project to produce a wrap
+       up document to make a "lessons learned" analysis.
+       Publish this somewhere, journal might not work, but web
+       would
+     Action item for JS: Technology transfer.
+     Lilith fair is an all female singing performance of popular
+       musicians.
+Marvin Theimer; Xerox; theimer@parc.xerox.com
+     Really liked talks, better than most talks.  Problem: lines
+       on the graphs almost impossible to read, use of color
+       abysmal.
+     Next year: measure the system in use and anger. 267 students
+       very good. (benchmarks boring).  Want usage statistics
+       from live system.  Papers on this very valuable in
+       industry.
+     Hypothesis on millenium use: not scientific computation.
+       Mostly mundane use (single process excel).  Sandia used
+       Cray to run text editor. Conflict between applications
+       very interesting (|| doom v. payroll)
+     Fault tolerance absolutely necessary; people will kill you
+       if restart is the normal mode of operation.
+Pat Bozeman; NERSC/LBL; pbozeman@lbl.gov
+     Talks really good, intrigued by number of them.
+     Moving network processing into NI good, reduces overhead on
+       host. Is this the right approach on an SMP?  Processors
+       there are much more powerful than the NI ones.  Partially
+       give up processor for network access work.
+     Scientific comp on virtual networks.  What is the use of
+       caching NIC stuff on the host.  Will want low overhead
+       for host and nic.  How much time is the cache management
+       when you aren't swapping enpoints.  Similar to VM, don't
+       ever want to page when running a parallel program.

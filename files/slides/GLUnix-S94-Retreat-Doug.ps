@@ -1,0 +1,3643 @@
+%!PS-Adobe-3.0
+%%BoundingBox: 0 0 612 792
+%%CreationDate: Tue May 31 02:32:34 1994
+%%Title: Retreat_Sum94.ppres
+%%For: ghorm (Douglas Ghormley)
+%%DocumentNeededResources: font Times-Bold Times-Roman Symbol 
+%%Creator: Perspecta Presents
+%%Pages: (atend)
+%%PageOrder: Ascend
+%%EndComments
+%%BeginProlog
+% Start of header.ps -- prolog for postscript output
+% Copyright (c) 1992, Perspecta Software, Inc.
+% All rights reserved.
+% $Header: /home/spam/users/cstevens/spotlight/patch/RCS/header.ps,v 1.35 1993/01/25 22:16:53 cstevens Exp $
+save /SpotJob exch def
+60 dict begin		% 44 entries plus space for encoding vectors.
+
+% Be a good EPS file and declare all the variables that will be used.
+
+/Matrix matrix def	% Utility matrix
+/CL 0 def		% Color level (0 = BW, 1 = Grey, 2 = Color)
+/FStep .5 def		% Feathering step.
+/SY 0 def		% Saved Y pos for showing text.
+
+/t true def		% used when filling with stippling pattern.
+/f false def
+
+/x 0 def		% The variable x is used as a utility variable to hold
+			% temporary data in procedures.
+/w 0 def		% The width & height of stippled region.
+/h 0 def
+/byteWidth 0 def	% How wide image is in bytes.
+/rowsLeft 0 def		% How many rows left to display in stipple.
+/str 0 def		% A temporary string used when filling stipple.
+/stringLimit 65535 def	% Size of largest string to allocate when stippling.
+
+/dict_countppres 0 def	% Used when including EPS files.
+/op_countppres 0 def
+
+
+% Set the drawing color depending on the color level.
+% If the rgb color is actually a shade of gray, use "setgray"
+% instead of "setrgbcolor" because it gives better output on
+% some color printers.
+
+/Color {		% r g b --
+  setrgbcolor
+  CL 2 lt {
+    currentgray
+    CL 0 eq {
+      .5 lt {0} {1} ifelse
+    } if
+    setgray
+  } {
+    currentrgbcolor 2 index eq 3 1 roll eq and {
+      currentgray setgray
+    } if
+  } ifelse
+} bind def
+
+/arct where {pop} {/arct {arcto pop pop pop pop} bind def} ifelse
+
+% Make a rectangular path.
+
+/Rect {			% width height x y --
+  moveto 1 index 0 rlineto 0 exch rlineto neg 0 rlineto closepath
+} bind def
+
+/RRect {		% x1 y1 x2 y2 r --
+  0 begin
+  /r exch def /y2 exch def /x2 exch def /y1 exch def /x1 exch def
+  x1 r add y1 moveto
+  x2 y1 x2 y2 r arct
+  x2 y2 x1 y2 r arct
+  x1 y2 x1 y1 r arct
+  x1 y1 x2 y1 r arct
+  closepath
+  end
+} dup 0 6 dict put def
+
+% Make a path consisting of an arc segment.
+
+/Arc {			% startangle endangle rx ry cx cy --
+  Matrix currentmatrix pop
+  translate
+  scale
+  0 0 1 5 3 roll arcn
+  Matrix setmatrix
+} bind def
+
+
+% Make a path consisting of a pie slice.
+
+/Pie {			% startangle endangle rx ry cx cy --
+  Matrix currentmatrix pop
+  translate
+  scale
+  0 0 moveto 0 0 1 5 3 roll arcn closepath
+  Matrix setmatrix
+} bind def
+
+
+% Make a path consisting of a sequence of line segments.
+
+% Continue a line.
+/LineRest {		% mark x1 y1 [x2 y2 ...] --
+  counttomark -2 2 {2 roll} for
+  counttomark 2 div cvi {lineto} repeat
+  pop
+} bind def
+
+% Begin a line.
+/Line {			% mark x0 y0 x1 y1 [x2 y2 ...] --
+  counttomark dup 2 sub roll moveto
+  LineRest
+} bind def
+
+
+% Make a path consisting of a spline curve.
+
+% Continue a spline curve.
+/SplineRest {  	% mark x1 y1 x2 y2 x3 y3 [x4 y4 x5 y5 x6 y6 ...] --
+  counttomark -6 6 {6 roll} for
+  counttomark 6 div cvi {curveto} repeat
+  pop
+} bind def
+
+% Begin a spline curve.
+/Spline {	% mark x0 y0 x1 y1 x2 y2 x3 y3 [x4 y4 x5 y5 x6 y6 ...] --
+  counttomark dup 2 sub roll moveto
+  SplineRest
+} bind def
+
+
+% Fill an existing rectangular path with a blended fill.
+
+/Feather {		% r1 g1 b1 r2 g2 b2 angle x y --
+  gsave
+    clip
+    translate
+    rotate
+    3 2 roll 5 index sub
+    3 2 roll 4 index sub
+    3 2 roll 3 index sub
+    /x CL def
+    CL 0 eq {/CL 1 def} if
+
+    pathbbox 4 2 roll pop pop
+
+    exch FStep div floor FStep mul dup 1 le {pop 1} if exch
+
+    newpath
+
+    0 FStep 3 index {
+      FStep 2 mul 2 index 0 0 Rect
+      2 index div
+      dup 6 index mul 9 index add exch
+      dup 6 index mul 9 index add exch
+      5 index mul 8 index add Color fill
+      FStep 0 translate
+    } for
+    
+    8 {pop} repeat
+    /CL x def
+  grestore
+  newpath
+} bind def
+
+/min {2 copy gt {exch} if pop} def
+/max {2 copy lt {exch} if pop} def
+
+
+% Helper function for Pattern
+
+/patternproc {		% pattern -- pattern string
+  byteWidth rowsLeft mul stringLimit 1 sub min
+  byteWidth idiv 8 idiv 8 mul 8 max
+
+  /rowsLeft rowsLeft 2 index sub def
+  /str byteWidth 2 index mul 1 add string def
+  0 1 3 2 roll 1 sub {
+    dup 8 mod 2 index exch get exch
+    byteWidth mul 1 1 index byteWidth add 1 sub {
+      str exch 2 index put
+    } for
+    pop
+  } for
+  pop
+  str
+} bind def
+
+% Return the size in points to use for one side of a square bitmap used in
+% tiling the plane.  The desired effect is that each "bitmap pixel", when
+% printed, occupies an integer number of "printer pixels", so that Moire
+% and other interference patterns are avoided.
+
+/PatternSide {		% -- side
+  72 0 Matrix currentmatrix dtransform
+  dup mul exch dup mul add sqrt 72 div dup round dup 0 eq {pop 1} if
+  exch div 
+} bind def
+
+
+% Either fill the interior or stroke the border of a the current path with
+% a colored pattern.  The path and color are already established by the
+% caller
+
+/Pattern {		% string filled? --
+  % When stroking a stippled dashed line, it may die, so in that
+  % case stroke the line stippled without the dashes.
+
+  {
+    save eoclip
+  } {
+    {save strokepath} stopped {restore save [] 0 setdash strokepath} if
+    clip
+  } ifelse
+
+  PatternSide dup scale
+  pathbbox
+  newpath
+
+  8 div dup 0 gt {ceiling} if cvi 8 mul 4 1 roll
+  8 div dup 0 gt {ceiling} if cvi 8 mul 4 1 roll
+  8 div cvi 8 mul dup 0 lt {8 sub} if 4 1 roll
+  8 div cvi 8 mul dup 0 lt {8 sub} if 4 1 roll
+
+  2 index sub ceiling cvi /h exch def
+  2 index sub ceiling cvi /w exch def
+
+  /byteWidth w 8 div ceiling cvi def
+  /rowsLeft h def
+
+  w 0 gt h 0 gt and {
+    translate w h neg scale
+    w h true [w 0 0 h 0 h] {1 index patternproc} imagemask
+  } {
+    pop pop
+  } ifelse
+
+  restore
+  pop
+
+  newpath
+} bind def
+
+% Ensure that a bbox specifying the slide's area will fit inside the
+% printable region of the printer.
+
+/Fits {		% x1 y1 x2 y2 --
+  0 begin
+  /y2 exch def
+  /x2 exch def
+  /y1 exch def
+  /x1 exch def
+  clippath pathbbox newpath
+  x1 4 index lt x2 3 index gt or {
+    3 index 0 translate
+    true
+  } {false} ifelse
+  y1 4 index lt y2 3 index gt or {
+    0 4 index translate
+    true
+  } {false} ifelse
+  /dx x2 x1 sub def  
+  /dy y2 y1 sub def  
+  3 index 6 index sub /dpx exch def 
+  2 index 5 index sub /dpy exch def 
+  dx dpx gt dy dpy gt or {
+    dx dpx sub dy dpy sub gt {dpx dx div} {dpy dy div} ifelse dup scale
+  } if
+  {0 y1 neg translate} if
+  {x1 neg 0 translate} if
+  4 {pop} repeat
+  end
+} dup 0 9 dict put def 
+
+
+% The following routines are used to print text items
+
+% Find font.
+
+/F {		% pointsize fontname
+  findfont exch scalefont setfont
+} bind def  
+
+
+% Show a string in the current font at the specified coordinates.
+
+/S {		% string x y
+  neg dup /SY exch def moveto show
+} bind def
+
+
+% Show a string in the current font at the specified x location, and at
+% the same y location as the most recently displayed string.
+
+/R {		% string x
+  SY moveto show
+} bind def
+
+/Notice {
+  0 setgray 10 /Helvetica F
+  translate 1 -1 scale
+  (Call Perspecta Software at 510-649-4900 to get licenses.) 0 0 S
+} bind def
+    
+/ReencodeFont {	% new-name vector source-name --
+  findfont
+  dup length dict begin
+    {1 index /FID ne {def} {pop pop} ifelse} forall
+    /Encoding exch def
+    currentdict
+  end
+  definefont pop
+} bind def
+
+/CopyFont {	% new-name source-name --
+  findfont
+  dup length dict begin
+    {1 index /FID ne {def} {pop pop} ifelse} forall
+    currentdict
+  end
+  definefont pop
+} bind def
+
+% The following routines are used to include ecapsulated postscript files.
+
+% Save state before inserting an encapsulated postscript file.
+
+/BeginEPSFppres {		% -- save
+  save
+  /dict_countppres countdictstack def
+  /op_countppres count 1 sub def
+  userdict begin
+  /showpage {} def
+  0 setgray 0 setlinecap 1 setlinewidth 0 setlinejoin
+  10 setmiterlimit [] 0 setdash newpath
+  /languagelevel where {
+    pop languagelevel 1 ne {
+      false setstrokeadjust false setoverprint
+    } if
+  } if
+} bind def
+
+
+% Restore state after inserting an encapsulated postscript file.
+
+/EndEPSFppres {		% save --
+  count op_countppres sub {pop} repeat
+  countdictstack dict_countppres sub {end} repeat
+  restore
+} bind def
+
+
+% The following routines are convenience routines for drawing items.
+
+/W /setlinewidth load def
+/D {0 setdash} bind def
+/K /stroke load def
+/L /eofill load def
+/C /closepath load def
+/CL 2 def
+%%EndProlog
+%%BeginSetup
+%%IncludeResource: font Times-Bold Times-Roman Symbol 
+/Enc-iso8859 [ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /space /exclam /quotedbl /numbersign /dollar
+     /percent /ampersand /quoteright /parenleft
+     /parenright /asterisk /plus /comma /hyphen
+     /period /slash /zero /one /two /three /four
+     /five /six /seven /eight /nine /colon
+     /semicolon /less /equal /greater /question /at
+     /A /B /C /D /E /F /G /H /I /J /K /L /M /N /O
+     /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft
+     /backslash /bracketright /asciicircum
+     /underscore /quoteleft /a /b /c /d /e /f /g /h
+     /i /j /k /l /m /n /o /p /q /r /s /t /u /v /w
+     /x /y /z /braceleft /bar /braceright
+     /asciitilde /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /dotlessi
+     /grave /acute /circumflex /tilde /macron
+     /breve /dotaccent /dieresis /.notdef /ring
+     /cedilla /.notdef /hungarumlaut /ogonek /caron
+     /space /exclamdown /cent /sterling /currency
+     /yen /brokenbar /section /dieresis /copyright
+     /ordfeminine /guillemotleft /logicalnot
+     /hyphen /registered /macron /degree /plusminus
+     /twosuperior /threesuperior /acute /mu
+     /paragraph /periodcentered /cedilla
+     /onesuperior /ordmasculine /guillemotright
+     /onequarter /onehalf /threequarters
+     /questiondown /Agrave /Aacute /Acircumflex
+     /Atilde /Adieresis /Aring /AE /Ccedilla
+     /Egrave /Eacute /Ecircumflex /Edieresis
+     /Igrave /Iacute /Icircumflex /Idieresis /Eth
+     /Ntilde /Ograve /Oacute /Ocircumflex /Otilde
+     /Odieresis /multiply /Oslash /Ugrave /Uacute
+     /Ucircumflex /Udieresis /Yacute /Thorn
+     /germandbls /agrave /aacute /acircumflex
+     /atilde /adieresis /aring /ae /ccedilla
+     /egrave /eacute /ecircumflex /edieresis
+     /igrave /iacute /icircumflex /idieresis /eth
+     /ntilde /ograve /oacute /ocircumflex /otilde
+     /odieresis /divide /oslash /ugrave /uacute
+     /ucircumflex /udieresis /yacute /thorn
+     /ydieresis] def
+/pTimes-Bold Enc-iso8859 /Times-Bold ReencodeFont
+/pTimes-Roman Enc-iso8859 /Times-Roman ReencodeFont
+/Enc-adobe [ /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /space /exclam /universal /numbersign
+     /existential /percent /ampersand /suchthat
+     /parenleft /parenright /asteriskmath /plus
+     /comma /minus /period /slash /zero /one /two
+     /three /four /five /six /seven /eight /nine
+     /colon /semicolon /less /equal /greater
+     /question /congruent /Alpha /Beta /Chi /Delta
+     /Epsilon /Phi /Gamma /Eta /Iota /theta1 /Kappa
+     /Lambda /Mu /Nu /Omicron /Pi /Theta /Rho
+     /Sigma /Tau /Upsilon /sigma1 /Omega /Xi /Psi
+     /Zeta /bracketleft /therefore /bracketright
+     /perpendicular /underscore /radicalex /alpha
+     /beta /chi /delta /epsilon /phi /gamma /eta
+     /iota /phi1 /kappa /lambda /mu /nu /omicron
+     /pi /theta /rho /sigma /tau /upsilon /omega1
+     /omega /xi /psi /zeta /braceleft /bar
+     /braceright /similar /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /.notdef /.notdef /.notdef /.notdef
+     /.notdef /space /Upsilon1 /minute /lessequal
+     /fraction /infinity /florin /club /diamond
+     /heart /spade /arrowboth /arrowleft /arrowup
+     /arrowright /arrowdown /degree /plusminus
+     /second /greaterequal /multiply /proportional
+     /partialdiff /bullet /divide /notequal
+     /equivalence /approxequal /ellipsis
+     /arrowvertex /arrowhorizex /carriagereturn
+     /aleph /Ifraktur /Rfraktur /weierstrass
+     /circlemultiply /circleplus /emptyset
+     /intersection /union /propersuperset
+     /reflexsuperset /notsubset /propersubset
+     /reflexsubset /element /notelement /angle
+     /gradient /registerserif /copyrightserif
+     /trademarkserif /product /radical /dotmath
+     /logicalnot /logicaland /logicalor
+     /arrowdblboth /arrowdblleft /arrowdblup
+     /arrowdblright /arrowdbldown /lozenge
+     /angleleft /registersans /copyrightsans
+     /trademarksans /summation /parenlefttp
+     /parenleftex /parenleftbt /bracketlefttp
+     /bracketleftex /bracketleftbt /bracelefttp
+     /braceleftmid /braceleftbt /braceex /.notdef
+     /angleright /integral /integraltp /integralex
+     /integralbt /parenrighttp /parenrightex
+     /parenrightbt /bracketrighttp /bracketrightex
+     /bracketrightbt /bracerighttp /bracerightmid
+     /bracerightbt /.notdef] def
+/pSymbol Enc-adobe /Symbol ReencodeFont
+%%EndSetup
+%%Page: slide_1 1
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (1) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  504 54 153 414 Rect
+  0 1 1 1 1 1 90 657 414 Feather
+  504 54 153 414 Rect 0 0 0 Color 1 W K
+  205 59 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (GLUnix) 83.242 35.74 S
+   (Design) 218.278 R
+  1 -1 scale -205 -59 translate newpath
+  54 54 153 486 Rect
+  1 1 1 0 1 1 90 207 486 Feather
+  54 54 153 486 Rect 0 0 0 Color 1 W K
+  [
+     180 468 180 486 Line 0 0 0 Color 0.5 W K
+  [
+     270 468 270 486 Line 0 0 0 Color 0.5 W K
+  [
+     360 468 360 486 Line 0 0 0 Color 0.5 W K
+  [
+     450 468 450 486 Line 0 0 0 Color 0.5 W K
+  [
+     540 468 540 486 Line 0 0 0 Color 0.5 W K
+  [
+     630 468 630 486 Line 0 0 0 Color 0.5 W K
+  297 414 translate 1 -1 scale
+   1 0 0 Color 36 /pTimes-Bold F
+   (GLUnix) 44.244 35.74 S
+  1 -1 scale -297 -414 translate newpath
+  252 630 translate 1 -1 scale
+   0 1 0 Color 12 /pTimes-Roman F
+   (Today's) 54.906 22.504 S
+   (Solution) 97.23 R
+   (for) 140.91 R
+   (Tomorrow's) 157.902 R
+   (Needs) 220.89 R
+  1 -1 scale -252 -630 translate newpath
+  54 54 243 486 Rect
+  1 1 1 0 1 1 90 297 486 Feather
+  54 54 243 486 Rect 0 0 0 Color 1 W K
+  54 54 333 486 Rect
+  1 1 1 0 1 1 90 387 486 Feather
+  54 54 333 486 Rect 0 0 0 Color 1 W K
+  54 54 423 486 Rect
+  1 1 1 0 1 1 90 477 486 Feather
+  54 54 423 486 Rect 0 0 0 Color 1 W K
+  54 54 513 486 Rect
+  1 1 1 0 1 1 90 567 486 Feather
+  54 54 513 486 Rect 0 0 0 Color 1 W K
+  54 54 603 486 Rect
+  1 1 1 0 1 1 90 657 486 Feather
+  54 54 603 486 Rect 0 0 0 Color 1 W K
+  135 162 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Doug) 65.904 24.16 S
+   (Ghormley) 126.576 R
+   0 0 0 Color 24 /pTimes-Bold F
+   (Steve) 64.992 53.464 S
+   (Rodrigues) 125.64 R
+   0 0 0 Color 24 /pTimes-Bold F
+   (Keith) 83.844 82.768 S
+   (Vetter) 147.18 R
+  1 -1 scale -135 -162 translate newpath
+  99 315 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (The) 100.32 24.16 S
+   (University) 146.328 R
+   (of) 258.984 R
+   (California,) 284.976 R
+   (Berkeley) 402.312 R
+   0 0 0 Color 24 /pTimes-Bold F
+   (June) 233.22 53.464 S
+   (2,) 288.564 R
+   (1994) 312.564 R
+  1 -1 scale -99 -315 translate newpath
+  378 162 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Amin) 78.564 24.16 S
+   (Vahdat) 141.9 R
+   0 0 0 Color 24 /pTimes-Bold F
+   (Kristin) 71.148 53.464 S
+   (Wright) 150.492 R
+   0 0 0 Color 24 /pTimes-Bold F
+   (Tom) 71.136 82.768 S
+   (Anderson) 125.136 R
+  1 -1 scale -378 -162 translate newpath
+ restore
+restore showpage
+%%Page: slide_2 2
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (2) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Outline) 256.212 35.74 S
+  1 -1 scale -81 -50 translate newpath
+  198 144 translate 1 -1 scale
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 25.24 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (What) 36 R
+   (is) 99.336 R
+   (GLUnix?) 121.344 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 70.486 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Goals) 36 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 115.732 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Explore) 36 R
+   (Design) 123.336 R
+   (Alternatives) 198.672 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 160.978 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Our) 36 R
+   (Design) 84.672 R
+   (Decisions) 160.008 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 206.224 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Implementation) 36 R
+   (Strategies) 205.992 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 251.47 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Current) 36 R
+   (Status) 125.976 R
+   (and) 195.984 R
+   (Future) 240.672 R
+   (Plans) 317.328 R
+  1 -1 scale -198 -144 translate newpath
+ restore
+restore showpage
+%%Page: slide_3 3
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (3) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (What) 178.632 35.74 S
+   (is) 273.636 R
+   (GLUnix?) 306.648 R
+  1 -1 scale -81 -50 translate newpath
+  117 153 translate 1 -1 scale
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 25.24 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Goals) 36 R
+   (of) 100.68 R
+   (NOW) 126.672 R
+   (project) 192.672 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 55.9264 S
+   (Run) 55.96 R
+   (parallel) 101.968 R
+   (programs) 179.944 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 84.9328 S
+   (Improve) 55.96 R
+   (sequential) 143.272 R
+   (system) 246.592 R
+   (performance) 319.264 R
+   (under) 446.536 R
+   (peak) 54.952 108.5872 S
+   (demands) 106.264 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 152.1532 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Managing) 36 R
+   (resources) 146.016 R
+   (is) 249.312 R
+   (a) 271.32 R
+   (function) 289.32 R
+   (of) 380.664 R
+   (the) 406.656 R
+   (OS) 444.648 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 197.3992 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (GLUnix) 36 R
+   (will) 126.024 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 228.0856 S
+   (manage) 55.96 R
+   (new) 136.6 R
+   (distributed) 182.584 R
+   (resources) 291.256 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 257.092 S
+   (virtualize) 55.96 R
+   (some) 152.608 R
+   (existing) 209.272 R
+   (resources) 291.28 R
+  1 -1 scale -117 -153 translate newpath
+ restore
+restore showpage
+%%Page: slide_4 4
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (4) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Goals) 183.24 35.74 S
+   (of) 280.26 R
+   (GLUnix) 319.248 R
+  1 -1 scale -81 -50 translate newpath
+  108 189 translate 1 -1 scale
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 25.24 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (High) 36 R
+   (performance) 92.688 R
+   (parallel) 230.64 R
+   (computing) 315.312 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 70.486 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Maintain) 36 R
+   (interactive) 136.68 R
+   (response) 251.976 R
+   (times) 347.304 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 115.732 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Improved) 36 R
+   (system) 143.328 R
+   (performance) 218.64 R
+   (under) 356.592 R
+   (peak) 423.936 R
+   (demands) 479.28 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 160.978 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Dynamic) 36 R
+   (reconfiguration) 133.992 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 206.224 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Portability) 36 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 251.47 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Fault) 36 R
+   (tolerance) 96.672 R
+  1 -1 scale -108 -189 translate newpath
+ restore
+restore showpage
+%%Page: slide_5 5
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (5) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Implied) 142.2 35.74 S
+   (Requirements) 271.224 R
+  1 -1 scale -81 -50 translate newpath
+  99 144 translate 1 -1 scale
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 25.24 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (High) 36 R
+   (performance) 92.688 R
+   (parallel) 230.64 R
+   (computing) 315.312 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 55.9264 S
+   (coscheduling,) 55.96 R
+   (fault) 194.608 R
+   (tolerance) 244.6 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 99.4924 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Maintain) 36 R
+   (interactive) 136.68 R
+   (response) 251.976 R
+   (times) 347.304 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 130.1788 S
+   (migration,) 55.96 R
+   (identifying) 161.296 R
+   (and) 272.632 R
+   (harvesting) 313.288 R
+   (idle) 419.272 R
+   (resources) 461.272 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 173.7448 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Improved) 36 R
+   (system) 143.328 R
+   (performance) 218.64 R
+   (under) 356.592 R
+   (peak) 423.936 R
+   (demands) 479.28 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 204.4312 S
+   (transparent) 55.96 R
+   (remote) 168.592 R
+   (execution) 241.24 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 247.9972 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Portability) 36 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 276.5332 S
+   (user) 55.96 R
+   (level) 101.944 R
+   (implementation) 154.6 R
+  1 -1 scale -99 -144 translate newpath
+ restore
+restore showpage
+%%Page: slide_6 6
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (6) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Design) 212.094 35.74 S
+   (Issues) 325.098 R
+  1 -1 scale -81 -50 translate newpath
+  99 153 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Three) 0.28 24.16 S
+   (main) 67.6 R
+   (issues:) 125.608 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 37 77.6128 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Remote) 72 R
+   (execution) 156.624 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (Who) 72.784 108.2992 S
+   (controls) 125.44 R
+   (when) 208.768 R
+   (programs) 266.752 R
+   (are) 363.4 R
+   (executed) 398.704 R
+   (remotely) 490 R
+   (and) 72.112 131.9536 S
+   (where?) 112.768 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 37 172.7872 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Execution) 72 R
+   (context) 180.672 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (Where) 72.784 203.4736 S
+   (do) 142.744 R
+   (remote) 172.744 R
+   (programs) 245.392 R
+   (appear) 342.04 R
+   (to) 412 R
+   (be) 436.672 R
+   (running?) 465.328 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 37 244.3072 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (System) 72 R
+   (organization) 151.32 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (Where) 72 274.9936 S
+   (are) 141.96 R
+   (decisions) 177.264 R
+   (made) 272.592 R
+   (and) 330.576 R
+   (state) 371.232 R
+   (stored?) 421.224 R
+  1 -1 scale -99 -153 translate newpath
+ restore
+restore showpage
+%%Page: slide_7 7
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (7) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  162 198 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Remote) 131.04 24.16 S
+   (Execution) 215.664 R
+  1 -1 scale -162 -198 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Remote) 174.06 35.74 S
+   (Execution) 300.996 R
+  1 -1 scale -81 -50 translate newpath
+  108 153 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Explicit) 13.74 24.16 S
+  1 -1 scale -108 -153 translate newpath
+  549 153 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Implicit) 22.128 24.16 S
+  1 -1 scale -549 -153 translate newpath
+  [
+     162 198 612 198 Line 0 0 0 Color 2 W K
+  [
+     162 180 162 216 Line 0 0 0 Color 2 W K
+  [
+     612 180 612 216 Line 0 0 0 Color 2 W K
+  459 450 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Roman F
+   (Systems) 8.508 22.504 S
+   (decides) 94.524 R
+   (when) 172.5 R
+   (to) 3.864 47.98 S
+   (run) 28.536 R
+   (remote) 66.528 R
+   (programs) 139.176 R
+   (and) 63.912 73.456 S
+   (where.) 104.568 R
+  1 -1 scale -459 -450 translate newpath
+  90 450 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Roman F
+   (User) 18.336 22.504 S
+   (decides) 69.648 R
+   (when) 147.624 R
+   (to) 205.608 R
+   (run) 20.808 47.98 S
+   (remote) 58.8 R
+   (programs) 131.448 R
+   (and) 68.412 73.456 S
+   (where.) 109.068 R
+  1 -1 scale -90 -450 translate newpath
+  189 108 117 288 Rect 0 0 0 Color 1 W K
+  117 261 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Shell) 0.244 17.128 S
+   (example) 41.752 R
+  1 -1 scale -117 -261 translate newpath
+  126 306 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (%) -0.098 17.128 S
+   (rsh) 19.396 R
+   (dawn2) 50.392 R
+   (xFS_sim) 107.38 R
+   0 0 0 Color 18 /pTimes-Roman F
+   (%) -0.098 46.618 S
+  1 -1 scale -126 -306 translate newpath
+  486 261 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Shell) 0.244 17.128 S
+   (example) 41.752 R
+  1 -1 scale -486 -261 translate newpath
+  495 306 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (%) -0.098 17.128 S
+   (xFS_sim) 19.396 R
+   0 0 0 Color 18 /pTimes-Roman F
+   (%) -0.098 46.618 S
+  1 -1 scale -495 -306 translate newpath
+  189 108 486 288 Rect 0 0 0 Color 1 W K
+ restore
+restore showpage
+%%Page: slide_8 8
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (8) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Remote) 174.06 35.74 S
+   (Execution) 300.996 R
+  1 -1 scale -81 -50 translate newpath
+  144 216 translate 1 -1 scale
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 25.24 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Explicit) 36 R
+   0 0 0 Color 24 /pSymbol F
+   (+) 36.76 56.512 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (Easy) 55.936 R
+   (to) 108.592 R
+   (implement) 133.264 R
+   0 0 0 Color 24 /pSymbol F
+   (-) 36.736 87.784 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (User) 55.912 R
+   (must) 107.224 R
+   (decide) 159.904 R
+   (when) 228.544 R
+   (to) 286.528 R
+   (execute) 311.2 R
+   (remotely) 390.496 R
+   0 0 0 Color 24 /pSymbol F
+   (-) 36.736 119.056 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (User) 55.912 R
+   (must) 107.224 R
+   (decide) 159.904 R
+   (where) 228.544 R
+   (to) 293.176 R
+   (execute) 317.848 R
+   (remotely) 397.144 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 164.302 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Implicit) 36 R
+   0 0 0 Color 24 /pSymbol F
+   (+) 36.76 195.574 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (User-transparent) 55.936 R
+   (use) 221.872 R
+   (of) 259.864 R
+   (remote) 285.856 R
+   (resources) 358.504 R
+   0 0 0 Color 24 /pSymbol F
+   (+) 36.76 226.846 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (Static) 55.936 R
+   (load) 116.608 R
+   (balancing) 163.936 R
+  1 -1 scale -144 -216 translate newpath
+  108 162 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Advantages) 0.472 24.16 S
+   (and) 126.472 R
+   (Disadvantages:) 171.16 R
+  1 -1 scale -108 -162 translate newpath
+ restore
+restore showpage
+%%Page: slide_9 9
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (9) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Execution) 172.134 35.74 S
+   (Context) 335.142 R
+  1 -1 scale -81 -50 translate newpath
+  108 405 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Where) 0.544 24.16 S
+   (does) 75.856 R
+   (a) 127.192 R
+   (remote) 145.192 R
+   (program) 223.144 R
+   (appear) 319.792 R
+   (to) 397.792 R
+   (be) 423.784 R
+   (running?) 453.784 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 53.9584 S
+   (To) 55.96 R
+   (the) 88.624 R
+   (program) 123.952 R
+   (itself) 211.264 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 82.9648 S
+   (To) 55.96 R
+   (other) 88.624 R
+   (programs) 143.944 R
+  1 -1 scale -108 -405 translate newpath
+  [
+     171 207 621 207 Line 0 0 0 Color 2 W K
+  [
+     171 189 171 225 Line 0 0 0 Color 2 W K
+  [
+     621 189 621 225 Line 0 0 0 Color 2 W K
+  171 207 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Execution) 129.756 24.16 S
+   (Context) 238.428 R
+  1 -1 scale -171 -207 translate newpath
+  117 162 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Remote) 14.376 24.16 S
+  1 -1 scale -117 -162 translate newpath
+  567 162 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Cluster) 15.504 24.16 S
+  1 -1 scale -567 -162 translate newpath
+  [
+     396 207 396 189 Line 0 0 0 Color 2 W K
+  342 162 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Home) 23.028 24.16 S
+  1 -1 scale -342 -162 translate newpath
+  126 297 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (gethostname\(\)) 0.514 17.128 S
+   0 0 0 Color 18 /pTimes-Roman F
+   (->) 14.5 37.27 S
+   (remote.cs) 35.146 R
+  1 -1 scale -126 -297 translate newpath
+  153 81 315 279 Rect 0 0 0 Color 1 W K
+  333 297 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (gethostname\(\)) 0.514 17.128 S
+   0 0 0 Color 18 /pTimes-Roman F
+   (->) 14.5 37.27 S
+   (home.cs) 39.646 R
+  1 -1 scale -333 -297 translate newpath
+  153 81 531 279 Rect 0 0 0 Color 1 W K
+  549 297 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (gethostname\(\)) 0.514 17.128 S
+   0 0 0 Color 18 /pTimes-Roman F
+   (->) 14.5 37.27 S
+   (now.cs) 39.646 R
+  1 -1 scale -549 -297 translate newpath
+  153 81 108 279 Rect 0 0 0 Color 1 W K
+ restore
+restore showpage
+%%Page: slide_10 10
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (10) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Remote) 108.576 35.74 S
+   (Execution) 235.512 R
+   (Context) 398.52 R
+  1 -1 scale -81 -50 translate newpath
+  99 171 translate 1 -1 scale
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 25.24 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Application) 36 R
+   (appears) 162.024 R
+   (to) 249.36 R
+   (be) 275.352 R
+   (running) 305.352 R
+   (on) 394.056 R
+   (remote) 425.4 R
+   (node.) 503.352 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 70.486 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (All) 36 R
+   (system) 72.672 R
+   (calls) 147.984 R
+   (serviced) 199.32 R
+   (by) 289.296 R
+   (Unix) 320.64 R
+   (on) 375.984 R
+   (the) 407.328 R
+   (remote) 445.32 R
+   (node.) 523.272 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 115.732 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Characteristics:) 36 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 146.4184 S
+   (Pid) 55.96 R
+   (is) 93.976 R
+   (only) 115.984 R
+   (valid) 164.656 R
+   (on) 218.656 R
+   (remote) 248.656 R
+   (machine) 321.304 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 175.4248 S
+   (Ports) 55.96 R
+   (defined) 111.304 R
+   (on) 189.28 R
+   (remote) 219.28 R
+   (machine) 291.928 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 204.4312 S
+   (/dev) 55.96 R
+   (and) 103.288 R
+   (/tmp) 143.944 R
+   (are) 193.96 R
+   (interpreted) 229.264 R
+   (on) 339.232 R
+   (remote) 369.232 R
+   (machine) 441.88 R
+  1 -1 scale -99 -171 translate newpath
+ restore
+restore showpage
+%%Page: slide_11 11
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (11) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Remote) 108.576 35.74 S
+   (Execution) 235.512 R
+   (Context) 398.52 R
+  1 -1 scale -81 -50 translate newpath
+  117 207 189 279 Rect 0 0 0 Color 1 W K
+  360 0 36 18 243 324 Pie 0 1 0 Color L
+  360 0 36 18 243 324 Arc 0 0 0 Color 1 W K
+  207 313.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (parent) 13.491 17.128 S
+  1 -1 scale -207 -313.2 translate newpath
+  117 207 333 279 Rect 0 0 0 Color 1 W K
+  117 207 477 279 Rect 0 0 0 Color 1 W K
+  360 0 36 18 387 324 Pie 1 0 0 Color L
+  360 0 36 18 387 324 Arc 0 0 0 Color 1 W K
+  351 313.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (child) 17.775 17.128 S
+  1 -1 scale -351 -313.2 translate newpath
+  189 486 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node1) 36.423 17.128 S
+  1 -1 scale -189 -486 translate newpath
+  333 486 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node2) 36.423 17.128 S
+  1 -1 scale -333 -486 translate newpath
+  477 486 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node3) 36.423 17.128 S
+  1 -1 scale -477 -486 translate newpath
+  198 450 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 31.356 17.128 S
+  1 -1 scale -198 -450 translate newpath
+  342 450 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 31.356 17.128 S
+  1 -1 scale -342 -450 translate newpath
+  486 450 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 31.356 17.128 S
+  1 -1 scale -486 -450 translate newpath
+  [
+     189 441 306 441 Line 0 0 0 Color 1 W K
+  [
+     333 441 450 441 Line 0 0 0 Color 1 W K
+  [
+     477 441 594 441 Line 0 0 0 Color 1 W K
+  [
+     279 324 351 324 Line 0 0 0 Color 1 W K
+  [
+     378 396 378 382.584 367.267 387.95 Line C 0 0 0 Color L
+  [
+     378 342 372 348 369 355.5 369 364.5 369 373.5
+     371.106 382.211 375.317 390.633 Spline 0 0 0 Color [6 6] D 2 W K [] D
+  108 153 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (gethostname\(\)) 0.4 24.16 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 51.808 S
+   (serviced) 55.96 R
+   (by) 141.928 R
+   (local) 171.928 R
+   (Unix) 224.584 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 78.664 S
+   (returns) 55.96 R
+   ("dawn2") 128.608 R
+  1 -1 scale -108 -153 translate newpath
+  [
+     189 396 306 396 Line 0 0 0 Color 1 W K
+  198 405 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 19.26 17.128 S
+  1 -1 scale -198 -405 translate newpath
+  [
+     333 396 450 396 Line 0 0 0 Color 1 W K
+  342 405 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 19.26 17.128 S
+  1 -1 scale -342 -405 translate newpath
+  [
+     477 396 594 396 Line 0 0 0 Color 1 W K
+  486 405 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 19.26 17.128 S
+  1 -1 scale -486 -405 translate newpath
+  [
+     396 342 400.243 354.728 408.728 346.243 Line C 0 0 0 Color L
+  [
+     400.243 346.243 403.414 349.414 405 357
+     405 369 405 381 402 390 396 396 Spline 0 0 0 Color [6 6] D 2 W K [] D
+ restore
+restore showpage
+%%Page: slide_12 12
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (12) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Home) 121.554 35.74 S
+   (Execution) 222.534 R
+   (Context) 385.542 R
+  1 -1 scale -81 -50 translate newpath
+  99 162 translate 1 -1 scale
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 25.24 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Application) 36 R
+   (appears) 162.024 R
+   (to) 249.36 R
+   (be) 275.352 R
+   (running) 305.352 R
+   (on) 394.056 R
+   (user's) 425.4 R
+   (home) 492.72 R
+   (machine.) 36.328 50.716 S
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 95.074 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (System) 36 R
+   (calls) 115.32 R
+   (sent) 166.656 R
+   (back) 213.984 R
+   (to) 269.328 R
+   (home) 295.32 R
+   (machine.) 357.312 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 140.32 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Characteristics:) 36 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 171.0064 S
+   (Pid) 55.96 R
+   (is) 93.976 R
+   (valid) 115.984 R
+   (on) 169.984 R
+   (user's) 199.984 R
+   (home) 263.296 R
+   (machine) 322.624 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 200.0128 S
+   (Ports) 55.96 R
+   (defined) 111.304 R
+   (on) 189.28 R
+   (home) 219.28 R
+   (machine) 278.608 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 229.0192 S
+   (/dev) 55.96 R
+   (and) 103.288 R
+   (/tmp) 143.944 R
+   (are) 193.96 R
+   (interpreted) 229.264 R
+   (as) 339.232 R
+   (devices) 365.224 R
+   (and) 443.2 R
+   (files) 483.856 R
+   (on) 531.184 R
+   (home) 54.784 252.6736 S
+   (machine) 114.112 R
+  1 -1 scale -99 -162 translate newpath
+ restore
+restore showpage
+%%Page: slide_13 13
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (13) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Home) 121.554 35.74 S
+   (Execution) 222.534 R
+   (Context) 385.542 R
+  1 -1 scale -81 -50 translate newpath
+  117 216 189 288 Rect 0 0 0 Color 1 W K
+  360 0 36 18 243 324 Pie 0 1 0 Color L
+  360 0 36 18 243 324 Arc 0 0 0 Color 1 W K
+  207 313.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (parent) 13.491 17.128 S
+  1 -1 scale -207 -313.2 translate newpath
+  117 216 333 288 Rect 0 0 0 Color 1 W K
+  117 216 477 288 Rect 0 0 0 Color 1 W K
+  360 0 36 18 387 324 Pie 1 0 0 Color L
+  360 0 36 18 387 324 Arc 0 0 0 Color 1 W K
+  351 313.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (child) 17.775 17.128 S
+  1 -1 scale -351 -313.2 translate newpath
+  189 504 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node1) 36.423 17.128 S
+  1 -1 scale -189 -504 translate newpath
+  333 504 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node2) 36.423 17.128 S
+  1 -1 scale -333 -504 translate newpath
+  477 504 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node3) 36.423 17.128 S
+  1 -1 scale -477 -504 translate newpath
+  198 468 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 31.356 17.128 S
+  1 -1 scale -198 -468 translate newpath
+  342 468 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 31.356 17.128 S
+  1 -1 scale -342 -468 translate newpath
+  486 468 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 31.356 17.128 S
+  1 -1 scale -486 -468 translate newpath
+  [
+     189 459 306 459 Line 0 0 0 Color 1 W K
+  [
+     333 459 450 459 Line 0 0 0 Color 1 W K
+  [
+     477 459 594 459 Line 0 0 0 Color 1 W K
+  [
+     279 324 351 324 Line 0 0 0 Color 1 W K
+  99 135 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (gethostname\(\)) 0.4 24.16 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 53.9584 S
+   (GLUnix) 55.96 R
+   (redirects) 141.952 R
+   (system) 230.584 R
+   (call) 303.256 R
+   (to) 343.912 R
+   (home) 368.584 R
+   (node) 427.912 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 82.9648 S
+   (GLUnix) 55.96 R
+   (on) 141.952 R
+   (home) 171.952 R
+   (node) 231.28 R
+   (executes) 283.936 R
+   (call) 372.568 R
+   (and) 413.224 R
+   (returns) 453.88 R
+   (results:) 54.904 106.6192 S
+   ("dawn1") 136.24 R
+  1 -1 scale -99 -135 translate newpath
+  [
+     189 414 306 414 Line 0 0 0 Color 1 W K
+  198 423 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 19.26 17.128 S
+  1 -1 scale -198 -423 translate newpath
+  [
+     333 414 450 414 Line 0 0 0 Color 1 W K
+  342 423 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 19.26 17.128 S
+  1 -1 scale -342 -423 translate newpath
+  [
+     477 414 594 414 Line 0 0 0 Color 1 W K
+  486 423 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 19.26 17.128 S
+  1 -1 scale -486 -423 translate newpath
+  [
+     396 414 402 402 390 402 Line C 0 0 0 Color L
+  [
+     396 342 396 408 Line 0 0 0 Color [6 6] D 2 W K [] D
+  [
+     243 414 255.182 408.378 245.811 400.881 Line C 0 0 0 Color L
+  [
+     396 414 378 384 354 369 324 369 294 369
+     268.249 382.438 246.748 409.315 Spline 0 0 0 Color [6 6] D 2 W K [] D
+  [
+     378 414 372 402 364.8 411.6 Line C 0 0 0 Color L
+  [
+     270 414 288 396 304.5 387 319.5 387 334.5 387
+     352.4 394.8 373.2 410.4 Spline 0 0 0 Color [6 6] D 2 W K [] D
+  [
+     378 342 372 354 384 354 Line C 0 0 0 Color L
+  [
+     378 414 378 348 Line 0 0 0 Color [6 6] D 2 W K [] D
+ restore
+restore showpage
+%%Page: slide_14 14
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (14) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Home) 121.554 35.74 S
+   (Execution) 222.534 R
+   (Context) 385.542 R
+  1 -1 scale -81 -50 translate newpath
+  126 198 180 306 Rect 0 0 0 Color 1 W K
+  360 0 36 18 243 342 Pie 0 1 0 Color L
+  360 0 36 18 243 342 Arc 0 0 0 Color 1 W K
+  207 331.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (parent) 13.491 17.128 S
+  1 -1 scale -207 -331.2 translate newpath
+  126 198 333 306 Rect 0 0 0 Color 1 W K
+  126 198 486 306 Rect 0 0 0 Color 1 W K
+  360 0 36 18 396 342 Pie 1 0 0 Color L
+  360 0 36 18 396 342 Arc 0 0 0 Color 1 W K
+  360 331.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (child) 17.775 17.128 S
+  1 -1 scale -360 -331.2 translate newpath
+  189 504 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node1) 36.423 17.128 S
+  1 -1 scale -189 -504 translate newpath
+  342 504 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node2) 36.423 17.128 S
+  1 -1 scale -342 -504 translate newpath
+  495 504 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node3) 36.423 17.128 S
+  1 -1 scale -495 -504 translate newpath
+  189 468 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 35.856 17.128 S
+  1 -1 scale -189 -468 translate newpath
+  342 468 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 35.856 17.128 S
+  1 -1 scale -342 -468 translate newpath
+  495 468 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 35.856 17.128 S
+  1 -1 scale -495 -468 translate newpath
+  [
+     180 459 306 459 Line 0 0 0 Color 1 W K
+  [
+     333 459 459 459 Line 0 0 0 Color 1 W K
+  [
+     486 459 612 459 Line 0 0 0 Color 1 W K
+  [
+     279 342 360 342 Line 0 0 0 Color 1 W K
+  108 144 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (kill\(\)) 0.424 24.16 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 53.9584 S
+   (Parent) 55.96 R
+   (sends) 123.28 R
+   (signal,) 182.608 R
+   (naming) 251.944 R
+   (pid) 329.944 R
+   (on) 366.616 R
+   (home) 396.616 R
+   (node) 455.944 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 82.9648 S
+   (Signal) 55.96 R
+   (is) 123.304 R
+   (forwarded) 145.312 R
+   (to) 249.928 R
+   (all) 274.6 R
+   (remote) 304.6 R
+   (children) 377.248 R
+   (via) 461.896 R
+   (remote) 54.904 106.6192 S
+   (GLUnices) 127.552 R
+  1 -1 scale -108 -144 translate newpath
+  [
+     234 414 240 402 228 402 Line C 0 0 0 Color L
+  [
+     234 360 234 408 Line 0 0 0 Color [6 6] D 2 W K [] D
+  [
+     180 414 306 414 Line 0 0 0 Color 1 W K
+  189 423 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 23.76 17.128 S
+  1 -1 scale -189 -423 translate newpath
+  [
+     333 414 459 414 Line 0 0 0 Color 1 W K
+  342 423 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 23.76 17.128 S
+  1 -1 scale -342 -423 translate newpath
+  [
+     486 414 612 414 Line 0 0 0 Color 1 W K
+  495 423 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 23.76 17.128 S
+  1 -1 scale -495 -423 translate newpath
+  [
+     378 414 372 402 364.8 411.6 Line C 0 0 0 Color L
+  [
+     252 414 276 396 297 387 315 387 333 387
+     352.4 394.8 373.2 410.4 Spline 0 0 0 Color [6 6] D 2 W K [] D
+  [
+     396 360 390 372 402 372 Line C 0 0 0 Color L
+  [
+     396 366 396 414 Line 0 0 0 Color [6 6] D 2 W K [] D
+ restore
+restore showpage
+%%Page: slide_15 15
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (15) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Cluster) 110.268 35.74 S
+   (Execution) 233.244 R
+   (Context) 396.252 R
+  1 -1 scale -81 -50 translate newpath
+  99 153 translate 1 -1 scale
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 25.24 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Entire) 36 R
+   (cluster) 107.328 R
+   (appears) 182.64 R
+   (to) 269.976 R
+   (be) 295.968 R
+   (one) 325.968 R
+   (machine) 367.968 R
+   (with) 460.632 R
+   (many) 511.968 R
+   (displays.) 36.256 50.716 S
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 95.074 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Application) 36 R
+   (appears) 162.024 R
+   (to) 249.36 R
+   (be) 275.352 R
+   (running) 305.352 R
+   (on) 394.056 R
+   (the) 425.4 R
+   (cluster.) 463.392 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 140.32 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Interpret) 36 R
+   (system) 136.632 R
+   (calls) 211.944 R
+   (in) 263.28 R
+   (context) 289.296 R
+   (of) 369.936 R
+   (cluster.) 395.928 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 168.856 S
+   (Some) 55.96 R
+   (low-level) 116.632 R
+   (system) 213.28 R
+   (processes) 285.952 R
+   (must) 383.92 R
+   (run) 436.6 R
+   (locally) 474.592 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 212.422 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Characteristics:) 36 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 243.1084 S
+   (Pid) 55.96 R
+   (is) 93.976 R
+   (valid) 115.984 R
+   (on) 169.984 R
+   (any) 199.984 R
+   (machine) 240.64 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 272.1148 S
+   (Ports) 55.96 R
+   (defined) 111.304 R
+   (on) 189.28 R
+   (any) 219.28 R
+   (machine) 259.936 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 301.1212 S
+   (/dev) 55.96 R
+   (is) 103.288 R
+   (interpreted) 125.296 R
+   (for) 235.264 R
+   (user's) 269.248 R
+   (peripherals) 332.56 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 330.1276 S
+   (/tmp) 55.96 R
+   (is) 105.976 R
+   (uniform) 127.984 R
+   (on) 211.312 R
+   (all) 241.312 R
+   (machines) 271.312 R
+  1 -1 scale -99 -153 translate newpath
+ restore
+restore showpage
+%%Page: slide_16 16
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (16) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Cluster) 110.268 35.74 S
+   (Execution) 233.244 R
+   (Context) 396.252 R
+  1 -1 scale -81 -50 translate newpath
+  [
+     405 324 400.519 313.757 394.117 321.439 Line C 0 0 0 Color L
+  [
+     351 279 401.159 320.799 Line 0 0 0 Color 1 W K
+  [
+     207 171 183 183 169.5 196.5 166.5 211.5
+     163.5 226.5 163.5 244.5 166.5 265.5
+     169.5 286.5 166.5 304.5 157.5 319.5
+     148.5 334.5 148.5 349.5 157.5 364.5
+     166.5 379.5 190.5 384 229.5 378 268.5 372
+     295.5 373.5 310.5 382.5 325.5 391.5 345 397.5
+     369 400.5 393 403.5 421.5 403.5 454.5 400.5
+     487.5 397.5 514.5 391.5 535.5 382.5
+     556.5 373.5 579 369 603 369 627 369 640.5 360
+     643.5 342 646.5 324 646.5 306 643.5 288
+     640.5 270 633 258 621 252 609 246 601.5 234
+     598.5 216 595.5 198 585 186 567 180 549 174
+     532.5 177 517.5 189 502.5 201 468 201 414 189
+     360 177 318 168 288 162 258 156 231 159
+     207 171 Spline 0 0 0 Color 1 W K
+  63 45 234 441 Rect 0 0 0 Color 1 W K
+  [
+     234 441 261 432 Line 0 0 0 Color 1 W K
+  [
+     297 441 306 432 Line 0 0 0 Color 1 W K
+  [
+     261 432 306 432 Line 0 0 0 Color 1 W K
+  [
+     306 432 306 468 Line 0 0 0 Color 1 W K
+  [
+     297 486 306 468 Line 0 0 0 Color 1 W K
+243 450 288 477 5.4 RRect 0 0 0 Color 1 W K
+  [
+     238.5 495 241.5 495 244.5 495 247.5 495
+     250.5 495 253.5 495 256.5 495 259.5 495
+     262.5 495 265.5 495 268.5 495 271.5 495
+     274.5 495 277.5 495 280.5 495 283.5 495
+     286.5 495 289.5 495 292.5 495 295.5 495
+     295.5 498 292.5 504 289.5 510 286.5 513
+     283.5 513 280.5 513 277.5 513 274.5 513
+     271.5 513 265.5 513 256.5 513 247.5 513
+     241.5 513 238.5 513 235.5 513 232.5 513
+     229.5 513 226.5 513 226.5 510 229.5 504
+     232.5 498 235.5 495 238.5 495 Spline 0 0 0 Color 1 W K
+  [
+     279 432 288 378 Line 0 0 0 Color 2 W K
+  63 45 360 441 Rect 0 0 0 Color 1 W K
+  [
+     360 441 387 432 Line 0 0 0 Color 1 W K
+  [
+     423 441 432 432 Line 0 0 0 Color 1 W K
+  [
+     387 432 432 432 Line 0 0 0 Color 1 W K
+  [
+     432 432 432 468 Line 0 0 0 Color 1 W K
+  [
+     423 486 432 468 Line 0 0 0 Color 1 W K
+369 450 414 477 5.4 RRect 0 0 0 Color 1 W K
+  [
+     364.5 495 367.5 495 370.5 495 373.5 495
+     376.5 495 379.5 495 382.5 495 385.5 495
+     388.5 495 391.5 495 394.5 495 397.5 495
+     400.5 495 403.5 495 406.5 495 409.5 495
+     412.5 495 415.5 495 418.5 495 421.5 495
+     421.5 498 418.5 504 415.5 510 412.5 513
+     409.5 513 406.5 513 403.5 513 400.5 513
+     397.5 513 391.5 513 382.5 513 373.5 513
+     367.5 513 364.5 513 361.5 513 358.5 513
+     355.5 513 352.5 513 352.5 510 355.5 504
+     358.5 498 361.5 495 364.5 495 Spline 0 0 0 Color 1 W K
+  [
+     405 432 405 405 Line 0 0 0 Color 2 W K
+  63 45 567 441 Rect 0 0 0 Color 1 W K
+  [
+     567 441 594 432 Line 0 0 0 Color 1 W K
+  [
+     630 441 639 432 Line 0 0 0 Color 1 W K
+  [
+     594 432 639 432 Line 0 0 0 Color 1 W K
+  [
+     639 432 639 468 Line 0 0 0 Color 1 W K
+  [
+     630 486 639 468 Line 0 0 0 Color 1 W K
+576 450 621 477 5.4 RRect 0 0 0 Color 1 W K
+  [
+     571.5 495 574.5 495 577.5 495 580.5 495
+     583.5 495 586.5 495 589.5 495 592.5 495
+     595.5 495 598.5 495 601.5 495 604.5 495
+     607.5 495 610.5 495 613.5 495 616.5 495
+     619.5 495 622.5 495 625.5 495 628.5 495
+     628.5 498 625.5 504 622.5 510 619.5 513
+     616.5 513 613.5 513 610.5 513 607.5 513
+     604.5 513 598.5 513 589.5 513 580.5 513
+     574.5 513 571.5 513 568.5 513 565.5 513
+     562.5 513 559.5 513 559.5 510 562.5 504
+     565.5 498 568.5 495 571.5 495 Spline 0 0 0 Color 1 W K
+  63 45 117 441 Rect 0 0 0 Color 1 W K
+  [
+     117 441 144 432 Line 0 0 0 Color 1 W K
+  [
+     180 441 189 432 Line 0 0 0 Color 1 W K
+  [
+     144 432 189 432 Line 0 0 0 Color 1 W K
+  [
+     189 432 189 468 Line 0 0 0 Color 1 W K
+  [
+     180 486 189 468 Line 0 0 0 Color 1 W K
+126 450 171 477 5.4 RRect 0 0 0 Color 1 W K
+  [
+     121.5 495 124.5 495 127.5 495 130.5 495
+     133.5 495 136.5 495 139.5 495 142.5 495
+     145.5 495 148.5 495 151.5 495 154.5 495
+     157.5 495 160.5 495 163.5 495 166.5 495
+     169.5 495 172.5 495 175.5 495 178.5 495
+     178.5 498 175.5 504 172.5 510 169.5 513
+     166.5 513 163.5 513 160.5 513 157.5 513
+     154.5 513 148.5 513 139.5 513 130.5 513
+     124.5 513 121.5 513 118.5 513 115.5 513
+     112.5 513 109.5 513 109.5 510 112.5 504
+     115.5 498 118.5 495 121.5 495 Spline 0 0 0 Color 1 W K
+  [
+     162 432 216 378 Line 0 0 0 Color 2 W K
+  [
+     612 432 594 369 Line 0 0 0 Color 2 W K
+  108 513 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node1) 13.923 17.128 S
+  1 -1 scale -108 -513 translate newpath
+  225 513 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node2) 13.923 17.128 S
+  1 -1 scale -225 -513 translate newpath
+  351 513 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node3) 13.923 17.128 S
+  1 -1 scale -351 -513 translate newpath
+  432 441 translate 1 -1 scale
+   0 0 0 Color 36 /pTimes-Bold F
+   (.) 44.226 35.74 S
+   (.) 62.226 R
+   (.) 80.226 R
+  1 -1 scale -432 -441 translate newpath
+  558 513 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (nodeN) 11.925 17.128 S
+  1 -1 scale -558 -513 translate newpath
+  360 0 45 22.5 333 256.5 Pie 0 1 0 Color L
+  360 0 45 22.5 333 256.5 Arc 0 0 0 Color 1 W K
+  360 0 45 22.5 441 337.5 Pie 1 0 0 Color L
+  360 0 45 22.5 441 337.5 Arc 0 0 0 Color 1 W K
+  288 243 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Parent) 21.906 17.128 S
+  1 -1 scale -288 -243 translate newpath
+  396 324 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Child) 24.696 17.128 S
+  1 -1 scale -396 -324 translate newpath
+ restore
+restore showpage
+%%Page: slide_17 17
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (17) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Execution) 172.134 35.74 S
+   (Context) 335.142 R
+  1 -1 scale -81 -50 translate newpath
+  135 216 translate 1 -1 scale
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 25.24 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Remote) 36 R
+   (Machine) 120.624 R
+   0 0 0 Color 18 /pSymbol F
+   (+) 36.82 53.776 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (Easy) 52.702 R
+   (to) 105.358 R
+   (implement) 130.03 R
+   0 0 0 Color 18 /pSymbol F
+   (+) 36.82 80.632 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (No) 52.702 R
+   (relinking) 88.03 R
+   (necessary) 180.694 R
+   0 0 0 Color 18 /pSymbol F
+   (-) 36.802 107.488 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (No) 52.684 R
+   (transparent) 88.012 R
+   (dynamic) 200.644 R
+   (load) 289.3 R
+   (balancing) 336.628 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 151.054 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Home) 36 R
+   (Machine) 103.32 R
+   0 0 0 Color 18 /pSymbol F
+   (+) 36.82 179.59 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (Application-transparent) 52.702 R
+   (use) 286.654 R
+   (of) 324.646 R
+   (remote) 350.638 R
+   (resources) 423.286 R
+   0 0 0 Color 18 /pSymbol F
+   (+) 36.82 206.446 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (Transparent) 52.702 R
+   (dynamic) 173.326 R
+   (load) 261.982 R
+   (balancing) 309.31 R
+   0 0 0 Color 18 /pSymbol F
+   (-) 36.802 233.302 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (Relink) 52.684 R
+   (applications) 122.692 R
+   0 0 0 Color 18 /pSymbol F
+   (-) 36.802 260.158 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (Cost) 52.684 R
+   (of) 102.7 R
+   (sending) 128.692 R
+   (system) 209.356 R
+   (calls) 282.028 R
+   (to) 332.02 R
+   (home) 356.692 R
+   (machine) 416.02 R
+  1 -1 scale -135 -216 translate newpath
+  99 162 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Advantages) 0.472 24.16 S
+   (and) 126.472 R
+   (Disadvantages:) 171.16 R
+  1 -1 scale -99 -162 translate newpath
+ restore
+restore showpage
+%%Page: slide_18 18
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (18) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Execution) 172.134 35.74 S
+   (Context) 335.142 R
+  1 -1 scale -81 -50 translate newpath
+  99 162 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Advantages) 0.472 24.16 S
+   (and) 126.472 R
+   (Disadvantages) 171.16 R
+   (\(cont\):) 325.168 R
+  1 -1 scale -99 -162 translate newpath
+  135 216 translate 1 -1 scale
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 25.24 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Cluster) 36 R
+   0 0 0 Color 18 /pSymbol F
+   (+) 36.82 53.776 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (Security) 52.702 R
+   0 0 0 Color 18 /pSymbol F
+   (+) 36.82 80.632 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (System) 52.702 R
+   (management) 129.382 R
+   0 0 0 Color 18 /pSymbol F
+   (-) 36.802 107.488 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (All) 52.684 R
+   (user) 89.356 R
+   (programs) 135.34 R
+   (must) 231.988 R
+   (be) 284.668 R
+   (relinked) 313.324 R
+   0 0 0 Color 18 /pSymbol F
+   (-) 36.802 134.344 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (Limited) 52.684 R
+   (pids) 134.692 R
+   (and) 180.7 R
+   (port) 221.356 R
+   (numbers) 266.02 R
+   0 0 0 Color 18 /pSymbol F
+   (-) 36.802 161.2 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (Cost) 52.684 R
+   (of) 102.7 R
+   (virt) 128.692 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (ualizing) 162.028 R
+   (resources) 245.356 R
+  1 -1 scale -135 -216 translate newpath
+ restore
+restore showpage
+%%Page: slide_19 19
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (19) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (System) 152.73 35.74 S
+   (Organization) 271.71 R
+  1 -1 scale -81 -50 translate newpath
+  162 189 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (System) 116.82 24.16 S
+   (Organization) 196.14 R
+  1 -1 scale -162 -189 translate newpath
+  99 144 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Centralized) 2.508 24.16 S
+  1 -1 scale -99 -144 translate newpath
+  549 144 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Distributed) 4.068 24.16 S
+  1 -1 scale -549 -144 translate newpath
+  [
+     162 189 612 189 Line 0 0 0 Color 2 W K
+  [
+     162 171 162 207 Line 0 0 0 Color 2 W K
+  [
+     612 171 612 207 Line 0 0 0 Color 2 W K
+  459 297 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Roman F
+   (All) 24.828 22.504 S
+   (decisions) 61.5 R
+   (made) 156.828 R
+   (locally) 38.772 47.98 S
+   (and) 110.1 R
+   (state) 150.756 R
+   (distributed) 9.684 73.456 S
+   (throughout) 118.356 R
+   (system.) 80.052 98.932 S
+  1 -1 scale -459 -297 translate newpath
+  90 297 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Roman F
+   (All) 9 22.504 S
+   (decisions) 45.672 R
+   (made) 141 R
+   (and) 198.984 R
+   (state) 19.584 47.98 S
+   (kept) 69.576 R
+   (at) 116.904 R
+   (a) 140.232 R
+   (central) 156.888 R
+   (location.) 79.596 73.456 S
+  1 -1 scale -90 -297 translate newpath
+ restore
+restore showpage
+%%Page: slide_20 20
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (20) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (System) 152.73 35.74 S
+   (Organization) 271.71 R
+  1 -1 scale -81 -50 translate newpath
+  135 189 translate 1 -1 scale
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 25.24 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Centralized) 36 R
+   0 0 0 Color 18 /pSymbol F
+   (+) 36.82 53.776 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (Easy) 52.702 R
+   (to) 105.358 R
+   (implement) 130.03 R
+   0 0 0 Color 18 /pSymbol F
+   (-) 36.802 80.632 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (Single) 52.684 R
+   (point) 120.028 R
+   (of) 175.372 R
+   (failure) 201.364 R
+   0 0 0 Color 18 /pSymbol F
+   (-) 36.802 107.488 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (Performance) 52.684 R
+   (bottleneck) 181.3 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 151.054 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Distributed) 36 R
+   0 0 0 Color 18 /pSymbol F
+   (+) 36.82 179.59 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (Fault) 52.702 R
+   (tolerant) 108.046 R
+   0 0 0 Color 18 /pSymbol F
+   (+) 36.82 206.446 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (Scalable) 52.702 R
+  1 -1 scale -135 -189 translate newpath
+  99 144 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Advantages) 0.472 24.16 S
+   (and) 126.472 R
+   (Disadvantages:) 171.16 R
+  1 -1 scale -99 -144 translate newpath
+ restore
+restore showpage
+%%Page: slide_21 21
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (21) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Design) 186.102 35.74 S
+   (Decisions) 299.106 R
+  1 -1 scale -81 -50 translate newpath
+  117 144 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (Explicit) 0.496 24.16 S
+   (vs) 86.512 R
+   1 0 0 Color 24 /pTimes-Bold F
+   (Implicit) 113.848 R
+   0 0 0 Color 24 /pTimes-Bold F
+   (remote) 201.184 R
+   (execution) 279.136 R
+   0 0 0 Color 24 /pTimes-Bold F
+   (Remote) 0.376 68.518 S
+   (vs) 85 R
+   1 0 0 Color 24 /pTimes-Bold F
+   (Home) 112.336 R
+   0 0 0 Color 24 /pTimes-Bold F
+   (vs) 179.656 R
+   (Global) 206.992 R
+   (execution) 282.352 R
+   (context) 385.672 R
+   0 0 0 Color 24 /pTimes-Bold F
+   (Central) -0.008 112.876 S
+   (vs) 84.64 R
+   1 0 0 Color 24 /pTimes-Bold F
+   (Distributed) 111.976 R
+   0 0 0 Color 24 /pTimes-Bold F
+   (system) 235.312 R
+   (organization) 310.624 R
+   0 0 0 Color 24 /pTimes-Bold F
+   (Relevant) 0.376 186.538 S
+   (Goals:) 97.024 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 37 228.1636 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (High) 72 R
+   (performance) 128.688 R
+   (parallel) 266.64 R
+   (computing) 351.312 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 37 270.6772 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Maintain) 72 R
+   (interactive) 172.68 R
+   (response) 287.976 R
+   (times) 383.304 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 37 313.1908 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Improved) 72 R
+   (system) 179.328 R
+   (performance) 254.64 R
+   (under) 392.592 R
+   (peak) 459.936 R
+   (demands) 72.256 336.8452 S
+   0 0 0 Color 24 /pSymbol F
+   (\267) 37 378.4708 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Fault) 72 R
+   (tolerance) 132.672 R
+  1 -1 scale -117 -144 translate newpath
+ restore
+restore showpage
+%%Page: slide_22 22
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (22) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 50 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Implementation) 111.222 35.74 S
+   (Strategies) 366.21 R
+  1 -1 scale -81 -50 translate newpath
+  135 162 translate 1 -1 scale
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 25.24 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (GLUnix) 36 R
+   (daemon) 126.024 R
+   (running) 213.36 R
+   (on) 302.064 R
+   (each) 333.408 R
+   (node) 386.064 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 53.776 S
+   (User-level) 55.96 R
+   (for) 161.92 R
+   (portability) 195.904 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 80.632 S
+   (Implements) 55.96 R
+   (coscheduling) 175.288 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 107.488 S
+   (Identifies) 55.96 R
+   (idle) 152.608 R
+   (resources) 194.608 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 151.054 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Modify) 36 R
+   (C) 116.664 R
+   (library) 139.992 R
+   (and) 217.992 R
+   (relink) 262.68 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 179.59 S
+   (Catch) 55.96 R
+   (system) 117.952 R
+   (calls) 190.624 R
+   (and) 240.616 R
+   (store) 281.272 R
+   (state) 333.928 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 206.446 S
+   (Migration) 55.96 R
+   (and) 157.96 R
+   (fault) 198.616 R
+   (tolerance) 248.608 R
+   0 0 0 Color 24 /pSymbol F
+   (\267) 1 250.012 S
+   0 0 0 Color 24 /pTimes-Bold F
+   (Leave) 36 R
+   (proxy) 103.32 R
+   (process) 169.32 R
+   (on) 251.304 R
+   (home) 282.648 R
+   (node) 344.64 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 278.548 S
+   (Local) 55.96 R
+   (representative) 116.608 R
+   (of) 257.224 R
+   (remote) 283.216 R
+   (process) 355.864 R
+  1 -1 scale -135 -162 translate newpath
+ restore
+restore showpage
+%%Page: slide_23 23
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (23) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 32 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Implementation) 111.222 35.74 S
+   (Strategies) 366.21 R
+  1 -1 scale -81 -32 translate newpath
+  117 243 225 279 Rect 0 0 0 Color 1 W K
+  360 0 36 18 279 369 Pie 0 1 0 Color L
+  360 0 36 18 279 369 Arc 0 0 0 Color 1 W K
+  243 358.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (parent) 13.491 17.128 S
+  1 -1 scale -243 -358.2 translate newpath
+  117 243 369 279 Rect 0 0 0 Color 1 W K
+  117 243 513 279 Rect 0 0 0 Color 1 W K
+  360 0 36 18 423 369 Pie 1 0 0 Color L
+  360 0 36 18 423 369 Arc 0 0 0 Color 1 W K
+  387 358.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (child) 17.775 17.128 S
+  1 -1 scale -387 -358.2 translate newpath
+  225 522 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node1) 36.423 17.128 S
+  1 -1 scale -225 -522 translate newpath
+  369 522 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node2) 36.423 17.128 S
+  1 -1 scale -369 -522 translate newpath
+  513 522 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node3) 36.423 17.128 S
+  1 -1 scale -513 -522 translate newpath
+  234 486 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 31.356 17.128 S
+  1 -1 scale -234 -486 translate newpath
+  378 486 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 31.356 17.128 S
+  1 -1 scale -378 -486 translate newpath
+  522 486 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 31.356 17.128 S
+  1 -1 scale -522 -486 translate newpath
+  [
+     225 477 342 477 Line 0 0 0 Color 1 W K
+  [
+     369 477 486 477 Line 0 0 0 Color 1 W K
+  [
+     513 477 630 477 Line 0 0 0 Color 1 W K
+  [
+     315 369 387 369 Line 0 0 0 Color 1 W K
+  99 99 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (socket\(\)) 0.304 24.16 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 51.808 S
+   (Child) 55.96 R
+   (calls) 115.312 R
+   (into) 165.304 R
+   (C) 208.648 R
+   (library.) 230.656 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 78.664 S
+   (C) 55.96 R
+   (library) 77.968 R
+   (sends) 147.952 R
+   (request) 207.28 R
+   (to) 282.592 R
+   (GLUnix) 307.264 R
+   (which) 393.256 R
+   (forwards) 457.912 R
+   (to) 549.208 R
+   (home) 54.784 102.3184 S
+   (node) 114.112 R
+   (GLUnix.) 166.768 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 129.1744 S
+   (Home) 55.96 R
+   (node) 120.616 R
+   (GLUnix) 173.272 R
+   (passes) 259.264 R
+   (call) 326.584 R
+   (to) 367.24 R
+   (child) 391.912 R
+   (proxy) 445.912 R
+   (which) 507.904 R
+   (locally) 54.52 152.8288 S
+   (executes.) 125.848 R
+  1 -1 scale -99 -99 translate newpath
+  [
+     279 387 279 405 Line 0 0 0 Color 1 W K
+  360 0 36 18 279 423 Arc 0 0 0 Color 1 W K
+  243 412.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (proxy) 14.985 17.128 S
+  1 -1 scale -243 -412.2 translate newpath
+  [
+     297 297 309.944 300.53 307.59 288.763 Line C 0 1 1 Color L
+  [
+     414 297 390 291 372 288 360 288 348 288
+     328.961 290.608 302.883 295.823 Spline 0 1 1 Color [6 6] D 2 W K [] D
+  360 0 36 18 279 315 Pie 0 1 0 Color L
+  360 0 36 18 279 315 Arc 0 0 0 Color 1 W K
+  360 0 36 18 423 315 Pie 0 1 0 Color L
+  360 0 36 18 423 315 Arc 0 0 0 Color 1 W K
+  243 304.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 5.76 17.128 S
+  1 -1 scale -243 -304.2 translate newpath
+  387 304.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 5.76 17.128 S
+  1 -1 scale -387 -304.2 translate newpath
+  360 0 36 18 567 315 Pie 0 1 0 Color L
+  360 0 36 18 567 315 Arc 0 0 0 Color 1 W K
+  531 304.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 5.76 17.128 S
+  1 -1 scale -531 -304.2 translate newpath
+  [
+     432 333 426 345 438 345 Line C 0 1 1 Color L
+  [
+     432 351 432 339 Line 0 1 1 Color [6 6] D 2 W K [] D
+  [
+     414 351 420 339 408 339 Line C 1 0.64705882 0 Color L
+  [
+     414 333 414 345 Line 1 0.64705882 0 Color [6 6] D 2 W K [] D
+  [
+     387 315 375 309 375 321 Line C 1 0.64705882 0 Color L
+  [
+     315 315 381 315 Line 1 0.64705882 0 Color [6 6] D 2 W K [] D
+  [
+     252 414 247.757 401.272 239.272 409.757 Line C 0 1 1 Color L
+  [
+     252 324 240 336 234 351 234 369 234 387
+     238.586 400.586 247.757 409.757 Spline 0 1 1 Color [6 6] D 2 W K [] D
+  [
+     306 324 310.243 336.728 318.728 328.243 Line C 1 0.64705882 0 Color L
+  [
+     310.243 328.243 319.414 337.414 324 351
+     324 369 324 387 318 402 306 414 Spline 1 0.64705882 0 Color [6 6] D 2 W K [] D
+  [
+     270 477 276 465 264 465 Line C 0 1 1 Color L
+  [
+     270 441 270 471 Line 0 1 1 Color [6 6] D 2 W K [] D
+  [
+     288 441 282 453 294 453 Line C 1 0.64705882 0 Color L
+  [
+     288 477 288 447 Line 1 0.64705882 0 Color [6 6] D 2 W K [] D
+  [
+     180 513 168 507 168 519 Line C 1 0.64705882 0 Color L
+  [
+     117 513 174 513 Line 1 0.64705882 0 Color [6 6] D 2 W K [] D
+  [
+     180 468 168 462 168 474 Line C 0 1 1 Color L
+  [
+     117 468 174 468 Line 0 1 1 Color [6 6] D 2 W K [] D
+  108 441 translate 1 -1 scale
+   0 1 1 Color 18 /pTimes-Roman F
+   (Request) 11.394 17.128 S
+  1 -1 scale -108 -441 translate newpath
+  108 486 translate 1 -1 scale
+   1 0.64705882 0 Color 18 /pTimes-Roman F
+   (Response) 5.895 17.128 S
+  1 -1 scale -108 -486 translate newpath
+ restore
+restore showpage
+%%Page: slide_24 24
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (24) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 41 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Implementation) 111.222 35.74 S
+   (Strategies) 366.21 R
+  1 -1 scale -81 -41 translate newpath
+  108 117 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Bold F
+   (kill\(\)) 0.424 24.16 S
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 51.808 S
+   (Parent) 55.96 R
+   (sends) 123.28 R
+   (signal) 182.608 R
+   (to) 245.944 R
+   (pid) 270.616 R
+   (on) 307.288 R
+   (home) 337.288 R
+   (node.) 396.616 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 78.664 S
+   (Proxy) 55.96 R
+   (catches) 119.296 R
+   (signal) 195.928 R
+   (and) 259.264 R
+   (passes) 299.92 R
+   (to) 367.24 R
+   (GLUnix.) 391.912 R
+   0 0 0 Color 24 /pTimes-Roman F
+   (-) 35.968 105.52 S
+   (GLUnix) 55.96 R
+   (forwards) 141.952 R
+   (signal) 233.248 R
+   (to) 296.584 R
+   (all) 321.256 R
+   (remote) 351.256 R
+   (children) 423.904 R
+   (via) 508.552 R
+   (remote) 54.904 129.1744 S
+   (GLUnices.) 127.552 R
+  1 -1 scale -108 -117 translate newpath
+  117 243 189 279 Rect 0 0 0 Color 1 W K
+  360 0 36 18 243 369 Pie 0 1 0 Color L
+  360 0 36 18 243 369 Arc 0 0 0 Color 1 W K
+  207 358.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (parent) 13.491 17.128 S
+  1 -1 scale -207 -358.2 translate newpath
+  117 243 333 279 Rect 0 0 0 Color 1 W K
+  117 243 477 279 Rect 0 0 0 Color 1 W K
+  360 0 36 18 387 369 Pie 1 0 0 Color L
+  360 0 36 18 387 369 Arc 0 0 0 Color 1 W K
+  351 358.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (child) 17.775 17.128 S
+  1 -1 scale -351 -358.2 translate newpath
+  189 522 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node1) 36.423 17.128 S
+  1 -1 scale -189 -522 translate newpath
+  333 522 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node2) 36.423 17.128 S
+  1 -1 scale -333 -522 translate newpath
+  477 522 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node3) 36.423 17.128 S
+  1 -1 scale -477 -522 translate newpath
+  198 486 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 31.356 17.128 S
+  1 -1 scale -198 -486 translate newpath
+  342 486 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 31.356 17.128 S
+  1 -1 scale -342 -486 translate newpath
+  486 486 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 31.356 17.128 S
+  1 -1 scale -486 -486 translate newpath
+  [
+     189 477 306 477 Line 0 0 0 Color 1 W K
+  [
+     333 477 450 477 Line 0 0 0 Color 1 W K
+  [
+     477 477 594 477 Line 0 0 0 Color 1 W K
+  [
+     279 369 351 369 Line 0 0 0 Color 1 W K
+  [
+     243 387 243 414 Line 0 0 0 Color 1 W K
+  360 0 36 18 243 432 Arc 0 0 0 Color 1 W K
+  207 421.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (proxy) 14.985 17.128 S
+  1 -1 scale -207 -421.2 translate newpath
+  360 0 36 18 243 306 Pie 0 1 0 Color L
+  360 0 36 18 243 306 Arc 0 0 0 Color 1 W K
+  360 0 36 18 387 306 Pie 0 1 0 Color L
+  360 0 36 18 387 306 Arc 0 0 0 Color 1 W K
+  207 295.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 5.76 17.128 S
+  1 -1 scale -207 -295.2 translate newpath
+  351 295.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 5.76 17.128 S
+  1 -1 scale -351 -295.2 translate newpath
+  360 0 36 18 531 306 Pie 0 1 0 Color L
+  360 0 36 18 531 306 Arc 0 0 0 Color 1 W K
+  495 295.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 5.76 17.128 S
+  1 -1 scale -495 -295.2 translate newpath
+  [
+     378 351 384 339 372 339 Line C 0 0 0 Color L
+  [
+     378 324 378 345 Line 0 0 0 Color [6 6] D 2 W K [] D
+  [
+     351 306 339 300 339 312 Line C 0 0 0 Color L
+  [
+     279 306 345 306 Line 0 0 0 Color [6 6] D 2 W K [] D
+  [
+     234 477 225.95 466.267 220.584 477 Line C 0 0 0 Color L
+  [
+     225 387 207 399 198 414 198 432 198 450
+     208.211 464.106 228.633 474.317 Spline 0 0 0 Color [6 6] D 2 W K [] D
+  [
+     270 324 271.664 337.313 281.649 330.656 Line C 0 0 0 Color L
+  [
+     273.328 328.992 283.109 343.664 288 360
+     288 378 288 396 282 411 270 423 Spline 0 0 0 Color [6 6] D 2 W K [] D
+  [
+     252 450 246 462 258 462 Line C 0 0 0 Color L
+  [
+     252 477 252 456 Line 0 0 0 Color [6 6] D 2 W K [] D
+ restore
+restore showpage
+%%Page: slide_25 25
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (25) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 41 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Plan) 279.558 35.74 S
+  1 -1 scale -81 -41 translate newpath
+  360 0 63 22.5 414 229.5 Arc 0 0 0 Color 1 W K
+  360 216 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Integrate) 21.852 17.128 S
+  1 -1 scale -360 -216 translate newpath
+  360 0 63 22.5 414 292.5 Arc 0 0 0 Color 1 W K
+  360 279 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Design) 28.323 17.128 S
+  1 -1 scale -360 -279 translate newpath
+  360 0 63 22.5 414 499.5 Arc 0 0 0 Color 1 W K
+  351 486 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Integrate) 30.852 17.128 S
+  1 -1 scale -351 -486 translate newpath
+  450 378 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Migration) 8.829 17.128 S
+  1 -1 scale -450 -378 translate newpath
+  558 378 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Idle) 30.843 17.128 S
+  1 -1 scale -558 -378 translate newpath
+  342 378 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Cosch) 22.203 17.128 S
+  1 -1 scale -342 -378 translate newpath
+  360 0 36 22.5 387 391.5 Arc 0 0 0 Color 1 W K
+  360 0 54 22.5 495 391.5 Arc 0 0 0 Color 1 W K
+  360 0 36 22.5 603 391.5 Arc 0 0 0 Color 1 W K
+  369 126 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Migration) 8.829 17.128 S
+  1 -1 scale -369 -126 translate newpath
+  477 126 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Idle) 30.843 17.128 S
+  1 -1 scale -477 -126 translate newpath
+  261 126 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Cosch) 22.203 17.128 S
+  1 -1 scale -261 -126 translate newpath
+  360 0 36 22.5 306 139.5 Arc 0 0 0 Color 1 W K
+  360 0 54 22.5 414 139.5 Arc 0 0 0 Color 1 W K
+  360 0 36 22.5 522 139.5 Arc 0 0 0 Color 1 W K
+  252 378 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (AFT) 27.864 17.128 S
+  1 -1 scale -252 -378 translate newpath
+  360 0 36 22.5 297 391.5 Arc 0 0 0 Color 1 W K
+  162 378 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (NRAM) 17.892 17.128 S
+  1 -1 scale -162 -378 translate newpath
+  360 0 36 22.5 207 391.5 Arc 0 0 0 Color 1 W K
+  [
+     414 207 406.965 198.31 402.827 207.414 Line C 0 0 0 Color L
+  [
+     315 162 409.448 204.931 Line 0 0 0 Color 1 W K
+  [
+     414 207 419 197 409 197 Line C 0 0 0 Color L
+  [
+     414 162 414 202 Line 0 0 0 Color 1 W K
+  [
+     414 207 425.173 207.414 421.035 198.31 Line C 0 0 0 Color L
+  [
+     513 162 418.552 204.931 Line 0 0 0 Color 1 W K
+  [
+     414 270 419 260 409 260 Line C 0 0 0 Color L
+  [
+     414 252 414 265 Line 0 0 0 Color 1 W K
+  [
+     216 369 226.963 371.193 224.332 361.545 Line C 0 0 0 Color L
+  [
+     414 315 220.824 367.684 Line 0 0 0 Color 1 W K
+  [
+     306 369 317.18 369 312.708 360.056 Line C 0 0 0 Color L
+  [
+     414 315 310.472 366.764 Line 0 0 0 Color 1 W K
+  [
+     396 369 403.906 361.094 394.419 357.932 Line C 0 0 0 Color L
+  [
+     414 315 397.581 364.257 Line 0 0 0 Color 1 W K
+  [
+     486 369 481 359 475 367 Line C 0 0 0 Color L
+  [
+     414 315 482 366 Line 0 0 0 Color 1 W K
+  [
+     594 369 585.858 361.337 582.985 370.916 Line C 0 0 0 Color L
+  [
+     414 315 589.211 367.563 Line 0 0 0 Color 1 W K
+  [
+     414 477 425.09 478.416 421.787 468.977 Line C 0 0 0 Color L
+  [
+     594 414 418.719 475.348 Line 0 0 0 Color 1 W K
+  [
+     414 477 424.818 474.178 418.233 466.652 Line C 0 0 0 Color L
+  [
+     486 414 417.763 473.707 Line 0 0 0 Color 1 W K
+  [
+     414 477 416.06 466.011 406.445 468.758 Line C 0 0 0 Color L
+  [
+     396 414 412.626 472.192 Line 0 0 0 Color 1 W K
+  [
+     414 477 407.882 467.642 402.843 476.28 Line C 0 0 0 Color L
+  [
+     306 414 409.681 474.481 Line 0 0 0 Color 1 W K
+  [
+     414 477 405.987 469.203 402.955 478.733 Line C 0 0 0 Color L
+  [
+     216 414 409.235 475.484 Line 0 0 0 Color 1 W K
+  [
+     90 180 702 180 Line 1 0 0 Color [1 1] D 1 W K [] D
+  [
+     90 261 702 261 Line 1 0 0 Color [1 1] D 1 W K [] D
+  [
+     90 342 702 342 Line 1 0 0 Color [1 1] D 1 W K [] D
+  [
+     90 441 702 441 Line 1 0 0 Color [1 1] D 1 W K [] D
+  90 153 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (July) 0.82 17.128 S
+   (1) 35.326 R
+  1 -1 scale -90 -153 translate newpath
+  90 234 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Sept) 0.244 17.128 S
+   (1) 36.748 R
+  1 -1 scale -90 -234 translate newpath
+  90 315 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Nov) 0.784 17.128 S
+   (1) 36.28 R
+  1 -1 scale -90 -315 translate newpath
+  90 441 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (April) 0.73 17.128 S
+   (1) 43.228 R
+  1 -1 scale -90 -441 translate newpath
+  594 216 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Roman F
+   (GLUnix-0) 3.684 22.504 S
+  1 -1 scale -594 -216 translate newpath
+  594 486 translate 1 -1 scale
+   0 0 0 Color 24 /pTimes-Roman F
+   (GLUnix-1) 3.684 22.504 S
+  1 -1 scale -594 -486 translate newpath
+  [
+     90 531 702 531 Line 1 0 0 Color [1 1] D 1 W K [] D
+  90 504 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Sept) 0.244 17.128 S
+   (1) 36.748 R
+  1 -1 scale -90 -504 translate newpath
+ restore
+restore showpage
+%%Page: slide_26 26
+save 90 rotate 1 -1 scale
+ save 0 0 translate 1 dup scale
+  792 612 0 0 Rect clip 1 setgray fill
+683.069 562.034 710.069 565.496 0.692308 RRect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 683.069 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33929 4.15385 690.301 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 697.533 566.88 Rect 0 1 1 Color 0.5 W K
+  4.33928 4.15385 704.765 566.88 Rect 0 1 1 Color 0.5 W K
+  [
+     685.239 565.496 685.239 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     692.471 565.496 692.471 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     699.703 565.496 699.703 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     706.935 565.496 706.935 566.88 Line 0 1 1 Color 0.5 W K
+  [
+     81 45 81 540 Line 0 0 1 Color 0.5 W K
+  [
+     99 27 693 27 Line 0 0 1 Color 0.5 W K
+  [
+     711 45 711 540 Line 0 0 1 Color 0.5 W K
+  [
+     693 558 99 558 Line 0 0 1 Color 0.5 W K
+  90 0 18 18 693 540 Arc 0 0 1 Color 0.5 W K
+  360 270 18 18 693 45 Arc 0 0 1 Color 0.5 W K
+  270 180 18 18 99 45 Arc 0 0 1 Color 0.5 W K
+  180 90 18 18 99 540 Arc 0 0 1 Color 0.5 W K
+  78.8276 559.552 translate 1 -1 scale
+   1 0 0 Color 8 /pTimes-Roman F
+   (Slide) 0.664 8.168 S
+   (26) 19.112 R
+  1 -1 scale -78.8276 -559.552 translate newpath
+  81 32 translate 1 -1 scale
+   0 1 1 Color 36 /pTimes-Bold F
+   (Home) 121.554 35.74 S
+   (Execution) 222.534 R
+   (Context) 385.542 R
+  1 -1 scale -81 -32 translate newpath
+  117 225 198 108 Rect 0 0 0 Color 1 W K
+  360 0 36 18 252 198 Pie 0 1 0 Color L
+  360 0 36 18 252 198 Arc 0 0 0 Color 1 W K
+  216 187.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (parent) 13.491 17.128 S
+  1 -1 scale -216 -187.2 translate newpath
+  117 225 342 108 Rect 0 0 0 Color 1 W K
+  117 225 486 108 Rect 0 0 0 Color 1 W K
+  360 0 36 18 396 198 Pie 1 0 0 Color L
+  360 0 36 18 396 198 Arc 0 0 0 Color 1 W K
+  360 187.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (child) 17.775 17.128 S
+  1 -1 scale -360 -187.2 translate newpath
+  198 333 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node1) 36.423 17.128 S
+  1 -1 scale -198 -333 translate newpath
+  342 333 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node2) 36.423 17.128 S
+  1 -1 scale -342 -333 translate newpath
+  486 333 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (node3) 36.423 17.128 S
+  1 -1 scale -486 -333 translate newpath
+  207 297 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 31.356 17.128 S
+  1 -1 scale -207 -297 translate newpath
+  351 297 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 31.356 17.128 S
+  1 -1 scale -351 -297 translate newpath
+  495 297 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (Unix) 31.356 17.128 S
+  1 -1 scale -495 -297 translate newpath
+  [
+     198 288 315 288 Line 0 0 0 Color 1 W K
+  [
+     342 288 459 288 Line 0 0 0 Color 1 W K
+  [
+     486 288 603 288 Line 0 0 0 Color 1 W K
+  [
+     252 243 257 233 247 233 Line C 0 0 0 Color L
+  [
+     252 216 252 238 Line 0 0 0 Color 1 W K
+  360 0 36 18 252 261 Arc 0 0 0 Color 1 W K
+  216 250.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (proxy) 14.985 17.128 S
+  1 -1 scale -216 -250.2 translate newpath
+  99 378 translate 1 -1 scale
+   0 0 0 Color 18 /pSymbol F
+   (\267) 1 24.16 S
+   0 0 0 Color 18 /pTimes-Roman F
+   (Parent) 36 R
+   (does) 86.49 R
+   (fork\(\)) 123.984 R
+   (and) 170.46 R
+   (exec\(\).) 200.952 R
+   0 0 0 Color 18 /pSymbol F
+   (\267) 1 53.464 S
+   0 0 0 Color 18 /pTimes-Roman F
+   (Application) 36 R
+   (being) 125.496 R
+   (fork\(\)'d) 169.992 R
+   (has) 231.462 R
+   (been) 259.956 R
+   (recompiled) 298.44 R
+   (with) 383.922 R
+   (GLUnix) 420.426 R
+   (library.) 484.92 R
+   0 0 0 Color 18 /pSymbol F
+   (\267) 1 82.768 S
+   0 0 0 Color 18 /pTimes-Roman F
+   (crt0.o) 36 R
+   (of) 81.99 R
+   (application) 101.484 R
+   (tells) 185.976 R
+   (GLUnix) 220.482 R
+   (that) 284.976 R
+   (it) 316.476 R
+   (is) 330.984 R
+   (starting) 347.49 R
+   (up.) 405.99 R
+   0 0 0 Color 18 /pSymbol F
+   (\267) 1 112.072 S
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 36 R
+   (tells) 100.494 R
+   (program) 135 R
+   (to) 200.484 R
+   (go) 218.988 R
+   (into) 241.488 R
+   (the) 273.996 R
+   (proxy) 300.492 R
+   (event) 346.986 R
+   (loop) 390.474 R
+   0 0 0 Color 18 /pSymbol F
+   (\267) 1 141.376 S
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 36 R
+   (does) 100.494 R
+   (fork\(\),) 137.988 R
+   (setuid\(\),) 188.964 R
+   (exec\(\)) 252.954 R
+   (on) 302.418 R
+   (remote) 324.918 R
+   (node) 379.404 R
+   0 0 0 Color 18 /pSymbol F
+   (\267) 1 170.68 S
+   0 0 0 Color 18 /pTimes-Roman F
+   (C) 36 R
+   (library) 52.506 R
+   (of) 104.994 R
+   (remote) 124.488 R
+   (child) 178.974 R
+   (lies) 219.474 R
+   (on) 248.976 R
+   (getpid\(\)) 271.476 R
+   (and) 332.964 R
+   (reports) 363.456 R
+   (back) 417.942 R
+   (pid) 456.426 R
+   (of) 483.93 R
+   (proxy.) 503.424 R
+  1 -1 scale -99 -378 translate newpath
+  360 0 36 18 252 135 Pie 0 1 0 Color L
+  360 0 36 18 252 135 Arc 0 0 0 Color 1 W K
+  360 0 36 18 396 135 Pie 0 1 0 Color L
+  360 0 36 18 396 135 Arc 0 0 0 Color 1 W K
+  216 124.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 5.76 17.128 S
+  1 -1 scale -216 -124.2 translate newpath
+  360 124.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 5.76 17.128 S
+  1 -1 scale -360 -124.2 translate newpath
+  [
+     216 144 205.393 147.536 212.464 154.607 Line C 0 0 0 Color L
+  [
+     216 252 198 228 189 208.5 189 193.5 189 178.5
+     196.821 163.179 212.464 147.536 Spline 0 0 0 Color 1 W K
+  [
+     360 135 350 130 350 140 Line C 0 0 0 Color L
+  [
+     288 135 355 135 Line 0 0 0 Color 1 W K
+  [
+     396 180 401 170 391 170 Line C 0 0 0 Color L
+  [
+     396 153 396 175 Line 0 0 0 Color 1 W K
+  360 0 36 18 540 135 Pie 0 1 0 Color L
+  360 0 36 18 540 135 Arc 0 0 0 Color 1 W K
+  504 124.2 translate 1 -1 scale
+   0 0 0 Color 18 /pTimes-Roman F
+   (GLUnix) 5.76 17.128 S
+  1 -1 scale -504 -124.2 translate newpath
+ restore
+restore showpage
+%%Trailer
+%%Pages: 26
+end SpotJob restore
+%%EOF
